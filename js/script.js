@@ -116,6 +116,8 @@
 
 })();
 
+
+
 $(function(){
 	$('.js-scrollbar').mCustomScrollbar();
 
@@ -264,6 +266,13 @@ $(function(){
 		$(this).remove();
 	});
 
+	$('.header-popup__close').click(function(){
+		var $this = $(this);
+		var $wrap = $this.closest('.header-popup');
+		var ind = $wrap.data('profile-popup');
+		$('[data-profile-menu=' + ind + ']').click();
+	});
+
 	$('body').on('click', '.result-item__remove', function(){
 		var $this = $(this);
 		var $item = $this.parents('.result-item');
@@ -278,13 +287,26 @@ $(function(){
 		$('.section_search__tabs-screen__item').filter('.active').removeClass('active');
 	});
 
+	$('body').on('click', '.tabs-field_list__arrowborder [data-targ]', function(e){
+		e.preventDefault();
+		var $t = $(this);
+		var ind = $t.data('targ');
+		var $wrap = $t.closest('.tabs-field_body');
 
-	$('body').on('click', '.menu-item', function(e){
+		if ( !$t.hasClass('active') ){
+			$t.addClass('active').siblings().filter('.active').removeClass('active');
+			$wrap.find('[data-obj='+ ind +']').addClass('active').siblings().filter('.active').removeClass('active');
+		}
+	});
+
+
+	$('body').on('click', '.catalog-item .menu-item', function(e){
 		e.preventDefault();
 
 		var $t = $(this);
 		var i = $t.index();
 		var $box = $t.closest('.catalog-item');
+		var $wrap = $t.closest('.section_catalog');
 
 		if ( $box.hasClass('active') ){
 			if ( $t.hasClass('active') ){
@@ -300,7 +322,28 @@ $(function(){
 			$t.addClass('active');
 			$box.addClass('active');
 			$box.find('.details-item').eq(i).addClass('active');
+
+			if ($wrap.hasClass('list-view')) $('html,body').animate({scrollTop:$box.offset().top - 10}, 400);
 		}
+	});
+
+	$('.catalog-item').hover(function(){
+		$(this).addClass('infocus');
+	}, function(){
+		$(this).removeClass('infocus');
+	});
+
+	$('body').on('click', '.catalog-item__fix', function(e){
+		e.preventDefault();
+		var $t = $(this);
+		var $box = $t.closest('.catalog-item');
+
+		if ( $box.hasClass('infixed') ){
+			$box.removeClass('infixed');
+		} else {
+			$box.addClass('infixed');
+		}
+
 	});
 
 	$('body').on('click', '.catalog-details__close .btn', function(e){
@@ -321,18 +364,173 @@ $(function(){
 			$t.addClass('active').siblings('.btn').filter('.active').removeClass('active');
 
 			if ($t.hasClass('js-show-table-view') ){
-				$wrap.removeClass('list-view map-view').addClass('table-view');
+				$wrap.removeClass('list-view map-view')
+					.addClass('table-view')
+					.find('.catalog__body .aside_left').mCustomScrollbar("destroy");
 			} else if ($t.hasClass('js-show-list-view') ){
-				$wrap.removeClass('table-view map-view').addClass('list-view');
+				$wrap.removeClass('table-view map-view')
+					.addClass('list-view')
+					.find('.catalog__body .aside_left').mCustomScrollbar("destroy");
 			} else if ($t.hasClass('js-show-map-view') ){
-				$wrap.removeClass('list-view table-view').addClass('map-view');
+				$wrap.removeClass('list-view table-view')
+					.addClass('map-view')
+					.find('.catalog__body .aside_left').mCustomScrollbar()
 			}
-
-			/*if ( $t.hasClass('btn_catalog-list') || $t.hasClass('btn_catalog-table') ){
-				$('.catalog-cards').toggleClass('catalog-cards_table catalog-cards_list');
-			}*/
 		}
 	});
+
+	$('.section_catalog').on('click', '.aside_right .filter-head', function(e){
+		e.preventDefault();
+		var $t = $(this);
+		var $wrap = $t.closest('.filter-item');
+		var $box = $wrap.find('.filter-body');
+
+		if ( !$wrap.hasClass('opened') ){
+			$box.stop(true, true).slideDown(200);
+			$wrap.addClass('opened');
+
+		} else {
+			$box.stop(true, true).slideUp(200);
+			$wrap.removeClass('opened')
+		}
+	});
+
+	function convertVal(val) {
+		var hours = parseInt(val / 60);
+		var minutes = val % 60;
+		var days = parseInt(minutes / 60);
+		hours = hours % 60;
+		if(String(hours).length != 2) hours = "0" + hours;
+		if(String(minutes).length != 2) minutes = "0" + minutes;
+		if( days == 0 ) { return hours + ":" + minutes; }
+		return days + ":" + hours + ":" + minutes;
+	}
+
+
+
+	$('.slider-line').each(function(){
+
+		var $this = $(this);
+		var $wrap = $this.closest('.filter-field_slider');
+
+		var time = $this.hasClass('slider-time') ? true : false;
+
+		var rangeMin = $this.data('range-min'),
+			rangeMax = $this.data('range-max'),
+			valMin = $this.data('val-min') || rangeMin,
+			valMax = $this.data('val-max') || rangeMax,
+			$inputFrom = $wrap.find('.i-from'),
+			$inputTo = $wrap.find('.i-to');
+
+		$inputFrom.val(convertValToTime(valMin, time));
+		$inputTo.val(convertValToTime(valMax, time));
+
+		$this.slider({
+			min: rangeMin,
+			max: rangeMax,
+			values: [valMin, valMax],
+			range: true,
+			create: function(event, ui){
+				$this.find('.ui-slider-handle').eq(0).addClass('handle-start').find('.ui-slider-handle__val').text(convertValToTime(valMin, time));
+				$this.find('.ui-slider-handle').eq(1).addClass('handle-end').find('.ui-slider-handle__val').text(convertValToTime(valMax, time));
+				$this.find('.slider-line__min').text(convertValToTime(rangeMin, time));
+				$this.find('.slider-line__max').text(convertValToTime(rangeMax, time));
+			},
+			slide: function(event, ui){
+				$inputFrom.val(convertValToTime($this.slider('values', 0), time));
+				$inputTo.val(convertValToTime($this.slider('values', 1), time));
+				$this.find('.handle-start').find('.ui-slider-handle__val').text(convertValToTime($this.slider('values', 0), time));
+				$this.find('.handle-end').find('.ui-slider-handle__val').text(convertValToTime($this.slider('values', 1), time));
+			},
+			stop: function(event, ui) {
+				$inputFrom.val(convertValToTime($this.slider('values', 0), time));
+				$inputTo.val(convertValToTime($this.slider('values', 1), time));
+				$this.find('.handle-start').find('.ui-slider-handle__val').text(convertValToTime($this.slider('values', 0), time));
+				$this.find('.handle-end').find('.ui-slider-handle__val').text(convertValToTime($this.slider('values', 1), time));
+			}
+		});
+
+	});
+
+	$('body').on('click', '.section__nav-field_filter .btn', function(){
+
+		var $this = $(this);
+		var $popup = $this.parent().next('.section__nav-field_filter-popup').find('.section_search__tabs-screen__item')
+
+		if ( $this.hasClass('active') ){
+			$this.removeClass('active');
+			$popup.removeClass('active');
+
+		} else {
+			$this.addClass('active');
+			$popup.addClass('active');
+		}
+
+	});
+
+
+
+	$('.filter-field_slider input').on('change',function(){
+
+		var $this = $(this);
+
+		if ( $this.val().match(/[^0-9]/g) ) {
+			var _newVal = $this.val().replace(/[^0-9]/g, '');
+			$this.val(_newVal);
+		}
+
+		var $wrap = $this.closest('.filter-field_slider');
+		var $slider = $wrap.find('.slider-line');
+
+		var time = $slider.hasClass('slider-time') ? true : false;
+
+		var max = $slider.data('range-max');
+
+		var iMin = $wrap.find('.i-from');
+		var iMax = $wrap.find('.i-to');
+
+		var val1 = iMin.val();
+		var val2 = iMax.val();
+
+		if ( $this.hasClass('i-from') ){
+			if(parseInt(val1) > parseInt(val2)){
+				val1 = val2;
+				iMin.val(val1);
+			}
+			$slider.slider('values', 0, val1);
+		} else if ( $this.hasClass('i-to') ){
+			if (val2 > max) {
+				val2 = max;
+				iMax.val(max);
+			}
+
+			if(parseInt(val1) > parseInt(val2)){
+				val2 = val1;
+				iMax.val(val2);
+			}
+
+			$slider.slider('values', 1, val2);
+		}
+	});
+
+	function convertValToTime(val, t) {
+		if ( !t ) return val;
+		var hours = parseInt(val / 60);
+		var minutes = val % 60;
+		var days = parseInt(minutes / 60);
+		hours = hours % 60;
+		if(String(hours).length != 2) hours = "0" + hours;
+		if(String(minutes).length != 2) minutes = "0" + minutes;
+		if( days == 0 ) { return hours + ":" + minutes; }
+		return days + ":" + hours + ":" + minutes;
+	}
+
+	function convertTimeToVal(val, t) {
+		if ( !t ) return val;
+		var r = /\d\d/g;
+		return ( parseInt(val.match(r)[0]) * 60 ) + parseInt(val.match(r)[1]);
+	}
+
 
 });
 

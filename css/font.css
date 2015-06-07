@@ -46,7 +46,7 @@
 	url("../fonts/SegoeUISemiBold/SegoeUISemiBold.woff") format("woff"),
 	url("../fonts/SegoeUISemiBold/SegoeUISemiBold.ttf") format("truetype");
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 600;
 }
 /* font-family: "SegoeUIBold"; */
 @font-face {

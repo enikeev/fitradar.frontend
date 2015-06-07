@@ -10,7 +10,7 @@
 .sbHolder{
 	background-color: #fff;
 	font-size: 18px;
-	height: 37px;
+	height: 36px;
 	position: relative;
 	width: 280px;
 	border-radius: 2px;
@@ -23,7 +23,7 @@
 }
 .sbSelector{
 	display: block;
-	height: 37px;
+	height: 36px;
 	left: 0;
 	line-height: 32px;
 	outline: none;
@@ -40,7 +40,7 @@
 }
 .sbToggle{
 	display: block;
-	height: 37px;
+	height: 36px;
 	outline: none;
 	position: absolute;
 	right: 0;
