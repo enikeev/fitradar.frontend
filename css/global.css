@@ -172,7 +172,10 @@
 	top: -3px;
 	position: relative;
 }
-
+.tooltip:hover{
+	color: #3fb4c6;
+	border-color: #3fb4c6;
+}
 .tooltip-popup{
 	display: block;
 	width: 296px;
@@ -219,6 +222,27 @@
 	cursor: pointer;
 }
 
+.tooltip_metro {
+	width: auto;
+	height: auto;
+	font-size: inherit;
+	border: none;
+	vertical-align: top;
+	top: 0;
+}
+.tooltip_metro .link{
+	color: #939393;
+	border-bottom: 1px dashed transparent;
+}
+.tooltip_metro .link:hover{
+	color: #3fb4c6;
+	border-bottom-color: #3fb4c6;
+}
+.tooltip-popup .list_metro{
+	color: #4c4c4c;
+	font-size: 16px;
+	margin-bottom: 0;
+}
 
 /*cards*/
 
@@ -292,7 +316,18 @@
 
 
 
-
+.list-marker{
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	vertical-align: middle;
+	position: relative;
+	bottom: 2px;
+	margin: 0 3px;
+}
 
 
 
