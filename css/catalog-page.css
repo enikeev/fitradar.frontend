@@ -523,6 +523,9 @@
 	top: 17px;
 	left: 18px;
 }
+.details-item__slider .flex-next:hover{
+	border-color: #3fb4c6;
+}
 .details-slider__item:hover{
 	border-color: #3fb4c6;
 }
@@ -617,6 +620,28 @@ a:hover .icon-like{background-image: url("../img/icons/icon-min-like-c.svg");}
 .details-item__columns .map{
 	width: 100%;
 	height: 530px;
+}
+.details-item .region li{
+	width: 330px;
+	border-bottom: 2px dotted #cfcfcf;
+	position: relative;
+	top: -3px;
+}
+.details-item .region li .region__name{
+	vertical-align: bottom;
+	background: #f8f8f8;
+	position: relative;
+	max-width: 250px;
+	top: 3px;
+	padding: 0 5px 0 0;
+}
+.details-item .region li .region__dim{
+	float: right;
+	vertical-align: bottom;
+	background: #f8f8f8;
+	position: relative;
+	top: 3px;
+	padding: 0 0 0 5px;
 }
 
 

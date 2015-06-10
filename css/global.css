@@ -460,6 +460,7 @@
 	right: 10px;
 	display: block;
 }
+.header-user .btn_profile:hover{text-decoration: underline!important;color:#3fb4c6;}
 .header-user .btn_profile:hover:after{background: url("../img/global/arrow-down-c.svg") no-repeat 0 0;}
 .header-user .btn_profile.active:after{background-image: url("../img/global/arrow-up-w.svg");}
 .header-user .btn_profile.active:hover:after{background-image: url("../img/global/arrow-up-c.svg");}
@@ -519,6 +520,9 @@
 	background: url("../img/icons/icon-input_clear.svg") no-repeat 50% 50%;
 	cursor: pointer;
 	z-index: 10;
+}
+.header-popup__close:hover{
+	background: url("../img/icons/icon-input_clear-c.svg") no-repeat 50% 50%;
 }
 .header-popup__title{
 	text-align: center;
