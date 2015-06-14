@@ -1326,11 +1326,17 @@ a:hover .icon-like{background-image: url("../img/icons/icon-min-like-c.svg");}
 
 /*map-view only*/
 
+.section_catalog.map-view .catalog__body {min-height: 500px}
 .section_catalog.map-view .catalog__body .inner{margin-top: 50px}
 .map-view .catalog__body {height: 780px;}
 .map-view .catalog__body .catalog__bg-map{display: block;}
 .map-view .catalog__body .inner{width: 100%}
-.map-view .catalog__body .aside_left{float: right}
+.map-view .catalog__body .aside_left{
+	float: right;
+	height: 700px;
+	width: auto;
+	min-height: 400px;
+}
 .map-view .catalog__body .aside_right{display: none}
 .map-view .catalog-cards .catalog-item{
 	float: right;
@@ -1371,10 +1377,6 @@ a:hover .icon-like{background-image: url("../img/icons/icon-min-like-c.svg");}
 
 .map-view .catalog-price{width: 160px;}
 .map-view .catalog-more{width: 140px;}
-.map-view .catalog__body .aside_left{
-	height: 700px;
-	width: auto;
-}
 .map-view .catalog-image{display: none;}
 
 /*.map-view .catalog-reviews{width: 460px;}*/

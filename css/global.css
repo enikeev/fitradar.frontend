@@ -1022,6 +1022,50 @@
 .filter-field_slider .slider-line .ui-slider-handle.handle-start:after{left: -8px;}
 
 
+.modal-overlay{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(29,32,39,0.7);
+	display: none;
+	z-index: 100;
+}
+
+.modal{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #f2f2f2;
+	width: 750px;
+	height: 500px;
+}
+.modal-close{
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	border: 1px solid #747a86;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+
+	top: 15px;
+	right: 15px;
+
+	background: url("../img/icons/icon-input_clear.svg") 50% 50% no-repeat;
+	opacity: .5;
+	cursor: pointer;
+}
+.modal-close:hover{
+	border-color: #3fb4c6;
+	background-image: url("../img/icons/icon-input_clear-c.svg");
+	opacity: 1;
+}
+
 
 
 

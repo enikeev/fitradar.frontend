@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>FitRadar</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<!--<link href="css/style.css" rel="stylesheet">-->
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/font.css" rel="stylesheet">
+	<link href="css/global.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>        <!--jquery 2.0.0-->
+	<script type="text/javascript" src="js/modernizr.js"></script>
+
+	<style>
+		body{
+			min-width: 900px;
+			background: #1b1e24;
+		}
+		.cup-bg,
+		.cup-bg-list,
+		.cup-bg-item{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.cup-bg-item{
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			-moz-background-size: cover;
+			-webkit-background-size: cover;
+			min-width: 900px;
+			min-height: 500px;
+			display: none;
+		}
+		.cup-bg-item.active{display: block}
+		.cup{
+			width: 650px;
+			height: 400px;
+			padding: 10px;
+			position: absolute;
+			margin: auto;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			text-align: center;
+			color: #fff;
+			font-weight: 300;
+			z-index: 10;
+		}
+		.cup-text{
+			font-size: 20px;
+			margin: 40px 0 65px;
+			line-height: 1.2;
+		}
+		.cup-btn .btn{
+			font-size: 18px;
+			background-color: #3fb4c6;
+			border-color: #3fb4c6;
+			min-width: 250px;
+			padding: 9px 10px 12px;
+		}
+
+
+		.modal_cup{
+			width: 720px;
+			height: 470px;
+			text-align: center;
+			padding: 15px;
+		}
+		.modal_cup-logo img{
+			width: 340px;
+			margin: 45px 0 35px;
+		}
+		.modal_cup-text{
+			color: #3fb4c6;
+			font-size: 20px;
+			line-height: 1.2;
+			margin-bottom: 50px;
+		}
+		.modal_cup-input input{
+			color: #7d8086;
+			font-size: 18px;
+			line-height: 1;
+			background: #fff;
+			border: 1px solid #3fb4c6;
+
+			font-family: 'Segoe UI', 'SegoeUI', sans-serif;
+			font-weight: 300;
+			text-align: center;
+			padding: 9px 10px 12px;
+			min-width: 250px;
+			margin-bottom: 13px;
+		}
+		.modal_cup-btn .btn{
+			font-size: 18px;
+			background-color: #3fb4c6;
+			border-color: #3fb4c6;
+			min-width: 250px;
+			padding: 9px 10px 12px;
+			color: #fff;
+		}
+
+	</style>
+	<script>
+
+		$(function(){
+
+			cupBgSlide();
+
+			$('[data-modal-open]').click(function(){
+				var targ = $(this).data('modal-open');
+				$('[data-modal-target=' + targ + ']').fadeIn();
+			});
+			$('.modal-overlay').click(function(e){
+				e.stopPropagation();
+				if ( $(e.target).hasClass('modal-overlay') ){
+					$(this).fadeOut();
+				}
+			});
+			$('.modal-close').click(function(e){
+				e.stopPropagation();
+				$(this).closest('.modal-overlay').fadeOut();
+			});
+
+
+			function cupBgSlide(){
+				var $slide = $('.cup-bg-item');
+				var num = $slide.length;
+
+				setInterval(function(){
+					var $cur = $slide.filter('.active');
+					var n = $cur.index();
+
+					$cur.fadeOut(600, function(){
+						$(this).removeClass('active');
+						$slide.eq((n + 1) % num).fadeIn(600, function(){
+							$(this).addClass('active');
+						})
+					})
+				}, 8000);
+
+			}
+
+		});
+
+
+	</script>
+</head>
+
+<body>
+<div class="cup-bg">
+	<ul class="cup-bg-list slides">
+		<li class="cup-bg-item active" style="background-image: url('img/bg/bg-cup-01.jpg');"></li>
+		<li class="cup-bg-item" style="background-image: url('img/bg/bg-cup-02.jpg');"></li>
+		<li class="cup-bg-item" style="background-image: url('img/bg/bg-cup-03.jpg');"></li>
+		<li class="cup-bg-item" style="background-image: url('img/bg/bg-cup-04.jpg');"></li>
+	</ul>
+</div>
+
+<div class="modal-overlay" data-modal-target="subscribe">
+	<div class="modal modal_cup">
+		<div class="modal-close"></div>
+		<div class="modal_cup-logo"><img src="img/global/logo-big.svg"></div>
+		<div class="modal_cup-text">Подпишитесь и первыми узнаете об открытии спортивного<br>интернет-каталога FitRadar.ru</div>
+		<div class="modal_cup-input"><input type="text" placeholder="Ваш E-mail"></div>
+		<div class="modal_cup-btn"><a class="btn btn_brdr" href="#">Подписаться</a></div>
+	</div>
+</div>
+
+
+<div class="cup">
+	<img src="img/global/logo-big.svg">
+	<div class="cup-text">Скоро здесь будет открыт спортивный интернет-каталог FitRadar.ru<br>Подробности чуть позже, подписывайтесь, следите за новостями.</div>
+	<div class="cup-btn"><span class="btn btn_brdr" data-modal-open="subscribe">Подписаться</span></div>
+</div>
+
+</body>
+</html>
