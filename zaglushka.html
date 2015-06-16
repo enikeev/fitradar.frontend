@@ -83,17 +83,22 @@
 			line-height: 1.2;
 			margin-bottom: 50px;
 		}
+		.modal_cup-text_error{
+			color: #ee0000;
+			margin:15px 0;
+		}
 		.modal_cup-input input{
 			color: #7d8086;
 			font-size: 18px;
-			line-height: 1;
+			line-height: 18px;
 			background: #fff;
 			border: 1px solid #3fb4c6;
 
 			font-family: 'Segoe UI', 'SegoeUI', sans-serif;
 			font-weight: 300;
 			text-align: center;
-			padding: 9px 10px 12px;
+			height: 26px;
+			padding: 5px 10px 8px;
 			min-width: 250px;
 			margin-bottom: 13px;
 		}
@@ -126,6 +131,20 @@
 			$('.modal-close').click(function(e){
 				e.stopPropagation();
 				$(this).closest('.modal-overlay').fadeOut();
+			});
+			$('.js-subscribe').click(function(){
+				var val = $('.js-input-email').val();
+				var mes = $('.modal_cup-text_error');
+				var reg = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+
+				if ( !val ){
+					mes.text('Не указан email');
+					return false;
+				}
+				if ( val && !reg.test(val) ){
+					mes.text('Укажите верный email');
+					return false;
+				} else { mes.text('') }
 			});
 
 
@@ -168,8 +187,9 @@
 		<div class="modal-close"></div>
 		<div class="modal_cup-logo"><img src="img/global/logo-big.svg"></div>
 		<div class="modal_cup-text">Подпишитесь и первыми узнаете об открытии спортивного<br>интернет-каталога FitRadar.ru</div>
-		<div class="modal_cup-input"><input type="text" placeholder="Ваш E-mail"></div>
-		<div class="modal_cup-btn"><a class="btn btn_brdr" href="#">Подписаться</a></div>
+		<div class="modal_cup-input"><input type="text" placeholder="Ваш E-mail" class="js-input-email"></div>
+		<div class="modal_cup-btn"><a class="btn btn_brdr js-subscribe" href="#">Подписаться</a></div>
+		<div class="modal_cup-text modal_cup-text_error"></div>
 	</div>
 </div>
 
