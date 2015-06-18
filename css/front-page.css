@@ -899,6 +899,7 @@
 	right: 37px;
 	cursor: pointer;
 }
+.section_search__finder-input__clear:hover{background-image: url("../img/icons/icon-input_clear-c.svg");}
 .section_search__finder-input__notepad{
 	width: 29px;
 	height: 29px;
@@ -1208,6 +1209,8 @@
 
 .tab__screen-item{display: none;}
 .tab__screen-item_active{display: block}
+
+
 
 
 /**/

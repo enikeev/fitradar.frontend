@@ -1,0 +1,1914 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>FitRadar</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/mCustomScrollbar.css" rel="stylesheet">
+	<link href="css/datepicker.css" rel="stylesheet">
+	<link href="css/jquery.selectbox.css" rel="stylesheet">
+
+	<script src="js/jquery.min.js"></script>        <!--jquery 2.0.0-->
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/mCustomScrollbar.min.js"></script>
+	<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.slider.js"></script>
+	<script type="text/javascript" src="js/datepicker.js"></script>
+	<script type="text/javascript" src="js/pieDiagram.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header class="header">
+		<div class="inner">
+			<a href="/" class="header-logo"></a>
+			<div class="header-location js-location-current">Санкт-Петербург</div>
+
+			<div class="header-user" style="display:none">
+				<a href="#" class="btn btn_brdr btn_auth">Войти</a>
+				<a href="#" class="btn btn_brdr btn_reg">Регистрация</a>
+			</div>
+
+			<div class="header-user">
+				<div class="header-user__int">
+					<span class="header-user__logo"><img src="img/upload/cart-logo-1.jpg" alt=""></span>
+					<a href="#" class="btn btn_brdr btn_profile" data-profile-menu="0">alexfitness.ru</a>
+					<a href="#" class="btn btn_brdr btn_notification" data-profile-menu="1"><i class="btn__number">99+</i></a>
+					<a href="#" class="btn btn_brdr btn_message" data-profile-menu="2"><i class="btn__number">10</i></a>
+				</div>
+				<div class="header-user__popups">
+					<div class="header-popup header-popup_profile" data-profile-popup="0">
+						<div class="header-popup__close"></div>
+						<div class="header-popup__content">
+							<div class="item"><a href="#" class="link">Личный кабинет</a></div>
+							<div class="item"><a href="#" class="link">Выйти</a></div>
+						</div>
+					</div>
+					<div class="header-popup header-popup_notification" data-profile-popup="1">
+						<div class="header-popup__close"></div>
+						<div class="header-popup__title">Оповещения fitradar</div>
+						<div class="header-popup__content">
+							<div class="item"><a href="#" class="link">Спортивные клубы <i class="num">1</i></a></div>
+							<div class="item"><a href="#" class="link">Секции <i class="num">99 +</i></a></div>
+							<div class="item"><a href="#" class="link">Площадки <i class="num">50</i></a></div>
+							<div class="item"><a href="#" class="link">Тренера <i class="num">50</i></a></div>
+							<div class="item"><a href="#" class="link">Магазины <i class="num">50</i></a></div>
+							<hr>
+							<div class="item"><a href="#" class="link">Новости <i class="num">2</i></a></div>
+							<div class="item"><a href="#" class="link">Афиша мероприятий <i class="num">3</i></a></div>
+							<div class="item"><a href="#" class="link">Статьи <i class="num">2</i></a></div>
+						</div>
+						<div class="header-popup__footer">
+							<a href="#" class="btn btn_brdr btn_settings">Настроить оповещения</a>
+							<a href="#" class="btn btn_brdr btn_clear js-remove-all-notifications">Очистить</a>
+						</div>
+					</div>
+					<div class="header-popup header-popup_message" data-profile-popup="2">
+						<div class="header-popup__close"></div>
+						<div class="header-popup__title">Ваши собщения</div>
+						<div class="header-popup__content js-scrollbar">
+							<a href="#" class="item">
+								<div>
+									<span class="login">login <sup class="status status_on">online</sup></span>
+									<span class="date">10 мая</span>
+								</div>
+								<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+							</a>
+
+							<a href="#" class="item">
+								<div>
+									<span class="login">login <sup class="status status_off">offline</sup></span>
+									<span class="date">10 мая</span>
+								</div>
+								<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+							</a>
+
+							<a href="#" class="item">
+								<div>
+									<span class="login">login <sup class="status status_on">online</sup></span>
+									<span class="date">10 мая</span>
+								</div>
+								<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+							</a>
+
+							<a href="#" class="item">
+								<div>
+									<span class="login">login <sup class="status status_off">offline</sup></span>
+									<span class="date">10 мая</span>
+								</div>
+								<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+							</a>
+
+							<a href="#" class="item">
+								<div>
+									<span class="login">login <sup class="status status_on">online</sup></span>
+									<span class="date">10 мая</span>
+								</div>
+								<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+							</a>
+
+							<a href="#" class="item">
+								<div>
+									<span class="login">login <sup class="status status_off">offline</sup></span>
+									<span class="date">10 мая</span>
+								</div>
+								<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+							</a>
+
+							<a href="#" class="item">
+								<div>
+									<span class="login">login <sup class="status status_on">online</sup></span>
+									<span class="date">10 мая</span>
+								</div>
+								<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+							</a>
+
+							<a href="#" class="item">
+								<div>
+									<span class="login">login <sup class="status status_off">offline</sup></span>
+									<span class="date">10 мая</span>
+								</div>
+								<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+							</a>
+
+							<a href="#" class="item">
+								<div>
+									<span class="login">login <sup class="status status_on">online</sup></span>
+									<span class="date">10 мая</span>
+								</div>
+								<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+							</a>
+
+							<a href="#" class="item">
+								<div>
+									<span class="login">login <sup class="status status_off">offline</sup></span>
+									<span class="date">10 мая</span>
+								</div>
+								<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+							</a>
+
+						</div>
+						<div class="header-popup__footer">
+							<a href="#" class="btn btn_brdr btn_settings">Настроить оповещения</a>
+							<a href="#" class="btn btn_brdr btn_clear js-remove-all-messages">Очистить</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="section section-location">
+		<div class="inner clearfix">
+
+			<div class="select-location">
+				<div class="select-location__country">
+					<a href="#" class="link link_active">Россия</a>
+					<a href="#" class="link">Украина</a>
+					<a href="#" class="link">Беларусь</a>
+					<a href="#" class="link">Казахстан</a>
+				</div>
+				<div class="select-location__input">
+					<div class="select-location__input-field">
+						<input type="text" placeholder="Введите название города">
+						<div class="select-location__input-result">
+							<!--<a href="#">Какой то город</a>-->
+							<!--<a href="#">Какой то город</a>-->
+							<!--<a href="#">Какой то город</a>-->
+						</div>
+					</div>
+					<span>или выберите из списка:</span>
+				</div>
+				<div class="select-location__capitals">
+					<a href="#" class="link">Москва</a>
+					<a href="#" class="link link_active">Санкт-Петербург</a>
+					<a href="#" class="link">Волгоград</a>
+					<a href="#" class="link">Воронеж</a>
+					<a href="#" class="link">Екатеринбург</a>
+					<a href="#" class="link">Калининград</a>
+					<a href="#" class="link">Новосибирск</a>
+					<a href="#" class="link">Омск</a>
+					<a href="#" class="link">Самара</a>
+					<a href="#" class="link">Челябинск</a>
+					<a href="#" class="link">Ярославль</a>
+					<a href="#" class="link">Москва</a>
+					<a href="#" class="link">Санкт-Петербург</a>
+					<a href="#" class="link">Волгоград</a>
+					<a href="#" class="link">Воронеж</a>
+					<a href="#" class="link">Екатеринбург</a>
+					<a href="#" class="link">Калининград</a>
+					<a href="#" class="link">Новосибирск</a>
+					<a href="#" class="link">Омск</a>
+					<a href="#" class="link">Самара</a>
+					<a href="#" class="link">Челябинск</a>
+					<a href="#" class="link">Ярославль</a>
+				</div>
+				<div class="select-location__words">
+					<a href="#" class="link link_active">А</a>
+					<a href="#" class="link">Б</a>
+					<a href="#" class="link">В</a>
+					<a href="#" class="link">Г</a>
+					<a href="#" class="link">Д</a>
+					<a href="#" class="link">Е</a>
+					<a href="#" class="link">Ж</a>
+					<a href="#" class="link">З</a>
+					<a href="#" class="link">И</a>
+					<a href="#" class="link">К</a>
+					<a href="#" class="link">Л</a>
+					<a href="#" class="link">М</a>
+					<a href="#" class="link">Н</a>
+					<a href="#" class="link">О</a>
+					<a href="#" class="link">П</a>
+					<a href="#" class="link">Р</a>
+					<a href="#" class="link">С</a>
+					<a href="#" class="link">Т</a>
+					<a href="#" class="link">У</a>
+					<a href="#" class="link">Ф</a>
+					<a href="#" class="link">Х</a>
+					<a href="#" class="link">Ц</a>
+					<a href="#" class="link">Ч</a>
+					<a href="#" class="link">Ш</a>
+					<a href="#" class="link">Щ</a>
+					<a href="#" class="link">Э</a>
+					<a href="#" class="link">Ю</a>
+					<a href="#" class="link">Я</a>
+				</div>
+				<div class="select-location__capitals-word">A</div>
+				<div class="select-location__cities">
+					<div class="select-location__cities-group">
+						<a href="#" class="link">Абаза</a>
+						<a href="#" class="link">Абакан</a>
+						<a href="#" class="link">Абдулино</a>
+						<a href="#" class="link">Абинск</a>
+						<a href="#" class="link">Агидель</a>
+						<a href="#" class="link">Агрыз</a>
+						<a href="#" class="link">Адыгейск</a>
+						<a href="#" class="link">Азнакаево</a>
+						<a href="#" class="link">Азов</a>
+						<a href="#" class="link">Ак-Довурак</a>
+						<a href="#" class="link">Аксай</a>
+						<a href="#" class="link">Алагир</a>
+						<a href="#" class="link">Алапаевск</a>
+					</div>
+
+					<div class="select-location__cities-group">
+						<a href="#" class="link">Алатырь</a>
+						<a href="#" class="link">Алдан</a>
+						<a href="#" class="link">Алейск</a>
+						<a href="#" class="link">Александров</a>
+						<a href="#" class="link">Александровск</a>
+						<a href="#" class="link">Александровск-Сахалинский</a>
+						<a href="#" class="link">Алексеевка</a>
+						<a href="#" class="link">Алексин</a>
+						<a href="#" class="link">Алзамай</a>
+						<a href="#" class="link">Альметьевск</a>
+						<a href="#" class="link">Амурск</a>
+						<a href="#" class="link">Анадырь Регио</a>
+						<a href="#" class="link">Анапа</a>
+					</div>
+
+					<div class="select-location__cities-group">
+						<a href="#" class="link">Ангарск</a>
+						<a href="#" class="link">Андреаполь</a>
+						<a href="#" class="link">Анжеро-Судженск</a>
+						<a href="#" class="link">Анива</a>
+						<a href="#" class="link">Апатиты</a>
+						<a href="#" class="link">Апрелевка</a>
+						<a href="#" class="link">Апшеронск</a>
+						<a href="#" class="link">Арамиль</a>
+						<a href="#" class="link">Аргун</a>
+						<a href="#" class="link">Ардатов</a>
+						<a href="#" class="link">Ардон</a>
+						<a href="#" class="link">Арзама</a>
+						<a href="#" class="link">Аркадак</a>
+					</div>
+
+					<div class="select-location__cities-group">
+						<a href="#" class="link">Армавир</a>
+						<a href="#" class="link">Арсеньев</a>
+						<a href="#" class="link">Арск</a>
+						<a href="#" class="link">Артем</a>
+						<a href="#" class="link">Артемовск</a>
+						<a href="#" class="link">Артемовский</a>
+						<a href="#" class="link">Архангельск</a>
+						<a href="#" class="link">Асбест</a>
+						<a href="#" class="link">Асино</a>
+						<a href="#" class="link">Астрахань</a>
+						<a href="#" class="link">Аткарск</a>
+						<a href="#" class="link">Ахтубинск</a>
+						<a href="#" class="link">Ачинск</a>
+					</div>
+
+				</div>
+				<div class="select-location__close"><span class="btn btn_brdr js-close-location-screen">Свернуть</span></div>
+			</div>
+		</div>
+	</section>
+
+	<nav class="nav">
+		<div class="inner">
+			<ul class="nav-list">
+				<li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Новости</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Соревнования</a></li>
+				<li class="nav-item nav-item_sub"><a href="#" class="nav-link">Статьи</a>
+					<ul class="nav__sub-list">
+						<li class="nav__sub-item"><a href="#" class="nav__sub-link">Раздел 1</a></li>
+						<li class="nav__sub-item"><a href="#" class="nav__sub-link">Раздел 2</a></li>
+						<li class="nav__sub-item"><a href="#" class="nav__sub-link">Раздел 3</a></li>
+						<li class="nav__sub-item"><a href="#" class="nav__sub-link">Раздел 4</a></li>
+						<li class="nav__sub-item"><a href="#" class="nav__sub-link">Раздел 5</a></li>
+					</ul>
+				</li>
+				<li class="nav-item"><a href="#" class="nav-link">Калькулятор калорий</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<section class="section section_head-carousel">
+		<div class="head-carousel">
+			<ul class="slides">
+				<li style="background-image: url('img/bg/front-bg-coath.jpg')"></li>
+				<li style="background-image: url('img/bg/front-bg-children.jpg')"></li>
+				<li style="background-image: url('img/bg/front-bg-tourism.jpg')"></li>
+				<li style="background-image: url('img/bg/front-bg-rent.jpg')"></li>
+				<li style="background-image: url('img/bg/front-bg-sections.jpg')"></li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="section section_breadcrumbs">
+		<div class="inner clearfix">
+			<ul class="breadcrumbs-list">
+				<li class="breadcrumbs-item"><a href="#">Fitradar</a></li>
+				<li class="breadcrumbs-item"><a href="#">Каталог</a></li>
+				<li class="breadcrumbs-item"><span>Alex Fitness Кудрово</span></li>
+			</ul>
+		</div>
+	</section>
+
+
+	<section class="section section_info">
+		<div class="inner clearfix">
+			<div class="aside aside_left aside_sml">
+				<div class="catalog-item">
+					<div class="catalog-item__inner">
+						<div class="catalog-body">
+							<div class="catalog-profile">
+								<div class="catalog-profile__left">
+									<div class="catalog-profile__logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+								</div>
+								<div class="catalog-profile__right">
+									<div class="catalog-profile__place">Alex Fitness Кудрово</div>
+									<div class="catalog-profile__name">Фитнес клуб</div>
+								</div>
+							</div>
+							<div class="catalog-btns">
+								<a href="#" class="btn btn_brdr btn_buy">Купить абонемент</a>
+								<a href="#" class="btn btn_brdr">Задать вопрос</a>
+							</div>
+							<hr>
+							<div class="title">Сеть клубов:</div>
+							<div class="catalog-profile">
+								<div class="catalog-profile__left">
+									<div class="catalog-profile__logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+								</div>
+								<div class="catalog-profile__right">
+									<div class="catalog-profile__text">Alex Fitness Кудрово</div>
+								</div>
+							</div>
+							<div class="catalog-profile">
+								<div class="catalog-profile__left">
+									<div class="catalog-profile__logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+								</div>
+								<div class="catalog-profile__right">
+									<div class="catalog-profile__text">Alex Fitness Кудрово</div>
+								</div>
+							</div>
+							<hr>
+							<div class="catalog-cont">
+								<div class="catalog-cont__inner">
+									<div class="title">Адрес:</div>
+									<div class="text">Кудрово, ул. Ленинградская, 1, ЖК "Новый Оккервиль"</div>
+								</div>
+								<div class="catalog-cont__inner">
+									<div class="title">Метро:</div>
+									<ul class="list">
+										<li><i class="list-marker" style="background-color: #f7941d;"></i> Ул. Дыбенко</li>
+										<li><i class="list-marker" style="background-color: #f7941d;"></i> Пр. Большевиков</li>
+									</ul>
+								</div>
+								<div class="catalog-cont__inner">
+									<div class="title">Телефон:</div>
+									<div class="text">+7 (911) 000 00 00</div>
+								</div>
+								<div class="catalog-cont__inner">
+									<div class="title">Часы работы:</div>
+									<ul class="list">
+										<li>пн-пт 6:30-24:00</li>
+										<li>сб-вс 9:00-22:00</li>
+									</ul>
+								</div>
+							</div>
+							<hr>
+							<div class="catalog-rate">
+								<div class="catalog-rate__main">
+									<div class="title">4.250 <span class="review">(50)</span></div>
+									<div class="rate-stars rate-stars_4"></div>
+								</div>
+								<div class="catalog-rate__det">
+									<div class="title">Персонал</div>
+									<div class="rate">
+										<div class="rate-stars rate-stars_4"></div>
+									</div>
+								</div>
+								<div class="catalog-rate__det">
+									<div class="title">Инфраструктура</div>
+									<div class="rate">
+										<div class="rate-stars rate-stars_3"></div>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="catalog-soc">
+								<div class="title">Alex Fitness Кудрово в интернете</div>
+								<ul class="catalog__soc-list">
+									<li class="catalog__soc-item"><a class="catalog__soc-link catalog__soc-link_vk" href="#"></a></li>
+									<li class="catalog__soc-item"><a class="catalog__soc-link catalog__soc-link_fb" href="#"></a></li>
+									<li class="catalog__soc-item"><a class="catalog__soc-link catalog__soc-link_ok" href="#"></a></li>
+									<li class="catalog__soc-item"><a class="catalog__soc-link catalog__soc-link_yt" href="#"></a></li>
+									<li class="catalog__soc-item"><a class="catalog__soc-link catalog__soc-link_tw" href="#"></a></li>
+									<li class="catalog__soc-item"><a class="catalog__soc-link catalog__soc-link_ig" href="#"></a></li>
+									<li class="catalog__soc-item"><a class="catalog__soc-link catalog__soc-link_gp" href="#"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="cards_news-wrapper">
+					<div class="title">Новости Alex Fitness Кудрово</div>
+					<div class="subscribe"><a href="#" class="btn btn_brdr">Подписаться на новости клуба</a></div>
+
+					<div class="cards cards_news js-scrollbar">
+						<div class="cards-item">
+							<div class="cards-item__inner">
+								<div class="cards-img">
+									<img src="img/upload/cart-img-2.jpg" alt="">
+								</div>
+								<div class="cards-title">
+									<div class="cards-title__img">
+										<img src="img/upload/cart-logo-2.jpg" alt="">
+									</div>
+									<div class="cards-title__text">
+										<span>Гога Тупурия</span>
+										<span class="date">/ 02.04.2015</span>
+										<a href="#" class="btn btn_min btn_brdr cat_3">тренера</a>
+									</div>
+								</div>
+								<div class="cards-descr">
+									<div class="title">До конца июля успей записаться на бесплатное групповое занятие по crossfit!</div>
+								</div>
+								<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+							</div>
+						</div>
+
+						<div class="cards-item">
+							<div class="cards-item__inner">
+								<div class="cards-img">
+									<img src="img/upload/cart-img-3.jpg" alt="">
+								</div>
+								<div class="cards-title">
+									<div class="cards-title__img">
+										<img src="img/upload/cart-logo-3.jpg" alt="">
+									</div>
+									<div class="cards-title__text">
+										<span>Школа волейбола №&nbsp;23</span>
+										<span class="date">/ 02.04.2015</span>
+										<a href="#" class="btn btn_min btn_brdr cat_1">секции</a>
+									</div>
+								</div>
+								<div class="cards-descr">
+									<div class="title">Летнее расписание занятий на июнь-июль 2015!</div>
+									<div class="text">Дорогие друзья! Мы искренне поздравляем вас с наступающими...</div>
+								</div>
+								<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+							</div>
+						</div>
+
+						<div class="cards-item">
+							<div class="cards-item__inner">
+								<div class="cards-img">
+									<img src="img/upload/cart-img-2.jpg" alt="">
+								</div>
+								<div class="cards-title">
+									<div class="cards-title__img">
+										<img src="img/upload/cart-logo-2.jpg" alt="">
+									</div>
+									<div class="cards-title__text">
+										<span>Гога Тупурия</span>
+										<span class="date">/ 02.04.2015</span>
+										<a href="#" class="btn btn_min btn_brdr cat_8">активный отдых</a>
+									</div>
+								</div>
+								<div class="cards-descr">
+									<div class="title">До конца июля успей записаться на бесплатное групповое занятие по crossfit!</div>
+								</div>
+								<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+							</div>
+						</div>
+
+						<div class="cards-item">
+							<div class="cards-item__inner">
+								<div class="cards-title">
+									<div class="cards-title__img">
+										<img src="img/upload/cart-logo-4.jpg" alt="">
+									</div>
+									<div class="cards-title__text">
+										<span>fitradar</span>
+										<span class="date">/ 02.04.2015</span>
+										<a href="#" class="btn btn_min btn_brdr cat_0">новости сайта</a>
+									</div>
+								</div>
+								<div class="cards-descr">
+									<div class="title">Рады представить Вам новый раздел!</div>
+									<div class="text text_b">Дорогие друзья! Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы клубов в праздничные выходные. Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы клубов в...</div>
+								</div>
+								<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+							</div>
+						</div>
+
+						<div class="cards-item">
+							<div class="cards-item__inner">
+								<div class="cards-img">
+									<img src="img/upload/cart-img-3.jpg" alt="">
+								</div>
+								<div class="cards-title">
+									<div class="cards-title__img">
+										<img src="img/upload/cart-logo-3.jpg" alt="">
+									</div>
+									<div class="cards-title__text">
+										<span>Школа волейбола №&nbsp;23</span>
+										<span class="date">/ 02.04.2015</span>
+										<a href="#" class="btn btn_min btn_brdr cat_6">медицина</a>
+									</div>
+								</div>
+								<div class="cards-descr">
+									<div class="title">Летнее расписание занятий на июнь-июль 2015!</div>
+									<div class="text">Дорогие друзья! Мы искренне поздравляем вас с наступающими...</div>
+								</div>
+								<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+							</div>
+						</div>
+
+						<div class="cards-item">
+							<div class="cards-item__inner">
+								<div class="cards-img">
+									<img src="img/upload/cart-img-2.jpg" alt="">
+								</div>
+								<div class="cards-title">
+									<div class="cards-title__img">
+										<img src="img/upload/cart-logo-2.jpg" alt="">
+									</div>
+									<div class="cards-title__text">
+										<span>Гога Тупурия</span>
+										<span class="date">/ 02.04.2015</span>
+										<a href="#" class="btn btn_min btn_brdr cat_7">детский спорт</a>
+									</div>
+								</div>
+								<div class="cards-descr">
+									<div class="title">До конца июля успей записаться на бесплатное групповое занятие по crossfit!</div>
+								</div>
+								<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+							</div>
+						</div>
+
+						<div class="cards-item">
+							<div class="cards-item__inner">
+								<div class="cards-title">
+									<div class="cards-title__img">
+										<img src="img/upload/cart-logo-4.jpg" alt="">
+									</div>
+									<div class="cards-title__text">
+										<span>fitradar</span>
+										<span class="date">/ 02.04.2015</span>
+										<a href="#" class="btn btn_min btn_brdr cat_5">площадки</a>
+									</div>
+								</div>
+								<div class="cards-descr">
+									<div class="title">Рады представить Вам новый раздел!</div>
+									<div class="text text_b">Дорогие друзья! Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы клубов в праздничные выходные. Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы клубов в...</div>
+								</div>
+								<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+							</div>
+						</div>
+
+						<div class="cards-item">
+							<div class="cards-item__inner">
+								<div class="cards-img">
+									<img src="img/upload/cart-img-3.jpg" alt="">
+								</div>
+								<div class="cards-title">
+									<div class="cards-title__img">
+										<img src="img/upload/cart-logo-3.jpg" alt="">
+									</div>
+									<div class="cards-title__text">
+										<span>Школа волейбола №&nbsp;23</span>
+										<span class="date">/ 02.04.2015</span>
+										<a href="#" class="btn btn_min btn_brdr cat_2">магазины</a>
+									</div>
+								</div>
+								<div class="cards-descr">
+									<div class="title">Летнее расписание занятий на июнь-июль 2015!</div>
+									<div class="text">Дорогие друзья! Мы искренне поздравляем вас с наступающими...</div>
+								</div>
+								<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="aside aside_right aside_big">
+				<div class="catalog-info">
+
+					<div class="catalog-menu">
+						<div class="menu-item active"><span>Фотографии</span></div>
+						<div class="menu-item"><span>Информация</span></div>
+						<div class="menu-item"><span>Услуги</span></div>
+						<div class="menu-item"><span>Инфраструктура</span></div>
+						<div class="menu-item"><span>Секции</span></div>
+						<div class="menu-item"><span>Площадки</span></div>
+						<div class="menu-item"><span>Тренеры</span></div>
+						<div class="menu-item"><span>Новости</span></div>
+						<div class="menu-item"><span>Контакты</span></div>
+					</div>
+					<div class="catalog-details">
+						<div class="details-item active">
+							<div class="details-item__images">
+								<div class="images-item"><img src="img/upload/cards-image-000.jpg" alt=""><i class="images-icon images-icon_zoom"></i></div>
+								<div class="images-item"><img src="img/upload/cards-image-001.jpg" alt=""><i class="images-icon images-icon_play"></i></div>
+								<div class="images-item"><img src="img/upload/cards-image-002.jpg" alt=""><i class="images-icon images-icon_360"></i></div>
+								<div class="images-item"><img src="img/upload/cards-image-000.jpg" alt=""><i class="images-icon images-icon_zoom"></i></div>
+								<div class="images-item"><img src="img/upload/cards-image-001.jpg" alt=""><i class="images-icon images-icon_zoom"></i></div>
+								<div class="images-item"><img src="img/upload/cards-image-002.jpg" alt=""><i class="images-icon images-icon_zoom"></i></div>
+								<div class="images-item"><img src="img/upload/cards-image-000.jpg" alt=""><i class="images-icon images-icon_zoom"></i></div>
+								<div class="images-item"><img src="img/upload/cards-image-001.jpg" alt=""><i class="images-icon images-icon_zoom"></i></div>
+								<div class="images-item"><img src="img/upload/cards-image-002.jpg" alt=""><i class="images-icon images-icon_zoom"></i></div>
+								<div class="images-item"><img src="img/upload/cards-image-000.jpg" alt=""><i class="images-icon images-icon_zoom"></i></div>
+								<div class="images-item images-item_more">
+									<img src="img/global/cards-image-bg.png" alt="">
+									<div class="catalog-item_more">
+										<div class="catalog-item__inner">
+											<div class="catalog-load">
+												<div class="icon"></div>
+												<div class="title">Показать еще</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="details-item__text">
+								<p>Alex Fitness Кудрово в Instagram : <a href="#">alexfitnesskudrovo</a></p>
+							</div>
+
+							<div class="details-item__slider">
+								<ul class="slides">
+									<li class="details-slider__item">
+										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+										<div class="details-slider__footer">
+											<span class="link link_date">31 мая</span>
+											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+										</div>
+									</li>
+									<li class="details-slider__item">
+										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+										<div class="details-slider__footer">
+											<span class="link link_date">31 мая</span>
+											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+										</div>
+									</li>
+									<li class="details-slider__item">
+										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+										<div class="details-slider__footer">
+											<span class="link link_date">31 мая</span>
+											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+										</div>
+									</li>
+									<li class="details-slider__item">
+										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+										<div class="details-slider__footer">
+											<span class="link link_date">31 мая</span>
+											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+										</div>
+									</li>
+									<li class="details-slider__item">
+										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+										<div class="details-slider__footer">
+											<span class="link link_date">31 мая</span>
+											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+										</div>
+									</li>
+									<li class="details-slider__item">
+										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+										<div class="details-slider__footer">
+											<span class="link link_date">31 мая</span>
+											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+										</div>
+									</li>
+									<li class="details-slider__item">
+										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+										<div class="details-slider__footer">
+											<span class="link link_date">31 мая</span>
+											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+										</div>
+									</li>
+									<li class="details-slider__item">
+										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+										<div class="details-slider__footer">
+											<span class="link link_date">31 мая</span>
+											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+										</div>
+									</li>
+									<li class="details-slider__item">
+										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+										<div class="details-slider__footer">
+											<span class="link link_date">31 мая</span>
+											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+										</div>
+									</li>
+									<li class="details-slider__item">
+										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+										<div class="details-slider__footer">
+											<span class="link link_date">31 мая</span>
+											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+										</div>
+									</li>
+									<li class="details-slider__item">
+										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+										<div class="details-slider__footer">
+											<span class="link link_date">31 мая</span>
+											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+										</div>
+									</li>
+									<li class="details-slider__item">
+										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+										<div class="details-slider__footer">
+											<span class="link link_date">31 мая</span>
+											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+										</div>
+									</li>
+									<li class="details-slider__item">
+										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+										<div class="details-slider__footer">
+											<span class="link link_date">31 мая</span>
+											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="details-item">
+							<div class="details-item__text">
+								<p class="title_main">Описание</p>
+								<p>База отдыха «Надеждино» находится в экологически чистом месте Владимирской области, в окружении нетронутой природы Муромских лесов и водоемов. Все строения базы в 2010 г были капитально отремонтированы, благодаря чему теперь одновременно на базе отдыха может разместиться до 65 гостей. Территория, занимаемая турбазой «Надеждино» равно 6000 кв.м., с выделенными зонами для оздоровительного комплекса и хозяйственных помещений.</p>
+								<hr>
+								<p class="title_main">Размещение</p>
+								<p>Гостям турбазы «Надеждино» предлагается проживание в любом из 19 номеров:</p>
+								<p>На первом этаже расположено 5 номеров с удобствами в номере.</p>
+								<p>На 2м этаже расположено 14 номеров с удобствами на этаже: две комнаты с душевыми кабинами, раковинами и туалетом и отдельный су для мужчин, есть дополнительные туалеты.</p>
+								<p>Желающим поселиться в отдельном домике предлагаем рассмотреть вариант размещения в апартаментах, которые располагаются на 2-ом этаже в отдельно стоящем здании в непосредственной близости от основного строения базы. На первом и -1 этажах расположены бильярд и сауна. Вход в апартаменты отдельный.Общая площадь апартаментов составляет 47 кв.м. и состоит из двух спален, большой гостиной и ванной комнаты. Максимальная вместимость 6 человек.</p>
+								<p>А также предлагаем размещение в 3-х коттеджах для пяти групп гостей в деревне Мокеевка. Коттеджи  находятся в 15 мин. езды на машине от основного здания базы отдыха. При желании Вы сможете приехать к нам на базу и воспользоваться всеми развлекательными услугами.</p>
+								<hr>
+								<p class="title_main">Сервис и развлечения</p>
+								<p>Основное здание базы отдыха является двухэтажным деревянным строением на охраняемой закрытой территории. На территории базы отдыха Надеждино есть
+									бесплатная автомобильная парковка, волейбольная/бадминтонная площадки, площадка для отдыха, зона барбекю, 2 детские площадки. В летний период в аренду
+									предоставляются велосипеды напрокат. В зимнее время предлагаем в аренду: беговые лыжи, тюбинги, ледянки, снегоходы. На базе отдыха имеется специальное
+									оборудование для подготовки трасс для беговых лыж.</p>
+								<p>База отдыха имеет свое домашнее хозяйство, которое позволяет обеспечить отдыхающих натуральным питанием: козье и коровье молоко, производные молочные
+									продукты, яйца, парное мясо, свежие овощи и зелень, лесные ягоды (земляника, черника, малина, брусника) и грибы (лисички, подосиновики, подберезовики,
+									маслята, белые), садовые фрукты.
+								</p>
+								<p>Гости могут посидеть под тенью деревьев, наслаждаясь пеньем птиц, и забыть о городской суете.</p>
+								<p>В праздничные заезды устраивается развлекательная программа и дискотеки.  Есть сауна, бильярд (русский и американский), караоке, настольный теннис.</p>
+								<p>Красивая природа, прозрачные водоемы и тишина леса доставят настоящее удовольствие всем ценителям природы среднерусской полосы. В лесах вокруг базы
+									можно найти множество грибов и ягод, также можно встретить зайцев, ежиков и белок. Всего в пяти минутах пешей прогулки течет р.Тетрух, в которой можно
+									искупаться жарким летом и удить рыбу в любое время.</p>
+								<hr></hr>
+								<p class="title_main">Питание</p>
+								<p>Полный пансион.</p>
+								<p><span class="title">Период работы : </span> круглогодично</p>
+							</div>
+						</div>
+						<div class="details-item">
+
+							<div class="title_main">Стоимость услуг</div>
+
+							<table class="table table_option">
+								<thead>
+								<tr>
+									<th>Абонемент</th>
+									<th>Стоимость</th>
+									<th>Услуги</th>
+									<th>Условия</th>
+									<th>&nbsp;</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr class="divider">
+									<td colspan="5"><hr></td>
+								</tr>
+								<tr>
+									<td>1 месяц</td>
+									<td class="price">5 000 руб.</td>
+									<td>Тренажерный зал+Аква+Фитнес</td>
+									<td>Время посещения пн-пт 7:00-23:59<br>и сб-вс 9:00-21:59</td>
+									<td><a href="#" class="btn btn_brdr">Купить</a></td>
+								</tr>
+								<tr class="divider">
+									<td colspan="5"><hr></td>
+								</tr>
+								<tr>
+									<td>6 месяцев</td>
+									<td class="price">11 850 руб.</td>
+									<td>Тренажерный зал+Аква+Фитнес</td>
+									<td>Время посещения пн-пт 7:00-23:59<br>и сб-вс 9:00-21:59</td>
+									<td><a href="#" class="btn btn_brdr">Купить</a></td>
+								</tr>
+								<tr class="divider">
+									<td colspan="5"><hr></td>
+								</tr>
+								<tr>
+									<td>12 месяцев</td>
+									<td class="price">13 900 руб.</td>
+									<td>Тренажерный зал+Аква+Фитнес<br>+ 90 дней заморозки</td>
+									<td>Время посещения пн-пт 7:00-23:59<br>и сб-вс 9:00-21:59. Успей купить выгодно!<br>Только до 31.05.2015 ! Всего 5 карт!</td>
+									<td><a href="#" class="btn btn_brdr">Купить</a></td>
+								</tr>
+								<tr class="divider">
+									<td colspan="5"><hr></td>
+								</tr>
+								<tr>
+									<td>12 месяцев</td>
+									<td class="price">19 080 руб.</td>
+									<td>Тренажерный зал+Аква+Фитнес</td>
+									<td>Время посещения пн-пт 6:30:-23:59<br>и сб-вс 9:00-21:59. Всего 2 карты</td>
+									<td><a href="#" class="btn btn_brdr">Купить</a></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="details-item">
+							<table class="table table_str">
+								<tbody>
+								<tr>
+									<td colspan="2" class="title_main">Спортивная инфраструктура</td>
+								</tr>
+								<tr>
+									<td><i class="icon icon_str icon_sp"></i>Бассейн</td>
+									<td><i class="icon icon_str icon_sp"></i>Бассейн</td>
+									<td><i class="icon icon_str icon_sp"></i>Бассейн</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td><i class="icon icon_str icon_bx"></i>Посещение зоны бокса</td>
+									<td><i class="icon icon_str icon_bx"></i>Посещение зоны бокса</td>
+									<td><i class="icon icon_str icon_bx"></i>Посещение зоны бокса</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td><i class="icon icon_str icon_at"></i>Зона аэробных тренировок</td>
+									<td><i class="icon icon_str icon_at"></i>Зона аэробных тренировок</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr class="divider">
+									<td colspan="4"><hr></td>
+								</tr>
+								<tr>
+									<td colspan="2" class="title_main">Комфортабельная инфраструктура</td>
+								</tr>
+								<tr>
+									<td><i class="icon icon_str icon_dr"></i>Раздевалки с душевыми</td>
+									<td><i class="icon icon_str icon_dr"></i>Раздевалки с душевыми</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td><i class="icon icon_str icon_dw"></i>Питьевая вода</td>
+									<td><i class="icon icon_str icon_dw"></i>Питьевая вода</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td><i class="icon icon_str icon_sa"></i>Сауна</td>
+									<td><i class="icon icon_str icon_sa"></i>Сауна</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr class="divider">
+									<td colspan="4"><hr></td>
+								</tr>
+								<tr>
+									<td colspan="2" class="title_main">Тренажеры</td>
+								</tr>
+								<tr>
+									<td><i class="icon icon_str icon_tm"></i>Беговые дорожки</td>
+									<td><i class="icon icon_str icon_tm"></i>Беговые дорожки</td>
+									<td><i class="icon icon_str icon_tm"></i>Беговые дорожки</td>
+									<td><i class="icon icon_str icon_tm"></i>Беговые дорожки</td>
+								</tr>
+								<tr>
+									<td><i class="icon icon_str icon_sp"></i>Уголок для пресса</td>
+									<td><i class="icon icon_str icon_sp"></i>Уголок для пресса</td>
+									<td><i class="icon icon_str icon_sp"></i>Уголок для пресса</td>
+									<td><i class="icon icon_str icon_sp"></i>Уголок для пресса</td>
+								</tr>
+								<tr>
+									<td><i class="icon icon_str icon_cl"></i>Cycle</td>
+									<td><i class="icon icon_str icon_cl"></i>Cycle</td>
+									<td><i class="icon icon_str icon_cl"></i>Cycle</td>
+									<td>&nbsp;</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="details-item">
+
+							<div class="title_main">Секции</div>
+
+							<table class="table table_option">
+								<thead>
+								<tr>
+									<th>Название</th>
+									<th>Абонемент</th>
+									<th>Стоимость</th>
+									<th>Условия</th>
+									<th>&nbsp;</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr class="divider">
+									<td colspan="5"><hr></td>
+								</tr>
+								<tr>
+									<td>Группа по каратэ</td>
+									<td>1 месяц</td>
+									<td class="price">5 000 руб.</td>
+									<td>Время посещения пн 9:00-10:30<br>и сб 9:00-10:30</td>
+									<td><a href="#" class="btn btn_brdr">Подробнее</a></td>
+								</tr>
+								<tr class="divider">
+									<td colspan="5"><hr></td>
+								</tr>
+								<tr>
+									<td>Хоккей</td>
+									<td>1 занятие</td>
+									<td class="price">600 руб.</td>
+									<td>Занятия проходят по понедельникам<br>и четвергам с 11:00 до 12:30</td>
+									<td><a href="#" class="btn btn_brdr">Подробнее</a></td>
+								</tr>
+								<tr class="divider">
+									<td colspan="5"><hr></td>
+								</tr>
+								<tr>
+									<td>Аэробика в бассейне</td>
+									<td>6 месяцев</td>
+									<td class="price">13 900 руб.</td>
+									<td>Время посещения пн-пт 7:00-23:59<br>и сб-вс 9:00-21:59. Успей купить выгодно!<br>Только до 31.05.2015 ! Всего 5 карт!</td>
+									<td><a href="#" class="btn btn_brdr">Подробнее</a></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="details-item">
+
+							<div class="title_main">Площадки</div>
+
+							<table class="table table_option">
+								<thead>
+								<tr>
+									<th>Название</th>
+									<th>Время</th>
+									<th>Стоимость</th>
+									<th>Условия</th>
+									<th>&nbsp;</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr class="divider">
+									<td colspan="5"><hr></td>
+								</tr>
+								<tr>
+									<td>Футбольное поле</td>
+									<td>от 1 час</td>
+									<td class="price">от 600 руб.</td>
+									<td>Время посещения пн 9:00-10:30<br>и сб 9:00-10:30</td>
+									<td><a href="#" class="btn btn_brdr">Подробнее</a></td>
+								</tr>
+								<tr class="divider">
+									<td colspan="5"><hr></td>
+								</tr>
+								<tr>
+									<td>Хоккейная площадка</td>
+									<td>от 40 мин.</td>
+									<td class="price">от 1 500 руб.</td>
+									<td>Занятия проходят по понедельникам<br>и четвергам с 11:00 до 12:30</td>
+									<td><a href="#" class="btn btn_brdr">Подробнее</a></td>
+								</tr>
+								<tr class="divider">
+									<td colspan="5"><hr></td>
+								</tr>
+								<tr>
+									<td>Скалодром</td>
+									<td>от 1 час</td>
+									<td class="price">от 1 925 руб.</td>
+									<td>Время посещения пн-пт 7:00-23:59<br>и сб-вс 9:00-21:59. Успей купить выгодно!<br>Только до 31.05.2015 ! Всего 5 карт!</td>
+									<td><a href="#" class="btn btn_brdr">Подробнее</a></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="details-item">
+							<div class="title_main">Тренеры</div>
+							<div class="cards">
+
+								<div class="cards-item">
+									<div class="cards-item__inner">
+										<div class="cards-img"><img src="img/upload/cards-coach-list-1.jpg" alt=""></div>
+										<div class="cards-text">
+											<div class="centered">
+												<div class="cards-name"><a href="#">Виталий Кожевников</a></div>
+												<div class="cards-descr">Персональный тренер</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="cards-item">
+									<div class="cards-item__inner">
+										<div class="cards-img"><img src="img/upload/cards-coach-list-2.jpg" alt=""></div>
+										<div class="cards-text">
+											<div class="centered">
+												<div class="cards-name"><a href="#">Валерия Добровольская</a></div>
+												<div class="cards-descr">Инструктор групповых программ</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="cards-item">
+									<div class="cards-item__inner">
+										<div class="cards-img"><img src="img/upload/cards-coach-list-3.jpg" alt=""></div>
+										<div class="cards-text">
+											<div class="centered">
+												<div class="cards-name"><a href="#">Аркимедес Аргуэльс Родригес</a></div>
+												<div class="cards-descr">Инструктор групповых программ</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="cards-item">
+									<div class="cards-item__inner">
+										<div class="cards-img"><img src="img/upload/cards-coach-list-4.jpg" alt=""></div>
+										<div class="cards-text">
+											<div class="centered">
+												<div class="cards-name"><a href="#">Валерия Добровольская</a></div>
+												<div class="cards-descr">Инструктор групповых программ</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="cards-item">
+									<div class="cards-item__inner">
+										<div class="cards-img"><img src="img/upload/cards-coach-list-2.jpg" alt=""></div>
+										<div class="cards-text">
+											<div class="centered">
+												<div class="cards-name"><a href="#">Валерия Добровольская</a></div>
+												<div class="cards-descr">Инструктор групповых программ</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="cards-item">
+									<div class="cards-item__inner">
+										<div class="cards-img"><img src="img/upload/cards-coach-list-3.jpg" alt=""></div>
+										<div class="cards-text">
+											<div class="centered">
+												<div class="cards-name"><a href="#">Аркимедес Аргуэльс Родригес</a></div>
+												<div class="cards-descr">Инструктор групповых программ</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="cards-item">
+									<div class="cards-item__inner">
+										<div class="cards-img"><img src="img/upload/cards-coach-list-4.jpg" alt=""></div>
+										<div class="cards-text">
+											<div class="centered">
+												<div class="cards-name"><a href="#">Валерия Добровольская</a></div>
+												<div class="cards-descr">Инструктор групповых программ</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="cards-item">
+									<div class="cards-item__inner">
+										<div class="cards-img"><img src="img/upload/cards-coach-list-1.jpg" alt=""></div>
+										<div class="cards-text">
+											<div class="centered">
+												<div class="cards-name"><a href="#">Виталий Кожевников</a></div>
+												<div class="cards-descr">Персональный тренер</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="cards-item">
+									<div class="cards-item__inner">
+										<div class="cards-img"><img src="img/upload/cards-coach-list-2.jpg" alt=""></div>
+										<div class="cards-text">
+											<div class="centered">
+												<div class="cards-name"><a href="#">Валерия Добровольская</a></div>
+												<div class="cards-descr">Инструктор групповых программ</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="cards-item">
+									<div class="cards-item__inner">
+										<div class="cards-img"><img src="img/upload/cards-coach-list-3.jpg" alt=""></div>
+										<div class="cards-text">
+											<div class="centered">
+												<div class="cards-name"><a href="#">Аркимедес Аргуэльс Родригес</a></div>
+												<div class="cards-descr">Инструктор групповых программ</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="details-item">
+							Новости
+						</div>
+						<div class="details-item">
+							<div class="">
+								<table class="table table_list">
+									<tbody>
+									<tr>
+										<td colspan="2" class="title_main">Адрес</td>
+									</tr>
+									<tr>
+										<td class="title">Район :</td>
+										<td>Невский</td>
+									</tr>
+									<tr>
+										<td class="title">Адрес :</td>
+										<td>Ул. Ивантеевская д. 13 корп.1</td>
+									</tr>
+									<tr>
+										<td class="title">Метро :</td>
+										<td>
+											<ul class="region">
+												<li><span class="region__name"><i class="list-marker" style="background-color: #ff0000;"></i> Бульвар Рокоссовского</span> <span class="region__dim">1,3 км</span></li>
+											</ul>
+										</td>
+									</tr>
+									<tr class="divider">
+										<td colspan="2"><hr></td>
+									</tr>
+									<tr>
+										<td colspan="2" class="title_main">Как добраться</td>
+									</tr>
+									<tr>
+										<td class="title">Автобус :</td>
+										<td>12 , 360 , 190 , 223</td>
+									</tr>
+									<tr>
+										<td class="title">Маршрутка :</td>
+										<td>12 , 360 , 190 , 223</td>
+									</tr>
+									<tr>
+										<td class="title">Трамвай :</td>
+										<td>12 , 360 , 190 , 223</td>
+									</tr>
+									<tr>
+										<td class="title">Троллейбус : </td>
+										<td>12 , 360 , 190 , 223</td>
+									</tr>
+									<tr class="divider">
+										<td colspan="2"><hr></td>
+									</tr>
+									<tr>
+										<td colspan="2" class="title_main">Часы работы</td>
+									</tr>
+									<tr>
+										<td class="title">ежедневно:</td>
+										<td> 8:00 - 23:30</td>
+									</tr>
+									<tr class="divider">
+										<td colspan="2"><hr></td>
+									</tr>
+									<tr class="title">
+										<td colspan="2" class="title_main">Контакты</td>
+									</tr>
+									<tr>
+										<td class="title">Телефон :</td>
+										<td>+7 (812) 777-09-09<br>+7 (981) 718-73-31</td>
+									</tr>
+									<tr>
+										<td class="title">Факс :</td>
+										<td>+7 (981) 718-73-31</td>
+									</tr>
+									<tr>
+										<td class="title">E-mail :</td>
+										<td>alexfitnes@club.ru</td>
+									</tr>
+									</tbody>
+								</table>
+								<div class="details-item__map" id="map-546456">
+									<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=DHLKgbxA6OJKLTcndp0MsmaQ8bbGqepC&id=map-546456"></script>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="comments">
+					<div class="comments-menu">
+						<div class="comments-menu__item active">Отзывы (24)</div>
+						<div class="comments-menu__item">Обсуждения (101)</div>
+					</div>
+					<div class="comments-tab">
+						<div class="comments-tab__item active">
+							<div class="feedback">
+								<div class="feedback-sort">
+									<div class="feedback-sort__cat">
+										<span class="title">Сортировать по:</span>
+										<span class="btn btn_brdr btn_sort active">дате</span>
+										<span class="btn btn_brdr btn_sort">оценке отзыва</span>
+									</div>
+									<div class="feedback-sort__cat">
+										<span class="title">Отзыв с оценкой:</span>
+										<div class="btn btn_brdr btn_rate"><span class="rate-stars rate-stars_1"></span> <i class="rate-val">1 оценка</i></div>
+										<div class="btn btn_brdr btn_rate"><span class="rate-stars rate-stars_2"></span> <i class="rate-val">0 оценок</i></div>
+										<div class="btn btn_brdr btn_rate"><span class="rate-stars rate-stars_3"></span> <i class="rate-val">1 оценка</i></div>
+										<div class="btn btn_brdr btn_rate"><span class="rate-stars rate-stars_4"></span> <i class="rate-val">0 оценок</i></div>
+										<div class="btn btn_brdr btn_rate"><span class="rate-stars rate-stars_5"></span> <i class="rate-val">0 оценок</i></div>
+									</div>
+								</div>
+
+								<div class="feedback-leave">
+									<span class="btn btn_brdr js-leave-feedback">Написать отзыв об Alex Fitness Кудрово</span>
+								</div>
+								<div class="feedback-item feedback-item_send">
+									<span class="feedback-item__close js-leave-feedback-send-close"></span>
+									<div class="title">Мой отзыв о клубе <span>Alex Fitness Кудрово</span></div>
+									<hr>
+									<div class="feedback-field">
+										<div class="feedback-field__label">Оценка:</div>
+										<div class="feedback-field__input">
+											<div class="feedback-field__input-rate feedback-field__input-rate_main">
+												<input class="star-5" id="setRate1-5" type="radio" name="setRate1" data-rate-name="спортзал" data-rate-status="отличный"/><label for="setRate1-5"></label>
+												<input class="star-4" id="setRate1-4" type="radio" name="setRate1" data-rate-name="спортзал" data-rate-status="хороший"/><label for="setRate1-4"></label>
+												<input class="star-3" id="setRate1-3" type="radio" name="setRate1" data-rate-name="спортзал" data-rate-status="обычный" checked/><label for="setRate1-3"></label>
+												<input class="star-2" id="setRate1-2" type="radio" name="setRate1" data-rate-name="спортзал" data-rate-status="плохой"/><label for="setRate1-2"></label>
+												<input class="star-1" id="setRate1-1" type="radio" name="setRate1" data-rate-name="спортзал" data-rate-status="ужасный"/><label for="setRate1-1"></label>
+											</div>
+											<span class="feedback-field__input-rate-status"></span>
+										</div>
+									</div>
+									<div class="feedback-field">
+										<div class="feedback-field__label">Персонал:</div>
+										<div class="feedback-field__input">
+											<div class="feedback-field__input-rate">
+												<input class="star-5" id="setRate2-5" type="radio" data-rate-name="персонал" data-rate-status="отличный" name="setRate2"/><label for="setRate2-5"></label>
+												<input class="star-4" id="setRate2-4" type="radio" data-rate-name="персонал" data-rate-status="хороший" name="setRate2"/><label for="setRate2-4"></label>
+												<input class="star-3" id="setRate2-3" type="radio" data-rate-name="персонал" data-rate-status="обычный" name="setRate2" checked/><label for="setRate2-3"></label>
+												<input class="star-2" id="setRate2-2" type="radio" data-rate-name="персонал" data-rate-status="плохой" name="setRate2"/><label for="setRate2-2"></label>
+												<input class="star-1" id="setRate2-1" type="radio" data-rate-name="персонал" data-rate-status="ужасный" name="setRate2"/><label for="setRate2-1"></label>
+											</div>
+											<span class="feedback-field__input-rate-status"></span>
+										</div>
+									</div>
+									<div class="feedback-field">
+										<div class="feedback-field__label">Инфраструктура:</div>
+										<div class="feedback-field__input">
+											<div class="feedback-field__input-rate">
+												<input class="star-5" id="setRate3-5" type="radio" data-rate-name="инфраструктура" data-rate-status="отличная" name="setRate3"/><label for="setRate3-5"></label>
+												<input class="star-4" id="setRate3-4" type="radio" data-rate-name="инфраструктура" data-rate-status="хорошая" name="setRate3"/><label for="setRate3-4"></label>
+												<input class="star-3" id="setRate3-3" type="radio" data-rate-name="инфраструктура" data-rate-status="обычная" name="setRate3" checked/><label for="setRate3-3"></label>
+												<input class="star-2" id="setRate3-2" type="radio" data-rate-name="инфраструктура" data-rate-status="плохая" name="setRate3"/><label for="setRate3-2"></label>
+												<input class="star-1" id="setRate3-1" type="radio" data-rate-name="инфраструктура" data-rate-status="ужасная" name="setRate3"/><label for="setRate3-1"></label>
+											</div>
+											<span class="feedback-field__input-rate-status"></span>
+										</div>
+									</div>
+									<div class="feedback-field">
+										<div class="feedback-field__label">Отзыв:</div>
+										<div class="feedback-field__input feedback-field__input_textarea">
+											<textarea></textarea><i class="icon icon_notepad"></i>
+										</div>
+									</div>
+									<hr>
+									<div class="feedback-field">
+										<div class="feedback-field__label">Время посещения:</div>
+										<div class="feedback-field__input">
+											<span class="radio-btns">
+												<label><input type="radio" name="train-duration" checked><span class="btn btn_brdr">менее месяца</span></label>
+												<label><input type="radio" name="train-duration"><span class="btn btn_brdr">несколько месяцев</span></label>
+												<label><input type="radio" name="train-duration"><span class="btn btn_brdr">более года</span></label>
+											</span>
+										</div>
+									</div>
+									<hr>
+									<div class="feedback-submit">
+										<span class="btn btn_brdr">Отправить отзыв</span> <span>Оставляя отзыв вы соглашаетесь с <a href="#">условиями использования</a> портала FitRadar. </span>
+									</div>
+								</div>
+
+								<div class="feedback-item feedback-item_compact">
+									<div class="likes-box">
+										<a href="#" class="likes_btn"></a>
+										<span class="likes_text">5</span>
+										<a href="#" class="dislikes_btn"></a>
+										<span class="dislikes_text">0</span>
+									</div>
+									<div class="feedback__sender">
+										<div class="feedback__sender-left">
+											<div class="feedback__ava"><img src="img/upload/profile-logo-3.jpg" alt=""></div>
+										</div>
+										<div class="feedback__sender-right">
+											<div class="feedback__detail">
+												<div class="feedback__detail-name">Alex Fitness Кудрово </div>
+												<div class="feedback__detail-date">Май 27, 2015</div>
+											</div>
+											<div class="feedback__rate">
+												<span class="rate-stars rate-stars_5"></span>
+												<span>плохой спорт зал</span>
+												<span>Время посещения: менее месяца</span>
+											</div>
+										</div>
+									</div>
+									<div class="feedback__title hide-compact">Отзыв:</div>
+									<div class="feedback__text show-compact">Покрытие конечно не идеальное, это конечно не лужники с подогревом, но твердая 4, снег убирают. Немного огорчило, что слишком рано перешли на летний тариф с 2500 до 4500 в начале апреля. В итоге играли под сильным снегом с дождем за летние. <a href="#" class="js-show-full-feedback">Читать полностью</a></div>
+									<div class="feedback__text hide-compact">Покрытие конечно не идеальное, это конечно не лужники с подогревом, но твердая 4, снег убирают. Немного огорчило, что слишком рано перешли на летний тариф с 2500 до 4500 в начале апреля. В итоге играли под сильным снегом с дождем за летние. Покрытие конечно не идеальное, это конечно не лужники с подогревом, но твердая 4, снег убирают. Немного огорчило, что слишком рано перешли на летний тариф с 2500 до 4500 в начале апреля. В итоге играли под сильным снегом с дождем за летние.</div>
+									<div class="feedback__title hide-compact">Оценка:</div>
+									<div class="feedback__text hide-compact">
+										<div class="review">
+											<div class="review-title">Персонал</div>
+											<div class="review-val">
+												<span class="rate-stars rate-stars_3"></span>
+												<span>обычный персонал</span>
+											</div>
+										</div>
+										<div class="review">
+											<div class="review-title">Инфраструктура</div>
+											<div class="review-val">
+												<span class="rate-stars rate-stars_1"></span>
+												<span>ужасная инфраструктура</span>
+											</div>
+										</div>
+									</div>
+									<div class="feedback-item__send-answer hide-compact">
+										<span class="btn btn_brdr btn_send-answer">ответить</span>
+									</div>
+								</div>
+
+								<div class="feedback-item feedback-item_compact">
+									<div class="likes-box">
+										<a href="#" class="likes_btn"></a>
+										<span class="likes_text">5</span>
+										<a href="#" class="dislikes_btn"></a>
+										<span class="dislikes_text">0</span>
+									</div>
+									<div class="feedback__sender">
+										<div class="feedback__sender-left">
+											<div class="feedback__ava"><img src="img/upload/profile-logo-3.jpg" alt=""></div>
+										</div>
+										<div class="feedback__sender-right">
+											<div class="feedback__detail">
+												<div class="feedback__detail-name">Alex Fitness Кудрово </div>
+												<div class="feedback__detail-date">Май 27, 2015</div>
+											</div>
+											<div class="feedback__rate">
+												<span class="rate-stars rate-stars_5"></span>
+												<span>плохой спорт зал</span>
+												<span>Время посещения: менее месяца</span>
+											</div>
+										</div>
+									</div>
+									<div class="feedback__title hide-compact">Отзыв:</div>
+									<div class="feedback__text show-compact">Покрытие конечно не идеальное, это конечно не лужники с подогревом, но твердая 4, снег убирают. Немного огорчило, что слишком рано перешли на летний тариф с 2500 до 4500 в начале апреля. В итоге играли под сильным снегом с дождем за летние. <a href="#" class="js-show-full-feedback">Читать полностью</a> </div>
+									<div class="feedback__text hide-compact">Покрытие конечно не идеальное, это конечно не лужники с подогревом, но твердая 4, снег убирают. Немного огорчило, что слишком рано перешли на летний тариф с 2500 до 4500 в начале апреля. В итоге играли под сильным снегом с дождем за летние. Немного огорчило, что слишком рано перешли на летний тариф с 2500 до 4500 в начале апреля. В итоге играли под сильным снегом с дождем за летние. </div>
+									<div class="feedback__title hide-compact">Оценка:</div>
+									<div class="feedback__text hide-compact">
+										<div class="review">
+											<div class="review-title">Персонал</div>
+											<div class="review-val">
+												<span class="rate-stars rate-stars_3"></span>
+												<span>обычный персонал</span>
+											</div>
+										</div>
+										<div class="review">
+											<div class="review-title">Инфраструктура</div>
+											<div class="review-val">
+												<span class="rate-stars rate-stars_1"></span>
+												<span>ужасная инфраструктура</span>
+											</div>
+										</div>
+									</div>
+									<div class="feedback-item__answer hide-compact">
+										<div class="feedback__sender">
+											<div class="feedback__sender-left">
+												<div class="feedback__ava"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+											</div>
+											<div class="feedback__sender-right">
+												<div class="feedback__detail">
+													<div class="feedback__detail-name">Alex Fitness Кудрово </div>
+													<div class="feedback__detail-date">Май 27, 2015</div>
+												</div>
+											</div>
+										</div><div class="feedback__title">Ответ:</div>
+										<div class="feedback__text">Покрытие конечно не идеальное, это конечно не лужники с подогревом, но твердая 4, снег убирают. Немного огорчило, что слишком рано перешли на летний тариф с 2500 до 4500 в начале апреля. В итоге играли под сильным снегом с дождем за летние.</div>
+									</div>
+								</div>
+
+
+								<div class="feedback-item feedback-item_more">
+									<div class="feedback-item__inner">
+										<div class="feedback-load">
+											<div class="icon"></div>
+											<div class="title">Показать еще 30</div>
+											<div class="text">Показано 60 отзывов из 1100</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+<style>
+	.reviews .review-item.review-item_send{
+		border-bottom: 1px solid #cfcfcf;
+	}
+	.reviews .review-item .review-box{
+		overflow: hidden;
+		margin: 20px 0;
+	}
+	.reviews .review-item .review-box .review-box{
+		margin-left: 70px;
+	}
+	.reviews .review-item .review-answer .review-box{
+		margin-left: -20px;
+	}
+	.reviews .review-item .review-box .review-box__ava{
+		float: left;
+		margin-left:15px;
+	}
+	.reviews .review-item .review-box .review-box__ava img{
+		display: block;
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;
+	}
+	.reviews .review-item .review-box .review-box__text{
+		margin-left: 90px;
+	}
+	.reviews .review-item .review-box .review-box__text .name{
+		font-size: 18px;
+		color: #3fb4c6;
+		display: inline-block;
+	}
+	.reviews .review-item .review-box .review-box__text .date{
+		font-size: 14px;
+		color: #959595;
+		display: inline-block;
+	}
+	.reviews .review-item .review-box .review-box__text .text{
+		margin: 10px 0;
+		font-size: 15px;
+		color: #4b4b4b;
+	}
+	.reviews .review-item .review-box .review-box__text .link-review-answer{
+		display: inline-block;
+		cursor: pointer;
+		font-size: 14px;
+		color: #959595;
+	}
+	.reviews .review-item .review-box .review-box__text .likes-box{
+		display: inline-block;
+	}
+	.reviews .review-item .review-box .review-box__text .textarea{
+		position: relative;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		margin-bottom: 10px;
+	}
+	.reviews .review-item .review-box .review-box__text .textarea textarea{
+		font-family: 'Segoe UI', sans-serif;
+		font-weight: 300;
+		font-size: 15px;
+		border: 1px solid #cfcfcf;
+		color: #959595;
+		width: 100%;
+		padding: 5px 40px 5px 10px;
+		resize: vertical;
+		min-height: 100px;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+	.reviews .review-item .review-box .review-box__text .textarea .icon_notepad{
+		position: absolute;
+		top: 0;
+		right: 30px;
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+		background: url("img/icons/icon-notepad-d.svg") no-repeat 50% 50%;
+	}
+	.reviews .review-item .review-box .review-box__text .textarea .icon_notepad:hover{
+		background-image: url("img/icons/icon-notepad-c.svg");
+	}
+	.reviews .review-item .review-box .review-box__text .textarea .icon_clear{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+		background: url("img/icons/icon-input_clear.svg") no-repeat 50% 50%;
+	}
+	.reviews .review-item .review-box .review-box__text .textarea .icon_clear:hover{
+		background-image: url("img/icons/icon-input_clear-c.svg");
+	}
+	.reviews .review-item .review-box .review-box__text .send{
+		text-align: right;
+		width: 100%;
+	}
+	.reviews .review-item .review-box .review-box__text .send .btn{
+		background-color: #3fb4c6;
+		border-color: #3fb4c6;
+		color: #fff;
+	}
+	.reviews .review-item .review-box .review-answer{
+		margin: 10px 0;
+		display: none;
+	}
+	.reviews .review-item .review-answers-wrap{
+		font-size: 18px;
+		color: #3fb4c6;
+		padding: 15px 10px 5px;
+		cursor: pointer;
+	}
+	.reviews .review-item .review-answers-wrap .on_switch span:after{
+		content: '';
+		display: inline-block;
+		margin-left: 10px;
+		vertical-align: middle;
+		width: 10px;
+		height: 5px;
+		background: url("img/global/arrow-down-c.svg") no-repeat 50% 50%;
+	}
+	.reviews .review-item .review-answers-wrap.opened .on_switch span:after{
+		background-image: url("img/global/arrow-up-c.svg");
+	}
+	.reviews .review-item .review-answers-wrap.closed .review-box,
+	.reviews .review-item .review-answers-wrap.opened .on_closed,
+	.reviews .review-item .review-answers-wrap.closed .on_opened {
+		display: none;
+	}
+	.reviews .review-item .review-answers-wrap.opened .review-box{
+		display: block;
+	}
+
+
+</style>
+
+
+						<div class="comments-tab__item">
+							<div class="reviews">
+								<div class="review-item review-item_send">
+									<div class="review-box">
+										<div class="review-box__ava">
+											<img src="img/upload/profile-logo-1.jpg" alt="">
+										</div>
+										<div class="review-box__text">
+											<div class="textarea">
+												<textarea></textarea><i class="icon icon_notepad"></i><i class="icon icon_clear"></i>
+											</div>
+											<div class="send"><a href="#" class="btn btn_brdr">Оставить комментарий</a> </div>
+										</div>
+									</div>
+								</div>
+								<div class="review-item">
+<!--первый уровень вложенности-->
+									<div class="review-box">
+										<div class="review-box__ava">
+											<img src="img/upload/profile-logo-1.jpg" alt="">
+										</div>
+										<div class="review-box__text">
+											<div>
+												<div class="name">Глеб Иванов</div>
+												<div class="date">, Май 27, 2015</div>
+											</div>
+											<div class="text">Покрытие конечно не идеальное, это конечно не лужники с подогревом, но твердая 4, снег убирают. Немного огорчило, что слишком рано перешли на летний тариф с 2500 до 4500 в начале апреля. В итоге играли под сильным снегом с дождем.</div>
+											<div>
+												<span class="link-review-answer">Ответить</span>
+												<div class="likes-box">
+													<a href="#" class="likes_btn"></a>
+													<span class="likes_text">5</span>
+													<a href="#" class="dislikes_btn"></a>
+													<span class="dislikes_text">0</span>
+												</div>
+											</div>
+											<div class="review-answer">
+												<div class="review-box">
+													<div class="review-box__ava">
+														<img src="img/upload/profile-logo-1.jpg" alt="">
+													</div>
+													<div class="review-box__text">
+														<div class="textarea">
+															<textarea></textarea><i class="icon icon_notepad"></i><i class="icon icon_clear"></i>
+														</div>
+														<div class="send"><a href="#" class="btn btn_brdr">Оставить комментарий</a> </div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="review-answers-wrap closed">
+											<div class="on_switch on_closed"><span>Посмотреть ответы (2)</span></div>
+											<div class="on_switch on_opened"><span>Скрыть ответы</span></div>
+<!--второй уровень вложенности-->
+											<div class="review-box">
+												<div class="review-box__ava">
+													<img src="img/upload/profile-logo-1.jpg" alt="">
+												</div>
+												<div class="review-box__text">
+													<div>
+														<div class="name">Глеб Иванов</div>
+														<div class="date">, Май 27, 2015</div>
+													</div>
+													<div class="text">Покрытие конечно не идеальное, это конечно не лужники с подогревом, но твердая 4, снег убирают. Немного огорчило, что слишком рано перешли на летний тариф с 2500 до 4500 в начале апреля. В итоге играли под сильным снегом с дождем.</div>
+													<div>
+														<span class="link-review-answer">Ответить</span>
+														<div class="likes-box">
+															<a href="#" class="likes_btn"></a>
+															<span class="likes_text">5</span>
+															<a href="#" class="dislikes_btn"></a>
+															<span class="dislikes_text">0</span>
+														</div>
+													</div>
+													<div class="review-answer">
+														<div class="review-box">
+															<div class="review-box__ava">
+																<img src="img/upload/profile-logo-1.jpg" alt="">
+															</div>
+															<div class="review-box__text">
+																<div class="textarea">
+																	<textarea></textarea><i class="icon icon_notepad"></i><i class="icon icon_clear"></i>
+																</div>
+																<div class="send"><a href="#" class="btn btn_brdr">Оставить комментарий</a> </div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+	<!--второй уровень вложенности-->
+											<div class="review-box">
+												<div class="review-box__ava">
+													<img src="img/upload/profile-logo-1.jpg" alt="">
+												</div>
+												<div class="review-box__text">
+													<div>
+														<div class="name">Глеб Иванов</div>
+														<div class="date">, Май 27, 2015</div>
+													</div>
+													<div class="text">Покрытие конечно не идеальное, это конечно не лужники с подогревом, но твердая 4, снег убирают. Немного огорчило, что слишком рано перешли на летний тариф с 2500 до 4500 в начале апреля. В итоге играли под сильным снегом с дождем.</div>
+													<div>
+														<span class="link-review-answer">Ответить</span>
+														<div class="likes-box">
+															<a href="#" class="likes_btn"></a>
+															<span class="likes_text">5</span>
+															<a href="#" class="dislikes_btn"></a>
+															<span class="dislikes_text">0</span>
+														</div>
+													</div>
+													<div class="review-answer">
+														<div class="review-box">
+															<div class="review-box__ava">
+																<img src="img/upload/profile-logo-1.jpg" alt="">
+															</div>
+															<div class="review-box__text">
+																<div class="textarea">
+																	<textarea></textarea><i class="icon icon_notepad"></i><i class="icon icon_clear"></i>
+																</div>
+																<div class="send"><a href="#" class="btn btn_brdr">Оставить комментарий</a> </div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+<!--первый уровень вложенности-->
+									<div class="review-box">
+										<div class="review-box__ava">
+											<img src="img/upload/profile-logo-1.jpg" alt="">
+										</div>
+										<div class="review-box__text">
+											<div>
+												<div class="name">Глеб Иванов</div>
+												<div class="date">, Май 27, 2015</div>
+											</div>
+											<div class="text">Покрытие конечно не идеальное, это конечно не лужники с подогревом, но твердая 4, снег убирают. Немного огорчило, что слишком рано перешли на летний тариф с 2500 до 4500 в начале апреля. В итоге играли под сильным снегом с дождем.</div>
+											<div>
+												<span class="link-review-answer">Ответить</span>
+												<div class="likes-box">
+													<a href="#" class="likes_btn"></a>
+													<span class="likes_text">5</span>
+													<a href="#" class="dislikes_btn"></a>
+													<span class="dislikes_text">0</span>
+												</div>
+											</div>
+											<div class="review-answer">
+												<div class="review-box">
+													<div class="review-box__ava">
+														<img src="img/upload/profile-logo-1.jpg" alt="">
+													</div>
+													<div class="review-box__text">
+														<div class="textarea">
+															<textarea></textarea><i class="icon icon_notepad"></i><i class="icon icon_clear"></i>
+														</div>
+														<div class="send"><a href="#" class="btn btn_brdr">Оставить комментарий</a> </div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+<!--второй уровень вложенности-->
+										<div class="review-box">
+											<div class="review-box__ava">
+												<img src="img/upload/profile-logo-1.jpg" alt="">
+											</div>
+											<div class="review-box__text">
+												<div>
+													<div class="name">Глеб Иванов</div>
+													<div class="date">, Май 27, 2015</div>
+												</div>
+												<div class="text">Покрытие конечно не идеальное, это конечно не лужники с подогревом, но твердая 4, снег убирают. Немного огорчило, что слишком рано перешли на летний тариф с 2500 до 4500 в начале апреля. В итоге играли под сильным снегом с дождем.</div>
+												<div>
+													<span class="link-review-answer">Ответить</span>
+													<div class="likes-box">
+														<a href="#" class="likes_btn"></a>
+														<span class="likes_text">5</span>
+														<a href="#" class="dislikes_btn"></a>
+														<span class="dislikes_text">0</span>
+													</div>
+												</div>
+												<div class="review-answer">
+													<div class="review-box">
+														<div class="review-box__ava">
+															<img src="img/upload/profile-logo-1.jpg" alt="">
+														</div>
+														<div class="review-box__text">
+															<div class="textarea">
+																<textarea></textarea><i class="icon icon_notepad"></i><i class="icon icon_clear"></i>
+															</div>
+															<div class="send"><a href="#" class="btn btn_brdr">Оставить комментарий</a> </div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="footer">
+		<div class="inner clearfix">
+			<div class="footer__nav">
+				<ul class="footer__nav-list">
+					<li class="footer__nav-item footer__nav-item_ttl"><a class="footer__nav-link" href="#">КАТАЛОГ</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Тренера</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Спорт клубы</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Секции</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Площадки</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Магазины</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Детский спорт</a></li>
+				</ul>
+				<ul class="footer__nav-list">
+					<li class="footer__nav-item footer__nav-item_ttl"><a class="footer__nav-link" href="#">ПОЛЕЗНОЕ</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Главная</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Соревнования</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Статьи</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Калькулятор калорий</a></li>
+				</ul>
+				<ul class="footer__nav-list">
+					<li class="footer__nav-item footer__nav-item_ttl"><a class="footer__nav-link" href="#">ОБЩЕЕ</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">О проекте</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Обратная связь</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Сообщить об ошибке</a></li>
+				</ul>
+				<ul class="footer__nav-list">
+					<li class="footer__nav-item footer__nav-item_ttl"><a class="footer__nav-link" href="#">ПОМОЩЬ</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Как пользоваться сайтом</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Как стать участником</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Раздел</a></li>
+				</ul>
+			</div>
+			<div class="footer__os">
+				<div class="footer__app"><img src="img/app-cap.png" alt=""></div>
+				<div class="footer__soc">
+					<ul class="footer__soc-list">
+						<li class="footer__soc-item"><a class="footer__soc-link footer__soc-link_vk" href="#"></a></li>
+						<li class="footer__soc-item"><a class="footer__soc-link footer__soc-link_fb" href="#"></a></li>
+						<li class="footer__soc-item"><a class="footer__soc-link footer__soc-link_ok" href="#"></a></li>
+						<li class="footer__soc-item"><a class="footer__soc-link footer__soc-link_yt" href="#"></a></li>
+						<li class="footer__soc-item"><a class="footer__soc-link footer__soc-link_tw" href="#"></a></li>
+						<li class="footer__soc-item"><a class="footer__soc-link footer__soc-link_ig" href="#"></a></li>
+						<li class="footer__soc-item"><a class="footer__soc-link footer__soc-link_gp" href="#"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer__copyright">При цитировании информации ссылка на сайт с указанием адреса сайта обязательна. Полное заимствование документов является нарушением российского и<br>международного законодательства и возможно только с согласия руководства FitRadar.</div>
+		<div class="inner inner_bottom clearfix">
+			<div class="footer__bottom-left">
+				<div class="footer__pay">
+					<ul class="footer__pay-list">
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/qiwi.png" alt=""></a></li>
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/robokassa.png" alt=""></a></li>
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/yandex.png" alt=""></a></li>
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/visa.png" alt=""></a></li>
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/mastercard.png" alt=""></a></li>
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/sberbank.png" alt=""></a></li>
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/elexnet.png" alt=""></a></li>
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/webmoney.png" alt=""></a></li>
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/mts.png" alt=""></a></li>
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/tele2.png" alt=""></a></li>
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/megafon.png" alt=""></a></li>
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/beeline.png" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="footer__info">
+					<span class="footer__info-item footer__info-item_copy">&copy; 2015 «fitradar»</span>
+					<span class="footer__info-item footer__info-item_age">16+</span>
+					<a class="footer__info-item footer__info-item_rules" href="#">Условия использования ресурса</a>
+					<a class="footer__info-item footer__info-item_conf" href="#">Политика конфидециальности</a>
+				</div>
+			</div>
+			<div class="footer__developer">
+				<span class="footer__developer-name">Разработка сайта</span>
+				<a class="footer__developer-logo" href="#"><img src="img/global/developer.png" alt=""></a>
+			</div>
+		</div>
+	</footer>
+
+</div>
+
+</body>
+</html>
