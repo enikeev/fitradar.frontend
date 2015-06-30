@@ -304,16 +304,28 @@
 	opacity:.5;
 	margin-top:-2px;
 	right:9px;
+
+	-webkit-transition:  all 0.2s ease-in-out;
+	-moz-transition:  all 0.2s ease-in-out;
+	-o-transition:  all 0.2s ease-in-out;
+	-ms-transition:  all 0.2s ease-in-out;
+	transition:  all 0.2s ease-in-out;
 }
 .section_search__tabs-field__item_select:hover:after{
 	background:url("../img/global/arrow-down-c.svg") no-repeat 0 0;
 	opacity: 1;
 }
 .section_search__tabs-field__item_select.active:after{
-	background:url("../img/global/arrow-up-b.svg") no-repeat 0 0;
+	background:url("../img/global/arrow-down-b.svg") no-repeat 0 0;
+
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	transform:rotate(180deg);
 }
 .section_search__tabs-field__item_select:hover.active:after{
-	background:url("../img/global/arrow-up-c.svg") no-repeat 0 0;
+	background:url("../img/global/arrow-down-c.svg") no-repeat 0 0;
 }
 .section_search__tabs-field .input-daterange{
 	display:inline-block;
@@ -1072,6 +1084,19 @@
 	top: 50%;
 	margin-top: -4px;
 	right: 12px;
+
+	-webkit-transition:  all 0.2s ease-in-out;
+	-moz-transition:  all 0.2s ease-in-out;
+	-o-transition:  all 0.2s ease-in-out;
+	-ms-transition:  all 0.2s ease-in-out;
+	transition:  all 0.2s ease-in-out;
+}
+.stat__city-select .select-title.active:after{
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	transform:rotate(180deg);
 }
 .stat__city-select .select-title.active{
 	border-bottom-color: #272a33;

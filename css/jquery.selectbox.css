@@ -59,11 +59,26 @@
 	margin-left: -5px;
 	margin-top: -2px;
 	opacity: .7;
+
+	-webkit-transition:  all 0.2s ease-in-out;
+	-moz-transition:  all 0.2s ease-in-out;
+	-o-transition:  all 0.2s ease-in-out;
+	-ms-transition:  all 0.2s ease-in-out;
+	transition:  all 0.2s ease-in-out;
 }
 .sbToggle:hover{
 }
-.sbToggleOpen:after{
+/*.sbToggleOpen:after{
 	background: url("../img/global/arrow-up-b.svg") no-repeat 50% 50% ;
+}*/
+.sbToggleOpen:after{
+	background: url("../img/global/arrow-down-b.svg") no-repeat 50% 50% ;
+
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	transform:rotate(180deg);
 }
 .sbToggleOpen:hover{
 }
@@ -89,12 +104,15 @@
 	background-color: #fff;
 	/*overflow-y: auto;*/
 	border: 1px solid #cecece;
+
+	width: 100%;
 }
 .sbOptions li{
 	padding: 0 13px;
 }
 .sbOptions a{
-	display: block;
+	display: inline-block;
+	border-bottom: 1px dashed transparent;
 	outline: none;
 	padding: 2px 0 2px 0px;
 	font-size: 18px;
@@ -106,7 +124,8 @@
 .sbOptions a:hover,
 .sbOptions a:focus,
 .sbOptions a.sbFocus{
-	color: rgba(30,30,30,1);
+	color: #3fb4c6;
+	border-bottom: 1px dashed #3fb4c6;
 }
 .sbOptions li.last a{
 	border-bottom: none;

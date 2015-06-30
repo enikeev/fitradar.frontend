@@ -639,6 +639,14 @@ a:hover .icon-like{background-image: url("../img/icons/icon-min-like-c.svg");}
 .details-item__slide-box .slide-box__head:hover{
 	border-color: #3fb4c6;
 }
+/*.details-item__slide-box .slide-box__head .arrow{
+	display: inline-block;
+	width: 10px;
+	height: 5px;
+	background: url("../img/global/arrow-up-b.svg") no-repeat 50% 50%;
+	margin: 3px 10px;
+	opacity: .5;
+}*/
 .details-item__slide-box .slide-box__head .arrow{
 	display: inline-block;
 	width: 10px;
@@ -646,8 +654,23 @@ a:hover .icon-like{background-image: url("../img/icons/icon-min-like-c.svg");}
 	background: url("../img/global/arrow-up-b.svg") no-repeat 50% 50%;
 	margin: 3px 10px;
 	opacity: .5;
+
+	-webkit-transition:  all 0.2s ease-in-out;
+	-moz-transition:  all 0.2s ease-in-out;
+	-o-transition:  all 0.2s ease-in-out;
+	-ms-transition:  all 0.2s ease-in-out;
+	transition:  all 0.2s ease-in-out;
+
 }
-.details-item__slide-box.closed .slide-box__head .arrow{background-image: url("../img/global/arrow-down-b.svg")}
+.details-item__slide-box.closed .slide-box__head .arrow{
+	background-image: url("../img/global/arrow-up-b.svg");
+
+	-webkit-transform:rotate(-180deg);
+	-moz-transform:rotate(-180deg);
+	-ms-transform:rotate(-180deg);
+	-o-transform:rotate(-180deg);
+	transform:rotate(-180deg);
+}
 .details-item__slide-box.closed .slide-box__body{display: none}
 
 
@@ -963,9 +986,24 @@ a:hover .icon-like{background-image: url("../img/icons/icon-min-like-c.svg");}
 	opacity: .7;
 	height: 5px;
 	background: url("../img/global/arrow-down-b.svg") no-repeat 0 0;
+
+	-webkit-transition:  all 0.2s ease-in-out;
+	-moz-transition:  all 0.2s ease-in-out;
+	-o-transition:  all 0.2s ease-in-out;
+	-ms-transition:  all 0.2s ease-in-out;
+	transition:  all 0.2s ease-in-out;
 }
+/*.filter-item.opened .filter-head:after{*/
+	/*background-image: url("../img/global/arrow-up-b.svg");*/
+/*}*/
 .filter-item.opened .filter-head:after{
-	background-image: url("../img/global/arrow-up-b.svg");
+	background-image: url("../img/global/arrow-down-b.svg");
+
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	transform:rotate(180deg);
 }
 .filter-item .filter-body{
 	padding: 10px;

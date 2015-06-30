@@ -1600,9 +1600,19 @@
 		width: 10px;
 		height: 5px;
 		background: url("img/global/arrow-down-c.svg") no-repeat 50% 50%;
+
+		-webkit-transition:  all 0.2s ease-in-out;
+		-moz-transition:  all 0.2s ease-in-out;
+		-o-transition:  all 0.2s ease-in-out;
+		-ms-transition:  all 0.2s ease-in-out;
+		transition:  all 0.2s ease-in-out;
 	}
 	.reviews .review-item .review-answers-wrap.opened .on_switch span:after{
-		background-image: url("img/global/arrow-up-c.svg");
+		-webkit-transform:rotate(180deg);
+		-moz-transform:rotate(180deg);
+		-ms-transform:rotate(180deg);
+		-o-transform:rotate(180deg);
+		transform:rotate(180deg);
 	}
 	.reviews .review-item .review-answers-wrap.closed .review-box,
 	.reviews .review-item .review-answers-wrap.opened .on_closed,

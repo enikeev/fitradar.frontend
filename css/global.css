@@ -448,7 +448,14 @@
 	top: 13px;
 	right: 10px;
 	display: block;
+
+	-webkit-transition:  all 0.2s ease-in-out;
+	-moz-transition:  all 0.2s ease-in-out;
+	-o-transition:  all 0.2s ease-in-out;
+	-ms-transition:  all 0.2s ease-in-out;
+	transition:  all 0.2s ease-in-out;
 }
+
 .header-location:hover,
 .header-location.active{
 	background-color: #3fb4c6;
@@ -457,7 +464,13 @@
 }
 
 .header-location.active:after{
-	background-image: url("../img/global/arrow-up-w.svg");
+	background-image: url("../img/global/arrow-down-w.svg");
+
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	transform:rotate(180deg);
 }
 
 
@@ -508,11 +521,38 @@
 	top: 13px;
 	right: -15px;
 	display: block;
+
+	-webkit-transition:  all 0.2s ease-in-out;
+	-moz-transition:  all 0.2s ease-in-out;
+	-o-transition:  all 0.2s ease-in-out;
+	-ms-transition:  all 0.2s ease-in-out;
+	transition:  all 0.2s ease-in-out;
 }
 .header-user .btn_profile:hover{border-bottom-color:#3fb4c6;color:#3fb4c6;}
 .header-user .btn_profile:hover:after{background: url("../img/global/arrow-down-c.svg") no-repeat 0 0;}
-.header-user .btn_profile.active:after{background-image: url("../img/global/arrow-up-w.svg");}
-.header-user .btn_profile.active:hover:after{background-image: url("../img/global/arrow-up-c.svg");}
+
+/*.header-user .btn_profile.active:after{background-image: url("../img/global/arrow-up-w.svg");}*/
+/*.header-user .btn_profile.active:hover:after{background-image: url("../img/global/arrow-up-c.svg");}*/
+.header-user .btn_profile.active:after{
+	background-image: url("../img/global/arrow-down-w.svg");
+
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+.header-user .btn_profile.active:hover:after{
+	background-image: url("../img/global/arrow-down-c.svg");
+
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+
+
 .header-user .btn_notification{background-image: url("../img/icons/icon-notification.svg");}
 .header-user .btn_notification:hover, .header-user .btn_notification.active{background-image: url("../img/icons/icon-notification-c.svg");}
 .header-user .btn_message{background-image: url("../img/icons/icon-message.svg");}
