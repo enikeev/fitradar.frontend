@@ -1,5 +1,4 @@
 
-
 .datepicker{
   position:absolute;
   background:#ffffff;
@@ -51,7 +50,8 @@
 }
 .datepicker .datepicker-header .prev.disable i,
 .datepicker .datepicker-header .next.disable i{
-  display: none;
+  /*display: none;*/
+  opacity: 0;
   cursor:default!important;
 }
 
@@ -182,4 +182,40 @@
 
 .datepicker .disabled:hover{
   cursor:default!important;
+}
+
+
+
+
+
+@media screen and (max-width: 1560px) {	/* 1600 - 1184 - 1224 */
+	.datepicker{
+		font-size:11px;
+		width: 160px;
+		height: 170px;
+	}
+	.datepicker .dow:first-child,
+	.datepicker tbody tr td:first-child {
+		padding-left: 5px;
+	}
+	.datepicker tbody tr td:last-child {
+		padding-right: 5px;
+	}
+	.datepicker .datepicker-header th {
+		padding: 2px 0 4px;
+	}
+	.datepicker .datepicker-header .prev i,
+	.datepicker .datepicker-header .next i {
+		height: 14px;
+		width: 14px;
+	}
+	.datepicker .day i {
+		height: 14px;
+		line-height: 12px;
+		min-width: 14px;
+	}
+
+	.datepicker .month, .datepicker .year {
+		padding: 9px 0;
+	}
 }

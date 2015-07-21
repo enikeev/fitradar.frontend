@@ -466,11 +466,11 @@
 .header-location.active:after{
 	background-image: url("../img/global/arrow-down-w.svg");
 
-	-webkit-transform:rotate(180deg);
-	-moz-transform:rotate(180deg);
-	-ms-transform:rotate(180deg);
-	-o-transform:rotate(180deg);
-	transform:rotate(180deg);
+	-webkit-transform:rotate(-180deg);
+	-moz-transform:rotate(-180deg);
+	-ms-transform:rotate(-180deg);
+	-o-transform:rotate(-180deg);
+	transform:rotate(-180deg);
 }
 
 
@@ -536,20 +536,20 @@
 .header-user .btn_profile.active:after{
 	background-image: url("../img/global/arrow-down-w.svg");
 
-	-webkit-transform:rotate(180deg);
-	-moz-transform:rotate(180deg);
-	-ms-transform:rotate(180deg);
-	-o-transform:rotate(180deg);
-	transform:rotate(180deg);
+	-webkit-transform:rotate(-180deg);
+	-moz-transform:rotate(-180deg);
+	-ms-transform:rotate(-180deg);
+	-o-transform:rotate(-180deg);
+	transform:rotate(-180deg);
 }
 .header-user .btn_profile.active:hover:after{
 	background-image: url("../img/global/arrow-down-c.svg");
 
-	-webkit-transform:rotate(180deg);
-	-moz-transform:rotate(180deg);
-	-ms-transform:rotate(180deg);
-	-o-transform:rotate(180deg);
-	transform:rotate(180deg);
+	-webkit-transform:rotate(-180deg);
+	-moz-transform:rotate(-180deg);
+	-ms-transform:rotate(-180deg);
+	-o-transform:rotate(-180deg);
+	transform:rotate(-180deg);
 }
 
 
@@ -1190,4 +1190,10 @@
 
 
 
-
+@media screen and (max-width: 1560px) {	/* 1600 - 1184 - 1224 */
+	.input-field .marker {
+		height: 13px;
+		top: 1px;
+		width: 13px;
+	}
+}
