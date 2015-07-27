@@ -1,0 +1,144 @@
+.keypad-wrap{
+	background: rgba(242, 242, 242, 0.85);
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	max-height: 0;
+
+	transition: max-height 0.25s ease;
+	-moz-transition: max-height 0.25s ease;
+	-webkit-transition: max-height 0.25s ease;
+}
+.keypad-wrap_show{
+	max-height: 100%;
+}
+.keypad-inner{
+	width: 566px;
+	margin: 17px auto;
+	overflow: hidden;
+}
+.keypad{display: none}
+.keypad.active{
+	display: block;
+}
+.keypad-close{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+
+	background: url("../img/icons/icon-input_clear.svg") no-repeat 50% 50%;
+	cursor: pointer;
+	height: 29px;
+	width: 29px;
+}
+.keypad-close:hover{background-image: url("../img/icons/icon-input_clear-c.svg");}
+.key{
+	width: 29px;
+	height: 29px;
+	border: 1px solid #cfcfcf;
+	background-color: #fff;
+	color: #4b4b4b;
+
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+
+	float: left;
+	margin: 3px;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+
+	background-size: auto 100%;
+	-moz-background-size: auto 100% ;
+	-webkit-background-size: auto 100% ;
+
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+.key:hover{
+	color: #3fb4c6;
+	border-color: #3fb4c6;
+}
+.key.active{
+	background-color: #3fb4c6;
+	border-color: #3fb4c6;
+	color: #fff;
+}
+
+.key_backspace{
+	width: 76px;
+	background-image: url("../img/keypad/backspace.svg");
+}
+.key_at{width: 39px;}
+.key_multishift{
+	width: 51px;
+	background-image: url("../img/keypad/multishift.svg");
+}
+.key_enter{
+	width: 54px;
+	background-image: url("../img/keypad/enter.svg");
+}
+.key_shift.left{
+	width: 61px;
+	background-image: url("../img/keypad/shift_l.svg");
+}
+.key_shift.right{
+	width: 81px;
+	background-image: url("../img/keypad/shift_r.svg");
+}
+.key_language{width: 98px;}
+.key_space{width: 325px;}
+.key_symbols{width: 118px;}
+
+
+
+.keypad-wrap_rus .keypad_rus{display: block;}
+.keypad-wrap_rus.keypad-wrap_shift .keypad_rus{display: none;}
+.keypad-wrap_rus.keypad-wrap_shift .keypad_rus-shift{display: block;}
+.keypad-wrap_rus.keypad-wrap_oneshift .keypad_rus{display: none;}
+.keypad-wrap_rus.keypad-wrap_oneshift .keypad_rus-shift{display: block;}
+
+.keypad-wrap_eng .keypad_eng{display: block;}
+.keypad-wrap_eng.keypad-wrap_shift .keypad_eng{display: none;}
+.keypad-wrap_eng.keypad-wrap_shift .keypad_eng-shift{display: block;}
+.keypad-wrap_eng.keypad-wrap_oneshift .keypad_eng{display: none;}
+.keypad-wrap_eng.keypad-wrap_oneshift .keypad_eng-shift{display: block;}
+
+
+.keypad-wrap_symbol .keypad{display: none;}
+.keypad-wrap_symbol .keypad_symbols{display: block;}
+
+
+.keypad-wrap_symbol .key_symbols,
+.keypad-wrap_shift .key_multishift,
+.keypad-wrap_oneshift .key_shift{
+	background-color: #3fb4c6;
+	border-color: #3fb4c6;
+	color: #fff;
+	background-position: top right;
+}
+
+
+.key:active{
+	background-color: #3fb4c6;
+	border-color: #3fb4c6;
+	color: #fff;
+	background-position: top right;
+}
+
+.keypad-wrap_symbol .key_multishift,
+.keypad-wrap_symbol .key_shift{
+	background-image: none;
+}
+
+
+
+

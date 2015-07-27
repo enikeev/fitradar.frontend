@@ -32,6 +32,9 @@
 	text-indent: 15px;
 	top: 0;
 	width: 240px;
+
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 .sbSelector:link, .sbSelector:visited, .sbSelector:hover{
 	color: rgba(30,30,30,0.6);
@@ -109,6 +112,13 @@
 }
 .sbOptions li{
 	padding: 0 13px;
+	overflow: hidden;
+}
+.sbOptions li a{
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 .sbOptions a{
 	display: inline-block;

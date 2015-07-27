@@ -3,9 +3,10 @@
 @import url(global.css);
 @import url(front-page.css);
 @import url(catalog-page.css);
+@import url(news.css);
+@import url(keypad.css);
 @import url(datepicker.css);
 @import url(mCustomScrollbar.css);
-@import url(ion.rangeSlider.skinFlat.css);
 
 
 

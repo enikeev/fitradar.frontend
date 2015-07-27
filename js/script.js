@@ -1,5 +1,96 @@
 (function(){
 	var app = {
+		keypad: {
+			status: {
+				oneShift: false
+			},
+			init: function(){
+
+				var $keybordWrap = $('.keypad-wrap');
+
+				$('body').on('click', '.js-input-notepad', function(){
+
+					var $this = $(this);
+					var $input = $this.closest('.js-input-wrap').find('.js-input-targ');
+
+					if ( $keybordWrap.hasClass('keypad-wrap_show') ){
+						$keybordWrap.removeClass('keypad-wrap_show');
+						$input.removeClass('js-input-targ-active');
+					} else {
+						$keybordWrap.addClass('keypad-wrap_show');
+						$input.addClass('js-input-targ-active');
+					}
+
+				}).on('click', '.keypad-close', function(){
+					$keybordWrap.removeClass('keypad-wrap_show');
+					$('.js-input-targ-active').removeClass('js-input-targ-active');
+				}).on('click', '.keypad .key', function(e){
+
+					if ( app.keypad.status.oneShift || $(this).data('key')!== 'shift' ){
+						app.keypad.status.oneShift = false;
+						$keybordWrap.removeClass('keypad-wrap_oneshift');
+						//console.log(app.keypad.status.oneShift)
+						//console.log($(this).data('key'))
+					}
+
+					if ( $(this).data('key') ){
+						var v = $(this).data('key');
+						app.keypad.btnPush[v]();
+					} else {
+						var nWord = $(this).text();
+						var $input = $('.js-input-targ-active');
+						var text = $input.val();
+						$input.val(text + nWord);
+					}
+
+				});
+			},
+			btnPush: {
+				clear:function(){
+					var $keybordWrap = $('.keypad-wrap');
+					$keybordWrap.removeClass('keypad-wrap_shift keypad-wrap_oneshift keypad-wrap_symbol');
+				},
+				backspace: function(){
+					var $input = $('.js-input-targ-active');
+					var val = $input.val();
+					$input.val(val.substring(0, val.length - 1))
+				},
+				multishift: function(){
+					var $keybordWrap = $('.keypad-wrap');
+					$keybordWrap.removeClass('keypad-wrap_oneshift keypad-wrap_symbol');
+					$keybordWrap.toggleClass('keypad-wrap_shift')
+				},
+				enter: function(){},
+				shift: function(){
+
+				//	console.log(app.keypad.status.oneShift);
+
+					var $keybordWrap = $('.keypad-wrap');
+					$keybordWrap.removeClass('keypad-wrap_shift keypad-wrap_symbol');
+					$keybordWrap.toggleClass('keypad-wrap_oneshift');
+
+					if ( $keybordWrap.hasClass('keypad-wrap_shift') ){
+						$keybordWrap.removeClass('keypad-wrap_shift')
+					}
+
+				},
+				language: function(){
+					var $keybordWrap = $('.keypad-wrap');
+					$keybordWrap.toggleClass('keypad-wrap_rus keypad-wrap_eng')
+				},
+				space: function(){
+					var $input = $('.js-input-targ-active');
+					var val = $input.val();
+					$input.val(val + ' ');
+				},
+				symbols: function(){
+					var $keybordWrap = $('.keypad-wrap');
+
+					$keybordWrap.removeClass('keypad-wrap_shift keypad-wrap_oneshift');
+					$keybordWrap.toggleClass('keypad-wrap_symbol')
+				}
+			}
+		},
 		inputRateCheck: function(){
 			var $box = $('.feedback-field__input-rate');
 			if ( $box.size() ){
@@ -118,6 +209,7 @@
 			this.datepicker();
 			this.loadStatCity();
 			this.tooltip();
+			this.keypad.init();
 			this.checkboxCheck();
 			this.inputRateCheck();
 
@@ -163,6 +255,8 @@ $(function(){
 		$(this).closest('.modal-overlay').fadeOut();
 	});
 
+
+
 	$('.js-scrollbar').mCustomScrollbar();
 
 	if ( $('select').size() ){
@@ -174,6 +268,15 @@ $(function(){
 			animation: "fade",
 			randomize: true,
 			directionNav: false,
+			keyboard: false
+		});
+	}
+
+	if ( $('.news-carousel').size() ){
+		$('.news-carousel').flexslider({
+			animation: "fade",
+			randomize: false,
+			directionNav: true,
 			keyboard: false
 		});
 	}
@@ -277,10 +380,10 @@ $(function(){
 
 
 	$('.js-search-examp').click(function(){
-		$(this).parents('.js-search').find('.js-search-targ').val($(this).text())
+		$(this).parents('.js-search').find('.js-input-targ').val($(this).text())
 	});
-	$('.js-search-clear').click(function(){
-		$(this).parents('.js-search').find('.js-search-targ').val('');
+	$('.js-input-clear').click(function(){
+		$(this).parents('.js-search').find('.js-input-targ').val('');
 	});
 
 

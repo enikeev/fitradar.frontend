@@ -219,3 +219,12 @@
 		padding: 9px 0;
 	}
 }
+
+@media screen and (max-width: 1264px) {	/* 1366 - 1070 - 1110 */
+	.datepicker{
+		width: 152px;
+	}
+	.datepicker .datepicker-header {
+		height: 30px;
+	}
+}
