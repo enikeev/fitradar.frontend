@@ -71,7 +71,10 @@ input[type="text"]{
 	background: #fff;
 	border: 1px solid #cfcfcf;
 	font-family: 'Segoe UI', 'SegoeUI', sans-serif;
+	padding: 0;
+	margin: 0;
 }
+input[type="password"]:focus,
 input[type="text"]:focus{
 	border-color: #3fb4c6;
 }

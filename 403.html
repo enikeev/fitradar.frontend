@@ -6,6 +6,7 @@
 	<title>FitRadar</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
+	<link rel="shortcut icon" href="/favicon.png" type="image/png">
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/mCustomScrollbar.css" rel="stylesheet">
 	<link href="css/datepicker.css" rel="stylesheet">
@@ -736,16 +737,26 @@
 	</div>
 
 
-	<div class="modal-overlay" data-modal-target="auth">
-		<div class="modal modal_login">
+	<div class="modal-overlay"></div>
+
+	<div class="modal modal_login" data-modal-target="auth">
+		<div class="modal__inner">
 			<div class="modal-close"></div>
 			<div class="modal_login-logo"><img src="img/global/logo-big.svg"></div>
 			<div class="modal_login-box modal_login-auth">
 				<div class="title">Войти</div>
 				<div class="auth-form">
 					<div class="auth-form__fields">
-						<input type="text" placeholder="Эл.адрес или телефон">
-						<input type="password" placeholder="Пароль">
+						<div class="js-input-wrap">
+							<input type="text" placeholder="Эл.адрес или телефон" class="js-input-targ">
+							<div class="js-input-clear"></div>
+							<div class="js-input-notepad"></div>
+						</div>
+						<div class="js-input-wrap">
+							<input type="password" placeholder="Пароль" class="js-input-targ">
+							<div class="js-input-clear"></div>
+							<div class="js-input-notepad"></div>
+						</div>
 					</div>
 					<div class="auth-form__submit">
 						<a href="#" class="btn btn_brdr bt">Войти</a>
@@ -786,3 +797,41 @@
 
 </body>
 </html>
+
+
+<table>
+	<thead>
+	<tr>
+		<th>&nbsp;</th>
+		<th>Модель изделия</th>
+		<th>Общая длина (мм)</th>
+		<th>Описание</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>1</td>
+		<td>MC301</td>
+		<td>200</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>MC306</td>
+		<td>200</td>
+		<td>с зубчиками 1х2 - 0,7мм</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>MC307</td>
+		<td>230</td>
+		<td>с зубчиками 1х2 - 0,7 мм</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>MC308</td>
+		<td>230</td>
+		<td>длина рифления 15 мм </td>
+	</tr>
+	</tbody>
+</table>
