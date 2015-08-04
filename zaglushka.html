@@ -129,7 +129,7 @@
 					$(this).fadeOut();
 				}
 			});
-			$('.modal-close').click(function(e){
+			$('.js-modal-close').click(function(e){
 				e.stopPropagation();
 				$(this).closest('.modal-overlay').fadeOut();
 			});
@@ -185,7 +185,7 @@
 
 <div class="modal-overlay" data-modal-target="subscribe">
 	<div class="modal modal_cup">
-		<div class="modal-close"></div>
+		<div class="js-modal-close modal-close"></div>
 		<div class="modal_cup-logo"><img src="img/global/logo-big.svg"></div>
 		<div class="modal_cup-text">Подпишитесь и первыми узнаете об открытии спортивного<br>интернет-каталога FitRadar.ru</div>
 		<div class="modal_cup-input"><input type="text" placeholder="Ваш E-mail" class="js-input-email"></div>

@@ -2,16 +2,24 @@
 	var app = {
 		fixmenu: function(){
 			var $nav = $('.nav');
-			var nt = $('.nav').position().top;
+			var nt = $nav.position().top;
+
+			var $head = $('.header');
+			var ht = $head.position().top;
+
 			var wt = $(window).scrollTop();
 
-			if ( nt <= wt ){
+			if ( nt+1 <= wt + $head.outerHeight() ){
 				$nav.addClass('fixed');
 			} else {
 				$nav.removeClass('fixed');
 			}
 
-			console.log(wt);
+			if ( ht <= wt ){
+				$head.addClass('fixed');
+			} else {
+				$head.removeClass('fixed');
+			}
 
 		},
 		keypad: {
@@ -263,11 +271,13 @@ $(function(){
 	$('[data-modal-open]').click(function(e){
 		e.preventDefault();
 		var $this = $(this);
-		var targ = $this.data('modal-open');
+		var data = $this.data('modal-open');
+		var $targ = $('[data-modal-target=' + data + ']');
 		var wh = $(window).height();
+		var ws = $(window).scrollTop();
 
-		$('[data-modal-target=' + targ + ']').add('.modal-overlay').fadeIn();
-
+		$targ.add('.modal-overlay').fadeIn();
+		$targ.css({top: ( (wh > $targ.outerHeight()) ? (wh - $targ.outerHeight())/2 + ws : 0)});
 	});
 	$('.modal-overlay').click(function(e){
 		e.stopPropagation();
@@ -278,14 +288,11 @@ $(function(){
 			$(this).fadeOut();
 		}*/
 	});
-	$('.modal-close').click(function(e){
+	$('.js-modal-close').click(function(e){
 		e.stopPropagation();
 		$('.modal-overlay').fadeOut();
 		$('.modal').fadeOut();
 	});
-
-
-
 
 
 	$('.js-scrollbar').mCustomScrollbar();
@@ -332,6 +339,8 @@ $(function(){
 
 	$('.header-location').click(function(){
 
+		$('html,body').animate({scrollTop: 0 }, 500);
+
 		var $box = $('.section-location');
 
 		if ( $(this).hasClass('active') ){
@@ -343,9 +352,14 @@ $(function(){
 			$(this).addClass('active');
 			$box.stop().slideDown();
 		}
+
 	});
 
 	$('.js-close-location-screen').click(function(){
+
+
+		$('html,body').animate({scrollTop: 0 }, 500);
+
 		if ( $('.header-location').hasClass('active') ) $('.header-location').removeClass('active');
 		$('.section-location').stop().slideUp();
 	});
@@ -644,7 +658,7 @@ $(function(){
 		}
 	}).on('click', '.link-review-answer', function(){
 		var $this = $(this);
-		$this.parent().next('.review-answer').toggle();
+		$this.parent().next('.review-answer').stop(true, true).slideToggle();
 	}).on('click', '.review-answers-wrap .on_switch', function(){
 		var $this = $(this);
 		$this.parent('.review-answers-wrap').toggleClass('closed opened');
@@ -815,3 +829,29 @@ $(function(){
 });
 
 
+
+
+
+
+$(function(){
+
+	$('body').keydown(function(e){
+		if (e.ctrlKey && e.keyCode == 13) {
+			//alert(getSelectedText());
+			console.log(getSelectedText());
+		}
+	});
+
+});
+
+function getSelectedText(){
+	var text = "";
+	if (window.getSelection) {
+		text = window.getSelection();
+	}else if (document.getSelection) {
+		text = document.getSelection();
+	}else if (document.selection) {
+		text = document.selection.createRange().text;
+	}
+	return text;
+}

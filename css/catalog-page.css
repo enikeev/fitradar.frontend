@@ -2493,7 +2493,7 @@ catalog item
 	margin-left: 70px;
 }
 .reviews .review-item .review-answer .review-box{
-	margin-left: -20px;
+	margin-left: -10px;
 }
 .reviews .review-item .review-box .review-box__ava{
 	float: left;
@@ -2589,7 +2589,7 @@ catalog item
 	color: #fff;
 }
 .reviews .review-item .review-box .review-answer{
-	margin: 10px 0;
+	margin: 0px 0 0px -10px;
 	display: none;
 }
 .reviews .review-item .review-answers-wrap{
