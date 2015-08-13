@@ -9,16 +9,29 @@
 
 			var wt = $(window).scrollTop();
 
-			if ( nt+1 <= wt + $head.outerHeight() ){
+			if ( nt+18 <= wt + $head.outerHeight() ){
 				$nav.addClass('fixed');
 			} else {
 				$nav.removeClass('fixed');
 			}
 
-			if ( ht <= wt ){
+			if ( ht+18 <= wt ){
 				$head.addClass('fixed');
 			} else {
 				$head.removeClass('fixed');
+			}
+
+			var frontSearch = $('.wrapper_front .header-search');
+			var frontSearchBig = $('.section_search__finder');
+
+			if ( frontSearch.size() && frontSearchBig.size() ){
+				var ft = frontSearchBig.position().top;
+
+				if ( ft <= wt - frontSearchBig.outerHeight() ){
+					frontSearch.css({display: 'inline-block'});
+				} else {
+					frontSearch.css({display: 'none'});
+				}
 			}
 
 		},
@@ -179,16 +192,16 @@
 
 				di.each(function(){
 					if ( !$(this).val() ){
-						$(this).val(valDay + '.' + valMonth + '.' + valYear );
+						$(this).val( valDay + '.' + valMonth + '.' + valYear );
 					}
 				});
 
-				$('.section_search__tabs-menu__target').each(function(){
-					if ( $(this).find('.input-daterange').size() ){
-						$(this).find('.input-daterange').datepicker();
-					}
+				$('.input-daterange').each(function(){
+					$(this).datepicker();
 				});
+
 			}
+
 		},
 		tooltip:function(){
 
@@ -297,9 +310,9 @@ $(function(){
 
 	$('.js-scrollbar').mCustomScrollbar();
 
-	if ( $('select').size() ){
-		$('select').selectbox();
-	}
+	$('select').each(function(){
+		$(this).selectbox();
+	});
 
 	if ( $('.head-carousel').size() ){
 		$('.head-carousel').flexslider({
@@ -661,7 +674,11 @@ $(function(){
 		$this.parent().next('.review-answer').stop(true, true).slideToggle();
 	}).on('click', '.review-answers-wrap .on_switch', function(){
 		var $this = $(this);
-		$this.parent('.review-answers-wrap').toggleClass('closed opened');
+		$this.parent('.review-answers-wrap').find('.review-answers-wrap__inner').slideToggle('fast', function(){
+			$this.parent('.review-answers-wrap').toggleClass('closed opened')
+		});
+
+
 	}).on('click', '.details-item__text_cover-open', function(){
 		var $this = $(this);
 		$this.parent('.details-item__text_cover').removeClass('details-item__text_cover');

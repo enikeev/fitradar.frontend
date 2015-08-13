@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<title>FitRadar</title>
+	<title>FitRadar - соревнования</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<link rel="shortcut icon" href="/favicon.png" type="image/png">
@@ -15,11 +15,11 @@
 
 	<script src="js/jquery.min.js"></script>        <!--jquery 2.0.0-->
 	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/datepicker.js"></script>
 	<script type="text/javascript" src="js/mCustomScrollbar.min.js"></script>
 	<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
 	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
 	<script type="text/javascript" src="js/jquery.ui.slider.js"></script>
-	<script type="text/javascript" src="js/datepicker.js"></script>
 	<script type="text/javascript" src="js/pieDiagram.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
@@ -330,25 +330,633 @@
 		</div>
 	</section>
 
-	<section class="section section_bg-gray section_btdr-b">
+	<nav class="nav">
+		<div class="inner">
+			<ul class="nav-list">
+				<li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Новости</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Соревнования</a></li>
+				<li class="nav-item nav-item_sub"><a href="#" class="nav-link">Статьи</a>
+					<ul class="nav__sub-list">
+						<li class="nav__sub-item"><a href="#" class="nav__sub-link">Раздел 1</a></li>
+						<li class="nav__sub-item"><a href="#" class="nav__sub-link">Раздел 2</a></li>
+						<li class="nav__sub-item"><a href="#" class="nav__sub-link">Раздел 3</a></li>
+						<li class="nav__sub-item"><a href="#" class="nav__sub-link">Раздел 4</a></li>
+						<li class="nav__sub-item"><a href="#" class="nav__sub-link">Раздел 5</a></li>
+					</ul>
+				</li>
+				<li class="nav-item"><a href="#" class="nav-link">Калькулятор калорий</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<section class="section section_breadcrumbs section_bg-gray section_btdr-b">
 		<div class="inner clearfix">
-			<div class="section__title">Ничеси! <span>Страница не найдена</span></div>
+			<ul class="breadcrumbs-list">
+				<li class="breadcrumbs-item"><a href="#">Fitradar</a></li>
+				<li class="breadcrumbs-item"><span>Соревнования</span></li>
+			</ul>
+
+			<div class="section__title">Соревнования <span>Санкт-Петербург</span></div>
 		</div>
 	</section>
 
-	<section class="section section_error section_error-404" style="background-image: url('img/bg/bg-404.jpg')">
-	<div class="inner clearfix">
-		<div class="error-text">
-			<div class="title"><span>404</span></div>
-			<div class="text">
-				<span>Победит не тот, кто сильнее,</span><br>
-				<span>а тот, кто готов идти до конца</span>
+	<section class="section section_catalog list-view section_bg-lightgray">
+		<div class="catalog__header">
+			<div class="inner">
+				<div class="section__nav clearfix">
+
+					<div class="section__nav-field section__nav-field_select">
+						<span class="label">Сортировать по:</span>
+						<span class="select">
+							<select>
+								<option>названию (А-Я)</option>
+								<option>названию (Я-А)</option>
+								<option>увеличению цены</option>
+								<option>уменьшению цены</option>
+								<option>рейтингу (сначала больше)</option>
+								<option>рейтингу (сначала меньше)</option>
+								<option>отзывам (сначала больше)</option>
+								<option>отзывам (сначала меньше)</option>
+							</select>
+						</span>
+					</div>
+
+					<div class="section__nav-field section__nav-field_select">
+						<span class="select">
+							<select>
+								<option>Фильтру</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</span>
+					</div>
+
+					<div class="section__nav-field section__nav-field_data input-daterange">
+						<div class="section_search__tabs-field__item section_search__tabs-field__item_date">
+							<span class="date-prefix">от</span>
+							<input type="text" name="start" value="" class="date-input">
+						</div>
+						<div class="section_search__tabs-field__item section_search__tabs-field__item_date">
+							<span class="date-prefix">до</span>
+							<input type="text" name="end" value="" class="date-input">
+						</div>
+					</div>
+
+					<div class="section__nav-search filter-field">
+						<div class="filter-field__search">
+							<div class="filter-field__search-input js-input-wrap">
+								<input type="text" class="js-input-targ" placeholder="Поиск по ключевому слову">
+								<div class="filter-field__search-input__notepad js-input-notepad"></div>
+							</div>
+							<div class="filter-field__search-submit"></div>
+						</div>
+					</div>
+
+				</div>
 			</div>
 		</div>
-		<div class="error-btns">
-			<a href="javascript:history.back();" class="btn btn_brdr btn_big btn_color-c">Вернуться на предыдущую страницу</a>
-			<a href="/" class="btn btn_brdr btn_big btn_color-c">Перейти на главную</a>
+	</section>
+
+
+	<section class="section section_competition section_bg-lightgray">
+	<div class="inner clearfix">
+
+	<div class="cards cards_competition">
+
+		<div class="cards-item cards-item_big">
+			<div class="cards-item__inner">
+				<div class="cards-img">
+					<img src="img/upload/cart-img-1.jpg" alt="">
+				</div>
+				<div class="cards-title">
+					<div class="cards-title__img">
+						<img src="img/icons/competition/basketball.svg" alt="">
+					</div>
+					<div class="cards-title__text">
+						<span>Чемпионат России по баскетболу</span>
+					</div>
+				</div>
+				<div class="cards-info">
+					<div class="cards-details">
+						<table>
+							<tbody>
+							<tr>
+								<td>Дата:</td>
+								<td>с 08.08.15<br>по 12.08.15</td>
+							</tr>
+							<tr>
+								<td>Время:</td>
+								<td>21:15</td>
+							</tr>
+							<tr>
+								<td>Место:</td>
+								<td>СКК ул. Дальневосточный пр ...</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="cards-descr">
+						<div class="title">Матч пройдет в несколько этапов</div>
+						<div class="text">Дорогие друзья! Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы</div>
+					</div>
+				</div>
+				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
+			</div>
 		</div>
+
+		<div class="cards-item">
+			<div class="cards-item__inner">
+				<div class="cards-img">
+					<img src="img/upload/cart-img-2.jpg" alt="">
+				</div>
+				<div class="cards-title">
+					<div class="cards-title__img">
+						<img src="img/icons/competition/tennis.svg" alt="">
+					</div>
+					<div class="cards-title__text">
+						<span>День здоровья и спорта</span>
+					</div>
+				</div>
+				<div class="cards-info">
+					<div class="cards-details">
+						<table>
+							<tbody>
+							<tr>
+								<td>Дата:</td>
+								<td>с 08.08.15<br>по 12.08.15</td>
+							</tr>
+							<tr>
+								<td>Время:</td>
+								<td>с 21:15 до 23:00</td>
+							</tr>
+							<tr>
+								<td>Место:</td>
+								<td>СКК ул. Дальневосточный пр ...</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="cards-descr">
+						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
+					</div>
+				</div>
+				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
+			</div>
+		</div>
+
+		<div class="cards-item">
+			<div class="cards-item__inner">
+				<div class="cards-img">
+					<img src="img/upload/cart-img-3.jpg" alt="">
+				</div>
+				<div class="cards-title">
+					<div class="cards-title__img">
+						<img src="img/icons/competition/valleytball.svg" alt="">
+					</div>
+					<div class="cards-title__text">
+						<span>1/2 кубка «Поршень» по волейболу</span>
+					</div>
+				</div>
+				<div class="cards-info">
+					<div class="cards-details">
+						<table>
+							<tbody>
+							<tr>
+								<td>Дата:</td>
+								<td>с 08.08.15<br>по 12.08.15</td>
+							</tr>
+							<tr>
+								<td>Время:</td>
+								<td>21:15</td>
+							</tr>
+							<tr>
+								<td>Место:</td>
+								<td>СКК ул. Дальневосточный пр ...</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="cards-descr">
+						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
+					</div>
+				</div>
+				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
+			</div>
+		</div>
+
+		<div class="cards-item">
+			<div class="cards-item__inner">
+				<div class="cards-img">
+					<img src="img/upload/cart-img-2.jpg" alt="">
+				</div>
+				<div class="cards-title">
+					<div class="cards-title__img">
+						<img src="img/icons/competition/tennis.svg" alt="">
+					</div>
+					<div class="cards-title__text">
+						<span>День здоровья и спорта</span>
+					</div>
+				</div>
+				<div class="cards-info">
+					<div class="cards-details">
+						<table>
+							<tbody>
+							<tr>
+								<td>Дата:</td>
+								<td>с 08.08.15<br>по 12.08.15</td>
+							</tr>
+							<tr>
+								<td>Время:</td>
+								<td>с 21:15 до 23:00</td>
+							</tr>
+							<tr>
+								<td>Место:</td>
+								<td>СКК ул. Дальневосточный пр ...</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="cards-descr">
+						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
+					</div>
+				</div>
+				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
+			</div>
+		</div>
+
+		<div class="cards-item">
+			<div class="cards-item__inner">
+				<div class="cards-img">
+					<img src="img/upload/cart-img-2.jpg" alt="">
+				</div>
+				<div class="cards-title">
+					<div class="cards-title__img">
+						<img src="img/icons/competition/basketball.svg" alt="">
+					</div>
+					<div class="cards-title__text">
+						<span>ЧР по баскетболу</span>
+					</div>
+				</div>
+				<div class="cards-info">
+					<div class="cards-details">
+						<table>
+							<tbody>
+							<tr>
+								<td>Дата:</td>
+								<td>с 08.08.15<br>по 12.08.15</td>
+							</tr>
+							<tr>
+								<td>Время:</td>
+								<td>с 21:15 до 23:00</td>
+							</tr>
+							<tr>
+								<td>Место:</td>
+								<td>СКК ул. Дальневосточный пр ...</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="cards-descr">
+						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
+					</div>
+				</div>
+				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
+			</div>
+		</div>
+
+		<div class="cards-item">
+			<div class="cards-item__inner">
+				<div class="cards-img">
+					<img src="img/upload/cart-img-3.jpg" alt="">
+				</div>
+				<div class="cards-title">
+					<div class="cards-title__img">
+						<img src="img/icons/competition/valleytball.svg" alt="">
+					</div>
+					<div class="cards-title__text">
+						<span>1/2 кубка «Поршень» по волейболу</span>
+					</div>
+				</div>
+				<div class="cards-info">
+					<div class="cards-details">
+						<table>
+							<tbody>
+							<tr>
+								<td>Дата:</td>
+								<td>с 08.08.15<br>по 12.08.15</td>
+							</tr>
+							<tr>
+								<td>Время:</td>
+								<td>с 21:15 до 23:00</td>
+							</tr>
+							<tr>
+								<td>Место:</td>
+								<td>СКК ул. Дальневосточный пр ...</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="cards-descr">
+						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
+					</div>
+				</div>
+				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
+			</div>
+		</div>
+
+		<div class="cards-item">
+			<div class="cards-item__inner">
+				<div class="cards-img">
+					<img src="img/upload/cart-img-2.jpg" alt="">
+				</div>
+				<div class="cards-title">
+					<div class="cards-title__img">
+						<img src="img/icons/competition/tennis.svg" alt="">
+					</div>
+					<div class="cards-title__text">
+						<span>День здоровья и спорта</span>
+					</div>
+				</div>
+				<div class="cards-info">
+					<div class="cards-details">
+						<table>
+							<tbody>
+							<tr>
+								<td>Дата:</td>
+								<td>с 08.08.15<br>по 12.08.15</td>
+							</tr>
+							<tr>
+								<td>Время:</td>
+								<td>с 21:15 до 23:00</td>
+							</tr>
+							<tr>
+								<td>Место:</td>
+								<td>СКК ул. Дальневосточный пр ...</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="cards-descr">
+						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
+					</div>
+				</div>
+				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
+			</div>
+		</div>
+
+		<div class="cards-item">
+			<div class="cards-item__inner">
+				<div class="cards-img">
+					<img src="img/upload/cart-img-3.jpg" alt="">
+				</div>
+				<div class="cards-title">
+					<div class="cards-title__img">
+						<img src="img/icons/competition/valleytball.svg" alt="">
+					</div>
+					<div class="cards-title__text">
+						<span>День здоровья и спорта</span>
+					</div>
+				</div>
+				<div class="cards-info">
+					<div class="cards-details">
+						<table>
+							<tbody>
+							<tr>
+								<td>Дата:</td>
+								<td>с 08.08.15<br>по 12.08.15</td>
+							</tr>
+							<tr>
+								<td>Время:</td>
+								<td>с 21:15 до 23:00</td>
+							</tr>
+							<tr>
+								<td>Место:</td>
+								<td>СКК ул. Дальневосточный пр ...</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="cards-descr">
+						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
+					</div>
+				</div>
+				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
+			</div>
+		</div>
+
+		<div class="cards-item">
+			<div class="cards-item__inner">
+				<div class="cards-img">
+					<img src="img/upload/cart-img-3.jpg" alt="">
+				</div>
+				<div class="cards-title">
+					<div class="cards-title__img">
+						<img src="img/icons/competition/tennis.svg" alt="">
+					</div>
+					<div class="cards-title__text">
+						<span>1/2 кубка «Поршень» по волейболу</span>
+					</div>
+				</div>
+				<div class="cards-info">
+					<div class="cards-details">
+						<table>
+							<tbody>
+							<tr>
+								<td>Дата:</td>
+								<td>с 08.08.15<br>по 12.08.15</td>
+							</tr>
+							<tr>
+								<td>Время:</td>
+								<td>с 21:15 до 23:00</td>
+							</tr>
+							<tr>
+								<td>Место:</td>
+								<td>СКК ул. Дальневосточный пр ...</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="cards-descr">
+						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
+					</div>
+				</div>
+				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
+			</div>
+		</div>
+
+		<div class="cards-item">
+			<div class="cards-item__inner">
+				<div class="cards-img">
+					<img src="img/upload/cart-img-2.jpg" alt="">
+				</div>
+				<div class="cards-title">
+					<div class="cards-title__img">
+						<img src="img/icons/competition/basketball.svg" alt="">
+					</div>
+					<div class="cards-title__text">
+						<span>ЧР по баскетболу</span>
+					</div>
+				</div>
+				<div class="cards-info">
+					<div class="cards-details">
+						<table>
+							<tbody>
+							<tr>
+								<td>Дата:</td>
+								<td>с 08.08.15<br>по 12.08.15</td>
+							</tr>
+							<tr>
+								<td>Время:</td>
+								<td>с 21:15 до 23:00</td>
+							</tr>
+							<tr>
+								<td>Место:</td>
+								<td>СКК ул. Дальневосточный пр ...</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="cards-descr">
+						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
+					</div>
+				</div>
+				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
+			</div>
+		</div>
+
+		<div class="cards-item">
+			<div class="cards-item__inner">
+				<div class="cards-img">
+					<img src="img/upload/cart-img-2.jpg" alt="">
+				</div>
+				<div class="cards-title">
+					<div class="cards-title__img">
+						<img src="img/icons/competition/valleytball.svg" alt="">
+					</div>
+					<div class="cards-title__text">
+						<span>1/2 кубка «Поршень» по волейболу</span>
+					</div>
+				</div>
+				<div class="cards-info">
+					<div class="cards-details">
+						<table>
+							<tbody>
+							<tr>
+								<td>Дата:</td>
+								<td>с 08.08.15<br>по 12.08.15</td>
+							</tr>
+							<tr>
+								<td>Время:</td>
+								<td>с 21:15 до 23:00</td>
+							</tr>
+							<tr>
+								<td>Место:</td>
+								<td>СКК ул. Дальневосточный пр ...</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="cards-descr">
+						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
+					</div>
+				</div>
+				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
+			</div>
+		</div>
+
+		<div class="cards-item">
+			<div class="cards-item__inner">
+				<div class="cards-img">
+					<img src="img/upload/cart-img-3.jpg" alt="">
+				</div>
+				<div class="cards-title">
+					<div class="cards-title__img">
+						<img src="img/icons/competition/tennis.svg" alt="">
+					</div>
+					<div class="cards-title__text">
+						<span>День здоровья и спорта</span>
+					</div>
+				</div>
+				<div class="cards-info">
+					<div class="cards-details">
+						<table>
+							<tbody>
+							<tr>
+								<td>Дата:</td>
+								<td>с 08.08.15<br>по 12.08.15</td>
+							</tr>
+							<tr>
+								<td>Время:</td>
+								<td>с 21:15 до 23:00</td>
+							</tr>
+							<tr>
+								<td>Место:</td>
+								<td>СКК ул. Дальневосточный пр ...</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="cards-descr">
+						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
+					</div>
+				</div>
+				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
+			</div>
+		</div>
+
+		<div class="cards-item">
+			<div class="cards-item__inner">
+				<div class="cards-img">
+					<img src="img/upload/cart-img-2.jpg" alt="">
+				</div>
+				<div class="cards-title">
+					<div class="cards-title__img">
+						<img src="img/icons/competition/valleytball.svg" alt="">
+					</div>
+					<div class="cards-title__text">
+						<span>1/2 кубка «Поршень» по волейболу</span>
+					</div>
+				</div>
+				<div class="cards-info">
+					<div class="cards-details">
+						<table>
+							<tbody>
+							<tr>
+								<td>Дата:</td>
+								<td>с 08.08.15<br>по 12.08.15</td>
+							</tr>
+							<tr>
+								<td>Время:</td>
+								<td>с 21:15 до 23:00</td>
+							</tr>
+							<tr>
+								<td>Место:</td>
+								<td>СКК ул. Дальневосточный пр ...</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="cards-descr">
+						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
+					</div>
+				</div>
+				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
+			</div>
+		</div>
+
+		<div class="cards-item cards-item_more">
+			<div class="cards-item__inner">
+				<div class="cards-load">
+					<div class="icon"></div>
+					<div class="title">Показать еще 30</div>
+					<div class="text">Показано 30 новостей из 1100</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	</div>
 	</section>
 
@@ -753,3 +1361,5 @@
 
 </body>
 </html>
+
+

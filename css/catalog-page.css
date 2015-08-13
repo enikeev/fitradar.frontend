@@ -114,7 +114,7 @@
 .section__nav .section__nav-search input{
 	display: block;
 	height: 36px;
-	width: 350px;
+	width: 300px;
 	font-size: 18px;
 	line-height: 32px;
 }
@@ -124,7 +124,26 @@
 .section__nav .section__nav-search .filter-field__search-input__notepad {
 	top: 5px;
 }
-
+.section__nav .section__nav-search .filter-field__search-input__notepad {
+	top: 5px;
+}
+.section__nav .section_search__tabs-field__item_date{
+	width: 172px;
+	position: relative;
+}
+.section__nav .section_search__tabs-field__item_date input{
+	width: 121px;
+	/*background: url("../img/global/arrow-down-b.svg") no-repeat 148px 17px;*/
+	/*background-size: 10px 5px;*/
+	background-position: 148px 11px;
+	height: 36px;
+	padding-left: 40px;
+}
+.section__nav .section_search__tabs-field__item_date .date-prefix{
+	position: absolute;
+	left: 13px;
+	top: 10px;
+}
 
 
 
@@ -2481,13 +2500,16 @@ catalog item
 	max-height: 260px;
 	overflow: hidden;
 }
-
+.reviews{
+	margin-bottom: 20px;
+}
 .reviews .review-item.review-item_send{
 	border-bottom: 1px solid #cfcfcf;
+	padding-bottom: 10px;
 }
 .reviews .review-item .review-box{
 	overflow: hidden;
-	margin: 20px 0;
+	margin: 20px 0 5px;
 }
 .reviews .review-item .review-box .review-box{
 	margin-left: 70px;
@@ -2591,6 +2613,7 @@ catalog item
 .reviews .review-item .review-box .review-answer{
 	margin: 0px 0 0px -10px;
 	display: none;
+	overflow: hidden;
 }
 .reviews .review-item .review-answers-wrap{
 	font-size: 18px;
@@ -2623,12 +2646,12 @@ catalog item
 	-o-transform:rotate(-180deg);
 	transform:rotate(-180deg);
 }
-.reviews .review-item .review-answers-wrap.closed .review-box,
+.reviews .review-item .review-answers-wrap.closed .review-answers-wrap__inner,
 .reviews .review-item .review-answers-wrap.opened .on_closed,
 .reviews .review-item .review-answers-wrap.closed .on_opened {
 	 display: none;
- }
-.reviews .review-item .review-answers-wrap.opened .review-box{
+}
+.reviews .review-item .review-answers-wrap.opened .review-answers-wrap__inner{
 	display: block;
 }
 
