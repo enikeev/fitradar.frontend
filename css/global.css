@@ -310,8 +310,15 @@
 
 /*tooltip*/
 
-.tooltip{
+.icon_question{
+	background: url("../img/icons/icon-quest-d.svg") no-repeat 50% 50%;
+	height: 11px;
+	width: 11px;
 	display: inline-block;
+}
+
+.tooltip{
+/*	display: inline-block;
 	width: 9px;
 	font-size: 8px;
 	color: #a3a3a3;
@@ -323,8 +330,9 @@
 	-webkit-border-radius: 10px;
 	cursor: pointer;
 	vertical-align: middle;
-	top: -3px;
-	position: relative;
+	top: -3px;*/
+	display: inline-block;
+	cursor: pointer;
 }
 .tooltip:hover{
 	color: #3fb4c6;
@@ -332,14 +340,15 @@
 }
 .tooltip-popup{
 	display: block;
-	width: 296px;
+	width: 236px;
 	border: 1px solid #d5d5d5;
-	padding: 5px 10px 10px;
+	padding: 10px;
 	position: absolute;
 	background: #f8f8f8;
 	z-index: 1000;
 	top: 0;
 	left: 0;
+	box-shadow: 2px 2px 0 #3eb4c6;
 }
 .tooltip-popup__title{
 	font-size: 16px;
@@ -349,23 +358,34 @@
 	margin-bottom: 5px;
 }
 .tooltip-popup__text{
+	line-height: 1.4;
+	font-size: 15px;
+}
+.tooltip-popup__text .comment{
 	display: block;
 	font-style: normal;
 	color: #959595;
 	font-size: 12px;
 	margin-bottom: 5px;
+	line-height: 1;
 }
 .tooltip-popup__more{
 	display: block;
 	font-style: normal;
 	color: #959595;
-	font-size: 12px;
+	font-size: 14px;
 	text-align: right;
+	float: none;
+	clear: both;
 }
 .tooltip-popup__more a{
 	text-decoration: none;
+	color: #959595;
 }
-.tooltip-popup__more a:hover{text-decoration: underline}
+.tooltip-popup__more a:hover{
+	text-decoration: underline;
+	color: #3eb4c6;
+}
 .tooltip-popup__close{
 	width: 20px;
 	height: 20px;
@@ -374,6 +394,9 @@
 	right: 5px;
 	background: url("../img/icons/icon-result-remove-d.svg") no-repeat 50% 50%;
 	cursor: pointer;
+}
+.tooltip-popup__close:hover{
+	background: url("../img/icons/icon-result-remove-c.svg") no-repeat 50% 50%;
 }
 
 .tooltip_metro {
@@ -596,6 +619,46 @@
 	width: 1500px;
 	margin: 0 auto;
 }
+
+
+
+
+
+
+
+.js-input-wrap{
+	position: relative;
+}
+.js-input-wrap .icon_notepad{
+	position: absolute;
+	top: 0;
+	right: 30px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background: url("../img/icons/icon-notepad-d.svg") no-repeat 50% 50%;
+}
+.js-input-wrap .icon_notepad:hover{
+	background-image: url("../img/icons/icon-notepad-c.svg");
+}
+.js-input-wrap .icon_clear{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background: url("../img/icons/icon-input_clear.svg") no-repeat 50% 50%;
+}
+.js-input-wrap .icon_clear:hover{
+	background-image: url("../img/icons/icon-input_clear-c.svg");
+}
+
+
+
+
+
+
 
 
 /*	Header start
@@ -1366,7 +1429,7 @@
 	left: 0;
 	width: 100%;
 	text-align: center;
-	z-index: 100;
+	z-index: 10;
 }
 .head-carousel .flex-control-paging li{
 	display: inline-block;
