@@ -1266,6 +1266,102 @@
 
 
 
+.typo {
+	font-weight: 400;
+	color: #959595;
+	font-size: 14px;
+	line-height: 1.3;
+}
+.typo h1,
+.typo h2,
+.typo h3{
+	color: #3fb4c6;
+	font-weight: 300;
+	margin-bottom: 5px;
+}
+.typo h1{font-size: 34px;}
+.typo h2{font-size: 24px;}
+.typo h3{font-size: 18px;font-weight: 400;}
+.typo h4{
+	font-size: 18px;
+	color: #4b4b4b;
+	font-weight: 400;
+}
+.typo p{
+	margin: 5px 0;
+}
+.typo ol {
+	list-style: none;
+	counter-reset: point;
+	margin: 20px 0;
+	color: #4c4b4c;
+}
+.typo ol li {
+	margin-bottom: 10px;
+	padding-left: 18px;
+	position: relative;
+}
+.typo ol li:before {
+	content: counter(point);
+	counter-increment: point 1;
+	color: #3fb4c6;
+	position: absolute;
+	left: 0;
+}
+.typo ul {
+	list-style: none;
+	counter-reset: point;
+	margin: 20px 0;
+	color: #4c4b4c;
+}
+.typo ul li {
+	margin-bottom: 10px;
+	padding-left: 18px;
+	position: relative;
+}
+.typo ul li:before {
+	content: "";
+	background: #3fb4c6;
+	position: absolute;
+	left: 0;
+	top: 7px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+
+
+.typo .table_list{
+	width: 100%;
+	font-weight: 400;
+	font-size: 15px;
+	color: #4c4b4c;
+}
+.typo .table_list th {
+	font-weight: 400;
+	padding: 5px 10px 10px;
+	text-align: left;
+	border-bottom: 1px solid #cfcfcf;
+}
+.typo .table_list th a{
+	width: 100%;
+	color: #3fb4c6;
+	text-decoration: none;
+	border-bottom: 1px dashed #3fb4c6;
+}
+.typo .table_list th a:hover{
+	border-bottom-color: transparent;
+}
+.typo .table_list td {
+	padding: 10px;
+}
+.typo .table_list td:first-child {
+	border-right: 1px solid #cfcfcf;
+}
+
+
 /*	Footer start
 *****************************************************************************/
 .footer {
