@@ -946,6 +946,27 @@ $(function(){
 
 
 
+/*tabs*/
+
+	$('.js-tabs-wrap').on('click', '[data-tab-item]', function(e){
+
+		e.preventDefault();
+		var $t = $(this),
+			$w = $t.closest('.js-tabs-wrap'),
+			$item = $w.find('[data-tab-item]'),
+			$box = $w.find('[data-tab-box]'),
+			ind = $t.data('tab-item'),
+			$box_targ = $w.find('[data-tab-box=' + ind + ']');
+
+		$item.filter('.active').removeClass('active');
+		$t.addClass('active');
+		$box.filter('.active').removeClass('active');
+		$box_targ.addClass('active');
+
+	});
+
+
+
 	$('.filter-field_slider input').on('change',function(){
 
 		var $this = $(this);

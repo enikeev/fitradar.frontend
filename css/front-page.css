@@ -33,13 +33,15 @@
 	text-decoration: underline;
 	color: #3fb4c6;
 }
-.select-location .link_active{
+.select-location .link.active{
 	color: #3fb4c6;
 }
 .select-location__country{
 	font-size: 16px;
 	margin: 0 0 15px;
 }
+.select-location__country-cities{display: none;}
+.select-location__country-cities.active{display: block;}
 .select-location__country .link{margin-right: 20px;}
 .select-location__input{
 	margin: 0 0 15px;

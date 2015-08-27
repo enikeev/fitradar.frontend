@@ -179,146 +179,552 @@
 	<section class="section section-location">
 		<div class="inner clearfix">
 
-			<div class="select-location">
+			<div class="select-location js-tabs-wrap">
 				<div class="select-location__country">
-					<a href="#" class="link link_active">Россия</a>
-					<a href="#" class="link">Украина</a>
-					<a href="#" class="link">Беларусь</a>
-					<a href="#" class="link">Казахстан</a>
+					<a href="#" class="link active" data-tab-item="c1">Россия</a>
+					<a href="#" class="link" data-tab-item="c2">Украина</a>
+					<a href="#" class="link" data-tab-item="c3">Беларусь</a>
+					<a href="#" class="link" data-tab-item="c4">Казахстан</a>
 				</div>
-				<div class="select-location__input">
-					<div class="select-location__input-field">
-						<input type="text" placeholder="Введите название города">
-						<div class="select-location__input-result">
-							<!--<a href="#">Какой то город</a>-->
-							<!--<a href="#">Какой то город</a>-->
-							<!--<a href="#">Какой то город</a>-->
+
+				<div class="select-location__country-cities active" data-tab-box="c1">
+					<div class="select-location__input">
+						<div class="select-location__input-field">
+							<input type="text" placeholder="Введите название города">
+							<div class="select-location__input-result">
+								<!--<a href="#">Какой то город</a>-->
+								<!--<a href="#">Какой то город</a>-->
+								<!--<a href="#">Какой то город</a>-->
+							</div>
+						</div>
+						<span>или выберите из списка:</span>
+					</div>
+					<div class="select-location__capitals">
+						<a href="#" class="link">Москва</a>
+						<a href="#" class="link active">Санкт-Петербург</a>
+						<a href="#" class="link">Волгоград</a>
+						<a href="#" class="link">Воронеж</a>
+						<a href="#" class="link">Екатеринбург</a>
+						<a href="#" class="link">Калининград</a>
+						<a href="#" class="link">Новосибирск</a>
+						<a href="#" class="link">Омск</a>
+						<a href="#" class="link">Самара</a>
+						<a href="#" class="link">Челябинск</a>
+						<a href="#" class="link">Ярославль</a>
+						<a href="#" class="link">Москва</a>
+						<a href="#" class="link">Санкт-Петербург</a>
+						<a href="#" class="link">Волгоград</a>
+						<a href="#" class="link">Воронеж</a>
+						<a href="#" class="link">Екатеринбург</a>
+						<a href="#" class="link">Калининград</a>
+						<a href="#" class="link">Новосибирск</a>
+						<a href="#" class="link">Омск</a>
+						<a href="#" class="link">Самара</a>
+						<a href="#" class="link">Челябинск</a>
+						<a href="#" class="link">Ярославль</a>
+					</div>
+					<div class="select-location__words">
+						<a href="#" class="link active">А</a>
+						<a href="#" class="link">Б</a>
+						<a href="#" class="link">В</a>
+						<a href="#" class="link">Г</a>
+						<a href="#" class="link">Д</a>
+						<a href="#" class="link">Е</a>
+						<a href="#" class="link">Ж</a>
+						<a href="#" class="link">З</a>
+						<a href="#" class="link">И</a>
+						<a href="#" class="link">К</a>
+						<a href="#" class="link">Л</a>
+						<a href="#" class="link">М</a>
+						<a href="#" class="link">Н</a>
+						<a href="#" class="link">О</a>
+						<a href="#" class="link">П</a>
+						<a href="#" class="link">Р</a>
+						<a href="#" class="link">С</a>
+						<a href="#" class="link">Т</a>
+						<a href="#" class="link">У</a>
+						<a href="#" class="link">Ф</a>
+						<a href="#" class="link">Х</a>
+						<a href="#" class="link">Ц</a>
+						<a href="#" class="link">Ч</a>
+						<a href="#" class="link">Ш</a>
+						<a href="#" class="link">Щ</a>
+						<a href="#" class="link">Э</a>
+						<a href="#" class="link">Ю</a>
+						<a href="#" class="link">Я</a>
+					</div>
+					<div class="select-location__capitals-word">A</div>
+					<div class="select-location__cities">
+						<div class="select-location__cities-group">
+							<a href="#" class="link">Абаза</a>
+							<a href="#" class="link">Абакан</a>
+							<a href="#" class="link">Абдулино</a>
+							<a href="#" class="link">Абинск</a>
+							<a href="#" class="link">Агидель</a>
+							<a href="#" class="link">Агрыз</a>
+							<a href="#" class="link">Адыгейск</a>
+							<a href="#" class="link">Азнакаево</a>
+							<a href="#" class="link">Азов</a>
+							<a href="#" class="link">Ак-Довурак</a>
+							<a href="#" class="link">Аксай</a>
+							<a href="#" class="link">Алагир</a>
+							<a href="#" class="link">Алапаевск</a>
+						</div>
+
+						<div class="select-location__cities-group">
+							<a href="#" class="link">Алатырь</a>
+							<a href="#" class="link">Алдан</a>
+							<a href="#" class="link">Алейск</a>
+							<a href="#" class="link">Александров</a>
+							<a href="#" class="link">Александровск</a>
+							<a href="#" class="link">Александровск-Сахалинский</a>
+							<a href="#" class="link">Алексеевка</a>
+							<a href="#" class="link">Алексин</a>
+							<a href="#" class="link">Алзамай</a>
+							<a href="#" class="link">Альметьевск</a>
+							<a href="#" class="link">Амурск</a>
+							<a href="#" class="link">Анадырь Регио</a>
+							<a href="#" class="link">Анапа</a>
+						</div>
+
+						<div class="select-location__cities-group">
+							<a href="#" class="link">Ангарск</a>
+							<a href="#" class="link">Андреаполь</a>
+							<a href="#" class="link">Анжеро-Судженск</a>
+							<a href="#" class="link">Анива</a>
+							<a href="#" class="link">Апатиты</a>
+							<a href="#" class="link">Апрелевка</a>
+							<a href="#" class="link">Апшеронск</a>
+							<a href="#" class="link">Арамиль</a>
+							<a href="#" class="link">Аргун</a>
+							<a href="#" class="link">Ардатов</a>
+							<a href="#" class="link">Ардон</a>
+							<a href="#" class="link">Арзама</a>
+							<a href="#" class="link">Аркадак</a>
+						</div>
+
+						<div class="select-location__cities-group">
+							<a href="#" class="link">Армавир</a>
+							<a href="#" class="link">Арсеньев</a>
+							<a href="#" class="link">Арск</a>
+							<a href="#" class="link">Артем</a>
+							<a href="#" class="link">Артемовск</a>
+							<a href="#" class="link">Артемовский</a>
+							<a href="#" class="link">Архангельск</a>
+							<a href="#" class="link">Асбест</a>
+							<a href="#" class="link">Асино</a>
+							<a href="#" class="link">Астрахань</a>
+							<a href="#" class="link">Аткарск</a>
+							<a href="#" class="link">Ахтубинск</a>
+							<a href="#" class="link">Ачинск</a>
 						</div>
 					</div>
-					<span>или выберите из списка:</span>
 				</div>
-				<div class="select-location__capitals">
-					<a href="#" class="link">Москва</a>
-					<a href="#" class="link link_active">Санкт-Петербург</a>
-					<a href="#" class="link">Волгоград</a>
-					<a href="#" class="link">Воронеж</a>
-					<a href="#" class="link">Екатеринбург</a>
-					<a href="#" class="link">Калининград</a>
-					<a href="#" class="link">Новосибирск</a>
-					<a href="#" class="link">Омск</a>
-					<a href="#" class="link">Самара</a>
-					<a href="#" class="link">Челябинск</a>
-					<a href="#" class="link">Ярославль</a>
-					<a href="#" class="link">Москва</a>
-					<a href="#" class="link">Санкт-Петербург</a>
-					<a href="#" class="link">Волгоград</a>
-					<a href="#" class="link">Воронеж</a>
-					<a href="#" class="link">Екатеринбург</a>
-					<a href="#" class="link">Калининград</a>
-					<a href="#" class="link">Новосибирск</a>
-					<a href="#" class="link">Омск</a>
-					<a href="#" class="link">Самара</a>
-					<a href="#" class="link">Челябинск</a>
-					<a href="#" class="link">Ярославль</a>
+
+				<div class="select-location__country-cities" data-tab-box="c2">
+					<div class="select-location__input">
+						<div class="select-location__input-field">
+							<input type="text" placeholder="Введите название города">
+							<div class="select-location__input-result">
+								<!--<a href="#">Какой то город</a>-->
+								<!--<a href="#">Какой то город</a>-->
+								<!--<a href="#">Какой то город</a>-->
+							</div>
+						</div>
+						<span>или выберите из списка:</span>
+					</div>
+					<div class="select-location__capitals">
+						<a href="#" class="link">Київ</a>
+						<a href="#" class="link active">Київ</a>
+						<a href="#" class="link">Київ</a>
+						<a href="#" class="link">Київ</a>
+						<a href="#" class="link">Київ</a>
+						<a href="#" class="link">Київ</a>
+						<a href="#" class="link">Київ</a>
+						<a href="#" class="link">Київ</a>
+						<a href="#" class="link">Київ</a>
+						<a href="#" class="link">Київ</a>
+						<a href="#" class="link">Київ</a>
+						<a href="#" class="link">Київ</a>
+						<a href="#" class="link">Київ</a>
+						<a href="#" class="link">Київ</a>
+						<a href="#" class="link">Київ</a>
+						<a href="#" class="link">Київ</a>
+						<a href="#" class="link">Київ</a>
+						<a href="#" class="link">Київ</a>
+						<a href="#" class="link">Київ</a>
+						<a href="#" class="link">Київ</a>
+						<a href="#" class="link">Київ</a>
+						<a href="#" class="link">Київ</a>
+					</div>
+					<div class="select-location__words">
+						<a href="#" class="link active">А</a>
+						<a href="#" class="link">Б</a>
+						<a href="#" class="link">В</a>
+						<a href="#" class="link">Г</a>
+						<a href="#" class="link">Д</a>
+						<a href="#" class="link">Е</a>
+						<a href="#" class="link">Ж</a>
+						<a href="#" class="link">З</a>
+						<a href="#" class="link">И</a>
+						<a href="#" class="link">К</a>
+						<a href="#" class="link">Л</a>
+						<a href="#" class="link">М</a>
+						<a href="#" class="link">Н</a>
+						<a href="#" class="link">О</a>
+						<a href="#" class="link">П</a>
+						<a href="#" class="link">Р</a>
+						<a href="#" class="link">С</a>
+						<a href="#" class="link">Т</a>
+						<a href="#" class="link">У</a>
+						<a href="#" class="link">Ф</a>
+						<a href="#" class="link">Х</a>
+						<a href="#" class="link">Ц</a>
+						<a href="#" class="link">Ч</a>
+						<a href="#" class="link">Ш</a>
+						<a href="#" class="link">Щ</a>
+						<a href="#" class="link">Э</a>
+						<a href="#" class="link">Ю</a>
+						<a href="#" class="link">Я</a>
+					</div>
+					<div class="select-location__capitals-word">A</div>
+					<div class="select-location__cities">
+						<div class="select-location__cities-group">
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+						</div>
+
+						<div class="select-location__cities-group">
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+						</div>
+
+						<div class="select-location__cities-group">
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+						</div>
+
+						<div class="select-location__cities-group">
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+							<a href="#" class="link">Київ</a>
+						</div>
+					</div>
 				</div>
-				<div class="select-location__words">
-					<a href="#" class="link link_active">А</a>
-					<a href="#" class="link">Б</a>
-					<a href="#" class="link">В</a>
-					<a href="#" class="link">Г</a>
-					<a href="#" class="link">Д</a>
-					<a href="#" class="link">Е</a>
-					<a href="#" class="link">Ж</a>
-					<a href="#" class="link">З</a>
-					<a href="#" class="link">И</a>
-					<a href="#" class="link">К</a>
-					<a href="#" class="link">Л</a>
-					<a href="#" class="link">М</a>
-					<a href="#" class="link">Н</a>
-					<a href="#" class="link">О</a>
-					<a href="#" class="link">П</a>
-					<a href="#" class="link">Р</a>
-					<a href="#" class="link">С</a>
-					<a href="#" class="link">Т</a>
-					<a href="#" class="link">У</a>
-					<a href="#" class="link">Ф</a>
-					<a href="#" class="link">Х</a>
-					<a href="#" class="link">Ц</a>
-					<a href="#" class="link">Ч</a>
-					<a href="#" class="link">Ш</a>
-					<a href="#" class="link">Щ</a>
-					<a href="#" class="link">Э</a>
-					<a href="#" class="link">Ю</a>
-					<a href="#" class="link">Я</a>
+
+				<div class="select-location__country-cities" data-tab-box="c3">
+					<div class="select-location__input">
+						<div class="select-location__input-field">
+							<input type="text" placeholder="Введите название города">
+							<div class="select-location__input-result">
+								<!--<a href="#">Какой то город</a>-->
+								<!--<a href="#">Какой то город</a>-->
+								<!--<a href="#">Какой то город</a>-->
+							</div>
+						</div>
+						<span>или выберите из списка:</span>
+					</div>
+					<div class="select-location__capitals">
+						<a href="#" class="link">Минск</a>
+						<a href="#" class="link active">Минск</a>
+						<a href="#" class="link">Минск</a>
+						<a href="#" class="link">Минск</a>
+						<a href="#" class="link">Минск</a>
+						<a href="#" class="link">Минск</a>
+						<a href="#" class="link">Минск</a>
+						<a href="#" class="link">Минск</a>
+						<a href="#" class="link">Минск</a>
+						<a href="#" class="link">Минск</a>
+						<a href="#" class="link">Минск</a>
+						<a href="#" class="link">Минск</a>
+						<a href="#" class="link">Минск</a>
+						<a href="#" class="link">Минск</a>
+						<a href="#" class="link">Минск</a>
+						<a href="#" class="link">Минск</a>
+						<a href="#" class="link">Минск</a>
+						<a href="#" class="link">Минск</a>
+						<a href="#" class="link">Минск</a>
+						<a href="#" class="link">Минск</a>
+						<a href="#" class="link">Минск</a>
+						<a href="#" class="link">Минск</a>
+					</div>
+					<div class="select-location__words">
+						<a href="#" class="link active">А</a>
+						<a href="#" class="link">Б</a>
+						<a href="#" class="link">В</a>
+						<a href="#" class="link">Г</a>
+						<a href="#" class="link">Д</a>
+						<a href="#" class="link">Е</a>
+						<a href="#" class="link">Ж</a>
+						<a href="#" class="link">З</a>
+						<a href="#" class="link">И</a>
+						<a href="#" class="link">К</a>
+						<a href="#" class="link">Л</a>
+						<a href="#" class="link">М</a>
+						<a href="#" class="link">Н</a>
+						<a href="#" class="link">О</a>
+						<a href="#" class="link">П</a>
+						<a href="#" class="link">Р</a>
+						<a href="#" class="link">С</a>
+						<a href="#" class="link">Т</a>
+						<a href="#" class="link">У</a>
+						<a href="#" class="link">Ф</a>
+						<a href="#" class="link">Х</a>
+						<a href="#" class="link">Ц</a>
+						<a href="#" class="link">Ч</a>
+						<a href="#" class="link">Ш</a>
+						<a href="#" class="link">Щ</a>
+						<a href="#" class="link">Э</a>
+						<a href="#" class="link">Ю</a>
+						<a href="#" class="link">Я</a>
+					</div>
+					<div class="select-location__capitals-word">A</div>
+					<div class="select-location__cities">
+						<div class="select-location__cities-group">
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+						</div>
+
+						<div class="select-location__cities-group">
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+						</div>
+
+						<div class="select-location__cities-group">
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+						</div>
+
+						<div class="select-location__cities-group">
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+							<a href="#" class="link">Минск</a>
+						</div>
+					</div>
 				</div>
-				<div class="select-location__capitals-word">A</div>
-				<div class="select-location__cities">
-					<div class="select-location__cities-group">
-						<a href="#" class="link">Абаза</a>
-						<a href="#" class="link">Абакан</a>
-						<a href="#" class="link">Абдулино</a>
-						<a href="#" class="link">Абинск</a>
-						<a href="#" class="link">Агидель</a>
-						<a href="#" class="link">Агрыз</a>
-						<a href="#" class="link">Адыгейск</a>
-						<a href="#" class="link">Азнакаево</a>
-						<a href="#" class="link">Азов</a>
-						<a href="#" class="link">Ак-Довурак</a>
-						<a href="#" class="link">Аксай</a>
-						<a href="#" class="link">Алагир</a>
-						<a href="#" class="link">Алапаевск</a>
-					</div>
 
-					<div class="select-location__cities-group">
-						<a href="#" class="link">Алатырь</a>
-						<a href="#" class="link">Алдан</a>
-						<a href="#" class="link">Алейск</a>
-						<a href="#" class="link">Александров</a>
-						<a href="#" class="link">Александровск</a>
-						<a href="#" class="link">Александровск-Сахалинский</a>
-						<a href="#" class="link">Алексеевка</a>
-						<a href="#" class="link">Алексин</a>
-						<a href="#" class="link">Алзамай</a>
-						<a href="#" class="link">Альметьевск</a>
-						<a href="#" class="link">Амурск</a>
-						<a href="#" class="link">Анадырь Регио</a>
-						<a href="#" class="link">Анапа</a>
+				<div class="select-location__country-cities" data-tab-box="c4">
+					<div class="select-location__input">
+						<div class="select-location__input-field">
+							<input type="text" placeholder="Введите название города">
+							<div class="select-location__input-result">
+								<!--<a href="#">Какой то город</a>-->
+								<!--<a href="#">Какой то город</a>-->
+								<!--<a href="#">Какой то город</a>-->
+							</div>
+						</div>
+						<span>или выберите из списка:</span>
 					</div>
-
-					<div class="select-location__cities-group">
-						<a href="#" class="link">Ангарск</a>
-						<a href="#" class="link">Андреаполь</a>
-						<a href="#" class="link">Анжеро-Судженск</a>
-						<a href="#" class="link">Анива</a>
-						<a href="#" class="link">Апатиты</a>
-						<a href="#" class="link">Апрелевка</a>
-						<a href="#" class="link">Апшеронск</a>
-						<a href="#" class="link">Арамиль</a>
-						<a href="#" class="link">Аргун</a>
-						<a href="#" class="link">Ардатов</a>
-						<a href="#" class="link">Ардон</a>
-						<a href="#" class="link">Арзама</a>
-						<a href="#" class="link">Аркадак</a>
+					<div class="select-location__capitals">
+						<a href="#" class="link">Москва</a>
+						<a href="#" class="link active">Астана</a>
+						<a href="#" class="link">Астана</a>
+						<a href="#" class="link">Астана</a>
+						<a href="#" class="link">Астана</a>
+						<a href="#" class="link">Астана</a>
+						<a href="#" class="link">Астана</a>
+						<a href="#" class="link">Астана</a>
+						<a href="#" class="link">Астана</a>
+						<a href="#" class="link">Астана</a>
+						<a href="#" class="link">Астана</a>
+						<a href="#" class="link">Астана</a>
+						<a href="#" class="link">Астана</a>
+						<a href="#" class="link">Астана</a>
+						<a href="#" class="link">Астана</a>
+						<a href="#" class="link">Астана</a>
+						<a href="#" class="link">Астана</a>
+						<a href="#" class="link">Астана</a>
+						<a href="#" class="link">Астана</a>
+						<a href="#" class="link">Астана</a>
+						<a href="#" class="link">Астана</a>
+						<a href="#" class="link">Астана</a>
 					</div>
-
-					<div class="select-location__cities-group">
-						<a href="#" class="link">Армавир</a>
-						<a href="#" class="link">Арсеньев</a>
-						<a href="#" class="link">Арск</a>
-						<a href="#" class="link">Артем</a>
-						<a href="#" class="link">Артемовск</a>
-						<a href="#" class="link">Артемовский</a>
-						<a href="#" class="link">Архангельск</a>
-						<a href="#" class="link">Асбест</a>
-						<a href="#" class="link">Асино</a>
-						<a href="#" class="link">Астрахань</a>
-						<a href="#" class="link">Аткарск</a>
-						<a href="#" class="link">Ахтубинск</a>
-						<a href="#" class="link">Ачинск</a>
+					<div class="select-location__words">
+						<a href="#" class="link active">А</a>
+						<a href="#" class="link">Б</a>
+						<a href="#" class="link">В</a>
+						<a href="#" class="link">Г</a>
+						<a href="#" class="link">Д</a>
+						<a href="#" class="link">Е</a>
+						<a href="#" class="link">Ж</a>
+						<a href="#" class="link">З</a>
+						<a href="#" class="link">И</a>
+						<a href="#" class="link">К</a>
+						<a href="#" class="link">Л</a>
+						<a href="#" class="link">М</a>
+						<a href="#" class="link">Н</a>
+						<a href="#" class="link">О</a>
+						<a href="#" class="link">П</a>
+						<a href="#" class="link">Р</a>
+						<a href="#" class="link">С</a>
+						<a href="#" class="link">Т</a>
+						<a href="#" class="link">У</a>
+						<a href="#" class="link">Ф</a>
+						<a href="#" class="link">Х</a>
+						<a href="#" class="link">Ц</a>
+						<a href="#" class="link">Ч</a>
+						<a href="#" class="link">Ш</a>
+						<a href="#" class="link">Щ</a>
+						<a href="#" class="link">Э</a>
+						<a href="#" class="link">Ю</a>
+						<a href="#" class="link">Я</a>
 					</div>
+					<div class="select-location__capitals-word">A</div>
+					<div class="select-location__cities">
+						<div class="select-location__cities-group">
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+						</div>
 
+						<div class="select-location__cities-group">
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+						</div>
+
+						<div class="select-location__cities-group">
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+						</div>
+
+						<div class="select-location__cities-group">
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+							<a href="#" class="link">Астана</a>
+						</div>
+					</div>
 				</div>
+
 				<div class="select-location__close"><span class="btn btn_brdr js-close-location-screen">Свернуть</span></div>
+
 			</div>
 		</div>
 	</section>
@@ -5568,150 +5974,556 @@
 	</section>
 
 	<section class="section section_stat-location">
-		<div class="inner clearfix">
 
-			<div class="select-location">
-				<div class="select-location__country">
-					<a href="#" class="link link_active">Россия</a>
-					<a href="#" class="link">Украина</a>
-					<a href="#" class="link">Беларусь</a>
-					<a href="#" class="link">Казахстан</a>
-				</div>
-				<div class="select-location__input">
-					<div class="select-location__input-field">
-						<input type="text" placeholder="Введите название города">
-						<div class="select-location__input-result">
-							<!--<a href="#">Какой то город</a>-->
-							<!--<a href="#">Какой то город</a>-->
-							<!--<a href="#">Какой то город</a>-->
-						</div>
-					</div>
-					<span>или выберите из списка:</span>
-				</div>
-				<div class="select-location__capitals">
-					<a href="#" class="link">Москва</a>
-					<a href="#" class="link link_active">Санкт-Петербург</a>
-					<a href="#" class="link">Волгоград</a>
-					<a href="#" class="link">Воронеж</a>
-					<a href="#" class="link">Екатеринбург</a>
-					<a href="#" class="link">Калининград</a>
-					<a href="#" class="link">Новосибирск</a>
-					<a href="#" class="link">Омск</a>
-					<a href="#" class="link">Самара</a>
-					<a href="#" class="link">Челябинск</a>
-					<a href="#" class="link">Ярославль</a>
-					<a href="#" class="link">Москва</a>
-					<a href="#" class="link">Санкт-Петербург</a>
-					<a href="#" class="link">Волгоград</a>
-					<a href="#" class="link">Воронеж</a>
-					<a href="#" class="link">Екатеринбург</a>
-					<a href="#" class="link">Калининград</a>
-					<a href="#" class="link">Новосибирск</a>
-					<a href="#" class="link">Омск</a>
-					<a href="#" class="link">Самара</a>
-					<a href="#" class="link">Челябинск</a>
-					<a href="#" class="link">Ярославль</a>
-				</div>
-				<div class="select-location__words">
-					<a href="#" class="link link_active">А</a>
-					<a href="#" class="link">Б</a>
-					<a href="#" class="link">В</a>
-					<a href="#" class="link">Г</a>
-					<a href="#" class="link">Д</a>
-					<a href="#" class="link">Е</a>
-					<a href="#" class="link">Ж</a>
-					<a href="#" class="link">З</a>
-					<a href="#" class="link">И</a>
-					<a href="#" class="link">К</a>
-					<a href="#" class="link">Л</a>
-					<a href="#" class="link">М</a>
-					<a href="#" class="link">Н</a>
-					<a href="#" class="link">О</a>
-					<a href="#" class="link">П</a>
-					<a href="#" class="link">Р</a>
-					<a href="#" class="link">С</a>
-					<a href="#" class="link">Т</a>
-					<a href="#" class="link">У</a>
-					<a href="#" class="link">Ф</a>
-					<a href="#" class="link">Х</a>
-					<a href="#" class="link">Ц</a>
-					<a href="#" class="link">Ч</a>
-					<a href="#" class="link">Ш</a>
-					<a href="#" class="link">Щ</a>
-					<a href="#" class="link">Э</a>
-					<a href="#" class="link">Ю</a>
-					<a href="#" class="link">Я</a>
-				</div>
-				<div class="select-location__capitals-word">A</div>
-				<div class="select-location__cities">
-					<div class="select-location__cities-group">
-						<a href="#" class="link">Абаза</a>
-						<a href="#" class="link">Абакан</a>
-						<a href="#" class="link">Абдулино</a>
-						<a href="#" class="link">Абинск</a>
-						<a href="#" class="link">Агидель</a>
-						<a href="#" class="link">Агрыз</a>
-						<a href="#" class="link">Адыгейск</a>
-						<a href="#" class="link">Азнакаево</a>
-						<a href="#" class="link">Азов</a>
-						<a href="#" class="link">Ак-Довурак</a>
-						<a href="#" class="link">Аксай</a>
-						<a href="#" class="link">Алагир</a>
-						<a href="#" class="link">Алапаевск</a>
-					</div>
+	<div class="inner clearfix">
 
-					<div class="select-location__cities-group">
-						<a href="#" class="link">Алатырь</a>
-						<a href="#" class="link">Алдан</a>
-						<a href="#" class="link">Алейск</a>
-						<a href="#" class="link">Александров</a>
-						<a href="#" class="link">Александровск</a>
-						<a href="#" class="link">Александровск-Сахалинский</a>
-						<a href="#" class="link">Алексеевка</a>
-						<a href="#" class="link">Алексин</a>
-						<a href="#" class="link">Алзамай</a>
-						<a href="#" class="link">Альметьевск</a>
-						<a href="#" class="link">Амурск</a>
-						<a href="#" class="link">Анадырь Регио</a>
-						<a href="#" class="link">Анапа</a>
-					</div>
+	<div class="select-location js-tabs-wrap">
+	<div class="select-location__country">
+		<a href="#" class="link active" data-tab-item="c1">Россия</a>
+		<a href="#" class="link" data-tab-item="c2">Украина</a>
+		<a href="#" class="link" data-tab-item="c3">Беларусь</a>
+		<a href="#" class="link" data-tab-item="c4">Казахстан</a>
+	</div>
 
-					<div class="select-location__cities-group">
-						<a href="#" class="link">Ангарск</a>
-						<a href="#" class="link">Андреаполь</a>
-						<a href="#" class="link">Анжеро-Судженск</a>
-						<a href="#" class="link">Анива</a>
-						<a href="#" class="link">Апатиты</a>
-						<a href="#" class="link">Апрелевка</a>
-						<a href="#" class="link">Апшеронск</a>
-						<a href="#" class="link">Арамиль</a>
-						<a href="#" class="link">Аргун</a>
-						<a href="#" class="link">Ардатов</a>
-						<a href="#" class="link">Ардон</a>
-						<a href="#" class="link">Арзама</a>
-						<a href="#" class="link">Аркадак</a>
-					</div>
-
-					<div class="select-location__cities-group">
-						<a href="#" class="link">Армавир</a>
-						<a href="#" class="link">Арсеньев</a>
-						<a href="#" class="link">Арск</a>
-						<a href="#" class="link">Артем</a>
-						<a href="#" class="link">Артемовск</a>
-						<a href="#" class="link">Артемовский</a>
-						<a href="#" class="link">Архангельск</a>
-						<a href="#" class="link">Асбест</a>
-						<a href="#" class="link">Асино</a>
-						<a href="#" class="link">Астрахань</a>
-						<a href="#" class="link">Аткарск</a>
-						<a href="#" class="link">Ахтубинск</a>
-						<a href="#" class="link">Ачинск</a>
-					</div>
-
+	<div class="select-location__country-cities active" data-tab-box="c1">
+		<div class="select-location__input">
+			<div class="select-location__input-field">
+				<input type="text" placeholder="Введите название города">
+				<div class="select-location__input-result">
+					<!--<a href="#">Какой то город</a>-->
+					<!--<a href="#">Какой то город</a>-->
+					<!--<a href="#">Какой то город</a>-->
 				</div>
-				<div class="select-location__close"><span class="btn btn_brdr js-close-stat-location-screen">Свернуть</span></div>
+			</div>
+			<span>или выберите из списка:</span>
+		</div>
+		<div class="select-location__capitals">
+			<a href="#" class="link">Москва</a>
+			<a href="#" class="link active">Санкт-Петербург</a>
+			<a href="#" class="link">Волгоград</a>
+			<a href="#" class="link">Воронеж</a>
+			<a href="#" class="link">Екатеринбург</a>
+			<a href="#" class="link">Калининград</a>
+			<a href="#" class="link">Новосибирск</a>
+			<a href="#" class="link">Омск</a>
+			<a href="#" class="link">Самара</a>
+			<a href="#" class="link">Челябинск</a>
+			<a href="#" class="link">Ярославль</a>
+			<a href="#" class="link">Москва</a>
+			<a href="#" class="link">Санкт-Петербург</a>
+			<a href="#" class="link">Волгоград</a>
+			<a href="#" class="link">Воронеж</a>
+			<a href="#" class="link">Екатеринбург</a>
+			<a href="#" class="link">Калининград</a>
+			<a href="#" class="link">Новосибирск</a>
+			<a href="#" class="link">Омск</a>
+			<a href="#" class="link">Самара</a>
+			<a href="#" class="link">Челябинск</a>
+			<a href="#" class="link">Ярославль</a>
+		</div>
+		<div class="select-location__words">
+			<a href="#" class="link active">А</a>
+			<a href="#" class="link">Б</a>
+			<a href="#" class="link">В</a>
+			<a href="#" class="link">Г</a>
+			<a href="#" class="link">Д</a>
+			<a href="#" class="link">Е</a>
+			<a href="#" class="link">Ж</a>
+			<a href="#" class="link">З</a>
+			<a href="#" class="link">И</a>
+			<a href="#" class="link">К</a>
+			<a href="#" class="link">Л</a>
+			<a href="#" class="link">М</a>
+			<a href="#" class="link">Н</a>
+			<a href="#" class="link">О</a>
+			<a href="#" class="link">П</a>
+			<a href="#" class="link">Р</a>
+			<a href="#" class="link">С</a>
+			<a href="#" class="link">Т</a>
+			<a href="#" class="link">У</a>
+			<a href="#" class="link">Ф</a>
+			<a href="#" class="link">Х</a>
+			<a href="#" class="link">Ц</a>
+			<a href="#" class="link">Ч</a>
+			<a href="#" class="link">Ш</a>
+			<a href="#" class="link">Щ</a>
+			<a href="#" class="link">Э</a>
+			<a href="#" class="link">Ю</a>
+			<a href="#" class="link">Я</a>
+		</div>
+		<div class="select-location__capitals-word">A</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Абаза</a>
+				<a href="#" class="link">Абакан</a>
+				<a href="#" class="link">Абдулино</a>
+				<a href="#" class="link">Абинск</a>
+				<a href="#" class="link">Агидель</a>
+				<a href="#" class="link">Агрыз</a>
+				<a href="#" class="link">Адыгейск</a>
+				<a href="#" class="link">Азнакаево</a>
+				<a href="#" class="link">Азов</a>
+				<a href="#" class="link">Ак-Довурак</a>
+				<a href="#" class="link">Аксай</a>
+				<a href="#" class="link">Алагир</a>
+				<a href="#" class="link">Алапаевск</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Алатырь</a>
+				<a href="#" class="link">Алдан</a>
+				<a href="#" class="link">Алейск</a>
+				<a href="#" class="link">Александров</a>
+				<a href="#" class="link">Александровск</a>
+				<a href="#" class="link">Александровск-Сахалинский</a>
+				<a href="#" class="link">Алексеевка</a>
+				<a href="#" class="link">Алексин</a>
+				<a href="#" class="link">Алзамай</a>
+				<a href="#" class="link">Альметьевск</a>
+				<a href="#" class="link">Амурск</a>
+				<a href="#" class="link">Анадырь Регио</a>
+				<a href="#" class="link">Анапа</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ангарск</a>
+				<a href="#" class="link">Андреаполь</a>
+				<a href="#" class="link">Анжеро-Судженск</a>
+				<a href="#" class="link">Анива</a>
+				<a href="#" class="link">Апатиты</a>
+				<a href="#" class="link">Апрелевка</a>
+				<a href="#" class="link">Апшеронск</a>
+				<a href="#" class="link">Арамиль</a>
+				<a href="#" class="link">Аргун</a>
+				<a href="#" class="link">Ардатов</a>
+				<a href="#" class="link">Ардон</a>
+				<a href="#" class="link">Арзама</a>
+				<a href="#" class="link">Аркадак</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Армавир</a>
+				<a href="#" class="link">Арсеньев</a>
+				<a href="#" class="link">Арск</a>
+				<a href="#" class="link">Артем</a>
+				<a href="#" class="link">Артемовск</a>
+				<a href="#" class="link">Артемовский</a>
+				<a href="#" class="link">Архангельск</a>
+				<a href="#" class="link">Асбест</a>
+				<a href="#" class="link">Асино</a>
+				<a href="#" class="link">Астрахань</a>
+				<a href="#" class="link">Аткарск</a>
+				<a href="#" class="link">Ахтубинск</a>
+				<a href="#" class="link">Ачинск</a>
 			</div>
 		</div>
+	</div>
+
+	<div class="select-location__country-cities" data-tab-box="c2">
+		<div class="select-location__input">
+			<div class="select-location__input-field">
+				<input type="text" placeholder="Введите название города">
+				<div class="select-location__input-result">
+					<!--<a href="#">Какой то город</a>-->
+					<!--<a href="#">Какой то город</a>-->
+					<!--<a href="#">Какой то город</a>-->
+				</div>
+			</div>
+			<span>или выберите из списка:</span>
+		</div>
+		<div class="select-location__capitals">
+			<a href="#" class="link">Київ</a>
+			<a href="#" class="link active">Київ</a>
+			<a href="#" class="link">Київ</a>
+			<a href="#" class="link">Київ</a>
+			<a href="#" class="link">Київ</a>
+			<a href="#" class="link">Київ</a>
+			<a href="#" class="link">Київ</a>
+			<a href="#" class="link">Київ</a>
+			<a href="#" class="link">Київ</a>
+			<a href="#" class="link">Київ</a>
+			<a href="#" class="link">Київ</a>
+			<a href="#" class="link">Київ</a>
+			<a href="#" class="link">Київ</a>
+			<a href="#" class="link">Київ</a>
+			<a href="#" class="link">Київ</a>
+			<a href="#" class="link">Київ</a>
+			<a href="#" class="link">Київ</a>
+			<a href="#" class="link">Київ</a>
+			<a href="#" class="link">Київ</a>
+			<a href="#" class="link">Київ</a>
+			<a href="#" class="link">Київ</a>
+			<a href="#" class="link">Київ</a>
+		</div>
+		<div class="select-location__words">
+			<a href="#" class="link active">А</a>
+			<a href="#" class="link">Б</a>
+			<a href="#" class="link">В</a>
+			<a href="#" class="link">Г</a>
+			<a href="#" class="link">Д</a>
+			<a href="#" class="link">Е</a>
+			<a href="#" class="link">Ж</a>
+			<a href="#" class="link">З</a>
+			<a href="#" class="link">И</a>
+			<a href="#" class="link">К</a>
+			<a href="#" class="link">Л</a>
+			<a href="#" class="link">М</a>
+			<a href="#" class="link">Н</a>
+			<a href="#" class="link">О</a>
+			<a href="#" class="link">П</a>
+			<a href="#" class="link">Р</a>
+			<a href="#" class="link">С</a>
+			<a href="#" class="link">Т</a>
+			<a href="#" class="link">У</a>
+			<a href="#" class="link">Ф</a>
+			<a href="#" class="link">Х</a>
+			<a href="#" class="link">Ц</a>
+			<a href="#" class="link">Ч</a>
+			<a href="#" class="link">Ш</a>
+			<a href="#" class="link">Щ</a>
+			<a href="#" class="link">Э</a>
+			<a href="#" class="link">Ю</a>
+			<a href="#" class="link">Я</a>
+		</div>
+		<div class="select-location__capitals-word">A</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Київ</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="select-location__country-cities" data-tab-box="c3">
+		<div class="select-location__input">
+			<div class="select-location__input-field">
+				<input type="text" placeholder="Введите название города">
+				<div class="select-location__input-result">
+					<!--<a href="#">Какой то город</a>-->
+					<!--<a href="#">Какой то город</a>-->
+					<!--<a href="#">Какой то город</a>-->
+				</div>
+			</div>
+			<span>или выберите из списка:</span>
+		</div>
+		<div class="select-location__capitals">
+			<a href="#" class="link">Минск</a>
+			<a href="#" class="link active">Минск</a>
+			<a href="#" class="link">Минск</a>
+			<a href="#" class="link">Минск</a>
+			<a href="#" class="link">Минск</a>
+			<a href="#" class="link">Минск</a>
+			<a href="#" class="link">Минск</a>
+			<a href="#" class="link">Минск</a>
+			<a href="#" class="link">Минск</a>
+			<a href="#" class="link">Минск</a>
+			<a href="#" class="link">Минск</a>
+			<a href="#" class="link">Минск</a>
+			<a href="#" class="link">Минск</a>
+			<a href="#" class="link">Минск</a>
+			<a href="#" class="link">Минск</a>
+			<a href="#" class="link">Минск</a>
+			<a href="#" class="link">Минск</a>
+			<a href="#" class="link">Минск</a>
+			<a href="#" class="link">Минск</a>
+			<a href="#" class="link">Минск</a>
+			<a href="#" class="link">Минск</a>
+			<a href="#" class="link">Минск</a>
+		</div>
+		<div class="select-location__words">
+			<a href="#" class="link active">А</a>
+			<a href="#" class="link">Б</a>
+			<a href="#" class="link">В</a>
+			<a href="#" class="link">Г</a>
+			<a href="#" class="link">Д</a>
+			<a href="#" class="link">Е</a>
+			<a href="#" class="link">Ж</a>
+			<a href="#" class="link">З</a>
+			<a href="#" class="link">И</a>
+			<a href="#" class="link">К</a>
+			<a href="#" class="link">Л</a>
+			<a href="#" class="link">М</a>
+			<a href="#" class="link">Н</a>
+			<a href="#" class="link">О</a>
+			<a href="#" class="link">П</a>
+			<a href="#" class="link">Р</a>
+			<a href="#" class="link">С</a>
+			<a href="#" class="link">Т</a>
+			<a href="#" class="link">У</a>
+			<a href="#" class="link">Ф</a>
+			<a href="#" class="link">Х</a>
+			<a href="#" class="link">Ц</a>
+			<a href="#" class="link">Ч</a>
+			<a href="#" class="link">Ш</a>
+			<a href="#" class="link">Щ</a>
+			<a href="#" class="link">Э</a>
+			<a href="#" class="link">Ю</a>
+			<a href="#" class="link">Я</a>
+		</div>
+		<div class="select-location__capitals-word">A</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Минск</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="select-location__country-cities" data-tab-box="c4">
+		<div class="select-location__input">
+			<div class="select-location__input-field">
+				<input type="text" placeholder="Введите название города">
+				<div class="select-location__input-result">
+					<!--<a href="#">Какой то город</a>-->
+					<!--<a href="#">Какой то город</a>-->
+					<!--<a href="#">Какой то город</a>-->
+				</div>
+			</div>
+			<span>или выберите из списка:</span>
+		</div>
+		<div class="select-location__capitals">
+			<a href="#" class="link">Москва</a>
+			<a href="#" class="link active">Астана</a>
+			<a href="#" class="link">Астана</a>
+			<a href="#" class="link">Астана</a>
+			<a href="#" class="link">Астана</a>
+			<a href="#" class="link">Астана</a>
+			<a href="#" class="link">Астана</a>
+			<a href="#" class="link">Астана</a>
+			<a href="#" class="link">Астана</a>
+			<a href="#" class="link">Астана</a>
+			<a href="#" class="link">Астана</a>
+			<a href="#" class="link">Астана</a>
+			<a href="#" class="link">Астана</a>
+			<a href="#" class="link">Астана</a>
+			<a href="#" class="link">Астана</a>
+			<a href="#" class="link">Астана</a>
+			<a href="#" class="link">Астана</a>
+			<a href="#" class="link">Астана</a>
+			<a href="#" class="link">Астана</a>
+			<a href="#" class="link">Астана</a>
+			<a href="#" class="link">Астана</a>
+			<a href="#" class="link">Астана</a>
+		</div>
+		<div class="select-location__words">
+			<a href="#" class="link active">А</a>
+			<a href="#" class="link">Б</a>
+			<a href="#" class="link">В</a>
+			<a href="#" class="link">Г</a>
+			<a href="#" class="link">Д</a>
+			<a href="#" class="link">Е</a>
+			<a href="#" class="link">Ж</a>
+			<a href="#" class="link">З</a>
+			<a href="#" class="link">И</a>
+			<a href="#" class="link">К</a>
+			<a href="#" class="link">Л</a>
+			<a href="#" class="link">М</a>
+			<a href="#" class="link">Н</a>
+			<a href="#" class="link">О</a>
+			<a href="#" class="link">П</a>
+			<a href="#" class="link">Р</a>
+			<a href="#" class="link">С</a>
+			<a href="#" class="link">Т</a>
+			<a href="#" class="link">У</a>
+			<a href="#" class="link">Ф</a>
+			<a href="#" class="link">Х</a>
+			<a href="#" class="link">Ц</a>
+			<a href="#" class="link">Ч</a>
+			<a href="#" class="link">Ш</a>
+			<a href="#" class="link">Щ</a>
+			<a href="#" class="link">Э</a>
+			<a href="#" class="link">Ю</a>
+			<a href="#" class="link">Я</a>
+		</div>
+		<div class="select-location__capitals-word">A</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Астана</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="select-location__close"><span class="btn btn_brdr js-close-stat-location-screen">Свернуть</span></div>
+	</div>
+	</div>
 	</section>
 
 
