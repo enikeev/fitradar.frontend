@@ -1362,6 +1362,9 @@
 }
 
 
+.tab-box{display: none;}
+.tab-box.active{display: block;}
+
 /*	Footer start
 *****************************************************************************/
 .footer {
