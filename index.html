@@ -180,6 +180,7 @@
 		<div class="inner clearfix">
 
 			<div class="select-location js-tabs-wrap">
+			
 				<div class="select-location__country">
 					<a href="#" class="link active" data-tab-item="c1" data-tab-group="country">Россия</a>
 					<a href="#" class="link" data-tab-item="c2" data-tab-group="country">Украина</a>
@@ -10024,85 +10025,89 @@
 	<div class="inner clearfix">
 
 	<div class="select-location js-tabs-wrap">
+
 	<div class="select-location__country">
-		<a href="#" class="link active" data-tab-item="c1">Россия</a>
-		<a href="#" class="link" data-tab-item="c2">Украина</a>
-		<a href="#" class="link" data-tab-item="c3">Беларусь</a>
-		<a href="#" class="link" data-tab-item="c4">Казахстан</a>
+		<a href="#" class="link active" data-tab-item="c1" data-tab-group="country">Россия</a>
+		<a href="#" class="link" data-tab-item="c2" data-tab-group="country">Украина</a>
+		<a href="#" class="link" data-tab-item="c3" data-tab-group="country">Беларусь</a>
+		<a href="#" class="link" data-tab-item="c4" data-tab-group="country">Казахстан</a>
 	</div>
 
-	<div class="select-location__country-cities active" data-tab-box="c1">
-		<div class="select-location__input">
-			<div class="select-location__input-field">
+	<div class="select-location__country-cities active" data-tab-box="c1" data-tab-group="country">
+	<div class="select-location__input">
+		<div class="select-location__input-field">
 
-				<div class="js-input-wrap">
-					<input type="text" class="js-input-targ" placeholder="Введите название города">
-					<i class="icon icon_notepad js-input-notepad"></i>
-					<i class="icon icon_clear js-input-clear"></i>
-				</div>
-
-				<div class="select-location__input-result">
-					<!--<a href="#">Какой то город</a>-->
-					<!--<a href="#">Какой то город</a>-->
-					<!--<a href="#">Какой то город</a>-->
-				</div>
+			<div class="js-input-wrap">
+				<input type="text" class="js-input-targ" placeholder="Введите название города">
+				<i class="icon icon_notepad js-input-notepad"></i>
+				<i class="icon icon_clear js-input-clear"></i>
 			</div>
-			<span>или выберите из списка:</span>
+
+			<div class="select-location__input-result">
+				<!--<a href="#">Какой то город</a>-->
+				<!--<a href="#">Какой то город</a>-->
+				<!--<a href="#">Какой то город</a>-->
+			</div>
 		</div>
-		<div class="select-location__capitals">
-			<a href="#" class="link">Москва</a>
-			<a href="#" class="link active">Санкт-Петербург</a>
-			<a href="#" class="link">Волгоград</a>
-			<a href="#" class="link">Воронеж</a>
-			<a href="#" class="link">Екатеринбург</a>
-			<a href="#" class="link">Калининград</a>
-			<a href="#" class="link">Новосибирск</a>
-			<a href="#" class="link">Омск</a>
-			<a href="#" class="link">Самара</a>
-			<a href="#" class="link">Челябинск</a>
-			<a href="#" class="link">Ярославль</a>
-			<a href="#" class="link">Москва</a>
-			<a href="#" class="link">Санкт-Петербург</a>
-			<a href="#" class="link">Волгоград</a>
-			<a href="#" class="link">Воронеж</a>
-			<a href="#" class="link">Екатеринбург</a>
-			<a href="#" class="link">Калининград</a>
-			<a href="#" class="link">Новосибирск</a>
-			<a href="#" class="link">Омск</a>
-			<a href="#" class="link">Самара</a>
-			<a href="#" class="link">Челябинск</a>
-			<a href="#" class="link">Ярославль</a>
-		</div>
-		<div class="select-location__words">
-			<a href="#" class="link active">А</a>
-			<a href="#" class="link">Б</a>
-			<a href="#" class="link">В</a>
-			<a href="#" class="link">Г</a>
-			<a href="#" class="link">Д</a>
-			<a href="#" class="link">Е</a>
-			<a href="#" class="link">Ж</a>
-			<a href="#" class="link">З</a>
-			<a href="#" class="link">И</a>
-			<a href="#" class="link">К</a>
-			<a href="#" class="link">Л</a>
-			<a href="#" class="link">М</a>
-			<a href="#" class="link">Н</a>
-			<a href="#" class="link">О</a>
-			<a href="#" class="link">П</a>
-			<a href="#" class="link">Р</a>
-			<a href="#" class="link">С</a>
-			<a href="#" class="link">Т</a>
-			<a href="#" class="link">У</a>
-			<a href="#" class="link">Ф</a>
-			<a href="#" class="link">Х</a>
-			<a href="#" class="link">Ц</a>
-			<a href="#" class="link">Ч</a>
-			<a href="#" class="link">Ш</a>
-			<a href="#" class="link">Щ</a>
-			<a href="#" class="link">Э</a>
-			<a href="#" class="link">Ю</a>
-			<a href="#" class="link">Я</a>
-		</div>
+		<span>или выберите из списка:</span>
+	</div>
+	<div class="select-location__capitals">
+		<a href="#" class="link">Москва</a>
+		<a href="#" class="link active">Санкт-Петербург</a>
+		<a href="#" class="link">Волгоград</a>
+		<a href="#" class="link">Воронеж</a>
+		<a href="#" class="link">Екатеринбург</a>
+		<a href="#" class="link">Калининград</a>
+		<a href="#" class="link">Новосибирск</a>
+		<a href="#" class="link">Омск</a>
+		<a href="#" class="link">Самара</a>
+		<a href="#" class="link">Челябинск</a>
+		<a href="#" class="link">Ярославль</a>
+		<a href="#" class="link">Москва</a>
+		<a href="#" class="link">Санкт-Петербург</a>
+		<a href="#" class="link">Волгоград</a>
+		<a href="#" class="link">Воронеж</a>
+		<a href="#" class="link">Екатеринбург</a>
+		<a href="#" class="link">Калининград</a>
+		<a href="#" class="link">Новосибирск</a>
+		<a href="#" class="link">Омск</a>
+		<a href="#" class="link">Самара</a>
+		<a href="#" class="link">Челябинск</a>
+		<a href="#" class="link">Ярославль</a>
+	</div>
+	<div class="js-tabs-wrap">
+	<div class="select-location__words">
+		<a href="#" class="link active" data-tab-item="c-01">А</a>
+		<a href="#" class="link" data-tab-item="c-02">Б</a>
+		<a href="#" class="link" data-tab-item="c-03">В</a>
+		<a href="#" class="link" data-tab-item="c-04">Г</a>
+		<a href="#" class="link" data-tab-item="c-05">Д</a>
+		<a href="#" class="link" data-tab-item="c-06">Е</a>
+		<a href="#" class="link" data-tab-item="c-07">Ж</a>
+		<a href="#" class="link" data-tab-item="c-08">З</a>
+		<a href="#" class="link" data-tab-item="c-09">И</a>
+		<a href="#" class="link" data-tab-item="c-10">К</a>
+		<a href="#" class="link" data-tab-item="c-11">Л</a>
+		<a href="#" class="link" data-tab-item="c-12">М</a>
+		<a href="#" class="link" data-tab-item="c-13">Н</a>
+		<a href="#" class="link" data-tab-item="c-14">О</a>
+		<a href="#" class="link" data-tab-item="c-15">П</a>
+		<a href="#" class="link" data-tab-item="c-16">Р</a>
+		<a href="#" class="link" data-tab-item="c-17">С</a>
+		<a href="#" class="link" data-tab-item="c-18">Т</a>
+		<a href="#" class="link" data-tab-item="c-19">У</a>
+		<a href="#" class="link" data-tab-item="c-20">Ф</a>
+		<a href="#" class="link" data-tab-item="c-21">Х</a>
+		<a href="#" class="link" data-tab-item="c-22">Ц</a>
+		<a href="#" class="link" data-tab-item="c-23">Ч</a>
+		<a href="#" class="link" data-tab-item="c-24">Ш</a>
+		<a href="#" class="link" data-tab-item="c-25">Щ</a>
+		<a href="#" class="link" data-tab-item="c-26">Э</a>
+		<a href="#" class="link" data-tab-item="c-27">Ю</a>
+		<a href="#" class="link" data-tab-item="c-28">Я</a>
+	</div>
+
+	<div data-tab-box="c-01" class="tab-box active">
 		<div class="select-location__capitals-word">A</div>
 		<div class="select-location__cities">
 			<div class="select-location__cities-group">
@@ -10171,424 +10176,4443 @@
 		</div>
 	</div>
 
-	<div class="select-location__country-cities" data-tab-box="c2">
-		<div class="select-location__input">
-			<div class="select-location__input-field">
-
-				<div class="js-input-wrap">
-					<input type="text" class="js-input-targ" placeholder="Введите название города">
-					<i class="icon icon_notepad js-input-notepad"></i>
-					<i class="icon icon_clear js-input-clear"></i>
-				</div>
-
-				<div class="select-location__input-result">
-					<!--<a href="#">Какой то город</a>-->
-					<!--<a href="#">Какой то город</a>-->
-					<!--<a href="#">Какой то город</a>-->
-				</div>
-			</div>
-			<span>или выберите из списка:</span>
-		</div>
-		<div class="select-location__capitals">
-			<a href="#" class="link">Київ</a>
-			<a href="#" class="link active">Київ</a>
-			<a href="#" class="link">Київ</a>
-			<a href="#" class="link">Київ</a>
-			<a href="#" class="link">Київ</a>
-			<a href="#" class="link">Київ</a>
-			<a href="#" class="link">Київ</a>
-			<a href="#" class="link">Київ</a>
-			<a href="#" class="link">Київ</a>
-			<a href="#" class="link">Київ</a>
-			<a href="#" class="link">Київ</a>
-			<a href="#" class="link">Київ</a>
-			<a href="#" class="link">Київ</a>
-			<a href="#" class="link">Київ</a>
-			<a href="#" class="link">Київ</a>
-			<a href="#" class="link">Київ</a>
-			<a href="#" class="link">Київ</a>
-			<a href="#" class="link">Київ</a>
-			<a href="#" class="link">Київ</a>
-			<a href="#" class="link">Київ</a>
-			<a href="#" class="link">Київ</a>
-			<a href="#" class="link">Київ</a>
-		</div>
-		<div class="select-location__words">
-			<a href="#" class="link active">А</a>
-			<a href="#" class="link">Б</a>
-			<a href="#" class="link">В</a>
-			<a href="#" class="link">Г</a>
-			<a href="#" class="link">Д</a>
-			<a href="#" class="link">Е</a>
-			<a href="#" class="link">Ж</a>
-			<a href="#" class="link">З</a>
-			<a href="#" class="link">И</a>
-			<a href="#" class="link">К</a>
-			<a href="#" class="link">Л</a>
-			<a href="#" class="link">М</a>
-			<a href="#" class="link">Н</a>
-			<a href="#" class="link">О</a>
-			<a href="#" class="link">П</a>
-			<a href="#" class="link">Р</a>
-			<a href="#" class="link">С</a>
-			<a href="#" class="link">Т</a>
-			<a href="#" class="link">У</a>
-			<a href="#" class="link">Ф</a>
-			<a href="#" class="link">Х</a>
-			<a href="#" class="link">Ц</a>
-			<a href="#" class="link">Ч</a>
-			<a href="#" class="link">Ш</a>
-			<a href="#" class="link">Щ</a>
-			<a href="#" class="link">Э</a>
-			<a href="#" class="link">Ю</a>
-			<a href="#" class="link">Я</a>
-		</div>
-		<div class="select-location__capitals-word">A</div>
+	<div data-tab-box="c-02" class="tab-box">
+		<div class="select-location__capitals-word">Б</div>
 		<div class="select-location__cities">
 			<div class="select-location__cities-group">
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
 			</div>
 
 			<div class="select-location__cities-group">
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
 			</div>
 
 			<div class="select-location__cities-group">
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
 			</div>
 
 			<div class="select-location__cities-group">
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
-				<a href="#" class="link">Київ</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
 			</div>
 		</div>
 	</div>
 
-	<div class="select-location__country-cities" data-tab-box="c3">
-		<div class="select-location__input">
-			<div class="select-location__input-field">
-
-				<div class="js-input-wrap">
-					<input type="text" class="js-input-targ" placeholder="Введите название города">
-					<i class="icon icon_notepad js-input-notepad"></i>
-					<i class="icon icon_clear js-input-clear"></i>
-				</div>
-
-				<div class="select-location__input-result">
-					<!--<a href="#">Какой то город</a>-->
-					<!--<a href="#">Какой то город</a>-->
-					<!--<a href="#">Какой то город</a>-->
-				</div>
-			</div>
-			<span>или выберите из списка:</span>
-		</div>
-		<div class="select-location__capitals">
-			<a href="#" class="link">Минск</a>
-			<a href="#" class="link active">Минск</a>
-			<a href="#" class="link">Минск</a>
-			<a href="#" class="link">Минск</a>
-			<a href="#" class="link">Минск</a>
-			<a href="#" class="link">Минск</a>
-			<a href="#" class="link">Минск</a>
-			<a href="#" class="link">Минск</a>
-			<a href="#" class="link">Минск</a>
-			<a href="#" class="link">Минск</a>
-			<a href="#" class="link">Минск</a>
-			<a href="#" class="link">Минск</a>
-			<a href="#" class="link">Минск</a>
-			<a href="#" class="link">Минск</a>
-			<a href="#" class="link">Минск</a>
-			<a href="#" class="link">Минск</a>
-			<a href="#" class="link">Минск</a>
-			<a href="#" class="link">Минск</a>
-			<a href="#" class="link">Минск</a>
-			<a href="#" class="link">Минск</a>
-			<a href="#" class="link">Минск</a>
-			<a href="#" class="link">Минск</a>
-		</div>
-		<div class="select-location__words">
-			<a href="#" class="link active">А</a>
-			<a href="#" class="link">Б</a>
-			<a href="#" class="link">В</a>
-			<a href="#" class="link">Г</a>
-			<a href="#" class="link">Д</a>
-			<a href="#" class="link">Е</a>
-			<a href="#" class="link">Ж</a>
-			<a href="#" class="link">З</a>
-			<a href="#" class="link">И</a>
-			<a href="#" class="link">К</a>
-			<a href="#" class="link">Л</a>
-			<a href="#" class="link">М</a>
-			<a href="#" class="link">Н</a>
-			<a href="#" class="link">О</a>
-			<a href="#" class="link">П</a>
-			<a href="#" class="link">Р</a>
-			<a href="#" class="link">С</a>
-			<a href="#" class="link">Т</a>
-			<a href="#" class="link">У</a>
-			<a href="#" class="link">Ф</a>
-			<a href="#" class="link">Х</a>
-			<a href="#" class="link">Ц</a>
-			<a href="#" class="link">Ч</a>
-			<a href="#" class="link">Ш</a>
-			<a href="#" class="link">Щ</a>
-			<a href="#" class="link">Э</a>
-			<a href="#" class="link">Ю</a>
-			<a href="#" class="link">Я</a>
-		</div>
-		<div class="select-location__capitals-word">A</div>
+	<div data-tab-box="c-03" class="tab-box">
+		<div class="select-location__capitals-word">В</div>
 		<div class="select-location__cities">
 			<div class="select-location__cities-group">
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
 			</div>
 
 			<div class="select-location__cities-group">
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
 			</div>
 
 			<div class="select-location__cities-group">
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
 			</div>
 
 			<div class="select-location__cities-group">
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
-				<a href="#" class="link">Минск</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
 			</div>
 		</div>
 	</div>
 
-	<div class="select-location__country-cities" data-tab-box="c4">
-		<div class="select-location__input">
-			<div class="select-location__input-field">
-
-				<div class="js-input-wrap">
-					<input type="text" class="js-input-targ" placeholder="Введите название города">
-					<i class="icon icon_notepad js-input-notepad"></i>
-					<i class="icon icon_clear js-input-clear"></i>
-				</div>
-
-				<div class="select-location__input-result">
-					<!--<a href="#">Какой то город</a>-->
-					<!--<a href="#">Какой то город</a>-->
-					<!--<a href="#">Какой то город</a>-->
-				</div>
+	<div data-tab-box="c-04" class="tab-box">
+		<div class="select-location__capitals-word">Г</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
 			</div>
-			<span>или выберите из списка:</span>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+			</div>
 		</div>
-		<div class="select-location__capitals">
-			<a href="#" class="link">Москва</a>
-			<a href="#" class="link active">Астана</a>
-			<a href="#" class="link">Астана</a>
-			<a href="#" class="link">Астана</a>
-			<a href="#" class="link">Астана</a>
-			<a href="#" class="link">Астана</a>
-			<a href="#" class="link">Астана</a>
-			<a href="#" class="link">Астана</a>
-			<a href="#" class="link">Астана</a>
-			<a href="#" class="link">Астана</a>
-			<a href="#" class="link">Астана</a>
-			<a href="#" class="link">Астана</a>
-			<a href="#" class="link">Астана</a>
-			<a href="#" class="link">Астана</a>
-			<a href="#" class="link">Астана</a>
-			<a href="#" class="link">Астана</a>
-			<a href="#" class="link">Астана</a>
-			<a href="#" class="link">Астана</a>
-			<a href="#" class="link">Астана</a>
-			<a href="#" class="link">Астана</a>
-			<a href="#" class="link">Астана</a>
-			<a href="#" class="link">Астана</a>
+	</div>
+
+	<div data-tab-box="c-05" class="tab-box">
+		<div class="select-location__capitals-word">Д</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+			</div>
 		</div>
-		<div class="select-location__words">
-			<a href="#" class="link active">А</a>
-			<a href="#" class="link">Б</a>
-			<a href="#" class="link">В</a>
-			<a href="#" class="link">Г</a>
-			<a href="#" class="link">Д</a>
-			<a href="#" class="link">Е</a>
-			<a href="#" class="link">Ж</a>
-			<a href="#" class="link">З</a>
-			<a href="#" class="link">И</a>
-			<a href="#" class="link">К</a>
-			<a href="#" class="link">Л</a>
-			<a href="#" class="link">М</a>
-			<a href="#" class="link">Н</a>
-			<a href="#" class="link">О</a>
-			<a href="#" class="link">П</a>
-			<a href="#" class="link">Р</a>
-			<a href="#" class="link">С</a>
-			<a href="#" class="link">Т</a>
-			<a href="#" class="link">У</a>
-			<a href="#" class="link">Ф</a>
-			<a href="#" class="link">Х</a>
-			<a href="#" class="link">Ц</a>
-			<a href="#" class="link">Ч</a>
-			<a href="#" class="link">Ш</a>
-			<a href="#" class="link">Щ</a>
-			<a href="#" class="link">Э</a>
-			<a href="#" class="link">Ю</a>
-			<a href="#" class="link">Я</a>
+	</div>
+
+	<div data-tab-box="c-06" class="tab-box">
+		<div class="select-location__capitals-word">Е</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+			</div>
 		</div>
+	</div>
+
+	<div data-tab-box="c-07" class="tab-box">
+		<div class="select-location__capitals-word">Ж</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-08" class="tab-box">
+		<div class="select-location__capitals-word">З</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-09" class="tab-box">
+		<div class="select-location__capitals-word">И</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-10" class="tab-box">
+		<div class="select-location__capitals-word">К</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-11" class="tab-box">
+		<div class="select-location__capitals-word">Л</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-12" class="tab-box">
+		<div class="select-location__capitals-word">М</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-13" class="tab-box">
+		<div class="select-location__capitals-word">Н</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-14" class="tab-box">
+		<div class="select-location__capitals-word">О</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-15" class="tab-box">
+		<div class="select-location__capitals-word">П</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-16" class="tab-box">
+		<div class="select-location__capitals-word">Р</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-17" class="tab-box">
+		<div class="select-location__capitals-word">С</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Сссссссссс</a>
+				<a href="#" class="link">Сссссссссс</a>
+				<a href="#" class="link">Сссссссссс</a>
+				<a href="#" class="link">Сссссссссс</a>
+				<a href="#" class="link">Сссссссссс</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-18" class="tab-box">
+		<div class="select-location__capitals-word">Т</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-19" class="tab-box">
+		<div class="select-location__capitals-word">У</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-20" class="tab-box">
+		<div class="select-location__capitals-word">Ф</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-21" class="tab-box">
+		<div class="select-location__capitals-word">Х</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-22" class="tab-box">
+		<div class="select-location__capitals-word">Ц</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-23" class="tab-box">
+		<div class="select-location__capitals-word">Ч</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-24" class="tab-box">
+		<div class="select-location__capitals-word">Ш</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-25" class="tab-box">
+		<div class="select-location__capitals-word">Щ</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-26" class="tab-box">
+		<div class="select-location__capitals-word">Э</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-27" class="tab-box">
+		<div class="select-location__capitals-word">Ю</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-28" class="tab-box">
+		<div class="select-location__capitals-word">Я</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+			</div>
+		</div>
+	</div>
+
+	</div>
+	</div>
+
+	<div class="select-location__country-cities" data-tab-box="c2" data-tab-group="country">
+	<div class="select-location__input">
+		<div class="select-location__input-field">
+
+			<div class="js-input-wrap">
+				<input type="text" class="js-input-targ" placeholder="Введите название города">
+				<i class="icon icon_notepad js-input-notepad"></i>
+				<i class="icon icon_clear js-input-clear"></i>
+			</div>
+
+			<div class="select-location__input-result">
+				<!--<a href="#">Какой то город</a>-->
+				<!--<a href="#">Какой то город</a>-->
+				<!--<a href="#">Какой то город</a>-->
+			</div>
+		</div>
+		<span>или выберите из списка:</span>
+	</div>
+	<div class="select-location__capitals">
+		<a href="#" class="link">Київ</a>
+		<a href="#" class="link">Київ</a>
+		<a href="#" class="link">Київ</a>
+		<a href="#" class="link">Київ</a>
+		<a href="#" class="link">Київ</a>
+		<a href="#" class="link">Київ</a>
+		<a href="#" class="link">Київ</a>
+		<a href="#" class="link">Київ</a>
+		<a href="#" class="link">Київ</a>
+		<a href="#" class="link">Київ</a>
+		<a href="#" class="link">Київ</a>
+		<a href="#" class="link">Київ</a>
+		<a href="#" class="link">Київ</a>
+		<a href="#" class="link">Київ</a>
+		<a href="#" class="link">Київ</a>
+		<a href="#" class="link">Київ</a>
+		<a href="#" class="link">Київ</a>
+		<a href="#" class="link">Київ</a>
+		<a href="#" class="link">Київ</a>
+		<a href="#" class="link">Київ</a>
+		<a href="#" class="link">Київ</a>
+		<a href="#" class="link">Київ</a>
+	</div>
+	<div class="js-tabs-wrap">
+	<div class="select-location__words">
+		<a href="#" class="link active" data-tab-item="c-01">А</a>
+		<a href="#" class="link" data-tab-item="c-02">Б</a>
+		<a href="#" class="link" data-tab-item="c-03">В</a>
+		<a href="#" class="link" data-tab-item="c-04">Г</a>
+		<a href="#" class="link" data-tab-item="c-05">Д</a>
+		<a href="#" class="link" data-tab-item="c-06">Е</a>
+		<a href="#" class="link" data-tab-item="c-07">Ж</a>
+		<a href="#" class="link" data-tab-item="c-08">З</a>
+		<a href="#" class="link" data-tab-item="c-09">И</a>
+		<a href="#" class="link" data-tab-item="c-10">К</a>
+		<a href="#" class="link" data-tab-item="c-11">Л</a>
+		<a href="#" class="link" data-tab-item="c-12">М</a>
+		<a href="#" class="link" data-tab-item="c-13">Н</a>
+		<a href="#" class="link" data-tab-item="c-14">О</a>
+		<a href="#" class="link" data-tab-item="c-15">П</a>
+		<a href="#" class="link" data-tab-item="c-16">Р</a>
+		<a href="#" class="link" data-tab-item="c-17">С</a>
+		<a href="#" class="link" data-tab-item="c-18">Т</a>
+		<a href="#" class="link" data-tab-item="c-19">У</a>
+		<a href="#" class="link" data-tab-item="c-20">Ф</a>
+		<a href="#" class="link" data-tab-item="c-21">Х</a>
+		<a href="#" class="link" data-tab-item="c-22">Ц</a>
+		<a href="#" class="link" data-tab-item="c-23">Ч</a>
+		<a href="#" class="link" data-tab-item="c-24">Ш</a>
+		<a href="#" class="link" data-tab-item="c-25">Щ</a>
+		<a href="#" class="link" data-tab-item="c-26">Э</a>
+		<a href="#" class="link" data-tab-item="c-27">Ю</a>
+		<a href="#" class="link" data-tab-item="c-28">Я</a>
+	</div>
+
+	<div data-tab-box="c-01" class="tab-box active">
 		<div class="select-location__capitals-word">A</div>
 		<div class="select-location__cities">
 			<div class="select-location__cities-group">
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Абаза</a>
+				<a href="#" class="link">Абакан</a>
+				<a href="#" class="link">Абдулино</a>
+				<a href="#" class="link">Абинск</a>
+				<a href="#" class="link">Агидель</a>
+				<a href="#" class="link">Агрыз</a>
+				<a href="#" class="link">Адыгейск</a>
+				<a href="#" class="link">Азнакаево</a>
+				<a href="#" class="link">Азов</a>
+				<a href="#" class="link">Ак-Довурак</a>
+				<a href="#" class="link">Аксай</a>
+				<a href="#" class="link">Алагир</a>
+				<a href="#" class="link">Алапаевск</a>
 			</div>
 
 			<div class="select-location__cities-group">
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Алатырь</a>
+				<a href="#" class="link">Алдан</a>
+				<a href="#" class="link">Алейск</a>
+				<a href="#" class="link">Александров</a>
+				<a href="#" class="link">Александровск</a>
+				<a href="#" class="link">Александровск-Сахалинский</a>
+				<a href="#" class="link">Алексеевка</a>
+				<a href="#" class="link">Алексин</a>
+				<a href="#" class="link">Алзамай</a>
+				<a href="#" class="link">Альметьевск</a>
+				<a href="#" class="link">Амурск</a>
+				<a href="#" class="link">Анадырь Регио</a>
+				<a href="#" class="link">Анапа</a>
 			</div>
 
 			<div class="select-location__cities-group">
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Ангарск</a>
+				<a href="#" class="link">Андреаполь</a>
+				<a href="#" class="link">Анжеро-Судженск</a>
+				<a href="#" class="link">Анива</a>
+				<a href="#" class="link">Апатиты</a>
+				<a href="#" class="link">Апрелевка</a>
+				<a href="#" class="link">Апшеронск</a>
+				<a href="#" class="link">Арамиль</a>
+				<a href="#" class="link">Аргун</a>
+				<a href="#" class="link">Ардатов</a>
+				<a href="#" class="link">Ардон</a>
+				<a href="#" class="link">Арзама</a>
+				<a href="#" class="link">Аркадак</a>
 			</div>
 
 			<div class="select-location__cities-group">
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
-				<a href="#" class="link">Астана</a>
+				<a href="#" class="link">Армавир</a>
+				<a href="#" class="link">Арсеньев</a>
+				<a href="#" class="link">Арск</a>
+				<a href="#" class="link">Артем</a>
+				<a href="#" class="link">Артемовск</a>
+				<a href="#" class="link">Артемовский</a>
+				<a href="#" class="link">Архангельск</a>
+				<a href="#" class="link">Асбест</a>
+				<a href="#" class="link">Асино</a>
+				<a href="#" class="link">Астрахань</a>
+				<a href="#" class="link">Аткарск</a>
+				<a href="#" class="link">Ахтубинск</a>
+				<a href="#" class="link">Ачинск</a>
 			</div>
 		</div>
+	</div>
+
+	<div data-tab-box="c-02" class="tab-box">
+		<div class="select-location__capitals-word">Б</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-03" class="tab-box">
+		<div class="select-location__capitals-word">В</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-04" class="tab-box">
+		<div class="select-location__capitals-word">Г</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-05" class="tab-box">
+		<div class="select-location__capitals-word">Д</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-06" class="tab-box">
+		<div class="select-location__capitals-word">Е</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-07" class="tab-box">
+		<div class="select-location__capitals-word">Ж</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-08" class="tab-box">
+		<div class="select-location__capitals-word">З</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-09" class="tab-box">
+		<div class="select-location__capitals-word">И</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-10" class="tab-box">
+		<div class="select-location__capitals-word">К</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-11" class="tab-box">
+		<div class="select-location__capitals-word">Л</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-12" class="tab-box">
+		<div class="select-location__capitals-word">М</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-13" class="tab-box">
+		<div class="select-location__capitals-word">Н</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-14" class="tab-box">
+		<div class="select-location__capitals-word">О</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-15" class="tab-box">
+		<div class="select-location__capitals-word">П</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-16" class="tab-box">
+		<div class="select-location__capitals-word">Р</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-17" class="tab-box">
+		<div class="select-location__capitals-word">С</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Сссссссссс</a>
+				<a href="#" class="link">Сссссссссс</a>
+				<a href="#" class="link">Сссссссссс</a>
+				<a href="#" class="link">Сссссссссс</a>
+				<a href="#" class="link">Сссссссссс</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-18" class="tab-box">
+		<div class="select-location__capitals-word">Т</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-19" class="tab-box">
+		<div class="select-location__capitals-word">У</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-20" class="tab-box">
+		<div class="select-location__capitals-word">Ф</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-21" class="tab-box">
+		<div class="select-location__capitals-word">Х</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-22" class="tab-box">
+		<div class="select-location__capitals-word">Ц</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-23" class="tab-box">
+		<div class="select-location__capitals-word">Ч</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-24" class="tab-box">
+		<div class="select-location__capitals-word">Ш</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-25" class="tab-box">
+		<div class="select-location__capitals-word">Щ</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-26" class="tab-box">
+		<div class="select-location__capitals-word">Э</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-27" class="tab-box">
+		<div class="select-location__capitals-word">Ю</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-28" class="tab-box">
+		<div class="select-location__capitals-word">Я</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+
+	</div>
+
+	<div class="select-location__country-cities" data-tab-box="c3" data-tab-group="country">
+	<div class="select-location__input">
+		<div class="select-location__input-field">
+
+			<div class="js-input-wrap">
+				<input type="text" class="js-input-targ" placeholder="Введите название города">
+				<i class="icon icon_notepad js-input-notepad"></i>
+				<i class="icon icon_clear js-input-clear"></i>
+			</div>
+
+			<div class="select-location__input-result">
+				<!--<a href="#">Какой то город</a>-->
+				<!--<a href="#">Какой то город</a>-->
+				<!--<a href="#">Какой то город</a>-->
+			</div>
+		</div>
+		<span>или выберите из списка:</span>
+	</div>
+	<div class="select-location__capitals">
+		<a href="#" class="link">Минск</a>
+		<a href="#" class="link">Минск</a>
+		<a href="#" class="link">Минск</a>
+		<a href="#" class="link">Минск</a>
+		<a href="#" class="link">Минск</a>
+		<a href="#" class="link">Минск</a>
+		<a href="#" class="link">Минск</a>
+		<a href="#" class="link">Минск</a>
+		<a href="#" class="link">Минск</a>
+		<a href="#" class="link">Минск</a>
+		<a href="#" class="link">Минск</a>
+		<a href="#" class="link">Минск</a>
+		<a href="#" class="link">Минск</a>
+		<a href="#" class="link">Минск</a>
+		<a href="#" class="link">Минск</a>
+		<a href="#" class="link">Минск</a>
+		<a href="#" class="link">Минск</a>
+		<a href="#" class="link">Минск</a>
+		<a href="#" class="link">Минск</a>
+		<a href="#" class="link">Минск</a>
+		<a href="#" class="link">Минск</a>
+		<a href="#" class="link">Минск</a>
+	</div>
+	<div class="js-tabs-wrap">
+	<div class="select-location__words">
+		<a href="#" class="link active" data-tab-item="c-01">А</a>
+		<a href="#" class="link" data-tab-item="c-02">Б</a>
+		<a href="#" class="link" data-tab-item="c-03">В</a>
+		<a href="#" class="link" data-tab-item="c-04">Г</a>
+		<a href="#" class="link" data-tab-item="c-05">Д</a>
+		<a href="#" class="link" data-tab-item="c-06">Е</a>
+		<a href="#" class="link" data-tab-item="c-07">Ж</a>
+		<a href="#" class="link" data-tab-item="c-08">З</a>
+		<a href="#" class="link" data-tab-item="c-09">И</a>
+		<a href="#" class="link" data-tab-item="c-10">К</a>
+		<a href="#" class="link" data-tab-item="c-11">Л</a>
+		<a href="#" class="link" data-tab-item="c-12">М</a>
+		<a href="#" class="link" data-tab-item="c-13">Н</a>
+		<a href="#" class="link" data-tab-item="c-14">О</a>
+		<a href="#" class="link" data-tab-item="c-15">П</a>
+		<a href="#" class="link" data-tab-item="c-16">Р</a>
+		<a href="#" class="link" data-tab-item="c-17">С</a>
+		<a href="#" class="link" data-tab-item="c-18">Т</a>
+		<a href="#" class="link" data-tab-item="c-19">У</a>
+		<a href="#" class="link" data-tab-item="c-20">Ф</a>
+		<a href="#" class="link" data-tab-item="c-21">Х</a>
+		<a href="#" class="link" data-tab-item="c-22">Ц</a>
+		<a href="#" class="link" data-tab-item="c-23">Ч</a>
+		<a href="#" class="link" data-tab-item="c-24">Ш</a>
+		<a href="#" class="link" data-tab-item="c-25">Щ</a>
+		<a href="#" class="link" data-tab-item="c-26">Э</a>
+		<a href="#" class="link" data-tab-item="c-27">Ю</a>
+		<a href="#" class="link" data-tab-item="c-28">Я</a>
+	</div>
+
+	<div data-tab-box="c-01" class="tab-box active">
+		<div class="select-location__capitals-word">A</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Абаза</a>
+				<a href="#" class="link">Абакан</a>
+				<a href="#" class="link">Абдулино</a>
+				<a href="#" class="link">Абинск</a>
+				<a href="#" class="link">Агидель</a>
+				<a href="#" class="link">Агрыз</a>
+				<a href="#" class="link">Адыгейск</a>
+				<a href="#" class="link">Азнакаево</a>
+				<a href="#" class="link">Азов</a>
+				<a href="#" class="link">Ак-Довурак</a>
+				<a href="#" class="link">Аксай</a>
+				<a href="#" class="link">Алагир</a>
+				<a href="#" class="link">Алапаевск</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Алатырь</a>
+				<a href="#" class="link">Алдан</a>
+				<a href="#" class="link">Алейск</a>
+				<a href="#" class="link">Александров</a>
+				<a href="#" class="link">Александровск</a>
+				<a href="#" class="link">Александровск-Сахалинский</a>
+				<a href="#" class="link">Алексеевка</a>
+				<a href="#" class="link">Алексин</a>
+				<a href="#" class="link">Алзамай</a>
+				<a href="#" class="link">Альметьевск</a>
+				<a href="#" class="link">Амурск</a>
+				<a href="#" class="link">Анадырь Регио</a>
+				<a href="#" class="link">Анапа</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ангарск</a>
+				<a href="#" class="link">Андреаполь</a>
+				<a href="#" class="link">Анжеро-Судженск</a>
+				<a href="#" class="link">Анива</a>
+				<a href="#" class="link">Апатиты</a>
+				<a href="#" class="link">Апрелевка</a>
+				<a href="#" class="link">Апшеронск</a>
+				<a href="#" class="link">Арамиль</a>
+				<a href="#" class="link">Аргун</a>
+				<a href="#" class="link">Ардатов</a>
+				<a href="#" class="link">Ардон</a>
+				<a href="#" class="link">Арзама</a>
+				<a href="#" class="link">Аркадак</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Армавир</a>
+				<a href="#" class="link">Арсеньев</a>
+				<a href="#" class="link">Арск</a>
+				<a href="#" class="link">Артем</a>
+				<a href="#" class="link">Артемовск</a>
+				<a href="#" class="link">Артемовский</a>
+				<a href="#" class="link">Архангельск</a>
+				<a href="#" class="link">Асбест</a>
+				<a href="#" class="link">Асино</a>
+				<a href="#" class="link">Астрахань</a>
+				<a href="#" class="link">Аткарск</a>
+				<a href="#" class="link">Ахтубинск</a>
+				<a href="#" class="link">Ачинск</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-02" class="tab-box">
+		<div class="select-location__capitals-word">Б</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-03" class="tab-box">
+		<div class="select-location__capitals-word">В</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-04" class="tab-box">
+		<div class="select-location__capitals-word">Г</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-05" class="tab-box">
+		<div class="select-location__capitals-word">Д</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-06" class="tab-box">
+		<div class="select-location__capitals-word">Е</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-07" class="tab-box">
+		<div class="select-location__capitals-word">Ж</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-08" class="tab-box">
+		<div class="select-location__capitals-word">З</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-09" class="tab-box">
+		<div class="select-location__capitals-word">И</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-10" class="tab-box">
+		<div class="select-location__capitals-word">К</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-11" class="tab-box">
+		<div class="select-location__capitals-word">Л</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-12" class="tab-box">
+		<div class="select-location__capitals-word">М</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-13" class="tab-box">
+		<div class="select-location__capitals-word">Н</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-14" class="tab-box">
+		<div class="select-location__capitals-word">О</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-15" class="tab-box">
+		<div class="select-location__capitals-word">П</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-16" class="tab-box">
+		<div class="select-location__capitals-word">Р</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-17" class="tab-box">
+		<div class="select-location__capitals-word">С</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Сссссссссс</a>
+				<a href="#" class="link">Сссссссссс</a>
+				<a href="#" class="link">Сссссссссс</a>
+				<a href="#" class="link">Сссссссссс</a>
+				<a href="#" class="link">Сссссссссс</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-18" class="tab-box">
+		<div class="select-location__capitals-word">Т</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-19" class="tab-box">
+		<div class="select-location__capitals-word">У</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-20" class="tab-box">
+		<div class="select-location__capitals-word">Ф</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-21" class="tab-box">
+		<div class="select-location__capitals-word">Х</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-22" class="tab-box">
+		<div class="select-location__capitals-word">Ц</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-23" class="tab-box">
+		<div class="select-location__capitals-word">Ч</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-24" class="tab-box">
+		<div class="select-location__capitals-word">Ш</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-25" class="tab-box">
+		<div class="select-location__capitals-word">Щ</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-26" class="tab-box">
+		<div class="select-location__capitals-word">Э</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-27" class="tab-box">
+		<div class="select-location__capitals-word">Ю</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-28" class="tab-box">
+		<div class="select-location__capitals-word">Я</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+			</div>
+		</div>
+	</div>
+
+	</div>
+	</div>
+
+	<div class="select-location__country-cities" data-tab-box="c4" data-tab-group="country">
+	<div class="select-location__input">
+		<div class="select-location__input-field">
+
+			<div class="js-input-wrap">
+				<input type="text" class="js-input-targ" placeholder="Введите название города">
+				<i class="icon icon_notepad js-input-notepad"></i>
+				<i class="icon icon_clear js-input-clear"></i>
+			</div>
+
+			<div class="select-location__input-result">
+				<!--<a href="#">Какой то город</a>-->
+				<!--<a href="#">Какой то город</a>-->
+				<!--<a href="#">Какой то город</a>-->
+			</div>
+		</div>
+		<span>или выберите из списка:</span>
+	</div>
+	<div class="select-location__capitals">
+		<a href="#" class="link">Москва</a>
+		<a href="#" class="link">Астана</a>
+		<a href="#" class="link">Астана</a>
+		<a href="#" class="link">Астана</a>
+		<a href="#" class="link">Астана</a>
+		<a href="#" class="link">Астана</a>
+		<a href="#" class="link">Астана</a>
+		<a href="#" class="link">Астана</a>
+		<a href="#" class="link">Астана</a>
+		<a href="#" class="link">Астана</a>
+		<a href="#" class="link">Астана</a>
+		<a href="#" class="link">Астана</a>
+		<a href="#" class="link">Астана</a>
+		<a href="#" class="link">Астана</a>
+		<a href="#" class="link">Астана</a>
+		<a href="#" class="link">Астана</a>
+		<a href="#" class="link">Астана</a>
+		<a href="#" class="link">Астана</a>
+		<a href="#" class="link">Астана</a>
+		<a href="#" class="link">Астана</a>
+		<a href="#" class="link">Астана</a>
+		<a href="#" class="link">Астана</a>
+	</div>
+	<div class="js-tabs-wrap">
+	<div class="select-location__words">
+		<a href="#" class="link active" data-tab-item="c-01">А</a>
+		<a href="#" class="link" data-tab-item="c-02">Б</a>
+		<a href="#" class="link" data-tab-item="c-03">В</a>
+		<a href="#" class="link" data-tab-item="c-04">Г</a>
+		<a href="#" class="link" data-tab-item="c-05">Д</a>
+		<a href="#" class="link" data-tab-item="c-06">Е</a>
+		<a href="#" class="link" data-tab-item="c-07">Ж</a>
+		<a href="#" class="link" data-tab-item="c-08">З</a>
+		<a href="#" class="link" data-tab-item="c-09">И</a>
+		<a href="#" class="link" data-tab-item="c-10">К</a>
+		<a href="#" class="link" data-tab-item="c-11">Л</a>
+		<a href="#" class="link" data-tab-item="c-12">М</a>
+		<a href="#" class="link" data-tab-item="c-13">Н</a>
+		<a href="#" class="link" data-tab-item="c-14">О</a>
+		<a href="#" class="link" data-tab-item="c-15">П</a>
+		<a href="#" class="link" data-tab-item="c-16">Р</a>
+		<a href="#" class="link" data-tab-item="c-17">С</a>
+		<a href="#" class="link" data-tab-item="c-18">Т</a>
+		<a href="#" class="link" data-tab-item="c-19">У</a>
+		<a href="#" class="link" data-tab-item="c-20">Ф</a>
+		<a href="#" class="link" data-tab-item="c-21">Х</a>
+		<a href="#" class="link" data-tab-item="c-22">Ц</a>
+		<a href="#" class="link" data-tab-item="c-23">Ч</a>
+		<a href="#" class="link" data-tab-item="c-24">Ш</a>
+		<a href="#" class="link" data-tab-item="c-25">Щ</a>
+		<a href="#" class="link" data-tab-item="c-26">Э</a>
+		<a href="#" class="link" data-tab-item="c-27">Ю</a>
+		<a href="#" class="link" data-tab-item="c-28">Я</a>
+	</div>
+
+	<div data-tab-box="c-01" class="tab-box active">
+		<div class="select-location__capitals-word">A</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Абаза</a>
+				<a href="#" class="link">Абакан</a>
+				<a href="#" class="link">Абдулино</a>
+				<a href="#" class="link">Абинск</a>
+				<a href="#" class="link">Агидель</a>
+				<a href="#" class="link">Агрыз</a>
+				<a href="#" class="link">Адыгейск</a>
+				<a href="#" class="link">Азнакаево</a>
+				<a href="#" class="link">Азов</a>
+				<a href="#" class="link">Ак-Довурак</a>
+				<a href="#" class="link">Аксай</a>
+				<a href="#" class="link">Алагир</a>
+				<a href="#" class="link">Алапаевск</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Алатырь</a>
+				<a href="#" class="link">Алдан</a>
+				<a href="#" class="link">Алейск</a>
+				<a href="#" class="link">Александров</a>
+				<a href="#" class="link">Александровск</a>
+				<a href="#" class="link">Александровск-Сахалинский</a>
+				<a href="#" class="link">Алексеевка</a>
+				<a href="#" class="link">Алексин</a>
+				<a href="#" class="link">Алзамай</a>
+				<a href="#" class="link">Альметьевск</a>
+				<a href="#" class="link">Амурск</a>
+				<a href="#" class="link">Анадырь Регио</a>
+				<a href="#" class="link">Анапа</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ангарск</a>
+				<a href="#" class="link">Андреаполь</a>
+				<a href="#" class="link">Анжеро-Судженск</a>
+				<a href="#" class="link">Анива</a>
+				<a href="#" class="link">Апатиты</a>
+				<a href="#" class="link">Апрелевка</a>
+				<a href="#" class="link">Апшеронск</a>
+				<a href="#" class="link">Арамиль</a>
+				<a href="#" class="link">Аргун</a>
+				<a href="#" class="link">Ардатов</a>
+				<a href="#" class="link">Ардон</a>
+				<a href="#" class="link">Арзама</a>
+				<a href="#" class="link">Аркадак</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Армавир</a>
+				<a href="#" class="link">Арсеньев</a>
+				<a href="#" class="link">Арск</a>
+				<a href="#" class="link">Артем</a>
+				<a href="#" class="link">Артемовск</a>
+				<a href="#" class="link">Артемовский</a>
+				<a href="#" class="link">Архангельск</a>
+				<a href="#" class="link">Асбест</a>
+				<a href="#" class="link">Асино</a>
+				<a href="#" class="link">Астрахань</a>
+				<a href="#" class="link">Аткарск</a>
+				<a href="#" class="link">Ахтубинск</a>
+				<a href="#" class="link">Ачинск</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-02" class="tab-box">
+		<div class="select-location__capitals-word">Б</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+				<a href="#" class="link">Бббббббб</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-03" class="tab-box">
+		<div class="select-location__capitals-word">В</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+				<a href="#" class="link">Вввввввв</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-04" class="tab-box">
+		<div class="select-location__capitals-word">Г</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+				<a href="#" class="link">Ггггггггг</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-05" class="tab-box">
+		<div class="select-location__capitals-word">Д</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+				<a href="#" class="link">Ддддддддд</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-06" class="tab-box">
+		<div class="select-location__capitals-word">Е</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+				<a href="#" class="link">Еееееееееееее</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-07" class="tab-box">
+		<div class="select-location__capitals-word">Ж</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+				<a href="#" class="link">Жжжжжжжжжжж</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-08" class="tab-box">
+		<div class="select-location__capitals-word">З</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+				<a href="#" class="link">Ззззззззззз</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-09" class="tab-box">
+		<div class="select-location__capitals-word">И</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+				<a href="#" class="link">Иииииииии</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-10" class="tab-box">
+		<div class="select-location__capitals-word">К</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+				<a href="#" class="link">Ккккккккк</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-11" class="tab-box">
+		<div class="select-location__capitals-word">Л</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+				<a href="#" class="link">Лллллллллл</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-12" class="tab-box">
+		<div class="select-location__capitals-word">М</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+				<a href="#" class="link">Ммммммммммм</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-13" class="tab-box">
+		<div class="select-location__capitals-word">Н</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+				<a href="#" class="link">Ннннннннннн</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-14" class="tab-box">
+		<div class="select-location__capitals-word">О</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+				<a href="#" class="link">Ооооооооооо</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-15" class="tab-box">
+		<div class="select-location__capitals-word">П</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+				<a href="#" class="link">Ппппппппп</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-16" class="tab-box">
+		<div class="select-location__capitals-word">Р</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+				<a href="#" class="link">Ррррррррррр</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-17" class="tab-box">
+		<div class="select-location__capitals-word">С</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Сссссссссс</a>
+				<a href="#" class="link">Сссссссссс</a>
+				<a href="#" class="link">Сссссссссс</a>
+				<a href="#" class="link">Сссссссссс</a>
+				<a href="#" class="link">Сссссссссс</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+				<a href="#" class="link">Ссссссссс</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-18" class="tab-box">
+		<div class="select-location__capitals-word">Т</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+				<a href="#" class="link">Ттттттттттт</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-19" class="tab-box">
+		<div class="select-location__capitals-word">У</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+				<a href="#" class="link">Уууууууууу</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-20" class="tab-box">
+		<div class="select-location__capitals-word">Ф</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+				<a href="#" class="link">Ффффффффффффф</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-21" class="tab-box">
+		<div class="select-location__capitals-word">Х</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+				<a href="#" class="link">Хххххххххххх</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-22" class="tab-box">
+		<div class="select-location__capitals-word">Ц</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+				<a href="#" class="link">Ццццццццццц</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-23" class="tab-box">
+		<div class="select-location__capitals-word">Ч</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+				<a href="#" class="link">Чччччччччч</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-24" class="tab-box">
+		<div class="select-location__capitals-word">Ш</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+				<a href="#" class="link">Шшшшшшшшшш</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-25" class="tab-box">
+		<div class="select-location__capitals-word">Щ</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+				<a href="#" class="link">Щщщщщщщщщщ</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-26" class="tab-box">
+		<div class="select-location__capitals-word">Э</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+				<a href="#" class="link">Ээээээээээээ</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-27" class="tab-box">
+		<div class="select-location__capitals-word">Ю</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+				<a href="#" class="link">Юююююююююююю</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-tab-box="c-28" class="tab-box">
+		<div class="select-location__capitals-word">Я</div>
+		<div class="select-location__cities">
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+			</div>
+
+			<div class="select-location__cities-group">
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+				<a href="#" class="link">Яяяяяяяяяяяя</a>
+			</div>
+		</div>
+	</div>
+
+	</div>
 	</div>
 
 	<div class="select-location__close"><span class="btn btn_brdr js-close-stat-location-screen">Свернуть</span></div>
