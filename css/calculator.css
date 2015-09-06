@@ -1,0 +1,223 @@
+
+.calculator{
+	background: #f8f8f8;
+	display: table;
+	border-collapse: collapse;
+	margin: 30px 0;
+	color: #767a86;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.2;
+}
+.calculator-box{
+	display: table-cell;
+	border: 1px solid #cecece;
+	padding: 10px;
+	vertical-align: top;
+}
+.calculator-box_cols{
+	min-width: 450px;
+}
+.calculator-box_res{
+	width: 300px;
+}
+.calculator-title{
+	color: #55585f;
+	font-weight: 400;
+	min-height: 40px;
+}
+.calculator-content{
+	padding: 12px;
+}
+.calculator-field{
+	margin-bottom: 10px;
+}
+.calculator-field .input-field{
+	display: inline-block;
+	vertical-align: middle;
+}
+.calculator-field .input-field label {
+	padding-left: 30px;
+	padding-right: 15px;
+}
+.calculator-field .input-field .marker {
+	height: 19px;
+	top: 1px;
+	width: 19px;
+}
+.calculator-field .input-field input[type="radio"]:checked + .marker:before {
+	height: 11px;
+	margin: 4px;
+	width: 11px;
+}
+
+.calculator-label{
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 32px;
+}
+.calculator hr{
+	margin: 15px 0;
+}
+.calculator-label_w{
+	min-width: 75px;
+}
+.calculator-label_wb{
+	min-width: 185px;
+}
+.calculator-input{
+	display: inline-block;
+	vertical-align: middle;
+}
+.calculator-input .sbToggle,
+.calculator-input .sbSelector,
+.calculator-input .sbHolder{
+	height: 30px;
+	line-height: 30px;
+}
+.calculator-input .sbHolder{
+	width: 180px;
+	font-size: inherit;
+	margin: 0 5px;
+}
+.calculator-input .sbOptions{
+	padding: 10px 0 5px;
+}
+.calculator-input .sbOptions a{
+	font-size: inherit;
+	line-height: 1;
+}
+.calculator-input input{
+	color: inherit;
+	margin: 0 5px;
+	font-family: inherit;
+	font-size: inherit;
+	text-align: center;
+	padding: 0 10px;
+	width: 65px;
+	height: 30px;
+	line-height: 30px;
+}
+.calculator-submit{text-align: center;}
+.calculator-submit .btn{
+	color: #949494;
+	border-color: #cecece;
+	margin-top: 15px;
+}
+.calculator-submit .btn:hover{
+	color: #3eb4c6;
+	border-color: #3eb4c6;
+}
+.calculator-result{color: #3eb4c6;}
+.calculator-inner{overflow: hidden;}
+.w40{width: 40%;}
+.w50{width: 50%;}
+.w60{width: 60%;}
+.w100{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+}
+.fl{float: left;}
+.ta-c{text-align: center;}
+
+
+.w40:first-child,
+.w50:first-child,
+.w60:first-child{
+	padding-right: 4%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+
+.calculator-slider {
+	padding: 40px 0 20px;
+}
+.calculator-slider .line{
+	position: relative;
+	background: #d5d5d5;
+	height: 5px;
+}
+.calculator-slider .line:before,
+.calculator-slider .line:after,
+.calculator-slider .line-range:before,
+.calculator-slider .line-range:after{
+	content: '';
+	position: absolute;
+	background: #d5d5d5;
+	height: 9px;
+	width: 1px;
+	top: -9px;
+}
+.calculator-slider .line:before,
+.calculator-slider .line-range:before{
+	right: 0;
+}
+.calculator-slider .line:after,
+.calculator-slider .line-range:after{
+	left: 0;
+}
+.calculator-slider .line-range{
+	position: absolute;
+	height: 5px;
+	top: 0;
+	background: #3eb4c6;
+}
+.calculator-slider .line__marker{
+	position: absolute;
+	width: 30px;
+	bottom: 20px;
+	text-align: center;
+}
+.calculator-slider .line__marker_from{margin-left: -15px;left: 0}
+.calculator-slider .line__marker_to{margin-right: -15px;right: 0}
+
+.calculator-slider .line-range__marker{
+	width: 8px;
+	height: 10px;
+	background: #3eb4c6;
+	position: absolute;
+	top: 13px;
+}
+.calculator-slider .line-range__marker_from{margin-left: -8px;left: 0;}
+.calculator-slider .line-range__marker_from:before{
+	content: '';
+	border: 6px solid transparent;
+	border-right: 8px solid #3eb4c6;
+	position: absolute;
+	right: 0;
+	top: -6px;
+}
+.calculator-slider .line-range__marker_to{margin-right: -8px;right: 0;}
+.calculator-slider .line-range__marker_to:before{
+	content: '';
+	border: 6px solid transparent;
+	border-left: 8px solid #3eb4c6;
+	position: absolute;
+	left: 0;
+	top: -6px;
+}
+
+.calculator-slider .line-range__marker i{
+	position: absolute;
+	width: 30px;
+	bottom: 38px;
+	text-align: center;
+	font-style: normal;
+}
+.calculator-slider .line-range__marker_from i{margin-left: -8px;left: 0}
+.calculator-slider .line-range__marker_to i{margin-right: -8px;right: 0}
+
+
+.calculator_male .for-female{display: none}
+.calculator_female .for-male{display: none}
+
+
+.calculator-box_val{white-space: nowrap}
+
+.calculator_per-for-fat .calculator-box_val{min-width:550px; }

@@ -162,6 +162,23 @@
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 }
+.input-field input[type="radio"] + .marker:before{
+	content: '';
+	width: 1px;
+	height: 1px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	display: block;
+	background: transparent;
+	margin: 10px;
+
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
 .input-field input[type="radio"]:checked + .marker:before{
 	content: '';
 	width: 9px;

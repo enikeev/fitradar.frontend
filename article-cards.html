@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>FitRadar</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="shortcut icon" href="/favicon.png" type="image/png">
+
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/mCustomScrollbar.css" rel="stylesheet">
+	<link href="css/datepicker.css" rel="stylesheet">
+	<link href="css/jquery.selectbox.css" rel="stylesheet">
+
+	<script src="js/jquery.min.js"></script>        <!--jquery 2.0.0-->
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/mCustomScrollbar.min.js"></script>
+	<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="js/datepicker.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header class="header">
+		<div class="header-wrap">
+		<div class="inner">
+			<a href="/" class="header-logo"></a>
+			<div class="header-location js-location-current">Санкт-Петербург</div>
+
+			<div class="header-aside">
+
+				<div class="header-search">
+					<div class="filter-field__search">
+						<div class="filter-field__search-input js-input-wrap">
+							<input type="text" class="js-input-targ" placeholder="Велоспорт">
+							<div class="filter-field__search-input__notepad js-input-notepad"></div>
+						</div>
+						<div class="filter-field__search-submit"></div>
+					</div>
+				</div>
+
+				<div class="header-user" style="display:none">
+					<a href="#" class="btn btn_brdr btn_auth" data-modal-open="auth">Войти</a>
+					<a href="#" class="btn btn_brdr btn_reg" data-modal-open="auth">Регистрация</a>
+				</div>
+
+				<div class="header-user">
+					<div class="header-user__int">
+						<span class="header-user__logo"><img src="img/upload/cart-logo-1.jpg" alt=""></span>
+						<a href="#" class="btn btn_brdr btn_profile" data-profile-menu="0">alexfitness.ru</a>
+						<a href="#" class="btn btn_brdr btn_notification" data-profile-menu="1"><i class="btn__number">99+</i></a>
+						<a href="#" class="btn btn_brdr btn_message" data-profile-menu="2"><i class="btn__number">10</i></a>
+					</div>
+					<div class="header-user__popups">
+						<div class="header-popup header-popup_profile" data-profile-popup="0">
+							<div class="header-popup__close"></div>
+							<div class="header-popup__content">
+								<div class="item"><a href="#" class="link">Личный кабинет</a></div>
+								<div class="item"><a href="#" class="link">Выйти</a></div>
+							</div>
+						</div>
+						<div class="header-popup header-popup_notification" data-profile-popup="1">
+							<div class="header-popup__close"></div>
+							<div class="header-popup__title">Оповещения fitradar</div>
+							<div class="header-popup__content">
+								<div class="item"><a href="#" class="link">Спортивные клубы <i class="num">1</i></a></div>
+								<div class="item"><a href="#" class="link">Секции <i class="num">99 +</i></a></div>
+								<div class="item"><a href="#" class="link">Площадки <i class="num">50</i></a></div>
+								<div class="item"><a href="#" class="link">Тренера <i class="num">50</i></a></div>
+								<div class="item"><a href="#" class="link">Магазины <i class="num">50</i></a></div>
+								<hr>
+								<div class="item"><a href="#" class="link">Новости <i class="num">2</i></a></div>
+								<div class="item"><a href="#" class="link">Афиша мероприятий <i class="num">3</i></a></div>
+								<div class="item"><a href="#" class="link">Статьи <i class="num">2</i></a></div>
+							</div>
+							<div class="header-popup__footer">
+								<a href="#" class="btn btn_brdr btn_settings">Настроить оповещения</a>
+								<a href="#" class="btn btn_brdr btn_clear js-remove-all-notifications">Очистить</a>
+							</div>
+						</div>
+						<div class="header-popup header-popup_message" data-profile-popup="2">
+							<div class="header-popup__close"></div>
+							<div class="header-popup__title">Ваши собщения</div>
+							<div class="header-popup__content js-scrollbar">
+								<a href="#" class="item">
+									<div>
+										<span class="login">login <sup class="status status_on">online</sup></span>
+										<span class="date">10 мая</span>
+									</div>
+									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+								</a>
+
+								<a href="#" class="item">
+									<div>
+										<span class="login">login <sup class="status status_off">offline</sup></span>
+										<span class="date">10 мая</span>
+									</div>
+									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+								</a>
+
+								<a href="#" class="item">
+									<div>
+										<span class="login">login <sup class="status status_on">online</sup></span>
+										<span class="date">10 мая</span>
+									</div>
+									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+								</a>
+
+								<a href="#" class="item">
+									<div>
+										<span class="login">login <sup class="status status_off">offline</sup></span>
+										<span class="date">10 мая</span>
+									</div>
+									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+								</a>
+
+								<a href="#" class="item">
+									<div>
+										<span class="login">login <sup class="status status_on">online</sup></span>
+										<span class="date">10 мая</span>
+									</div>
+									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+								</a>
+
+								<a href="#" class="item">
+									<div>
+										<span class="login">login <sup class="status status_off">offline</sup></span>
+										<span class="date">10 мая</span>
+									</div>
+									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+								</a>
+
+								<a href="#" class="item">
+									<div>
+										<span class="login">login <sup class="status status_on">online</sup></span>
+										<span class="date">10 мая</span>
+									</div>
+									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+								</a>
+
+								<a href="#" class="item">
+									<div>
+										<span class="login">login <sup class="status status_off">offline</sup></span>
+										<span class="date">10 мая</span>
+									</div>
+									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+								</a>
+
+								<a href="#" class="item">
+									<div>
+										<span class="login">login <sup class="status status_on">online</sup></span>
+										<span class="date">10 мая</span>
+									</div>
+									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+								</a>
+
+								<a href="#" class="item">
+									<div>
+										<span class="login">login <sup class="status status_off">offline</sup></span>
+										<span class="date">10 мая</span>
+									</div>
+									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+								</a>
+
+							</div>
+							<div class="header-popup__footer">
+								<a href="#" class="btn btn_brdr btn_settings">Настроить оповещения</a>
+								<a href="#" class="btn btn_brdr btn_clear js-remove-all-messages">Очистить</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		</div>
+	</header>
+
+	<section class="section section-location">
+		<div class="inner clearfix">
+
+			<div class="select-location">
+				<div class="select-location__country">
+					<a href="#" class="link active">Россия</a>
+					<a href="#" class="link">Украина</a>
+					<a href="#" class="link">Беларусь</a>
+					<a href="#" class="link">Казахстан</a>
+				</div>
+				<div class="select-location__input">
+					<div class="select-location__input-field">
+						<input type="text" placeholder="Введите название города">
+						<div class="select-location__input-result">
+							<!--<a href="#">Какой то город</a>-->
+							<!--<a href="#">Какой то город</a>-->
+							<!--<a href="#">Какой то город</a>-->
+						</div>
+					</div>
+					<span>или выберите из списка:</span>
+				</div>
+				<div class="select-location__capitals">
+					<a href="#" class="link">Москва</a>
+					<a href="#" class="link active">Санкт-Петербург</a>
+					<a href="#" class="link">Волгоград</a>
+					<a href="#" class="link">Воронеж</a>
+					<a href="#" class="link">Екатеринбург</a>
+					<a href="#" class="link">Калининград</a>
+					<a href="#" class="link">Новосибирск</a>
+					<a href="#" class="link">Омск</a>
+					<a href="#" class="link">Самара</a>
+					<a href="#" class="link">Челябинск</a>
+					<a href="#" class="link">Ярославль</a>
+					<a href="#" class="link">Москва</a>
+					<a href="#" class="link">Санкт-Петербург</a>
+					<a href="#" class="link">Волгоград</a>
+					<a href="#" class="link">Воронеж</a>
+					<a href="#" class="link">Екатеринбург</a>
+					<a href="#" class="link">Калининград</a>
+					<a href="#" class="link">Новосибирск</a>
+					<a href="#" class="link">Омск</a>
+					<a href="#" class="link">Самара</a>
+					<a href="#" class="link">Челябинск</a>
+					<a href="#" class="link">Ярославль</a>
+				</div>
+				<div class="select-location__words">
+					<a href="#" class="link active">А</a>
+					<a href="#" class="link">Б</a>
+					<a href="#" class="link">В</a>
+					<a href="#" class="link">Г</a>
+					<a href="#" class="link">Д</a>
+					<a href="#" class="link">Е</a>
+					<a href="#" class="link">Ж</a>
+					<a href="#" class="link">З</a>
+					<a href="#" class="link">И</a>
+					<a href="#" class="link">К</a>
+					<a href="#" class="link">Л</a>
+					<a href="#" class="link">М</a>
+					<a href="#" class="link">Н</a>
+					<a href="#" class="link">О</a>
+					<a href="#" class="link">П</a>
+					<a href="#" class="link">Р</a>
+					<a href="#" class="link">С</a>
+					<a href="#" class="link">Т</a>
+					<a href="#" class="link">У</a>
+					<a href="#" class="link">Ф</a>
+					<a href="#" class="link">Х</a>
+					<a href="#" class="link">Ц</a>
+					<a href="#" class="link">Ч</a>
+					<a href="#" class="link">Ш</a>
+					<a href="#" class="link">Щ</a>
+					<a href="#" class="link">Э</a>
+					<a href="#" class="link">Ю</a>
+					<a href="#" class="link">Я</a>
+				</div>
+				<div class="select-location__capitals-word">A</div>
+				<div class="select-location__cities">
+					<div class="select-location__cities-group">
+						<a href="#" class="link">Абаза</a>
+						<a href="#" class="link">Абакан</a>
+						<a href="#" class="link">Абдулино</a>
+						<a href="#" class="link">Абинск</a>
+						<a href="#" class="link">Агидель</a>
+						<a href="#" class="link">Агрыз</a>
+						<a href="#" class="link">Адыгейск</a>
+						<a href="#" class="link">Азнакаево</a>
+						<a href="#" class="link">Азов</a>
+						<a href="#" class="link">Ак-Довурак</a>
+						<a href="#" class="link">Аксай</a>
+						<a href="#" class="link">Алагир</a>
+						<a href="#" class="link">Алапаевск</a>
+					</div>
+
+					<div class="select-location__cities-group">
+						<a href="#" class="link">Алатырь</a>
+						<a href="#" class="link">Алдан</a>
+						<a href="#" class="link">Алейск</a>
+						<a href="#" class="link">Александров</a>
+						<a href="#" class="link">Александровск</a>
+						<a href="#" class="link">Александровск-Сахалинский</a>
+						<a href="#" class="link">Алексеевка</a>
+						<a href="#" class="link">Алексин</a>
+						<a href="#" class="link">Алзамай</a>
+						<a href="#" class="link">Альметьевск</a>
+						<a href="#" class="link">Амурск</a>
+						<a href="#" class="link">Анадырь Регио</a>
+						<a href="#" class="link">Анапа</a>
+					</div>
+
+					<div class="select-location__cities-group">
+						<a href="#" class="link">Ангарск</a>
+						<a href="#" class="link">Андреаполь</a>
+						<a href="#" class="link">Анжеро-Судженск</a>
+						<a href="#" class="link">Анива</a>
+						<a href="#" class="link">Апатиты</a>
+						<a href="#" class="link">Апрелевка</a>
+						<a href="#" class="link">Апшеронск</a>
+						<a href="#" class="link">Арамиль</a>
+						<a href="#" class="link">Аргун</a>
+						<a href="#" class="link">Ардатов</a>
+						<a href="#" class="link">Ардон</a>
+						<a href="#" class="link">Арзама</a>
+						<a href="#" class="link">Аркадак</a>
+					</div>
+
+					<div class="select-location__cities-group">
+						<a href="#" class="link">Армавир</a>
+						<a href="#" class="link">Арсеньев</a>
+						<a href="#" class="link">Арск</a>
+						<a href="#" class="link">Артем</a>
+						<a href="#" class="link">Артемовск</a>
+						<a href="#" class="link">Артемовский</a>
+						<a href="#" class="link">Архангельск</a>
+						<a href="#" class="link">Асбест</a>
+						<a href="#" class="link">Асино</a>
+						<a href="#" class="link">Астрахань</a>
+						<a href="#" class="link">Аткарск</a>
+						<a href="#" class="link">Ахтубинск</a>
+						<a href="#" class="link">Ачинск</a>
+					</div>
+
+				</div>
+				<div class="select-location__close"><span class="btn btn_brdr js-close-location-screen">Свернуть</span></div>
+			</div>
+		</div>
+	</section>
+
+	<nav class="nav">
+		<div class="inner">
+			<ul class="nav-list">
+				<li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Новости</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Соревнования</a></li>
+				<li class="nav-item nav-item_sub"><a href="#" class="nav-link">Статьи</a>
+					<ul class="nav__sub-list">
+						<li class="nav__sub-item"><a href="#" class="nav__sub-link">Раздел 1</a></li>
+						<li class="nav__sub-item"><a href="#" class="nav__sub-link">Раздел 2</a></li>
+						<li class="nav__sub-item"><a href="#" class="nav__sub-link">Раздел 3</a></li>
+						<li class="nav__sub-item"><a href="#" class="nav__sub-link">Раздел 4</a></li>
+						<li class="nav__sub-item"><a href="#" class="nav__sub-link">Раздел 5</a></li>
+					</ul>
+				</li>
+				<li class="nav-item"><a href="#" class="nav-link">Калькулятор калорий</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<section class="section section_breadcrumbs section_bg-gray section_btdr-b">
+		<div class="inner clearfix">
+			<ul class="breadcrumbs-list">
+				<li class="breadcrumbs-item"><a href="#">Fitradar</a></li>
+				<li class="breadcrumbs-item"><span>Статьи</span></li>
+			</ul>
+
+			<div class="section__title">Статьи</div>
+		</div>
+	</section>
+
+	<section class="section section_catalog list-view section_bg-lightgray">
+		<div class="catalog__header">
+			<div class="inner">
+				<div class="section__nav clearfix">
+
+					<div class="section__nav-field section__nav-field_select">
+						<span class="label">Сортировать по:</span>
+						<span class="select">
+							<select>
+								<option>Категории</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</span>
+					</div>
+
+					<div class="section__nav-field section__nav-field_select">
+						<span class="select">
+							<select>
+								<option>Дате</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</span>
+					</div>
+
+					<div class="section__nav-field section__nav-field_select">
+						<span class="select">
+							<select>
+								<option>названию (А-Я)</option>
+								<option>названию (Я-А)</option>
+								<option>увеличению цены</option>
+								<option>уменьшению цены</option>
+								<option>рейтингу (сначала больше)</option>
+								<option>рейтингу (сначала меньше)</option>
+								<option>отзывам (сначала больше)</option>
+								<option>отзывам (сначала меньше)</option>
+							</select>
+						</span>
+					</div>
+
+					<div class="section__nav-search filter-field">
+						<div class="filter-field__search">
+							<div class="filter-field__search-input js-input-wrap">
+								<input type="text" class="js-input-targ" placeholder="Поиск по ключевому слову">
+								<div class="filter-field__search-input__notepad js-input-notepad"></div>
+							</div>
+							<div class="filter-field__search-submit"></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="section section_articles section_bg-lightgray">
+	<div class="inner clearfix">
+	<div class="cards cards_articles">
+
+	<div class="cards-item cards-item_big cards-item_pic">
+		<div class="cards-item__inner">
+			<div class="cards-img">
+				<img src="img/upload/articles-0001.jpg" alt="">
+			</div>
+			<div class="cards-title">
+				<div class="cards-title__img">
+					<img src="img/upload/cart-logo-1.jpg" alt="">
+				</div>
+				<div class="cards-title__text">
+					<div>Как вписать спортивный объект в тесную инфраструктуру мегаполиса</div>
+					<div class="descr"><a href="#">pro100zero</a> / <a href="#">Военное обозрение</a></div>
+				</div>
+			</div>
+			<div class="cards-descr">
+				<div class="text">Есть люди, которым экстремальный отдых дает
+					почувствовать себя особенно живыми. Каждый
+					выбирает сам, на какую степень трудностей и
+					риска готов, чтобы ощутить, будто снова родился, — прыгать с парашютом с самолета или же с
+					моста, делать сальто на роликах или на снегоходе,
+					мирно спускаться по горнолыжной трассе или
+					прицепить крыло и на бешеной скорости освоить
+					нетронутый склон.</div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look">40</span>
+				<span class="cards-legend__comment">2</span>
+			</div>
+			<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+		</div>
+	</div>
+
+	<div class="cards-item cards-item_cont cards-item_pic">
+		<div class="cards-item__inner">
+			<div class="cards-title">
+				<div class="cards-title__text">
+					<div>Популярные статьи</div>
+				</div>
+			</div>
+			<div class="cards-descr">
+				<div class="text"><a href="#">Мозг мужчины и мозг женщины различаются на молекулярном уровне</a> </div>
+			</div>
+			<div class="cards-descr">
+				<div class="text"><a href="#">Cамые экзотичные виды спорта в истории зимних олимпиад </a></div>
+			</div>
+			<div class="cards-descr">
+				<div class="text"><a href="#">Доживает сильнейший: Спорт полезен!</a></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="cards-item cards-item_pic">
+		<div class="cards-item__inner">
+			<div class="cards-title">
+				<div class="cards-title__img">
+					<img src="img/upload/cart-logo-3.jpg" alt="">
+				</div>
+				<div class="cards-title__text">
+					<div>Как вписать спортивный объект в тесную инфраструктуру мегаполиса</div>
+					<div class="descr"><a href="#">pro100zero</a> / <a href="#">Военное обозрение</a></div>
+				</div>
+			</div>
+			<div class="cards-img">
+				<img src="img/upload/articles-0002.jpg" alt="">
+			</div>
+			<div class="cards-descr">
+				<div class="text">Дорогие друзья! Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы клубов в...</div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look">40</span>
+				<span class="cards-legend__comment">2</span>
+			</div>
+			<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+		</div>
+	</div>
+
+	<div class="cards-item cards-item_pic">
+		<div class="cards-item__inner">
+			<div class="cards-title">
+				<div class="cards-title__img">
+					<img src="img/upload/cart-logo-2.jpg" alt="">
+				</div>
+				<div class="cards-title__text">
+					<div>Как спорт может оказаться вредным</div>
+					<div class="descr"><a href="#">pro100zero</a> / <a href="#">Статьи</a> | <a href="#">Интересные факты</a></div>
+				</div>
+			</div>
+			<div class="cards-img">
+				<img src="img/upload/articles-0003.jpg" alt="">
+			</div>
+			<div class="cards-descr">
+				<div class="text">Пробежки вдоль проспектов, будут скорее вредными чем полезными, из-за большого скопления CО2 в кислороде</div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look">40</span>
+				<span class="cards-legend__comment">2</span>
+			</div>
+			<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+		</div>
+	</div>
+
+	<div class="cards-item">
+		<div class="cards-item__inner">
+			<div class="cards-title">
+				<div class="cards-title__img">
+					<img src="img/upload/cart-logo-1.jpg" alt="">
+				</div>
+				<div class="cards-title__text">
+					<div>Почему корабельные пушки с огромной огневой мощью красят в белый цвет?</div>
+					<div class="descr"><a href="#">pro100zero</a> / <a href="#">Военное обозрение</a></div>
+				</div>
+			</div>
+			<div class="cards-descr">
+				<div class="text">Перед вами собрана подборка интересных фактов со всего света про людей, технику, страны и многое другое</div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look">40</span>
+				<span class="cards-legend__comment">2</span>
+			</div>
+			<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+		</div>
+	</div>
+
+	<div class="cards-item cards-item_pic">
+		<div class="cards-item__inner">
+			<div class="cards-title">
+				<div class="cards-title__img">
+					<img src="img/upload/cart-logo-1.jpg" alt="">
+				</div>
+				<div class="cards-title__text">
+					<div>Как вписать спортивный объект в тесную инфраструктуру мегаполиса</div>
+					<div class="descr"><a href="#">pro100zero</a> / <a href="#">Военное обозрение</a></div>
+				</div>
+			</div>
+			<div class="cards-img">
+				<img src="img/upload/articles-0001.jpg" alt="">
+			</div>
+			<div class="cards-descr">
+				<div class="text">Замечательная беговая дорожка проходящая в СПб, вдоль Дальневосточного проспекта</div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look">40</span>
+				<span class="cards-legend__comment">2</span>
+			</div>
+			<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+		</div>
+	</div>
+
+	<div class="cards-item cards-item_pic">
+		<div class="cards-item__inner">
+			<div class="cards-title">
+				<div class="cards-title__img">
+					<img src="img/upload/cart-logo-3.jpg" alt="">
+				</div>
+				<div class="cards-title__text">
+					<div>Как вписать спортивный объект в тесную инфраструктуру мегаполиса</div>
+					<div class="descr"><a href="#">pro100zero</a> / <a href="#">Военное обозрение</a></div>
+				</div>
+			</div>
+			<div class="cards-img">
+				<img src="img/upload/articles-0002.jpg" alt="">
+			</div>
+			<div class="cards-descr">
+				<div class="text">Дорогие друзья! Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы клубов в...</div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look">40</span>
+				<span class="cards-legend__comment">2</span>
+			</div>
+			<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+		</div>
+	</div>
+
+	<div class="cards-item cards-item_pic">
+		<div class="cards-item__inner">
+			<div class="cards-title">
+				<div class="cards-title__img">
+					<img src="img/upload/cart-logo-2.jpg" alt="">
+				</div>
+				<div class="cards-title__text">
+					<div>Как спорт может оказаться вредным</div>
+					<div class="descr"><a href="#">pro100zero</a> / <a href="#">Военное обозрение</a></div>
+				</div>
+			</div>
+			<div class="cards-img">
+				<img src="img/upload/articles-0003.jpg" alt="">
+			</div>
+			<div class="cards-descr">
+				<div class="text">Пробежки вдоль проспектов, будут скорее вредными чем полезными, из-за большого скопления CО2 в кислороде</div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look">40</span>
+				<span class="cards-legend__comment">2</span>
+			</div>
+			<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+		</div>
+	</div>
+
+	<div class="cards-item cards-item_pic">
+		<div class="cards-item__inner">
+			<div class="cards-title">
+				<div class="cards-title__img">
+					<img src="img/upload/cart-logo-3.jpg" alt="">
+				</div>
+				<div class="cards-title__text">
+					<div>Как вписать спортивный объект в тесную инфраструктуру мегаполиса</div>
+					<div class="descr"><a href="#">pro100zero</a> / <a href="#">Военное обозрение</a></div>
+				</div>
+			</div>
+			<div class="cards-img">
+				<img src="img/upload/articles-0002.jpg" alt="">
+			</div>
+			<div class="cards-descr">
+				<div class="text">Дорогие друзья! Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы клубов в...</div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look">40</span>
+				<span class="cards-legend__comment">2</span>
+			</div>
+			<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+		</div>
+	</div>
+
+	<div class="cards-item cards-item_pic">
+		<div class="cards-item__inner">
+			<div class="cards-title">
+				<div class="cards-title__img">
+					<img src="img/upload/cart-logo-1.jpg" alt="">
+				</div>
+				<div class="cards-title__text">
+					<div>Как вписать спортивный объект в тесную инфраструктуру мегаполиса</div>
+					<div class="descr"><a href="#">pro100zero</a> / <a href="#">Военное обозрение</a></div>
+				</div>
+			</div>
+			<div class="cards-img">
+				<img src="img/upload/articles-0001.jpg" alt="">
+			</div>
+			<div class="cards-descr">
+				<div class="text">Замечательная беговая дорожка проходящая в СПб, вдоль Дальневосточного проспекта</div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look">40</span>
+				<span class="cards-legend__comment">2</span>
+			</div>
+			<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+		</div>
+	</div>
+
+	<div class="cards-item cards-item_more">
+		<div class="cards-item__inner">
+			<div class="cards-load">
+				<div class="icon"></div>
+				<div class="title">Показать еще 30</div>
+				<div class="text">Показано 30 новостей из 1100</div>
+			</div>
+		</div>
+	</div>
+
+
+	</div>
+
+
+	</div>
+	</section>
+
+	<footer class="footer">
+		<div class="inner clearfix">
+			<div class="footer__nav">
+				<ul class="footer__nav-list">
+					<li class="footer__nav-item footer__nav-item_ttl"><a class="footer__nav-link" href="#">КАТАЛОГ</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Тренера</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Спорт клубы</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Секции</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Площадки</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Магазины</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Детский спорт</a></li>
+				</ul>
+				<ul class="footer__nav-list">
+					<li class="footer__nav-item footer__nav-item_ttl"><a class="footer__nav-link" href="#">ПОЛЕЗНОЕ</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Главная</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Соревнования</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Статьи</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Калькулятор калорий</a></li>
+				</ul>
+				<ul class="footer__nav-list">
+					<li class="footer__nav-item footer__nav-item_ttl"><a class="footer__nav-link" href="#">ОБЩЕЕ</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">О проекте</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Обратная связь</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Сообщить об ошибке</a></li>
+				</ul>
+				<ul class="footer__nav-list">
+					<li class="footer__nav-item footer__nav-item_ttl"><a class="footer__nav-link" href="#">ПОМОЩЬ</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Как пользоваться сайтом</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Как стать участником</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Раздел</a></li>
+				</ul>
+			</div>
+			<div class="footer__os">
+				<div class="footer__app"><img src="img/app-cap.png" alt=""></div>
+				<div class="footer__soc">
+					<ul class="footer__soc-list">
+						<li class="footer__soc-item"><a class="footer__soc-link footer__soc-link_vk" href="#"></a></li>
+						<li class="footer__soc-item"><a class="footer__soc-link footer__soc-link_fb" href="#"></a></li>
+						<li class="footer__soc-item"><a class="footer__soc-link footer__soc-link_ok" href="#"></a></li>
+						<li class="footer__soc-item"><a class="footer__soc-link footer__soc-link_yt" href="#"></a></li>
+						<li class="footer__soc-item"><a class="footer__soc-link footer__soc-link_tw" href="#"></a></li>
+						<li class="footer__soc-item"><a class="footer__soc-link footer__soc-link_ig" href="#"></a></li>
+						<li class="footer__soc-item"><a class="footer__soc-link footer__soc-link_gp" href="#"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer__copyright">При цитировании информации ссылка на сайт с указанием адреса сайта обязательна. Полное заимствование документов является нарушением российского и<br>международного законодательства и возможно только с согласия руководства FitRadar.</div>
+		<div class="inner inner_bottom clearfix">
+			<div class="footer__bottom-left">
+				<div class="footer__pay">
+					<ul class="footer__pay-list">
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/qiwi.png" alt=""></a></li>
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/robokassa.png" alt=""></a></li>
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/yandex.png" alt=""></a></li>
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/visa.png" alt=""></a></li>
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/mastercard.png" alt=""></a></li>
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/sberbank.png" alt=""></a></li>
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/elexnet.png" alt=""></a></li>
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/webmoney.png" alt=""></a></li>
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/mts.png" alt=""></a></li>
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/tele2.png" alt=""></a></li>
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/megafon.png" alt=""></a></li>
+						<li class="footer__pay-item"><a href="#" class="footer__pay-link"><img src="img/payment/beeline.png" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="footer__info">
+					<span class="footer__info-item footer__info-item_copy">&copy; 2015 «fitradar»</span>
+					<span class="footer__info-item footer__info-item_age">16+</span>
+					<a class="footer__info-item footer__info-item_rules" href="#">Условия использования ресурса</a>
+					<a class="footer__info-item footer__info-item_conf" href="#">Политика конфидециальности</a>
+				</div>
+			</div>
+			<div class="footer__developer">
+				<span class="footer__developer-name">Разработка сайта</span>
+				<a class="footer__developer-logo" href="#"><img src="img/global/developer.png" alt=""></a>
+			</div>
+		</div>
+	</footer>
+
+
+	<div class="keypad-wrap keypad-wrap_rus">
+	<div class="keypad-close"></div>
+	<div class="keypad-inner">
+	<div class="keypad keypad_rus">
+		<div class="key">ё</div>
+		<div class="key">1</div>
+		<div class="key">2</div>
+		<div class="key">3</div>
+		<div class="key">4</div>
+		<div class="key">5</div>
+		<div class="key">6</div>
+		<div class="key">7</div>
+		<div class="key">8</div>
+		<div class="key">9</div>
+		<div class="key">0</div>
+		<div class="key">-</div>
+		<div class="key">=</div>
+		<div class="key key_backspace" data-key="backspace"></div>
+		<div class="key key_at" data-key="">@</div>
+		<div class="key">й</div>
+		<div class="key">ц</div>
+		<div class="key">у</div>
+		<div class="key">к</div>
+		<div class="key">е</div>
+		<div class="key">н</div>
+		<div class="key">г</div>
+		<div class="key">ш</div>
+		<div class="key">щ</div>
+		<div class="key">з</div>
+		<div class="key">х</div>
+		<div class="key">ъ</div>
+		<div class="key">\</div>
+		<div class="key">«</div>
+		<div class="key key_multishift" data-key="multishift"></div>
+		<div class="key">ф</div>
+		<div class="key">ы</div>
+		<div class="key">в</div>
+		<div class="key">а</div>
+		<div class="key">п</div>
+		<div class="key">р</div>
+		<div class="key">о</div>
+		<div class="key">л</div>
+		<div class="key">д</div>
+		<div class="key">ж</div>
+		<div class="key">э</div>
+		<div class="key">!</div>
+		<div class="key key_enter" data-key="enter"></div>
+		<div class="key key_shift left" data-key="shift"></div>
+		<div class="key">я</div>
+		<div class="key">ч</div>
+		<div class="key">с</div>
+		<div class="key">м</div>
+		<div class="key">и</div>
+		<div class="key">т</div>
+		<div class="key">ь</div>
+		<div class="key">б</div>
+		<div class="key">ю</div>
+		<div class="key">,</div>
+		<div class="key">.</div>
+		<div class="key key_shift right" data-key="shift"></div>
+		<div class="key key_language" data-key="language">English</div>
+		<div class="key key_space" data-key="space"></div>
+		<div class="key key_symbols" data-key="symbols">« » { } ~</div>
+	</div>
+
+	<div class="keypad keypad_rus-shift">
+		<div class="key" data-key="">Ё</div>
+		<div class="key" data-key="">!</div>
+		<div class="key" data-key="">@</div>
+		<div class="key" data-key="">#</div>
+		<div class="key" data-key="">$</div>
+		<div class="key" data-key="">%</div>
+		<div class="key" data-key="">^</div>
+		<div class="key" data-key="">&</div>
+		<div class="key" data-key="">*</div>
+		<div class="key" data-key="">(</div>
+		<div class="key" data-key="">)</div>
+		<div class="key" data-key="">_</div>
+		<div class="key" data-key="">+</div>
+		<div class="key key_backspace" data-key="backspace"></div>
+		<div class="key key_at" data-key="">@</div>
+		<div class="key" data-key="">Й</div>
+		<div class="key" data-key="">Ц</div>
+		<div class="key" data-key="">У</div>
+		<div class="key" data-key="">К</div>
+		<div class="key" data-key="">Е</div>
+		<div class="key" data-key="">Н</div>
+		<div class="key" data-key="">Г</div>
+		<div class="key" data-key="">Ш</div>
+		<div class="key" data-key="">Щ</div>
+		<div class="key" data-key="">З</div>
+		<div class="key" data-key="">Х</div>
+		<div class="key" data-key="">Ъ</div>
+		<div class="key" data-key="">\</div>
+		<div class="key" data-key="">»</div>
+		<div class="key key_multishift" data-key="multishift"></div>
+		<div class="key" data-key="">Ф</div>
+		<div class="key" data-key="">Ы</div>
+		<div class="key" data-key="">В</div>
+		<div class="key" data-key="">А</div>
+		<div class="key" data-key="">П</div>
+		<div class="key" data-key="">Р</div>
+		<div class="key" data-key="">О</div>
+		<div class="key" data-key="">Л</div>
+		<div class="key" data-key="">Д</div>
+		<div class="key" data-key="">Ж</div>
+		<div class="key" data-key="">Э</div>
+		<div class="key" data-key="">?</div>
+		<div class="key key_enter" data-key="enter"></div>
+		<div class="key key_shift left" data-key="shift"></div>
+		<div class="key" data-key="">Я</div>
+		<div class="key" data-key="">Ч</div>
+		<div class="key" data-key="">С</div>
+		<div class="key" data-key="">М</div>
+		<div class="key" data-key="">И</div>
+		<div class="key" data-key="">Т</div>
+		<div class="key" data-key="">Ь</div>
+		<div class="key" data-key="">Б</div>
+		<div class="key" data-key="">Ю</div>
+		<div class="key" data-key="">;</div>
+		<div class="key" data-key="">:</div>
+		<div class="key key_shift right" data-key="shift"></div>
+		<div class="key key_language" data-key="language">English</div>
+		<div class="key key_space" data-key="space"></div>
+		<div class="key key_symbols" data-key="symbols">« » { } ~</div>
+	</div>
+
+	<div class="keypad keypad_eng">
+		<div class="key" data-key="">`</div>
+		<div class="key" data-key="">1</div>
+		<div class="key" data-key="">2</div>
+		<div class="key" data-key="">3</div>
+		<div class="key" data-key="">4</div>
+		<div class="key" data-key="">5</div>
+		<div class="key" data-key="">6</div>
+		<div class="key" data-key="">7</div>
+		<div class="key" data-key="">8</div>
+		<div class="key" data-key="">9</div>
+		<div class="key" data-key="">0</div>
+		<div class="key" data-key="">-</div>
+		<div class="key" data-key="">=</div>
+		<div class="key key_backspace" data-key="backspace"></div>
+		<div class="key key_at" data-key="">@</div>
+		<div class="key" data-key="">q</div>
+		<div class="key" data-key="">w</div>
+		<div class="key" data-key="">e</div>
+		<div class="key" data-key="">r</div>
+		<div class="key" data-key="">t</div>
+		<div class="key" data-key="">y</div>
+		<div class="key" data-key="">u</div>
+		<div class="key" data-key="">i</div>
+		<div class="key" data-key="">o</div>
+		<div class="key" data-key="">p</div>
+		<div class="key" data-key="">[</div>
+		<div class="key" data-key="">]</div>
+		<div class="key" data-key="">\</div>
+		<div class="key" data-key="">"</div>
+		<div class="key key_multishift" data-key="multishift"></div>
+		<div class="key" data-key="">a</div>
+		<div class="key" data-key="">s</div>
+		<div class="key" data-key="">d</div>
+		<div class="key" data-key="">f</div>
+		<div class="key" data-key="">g</div>
+		<div class="key" data-key="">h</div>
+		<div class="key" data-key="">j</div>
+		<div class="key" data-key="">k</div>
+		<div class="key" data-key="">l</div>
+		<div class="key" data-key="">;</div>
+		<div class="key" data-key="">'</div>
+		<div class="key" data-key="">!</div>
+		<div class="key key_enter" data-key="enter"></div>
+		<div class="key key_shift left" data-key="shift"></div>
+		<div class="key" data-key="">z</div>
+		<div class="key" data-key="">x</div>
+		<div class="key" data-key="">c</div>
+		<div class="key" data-key="">v</div>
+		<div class="key" data-key="">b</div>
+		<div class="key" data-key="">n</div>
+		<div class="key" data-key="">m</div>
+		<div class="key" data-key="">,</div>
+		<div class="key" data-key="">.</div>
+		<div class="key" data-key="">:</div>
+		<div class="key" data-key="">/</div>
+		<div class="key key_shift right" data-key="shift"></div>
+		<div class="key key_language" data-key="language">Русский</div>
+		<div class="key key_space" data-key="space"></div>
+		<div class="key key_symbols" data-key="symbols">« » { } ~</div>
+	</div>
+
+	<div class="keypad keypad_eng-shift">
+		<div class="key" data-key="">~</div>
+		<div class="key" data-key="">!</div>
+		<div class="key" data-key="">@</div>
+		<div class="key" data-key="">#</div>
+		<div class="key" data-key="">$</div>
+		<div class="key" data-key="">%</div>
+		<div class="key" data-key="">^</div>
+		<div class="key" data-key="">&</div>
+		<div class="key" data-key="">*</div>
+		<div class="key" data-key="">(</div>
+		<div class="key" data-key="">)</div>
+		<div class="key" data-key="">_</div>
+		<div class="key" data-key="">+</div>
+		<div class="key key_backspace" data-key="backspace"></div>
+		<div class="key key_at" data-key="">@</div>
+		<div class="key" data-key="">Q</div>
+		<div class="key" data-key="">W</div>
+		<div class="key" data-key="">E</div>
+		<div class="key" data-key="">R</div>
+		<div class="key" data-key="">T</div>
+		<div class="key" data-key="">Y</div>
+		<div class="key" data-key="">U</div>
+		<div class="key" data-key="">I</div>
+		<div class="key" data-key="">O</div>
+		<div class="key" data-key="">P</div>
+		<div class="key" data-key="">[</div>
+		<div class="key" data-key="">]</div>
+		<div class="key" data-key="">|</div>
+		<div class="key" data-key="">»</div>
+		<div class="key key_multishift" data-key="multishift"></div>
+		<div class="key" data-key="">A</div>
+		<div class="key" data-key="">S</div>
+		<div class="key" data-key="">D</div>
+		<div class="key" data-key="">F</div>
+		<div class="key" data-key="">G</div>
+		<div class="key" data-key="">H</div>
+		<div class="key" data-key="">J</div>
+		<div class="key" data-key="">K</div>
+		<div class="key" data-key="">L</div>
+		<div class="key" data-key="">:</div>
+		<div class="key" data-key="">"</div>
+		<div class="key" data-key="">?</div>
+		<div class="key key_enter" data-key="enter"></div>
+		<div class="key key_shift left" data-key="shift"></div>
+		<div class="key" data-key="">Z</div>
+		<div class="key" data-key="">X</div>
+		<div class="key" data-key="">C</div>
+		<div class="key" data-key="">V</div>
+		<div class="key" data-key="">B</div>
+		<div class="key" data-key="">N</div>
+		<div class="key" data-key="">M</div>
+		<div class="key" data-key=""><</div>
+		<div class="key" data-key="">></div>
+		<div class="key" data-key="">;</div>
+		<div class="key" data-key="">—</div>
+		<div class="key key_shift right" data-key="shift"></div>
+		<div class="key key_language" data-key="language">Русский</div>
+		<div class="key key_space" data-key="space"></div>
+		<div class="key key_symbols" data-key="symbols">« » { } ~</div>
+	</div>
+
+	<div class="keypad keypad_symbols">
+		<div class="key" data-key="">°</div>
+		<div class="key" data-key="">±</div>
+		<div class="key" data-key="">¼</div>
+		<div class="key" data-key="">½</div>
+		<div class="key" data-key="">¾</div>
+		<div class="key" data-key="">¤</div>
+		<div class="key" data-key="">¬</div>
+		<div class="key" data-key="">²</div>
+		<div class="key" data-key="">³</div>
+		<div class="key" data-key="">¢</div>
+		<div class="key" data-key="">€</div>
+		<div class="key" data-key="">£</div>
+		<div class="key" data-key="">=</div>
+		<div class="key key_backspace" data-key="backspace"></div>
+		<div class="key key_at" data-key="">@</div>
+		<div class="key" data-key="">~</div>
+		<div class="key" data-key="">§</div>
+		<div class="key" data-key="">¶</div>
+		<div class="key" data-key="">:</div>
+		<div class="key" data-key="">;</div>
+		<div class="key" data-key=""></div>
+		<div class="key" data-key="">'</div>
+		<div class="key" data-key="">"</div>
+		<div class="key" data-key="">«</div>
+		<div class="key" data-key="">»</div>
+		<div class="key" data-key="">[</div>
+		<div class="key" data-key="">]</div>
+		<div class="key" data-key="">{</div>
+		<div class="key" data-key="">}</div>
+		<div class="key key_multishift"></div>
+		<div class="key" data-key=""></div>
+		<div class="key" data-key=""></div>
+		<div class="key" data-key=""></div>
+		<div class="key" data-key=""></div>
+		<div class="key" data-key="">‘</div>
+		<div class="key" data-key="">’</div>
+		<div class="key" data-key="">„</div>
+		<div class="key" data-key="">“</div>
+		<div class="key" data-key="">”</div>
+		<div class="key" data-key=""></div>
+		<div class="key" data-key="">!</div>
+		<div class="key" data-key="">?</div>
+		<div class="key key_enter" data-key="enter"></div>
+		<div class="key key_shift left"></div>
+		<div class="key" data-key=""></div>
+		<div class="key" data-key=""></div>
+		<div class="key" data-key=""></div>
+		<div class="key" data-key=""></div>
+		<div class="key" data-key=""><</div>
+		<div class="key" data-key="">></div>
+		<div class="key" data-key="">–</div>
+		<div class="key" data-key="">—</div>
+		<div class="key" data-key="">\</div>
+		<div class="key" data-key="">|</div>
+		<div class="key" data-key="">/</div>
+		<div class="key key_shift right"></div>
+		<div class="key key_language"></div>
+		<div class="key key_space" data-key="space"></div>
+		<div class="key key_symbols" data-key="symbols">« » { } ~</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+</body>
+</html>
+
+

@@ -1,5 +1,34 @@
 (function(){
 	var app = {
+		calculator: {
+			sexCheck: function(){
+				$('input[name^=sex]').filter(':checked').each(function(){
+					var $t = $(this),
+					wrap = $t.closest('.calculator'),
+					sex = $t.val();
+
+					if ( sex == 'male' ){
+						wrap.removeClass('calculator_female').addClass('calculator_male');
+					} else if ( sex == 'female' ){
+						wrap.removeClass('calculator_male').addClass('calculator_female');
+					}
+
+				});
+			},
+			init: function(){
+
+				app.calculator.sexCheck();
+
+				$('input[name^=sex]').change(function(){
+					var wrap = $(this).closest('.calculator');
+					if ( $(this).val() == 'male' ){
+						wrap.removeClass('calculator_female').addClass('calculator_male');
+					} else if ( $(this).val() == 'female' ){
+						wrap.removeClass('calculator_male').addClass('calculator_female');
+					}
+				})
+			}
+		},
 		pictureBox: {
 			init: function(){
 				$('.rb-viewer').click(function(e){
@@ -421,11 +450,14 @@
 			this.checkboxCheck();
 			this.inputRateCheck();
 			this.pictureBox.init();
+			this.calculator.init();
 
 			$('.feedback-field__input-rate').on('change', 'input', app.inputRateCheck);
 
+			if ( $('.pie-diagram').size() ){
+				$('.pie-diagram').strokeStatCity();
+			}
 
-			$('.pie-diagram').strokeStatCity();
 			$(window).scroll(function(){
 				app.loadStatCity();
 				app.fixmenu();
