@@ -1,0 +1,19 @@
+{
+
+	"version": "1.0",
+
+	"api_version": 1,
+
+	"layout":
+
+	{
+
+		"logo": "http://fitradar.maestros.ru/img/logo.png",
+
+		"color": "#ffffff",
+
+		"show_title": false
+
+	}
+
+}
