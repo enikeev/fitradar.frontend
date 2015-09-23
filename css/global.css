@@ -517,7 +517,9 @@
 	vertical-align:middle;
 }
 
-.cards-descr{}
+.cards-descr{
+	overflow: hidden;
+}
 .cards-btn{
 	position:absolute;
 	bottom:10px;

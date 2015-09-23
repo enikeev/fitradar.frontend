@@ -478,9 +478,24 @@
 
 })();
 
+function checkSearchResult(inpt){
+	var wrap = inpt.closest('.js-input-wrap');
+	var res = wrap.find('.js-input-result');
+	var resWrp = wrap.find('.result-wrap');
+	var resInr = wrap.find('.result-wrap__inner');
 
+	if ( resWrp.height() < resInr.height() ){
+		resWrp.mCustomScrollbar();
+	} else {
+		resWrp.mCustomScrollbar("destroy");
+	}
+}
 
 $(function(){
+
+	$('.js-input-targ').on('keyup change blur', function(){
+		checkSearchResult($(this));
+	});
 
 	$('[data-modal-open]').click(function(e){
 		e.preventDefault();
@@ -635,15 +650,19 @@ $(function(){
 	});
 
 
-	$('.js-search-examp').click(function(){
+	$('.js-search-examp').click(function(e){
+		e.preventDefault();
 		$(this).closest('.js-search').find('.js-input-targ').val($(this).text())
 	});
-	$('.js-input-clear').click(function(){
+	$('.js-input-clear').click(function(e){
+		e.preventDefault();
 		$(this).closest('.js-input-wrap').find('.js-input-targ').val('');
 	});
-	$('.js-input-showpass').on('mousedown', function(){
+	$('.js-input-showpass').on('mousedown', function(e){
+		e.preventDefault();
 		$(this).closest('.js-input-wrap').find('.js-input-targ').attr('type', 'text');
-	}).on('mouseup', function(){
+	}).on('mouseup', function(e){
+		e.preventDefault();
 		$(this).closest('.js-input-wrap').find('.js-input-targ').attr('type', 'password');
 	});
 
@@ -1103,3 +1122,4 @@ function modalOpen(data){
 	$targ.add('.modal-overlay').fadeIn();
 	$targ.css({top: ( (wh > $targ.outerHeight()) ? (wh - $targ.outerHeight())/2 + ws : 0)});
 }
+
