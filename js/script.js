@@ -480,7 +480,6 @@
 
 function checkSearchResult(inpt){
 	var wrap = inpt.closest('.js-input-wrap');
-	var res = wrap.find('.js-input-result');
 	var resWrp = wrap.find('.result-wrap');
 	var resInr = wrap.find('.result-wrap__inner');
 
