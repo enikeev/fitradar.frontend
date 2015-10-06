@@ -335,19 +335,6 @@
 }
 
 .tooltip{
-/*	display: inline-block;
-	width: 9px;
-	font-size: 8px;
-	color: #a3a3a3;
-	text-align: center;
-	height: 9px;
-	border: 1px solid #a3a3a3;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	cursor: pointer;
-	vertical-align: middle;
-	top: -3px;*/
 	display: inline-block;
 	cursor: pointer;
 }
