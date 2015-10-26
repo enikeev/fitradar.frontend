@@ -1864,6 +1864,10 @@ catalog item
 	border: 1px solid #cfcfcf;
 	padding: 20px 5px 20px 20px;
 	margin-bottom: 20px;
+
+	/*-webkit-box-sizing: border-box;*/
+	/*-moz-box-sizing: border-box;*/
+	/*box-sizing: border-box;*/
 }
 .aside_sml .cards_news{
 	min-height: 1080px;

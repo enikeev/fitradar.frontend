@@ -473,7 +473,10 @@
 	var appInt = setInterval(function(){
 		if (typeof jQuery !== 'function') return;
 		clearInterval(appInt);
-		setTimeout(appLoad, 0);
+		$(function(){
+			setTimeout(appLoad, 0);
+		});
+
 	}, 50);
 
 })();
@@ -483,9 +486,9 @@ function checkSearchResult(inpt){
 	var resWrp = wrap.find('.result-wrap');
 	var resInr = wrap.find('.result-wrap__inner');
 
-	if ( resWrp.height() < resInr.height() ){
+	if ( resWrp.size() && ( resWrp.height() < resInr.height() ) ){
 		resWrp.mCustomScrollbar();
-	} else {
+	} else if ( resWrp.size() && ( resWrp.height() >= resInr.height() ) ){
 		resWrp.mCustomScrollbar("destroy");
 	}
 }
