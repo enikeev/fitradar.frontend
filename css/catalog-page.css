@@ -1882,9 +1882,8 @@ catalog item
 	left: 0;
 }
 
-
-
-
+.js-height-label-targ{position: relative;}
+.js-height-label-targ.t20{top: -22px;}
 
 
 

@@ -1094,6 +1094,15 @@ $(function(){
 
 $(function(){
 
+
+	$('.js-height-label-obj').each(function(){
+		var $t = $(this),
+			$tatg = $('.js-height-label-targ'),
+			top = $tatg.offset().top,
+			h = top - $t.offset().top;
+		$t.height(h);
+	});
+
 	$('body').keydown(function(e){
 
 		var $modal = $('.modal_info-typoerror');
