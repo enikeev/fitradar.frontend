@@ -682,6 +682,8 @@ $(function(){
 		}
 	});
 
+
+
 	$('.js-remove-all-messages').click(function(e){
 		e.preventDefault();
 		$('.header-user .btn_message .btn__number').fadeOut(400, function(){$(this).remove();});
@@ -702,6 +704,14 @@ $(function(){
 		var ind = $wrap.data('profile-popup');
 		$('[data-profile-menu=' + ind + ']').click();
 	});
+
+	$('body')
+		.on('click', '.js-popup-city-confirm', function(){ $(this).closest('.header-popup').hide(); })
+		.on('click', '.js-popup-city-choose', function(){ $('.js-location-current').click(); $(this).closest('.header-popup').hide(); })
+		.on('click', '.header-popup_city .header-popup__close', function(){ $(this).closest('.header-popup').hide(); });
+
+
+
 
 	$('body').on('click', '.result-item__remove', function(){
 		var $this = $(this);

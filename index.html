@@ -29,6 +29,29 @@
 			<a href="/" class="header-logo"></a>
 			<div class="header-location js-location-current">Санкт-Петербург</div>
 
+			<script>
+				$(function(){
+					setTimeout(function(){
+						$('.header-popup_city').fadeIn();
+					}, 500)
+				});
+			</script>
+
+			<div class="header-location__popups">
+				<div class="header-popup header-popup_city">
+					<div class="header-popup__close"></div>
+					<div class="header-popup__title">Ваш город - <span>Санкт-Петербург?</span></div>
+					<div class="header-popup__content">
+						<span class="btn btn_brdr js-popup-city-confirm">Да</span>
+						<span class="btn btn_brdr js-popup-city-choose">Выбрать другой город</span>
+					</div>
+					<div class="header-popup__footer">
+						От выбранного города зависит предоставляемая
+						Вам информация из нашего каталога
+					</div>
+				</div>
+			</div>
+
 			<div class="header-aside">
 
 				<div class="header-search">

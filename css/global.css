@@ -675,6 +675,9 @@
 	background: #1d2027;
 	position: relative;
 }
+.header .inner{
+	position: relative;
+}
 
 .header-logo{
 	display: block;
@@ -878,6 +881,12 @@
 	border-radius:			50%;
 }
 
+.header-location__popups{
+	position:absolute;
+	left:0;
+	top:95px;
+}
+
 .header-user__popups{
 	position:absolute;
 	right:0;
@@ -1041,6 +1050,22 @@
 .header-popup_notification .header-popup__content{min-height: 150px;}
 
 
+.header-popup_city{
+	min-width: 320px;
+	left: 90px;
+}
+.header-popup_city .header-popup__title{white-space: nowrap;color: #959595;margin-top: 10px;padding: 15px 25px 20px;text-align: left;}
+.header-popup_city .header-popup__title span{white-space: nowrap;color: #3fb4c6;}
+.header-popup_city .header-popup__content{padding: 10px 25px;}
+.header-popup_city .header-popup__content .btn{color: #959595; border-color: #959595;margin-right: 5px;}
+.header-popup_city .header-popup__content .btn:hover{color: #fff; border-color: #3fb4c6; background: #3fb4c6;}
+.header-popup_city .header-popup__footer{
+	color: #959595;
+	font-size: 12px;
+	border: none;
+	padding: 10px 25px;
+}
+
 
 .header-popup_message{width:400px;}
 .header-popup_message:before{right: 25px;}
@@ -1112,6 +1137,10 @@
 }
 .header.fixed .header-user__popups{
 	top: 55px;
+}
+
+.header.fixed .header-location__popups{
+	top: 77px;
 }
 
 
