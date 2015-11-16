@@ -22,11 +22,34 @@
 
 <div class="wrapper wrapper_front">
 
-	<header class="header">
-		<div class="header-wrap">
+<header class="header">
+	<div class="header-wrap">
 		<div class="inner">
 			<a href="/" class="header-logo"></a>
 			<div class="header-location js-location-current">Санкт-Петербург</div>
+
+			<script>
+				$(function(){
+					setTimeout(function(){
+						$('.header-popup_city').fadeIn();
+					}, 500)
+				});
+			</script>
+
+			<div class="header-location__popups">
+				<div class="header-popup header-popup_city">
+					<div class="header-popup__close"></div>
+					<div class="header-popup__title">Ваш город - <span>Санкт-Петербург?</span></div>
+					<div class="header-popup__content">
+						<span class="btn btn_brdr js-popup-city-confirm">Да</span>
+						<span class="btn btn_brdr js-popup-city-choose">Выбрать другой город</span>
+					</div>
+					<div class="header-popup__footer">
+						От выбранного города зависит предоставляемая
+						Вам информация из нашего каталога
+					</div>
+				</div>
+			</div>
 
 			<div class="header-aside">
 
@@ -34,7 +57,79 @@
 					<div class="filter-field__search">
 						<div class="filter-field__search-input js-input-wrap">
 							<input type="text" class="js-input-targ" placeholder="Велоспорт">
-							<div class="filter-field__search-input__notepad js-input-notepad"></div>
+							<div class="filter-field__search-input__notepad js-input-notepad"></div><div class="section_search__finder-input__result js-input-result">
+							<div class="result-wrap">
+								<div class="result-wrap__inner">
+									<div class="text">
+										Поиск не дал результатов :(
+									</div>
+									<div class="text">
+										В слове допущена ошибка <b>«Акв<span class="error">а</span>парк»</b>
+									</div>
+									<div class="part part_section">
+										<div class="title">РАЗДЕЛЫ</div>
+										<a href="#" class="item"><b>Ак</b>робатика</a>
+										<a href="#" class="item"><b>Ак</b>вапарк <span class="info">/ Персональные тренеры</span></a>
+										<a href="#" class="item"><b>Ак</b>вапарк <span class="info">/ Спортивная площадка</span></a>
+										<a href="#" class="item"><b>Ак</b>робатика</a>
+										<a href="#" class="item"><b>Ак</b>вааэробика <span class="info">/ Спортивная секция</span></a>
+										<a href="#" class="item"><b>Ак</b>вапарк</a>
+									</div>
+									<div class="part part_item">
+										<div class="title">ПЕРСОНАЛЬНЫЕ ТРЕНЕРЫ</div>
+										<a href="#" class="item">
+											<div class="item-img"><img src="img/upload/profile-logo-1.jpg"></div>
+											<div class="item-text">
+												<b>Ак</b>улин Олег Сергеевич<br>
+												<span class="info">Фитнес, бодибилдинг</span>
+											</div>
+										</a>
+										<a href="#" class="item">
+											<div class="item-img"><img src="img/upload/profile-logo-1.jpg"></div>
+											<div class="item-text">
+												Семенов <b>Ак</b>им Сергеевич<br>
+												<span class="info">Фитнес, бодибилдинг</span>
+											</div>
+										</a>
+										<a href="#" class="item">
+											<div class="item-img"><img src="img/upload/profile-logo-1.jpg"></div>
+											<div class="item-text">
+												Семенов <b>Ак</b>им Сергеевич<br>
+												<span class="info">Фитнес, бодибилдинг</span>
+											</div>
+										</a>
+									</div>
+									<div class="part part_item">
+										<div class="title">ТУРИСТИЧЕСКИЕ БАЗЫ</div>
+										<a href="#" class="item">
+											<div class="item-img"><img src="img/upload/camp-logo-1.jpg"></div>
+											<div class="item-text">
+												База отдыха «<b>Ак</b>климатизация»<br>
+												<span class="info">База отдыха</span>
+											</div>
+										</a>
+										<a href="#" class="item">
+											<div class="item-img"><img src="img/upload/camp-logo-1.jpg"></div>
+											<div class="item-text">
+												База отдыха «<b>Ак</b>климатизация»<br>
+												<span class="info">База отдыха</span>
+											</div>
+										</a>
+										<a href="#" class="item">
+											<div class="item-img"><img src="img/upload/camp-logo-1.jpg"></div>
+											<div class="item-text">
+												База отдыха «<b>Ак</b>климатизация»<br>
+												<span class="info">База отдыха</span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="result-info">
+								<a href="#" class="js-input-clear">Скрыть результаты</a>
+								<a href="#">Показать все результаты (22)</a>
+							</div>
+						</div>
 						</div>
 						<div class="filter-field__search-submit"></div>
 					</div>
@@ -174,8 +269,8 @@
 
 			</div>
 		</div>
-		</div>
-	</header>
+	</div>
+</header>
 
 
 	<nav class="nav">
@@ -3427,6 +3522,9 @@
 							<div class="result-wrap">
 								<div class="result-wrap__inner">
 									<div class="text">
+										Поиск не дал результатов :(
+									</div>
+									<div class="text">
 										В слове допущена ошибка <b>«Акв<span class="error">а</span>парк»</b>
 									</div>
 									<div class="part part_section">
@@ -3488,7 +3586,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="result-inforesult-info">
+							<div class="result-info">
 								<a href="#" class="js-input-clear">Скрыть результаты</a>
 								<a href="#">Показать все результаты (22)</a>
 							</div>
@@ -3503,7 +3601,7 @@
 		</div>
 	</section>
 
-
+<section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></section>
 
 	<footer class="footer">
 		<div class="inner clearfix">

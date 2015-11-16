@@ -763,7 +763,9 @@
 	border-right: none;
 	height: 28px;
 	line-height: 28px;
+	width: 400px;
 }
+.header-search .filter-field__search-input .section_search__finder-input__result{right: -41px;z-index: 1000;}
 .header-search .filter-field__search-input__notepad{
 	top: 0;
 }

@@ -133,9 +133,14 @@
 	}
 	.header-popup_notification{width: 172px;}
 	.header-popup__close{width: 10px;height: 10px;}
-	.header-popup .header-popup__content {
-		padding: 5px 0;
+	.header-popup .header-popup__content {padding: 5px 0;}
+	.header-popup_city .header-popup__content{padding: 5px 25px;}
+	.header-location__popups {
+		left: -90px;
+		position: absolute;
+		top: 57px;
 	}
+	.header.fixed .header-location__popups {top: 57px;}
 	.header-popup .item {
 		font-size: 7px;
 		padding: 1px 5px 1px;
@@ -193,6 +198,8 @@
 		width: 22px;
 	}
 
+	.header-search .filter-field__search-input input{width: 250px;}
+	.header-search .filter-field__search-input .section_search__finder-input__result{right: -31px;}
 
 	.nav{height: 25px;}
 	.nav .inner{height: 25px;}
