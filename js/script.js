@@ -1,5 +1,83 @@
 (function(){
 	var app = {
+		auth: {
+			userRegCheck: function(){
+				var $box = $('.auth-box_reg');
+				var n = $box.find('[name=reg]').filter(':checked').val();
+
+				$box.removeClass('auth-box_reg-coach auth-box_reg-org');
+
+				if ( n == 3 ){
+					$box.addClass('auth-box_reg-org');
+				} else if ( n == 2 ) {
+					$box.addClass('auth-box_reg-coach');
+				}
+			},
+
+			regPassStatus: function($el){
+				var $box = $el.next('.pass-security');
+
+				if ( $box ){
+					var val = $el.val();
+					var statusBox = $box.find('.status');
+					var statusText = $box.find('.status-text');
+
+					var wrongSymb = /\s/;
+					var regNum = /[0-9]/;
+					var regLatLC = /[a-z]/;
+					var regLatAC = /[A-Z]/;
+					var regSymb = /\W/;
+
+					if ( wrongSymb.test(val) ) {
+						statusBox.removeClass('status_2 status_3 status_1');
+						statusText.text('Неподходящий');
+					} else if ( val.length >= 6 && regLatLC.test(val) && regLatAC.test(val) && regNum.test(val) && regSymb.test(val) ){
+						statusBox.addClass('status_3');
+						statusText.text('Сильный');
+					} else if ( val.length >= 6 && regLatLC.test(val) && regLatAC.test(val) && regNum.test(val) ){
+						statusBox.removeClass('status_3').addClass('status_2');
+						statusText.text('Средний');
+					} else if ( val.length >= 6 && regLatLC.test(val) && regLatAC.test(val) ){
+						statusBox.removeClass('status_3 status_2').addClass('status_1');
+						statusText.text('Слабый');
+					} else {
+						statusBox.removeClass('status_2 status_3 status_1');
+						statusText.text('Неподходящий');
+					}
+
+
+					if ( val.length > 0 && $box.is(':hidden') ){
+						$box.fadeIn();
+					} else if (val.length == 0 && $box.is(':visible')) {
+						$box.fadeOut();
+					}
+				}
+			},
+
+			init: function(){
+				var regRadio = $('.auth-box_reg').find('[name=reg]');
+
+				if ( regRadio.size() ){
+					app.auth.userRegCheck();
+
+					regRadio.change(app.auth.userRegCheck)
+				}
+
+				$('.js-reg-pass-security').on('keyup', function(){
+					app.auth.regPassStatus($(this));
+				});
+
+				$('.box-content_pass-recovery .recover-pass').click(function(){
+					$(this).slideUp().next('.recover-form').slideDown();
+				});
+
+				$('.password-eye').on('mousedown', function(){
+					$(this).next('input').attr('type', 'text').addClass('focus');
+				}).on('mouseup mouseleave', function(){
+					$(this).next('input').attr('type', 'password').removeClass('focus');
+				})
+			}
+		},
 		calculator: {
 			sexCheck: function(){
 				$('input[name^=sex]').filter(':checked').each(function(){
@@ -199,35 +277,39 @@
 		},
 		fixmenu: function(){
 			var $nav = $('.nav');
-			var nt = $nav.position().top;
 
-			var $head = $('.header');
-			var ht = $head.position().top;
+			if ( $nav.size() ){
 
-			var wt = $(window).scrollTop();
+				var nt = $nav.position().top;
 
-			if ( nt+18 <= wt + $head.outerHeight() ){
-				$nav.addClass('fixed');
-			} else {
-				$nav.removeClass('fixed');
-			}
+				var $head = $('.header');
+				var ht = $head.position().top;
 
-			if ( ht+18 <= wt ){
-				$head.addClass('fixed');
-			} else {
-				$head.removeClass('fixed');
-			}
+				var wt = $(window).scrollTop();
 
-			var frontSearch = $('.wrapper_front .header-search');
-			var frontSearchBig = $('.section_search__finder');
-
-			if ( frontSearch.size() && frontSearchBig.size() ){
-				var ft = frontSearchBig.position().top;
-
-				if ( ft <= wt - frontSearchBig.outerHeight() ){
-					frontSearch.css({display: 'inline-block'});
+				if ( nt+18 <= wt + $head.outerHeight() ){
+					$nav.addClass('fixed');
 				} else {
-					frontSearch.css({display: 'none'});
+					$nav.removeClass('fixed');
+				}
+
+				if ( ht+18 <= wt ){
+					$head.addClass('fixed');
+				} else {
+					$head.removeClass('fixed');
+				}
+
+				var frontSearch = $('.wrapper_front .header-search');
+				var frontSearchBig = $('.section_search__finder');
+
+				if ( frontSearch.size() && frontSearchBig.size() ){
+					var ft = frontSearchBig.position().top;
+
+					if ( ft <= wt - frontSearchBig.outerHeight() ){
+						frontSearch.css({display: 'inline-block'});
+					} else {
+						frontSearch.css({display: 'none'});
+					}
 				}
 			}
 
@@ -442,6 +524,7 @@
 		},
 		init: function(){
 
+			this.auth.init();
 			this.datepicker();
 			this.loadStatCity();
 			this.fixmenu();

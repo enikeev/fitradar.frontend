@@ -198,6 +198,11 @@
 	color: #757b87;
 }
 
+.input-field input[type="checkbox"]:checked ~ span.sub,
+.input-field input[type="radio"]:checked ~ span.sub{
+	color: #4b4b4b;
+}
+
 
 .section__subtitle,
 .section__title{
