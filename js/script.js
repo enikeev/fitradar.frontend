@@ -65,6 +65,12 @@
 
 				$('.js-reg-pass-security').on('keyup', function(){
 					app.auth.regPassStatus($(this));
+				}).on('blur', function(){
+					$(this).next('.pass-security').fadeOut();
+				});
+
+				$('.pass-security .close').on('click', function(){
+					$(this).closest('.pass-security').fadeOut();
 				});
 
 				$('.box-content_pass-recovery .recover-pass').click(function(){
@@ -75,7 +81,30 @@
 					$(this).next('input').attr('type', 'text').addClass('focus');
 				}).on('mouseup mouseleave', function(){
 					$(this).next('input').attr('type', 'password').removeClass('focus');
-				})
+				});
+
+				$('.js-change-auth-box').on('click', function(e){
+					e.preventDefault();
+					var $thisBox = $(this).closest('.auth-box');
+					var $anotherBox = $('.auth-box_hidden');
+
+					$thisBox.animate({
+						left: '80%',
+						opacity: '0'
+					}, 300, function(){
+						$thisBox.addClass('auth-box_hidden').removeAttr('style');
+					});
+
+					$anotherBox.css({
+						display: 'block',
+						opacity: '0'
+					}).animate({
+						left: '50%',
+						opacity: '1'
+					}, 300, function(){
+						$anotherBox.removeClass('auth-box_hidden').removeAttr('style');
+					});
+				});
 			}
 		},
 		calculator: {

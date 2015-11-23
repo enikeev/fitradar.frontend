@@ -2,14 +2,18 @@
 	background: url("../img/bg/bg-cup-01.jpg") no-repeat 50% 50%;
 	-webkit-background-size: cover;
 	background-size: cover;
-	min-height: 100%!important;
+	height: 100%;
+	min-height: 850px;
 }
 
 .auth-box{
 	margin-left: 50%;
 	color: #4c4c4c;
 
-	padding: 150px 0 20px;
+	/*padding: 50px 0 20px;*/
+
+	position: absolute;
+	left: 50%;
 }
 .auth-box input[type=password],
 .auth-box input[type=text]{
@@ -32,15 +36,21 @@
 	color: #70b2c3;
 }
 
-.auth-box_login .box-inner{
+.auth-box_login{
 	width: 350px;
 	margin-left: -175px;
 }
-.auth-box .box-logo{
+
+.auth-box_login .box-inner{
+	/*width: 350px;*/
+	/*margin-left: -175px;*/
+}
+.wrapper_auth .box-logo{
 	text-align: center;
 	margin-bottom: 45px;
+	padding-top: 60px;
 }
-.auth-box .box-logo img{
+.wrapper_auth .box-logo img{
 	width: 140px;
 }
 
@@ -157,11 +167,13 @@
 
 
 .auth-box_reg{
-	padding: 80px 0 20px;
-}
-.auth-box_reg .box-inner{
+	/*padding: 80px 0 20px;*/
 	width: 410px;
 	margin-left: -205px;
+}
+.auth-box_reg .box-inner{
+	/*width: 410px;*/
+	/*margin-left: -205px;*/
 }
 .auth-box_reg .input-field .sub{
 	font-size: 14px;
@@ -264,4 +276,9 @@
 }
 .auth-box .pass-security .close:hover{
 	background: url("../img/icons/icon-input_clear-c.svg") no-repeat 50% 50%;
+}
+
+.auth-box.auth-box_hidden{
+	left: 20%;
+	display: none;
 }

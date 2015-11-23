@@ -23,9 +23,10 @@
 
 <div class="wrapper wrapper_auth">
 
+	<div class="box-logo"><img src="img/global/logo-big.svg"></div>
+
 	<div class="auth-box auth-box_login">
 		<div class="box-inner">
-			<div class="box-logo"><img src="img/global/logo-big.svg"></div>
 			<div class="box-content">
 				<div class="title">Войти</div>
 				<div class="field">
@@ -58,7 +59,102 @@
 					</div>
 				</div>
 			</div>
-			<div class="box-footnote">Еще нет аккаунта? <a href="#">Присоединяйтесь</a></div>
+			<div class="box-footnote">Еще нет аккаунта? <a href="#" class="js-change-auth-box">Присоединяйтесь</a></div>
+		</div>
+	</div>
+
+	<div class="auth-box auth-box_reg auth-box_hidden">
+		<div class="box-inner">
+			<div class="box-content">
+				<div class="title">Регистрация</div>
+
+				<div class="field">
+					<div class="input-field">
+						<label><input type="radio" checked="" name="reg" value="1"><i class="marker"></i>
+							<span>Я пользователь сайта</span><br>
+							<span class="sub">(хочу найти тренера, клуб, секцию и т.д) </span>
+						</label>
+					</div>
+				</div>
+				<div class="field">
+					<div class="input-field">
+						<label><input type="radio" name="reg" value="2"><i class="marker"></i>
+							<span>Я тренер / врач</span><br>
+							<span class="sub">(хочу разместить анкету о себе)</span>
+						</label>
+					</div>
+				</div>
+				<div class="field">
+					<div class="input-field">
+						<label>
+							<input type="radio" name="reg" value="3"><i class="marker"></i>
+							<span>Я представитель организации</span><br>
+							<span class="sub">(хочу разместить информацию о своем клубе, магазине, секции, спортивной площадке и т.д.)</span>
+						</label>
+					</div>
+				</div>
+				<br>
+				<div class="field field_org">
+					<div class="label">Название компании</div>
+					<div class="input"><input type="text"></div>
+					<div class="message"></div>
+				</div>
+				<div class="fields-col field_coach">
+					<div class="field">
+						<div class="label">Ваше Имя</div>
+						<div class="input"><input type="text"></div>
+						<div class="message"></div>
+					</div>
+					<div class="field">
+						<div class="label">Ваша Фамилия</div>
+						<div class="input"><input type="text"></div>
+						<div class="message"></div>
+					</div>
+				</div>
+				<div class="field">
+					<div class="label">Электронный адрес</div>
+					<div class="input"><input type="text"></div>
+					<div class="message"></div>
+				</div>
+				<div class="fields-col">
+					<div class="field">
+						<div class="label">Пароль</div>
+						<div class="input">
+							<i class="password-eye"></i>
+							<input type="password" class="js-reg-pass-security" maxlength="15">
+							<div class="pass-security">
+								<span class="close"></span>
+								<div class="head">
+									<span class="title">Надежность пароля</span>
+									<span class="status">
+										<i class="status-marker status-marker_1"></i>
+										<i class="status-marker status-marker_2"></i>
+										<i class="status-marker status-marker_3"></i>
+										<i class="status-text">Статус</i>
+									</span>
+								</div>
+								<div class="body">Пароль должен состоять из комбинации 6-15 прописных и строчных букв латинского алфавита, цифр и символов без пробелов. <a href="#">Подробнее...</a></div>
+							</div>
+						</div>
+						<div class="message"></div>
+					</div>
+					<div class="field">
+						<div class="label">Повторите пароль</div>
+						<div class="input"><input type="password"></div>
+						<div class="message"></div>
+					</div>
+				</div>
+				<div class="field">
+					<div class="message">Регистрируясь на сайте вы подтверждаете свою дееспособность,
+						согласие на получение информации, согласие с <a href="#">правилами
+							сайта, согласие на обработку персональных данных</a>. </div>
+				</div>
+				<div class="field">
+					<div class="btn btn_brdr">Регистрация</div>
+				</div>
+			</div>
+
+			<div class="box-footnote">Уже есть аккаунт на Fitradar? <a href="#" class="js-change-auth-box">Войти</a></div>
 		</div>
 	</div>
 
