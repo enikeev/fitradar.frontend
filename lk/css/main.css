@@ -19,6 +19,7 @@ body{
 	text-decoration: none!important;
 	background: #3eb4c5;
 	text-align: center;
+	position: relative;
 }
 .btn_add{padding: 5px 35px 8px;}
 .btn .plus:before{
@@ -33,6 +34,45 @@ body{
 .btn_green{background: #70c63f;}
 .btn_orange{background: #f47b20;}
 
+.btn_brdr{
+	height: 26px;
+	line-height: 24px;
+	font-size: 15px;
+	border: 1px solid #cfcfcf;
+	color: #757b87!important;
+	background: #fff;
+	padding: 0 20px;
+}
+.btn_sort{
+	height: 26px;
+	line-height: 22px;
+	font-size: 15px;
+	border: 1px solid #cfcfcf;
+	color: #757b87!important;
+	background: #fff;
+	padding: 0 35px 0 15px;
+}
+.btn_sort:after{
+	content: '';
+	display: block;
+	width: 10px;
+	height: 5px;
+	background: url("../img/arrow-up-b.svg") no-repeat 50% 50% ;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin-left: -5px;
+	margin-top: -2px;
+	opacity: .7;
+}
+.btn_sort.active{
+	border-color: #3fb4c6;
+	color: #3fb4c6!important;
+}
+.btn_sort.active:after{
+	background: url("../img/arrow-up-c.svg") no-repeat 50% 50%;
+	opacity: 1;
+}
 
 
 .ico{
@@ -65,6 +105,7 @@ body{
 }
 
 
+.color-c{color: #3eb4c5;}
 
 /*	Header start
 *****************************************************************************/
@@ -208,6 +249,10 @@ body{
 .lk-menu__group .group-link:hover{text-decoration: underline;}
 .lk-menu__group .group-item.active a{color: #3eb4c5;}
 
+.lk-menu__group .group-item_review {opacity: 0.5;}
+.lk-menu__group .group-item_review:hover,
+.lk-menu__group .group-item_review.active {opacity: 1;}
+
 
 .lk-menu__group .group-item {
 	padding: 10px 0;
@@ -246,7 +291,7 @@ body{
 	-o-transform: rotate(90deg);
 	transform: rotate(90deg);
 }
-
+.lk-menu__group.open .group-body{display: block;}
 
 
 .lk-content{
@@ -274,6 +319,16 @@ body{
 	padding: 20px;
 }
 
+.lk-content__top{
+	border-bottom:1px solid #e7e7e7;
+	padding: 15px 30px;
+}
+.lk-content__top span{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
 .lk-table{
 	width: 100%;
 	margin-bottom: 30px;
@@ -291,6 +346,108 @@ body{
 	color: #959595;
 }
 
+
+.lk-table_employees{}
+.lk-table_employees .employees-photo{
+	width: 64px;
+	height: 64px;
+	background: #3eb4c5 url("../img/employees-photo.svg") no-repeat 50% 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+.lk-table_employees .employees-photo img{
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.lk-table .disabled *{
+	color: #959595;
+}
+.lk-table .disabled .btn{
+	background: #959595;
+}
+.lk-table .disabled .employees-photo{
+	opacity: 0.5;
+}
+
+.employees-status{
+	position: relative;
+	min-width: 200px;
+}
+.employees-status.active *{color: #70c63f;}
+.employees-status.waiting *{color: #f47b20;}
+.employees-status.fired *{color: #959595;}
+.employees-status .status-marker{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: none;
+	/*color: currentColor;*/
+	position: relative;
+	top: 2px;
+	margin-right: 7px;
+}
+.employees-status .status-marker:before,
+.employees-status .status-marker:after{
+	content: '';
+	display: inline-block;
+	position: absolute;
+	background: currentColor;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+.employees-status .status-marker:before{
+	width: 9px;
+	height: 9px;
+	top: 3px;
+	left: 3px;
+}
+.employees-status .status-marker:after{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	opacity: 0.5;
+}
+.employees-status__actual{
+	color: currentColor;
+	cursor: pointer;
+}
+.employees-status__actual:after{
+	content: '';
+	display: inline-block;
+	border: 4px solid transparent;
+	border-top-color: currentColor;
+	margin-left: 10px;
+}
+.employees-status__bar{
+	position: absolute;
+	left: 0;
+	top: 30px;
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+	padding: 5px 15px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #fff;
+	color: #757b87;
+	z-index: 10;
+	display: none;
+}
+.employees-status__bar-item{
+	color: #383838!important;
+	cursor: pointer;
+	margin: 5px 0;
+}
+.employees-status__bar-item:hover{
+	text-decoration: underline;
+}
 
 
 
