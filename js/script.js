@@ -105,6 +105,7 @@
 						$anotherBox.removeClass('auth-box_hidden').removeAttr('style');
 					});
 				});
+
 			}
 		},
 		calculator: {

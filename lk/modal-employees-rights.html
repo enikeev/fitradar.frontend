@@ -14,6 +14,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
 	<script type="text/javascript" src="js/mCustomScrollbar.min.js"></script>
+	<script type="text/javascript" src="js/keyboard.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
 
@@ -22,7 +23,19 @@
 <script>
 
 	$(function(){
-		$('.modal-addaccount').showModalLk();
+		$('.modal-emploeeysrights').showModalLk();
+
+		$('.js-emploeeysrights-objects-choose').click(function(){
+			$('.modal-emploeeysrights').fadeOut();
+			$('.modal-emploeeysobject').showModalLk();
+		});
+
+		$('.js-emploeeysobject-confirm').click(function(){
+			$('.modal-emploeeysobject').fadeOut();
+			var shoosenLength = $('.modal-emploeeysobject').find('.objects-item').filter('.active').length;
+			$('.modal-emploeeysrights').showModalLk().find('.js-emploeeysrights-objects-num').text(shoosenLength);
+		});
+
 	});
 </script>
 
@@ -427,73 +440,240 @@
 
 </div><!-- .wrapper -->
 
-<div class="modal modal-addaccount">
+<div class="modal modal-emploeeysrights">
 	<div class="modal-overlay"></div>
-	<div class="modal-inner tabs js-tab-wrap">
+	<div class="modal-inner">
 		<span class="modal-close"></span>
-		<ul class="tabs-head">
-			<li class="tab-bookmark active" data-tab-link="t1">Добавить</li>
-			<li class="tab-bookmark" data-tab-link="t2">Пригласить</li>
-		</ul>
-		<div class="tabs-body">
-			<div class="tab-item active" data-tab-item="t1">
-				<div class="title">Добавить новый аккаунт</div>
-				<div class="field">
-					<div class="label">Электронная почта</div>
-					<div class="input">
-						<input class="width" type="text" placeholder="Введите адреса электронной почты">
+		<div class="modal-emploeeysrights__head">
+			<div class="title">Настройки прав сотрудника</div>
+			<div class="name">Иван Иванов</div>
+		</div>
+		<div class="modal-emploeeysrights__body">
+			<ul class="emploeeysrights-list">
+				<li class="emploeeysrights-item">
+					<div class="emploeeysrights-text">
+						<div class="text">Публикация новостей</div>
+						<div class="footnote">Просмотр, создание и редактирование новостей</div>
 					</div>
-				</div>
-				<div class="field">
-					<div class="label">Имя</div>
-					<div class="input">
-						<input type="text">
+					<div class="emploeeysrights-checkbox">
+						<label class="checkbox-case">
+							<input class="width" type="checkbox">
+							<i class="marker"></i>
+						</label>
 					</div>
-				</div>
-				<div class="field">
-					<div class="label">Фамилия</div>
-					<div class="input">
-						<input type="text">
+				</li>
+				<li class="emploeeysrights-item">
+					<div class="emploeeysrights-text">
+						<div class="text">Публикация мероприятий</div>
+						<div class="footnote">Просмотр, создание и редактирование новостей</div>
 					</div>
-				</div>
-				<div class="field">
-					<div class="label">Должность</div>
-					<div class="input">
-						<input type="text">
+					<div class="emploeeysrights-checkbox">
+						<label class="checkbox-case">
+							<input class="width" type="checkbox">
+							<i class="marker"></i>
+						</label>
 					</div>
-				</div>
-				<div class="field">
-					<label class="checkbox-case">
-						<input class="width" type="checkbox">
-						<i class="marker"></i>
-						<span>Отправить данные для входа на указанный адрес</span>
-					</label>
-				</div>
-				<div class="field">
-					<a href="#" class="btn">Добавить</a>
+				</li>
+				<li class="emploeeysrights-item">
+					<div class="emploeeysrights-text">
+						<div class="text">Ответы на отзывы и обсуждения</div>
+						<div class="footnote">Просмотр, создание и редактирование новостей</div>
+					</div>
+					<div class="emploeeysrights-checkbox">
+						<label class="checkbox-case">
+							<input class="width" type="checkbox">
+							<i class="marker"></i>
+						</label>
+					</div>
+				</li>
+				<li class="emploeeysrights-item">
+					<div class="emploeeysrights-text">
+						<div class="text">Редактирование объектов</div>
+						<div class="footnote">Просмотр, создание и редактирование новостей Просмотр, создание и редактирование новостей</div>
+						<div class="footnote">Выбрано <span class="js-emploeeysrights-objects-num">0</span> объектов &nbsp;&nbsp;&nbsp; <a href="#" class="js-emploeeysrights-objects-choose btn btn_brdr">Выбрать</a> </div>
+					</div>
+					<div class="emploeeysrights-checkbox">
+						<label class="checkbox-case">
+							<input class="width" type="checkbox">
+							<i class="marker"></i>
+						</label>
+					</div>
+				</li>
+				<li class="emploeeysrights-item">
+					<div class="emploeeysrights-text">
+						<div class="text">Публикация новостей</div>
+						<div class="footnote">Просмотр, создание и редактирование новостей</div>
+					</div>
+					<div class="emploeeysrights-checkbox">
+						<label class="checkbox-case">
+							<input class="width" type="checkbox">
+							<i class="marker"></i>
+						</label>
+					</div>
+				</li>
+				<li class="emploeeysrights-item">
+					<div class="emploeeysrights-text">
+						<div class="text">Публикация мероприятий</div>
+						<div class="footnote">Просмотр, создание и редактирование новостей</div>
+					</div>
+					<div class="emploeeysrights-checkbox">
+						<label class="checkbox-case">
+							<input class="width" type="checkbox">
+							<i class="marker"></i>
+						</label>
+					</div>
+				</li>
+				<li class="emploeeysrights-item">
+					<div class="emploeeysrights-text">
+						<div class="text">Ответы на отзывы и обсуждения</div>
+						<div class="footnote">Просмотр, создание и редактирование новостей</div>
+					</div>
+					<div class="emploeeysrights-checkbox">
+						<label class="checkbox-case">
+							<input class="width" type="checkbox">
+							<i class="marker"></i>
+						</label>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="modal-emploeeysrights__footer">
+			<a href="#" class="btn">Сохранить</a>
+			&nbsp;
+			<a href="#" class="btn">Применить</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="modal modal-emploeeysobject">
+	<div class="modal-overlay"></div>
+		<div class="modal-inner">
+
+			<span class="modal-close"></span>
+
+			<div class="modal-emploeeysobject__head">
+				<div class="search-input js-input-wrap">
+					<input type="text" placeholder="" class="js-input-targ">
+					<div class="search-input__notepad js-input-notepad"></div>
+					<div class="search-input__result"></div>
 				</div>
 			</div>
-			<div class="tab-item" data-tab-item="t2">
-				<div class="title">Пригласить существующий аккаунт</div>
-				<div class="field">
-					<div class="label">Электронная почта</div>
-					<div class="input">
-						<input class="width" type="text" placeholder="Введите адреса через запятую">
+
+			<div class="modal-emploeeysobject__body">
+				<div class="tabs js-tab-wrap">
+					<ul class="tabs-head">
+						<li class="tab-bookmark btn btn_brdr active" data-tab-link="tr1">Все</li>
+						<li class="tab-bookmark btn btn_brdr" data-tab-link="tr2">Клубы</li>
+						<li class="tab-bookmark btn btn_brdr" data-tab-link="tr3">Секции</li>
+						<li class="tab-bookmark btn btn_brdr" data-tab-link="tr4">Площадки</li>
+						<li class="tab-bookmark btn btn_brdr" data-tab-link="tr5">Тренера</li>
+						<li class="tab-bookmark btn btn_brdr" data-tab-link="tr6">Площадки</li>
+					</ul>
+					<div class="tabs-body">
+						<div class="tab-item active" data-tab-item="tr1">
+							<div class="objects-wrap">
+								<div class="objects-item js-objects-select-all-in-tab">
+									<div class="img"><img src="img/temp/obj-0001.jpg" alt=""></div>
+									<div class="info">
+										<div class="title">Выбрать все объекты</div>
+									</div>
+								</div>
+								<div class="objects-list">
+									<div class="objects-item">
+										<div class="img"><img src="img/temp/obj-0001.jpg" alt=""></div>
+										<div class="info">
+											<div class="title">Прогулка на лыжах</div>
+											<div class="text">Лыжи</div>
+										</div>
+									</div>
+									<div class="objects-item">
+										<div class="img"><img src="img/temp/obj-0001.jpg" alt=""></div>
+										<div class="info">
+											<div class="title">Прогулка на лыжах</div>
+											<div class="text">Лыжи</div>
+										</div>
+									</div>
+									<div class="objects-item">
+										<div class="img"><img src="img/temp/obj-0001.jpg" alt=""></div>
+										<div class="info">
+											<div class="title">Прогулка на лыжах</div>
+											<div class="text">Лыжи</div>
+										</div>
+									</div>
+									<div class="objects-item">
+										<div class="img"><img src="img/temp/obj-0001.jpg" alt=""></div>
+										<div class="info">
+											<div class="title">Прогулка на лыжах</div>
+											<div class="text">Лыжи</div>
+										</div>
+									</div>
+									<div class="objects-item">
+										<div class="img"><img src="img/temp/obj-0001.jpg" alt=""></div>
+										<div class="info">
+											<div class="title">Прогулка на лыжах</div>
+											<div class="text">Лыжи</div>
+										</div>
+									</div>
+									<div class="objects-item">
+										<div class="img"><img src="img/temp/obj-0001.jpg" alt=""></div>
+										<div class="info">
+											<div class="title">Прогулка на лыжах</div>
+											<div class="text">Лыжи</div>
+										</div>
+									</div>
+									<div class="objects-item">
+										<div class="img"><img src="img/temp/obj-0001.jpg" alt=""></div>
+										<div class="info">
+											<div class="title">Прогулка на лыжах</div>
+											<div class="text">Лыжи</div>
+										</div>
+									</div>
+									<div class="objects-item">
+										<div class="img"><img src="img/temp/obj-0001.jpg" alt=""></div>
+										<div class="info">
+											<div class="title">Прогулка на лыжах</div>
+											<div class="text">Лыжи</div>
+										</div>
+									</div>
+									<div class="objects-item">
+										<div class="img"><img src="img/temp/obj-0001.jpg" alt=""></div>
+										<div class="info">
+											<div class="title">Прогулка на лыжах</div>
+											<div class="text">Лыжи</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-item" data-tab-item="tr2">
+2
+						</div>
+						<div class="tab-item" data-tab-item="tr3">
+3
+						</div>
+						<div class="tab-item" data-tab-item="tr4">
+4
+						</div>
+						<div class="tab-item" data-tab-item="tr5">
+5
+						</div>
+						<div class="tab-item" data-tab-item="tr6">
+6
+						</div>
 					</div>
 				</div>
-				<div class="field">
-					<div class="label">Текст приглашения</div>
-					<div class="input">
-						<textarea class="width">Приглашаю вас на корпоративный портал нашей компании. Здесь мы сможем вместе работать над проектами и задачами, управлять документами, планировать встречи и собрания, общаться в блогах и многое другое.</textarea>
-					</div>
-				</div>
-				<div class="field">
-					<a href="#" class="btn">Пригласить</a>
-				</div>
+			</div>
+			<div class="modal-emploeeysobject__footer">
+				<a href="#" class="btn js-emploeeysobject-confirm">Сохранить</a>
 			</div>
 		</div>
 	</div>
 </div>
+
+
 
 </body>
 </html>

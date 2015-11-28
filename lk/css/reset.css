@@ -93,10 +93,13 @@ a:hover {
 	border-radius: 2px;
 	position: relative;
 	top: 3px;
-	margin: 0 10px;
+	background-color: #fff;
 }
 .checkbox-case input:checked + .marker{
 	border-color: #3eb4c6;
 	background: #3eb4c6 url("../img/checkbox.svg") no-repeat 60% 50%;
+}
+.checkbox-case span{
+	margin: 0 10px;
 }
 

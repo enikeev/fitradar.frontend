@@ -14,7 +14,11 @@
 
 	position: absolute;
 	left: 50%;
+
+	width: 350px;
+	margin-left: -175px;
 }
+
 .auth-box input[type=password],
 .auth-box input[type=text]{
 	padding: 0 9px;
@@ -281,4 +285,25 @@
 .auth-box.auth-box_hidden{
 	left: 20%;
 	display: none;
+}
+
+
+
+.auth-box .message{
+	display: table;
+	font-size: 15px;
+	margin: 20px 0;
+}
+.auth-box_message .message{
+	height: 205px;
+}
+.auth-box .message .img{
+	display: table-cell;
+	vertical-align: middle;
+	padding: 7px;
+}
+.auth-box .message .text{
+	display: table-cell;
+	vertical-align: middle;
+	padding: 7px;
 }
