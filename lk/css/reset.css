@@ -67,6 +67,15 @@ a {
 	color:inherit;
 	}
 
+input{
+	padding: 5px 10px;
+	font: inherit;
+	border: 1px solid #cfcfcf;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
 .clearfix:after, .clearfix:before{
 	content:'';
 	display:table;

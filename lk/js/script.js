@@ -1,4 +1,9 @@
 $(function () {
+
+	$('body').on('click', '.btn_disable', function(){
+		return false;
+	});
+
 	$('.lk-menu__group_inside .group-head .case').click(function(){
 		var $t = $(this).closest('.group-head');
 		$t.closest('.lk-menu__group').toggleClass('active').find('.group-body').stop(true, true).slideToggle(function(){$t.closest('.lk-menu__group').removeClass('open')});
@@ -104,6 +109,23 @@ $(function () {
 
 
 // << modals
+
+
+
+// object >>
+
+	$('.objects-type').on('click', '.type-item', function(){
+		$(this).addClass('active').siblings().removeClass('active').closest('.objects-type').find('.btn_disable').removeClass('btn_disable');
+
+	});
+
+
+
+// << object
+
+
+
+
 
 
 });
