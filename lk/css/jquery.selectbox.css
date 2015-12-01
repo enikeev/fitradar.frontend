@@ -47,7 +47,8 @@
 	outline: none;
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: 50%;
+	margin-top: -13px;
 	width: 30px;
 }
 .sbToggle:after{
@@ -114,12 +115,14 @@
 	padding: 0 10px;
 	overflow: hidden;
 }
+.sbOptions li span,
 .sbOptions li a{
 	max-width: 100%;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
+.sbOptions span,
 .sbOptions a{
 	display: inline-block;
 	border-bottom: 1px dashed transparent;
@@ -141,10 +144,10 @@
 	border-bottom: none;
 }
 .sbOptions .sbDisabled{
-	border-bottom: dotted 1px #515151;
-	color: #999;
+	/*border-bottom: dotted 1px #515151;*/
+	color: #b9b9b9;
 	display: block;
-	padding: 7px 0 7px 3px;
+	/*padding: 7px 0 7px 3px;*/
 }
 .sbOptions .sbGroup{
 	border-bottom: dotted 1px #515151;

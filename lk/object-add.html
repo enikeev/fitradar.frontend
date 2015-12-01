@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>Настройки оповещений</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+	<meta name=viewport content="width=device-width, initial-scale=1">
+
+	<link href="css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
+	<script type="text/javascript" src="js/mCustomScrollbar.min.js"></script>
+	<script type="text/javascript" src="js/keyboard.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+<div class="lk-wrapper">
+
+	<div class="lk-menu">
+		<div class="lk-menu__inner">
+			<div class="lk-menu__header">
+				<a href="#" class="lk-menu__logo">
+					<img src="img/logo-big.svg" alt="">
+				</a>
+			</div>
+			<div class="lk-menu__body">
+				<div class="lk-menu__user">
+					<div class="case">
+						<div class="case-img"><img src="img/temp/user-logo.jpg" alt=""></div>
+						<div class="case-name">Alex Fitness</div>
+					</div>
+				</div>
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_user"></i></div>
+							<div class="case-name">ДАННЫЕ КОМПАНИИ</div>
+							<div class="case-amount"><span class="new">1</span></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item active"><a href="#" class="group-link">Общие данные</a> <div class="amount"><span>1</span></div></li>
+							<li class="group-item"><a href="#" class="group-link">Публичные данные</a></li>
+							<li class="group-item"><a href="#" class="group-link">Деятельность</a></li>
+							<li class="group-item"><a href="#" class="group-link">Смена пароля</a></li>
+						</ul>
+						<div>
+							<a href="#" class="btn btn_add">Изменить статус</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_credit"></i></div>
+							<div class="case-name">КОММЕРЧЕСКАЯ ИНФОРМАЦИЯ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Реквизиты</a></li>
+							<li class="group-item"><a href="#" class="group-link">Счета</a></li>
+							<li class="group-item"><a href="#" class="group-link">Баланс</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_mail"></i></div>
+							<div class="case-name">СОБЩЕНИЯ</div>
+							<div class="case-amount"><span class="new">50</span></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Сотрудники</a></li>
+							<li class="group-item"><a href="#" class="group-link">Посетители</a></li>
+							<li class="group-item"><a href="#" class="group-link">Служба поддержки</a></li>
+							<li class="group-item"><a href="#" class="group-link">Все сообщения</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_bell"></i></div>
+							<div class="case-name">ОПОВЕЩЕНИЯ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Персональные тренеры</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные клубы</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные секции</a></li>
+							<li class="group-item"><a href="#" class="group-link">Аренда площадок</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные магазины</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные магазины</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивная медицина</a></li>
+							<li class="group-item"><a href="#" class="group-link">Активный отдых</a></li>
+							<li class="group-item"><a href="#" class="group-link">Туристические базы</a></li>
+							<li class="group-item"><a href="#" class="group-link">Новости</a></li>
+							<li class="group-item"><a href="#" class="group-link">Мероприятия</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_dialog"></i></div>
+							<div class="case-name">ОТЗЫВЫ</div>
+							<div class="case-amount"><span class="">99+</span></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item">
+								<a href="#" class="">
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+								</a>
+							</li>
+							<li class="group-item">
+								<a href="#" class="">
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+								</a>
+							</li>
+							<li class="group-item">
+								<a href="#" class="">
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+								</a>
+							</li>
+							<li class="group-item">
+								<a href="#" class="">
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-w"></i>
+								</a>
+							</li>
+							<li class="group-item">
+								<a href="#" class="">
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+								</a>
+							</li>
+							<li class="group-item"><a href="#" class="group-link">Все отзывы</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_bag"></i></div>
+							<div class="case-name">СОТРУДНИКИ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Все сотрудники</a></li>
+							<li class="group-item"><a href="#" class="group-link">Уволенные</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_house"></i></div>
+							<div class="case-name">ОБЪЕКТЫ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Персональные тренеры</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные секции</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные секции</a></li>
+							<li class="group-item"><a href="#" class="group-link">Аренда площадок</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные магазины</a></li>
+							<li class="group-item"><a href="#" class="group-link">Детский спорт</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивная медицина</a></li>
+							<li class="group-item"><a href="#" class="group-link">Активный отдых</a></li>
+							<li class="group-item"><a href="#" class="group-link">Туристические базы</a></li>
+							<li class="group-item"><a href="#" class="group-link">Все объекты</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_book"></i></div>
+							<div class="case-name">НОВОСТИ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Все новости</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить новость</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_cal"></i></div>
+							<div class="case-name">МЕРОПРИЯТИЯ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Все мероприятия</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить мероприятие</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_setting"></i></div>
+							<div class="case-name">НАСТРОЙКИ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Настройки сайта</a></li>
+							<li class="group-item"><a href="#" class="group-link">Настройки оповещения</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="lk-menu__group">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_stat"></i></div>
+							<div class="case-name">СТАТИСТИКА</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="lk-menu__footer">
+				<a href="#" class="btn btn_add btn_orange">ТАРИФЫ</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="lk-content">
+
+		<div class="lk-content__body">
+			<div class="object-add">
+				<div class="object-add__container">
+					<div class="object-add__container-inner">
+						<div class="title">Основная информация</div>
+
+						<div class="object-add__item object-add__item_objectname">
+							<div class="field-label">Название объекта</div>
+							<div class="field-box">
+								<div class="field-item field-item_input">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+										<div class="input__notepad js-input-notepad"></div>
+										<div class="input__clear js-input-clear"></div>
+									</div>
+									<div class="field-footnote"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="object-add__item object-add__item_clubnetwork">
+							<div class="field-label">Принадлежность к сети клубов</div>
+							<div class="field-box">
+								<div class="field-item field-item_input">
+									<input type="text" placeholder="У вас нет ни одной сети">
+									<div class="field-footnote"></div>
+								</div>
+								<div class="field-item field-item_btn">
+									<a href="#" class="btn btn_green">Создать сеть</a>
+									<div class="field-footnote"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="object-add__item object-add__item_moreobjtypes">
+							<div class="field-label">Дополнительные типы объектов</div>
+							<div class="field-box">
+								<div class="field-item field-item_select">
+									<select>
+										<option>Выберите из списка</option>
+										<option>1</option>
+										<option>2</option>
+									</select>
+									<div class="field-footnote"></div>
+								</div>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="object-add__item object-add__item_worktime">
+							<div class="field-label">Время работы</div>
+							<div class="field-box">
+								<div class="field-item field-item_btns">
+									<span class="btn btn_brdr" data-day="weekdays">пн</span>
+									<span class="btn btn_brdr" data-day="weekdays">вт</span>
+									<span class="btn btn_brdr" data-day="weekdays">ср</span>
+									<span class="btn btn_brdr" data-day="weekdays">чт</span>
+									<span class="btn btn_brdr" data-day="weekdays">пт</span>
+									<span class="btn btn_brdr" data-day="weekend">сб</span>
+									<span class="btn btn_brdr" data-day="weekend">вс</span>
+									<div class="field-footnote">
+										<span class="footnote-link" data-day-link="weekdays">будни</span>
+										<span class="footnote-link" data-day-link="weekend">выходные</span>
+										<span class="footnote-link" data-day-link="everyday">ежедневно</span>
+									</div>
+								</div>
+								<div class="field-item field-item_select">
+									<div class="field-item__one">
+										<select>
+											<option value="00">00</option><option value="01">01</option><option value="02">02</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10" selected>10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option>
+										</select>
+									</div>
+									<div class="field-item__devider">
+										:
+									</div>
+									<div class="field-item__one">
+										<select>
+											<option selected>00</option><option>05</option><option>10</option><option>15</option><option>20</option><option>25</option><option>30</option><option>35</option><option>40</option><option>45</option><option>50</option><option>55</option>
+										</select>
+									</div>
+									<div class="field-item__devider-long">
+									&mdash;
+									</div>
+									<div class="field-item__one">
+										<select>
+											<option value="00">00</option><option value="01">01</option><option value="02">02</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10" selected>10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option>
+										</select>
+									</div>
+									<div class="field-item__devider">
+										:
+									</div>
+									<div class="field-item__one">
+										<select>
+											<option selected>00</option><option>05</option><option>10</option><option>15</option><option>20</option><option>25</option><option>30</option><option>35</option><option>40</option><option>45</option><option>50</option><option>55</option>
+										</select>
+									</div>
+									<div class="field-footnote">
+										<span class="footnote-link" data-time-link="alltime">круглосуточно</span>
+									</div>
+								</div>
+								<div class="field-box__add"></div>
+							</div>
+							<div class="field-box">
+								<div class="field-item field-item_btns field-item_days">
+									<span class="btn btn_brdr" data-day="weekdays">пн</span>
+									<span class="btn btn_brdr" data-day="weekdays">вт</span>
+									<span class="btn btn_brdr" data-day="weekdays">ср</span>
+									<span class="btn btn_brdr" data-day="weekdays">чт</span>
+									<span class="btn btn_brdr" data-day="weekdays">пт</span>
+									<span class="btn btn_brdr" data-day="weekend">сб</span>
+									<span class="btn btn_brdr" data-day="weekend">вс</span>
+									<div class="field-footnote">
+										<span class="footnote-link" data-day-link="weekdays">будни</span>
+										<span class="footnote-link" data-day-link="weekend">выходные</span>
+										<span class="footnote-link" data-day-link="everyday">ежедневно</span>
+									</div>
+								</div>
+								<div class="field-item field-item_select">
+									<div class="field-item__one">
+										<select>
+											<option value="00">00</option><option value="01">01</option><option value="02">02</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10" selected>10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option>
+										</select>
+									</div>
+									<div class="field-item__devider">
+										:
+									</div>
+									<div class="field-item__one">
+										<select>
+											<option selected>00</option><option>05</option><option>10</option><option>15</option><option>20</option><option>25</option><option>30</option><option>35</option><option>40</option><option>45</option><option>50</option><option>55</option>
+										</select>
+									</div>
+									<div class="field-item__devider-long">
+									&mdash;
+									</div>
+									<div class="field-item__one">
+										<select>
+											<option value="00">00</option><option value="01">01</option><option value="02">02</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10" selected>10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option>
+										</select>
+									</div>
+									<div class="field-item__devider">
+										:
+									</div>
+									<div class="field-item__one">
+										<select>
+											<option selected>00</option><option>05</option><option>10</option><option>15</option><option>20</option><option>25</option><option>30</option><option>35</option><option>40</option><option>45</option><option>50</option><option>55</option>
+										</select>
+									</div>
+									<div class="field-footnote">
+										<span class="footnote-link" data-time-link="alltime">круглосуточно</span>
+									</div>
+								</div>
+								<div class="field-box__remove"></div>
+							</div>
+						</div>
+
+						<div class="title">Адрес клуба</div>
+
+						<div class="object-add__item object-add__item_location-country">
+							<div class="field-label">Местоположение</div>
+							<div class="field-box">
+								<div class="field-item field-item_select">
+									<select>
+										<option>Россия</option>
+										<option>Украина</option>
+										<option>Белорусия</option>
+									</select>
+									<div class="field-footnote">Страна</div>
+								</div>
+								<div class="field-item field-item_select">
+									<select>
+										<option></option>
+									</select>
+									<div class="field-footnote">Город</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="object-add__item object-add__item_location-address">
+							<div class="field-label">Адрес</div>
+							<div class="field-box">
+								<div class="field-item field-item_input field-item_input-long">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+										<div class="input__clear js-input-clear"></div>
+									</div>
+									<div class="field-footnote">Улица</div>
+								</div>
+
+								<div class="field-item field-item_input field-item_input-short">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+										<div class="input__clear js-input-clear"></div>
+									</div>
+									<div class="field-footnote">Дом</div>
+								</div>
+
+								<div class="field-item field-item_input field-item_input-short">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+										<div class="input__clear js-input-clear"></div>
+									</div>
+									<div class="field-footnote">Корпус</div>
+								</div>
+
+								<div class="field-item field-item_input field-item_input-short">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+										<div class="input__clear js-input-clear"></div>
+									</div>
+									<div class="field-footnote">Офис</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="object-add__item object-add__item_location-map">
+							<div class="field-label">
+								Положение на карте
+							</div>
+							<div class="field-box">
+
+								<div class="field-item field-item_map">
+									<div class="field-footnote">
+										определено с точностью до дома
+										<span class="map-switch">отметить на карте</span>
+									</div>
+									<div class="map"></div>
+									<div class="field-footnote"></div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="object-add__item object-add__item_location-coord">
+							<div class="field-label">Координаты GPS</div>
+							<div class="field-box">
+								<div class="field-item field-item_input">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+									</div>
+									<div class="field-footnote">Долгота</div>
+								</div>
+
+								<div class="field-item field-item_input">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+									</div>
+									<div class="field-footnote">Широта</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="object-add__item object-add__item_location-subway">
+							<div class="field-label">Ближайшее метро</div>
+							<div class="field-box">
+								<div class="field-item field-item_select">
+									<select>
+										<option>Выбрать из списка</option>
+									</select>
+									<div class="field-footnote"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="object-add__item object-add__item_location-path">
+							<div class="field-label">Как добраться</div>
+							<div class="field-box">
+								<div class="field-item field-item_select">
+									<select>
+										<option>Выбрать из списка</option>
+									</select>
+									<div class="field-footnote"></div>
+								</div>
+
+								<div class="field-item field-item_input">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+									</div>
+									<div class="field-footnote">Укажите номер транспорта через запятую</div>
+								</div>
+
+								<div class="field-box__add"></div>
+							</div>
+						</div>
+
+						<div>
+							<a href="#" class="btn btn_add"><span class="plus"></span>Добавить офис</a>
+						</div>
+
+						<div class="title">Контакты клуба</div>
+
+
+						<div class="object-add__item object-add__item_contact-phone">
+							<div class="field-label">Телефон</div>
+							<div class="field-box">
+
+								<div class="field-item field-item_input field-item_input-short">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+										<div class="input__clear js-input-clear"></div>
+									</div>
+									<div class="field-footnote">Код страны</div>
+								</div>
+
+								<div class="field-item field-item_input field-item_input-short">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+										<div class="input__clear js-input-clear"></div>
+									</div>
+									<div class="field-footnote">Добавочный</div>
+								</div>
+
+								<div class="field-item field-item_input field-item_input-long">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+										<div class="input__clear js-input-clear"></div>
+									</div>
+									<div class="field-footnote">Телефон</div>
+								</div>
+
+								<div class="field-item field-item_input field-item_input-short">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+										<div class="input__clear js-input-clear"></div>
+									</div>
+									<div class="field-footnote">Офис</div>
+								</div>
+
+								<div class="field-box__add"></div>
+							</div>
+						</div>
+
+						<div class="object-add__item object-add__item_contact-phone">
+							<div class="field-label">Факс</div>
+							<div class="field-box">
+
+								<div class="field-item field-item_input field-item_input-short">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+										<div class="input__clear js-input-clear"></div>
+									</div>
+									<div class="field-footnote">Код страны</div>
+								</div>
+
+								<div class="field-item field-item_input field-item_input-short">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+										<div class="input__clear js-input-clear"></div>
+									</div>
+									<div class="field-footnote">Добавочный</div>
+								</div>
+
+								<div class="field-item field-item_input field-item_input-long">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+										<div class="input__clear js-input-clear"></div>
+									</div>
+									<div class="field-footnote">Факс</div>
+								</div>
+
+								<div class="field-item field-item_input field-item_input-short">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+										<div class="input__clear js-input-clear"></div>
+									</div>
+									<div class="field-footnote">Офис</div>
+								</div>
+
+								<div class="field-box__add"></div>
+							</div>
+						</div>
+
+						<div class="object-add__item object-add__item_contact-email">
+							<div class="field-label">E-mail </div>
+							<div class="field-box">
+
+								<div class="field-item field-item_input">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+									</div>
+									<div class="field-footnote"></div>
+								</div>
+								<div class="field-box__add"></div>
+							</div>
+						</div>
+
+						<div class="object-add__item object-add__item_contact-pager">
+							<div class="field-label">Пейджер</div>
+							<div class="field-box">
+								<div class="field-item field-item_select">
+									<select>
+										<option>Выбрать из списка</option>
+									</select>
+									<div class="field-footnote"></div>
+								</div>
+
+								<div class="field-item field-item_input">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+									</div>
+									<div class="field-footnote">Укажите номер аккаунта</div>
+								</div>
+
+								<div class="field-box__add"></div>
+							</div>
+						</div>
+
+						<div class="object-add__item object-add__item_contact-soc">
+							<div class="field-label">Социальные сети</div>
+							<div class="field-box">
+								<div class="field-item field-item_select">
+									<select>
+										<option>Выбрать из списка</option>
+									</select>
+									<div class="field-footnote"></div>
+								</div>
+
+								<div class="field-item field-item_input">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+									</div>
+									<div class="field-footnote">Укажите ссылку на аккаунт</div>
+								</div>
+
+								<div class="field-box__add"></div>
+							</div>
+						</div>
+
+						<div class="title">Контакты офиса</div>
+
+
+						<div class="object-add__item object-add__item_contact-phone">
+							<div class="field-label">Телефон</div>
+							<div class="field-box">
+
+								<div class="field-item field-item_input field-item_input-short">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+										<div class="input__clear js-input-clear"></div>
+									</div>
+									<div class="field-footnote">Код страны</div>
+								</div>
+
+								<div class="field-item field-item_input field-item_input-short">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+										<div class="input__clear js-input-clear"></div>
+									</div>
+									<div class="field-footnote">Добавочный</div>
+								</div>
+
+								<div class="field-item field-item_input field-item_input-long">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+										<div class="input__clear js-input-clear"></div>
+									</div>
+									<div class="field-footnote">Телефон</div>
+								</div>
+
+								<div class="field-item field-item_input field-item_input-short">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+										<div class="input__clear js-input-clear"></div>
+									</div>
+									<div class="field-footnote">Офис</div>
+								</div>
+
+								<div class="field-box__add"></div>
+							</div>
+						</div>
+
+						<div class="object-add__item object-add__item_contact-phone">
+							<div class="field-label">Факс</div>
+							<div class="field-box">
+
+								<div class="field-item field-item_input field-item_input-short">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+										<div class="input__clear js-input-clear"></div>
+									</div>
+									<div class="field-footnote">Код страны</div>
+								</div>
+
+								<div class="field-item field-item_input field-item_input-short">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+										<div class="input__clear js-input-clear"></div>
+									</div>
+									<div class="field-footnote">Добавочный</div>
+								</div>
+
+								<div class="field-item field-item_input field-item_input-long">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+										<div class="input__clear js-input-clear"></div>
+									</div>
+									<div class="field-footnote">Факс</div>
+								</div>
+
+								<div class="field-item field-item_input field-item_input-short">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+										<div class="input__clear js-input-clear"></div>
+									</div>
+									<div class="field-footnote">Офис</div>
+								</div>
+
+								<div class="field-box__add"></div>
+							</div>
+						</div>
+
+						<div class="object-add__item object-add__item_contact-email">
+							<div class="field-label">E-mail </div>
+							<div class="field-box">
+
+								<div class="field-item field-item_input">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+									</div>
+									<div class="field-footnote"></div>
+								</div>
+								<div class="field-box__add"></div>
+							</div>
+						</div>
+
+						<div class="object-add__item object-add__item_contact-pager">
+							<div class="field-label">Пейджер</div>
+							<div class="field-box">
+								<div class="field-item field-item_select">
+									<select>
+										<option>Выбрать из списка</option>
+									</select>
+									<div class="field-footnote"></div>
+								</div>
+
+								<div class="field-item field-item_input">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+									</div>
+									<div class="field-footnote">Укажите номер аккаунта</div>
+								</div>
+
+								<div class="field-box__add"></div>
+							</div>
+						</div>
+
+						<div class="object-add__item object-add__item_contact-soc">
+							<div class="field-label">Социальные сети</div>
+							<div class="field-box">
+								<div class="field-item field-item_select">
+									<select>
+										<option>Выбрать из списка</option>
+									</select>
+									<div class="field-footnote"></div>
+								</div>
+
+								<div class="field-item field-item_input">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ" placeholder="">
+									</div>
+									<div class="field-footnote">Укажите ссылку на аккаунт</div>
+								</div>
+
+								<div class="field-box__add"></div>
+							</div>
+						</div>
+
+						<div class="title">Дополнительная информация</div>
+
+						<div class="object-add__item object-add__item_contact-moreinf">
+							<div class="field-label">Комфортабельная инфраструктура</div>
+							<div class="field-box">
+								<div class="field-item field-item_select">
+									<select>
+										<option>Выбрать из списка</option>
+									</select>
+									<div class="field-footnote"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="object-add__item object-add__item_contact-moreinf">
+							<div class="field-label">Спортивная инфраструктура</div>
+							<div class="field-box">
+								<div class="field-item field-item_select">
+									<select>
+										<option>Выбрать из списка</option>
+									</select>
+									<div class="field-footnote"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="object-add__item object-add__item_contact-moreinf">
+							<div class="field-label">Описание объекта</div>
+							<div class="field-box">
+								<div class="field-item field-item_textarea">
+									<div class="js-input-wrap">
+										<textarea class="js-input-targ"></textarea>
+										<div class="input__notepad js-input-notepad"></div>
+										<div class="input__clear js-input-clear"></div>
+									</div>
+									<div class="field-footnote"></div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="title">Добавить фото</div>
+
+						<div class="object-add__item object-add__item_addfile">
+							<div class="field-label">Добавьте  изображения</div>
+							<div class="field-box">
+								<div class="field-item field-item_file field-item_file-uploaded">
+									<div class="file-img"><img src="img/240x170.gif"></div>
+									<div class="file-name"><span>ЛК_Объекты...</span> .jpg 599 КБ</div>
+									<div class="field-footnote">
+										<span class="footnote-link">Скачать</span>
+										<span class="footnote-link">Удалить</span>
+									</div>
+								</div>
+
+								<div class="field-item field-item_file field-item_file-upload">
+									<div class="file-img"><img src="img/240x170.gif"></div>
+									<div class="file-name"></div>
+									<div class="field-footnote">
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="next">
+							<a href="#" class="btn btn_disable btn_big">Продолжить</a>
+						</div>
+
+
+					</div>
+				</div>
+				<div class="object-add__example">
+					<div class="object-add__example-inner">
+						<div class="object-add__example-scroll">
+							<div class="object-example__title">Заголовок</div>
+							<div class="object-example__text">Союз европейских футбольных ассоциаций (UEFA) исключил возможность переноса матча футбольной Лиги чемпионов между бельгийским "Гентом" и российским "Зенитом" на нейтральное поле, передает ТАСС со ссылкой на пресс-службу UEFA.</div>
+							<div class="object-example__text">Пример</div>
+							<div class="object-example__imgs">
+								<div class="photo-item photo-item-3"><span><img src="img/exemp.png" alt=""></span></div>
+								<div class="photo-item photo-item-3"><span><img src="img/exemp.png" alt=""></span></div>
+								<div class="photo-item photo-item-3"><span><img src="img/exemp.png" alt=""></span></div>
+								<div class="photo-item photo-item-4"><span><img src="img/exemp.png" alt=""></span></div>
+								<div class="photo-item photo-item-4"><span><img src="img/exemp.png" alt=""></span></div>
+								<div class="photo-item photo-item-4"><span><img src="img/exemp.png" alt=""></span></div>
+								<div class="photo-item photo-item-4"><span><img src="img/exemp.png" alt=""></span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div><!-- .wrapper -->
+
+</body>
+</html>

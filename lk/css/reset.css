@@ -63,10 +63,14 @@ label {											   	/*запрет выделения при клике на �
 }
 
 a {
-	text-decoration:underline;
+	text-decoration:none;
 	color:inherit;
 	}
 
+a:hover {
+	text-decoration:underline;
+}
+textarea,
 input{
 	padding: 5px 10px;
 	font: inherit;
@@ -82,9 +86,6 @@ input{
 	clear:both;
 	}
 
-a:hover {
-	text-decoration:none;
-	}
 
 
 .checkbox-case{}

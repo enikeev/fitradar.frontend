@@ -10,7 +10,15 @@ $(function () {
 	});
 
 	if ( $('select').size() ){
-		$('select').selectbox({effect: "fade"});
+		$('select').selectbox({
+			effect: "fade",
+			onOpen:function(inst){
+				$(this).next('.sbHolder').find('.sbOptions').mCustomScrollbar();
+
+			},
+			onClose:function(inst){
+			}
+		});
 	}
 
 	menuHeight();
@@ -50,7 +58,7 @@ $(function () {
 		$(this).closest('.js-input-wrap').find('.js-input-targ').val('');
 	});
 
-// review >>
+// review.html >>
 
 	$('body').on('click', '.js-open-review-textarea', function(){
 		var $t = $(this),
@@ -88,7 +96,7 @@ $(function () {
 		}
 	});
 
-// << review
+// << review.html
 
 // modals >>
 
@@ -112,20 +120,37 @@ $(function () {
 
 
 
-// object >>
+// object-choose.html >>
 
 	$('.objects-type').on('click', '.type-item', function(){
 		$(this).addClass('active').siblings().removeClass('active').closest('.objects-type').find('.btn_disable').removeClass('btn_disable');
 
 	});
 
-
-
-// << object
-
+// << object-choose.html
 
 
 
+//object-add.html >
+
+	$('body').on('click', '[data-day]', function(){
+		$(this).toggleClass('active');
+	}).on('click', '.object-add__item_worktime .footnote-link', function(){
+		var box = $(this).closest('.field-box');
+		var day = $(this).data('day-link');
+		var btn = box.find('[data-day]');
+		if ( day == 'everyday'){
+			btn.addClass('active');
+		} else {
+			btn.removeClass('active').filter(function(){return $(this).data('day') == day;}).addClass('active');
+		}
+	});
+
+	objectAddExemple();
+	$(window).scroll(objectAddExemple);
+
+
+//< object-add.html
 
 
 });
@@ -135,6 +160,18 @@ function menuHeight(){
 	if ( $el.size() ){
 		$el.css({height: $(window).height() - $el.position().top});
 		$el.find('.lk-menu__inner').mCustomScrollbar();
+	}
+}
+
+function objectAddExemple(){
+	var wrap = $('.object-add__example-inner');
+	var scrolBox = $('.object-add__example-scroll');
+	var wt = $(window).scrollTop();
+
+	if ( wrap.position().top < wt ){
+		scrolBox.css({
+			top: wt - wrap.position().top
+		})
 	}
 }
 
