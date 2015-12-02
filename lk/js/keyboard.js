@@ -42,6 +42,19 @@ $(function(){
 					var text = $input.val();
 					$input.val(text + nWord);
 				}
+			}).on('mousedown', function(e){
+				if ( $('.keypad-wrap_show').size() ){
+					if ( $(e.target).closest('.keypad-wrap').length || $(e.target).closest('.js-input-wrap').length ){
+						return;
+					} else {
+						$keybordWrap.removeClass('keypad-wrap_show');
+						$(this).removeClass('js-input-targ-active');
+					}
+				}
+
+				/*if ( $keybordWrap.hasClass('keypad-wrap_show') ){
+
+				}*/
 			});
 		},
 		btnPush: {

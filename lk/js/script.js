@@ -153,6 +153,38 @@ $(function () {
 //< object-add.html
 
 
+
+
+//messages-dialog.html >
+
+	$('.message-dialog').on('click', '.message__item', function(){
+		var $mes = $(this).closest('.message');
+		if ( $mes.hasClass('message_active') ){
+			$mes.removeClass('message_active');
+		} else {
+			$('.message_active').removeClass('message_active');
+			$mes.addClass('message_active');
+		}
+
+		if ( $('.message_active').size() ){
+			$('.message_active-set').addClass('active');
+		} else {
+			$('.message_active-set').removeClass('active');
+		}
+
+	});
+
+
+	$('body').on('click', '.js-message-set-del', function(){
+
+	}).on('click', '.js-message-set-answ', function(){
+		$('.message_active').addClass('message_reply').find('textarea').focus();
+	}).on('click', '.js-message-set-resend', function(){
+
+	});
+
+//< messages-dialog.html
+
 });
 
 function menuHeight(){
@@ -166,13 +198,17 @@ function menuHeight(){
 function objectAddExemple(){
 	var wrap = $('.object-add__example-inner');
 	var scrolBox = $('.object-add__example-scroll');
-	var wt = $(window).scrollTop();
 
-	if ( wrap.position().top < wt ){
-		scrolBox.css({
-			top: wt - wrap.position().top
-		})
+	if ( wrap.size() && scrolBox.size() ){
+		var wt = $(window).scrollTop();
+
+		if ( wrap.position().top < wt ){
+			scrolBox.css({
+				top: wt - wrap.position().top
+			})
+		}
 	}
+
 }
 
 
