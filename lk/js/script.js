@@ -150,6 +150,43 @@ $(function () {
 	$(window).scroll(objectAddExemple);
 
 
+	$('body').on('click', '.field-item_list .list-title', function(){
+
+		var $t = $(this);
+
+		if ( $('.list-title_opened').size() && !$t.hasClass('list-title_opened') ){ $('.list-title_opened').click() }
+
+		var $wrap = $t.next('.list-wrap');
+		var $list = $wrap.find('.list');
+
+		$t.toggleClass('list-title_opened');
+		$wrap.stop(true, true).fadeToggle(200);
+
+		if ( !$list.hasClass('mCustomScrollbar') ) { $list.mCustomScrollbar(); }
+
+	}).on('click', '.field-item_list .list-item_object', function(){
+		var $t = $(this);
+		var $wrap = $t.closest('.field-item_list');
+		var title = $wrap.find('.list-title');
+		var text = $t.find('.obj-case__info').text();
+
+		title.text( text ).click();
+	}).on('mousedown', function(e){
+
+		if ( $('.list-title_opened').size() ){
+
+			if ( !$(e.target).closest('.field-item_list').length ){
+				$('.list-title_opened').click();
+			}
+
+		}
+	});
+
+
+
+
+
+
 //< object-add.html
 
 
@@ -157,8 +194,8 @@ $(function () {
 
 //messages-dialog.html >
 
-	$('.message-dialog').on('click', '.message__item', function(){
-		var $mes = $(this).closest('.message');
+	$('.message-dialog').on('click', '.message', function(){
+		var $mes = $(this);
 		if ( $mes.hasClass('message_active') ){
 			$mes.removeClass('message_active');
 		} else {
@@ -176,9 +213,12 @@ $(function () {
 
 
 	$('body').on('click', '.js-message-set-del', function(){
-
+		$('.message_active').remove();
 	}).on('click', '.js-message-set-answ', function(){
-		$('.message_active').addClass('message_reply').find('textarea').focus();
+
+		$('html,body').animate({scrollTop:$('.message__answer').offset().top}, 500);
+
+		$('.message__answer').find('textarea').focus();
 	}).on('click', '.js-message-set-resend', function(){
 
 	});
@@ -225,3 +265,36 @@ $.fn.showModalLk = function() {
 		});
 	}
 };
+
+
+
+
+Dropzone.autoDiscover = false;
+
+$(function(){
+
+	$('body').on('click', '.js-upload-new-file', function(){
+		$(this).closest('.field-dropzone').click();
+	});
+
+	var photoDropzone = new Dropzone(".field-dropzone", {
+		previewTemplate: '<div class="field-item field-item_file field-item_file-uploaded">' +
+							'<div class="file-img">' +
+								'<img data-dz-thumbnail >' +
+								'<div class="file-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>' +
+							'</div>' +
+							'<div class="file-name"><span class="file-name__item" data-dz-name></span> <span class="file-name__size" data-dz-size></span></div>' +
+							'<div class="file-footnote">' +
+								'<span class="footnote-link">Скачать</span>' +
+								'<span class="footnote-link">Удалить</span>' +
+							'</div></div>',
+		thumbnailWidth: 240,
+		thumbnailHeight: 170,
+		dictDefaultMessage: 'Перетащите фото сюда',
+		url: "/lk/upload.php",
+		init: function(){
+			console.log(this);
+			$(this.clickableElements).append('<div class="field-item field-item_file field-item_file-upload js-upload-new-file"><div class="file-img"><img src="img/240x170.gif"></div><div class="file-name"></div><div class="field-footnote"></div></div>');
+		}
+	});
+});

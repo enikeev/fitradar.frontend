@@ -15,6 +15,7 @@
 	<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
 	<script type="text/javascript" src="js/mCustomScrollbar.min.js"></script>
 	<script type="text/javascript" src="js/keyboard.js"></script>
+	<script type="text/javascript" src="js/dropzone.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
 
@@ -330,8 +331,25 @@
 						<div class="object-add__item object-add__item_clubnetwork">
 							<div class="field-label">Принадлежность к сети клубов</div>
 							<div class="field-box">
-								<div class="field-item field-item_input">
-									<input type="text" placeholder="У вас нет ни одной сети">
+								<div class="field-item field-item_list">
+									<div class="list-title">Выберите из списка</div>
+									<div class="list-wrap">
+										<div class="list">
+											<div class="list-item_object" data-val="01"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness </div> </div> </div>
+											<div class="list-item_object" data-val="02"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 2</div> </div> </div>
+											<div class="list-item_object" data-val="03"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 3</div> </div> </div>
+											<div class="list-item_object" data-val="04"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 4</div> </div> </div>
+											<div class="list-item_object" data-val="05"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 5</div> </div> </div>
+											<div class="list-item_object" data-val="06"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 6</div> </div> </div>
+											<div class="list-item_object" data-val="07"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 7</div> </div> </div>
+											<div class="list-item_object" data-val="08"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 8</div> </div> </div>
+											<div class="list-item_object" data-val="09"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 9</div> </div> </div>
+											<div class="list-item_object" data-val="10"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 10</div> </div> </div>
+											<div class="list-item_object" data-val="11"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 11</div> </div> </div>
+											<div class="list-item_object" data-val="12"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 12</div> </div> </div>
+											<div class="list-item_object" data-val="13"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 13</div> </div> </div>
+										</div>
+									</div>
 									<div class="field-footnote"></div>
 								</div>
 								<div class="field-item field-item_btn">
@@ -344,12 +362,43 @@
 						<div class="object-add__item object-add__item_moreobjtypes">
 							<div class="field-label">Дополнительные типы объектов</div>
 							<div class="field-box">
-								<div class="field-item field-item_select">
-									<select>
-										<option>Выберите из списка</option>
-										<option>1</option>
-										<option>2</option>
-									</select>
+								<div class="field-item field-item_list">
+									<div class="list-title">Выберите из списка</div>
+									<div class="list-wrap">
+										<div class="list-search">
+											<div class="js-input-wrap">
+												<input type="text" class="js-input-targ" placeholder="">
+												<div class="input__notepad js-input-notepad"></div>
+												<div class="input__search js-input-search"></div>
+											</div>
+										</div>
+										<div class="list">
+											<div class="list-item" data-val="01">Спортивный клуб 01</div>
+											<div class="list-item" data-val="02">Спортивный клуб 02</div>
+											<div class="list-item" data-val="03">Спортивный клуб 03</div>
+											<div class="list-item" data-val="04">Спортивный клуб 04</div>
+											<div class="list-item" data-val="05">Спортивный клуб 05</div>
+											<div class="list-item" data-val="06">Спортивный клуб 06</div>
+											<div class="list-item" data-val="07">Спортивный клуб 07</div>
+											<div class="list-item" data-val="08">Спортивный клуб 08</div>
+											<div class="list-item" data-val="09">Спортивный клуб 09</div>
+											<div class="list-item" data-val="10">Спортивный клуб 10</div>
+											<div class="list-item" data-val="11">Спортивный клуб 11</div>
+											<div class="list-item" data-val="12">Спортивный клуб 12</div>
+											<div class="list-item" data-val="13">Спортивный клуб 13</div>
+										</div>
+									</div>
+									<div class="field-footnote"></div>
+								</div>
+								<div class="field-item field-item_list-result">
+									<div class="list-title">Активные объекты</div>
+									<div class="list-wrap">
+										<div class="list-item" data-val="01">Спортивный клуб 01 <i class="list-item__remove"></i></div>
+										<div class="list-item" data-val="02">Спортивный клуб 02 <i class="list-item__remove"></i></div>
+										<div class="list-item" data-val="03">Спортивный клуб 03 <i class="list-item__remove"></i></div>
+										<div class="list-item" data-val="04">Спортивный клуб 04 <i class="list-item__remove"></i></div>
+										<div class="list-item" data-val="05">Спортивный клуб 05 <i class="list-item__remove"></i></div>
+									</div>
 									<div class="field-footnote"></div>
 								</div>
 							</div>
@@ -563,10 +612,43 @@
 						<div class="object-add__item object-add__item_location-subway">
 							<div class="field-label">Ближайшее метро</div>
 							<div class="field-box">
-								<div class="field-item field-item_select">
-									<select>
-										<option>Выбрать из списка</option>
-									</select>
+								<div class="field-item field-item_list">
+									<div class="list-title">Выберите из списка</div>
+									<div class="list-wrap">
+										<div class="list-search">
+											<div class="js-input-wrap">
+												<input type="text" class="js-input-targ" placeholder="">
+												<div class="input__notepad js-input-notepad"></div>
+												<div class="input__search js-input-search"></div>
+											</div>
+										</div>
+										<div class="list">
+											<div class="list-item" data-val="01"><i class="list-item__bullet" style="background-color: #941a81;"></i> Спортивный клуб 01</div>
+											<div class="list-item" data-val="02"><i class="list-item__bullet" style="background-color: #d2c625;"></i> Спортивный клуб 02</div>
+											<div class="list-item" data-val="03"><i class="list-item__bullet" style="background-color: #d2c625;"></i> Спортивный клуб 03</div>
+											<div class="list-item" data-val="04"><i class="list-item__bullet" style="background-color: #11958c;"></i> Спортивный клуб 04</div>
+											<div class="list-item" data-val="05"><i class="list-item__bullet" style="background-color: #2e34be;"></i> Спортивный клуб 05</div>
+											<div class="list-item" data-val="06"><i class="list-item__bullet" style="background-color: #939393;"></i> Спортивный клуб 06</div>
+											<div class="list-item" data-val="07"><i class="list-item__bullet" style="background-color: #cc2528;"></i> Спортивный клуб 07</div>
+											<div class="list-item" data-val="08"><i class="list-item__bullet" style="background-color: #ff00f0;"></i> Спортивный клуб 08</div>
+											<div class="list-item" data-val="09"><i class="list-item__bullet" style="background-color: #aec748;"></i> Спортивный клуб 09</div>
+											<div class="list-item" data-val="10"><i class="list-item__bullet" style="background-color: #a6c923;"></i> Спортивный клуб 10</div>
+											<div class="list-item" data-val="11"><i class="list-item__bullet" style="background-color: #86a321;"></i> Спортивный клуб 11</div>
+											<div class="list-item" data-val="12"><i class="list-item__bullet" style="background-color: #109ece;"></i> Спортивный клуб 12</div>
+											<div class="list-item" data-val="13"><i class="list-item__bullet" style="background-color: #332b7f;"></i> Спортивный клуб 13</div>
+										</div>
+									</div>
+									<div class="field-footnote"></div>
+								</div>
+								<div class="field-item field-item_list-result">
+									<div class="list-title">Активные объекты</div>
+									<div class="list-wrap">
+										<div class="list-item" data-val="01"><i class="list-item__bullet" style="background-color: #2e34be;"></i> Спортивный клуб 01 <i class="list-item__remove"></i></div>
+										<div class="list-item" data-val="02"><i class="list-item__bullet" style="background-color: #939393;"></i> Спортивный клуб 02 <i class="list-item__remove"></i></div>
+										<div class="list-item" data-val="03"><i class="list-item__bullet" style="background-color: #cc2528;"></i> Спортивный клуб 03 <i class="list-item__remove"></i></div>
+										<div class="list-item" data-val="04"><i class="list-item__bullet" style="background-color: #ff00f0;"></i> Спортивный клуб 04 <i class="list-item__remove"></i></div>
+										<div class="list-item" data-val="05"><i class="list-item__bullet" style="background-color: #aec748;"></i> Спортивный клуб 05 <i class="list-item__remove"></i></div>
+									</div>
 									<div class="field-footnote"></div>
 								</div>
 							</div>
@@ -578,6 +660,9 @@
 								<div class="field-item field-item_select">
 									<select>
 										<option>Выбрать из списка</option>
+										<option>Поездом</option>
+										<option>Автомобилем</option>
+										<option>Самолетом</option>
 									</select>
 									<div class="field-footnote"></div>
 								</div>
@@ -1110,7 +1195,7 @@
 
 						<div class="title">Добавить фото</div>
 
-						<div class="object-add__item object-add__item_addfile">
+						<!--<div class="object-add__item object-add__item_addfile">
 							<div class="field-label">Добавьте  изображения</div>
 							<div class="field-box">
 								<div class="field-item field-item_file field-item_file-uploaded">
@@ -1122,6 +1207,7 @@
 									</div>
 								</div>
 
+
 								<div class="field-item field-item_file field-item_file-upload">
 									<div class="file-img"><img src="img/240x170.gif"></div>
 									<div class="file-name"></div>
@@ -1129,8 +1215,15 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div>-->
 
+
+						<div class="object-add__item object-add__item_addfile">
+							<div class="field-label">Добавьте  изображения</div>
+							<div class="field-box">
+								<div class="field-dropzone dropzone" data-url="/lk/upload.php"></div>
+							</div>
+						</div>
 
 						<div class="next">
 							<a href="#" class="btn btn_disable btn_big">Продолжить</a>
