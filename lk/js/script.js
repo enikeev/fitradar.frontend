@@ -78,25 +78,9 @@ $(function () {
 		$answer.slideUp(200);
 	});
 
-	$('.js-tab-wrap').on('click', '[data-tab-link]', function(e){
-		e.preventDefault();
-		var $t = $(this);
-
-		if ( !$t.hasClass('active') ){
-			var ind = $t.data('tab-link'),
-				$wrap = $t.closest('.js-tab-wrap'),
-				$link = $wrap.find('[data-tab-link]'),
-				$item = $wrap.find('[data-tab-item]'),
-				$itemActive = $wrap.find('[data-tab-item=' + ind + ']');
-
-			$link.filter('.active').removeClass('active');
-			$item.filter('.active').removeClass('active');
-			$t.addClass('active');
-			$itemActive.addClass('active');
-		}
-	});
-
 // << review.html
+
+
 
 // modals >>
 
@@ -146,8 +130,8 @@ $(function () {
 		}
 	});
 
-	objectAddExemple();
-	$(window).scroll(objectAddExemple);
+//	objectAddExemple();
+//	$(window).scroll(objectAddExemple);
 
 
 	$('body').on('click', '.field-item_list .list-title', function(){
@@ -183,8 +167,39 @@ $(function () {
 	});
 
 
+	$('[data-example-link]').hover(function(){
+		var $t = $(this),
+			ind = $t.data('example-link'),
+			$itemActive = $('[data-example-item=' + ind + ']');
+
+		var wrap = $('.object-add__example-inner');
+		var scrolBox = $('.object-add__example-scroll');
 
 
+		var wt = $(window).scrollTop();
+
+		if ( $t.offset().top < wt ){
+			scrolBox.css({
+				top: wt - wrap.position().top,
+				height:  $(window).height() -  100
+			})
+		} else {
+			scrolBox.css({
+				top: $t.offset().top - wrap.offset().top
+			});
+		}
+
+		$t.addClass('active');
+		$itemActive.addClass('active');
+
+	}, function(){
+		var $t = $(this),
+			$item = $('[data-example-item]');
+
+		$t.removeClass('active');
+		$item.removeClass('active');
+
+	});
 
 
 //< object-add.html
@@ -225,6 +240,35 @@ $(function () {
 
 //< messages-dialog.html
 
+
+
+
+
+	$('.password-eye').on('mousedown', function(){
+		$(this).next('input').attr('type', 'text').addClass('focus');
+	}).on('mouseup mouseleave', function(){
+		$(this).next('input').attr('type', 'password').removeClass('focus');
+	});
+
+
+	$('.js-tab-wrap').on('click', '[data-tab-link]', function(e){
+		e.preventDefault();
+		var $t = $(this);
+
+		if ( !$t.hasClass('active') ){
+			var ind = $t.data('tab-link'),
+				$wrap = $t.closest('.js-tab-wrap'),
+				$link = $wrap.find('[data-tab-link]'),
+				$item = $wrap.find('[data-tab-item]'),
+				$itemActive = $wrap.find('[data-tab-item=' + ind + ']');
+
+			$link.filter('.active').removeClass('active');
+			$item.filter('.active').removeClass('active');
+			$t.addClass('active');
+			$itemActive.addClass('active');
+		}
+	});
+
 });
 
 function menuHeight(){
@@ -242,9 +286,14 @@ function objectAddExemple(){
 	if ( wrap.size() && scrolBox.size() ){
 		var wt = $(window).scrollTop();
 
+		scrolBox.css({
+			height:  $(window).height() -  100
+		});
+
 		if ( wrap.position().top < wt ){
 			scrolBox.css({
-				top: wt - wrap.position().top
+				top: wt - wrap.position().top,
+				height:  $(window).height() -  100
 			})
 		}
 	}
@@ -269,32 +318,46 @@ $.fn.showModalLk = function() {
 
 
 
-Dropzone.autoDiscover = false;
 
 $(function(){
 
-	$('body').on('click', '.js-upload-new-file', function(){
-		$(this).closest('.field-dropzone').click();
-	});
+	if ( $('.dropzone').size() ){
 
-	var photoDropzone = new Dropzone(".field-dropzone", {
-		previewTemplate: '<div class="field-item field-item_file field-item_file-uploaded">' +
-							'<div class="file-img">' +
-								'<img data-dz-thumbnail >' +
-								'<div class="file-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>' +
-							'</div>' +
-							'<div class="file-name"><span class="file-name__item" data-dz-name></span> <span class="file-name__size" data-dz-size></span></div>' +
-							'<div class="file-footnote">' +
-								'<span class="footnote-link">Скачать</span>' +
-								'<span class="footnote-link">Удалить</span>' +
-							'</div></div>',
-		thumbnailWidth: 240,
-		thumbnailHeight: 170,
-		dictDefaultMessage: 'Перетащите фото сюда',
-		url: "/lk/upload.php",
-		init: function(){
-			console.log(this);
-			$(this.clickableElements).append('<div class="field-item field-item_file field-item_file-upload js-upload-new-file"><div class="file-img"><img src="img/240x170.gif"></div><div class="file-name"></div><div class="field-footnote"></div></div>');
-		}
-	});
+		Dropzone.autoDiscover = false;
+
+		var url = $('.dropzone').data('url');
+
+		var photoDropzone = new Dropzone(".dropzone", {
+			previewTemplate: '<div class="field-item field-item_file field-item_file-uploaded">' +
+								'<div class="file-img">' +
+									'<img data-dz-thumbnail src="img/240x170.gif">' +
+									'<div class="file-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>' +
+								'</div>' +
+								'<div class="file-name"><span class="file-name__item" data-dz-name></span> <span class="file-name__size" data-dz-size></span></div>' +
+								'<div class="file-footnote">' +
+									'<span class="footnote-link">Скачать</span>' +
+									'<span class="footnote-link" data-dz-remove>Удалить</span>' +
+								'</div></div>',
+			thumbnailWidth: 240,
+			thumbnailHeight: 170,
+			acceptedFiles: 'image/jpeg,image/png,image/gif',
+			previewsContainer: '.js-upload-files-container',
+			clickable: '.js-upload-new-file',
+			dictDefaultMessage: 'Перетащите фото сюда',
+			url: url,
+			init: function(){
+			//	photoDropzone.clickableElements = [ photoDropzone.element.querySelector('.js-upload-new-file') ];
+			//	this.clickableElements = [$(this.element).find('.js-upload-new-file')[0]];
+			//	Dropzone.getElements(this.element.querySelector('.js-upload-new-file'), "clickable");
+
+			//	console.log(this.element.querySelector('.js-upload-new-file'));
+			//	console.log($(this.element).find('.js-upload-new-file'));
+			//	$(this.clickableElements).append('<div class="field-item field-item_file field-item_file-upload js-upload-new-file"><div class="file-img"><img src="img/240x170.gif"></div><div class="file-name"></div><div class="field-footnote"></div></div>');
+
+			}
+		});
+
+	}
+
+
 });

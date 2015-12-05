@@ -307,3 +307,12 @@
 	vertical-align: middle;
 	padding: 7px;
 }
+
+
+
+
+
+textarea.error,
+.error textarea,
+input.error,
+.error input{border-color: #f00!important;}

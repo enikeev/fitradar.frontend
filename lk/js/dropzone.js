@@ -840,7 +840,7 @@
 				}
 				selectedSize = Math.round(10 * selectedSize) / 10;
 			}
-			return selectedSize + " " + selectedUnit;
+			return "<strong>" + selectedSize + "</strong> " + selectedUnit;
 		};
 
 		Dropzone.prototype._updateMaxFilesReachedClass = function() {

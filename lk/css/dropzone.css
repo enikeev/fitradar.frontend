@@ -389,15 +389,14 @@
 
 
 
-.field-dropzone.dropzone{
-	min-height: 240px;
+.field-dropzone .dropzone{
+	min-height: 10px;
 	border: none;
 	position: relative;
-	font-size: 14px;
 	padding: 0;
 }
 
-.field-dropzone.dz-clickable .dz-message{
+.field-dropzone .dz-message{
 	position: absolute;
 	font-size: 36px;
 	margin: 0;
@@ -410,7 +409,7 @@
 	display: none;
 	z-index: 10;
 }
-.field-dropzone.dz-clickable .dz-message span{
+.field-dropzone .dz-message span{
 	position: absolute;
 	border: 2px dashed #fff;
 	display: block;
@@ -422,7 +421,11 @@
 	padding-top: 60px;
 }
 
-.field-dropzone.dropzone.dz-drag-hover .dz-message {
+.field-dropzone .dropzone-case {
+	display: inline;
+}
+
+.field-dropzone .dz-drag-hover .dz-message {
 	opacity: 1;
 	display: block;
 }

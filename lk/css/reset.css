@@ -92,6 +92,8 @@ input{
 .checkbox-case input{
 	opacity: 0;
 	position: absolute;
+	width: 20px!important;
+	height: 20px!important;
 }
 .checkbox-case input + .marker{
 	display: inline-block;

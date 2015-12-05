@@ -140,6 +140,46 @@ body{
 	margin-right: 10px;
 }
 
+
+
+
+.password-eye{
+	background: url("../img/icon-eye-d.svg") no-repeat 50% 50%;
+	cursor: pointer;
+	height: 29px;
+	opacity: 0.5;
+	position: absolute;
+	right: 5px;
+	top: 1px;
+	width: 29px;
+}
+.password-eye + input{
+	padding-right: 35px;
+}
+.password-eye:active,
+.password-eye:hover{
+	background: url("../img/icon-eye-c.svg") no-repeat 50% 50%;
+	opacity: 1;
+}
+.password-eye:active + input[type=password],
+.password-eye:hover + input[type=password]{
+	border-color: #70b2c3;
+	color: #70b2c3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*	Header start
 *****************************************************************************/
 
@@ -150,6 +190,7 @@ body{
 	background: #1d2027;
 	float: left;
 	color: #fff;
+	z-index: 10;
 }
 
 .lk-menu .case{display: table;}
@@ -407,7 +448,7 @@ body{
 
 
 .lk-table_employees{}
-.lk-table_employees .employees-photo{
+.lk-table .employees-photo{
 	width: 64px;
 	height: 64px;
 	background: #3eb4c5 url("../img/employees-photo.svg") no-repeat 50% 50%;
@@ -440,8 +481,11 @@ body{
 .lk-table_notify-list tr:hover td{ background: #f5f5f5;}
 .lk-table_notify-list tr.active td{ color: #4b4b4b; font-weight: 600;}
 .lk-table_notify-list td{vertical-align: middle;}
-.lk-table_notify-list .date{
+.lk-table .date{
 	width: 130px;
+}
+.lk-table .td-checkbox{
+	width: 30px;
 }
 .lk-table_notify-list .last{
 	font-size: 16px;
@@ -727,7 +771,7 @@ body{
 	width: 100%;
 	padding-bottom: 50px;
 }
-.object-add__container .next{
+.object-add .next{
 	text-align: center;
 }
 .object-add__container hr{
@@ -763,17 +807,34 @@ body{
 .object-add__example-inner{
 	position: relative;
 }
+.object-add__example-inner .example-item{
+	display: none;
+}
+.object-add__example-inner .example-item.active{
+	display: block;
+}
 .object-add__example-scroll{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
+	position: relative;
+}
+.object-add__example .example-item{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 
 	border-left: 1px solid #e7e7e7;
 	padding: 15px 50px 15px 30px;
+	overflow: hidden;
+	margin-top: -10px;
+}
+.object-add__example .example-item:before{
+	content: '';
+	display: block;
+	position: absolute;
+	border: 8px solid transparent;
+	border-left-color: #959595;
+	top: 22px;
+	z-index: 10;
+	left: 0px;
 }
 .object-example__title{
 	font-size: 20px;
@@ -811,7 +872,11 @@ body{
 	color: #959595;
 	/*width: 100%;*/
 	margin-right: 25px;
+	padding: 3px;
+	position: relative;
 }
+
+
 .object-add__item .field-label{
 	width: 140px;
 	float: left;
@@ -1175,6 +1240,7 @@ textarea ~ .input__notepad{
 .object-add__item_addfile .field-box{margin-left: 0; margin-bottom: 30px}
 .object-add__item_addfile .field-item_file .file-img{border: 1px solid #cfcfcf;background: #f5f5f5;position: relative;}
 .object-add__item_addfile .field-item_file-upload .file-img{background: #f5f5f5 url("../img/photo.svg") no-repeat 50% 50%;}
+.object-add__item_addfile .js-upload-new-file{cursor: pointer;}
 .object-add__item_addfile .field-item_file .file-img img{width: 100%;display: block;}
 .object-add__item_addfile .field-item_file .file-name{text-align: center;}
 .object-add__item_addfile .field-item_file .file-progress{
@@ -1201,7 +1267,7 @@ textarea ~ .input__notepad{
 }
 .object-add__item_addfile .field-item_file .file-name .file-name__size{color: #939393;vertical-align: top;}
 .object-add__item_addfile .field-item_file .file-footnote{text-align: center;}
-.object-add__item_addfile .field-item_file .file-footnote .footnote-link{display:inline-block;margin: 0 5px;}
+.object-add__item_addfile .field-item_file .file-footnote .footnote-link{display:inline-block;margin: 0 5px;cursor: pointer;}
 .object-add__item_addfile .field-item_file .file-footnote .footnote-link:hover{text-decoration: underline;}
 
 .object-add__item_contact-phone .field-item_input {padding-left: 10px;}
@@ -1225,11 +1291,17 @@ textarea ~ .input__notepad{
 
 
 
+.object-add__item_passchange .field-item_input{width: 250px}
+.object-add__item_passchange .field-item_btn{width: auto}
 
 
 
 
 
+textarea.error,
+.error textarea,
+input.error,
+.error input{border-color: #f00!important;}
 
 
 
