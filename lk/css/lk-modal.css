@@ -381,6 +381,11 @@
 
 
 .nest{}
+.modal-region .nest{
+	max-height: 200px;
+	overflow: hidden;
+	position: relative;
+}
 .nest-list{
 	margin-left: 20px;
 }
