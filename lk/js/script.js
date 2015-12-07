@@ -93,10 +93,12 @@ $(function () {
 
 	$('.modal-emploeeysrights__body').mCustomScrollbar();
 	$('.modal-emploeeysobject__body .objects-wrap').mCustomScrollbar();
+	$('.modal-region .nest').mCustomScrollbar();
 
 	$(document).on('ajaxComplete', function(){
 		$('.modal-emploeeysrights__body').mCustomScrollbar();
 		$('.modal-emploeeysobject__body .objects-wrap').mCustomScrollbar();
+		$('.modal-region .nest').mCustomScrollbar();
 	});
 
 // << modals
