@@ -15,6 +15,7 @@
 	<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
 	<script type="text/javascript" src="js/mCustomScrollbar.min.js"></script>
 	<script type="text/javascript" src="js/keyboard.js"></script>
+	<script type="text/javascript" src="js/dropzone.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
 
@@ -308,14 +309,14 @@
 	<div class="lk-content">
 		<div class="lk-content__head">
 			<div class="title">Реквизиты</div>
-			<div class="right"><a href="#" onclick="$('.modal-addcompany').showModalLk();" class="btn btn_add btn_green"><i class="plus"></i>Добавить компанию</span></a></div>
+			<div class="right"><a href="#" onclick="$('.modal-addchain').showModalLk();" class="btn btn_add btn_green"><i class="plus"></i>Добавить сеть</span></a></div>
 		</div>
 
 		<div class="lk-content__body">
 			<table class="lk-table">
 				<tbody>
 				<tr>
-					<td colspan="6">
+					<td colspan="7">
 						<label class="checkbox-case">
 							<input type="checkbox">
 							<i class="marker"></i>
@@ -331,18 +332,22 @@
 						</label>
 					</td>
 					<td class="employees-td_img">
-						<div class="employees-photo"><img src="img/temp/user-photo-3.jpg" alt=""></div>
+						<div class="employees-photo"><img src="img/temp/user-logo.jpg" alt=""></div>
 					</td>
 					<td>
-						<div class="text-main">ООО «Газпром»</div>
-						<div class="text-footnote">ИНН: 521465825</div>
+						<div class="text-main">Alex Fitness</div>
+						<div class="text-footnote">сеть спортивных клубов</div>
 					</td>
 					<td>
-						E-mail : <span class="color-c">cash@kremlin.ru</span><br>
-						Мобильный : <span class="color-c">+79110001100</span>
+						E-Объекты : <span class="color-c">55</span><br>
+						Сотрудники : <span class="color-c">10</span>
 					</td>
 					<td>
-						Юр.адрес :<span class="color-c">Москва, Кремль</span>
+						Новости :<span class="color-c">20</span><br>
+						Мероприятия : <span class="color-c">20</span>
+					</td>
+					<td>
+						Средний рейтинг : <span class="color-c">4,9</span>
 					</td>
 					<td align="right">
 						<a href="#" class="btn">Редактировать</a>
@@ -357,18 +362,22 @@
 						</label>
 					</td>
 					<td class="employees-td_img">
-						<div class="employees-photo"><img src="img/temp/user-photo-4.jpg" alt=""></div>
+						<div class="employees-photo"><img src="img/temp/user-logo.jpg" alt=""></div>
 					</td>
 					<td>
-						<div class="text-main">ООО «Народ»</div>
-						<div class="text-footnote">ИНН: 521465825</div>
+						<div class="text-main">Alex Fitness</div>
+						<div class="text-footnote">сеть спортивных клубов</div>
 					</td>
 					<td>
-						E-mail : <span class="color-c">deneg_net@krim_nash.ru</span><br>
-						Мобильный : <span class="color-c">+79110001100</span>
+						E-Объекты : <span class="color-c">55</span><br>
+						Сотрудники : <span class="color-c">10</span>
 					</td>
 					<td>
-						Юр.адрес : <span class="color-c">Магадан, колония номер 17, койка 35</span>
+						Новости :<span class="color-c">20</span><br>
+						Мероприятия : <span class="color-c">20</span>
+					</td>
+					<td>
+						Средний рейтинг : <span class="color-c">4,9</span>
 					</td>
 					<td align="right">
 						<a href="#" class="btn">Редактировать</a>
@@ -378,7 +387,7 @@
 				</tbody>
 				<tfoot>
 				<tr>
-					<td colspan="6">
+					<td colspan="7">
 						<label class="checkbox-case">
 							<input type="checkbox">
 							<i class="marker"></i>
@@ -396,189 +405,20 @@
 				</tr>
 				</tfoot>
 			</table>
-			<a href="#" onclick="$('.modal-addcompany').showModalLk();" class="btn btn_add btn_green"><i class="plus"></i>Добавить компанию</span></a>
+			<a href="#" onclick="$('.modal-addchain').showModalLk();" class="btn btn_add btn_green"><i class="plus"></i>Добавить сеть</span></a>
 		</div>
 	</div>
 
 </div><!-- .wrapper -->
 
-<div class="modal modal-addcompany">
+<div class="modal modal-addchain">
 	<div class="modal-overlay"></div>
 	<div class="modal-inner tabs">
 		<span class="modal-close"></span>
-			<div class="title">Добавить новую компанию</div>
+			<div class="title">Добавить новую сеть</div>
 
 			<div class="object-add__item">
-				<div class="field-label">Наименование организации с формой собственности</div>
-				<div class="field-box">
-					<div class="field-item field-item_input">
-						<div class="js-input-wrap">
-							<input type="text" class="js-input-targ" placeholder="">
-							<div class="input__notepad js-input-notepad"></div>
-							<div class="input__clear js-input-clear"></div>
-						</div>
-						<div class="field-footnote">
-							Пример заполнения:<br>
-							- ООО «Спортивная Страна»<br>
-							- Филиал ООО «Спортивная Страна» в г.Санкт-Петербурге<br>
-							- Некомерческая организация ФГУП «Спортивная Страна»
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="object-add__item">
-				<div class="field-label">Юридический адрес</div>
-				<div class="field-box">
-					<div class="field-item field-item_input">
-						<div class="js-input-wrap">
-							<input type="text" class="js-input-targ" placeholder="">
-							<div class="input__notepad js-input-notepad"></div>
-							<div class="input__clear js-input-clear"></div>
-						</div>
-						<div class="field-footnote"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="object-add__item object-add__checkbox">
-				<div class="field-label">Фактический адрес</div>
-				<div class="field-box">
-					<div class="field-item field-item_checkbox">
-						<label class="checkbox-case">
-							<input type="checkbox">
-							<i class="marker"></i>
-							<span>Совпадает с юридическим</span>
-						</label>
-						<div class="field-footnote"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="object-add__item">
-				<div class="field-label"></div>
-				<div class="field-box">
-					<div class="field-item field-item_input">
-						<div class="js-input-wrap">
-							<input type="text" class="js-input-targ" placeholder="">
-							<div class="input__notepad js-input-notepad"></div>
-							<div class="input__clear js-input-clear"></div>
-						</div>
-						<div class="field-footnote"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="object-add__item object-add__item_contact-phone">
-				<div class="field-label">Телефон</div>
-				<div class="field-box">
-
-					<div class="field-item field-item_input field-item_input-short">
-						<div class="js-input-wrap">
-							<input type="text" class="js-input-targ" placeholder="">
-							<div class="input__clear js-input-clear"></div>
-						</div>
-						<div class="field-footnote">Код страны</div>
-					</div>
-
-					<div class="field-item field-item_input field-item_input-short">
-						<div class="js-input-wrap">
-							<input type="text" class="js-input-targ" placeholder="">
-							<div class="input__clear js-input-clear"></div>
-						</div>
-						<div class="field-footnote">Добавочный</div>
-					</div>
-
-					<div class="field-item field-item_input field-item_input-long">
-						<div class="js-input-wrap">
-							<input type="text" class="js-input-targ" placeholder="">
-							<div class="input__clear js-input-clear"></div>
-						</div>
-						<div class="field-footnote">Телефон</div>
-					</div>
-
-					<div class="field-item field-item_input field-item_input-short">
-						<div class="js-input-wrap">
-							<input type="text" class="js-input-targ" placeholder="">
-							<div class="input__clear js-input-clear"></div>
-						</div>
-						<div class="field-footnote">Офис</div>
-					</div>
-
-					<div class="field-box__add"></div>
-				</div>
-			</div>
-
-			<div class="object-add__item object-add__item_contact-phone">
-				<div class="field-label">Факс</div>
-				<div class="field-box">
-
-					<div class="field-item field-item_input field-item_input-short">
-						<div class="js-input-wrap">
-							<input type="text" class="js-input-targ" placeholder="">
-							<div class="input__clear js-input-clear"></div>
-						</div>
-						<div class="field-footnote">Код страны</div>
-					</div>
-
-					<div class="field-item field-item_input field-item_input-short">
-						<div class="js-input-wrap">
-							<input type="text" class="js-input-targ" placeholder="">
-							<div class="input__clear js-input-clear"></div>
-						</div>
-						<div class="field-footnote">Добавочный</div>
-					</div>
-
-					<div class="field-item field-item_input field-item_input-long">
-						<div class="js-input-wrap">
-							<input type="text" class="js-input-targ" placeholder="">
-							<div class="input__clear js-input-clear"></div>
-						</div>
-						<div class="field-footnote">Факс</div>
-					</div>
-
-					<div class="field-item field-item_input field-item_input-short">
-						<div class="js-input-wrap">
-							<input type="text" class="js-input-targ" placeholder="">
-							<div class="input__clear js-input-clear"></div>
-						</div>
-						<div class="field-footnote">Офис</div>
-					</div>
-
-					<div class="field-box__add"></div>
-				</div>
-			</div>
-
-			<div class="object-add__item object-add__item_contact-email">
-				<div class="field-label">E-mail </div>
-				<div class="field-box">
-
-					<div class="field-item field-item_input">
-						<div class="js-input-wrap">
-							<input type="text" class="js-input-targ" placeholder="">
-						</div>
-						<div class="field-footnote"></div>
-					</div>
-					<div class="field-box__add"></div>
-				</div>
-			</div>
-
-			<div class="object-add__item object-add__item_rekv-1">
-				<div class="field-label">ИНН</div>
-				<div class="field-box">
-					<div class="field-item field-item_input">
-						<div class="js-input-wrap">
-							<input type="text" class="js-input-targ" placeholder="">
-							<div class="input__notepad js-input-notepad"></div>
-							<div class="input__clear js-input-clear"></div>
-						</div>
-						<div class="field-footnote"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="object-add__item object-add__item_rekv-1">
-				<div class="field-label">КПП</div>
+				<div class="field-label">Название</div>
 				<div class="field-box">
 					<div class="field-item field-item_input">
 						<div class="js-input-wrap">
@@ -592,7 +432,7 @@
 			</div>
 
 			<div class="object-add__item">
-				<div class="field-label">Название банка</div>
+				<div class="field-label">Краткое описание</div>
 				<div class="field-box">
 					<div class="field-item field-item_input">
 						<div class="js-input-wrap">
@@ -605,44 +445,25 @@
 				</div>
 			</div>
 
-			<div class="object-add__item object-add__item_rekv-2">
-				<div class="field-label">БИК</div>
+			<div class="object-add__item object-add__item_addfile">
+				<div class="field-label">Добавьте  изображения</div>
 				<div class="field-box">
-					<div class="field-item field-item_input">
-						<div class="js-input-wrap">
-							<input type="text" class="js-input-targ" placeholder="">
-							<div class="input__notepad js-input-notepad"></div>
-							<div class="input__clear js-input-clear"></div>
+					<div class="field-dropzone">
+						<div class="dropzone" data-url="/lk/upload.php">
+							<div class="dropzone-case js-upload-files-container"></div>
+							<div class="field-item field-item_file field-item_file-upload">
+								<div class="file-img"><img src="img/240x170.gif"></div>
+								<div class="file-name"></div>
+								<div class="field-footnote">
+								</div>
+							</div>
+							<div class="field-item field-item_file field-item_file-upload ">
+								Вы можете загрузить изображение в формате JPG, GIF, или PNG.
+								<br>
+								<br>
+								<span class="btn js-upload-new-file">Выбрать файл</span>
+							</div>
 						</div>
-						<div class="field-footnote"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="object-add__item object-add__item_rekv-2">
-				<div class="field-label">Корреспондентский счет</div>
-				<div class="field-box">
-					<div class="field-item field-item_input">
-						<div class="js-input-wrap">
-							<input type="text" class="js-input-targ" placeholder="">
-							<div class="input__notepad js-input-notepad"></div>
-							<div class="input__clear js-input-clear"></div>
-						</div>
-						<div class="field-footnote"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="object-add__item object-add__item_rekv-2">
-				<div class="field-label">Расчетный счет</div>
-				<div class="field-box">
-					<div class="field-item field-item_input">
-						<div class="js-input-wrap">
-							<input type="text" class="js-input-targ" placeholder="">
-							<div class="input__notepad js-input-notepad"></div>
-							<div class="input__clear js-input-clear"></div>
-						</div>
-						<div class="field-footnote"></div>
 					</div>
 				</div>
 			</div>

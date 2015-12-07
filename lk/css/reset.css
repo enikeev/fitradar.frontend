@@ -115,3 +115,19 @@ input{
 	margin: 0 10px;
 }
 
+
+.tooltip-link{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
+	background: url("../img/ico-tooltip.svg") no-repeat 50% 50%;
+	border: 1px solid #cfcfcf;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+	margin: 0 5px;
+}

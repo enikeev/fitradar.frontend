@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>Настройки оповещений</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+	<meta name=viewport content="width=device-width, initial-scale=1">
+
+	<link href="css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
+	<script type="text/javascript" src="js/mCustomScrollbar.min.js"></script>
+	<script type="text/javascript" src="js/keyboard.js"></script>
+	<script type="text/javascript" src="js/datepicker.js"></script>
+	<script type="text/javascript" src="js/dropzone.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+<div class="lk-wrapper">
+
+	<div class="lk-menu">
+		<div class="lk-menu__inner">
+			<div class="lk-menu__header">
+				<a href="#" class="lk-menu__logo">
+					<img src="img/logo-big.svg" alt="">
+				</a>
+			</div>
+			<div class="lk-menu__body">
+				<div class="lk-menu__user">
+					<div class="case">
+						<div class="case-img"><img src="img/temp/user-logo.jpg" alt=""></div>
+						<div class="case-name">Alex Fitness</div>
+					</div>
+				</div>
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_user"></i></div>
+							<div class="case-name">ДАННЫЕ КОМПАНИИ</div>
+							<div class="case-amount"><span class="new">1</span></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item active"><a href="#" class="group-link">Общие данные</a> <div class="amount"><span>1</span></div></li>
+							<li class="group-item"><a href="#" class="group-link">Публичные данные</a></li>
+							<li class="group-item"><a href="#" class="group-link">Деятельность</a></li>
+							<li class="group-item"><a href="#" class="group-link">Смена пароля</a></li>
+						</ul>
+						<div>
+							<a href="#" class="btn btn_add">Изменить статус</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_credit"></i></div>
+							<div class="case-name">КОММЕРЧЕСКАЯ ИНФОРМАЦИЯ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Реквизиты</a></li>
+							<li class="group-item"><a href="#" class="group-link">Счета</a></li>
+							<li class="group-item"><a href="#" class="group-link">Баланс</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_mail"></i></div>
+							<div class="case-name">СОБЩЕНИЯ</div>
+							<div class="case-amount"><span class="new">50</span></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Сотрудники</a></li>
+							<li class="group-item"><a href="#" class="group-link">Посетители</a></li>
+							<li class="group-item"><a href="#" class="group-link">Служба поддержки</a></li>
+							<li class="group-item"><a href="#" class="group-link">Все сообщения</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_bell"></i></div>
+							<div class="case-name">ОПОВЕЩЕНИЯ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Персональные тренеры</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные клубы</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные секции</a></li>
+							<li class="group-item"><a href="#" class="group-link">Аренда площадок</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные магазины</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные магазины</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивная медицина</a></li>
+							<li class="group-item"><a href="#" class="group-link">Активный отдых</a></li>
+							<li class="group-item"><a href="#" class="group-link">Туристические базы</a></li>
+							<li class="group-item"><a href="#" class="group-link">Новости</a></li>
+							<li class="group-item"><a href="#" class="group-link">Мероприятия</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_dialog"></i></div>
+							<div class="case-name">ОТЗЫВЫ</div>
+							<div class="case-amount"><span class="">99+</span></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item">
+								<a href="#" class="">
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+								</a>
+							</li>
+							<li class="group-item">
+								<a href="#" class="">
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+								</a>
+							</li>
+							<li class="group-item">
+								<a href="#" class="">
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+								</a>
+							</li>
+							<li class="group-item">
+								<a href="#" class="">
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-w"></i>
+								</a>
+							</li>
+							<li class="group-item">
+								<a href="#" class="">
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+								</a>
+							</li>
+							<li class="group-item"><a href="#" class="group-link">Все отзывы</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_bag"></i></div>
+							<div class="case-name">СОТРУДНИКИ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Все сотрудники</a></li>
+							<li class="group-item"><a href="#" class="group-link">Уволенные</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_house"></i></div>
+							<div class="case-name">ОБЪЕКТЫ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Персональные тренеры</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные секции</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные секции</a></li>
+							<li class="group-item"><a href="#" class="group-link">Аренда площадок</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные магазины</a></li>
+							<li class="group-item"><a href="#" class="group-link">Детский спорт</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивная медицина</a></li>
+							<li class="group-item"><a href="#" class="group-link">Активный отдых</a></li>
+							<li class="group-item"><a href="#" class="group-link">Туристические базы</a></li>
+							<li class="group-item"><a href="#" class="group-link">Все объекты</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_book"></i></div>
+							<div class="case-name">НОВОСТИ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Все новости</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить новость</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_cal"></i></div>
+							<div class="case-name">МЕРОПРИЯТИЯ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Все мероприятия</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить мероприятие</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_setting"></i></div>
+							<div class="case-name">НАСТРОЙКИ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Настройки сайта</a></li>
+							<li class="group-item"><a href="#" class="group-link">Настройки оповещения</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="lk-menu__group">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_stat"></i></div>
+							<div class="case-name">СТАТИСТИКА</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="lk-menu__footer">
+				<a href="#" class="btn btn_add btn_orange">ТАРИФЫ</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="lk-content">
+
+		<div class="lk-content__body">
+			<div class="object-add">
+				<div class="object-add__container">
+					<div class="object-add__container-inner">
+						<div class="title">Основная информация</div>
+						<div class="object-add__group" data-example-link="field_01">
+
+							<div class="object-add__item">
+								<div class="field-label">Публикатор мероприятия</div>
+								<div class="field-box">
+									<div class="field-item field-item_select">
+										<select>
+											<option>Выберите из списка</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>
+										<div class="field-footnote"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="object-add__item object-add__item_objectname">
+								<div class="field-label">Название объекта</div>
+								<div class="field-box">
+									<div class="field-item field-item_input">
+										<div class="js-input-wrap">
+											<input type="text" class="js-input-targ" placeholder="">
+											<div class="input__notepad js-input-notepad"></div>
+											<div class="input__clear js-input-clear"></div>
+										</div>
+										<div class="field-footnote"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="object-add__item object-add__item_worktime">
+								<div class="field-label">Время работы</div>
+								<div class="field-box">
+
+									<div class="field-item field-item_date">
+										<div class="input-wrap">
+											<input class="date-input" type="text" value="">
+										</div>
+										<div class="field-footnote">дата</div>
+									</div>
+
+									<div class="field-item field-item_select">
+										<div class="field-item__one">
+											<select>
+												<option value="00">00</option><option value="01">01</option><option value="02">02</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10" selected>10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option>
+											</select>
+										</div>
+										<div class="field-item__devider">
+											:
+										</div>
+										<div class="field-item__one">
+											<select>
+												<option selected>00</option><option>05</option><option>10</option><option>15</option><option>20</option><option>25</option><option>30</option><option>35</option><option>40</option><option>45</option><option>50</option><option>55</option>
+											</select>
+										</div>
+										<div class="field-item__devider-long">
+											&mdash;
+										</div>
+										<div class="field-item__one">
+											<select>
+												<option value="00">00</option><option value="01">01</option><option value="02">02</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10" selected>10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option>
+											</select>
+										</div>
+										<div class="field-item__devider">
+											:
+										</div>
+										<div class="field-item__one">
+											<select>
+												<option selected>00</option><option>05</option><option>10</option><option>15</option><option>20</option><option>25</option><option>30</option><option>35</option><option>40</option><option>45</option><option>50</option><option>55</option>
+											</select>
+										</div>
+										<div class="field-footnote">время</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="js-tab-wrap">
+
+								<div class="object-add__item object-add__item_tabs">
+									<div class="field-label">Место проведения</div>
+									<div class="field-box">
+										<div class="field-item field-item_btns">
+											<span class="btn btn_brdr active" data-tab-link="t1">Адрес объекта</span>
+											<span class="btn btn_brdr" data-tab-link="t2">Другой адрес</span>
+											<div class="field-footnote"></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="tab-item active" data-tab-item="t1">
+
+									<div class="object-add__item">
+										<div class="field-label"></div>
+										<div class="field-box">
+											<div class="field-item field-item_list">
+												<div class="list-title">Выберите из списка</div>
+												<div class="list-wrap js-tab-wrap">
+													<div class="list-search">
+														<div class="js-input-wrap">
+															<input type="text" class="js-input-targ" placeholder="">
+															<div class="input__notepad js-input-notepad"></div>
+															<div class="input__search js-input-search"></div>
+															<div class="input__clear js-input-clear"></div>
+														</div>
+													</div>
+													<div class="list-menu">
+														<span class="btn btn_brdr active" data-tab-link="st1">Все</span>
+														<span class="btn btn_brdr" data-tab-link="st2">Мои объекты</span>
+														<span class="btn btn_brdr" data-tab-link="st3">Другие объекты</span>
+													</div>
+													<div class="tab-item active" data-tab-item="st1">
+														<div class="list">
+															<div class="list-item_object" data-val="01"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness </div> </div> </div>
+															<div class="list-item_object" data-val="02"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 2</div> </div> </div>
+															<div class="list-item_object" data-val="03"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 3</div> </div> </div>
+															<div class="list-item_object" data-val="04"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 4</div> </div> </div>
+															<div class="list-item_object" data-val="05"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 5</div> </div> </div>
+															<div class="list-item_object" data-val="06"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 6</div> </div> </div>
+															<div class="list-item_object" data-val="07"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 7</div> </div> </div>
+															<div class="list-item_object" data-val="08"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 8</div> </div> </div>
+															<div class="list-item_object" data-val="09"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 9</div> </div> </div>
+															<div class="list-item_object" data-val="10"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 10</div> </div> </div>
+															<div class="list-item_object" data-val="11"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 11</div> </div> </div>
+															<div class="list-item_object" data-val="12"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 12</div> </div> </div>
+															<div class="list-item_object" data-val="13"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 13</div> </div> </div>
+														</div>
+													</div>
+													<div class="tab-item" data-tab-item="st2">
+														<div class="list">
+															<div class="list-item_object" data-val="01"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 14</div> </div> </div>
+															<div class="list-item_object" data-val="02"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 15</div> </div> </div>
+															<div class="list-item_object" data-val="03"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 16</div> </div> </div>
+															<div class="list-item_object" data-val="04"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 17</div> </div> </div>
+															<div class="list-item_object" data-val="05"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 18</div> </div> </div>
+															<div class="list-item_object" data-val="11"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 19</div> </div> </div>
+															<div class="list-item_object" data-val="12"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 20</div> </div> </div>
+															<div class="list-item_object" data-val="13"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 21</div> </div> </div>
+														</div>
+													</div>
+													<div class="tab-item" data-tab-item="st3">
+														<div class="list">
+															<div class="list-item_object" data-val="01"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 22</div> </div> </div>
+															<div class="list-item_object" data-val="12"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 23</div> </div> </div>
+															<div class="list-item_object" data-val="13"><div class="obj-case"><div class="obj-case__img"><img src="img/temp/obj-0001.jpg" alt=""></div><div class="obj-case__info"> Alex Fitness 24</div> </div> </div>
+														</div>
+													</div>
+												</div>
+												<div class="field-footnote"></div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="tab-item" data-tab-item="t2">
+
+									<div class="object-add__item object-add__item_location-country">
+										<div class="field-label">Местоположение</div>
+										<div class="field-box">
+											<div class="field-item field-item_select">
+												<select>
+													<option>Россия</option>
+													<option>Украина</option>
+													<option>Белорусия</option>
+												</select>
+												<div class="field-footnote">Страна</div>
+											</div>
+											<div class="field-item field-item_select">
+												<select>
+													<option></option>
+												</select>
+												<div class="field-footnote">Город</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="object-add__item object-add__item_location-address">
+										<div class="field-label">Адрес</div>
+										<div class="field-box">
+											<div class="field-item field-item_input field-item_input-long">
+												<div class="js-input-wrap">
+													<input type="text" class="js-input-targ" placeholder="">
+													<div class="input__clear js-input-clear"></div>
+												</div>
+												<div class="field-footnote">Улица</div>
+											</div>
+
+											<div class="field-item field-item_input field-item_input-short">
+												<div class="js-input-wrap">
+													<input type="text" class="js-input-targ" placeholder="">
+													<div class="input__clear js-input-clear"></div>
+												</div>
+												<div class="field-footnote">Дом</div>
+											</div>
+
+											<div class="field-item field-item_input field-item_input-short">
+												<div class="js-input-wrap">
+													<input type="text" class="js-input-targ" placeholder="">
+													<div class="input__clear js-input-clear"></div>
+												</div>
+												<div class="field-footnote">Корпус</div>
+											</div>
+
+											<div class="field-item field-item_input field-item_input-short">
+												<div class="js-input-wrap">
+													<input type="text" class="js-input-targ" placeholder="">
+													<div class="input__clear js-input-clear"></div>
+												</div>
+												<div class="field-footnote">Офис</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="object-add__item object-add__item_location-map">
+										<div class="field-label">
+											Положение на карте
+										</div>
+										<div class="field-box">
+
+											<div class="field-item field-item_map">
+												<div class="field-footnote">
+													определено с точностью до дома
+													<span class="map-switch">отметить на карте</span>
+												</div>
+												<div class="map"></div>
+												<div class="field-footnote"></div>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="object-add__item object-add__item_location-coord">
+										<div class="field-label">Координаты GPS</div>
+										<div class="field-box">
+											<div class="field-item field-item_input">
+												<div class="js-input-wrap">
+													<input type="text" class="js-input-targ" placeholder="">
+												</div>
+												<div class="field-footnote">Долгота</div>
+											</div>
+
+											<div class="field-item field-item_input">
+												<div class="js-input-wrap">
+													<input type="text" class="js-input-targ" placeholder="">
+												</div>
+												<div class="field-footnote">Широта</div>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="object-add__item object-add__item_location-subway">
+										<div class="field-label">Ближайшее метро</div>
+										<div class="field-box">
+											<div class="field-item field-item_list">
+												<div class="list-title">Выберите из списка</div>
+												<div class="list-wrap">
+													<div class="list-search">
+														<div class="js-input-wrap">
+															<input type="text" class="js-input-targ" placeholder="">
+															<div class="input__notepad js-input-notepad"></div>
+															<div class="input__search js-input-search"></div>
+															<div class="input__clear js-input-clear"></div>
+														</div>
+													</div>
+													<div class="list">
+														<div class="list-item" data-val="01"><i class="list-item__bullet" style="background-color: #941a81;"></i> Спортивный клуб 01</div>
+														<div class="list-item" data-val="02"><i class="list-item__bullet" style="background-color: #d2c625;"></i> Спортивный клуб 02</div>
+														<div class="list-item" data-val="03"><i class="list-item__bullet" style="background-color: #d2c625;"></i> Спортивный клуб 03</div>
+														<div class="list-item" data-val="04"><i class="list-item__bullet" style="background-color: #11958c;"></i> Спортивный клуб 04</div>
+														<div class="list-item" data-val="05"><i class="list-item__bullet" style="background-color: #2e34be;"></i> Спортивный клуб 05</div>
+														<div class="list-item" data-val="06"><i class="list-item__bullet" style="background-color: #939393;"></i> Спортивный клуб 06</div>
+														<div class="list-item" data-val="07"><i class="list-item__bullet" style="background-color: #cc2528;"></i> Спортивный клуб 07</div>
+														<div class="list-item" data-val="08"><i class="list-item__bullet" style="background-color: #ff00f0;"></i> Спортивный клуб 08</div>
+														<div class="list-item" data-val="09"><i class="list-item__bullet" style="background-color: #aec748;"></i> Спортивный клуб 09</div>
+														<div class="list-item" data-val="10"><i class="list-item__bullet" style="background-color: #a6c923;"></i> Спортивный клуб 10</div>
+														<div class="list-item" data-val="11"><i class="list-item__bullet" style="background-color: #86a321;"></i> Спортивный клуб 11</div>
+														<div class="list-item" data-val="12"><i class="list-item__bullet" style="background-color: #109ece;"></i> Спортивный клуб 12</div>
+														<div class="list-item" data-val="13"><i class="list-item__bullet" style="background-color: #332b7f;"></i> Спортивный клуб 13</div>
+													</div>
+												</div>
+												<div class="field-footnote"></div>
+											</div>
+											<div class="field-item field-item_list-result">
+												<div class="list-title">Активные объекты</div>
+												<div class="list-wrap">
+													<div class="list-item" data-val="01"><i class="list-item__bullet" style="background-color: #2e34be;"></i> Спортивный клуб 01 <i class="list-item__remove"></i></div>
+													<div class="list-item" data-val="02"><i class="list-item__bullet" style="background-color: #939393;"></i> Спортивный клуб 02 <i class="list-item__remove"></i></div>
+													<div class="list-item" data-val="03"><i class="list-item__bullet" style="background-color: #cc2528;"></i> Спортивный клуб 03 <i class="list-item__remove"></i></div>
+													<div class="list-item" data-val="04"><i class="list-item__bullet" style="background-color: #ff00f0;"></i> Спортивный клуб 04 <i class="list-item__remove"></i></div>
+													<div class="list-item" data-val="05"><i class="list-item__bullet" style="background-color: #aec748;"></i> Спортивный клуб 05 <i class="list-item__remove"></i></div>
+												</div>
+												<div class="field-footnote"></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="object-add__item object-add__item_location-path">
+										<div class="field-label">Как добраться</div>
+										<div class="field-box">
+											<div class="field-item field-item_select">
+												<select>
+													<option>Выбрать из списка</option>
+													<option>Поездом</option>
+													<option>Автомобилем</option>
+													<option>Самолетом</option>
+												</select>
+												<div class="field-footnote"></div>
+											</div>
+
+											<div class="field-item field-item_input">
+												<div class="js-input-wrap">
+													<input type="text" class="js-input-targ" placeholder="">
+												</div>
+												<div class="field-footnote">Укажите номер транспорта через запятую</div>
+											</div>
+
+											<div class="field-box__add"></div>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="object-add__item object-add__item_services-name">
+								<div class="field-label">Сайт</div>
+								<div class="field-box">
+									<div class="field-item field-item_input">
+										<div class="js-input-wrap">
+											<input type="text" class="js-input-targ" placeholder="">
+											<div class="input__notepad js-input-notepad"></div>
+											<div class="input__clear js-input-clear"></div>
+										</div>
+										<div class="field-footnote"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="object-add__group" data-example-link="field_01">
+
+								<div class="object-add__item object-add__item_addfile">
+									<div class="field-label">Добавьте  изображения</div>
+									<div class="field-box">
+										<div class="field-dropzone">
+											<div class="dropzone" data-url="/lk/upload.php">
+												<div class="dropzone-case js-upload-files-container"></div>
+												<div class="field-item field-item_file field-item_file-upload">
+													<div class="file-img"><img src="img/240x170.gif"></div>
+													<div class="file-name"></div>
+													<div class="field-footnote">
+													</div>
+												</div>
+												<div class="field-item field-item_file field-item_file-upload ">
+													Вы можете загрузить изображение в формате JPG, GIF, или PNG.
+													<br>
+													<br>
+													<span class="btn js-upload-new-file">Выбрать файл</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="object-add__item">
+								<div class="field-label">Анонс</div>
+								<div class="field-box">
+									<div class="field-item field-item_textarea">
+										<div class="js-input-wrap">
+											<textarea class="js-input-targ"></textarea>
+											<div class="input__notepad js-input-notepad"></div>
+											<div class="input__clear js-input-clear"></div>
+										</div>
+										<div class="field-footnote"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="object-add__item">
+								<div class="field-label">Текст мероприятия</div>
+								<div class="field-box">
+									<div class="field-item field-item_textarea">
+										<div class="js-input-wrap">
+											<textarea class="js-input-targ"></textarea>
+											<div class="input__notepad js-input-notepad"></div>
+											<div class="input__clear js-input-clear"></div>
+										</div>
+										<div class="field-footnote"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="object-add__item object-add__item_moreobjtypes">
+								<div class="field-label">Виды спорта</div>
+								<div class="field-box">
+									<div class="field-item field-item_list">
+										<div class="list-title">Выберите из списка</div>
+										<div class="list-wrap">
+											<div class="list-search">
+												<div class="js-input-wrap">
+													<input type="text" class="js-input-targ" placeholder="">
+													<div class="input__notepad js-input-notepad"></div>
+													<div class="input__search js-input-search"></div>
+													<div class="input__clear js-input-clear"></div>
+												</div>
+											</div>
+											<div class="list">
+												<div class="list-item" data-val="01">Вид спорта</div>
+												<div class="list-item" data-val="02">Вид спорта</div>
+												<div class="list-item" data-val="03">Вид спорта</div>
+												<div class="list-item" data-val="04">Вид спорта</div>
+												<div class="list-item" data-val="05">Вид спорта</div>
+												<div class="list-item" data-val="06">Вид спорта</div>
+												<div class="list-item" data-val="07">Вид спорта</div>
+												<div class="list-item" data-val="08">Вид спорта</div>
+												<div class="list-item" data-val="09">Вид спорта</div>
+												<div class="list-item" data-val="10">Вид спорта</div>
+												<div class="list-item" data-val="11">Вид спорта</div>
+												<div class="list-item" data-val="12">Вид спорта</div>
+												<div class="list-item" data-val="13">Вид спорта</div>
+											</div>
+										</div>
+										<div class="field-footnote"></div>
+									</div>
+									<div class="field-item field-item_list-result">
+										<div class="list-title">Активные объекты</div>
+										<div class="list-wrap">
+											<div class="list-item" data-val="01">Вид спорта <i class="list-item__remove"></i></div>
+											<div class="list-item" data-val="02">Вид спорта <i class="list-item__remove"></i></div>
+											<div class="list-item" data-val="03">Вид спорта <i class="list-item__remove"></i></div>
+											<div class="list-item" data-val="04">Вид спорта <i class="list-item__remove"></i></div>
+											<div class="list-item" data-val="05">Вид спорта <i class="list-item__remove"></i></div>
+										</div>
+										<div class="field-footnote"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="object-add__item object-add__item_services-name">
+								<div class="field-label">Теги</div>
+								<div class="field-box">
+									<div class="field-item field-item_input">
+										<div class="js-input-wrap">
+											<input type="text" class="js-input-targ" placeholder="">
+											<div class="input__notepad js-input-notepad"></div>
+											<div class="input__clear js-input-clear"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="object-add__item object-add__item_services-name">
+								<div class="field-label"></div>
+								<div class="field-box">
+									<div class="field-item field-item_checkbox">
+										<label class="checkbox-case">
+											<input type="checkbox">
+											<i class="marker"></i>
+											<span>Я согласен с правилами размещения мероприятий</span>
+										</label>
+										<div class="field-footnote"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="object-add__item">Подгрузка по скролу (нужно будет устранить баг с многократной подгрузкой при малом кол-ве результатов) Немного переписал логику ЧПУ фильтра на предмет работы со значениями радио-инпутов. Сделал тип фильтра рейтинг с выводом звездочек и обработкой указанных значений + подхватывание из адресной строки. Поправил сортировку по названию, цене, ввел пока рейтинг тренеров - позднее буду переключать в зависимости от типа карточки. Добавил фильтрацию по городу, региону, стране в каталоге. Нужно проверять - у меня работает только по стране т.к. карточек по моему городу нет.На завтра в планах - фильтр в карту + правильная обработка подгружаемого контента при прокрутке.</div>
+
+						</div>
+
+						<div class="object-add__publication">
+							<div class="publication-info">
+								<span class="btn btn_orange">Премиум публикация</span>
+								<span class="publication-message">Мероприятие будет размещена на главной странице сайта</span>
+							</div>
+							<div class="publication-item">
+								<div class="publication-item_top">
+									<div class="left">Премиум публикация в вашем регионе <i class="tooltip-link" data-tooltip-link="tt1"></i></div>
+									<div class="right">359 Р</div>
+								</div>
+								<div class="publication-item_body">
+									<div class="img"><img src="img/temp/publication.jpg" alt=""></div>
+									<div class="info">
+										<div class="info__title">Премиум публикация</div>
+										<div class="info__text">Подгрузка по скролу (нужно будет устранить баг с многократной подгрузкой при малом кол-ве результатов)
+											Немного переписал логику ЧПУ фильтра на предмет работы со значениями </div>
+									</div>
+								</div>
+							</div>
+							<div>
+								<span class="btn btn_orange btn_brdr">Выставить счет</span>
+							</div>
+							<div class="publication-item">
+								<div class="publication-item_top">
+									<div class="left">Премиум публикация в вашем регионе <i class="tooltip-link" data-tooltip-link="tt1"></i></div>
+									<div class="right">1359 Р</div>
+								</div>
+								<div class="publication-item_body">
+									<div class="img"><img src="img/temp/publication.jpg" alt=""></div>
+									<div class="info">
+										<div class="info__title">Премиум публикация</div>
+										<div class="info__text">Подгрузка по скролу (нужно будет устранить баг с многократной подгрузкой при малом кол-ве результатов)
+											Немного переписал логику ЧПУ фильтра на предмет работы со значениями </div>
+									</div>
+								</div>
+							</div>
+							<div>
+								<span class="btn btn_orange btn_brdr">Выставить счет</span>
+							</div>
+							<div class="publication-info">
+								<span class="btn">Обычная публикация</span>
+								<span class="publication-message">Мероприятие будет размещена на страницах выбранных объектов</span>
+							</div>
+
+
+						</div>
+
+					</div>
+				</div>
+
+
+
+				<div class="object-add__example">
+					<div class="object-add__example-inner">
+						<div class="object-add__example-scroll">
+							<div class="example-item" data-example-item="field_01">
+								<div class="object-example__title">Подсказка номер 1</div>
+								<div class="object-example__text">Союз европейских футбольных ассоциаций (UEFA) исключил возможность переноса матча футбольной Лиги чемпионов между бельгийским "Гентом" и российским "Зенитом" на нейтральное поле, передает ТАСС со ссылкой на пресс-службу UEFA.</div>
+								<div class="object-example__text">Пример</div>
+								<div class="object-example__imgs">
+									<div class="photo-item photo-item-3"><span><img src="img/exemp.png" alt=""></span></div>
+									<div class="photo-item photo-item-3"><span><img src="img/exemp.png" alt=""></span></div>
+									<div class="photo-item photo-item-3"><span><img src="img/exemp.png" alt=""></span></div>
+									<div class="photo-item photo-item-4"><span><img src="img/exemp.png" alt=""></span></div>
+									<div class="photo-item photo-item-4"><span><img src="img/exemp.png" alt=""></span></div>
+									<div class="photo-item photo-item-4"><span><img src="img/exemp.png" alt=""></span></div>
+									<div class="photo-item photo-item-4"><span><img src="img/exemp.png" alt=""></span></div>
+								</div>
+							</div>
+
+							<div class="example-item" data-example-item="field_02">
+								<div class="object-example__title">Подсказка номер 2</div>
+								<div class="object-example__text">Тут пока для примера всего две подсказки. Определенные подсказки можно показывать на разные объекты, или сделать для каждого объекта свою подсказку. Выборка происходит по значениям аттрибутов [data-example-link] - объект подсказки, и [data-example-item] - подсказка.</div>
+								<div class="object-example__text">Пример</div>
+								<div class="object-example__imgs">
+									<div class="photo-item photo-item-3"><span><img src="img/exemp.png" alt=""></span></div>
+									<div class="photo-item photo-item-3"><span><img src="img/exemp.png" alt=""></span></div>
+									<div class="photo-item photo-item-3"><span><img src="img/exemp.png" alt=""></span></div>
+									<div class="photo-item photo-item-4"><span><img src="img/exemp.png" alt=""></span></div>
+									<div class="photo-item photo-item-4"><span><img src="img/exemp.png" alt=""></span></div>
+									<div class="photo-item photo-item-4"><span><img src="img/exemp.png" alt=""></span></div>
+									<div class="photo-item photo-item-4"><span><img src="img/exemp.png" alt=""></span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</div><!-- .wrapper -->
+
+<div class="tooltip-popup tooltip-popup__publication" data-tooltip-popup="tt1">
+	<div class="tooltip-popup__close"></div>
+	<div class="tooltip-popup__title">Премиум продажа</div>
+	<div class="tooltip-popup__preview">
+		<div class="img"><img src="img/temp/publication.jpg" alt=""></div>
+		<div class="info">Для повышения эффективности рекламы регион показов объявлений можно уточнить. Это позволяет показывать рекламу тем пользователям, IP-адрес которых соответствует этому региону (по нашей базе данных), а также тем, кто выбрал данный регион в настройках портала.</div>
+	</div>
+	<div class="tooltip-popup__subtitle">Зачем нужно поднимать объявление?</div>
+	<div class="tooltip-popup__text">Для повышения эффективности рекламы регион показов объявлений можно уточнить. Это позволяет показывать рекламу тем пользователям, IP-адрес которых соответствует этому региону (по нашей базе данных), а также тем, кто выбрал данный регион в <a href="#">настройках портала</a>.</div>
+	<div class="tooltip-popup__subtitle">Зачем нужно поднимать объявление?</div>
+	<div class="tooltip-popup__text">Для повышения эффективности рекламы регион показов объявлений можно уточнить. Это позволяет показывать рекламу тем пользователям, IP-адрес которых соответствует этому региону (по нашей базе данных), а также тем, кто выбрал данный регион в <a href="#">настройках портала</a>.</div>
+</div>
+
+
+
+
+</body>
+</html>

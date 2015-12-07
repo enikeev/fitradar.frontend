@@ -14,6 +14,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
 	<script type="text/javascript" src="js/mCustomScrollbar.min.js"></script>
+	<script type="text/javascript" src="js/keyboard.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
 
@@ -330,8 +331,8 @@
 							<i class="marker"></i>
 						</label>
 					</td>
-					<td>
-						<a href="#" class="btn">Настроить</a>
+					<td align="right">
+						<a href="#" class="btn" onclick="$('.modal-region').showModalLk()">Настроить</a>
 					</td>
 				</tr>
 				<tr>
@@ -353,14 +354,15 @@
 							<i class="marker"></i>
 						</label>
 					</td>
-					<td>
-						<a href="#" class="btn">Настроить</a>
+					<td align="right">
+						<a href="#" class="btn" onclick="$('.modal-region').showModalLk()">Настроить</a>
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<div class="text-main">Оповещение о новостях</div>
 						<div class="text-footnote">Оповещение о навостях в выбранных вами регионах и городах</div>
+						<div class="text-footnote color-c">Выбрано: города | вид спорта </div>
 					</td>
 					<td>
 						<label class="checkbox-case">
@@ -376,8 +378,8 @@
 							<i class="marker"></i>
 						</label>
 					</td>
-					<td>
-						<a href="#" class="btn">Настроить</a>
+					<td align="right">
+						<a href="#" class="btn" onclick="$('.modal-region').showModalLk()">Настроить</a>
 					</td>
 				</tr>
 				<tr>
@@ -399,19 +401,357 @@
 							<i class="marker"></i>
 						</label>
 					</td>
-					<td>
-						<a href="#" class="btn">Настроить</a>
+					<td align="right">
+						<a href="#" class="btn" onclick="$('.modal-region').showModalLk()">Настроить</a>
 					</td>
 				</tr>
 				</tbody>
 			</table>
 
 
-			<a href="#" class="btn btn_green">Сохранить</a>
+			<a href="#" class="btn">Сохранить</a>
 		</div>
 	</div>
 
+
+
 </div><!-- .wrapper -->
+
+
+<div class="modal modal-region modal_tabs">
+	<div class="modal-overlay"></div>
+	<div class="modal-inner tabs js-tab-wrap">
+		<span class="modal-close"></span>
+		<ul class="tabs-head">
+			<li class="tab-bookmark active" data-tab-link="t1">Выбор региона</li>
+			<li class="tab-bookmark" data-tab-link="t2">Выбор вида спорта</li>
+		</ul>
+		<div class="tabs-body">
+			<div class="tab-item active" data-tab-item="t1">
+				<div class="title">Выбор региона</div>
+				<div class="text">Для повышения эффективности рекламы регион показов объявлений можно уточнить. Это позволяет показывать рекламу тем пользователям, IP-адрес которых соответствует этому региону (по нашей базе данных), а также тем, кто выбрал данный регион в настройках портала.</div>
+				<div class="field">
+					<div class="input">
+						<div class="js-input-wrap">
+							<input type="text" class="js-input-targ" placeholder="">
+							<div class="input__notepad js-input-notepad"></div>
+							<div class="input__clear js-input-clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="field-wrap">
+					<div class="field field_region">
+						<div class="nest">
+							<ul class="nest-list">
+								<li class="nest-item">
+									<div class="nest-case">
+										<div class="nest-marker"></div>
+										<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Россия</span></label>
+									</div>
+									<ul class="nest-list">
+										<li class="nest-item">
+											<div class="nest-case">
+												<div class="nest-marker"></div>
+												<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Россия</span></label>
+											</div>
+											<ul class="nest-list">
+												<li class="nest-item">
+													<div class="nest-case">
+														<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Россия</span></label>
+													</div>
+												</li>
+												<li class="nest-item">
+													<div class="nest-case">
+														<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Россия</span></label>
+													</div>
+												</li>
+											</ul>
+										</li>
+										<li class="nest-item">
+											<div class="nest-case">
+												<div class="nest-marker"></div>
+												<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Россия</span></label>
+											</div>
+											<ul class="nest-list">
+												<li class="nest-item">
+													<div class="nest-case">
+														<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Россия</span></label>
+													</div>
+												</li>
+												<li class="nest-item">
+													<div class="nest-case">
+														<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Россия</span></label>
+													</div>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+
+								<li class="nest-item">
+									<div class="nest-case">
+										<div class="nest-marker"></div>
+										<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Казахстан</span></label>
+									</div>
+									<ul class="nest-list">
+										<li class="nest-item">
+											<div class="nest-case">
+												<div class="nest-marker"></div>
+												<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Казахстан</span></label>
+											</div>
+											<ul class="nest-list">
+												<li class="nest-item">
+													<div class="nest-case">
+														<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Казахстан</span></label>
+													</div>
+												</li>
+												<li class="nest-item">
+													<div class="nest-case">
+														<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Казахстан</span></label>
+													</div>
+												</li>
+											</ul>
+										</li>
+										<li class="nest-item">
+											<div class="nest-case">
+												<div class="nest-marker"></div>
+												<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Казахстан</span></label>
+											</div>
+											<ul class="nest-list">
+												<li class="nest-item">
+													<div class="nest-case">
+														<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Казахстан</span></label>
+													</div>
+												</li>
+												<li class="nest-item">
+													<div class="nest-case">
+														<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Казахстан</span></label>
+													</div>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+
+								<li class="nest-item">
+									<div class="nest-case">
+										<div class="nest-marker"></div>
+										<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Украина</span></label>
+									</div>
+									<ul class="nest-list">
+										<li class="nest-item">
+											<div class="nest-case">
+												<div class="nest-marker"></div>
+												<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Украина</span></label>
+											</div>
+											<ul class="nest-list">
+												<li class="nest-item">
+													<div class="nest-case">
+														<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Украина</span></label>
+													</div>
+												</li>
+												<li class="nest-item">
+													<div class="nest-case">
+														<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Украина</span></label>
+													</div>
+												</li>
+											</ul>
+										</li>
+										<li class="nest-item">
+											<div class="nest-case">
+												<div class="nest-marker"></div>
+												<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Украина</span></label>
+											</div>
+											<ul class="nest-list">
+												<li class="nest-item">
+													<div class="nest-case">
+														<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Украина</span></label>
+													</div>
+												</li>
+												<li class="nest-item">
+													<div class="nest-case">
+														<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Украина</span></label>
+													</div>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="field field_fast">
+						<div class="fast-title">Быстрый выбор:</div>
+						<div>
+							<span class="fast-link js-add-to-region">Москва и область</span><br>
+							<span class="fast-link js-add-to-region">Санкт-Петербург и область</span><br>
+							<span class="fast-link js-add-to-region">Украина</span><br>
+							<span class="fast-link js-add-to-region">Россия, СНГ и Грузия</span><br><br>
+							<span class="fast-link">Сбросить выбранные регионы </span><br>
+						</div>
+					</div>
+				</div>
+				<div class="field">
+					<a href="#" class="btn ">Сохранить</a>
+					<a href="#" class="btn  js-modal-close">Отмена</a>
+				</div>
+			</div>
+			<div class="tab-item" data-tab-item="t2">
+				<div class="title">Выбор вида спорта</div>
+				<div class="text">Для повышения эффективности рекламы регион показов объявлений можно уточнить. Это позволяет показывать рекламу тем пользователям, IP-адрес которых соответствует этому региону (по нашей базе данных), а также тем, кто выбрал данный регион в настройках портала.</div>
+				<div class="field">
+					<div class="input">
+						<div class="js-input-wrap">
+							<input type="text" class="js-input-targ" placeholder="">
+							<div class="input__notepad js-input-notepad"></div>
+							<div class="input__clear js-input-clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="field-wrap">
+					<div class="field field_region">
+						<div class="nest">
+							<ul class="nest-list">
+								<li class="nest-item">
+									<div class="nest-case">
+										<div class="nest-marker"></div>
+										<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Силовые виды спорта</span></label>
+									</div>
+									<ul class="nest-list">
+										<li class="nest-item">
+											<div class="nest-case">
+												<div class="nest-marker"></div>
+												<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Силовые виды спорта</span></label>
+											</div>
+											<ul class="nest-list">
+												<li class="nest-item">
+													<div class="nest-case">
+														<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Силовые виды спорта</span></label>
+													</div>
+												</li>
+												<li class="nest-item">
+													<div class="nest-case">
+														<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Силовые виды спорта</span></label>
+													</div>
+												</li>
+											</ul>
+										</li>
+										<li class="nest-item">
+											<div class="nest-case">
+												<div class="nest-marker"></div>
+												<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Силовые виды спорта</span></label>
+											</div>
+											<ul class="nest-list">
+												<li class="nest-item">
+													<div class="nest-case">
+														<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Силовые виды спорта</span></label>
+													</div>
+												</li>
+												<li class="nest-item">
+													<div class="nest-case">
+														<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Силовые виды спорта</span></label>
+													</div>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+
+								<li class="nest-item">
+									<div class="nest-case">
+										<div class="nest-marker"></div>
+										<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Групповые виды спорта</span></label>
+									</div>
+									<ul class="nest-list">
+										<li class="nest-item">
+											<div class="nest-case">
+												<div class="nest-marker"></div>
+												<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Групповые виды спорта</span></label>
+											</div>
+											<ul class="nest-list">
+												<li class="nest-item">
+													<div class="nest-case">
+														<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Групповые виды спорта</span></label>
+													</div>
+												</li>
+												<li class="nest-item">
+													<div class="nest-case">
+														<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Групповые виды спорта</span></label>
+													</div>
+												</li>
+											</ul>
+										</li>
+										<li class="nest-item">
+											<div class="nest-case">
+												<div class="nest-marker"></div>
+												<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Групповые виды спорта</span></label>
+											</div>
+											<ul class="nest-list">
+												<li class="nest-item">
+													<div class="nest-case">
+														<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Групповые виды спорта</span></label>
+													</div>
+												</li>
+												<li class="nest-item">
+													<div class="nest-case">
+														<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Групповые виды спорта</span></label>
+													</div>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+
+								<li class="nest-item">
+									<div class="nest-case">
+										<div class="nest-marker"></div>
+										<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Водные виды спорта</span></label>
+									</div>
+									<ul class="nest-list">
+										<li class="nest-item">
+											<div class="nest-case">
+												<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Плаванье</span></label>
+											</div>
+										</li>
+										<li class="nest-item">
+											<div class="nest-case">
+												<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Водные виды спорта</span></label>
+											</div>
+										</li>
+										<li class="nest-item">
+											<div class="nest-case">
+												<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Водные виды спорта</span></label>
+											</div>
+										</li>
+										<li class="nest-item">
+											<div class="nest-case">
+												<label class="checkbox-case"><input type="checkbox"><i class="marker"></i><span>Водные виды спорта</span></label>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="field field_fast">
+						<div class="fast-title">Быстрый выбор:</div>
+						<div>
+							<span class="fast-link js-add-to-region">Москва и область</span><br>
+							<span class="fast-link js-add-to-region">Санкт-Петербург и область</span><br>
+							<span class="fast-link js-add-to-region">Украина</span><br>
+							<span class="fast-link js-add-to-region">Россия, СНГ и Грузия</span><br><br>
+							<span class="fast-link">Сбросить выбранные регионы </span><br>
+						</div>
+					</div>
+				</div>
+				<div class="field">
+					<a href="#" class="btn ">Сохранить</a>
+					<a href="#" class="btn  js-modal-close">Отмена</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 </body>
 </html>

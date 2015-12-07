@@ -15,6 +15,7 @@
 	<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
 	<script type="text/javascript" src="js/mCustomScrollbar.min.js"></script>
 	<script type="text/javascript" src="js/keyboard.js"></script>
+	<script type="text/javascript" src="js/jquery.knob.js"></script>
 	<script type="text/javascript" src="js/dropzone.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
@@ -1280,6 +1281,64 @@
 
 				<div class="next">
 					<a href="#" class="btn btn_disable btn_big">Продолжить</a>
+				</div>
+
+				<!--
+
+				Что бы обновить информацию необходимо запустить функцию с классом шага :
+
+				 $('.progress-pie_step-1').val(87).trigger('change');
+
+				 Если до этого поменять класс "active" у активного шага, то полоска переместиться на него.
+
+				-->
+
+				<div class="object-add__progress">
+					<div class="progress-mark"></div>
+					<div class="progress-wrap">
+						<div class="progress-item progress-item_first">
+							<div class="progress-inner">
+								<div class="progress-view"><input type="text" value="80" class="progress-pie progress-pie_step-1"></div>
+								<div class="progress-step">Основная информация</div>
+							</div>
+						</div>
+						<div class="progress-item active">
+							<div class="progress-inner">
+								<div class="progress-view"><input type="text" value="100" class="progress-pie progress-pie_step-2"></div>
+								<div class="progress-step">Адрес</div>
+							</div>
+						</div>
+						<div class="progress-item">
+							<div class="progress-inner">
+								<div class="progress-view"><input type="text" value="20" class="progress-pie progress-pie_step-3"></div>
+								<div class="progress-step">Контакты</div>
+							</div>
+						</div>
+						<div class="progress-item">
+							<div class="progress-inner">
+								<div class="progress-view"><input type="text" value="0" class="progress-pie progress-pie_step-4"></div>
+								<div class="progress-step">Фотографии</div>
+							</div>
+						</div>
+						<div class="progress-item">
+							<div class="progress-inner">
+								<div class="progress-view"><input type="text" value="0" class="progress-pie progress-pie_step-5"></div>
+								<div class="progress-step">Дополнительная информация</div>
+							</div>
+						</div>
+						<div class="progress-item">
+							<div class="progress-inner">
+								<div class="progress-view"><input type="text" value="0" class="progress-pie progress-pie_step-6"></div>
+								<div class="progress-step">Услуги</div>
+							</div>
+						</div>
+						<div class="progress-item progress-item_last">
+							<div class="progress-inner">
+								<div class="progress-view"><input type="text" value="0" class="progress-pie progress-pie_step-7"></div>
+								<div class="progress-step">Связи</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
