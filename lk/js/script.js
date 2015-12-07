@@ -102,7 +102,7 @@ $(function () {
 
 // object-choose.html >>
 
-	$('.objects-type').on('click', '.type-item', function(){
+	$('body').on('click', '.objects-type .type-item', function(){
 		$(this).addClass('active').siblings().removeClass('active').closest('.objects-type').find('.btn_disable').removeClass('btn_disable');
 
 	});
@@ -314,7 +314,7 @@ $(function () {
 
 //messages-dialog.html >
 
-	$('.message-dialog').on('click', '.message', function(){
+	$('body').on('click', '.message-dialog .message', function(){
 		var $mes = $(this);
 		if ( $mes.hasClass('message_active') ){
 			$mes.removeClass('message_active');
@@ -347,7 +347,7 @@ $(function () {
 
 //notify.html >
 
-	$('.modal-region').on('change', 'input[type=checkbox]', function(){
+	$('body').on('change', '.modal-region input[type=checkbox]', function(){
 		var $t = $(this),
 			$i = $('input[type=checkbox]');
 
@@ -356,7 +356,7 @@ $(function () {
 		} else {
 			$t.closest('.nest-case').next('.nest-list').find($i).prop('checked', false);
 		}
-	}).on('click', '.nest-marker', function(){
+	}).on('click', '.modal-region .nest-marker', function(){
 		var $t = $(this);
 		$t.closest('.nest-case').next('.nest-list').stop(true, true).slideToggle(200);
 		$t.toggleClass('open');
@@ -424,7 +424,7 @@ $(function () {
 	});
 
 
-	$('.js-tab-wrap').on('click', '[data-tab-link]', function(e){
+	$('body').on('click', '.js-tab-wrap [data-tab-link]', function(e){
 		e.preventDefault();
 		var $t = $(this);
 
