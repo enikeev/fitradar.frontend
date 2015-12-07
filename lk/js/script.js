@@ -94,7 +94,10 @@ $(function () {
 	$('.modal-emploeeysrights__body').mCustomScrollbar();
 	$('.modal-emploeeysobject__body .objects-wrap').mCustomScrollbar();
 
-
+	$(document).on('ajaxComplete', function(){
+		$('.modal-emploeeysrights__body').mCustomScrollbar();
+		$('.modal-emploeeysobject__body .objects-wrap').mCustomScrollbar();
+	});
 
 // << modals
 
@@ -198,8 +201,13 @@ $(function () {
 // date picker
 
 
+	datepicker();
 
-	(function datepicker(){
+	$(document).on('ajaxComplete', function(){
+		datepicker();
+	});
+
+	function datepicker(){
 		var di = $('.date-input');
 		if ( di.size() ){
 			var nowTemp = new Date();
@@ -214,13 +222,15 @@ $(function () {
 			});
 
 			di.each(function(){
-				$(this).datepicker()
-					.on('show', function(e) {
-						$(this).closest('.input-wrap').addClass('opened');
-					})
-					.on('hide', function(e) {
-						$(this).closest('.input-wrap').removeClass('opened');
-					});
+				if ( !$(this).datepicker() ){
+					$(this).datepicker()
+						.on('show', function(e) {
+							$(this).closest('.input-wrap').addClass('opened');
+						})
+						.on('hide', function(e) {
+							$(this).closest('.input-wrap').removeClass('opened');
+						});
+				}
 			});
 
 			$('body').on('mousedown', function(e){
@@ -228,13 +238,12 @@ $(function () {
 					if ( $(e.target).closest('.date-input').length || $(e.target).closest('.datepicker-dropdown').length ){ return false; }
 					else { $('.datepicker').hide(); }
 				}
-
 			})
 
 
 		}
 
-	})();
+	}
 
 
 
@@ -566,8 +575,6 @@ function dropzoneInit(){
 			});
 
 		});
-
-
 
 	}
 
