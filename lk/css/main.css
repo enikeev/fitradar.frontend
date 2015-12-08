@@ -69,6 +69,7 @@ body{
 	margin-top: -2px;
 	opacity: .7;
 }
+.btn_sort:hover,
 .btn_sort.active{
 	border-color: #3fb4c6;
 	color: #3fb4c6!important;
@@ -187,10 +188,13 @@ body{
 
 .lk-menu{
 	width: 250px;
-	background: #1d2027;
-	float: left;
 	color: #fff;
-	z-index: 10;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 9999;
+	background: #24272e;
+	position: fixed;
 }
 
 .lk-menu .case{display: table;}
@@ -214,10 +218,6 @@ body{
 .lk-menu__logo img{
 	width: 100%;
 	height: 100%;
-}
-.lk-menu{
-	background: #24272e;
-	position: fixed;
 }
 .lk-menu__inner{
 	position: absolute;
@@ -446,6 +446,10 @@ body{
 	color: #3eb4c5;
 }
 
+.lk-table_balance .text-main{
+	font-size: 16px;
+	font-weight: 600;
+}
 
 .lk-table_employees{}
 .lk-table .employees-photo{
@@ -495,13 +499,20 @@ body{
 
 
 
+.table-status,
 .employees-status{
 	position: relative;
 	min-width: 200px;
 }
+.table-status.active *,
 .employees-status.active *{color: #70c63f;}
+.table-status.waiting *,
 .employees-status.waiting *{color: #f47b20;}
+.table-status.waiting *,
+.employees-status.waiting *{color: #f47b20;}
+.table-status.fired *,
 .employees-status.fired *{color: #959595;}
+.table-status .status-marker,
 .employees-status .status-marker{
 	display: inline-block;
 	width: 15px;
@@ -512,6 +523,8 @@ body{
 	top: 2px;
 	margin-right: 7px;
 }
+.table-status .status-marker:before,
+.table-status .status-marker:after,
 .employees-status .status-marker:before,
 .employees-status .status-marker:after{
 	content: '';
@@ -522,21 +535,29 @@ body{
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 }
+.table-status .status-marker:before,
 .employees-status .status-marker:before{
 	width: 9px;
 	height: 9px;
 	top: 3px;
 	left: 3px;
 }
+.table-status .status-marker:after,
 .employees-status .status-marker:after{
 	display: inline-block;
 	width: 15px;
 	height: 15px;
 	opacity: 0.5;
 }
+.table-status__actual,
 .employees-status__actual{
 	color: currentColor;
 	cursor: pointer;
+}
+.table-status .table-status__label{
+	color: #323232;
+	font-weight: 600;
+	margin-right: 10px;
 }
 .employees-status__actual:after{
 	content: '';
@@ -545,6 +566,7 @@ body{
 	border-top-color: currentColor;
 	margin-left: 10px;
 }
+.table-status__bar,
 .employees-status__bar{
 	position: absolute;
 	left: 0;
@@ -561,11 +583,13 @@ body{
 	z-index: 10;
 	display: none;
 }
+.table-status__bar-item,
 .employees-status__bar-item{
 	color: #383838!important;
 	cursor: pointer;
 	margin: 5px 0;
 }
+.table-status__bar-item:hover,
 .employees-status__bar-item:hover{
 	text-decoration: underline;
 }
@@ -1171,10 +1195,13 @@ textarea ~ .input__notepad{
 	overflow: hidden;
 }
 .object-add__item .field-item_list .list-wrap .list-item_object,
-.object-add__item .field-item_list .list-wrap .list-item{
+.object-add__item .field-item_list .list-wrap .list-item {
 	margin: 5px 0;
 	cursor: pointer;
 }
+
+
+
 .object-add__item .field-item_list .list-wrap .list-item_object:hover,
 .object-add__item .field-item_list .list-wrap .list-item:hover{color: #70b2c3;}
 
@@ -1330,7 +1357,7 @@ textarea ~ .input__notepad{
 .object-add__item_location-map .map-switch:hover {border-bottom-color: transparent;}
 
 
-.object-add__item_addfile .field-box{margin-left: 0; margin-bottom: 30px}
+.object-add__item_addfile .field-box{margin-left: 0;/* margin-bottom: 30px*/}
 .object-add__item_addfile .field-item_file .file-img{border: 1px solid #cfcfcf;background: #f5f5f5;position: relative;}
 .object-add__item_addfile .field-item_file-upload .file-img{background: #f5f5f5 url("../img/photo.svg") no-repeat 50% 50%;}
 .object-add__item_addfile .js-upload-new-file{cursor: pointer;}
@@ -1546,10 +1573,38 @@ textarea ~ .input__notepad{
 
 
 
+.js-object-list-select .list-wrap .list-item.selected{display: none;}
+.js-object-list-select .field-item_list-result.clear{display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 textarea.error,
 .error textarea,
 input.error,
 .error input{border-color: #f00!important;}
+
+
+
+
+
+
+
+
+
+
 
 
 

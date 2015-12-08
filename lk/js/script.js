@@ -159,7 +159,7 @@ $(function () {
 	}).on('mousedown', function(e){
 
 		if ( $('.list-title_opened').size() ){
-			if ( $(e.target).closest('.field-item_list').length || $(e.target).closest('.keypad-wrap').length ){ return false; }
+			if ( $(e.target).closest('.field-item_list').length || $(e.target).closest('.keypad-wrap').length ){ }
 			else { $('.list-title_opened').click(); }
 		}
 	});
@@ -526,19 +526,58 @@ $.fn.showModalLk = function() {
 
 
 
+//object-list-select
+
+$(function(){
+	$('body').on('click', '.js-object-list-select .field-item_list .list-item', function(){
+		var $t = $(this);
+		var $wrap = $t.closest('.js-object-list-select');
+		var $resCase = $wrap.find('.field-item_list-result .list-wrap');
+		var val = $t.data('val');
+		var html = $t.html();
+		$t.addClass('selected');
+		$resCase.append('<div class="list-item" data-val="' + val + '">' + html + ' <i class="list-item__remove"></i></div>')
+		moreObjectCheck($wrap.find('.field-item_list-result'), $resCase)
+	}).on('click', '.js-object-list-select .field-item_list-result .list-item__remove', function(){
+		var $t = $(this).closest('.list-item');
+		var $wrap = $t.closest('.js-object-list-select');
+		var $resCase = $wrap.find('.field-item_list-result .list-wrap');
+		var val = $t.data('val');
+		$wrap.find('.field-item_list').find('.list-item').filter(function(){ return $(this).data('val') == val; }).removeClass('selected');
+
+		$t.remove();
+		moreObjectCheck($wrap.find('.field-item_list-result'), $resCase)
+	});
+
+});
+
+function moreObjectCheck(wrap, box){
+	if ( !$.trim($(box).html()) ){
+		$(wrap).addClass('clear');
+	} else {
+		$(wrap).removeClass('clear');
+	}
+}
+
+
+
+
+
+
+
+
+
+
+// dropzone
+
 $(function(){
 	dropzInit();
-
 
 	$(document).on('ajaxComplete', function(){
 		dropzInit();
 	});
 
 });
-
-
-
-
 
 function dropzInit(){
 
@@ -553,7 +592,9 @@ function dropzInit(){
 			if ( D.is(':visible') ){
 				var id = 'dropZone_' + Math.floor(Math.random() * (9999 - 1000));
 				var url = D.data('url');
-				console.log(id);
+				var maxFiles = D.data('max-files');
+
+		//		console.log(id);
 				D.attr('id', id);
 
 				if ( window.Dropzone ){
@@ -576,11 +617,22 @@ function dropzInit(){
 					acceptedFiles: 'image/jpeg,image/png,image/gif',
 					previewsContainer: '#' + id + ' .js-upload-files-container',
 					clickable: '#' + id + ' .js-upload-new-file',
-					maxFiles: null,
+					maxFiles: maxFiles ? maxFiles : null,
 					dictDefaultMessage: 'Перетащите фото сюда',
 					url: url,
-					init: function(){
+					uploadprogress: function(progress){
+						console.info(progress)
+					},
+					maxfilesexceeded: function(file){
+						alert('You have uploaded more than 1 Image. Only the first file will be uploaded!');
+					//	console.info(file);
+						return false;
+					},
+					removedfile: function(file){
 
+					},
+					success: function(response){
+					//	console.info(response);
 					}
 				});
 

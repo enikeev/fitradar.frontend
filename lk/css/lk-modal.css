@@ -243,25 +243,25 @@
 .modal-emploeeysobject__body .tabs-body .tab-item{display: none;}
 .modal-emploeeysobject__body .tabs-body .tab-item.active{display: block;}
 
-.modal-emploeeysobject__body .objects-wrap{
+.objects-wrap{
 	max-height: 260px;
 	overflow: hidden;
 }
-.modal-emploeeysobject__body .tabs-body .objects-item{
+.tabs-body .objects-item{
 	display: inline-table;
 	border: 1px solid transparent;
 	width: 45%;
 	margin: 5px;
 }
-.modal-emploeeysobject__body .tabs-body .objects-item:hover{background: #f5f6f8;}
-.modal-emploeeysobject__body .tabs-body .objects-item:hover .title{text-decoration: underline;}
-.modal-emploeeysobject__body .tabs-body .objects-item.active{border-color: #cfcfcf;}
-.modal-emploeeysobject__body .tabs-body .objects-item .img{
+.tabs-body .objects-item:hover{background: #f5f6f8;}
+.tabs-body .objects-item:hover .title{text-decoration: underline;}
+.tabs-body .objects-item.active{border-color: #cfcfcf;}
+.tabs-body .objects-item .img{
 	display: table-cell;
 	vertical-align: top;
 	padding: 5px;
 }
-.modal-emploeeysobject__body .tabs-body .objects-item .img img{
+.tabs-body .objects-item .img img{
 	width: 40px;
 	height: 40px;
 	border: 1px solid #a6acaf;
@@ -269,16 +269,19 @@
 	-moz-border-radius: 50px;
 	border-radius: 50px;
 }
-.modal-emploeeysobject__body .tabs-body .objects-item .info{
+.tabs-body .objects-item .info{
 	display: table-cell;
 	vertical-align: top;
 	padding: 5px;
 }
-.modal-emploeeysobject__body .tabs-body .objects-item .info .title{
+.tabs-body .objects-item .info .title{
 	font-size: 18px;
 	color: #3eb4c6;
+	text-align: left;
+	margin: 0;
+	font-weight: 400;
 }
-.modal-emploeeysobject__body .tabs-body .objects-item .info .text{
+.tabs-body .objects-item .info .text{
 	font-size: 14px;
 	color: #959494;
 }
