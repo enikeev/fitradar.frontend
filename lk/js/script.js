@@ -478,7 +478,7 @@ function clearInputBtn(){
 function menuHeight(){
 	var $el = $('.lk-menu');
 	if ( $el.size() ){
-		$el.css({height: $(window).height() - $el.position().top});
+	//	$el.css({height: $(window).height() - $el.position().top});
 		$el.find('.lk-menu__inner').mCustomScrollbar({scrollInertia:300});
 	}
 }
@@ -526,58 +526,66 @@ $.fn.showModalLk = function() {
 
 
 
-
-
-if ( window.Dropzone ){
-	Dropzone.autoDiscover = false;
-}
-
 $(function(){
-	dropzoneInit();
+	dropzInit();
+
+
+	$(document).on('ajaxComplete', function(){
+		dropzInit();
+	});
+
 });
 
-function dropzoneInit(){
 
-	var $dz = $('.dropzone')
 
-	if ( $dz.size() && $dz.is(':visible') ){
 
-		$('.dropzone').each(function(){
 
-			var url = $(this).data('url');
+function dropzInit(){
 
-			var photoDropzone = new Dropzone($(this).get(0), {
-				previewTemplate: '<div class="field-item field-item_file field-item_file-uploaded">' +
-				'					<div class="file-img">' +
-				'						<img data-dz-thumbnail src="img/240x170.gif">' +
-				'						<div class="file-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>' +
-				'					</div>' +
-				'					<div class="file-name"><span class="file-name__item" data-dz-name></span> <span class="file-name__size" data-dz-size></span></div>' +
-				'						<div class="file-footnote">' +
-				'						<span class="footnote-link">Скачать</span>' +
-				'						<span class="footnote-link" data-dz-remove>Удалить</span>' +
-				'					</div></div>',
-				thumbnailWidth: 240,
-				thumbnailHeight: 170,
-				acceptedFiles: 'image/jpeg,image/png,image/gif',
-				previewsContainer: '.js-upload-files-container',
-				clickable: '.js-upload-new-file',
-				dictDefaultMessage: 'Перетащите фото сюда',
-				url: url,
-				init: function(){
-					//	photoDropzone.clickableElements = [ photoDropzone.element.querySelector('.js-upload-new-file') ];
-					//	this.clickableElements = [$(this.element).find('.js-upload-new-file')[0]];
-					//	Dropzone.getElements(this.element.querySelector('.js-upload-new-file'), "clickable");
+	var $dz = $('.dropzone');
 
-					//	console.log(this.element.querySelector('.js-upload-new-file'));
-					//	console.log($(this.element).find('.js-upload-new-file'));
-					//	$(this.clickableElements).append('<div class="field-item field-item_file field-item_file-upload js-upload-new-file"><div class="file-img"><img src="img/240x170.gif"></div><div class="file-name"></div><div class="field-footnote"></div></div>');
+	if ( $dz.size() ){
+		if ( window.Dropzone ){
+			Dropzone.autoDiscover = false;
+		}
+		$dz.each(function(){
+			var D = $(this);
+			if ( D.is(':visible') ){
+				var id = 'dropZone_' + Math.floor(Math.random() * (9999 - 1000));
+				var url = D.data('url');
+				console.log(id);
+				D.attr('id', id);
 
+				if ( window.Dropzone ){
+					Dropzone.options['#' + id] = false;
 				}
-			});
 
+				var photoDropzone = new Dropzone('#' + id, {
+					previewTemplate: '<div class="field-item field-item_file field-item_file-uploaded">'
+					+					'<div class="file-img">'
+					+						'<img data-dz-thumbnail src="img/240x170.gif">'
+					+						'<div class="file-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>'
+					+					'</div>'
+					+					'<div class="file-name"><span class="file-name__item" data-dz-name></span> <span class="file-name__size" data-dz-size></span></div>'
+					+						'<div class="file-footnote">'
+					+						'<span class="footnote-link">Скачать</span>'
+					+						'<span class="footnote-link" data-dz-remove>Удалить</span>'
+					+					'</div></div>',
+					thumbnailWidth: 240,
+					thumbnailHeight: 170,
+					acceptedFiles: 'image/jpeg,image/png,image/gif',
+					previewsContainer: '#' + id + ' .js-upload-files-container',
+					clickable: '#' + id + ' .js-upload-new-file',
+					maxFiles: null,
+					dictDefaultMessage: 'Перетащите фото сюда',
+					url: url,
+					init: function(){
+
+					}
+				});
+
+			}
 		});
-
 	}
 
 }
