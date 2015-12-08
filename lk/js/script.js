@@ -383,7 +383,7 @@ $(function () {
 
 // tooltip
 
-	$('body').on('click', '.tooltip-link', function(e){
+	$('body').on('click', '[data-tooltip-link]', function(e){
 		e.stopPropagation();
 		e.preventDefault();
 
@@ -398,9 +398,8 @@ $(function () {
 		var hD = $(document).height();
 		var wD = $(document).width();
 
-
 		var top = $t.offset().top + h <= hD ? $t.offset().top : hD - h;
-		var left = $t.offset().left + w <= wD ? $t.offset().left : wD - wh;
+		var left = $t.offset().left + w <= wD ? $t.offset().left : wD - w -20;
 
 		$tooltip.css({
 			top: top,
@@ -646,6 +645,10 @@ function dropzInit(){
 					},
 					success: function(response){
 					//	console.info(response);
+					},
+					thumbnail: function(file, dataUrl) {
+						/* do something else with the dataUrl */
+						console.info(dataUrl)
 					}
 				});
 

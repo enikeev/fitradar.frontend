@@ -143,6 +143,10 @@ body{
 
 
 .color-c{color: #3eb4c5!important;}
+.color-access{color: #70c63f;}
+.color-waiting{color: #f47b20;}
+.color-error{color: #f0082f;}
+
 
 .select-wrap{
 	display: inline-block;
@@ -448,7 +452,15 @@ body{
 
 .lk-table_balance .text-main{
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 400;
+}
+.lk-table_balance .text-status{
+	white-space: nowrap;
+}
+.lk-table_balance .text-balance{
+	font-size: 20px;
+	font-weight: 300;
+	white-space: nowrap;
 }
 
 .lk-table_employees{}
@@ -799,7 +811,7 @@ body{
 .object-add .next{
 	text-align: center;
 }
-.object-add__container hr{
+hr{
 	padding: 0;
 	outline: none;
 	height: 1px;

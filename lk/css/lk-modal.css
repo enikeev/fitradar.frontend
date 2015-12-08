@@ -466,11 +466,18 @@
 	font-size: 20px;
 	margin-bottom: 20px;
 }
+.tooltip-popup__big{
+	font-size: 36px;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
 .tooltip-popup__subtitle{
 	margin-top: 20px;
 }
 .tooltip-popup .tooltip-popup__text{
 	color: #959595;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 .tooltip-popup__preview{overflow: hidden;}
 .tooltip-popup__preview .img{
@@ -493,7 +500,9 @@
 
 
 
-
+.tooltip-popup__balance{
+	width: 300px;
+}
 
 
 
