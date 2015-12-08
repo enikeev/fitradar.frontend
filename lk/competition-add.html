@@ -722,6 +722,30 @@
 							</div>
 						</div>
 
+
+						<div class="object-add__item object-add__item_addfile">
+							<div class="field-label">Спонсоры мероприятия</div>
+							<div class="field-box">
+								<div class="field-dropzone">
+									<div class="dropzone" data-url="/lk/upload.php">
+										<div class="dropzone-case js-upload-files-container"></div>
+										<div class="field-item field-item_file field-item_file-upload">
+											<div class="file-img"><img src="img/240x170.gif"></div>
+											<div class="file-name"></div>
+											<div class="field-footnote">
+											</div>
+										</div>
+										<div class="field-item field-item_file field-item_file-upload ">
+											Вы можете загрузить изображение в формате JPG, GIF, или PNG.
+											<br>
+											<br>
+											<span class="btn js-upload-new-file">Выбрать файл</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
 						<div class="object-add__item object-add__item_moreobjtypes js-object-list-select">
 							<div class="field-label">Виды спорта</div>
 							<div class="field-box">
@@ -790,46 +814,48 @@
 						</div>
 
 						<div class="object-add__item">Подгрузка по скролу (нужно будет устранить баг с многократной подгрузкой при малом кол-ве результатов) Немного переписал логику ЧПУ фильтра на предмет работы со значениями радио-инпутов. Сделал тип фильтра рейтинг с выводом звездочек и обработкой указанных значений + подхватывание из адресной строки. Поправил сортировку по названию, цене, ввел пока рейтинг тренеров - позднее буду переключать в зависимости от типа карточки. Добавил фильтрацию по городу, региону, стране в каталоге. Нужно проверять - у меня работает только по стране т.к. карточек по моему городу нет.На завтра в планах - фильтр в карту + правильная обработка подгружаемого контента при прокрутке.</div>
-x
+
 
 						<div class="object-add__publication">
 							<div class="publication-info">
-								<span class="btn btn_orange">Премиум публикация</span>
-								<span class="publication-message">Мероприятие будет размещена на главной странице сайта</span>
+								<span class="btn btn_orange js-show-premium">Премиум публикация</span>
+								<span class="publication-message">Мероприятие будет размещено на главной странице сайта</span>
 							</div>
-							<div class="publication-item">
-								<div class="publication-item_top">
-									<div class="left">Премиум публикация в вашем регионе <i class="tooltip-link" data-tooltip-link="tt1"></i></div>
-									<div class="right">359 Р</div>
-								</div>
-								<div class="publication-item_body">
-									<div class="img"><img src="img/temp/publication.jpg" alt=""></div>
-									<div class="info">
-										<div class="info__title">Премиум публикация</div>
-										<div class="info__text">Подгрузка по скролу (нужно будет устранить баг с многократной подгрузкой при малом кол-ве результатов)
-											Немного переписал логику ЧПУ фильтра на предмет работы со значениями </div>
+							<div class="hide">
+								<div class="publication-item">
+									<div class="publication-item_top">
+										<div class="left">Премиум публикация в вашем регионе <i class="tooltip-link" data-tooltip-link="tt1"></i></div>
+										<div class="right">359 Р</div>
+									</div>
+									<div class="publication-item_body">
+										<div class="img"><img src="img/temp/publication.jpg" alt=""></div>
+										<div class="info">
+											<div class="info__title">Премиум публикация</div>
+											<div class="info__text">Подгрузка по скролу (нужно будет устранить баг с многократной подгрузкой при малом кол-ве результатов)
+												Немного переписал логику ЧПУ фильтра на предмет работы со значениями </div>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div>
-								<span class="btn btn_orange btn_brdr">Выставить счет</span>
-							</div>
-							<div class="publication-item">
-								<div class="publication-item_top">
-									<div class="left">Премиум публикация в вашем регионе <i class="tooltip-link" data-tooltip-link="tt1"></i></div>
-									<div class="right">1359 Р</div>
+								<div>
+									<span class="btn btn_orange btn_brdr">Выставить счет</span>
 								</div>
-								<div class="publication-item_body">
-									<div class="img"><img src="img/temp/publication.jpg" alt=""></div>
-									<div class="info">
-										<div class="info__title">Премиум публикация</div>
-										<div class="info__text">Подгрузка по скролу (нужно будет устранить баг с многократной подгрузкой при малом кол-ве результатов)
-											Немного переписал логику ЧПУ фильтра на предмет работы со значениями </div>
+								<div class="publication-item">
+									<div class="publication-item_top">
+										<div class="left">Премиум публикация в вашем регионе <i class="tooltip-link" data-tooltip-link="tt1"></i></div>
+										<div class="right">1359 Р</div>
+									</div>
+									<div class="publication-item_body">
+										<div class="img"><img src="img/temp/publication.jpg" alt=""></div>
+										<div class="info">
+											<div class="info__title">Премиум публикация</div>
+											<div class="info__text">Подгрузка по скролу (нужно будет устранить баг с многократной подгрузкой при малом кол-ве результатов)
+												Немного переписал логику ЧПУ фильтра на предмет работы со значениями </div>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div>
-								<span class="btn btn_orange btn_brdr">Выставить счет</span>
+								<div>
+									<span class="btn btn_orange btn_brdr">Выставить счет</span>
+								</div>
 							</div>
 							<div class="publication-info">
 								<span class="btn">Обычная публикация</span>

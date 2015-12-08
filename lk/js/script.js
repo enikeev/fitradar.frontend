@@ -525,6 +525,19 @@ $.fn.showModalLk = function() {
 
 
 
+$(function(){
+
+	$('body').on('click', '.object-add__publication .js-show-premium', function(e){
+		e.preventDefault();
+		$(this).closest('.publication-info').next('.hide').slideDown(200);
+	});
+
+});
+
+
+
+
+
 
 //object-list-select
 
