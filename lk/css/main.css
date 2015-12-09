@@ -143,9 +143,13 @@ body{
 
 
 .color-c{color: #3eb4c5!important;}
-.color-access{color: #70c63f;}
-.color-waiting{color: #f47b20;}
-.color-error{color: #f0082f;}
+.color-access{color: #70c63f!important;}
+.color-waiting{color: #f47b20!important;;}
+.color-error{color: #f0082f!important;}
+.color-dark{color: #323232!important;}
+.color-gray{color: #959595!important;}
+
+
 
 
 .select-wrap{
@@ -806,7 +810,7 @@ body{
 .object-add__container{
 	float: left;
 	width: 100%;
-	padding-bottom: 50px;
+	padding-bottom: 70px;
 }
 .object-add .next{
 	text-align: center;
@@ -1067,7 +1071,7 @@ textarea ~ .input__notepad{
 	font-size: 14px;
 	width: auto;
 	position: relative;
-	margin-right: 30px;
+	margin-right: 15px;
 	line-height: 30px;
 	height: 30px;
 	-webkit-box-sizing: border-box;
@@ -1143,8 +1147,8 @@ textarea ~ .input__notepad{
 }
 
 
-
-
+.object-add__item_objlist .tabs-body .objects-item .info .title{font-size: 17px;}
+.object-add__item_objlist.object-add__item .field-item_list .list-wrap .list{max-height: 250px;}
 
 .object-add__item .field-item_list .list-title{
 	position: relative;
@@ -1295,8 +1299,19 @@ textarea ~ .input__notepad{
 	padding: 0;
 }
 .object-add__item_location-subway .field-item_list,
-.object-add__item_moreobjtypes .field-item_list
-{width: 270px;margin-right: 10px;}
+.object-add__item_moreobjtypes .field-item_list{
+	width: 50%;
+	padding-right: 10px;
+}
+.object-add__item_location-subway .field-item_list .list-wrap,
+.object-add__item_moreobjtypes .field-item_list .list-wrap{
+	right: 10px;
+}
+.object-add__item_location-subway .field-item_list-result,
+.object-add__item_moreobjtypes .field-item_list-result{
+	width: 50%;
+	padding: 0;
+}
 
 
 .object-add__item .field-item_textarea textarea{

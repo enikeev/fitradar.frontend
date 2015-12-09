@@ -159,3 +159,11 @@
 .sbOptions .sbSub{
 	padding-left: 17px;
 }
+
+
+@media screen and (max-width: 1500px) {
+
+	.sbSelector {text-indent: 7px;}
+	.sbToggle{width: 20px;}
+
+}
