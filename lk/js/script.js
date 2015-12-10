@@ -137,15 +137,31 @@ $(function () {
 //object-add.html >
 
 	$('body').on('click', '[data-day]', function(){
-		$(this).toggleClass('active');
-	}).on('click', '.object-add__item_worktime .footnote-link', function(){
-		var box = $(this).closest('.field-box');
-		var day = $(this).data('day-link');
-		var btn = box.find('[data-day]');
-		if ( day == 'everyday'){
-			btn.addClass('active');
+		var $t = $(this);
+		var ind = $t.index();
+		var wrap = $t.closest('.object-add__item_worktime');
+
+		if ( $t.hasClass('active') ){
+			$t.removeClass('active');
 		} else {
-			btn.removeClass('active').filter(function(){return $(this).data('day') == day;}).addClass('active');
+			wrap.find('.field-item_btns').each(function(){
+				$(this).find('.btn').eq(ind).removeClass('active');
+			});
+			$t.addClass('active');
+		}
+	}).on('click', '.object-add__item_worktime .footnote-link', function(){
+		var $t = $(this);
+		var wrap = $t.closest('.field-box');
+		var allWrap = $t.closest('.object-add__item_worktime');
+		var day = $t.data('day-link');
+		var btn = allWrap.find('[data-day]');
+
+		if ( day == 'everyday'){
+			allWrap.find('.btn').removeClass('active');
+			wrap.find('.btn').addClass('active');
+		} else {
+			allWrap.find('.btn').filter(function(){return $(this).data('day') == day;}).removeClass('active');
+			wrap.find('.btn').filter(function(){return $(this).data('day') == day;}).addClass('active');
 		}
 	});
 
@@ -533,10 +549,20 @@ $(function(){
 
 		$t.remove();
 		moreObjectCheck($wrap.find('.field-item_list-result'), $resCase)
-	}).on('click', '.field-box__add', function(){
+	}).on('click', '.field-box__add', function(e){
+		e.stopPropagation();
 		var $t = $(this);
 		var $box = $t.closest('.field-box');
 		var $wrap = $box.closest('.object-add__item');
+
+		var $timeChooseWrap = $t.closest('.object-add__item_worktime');
+		if ( $timeChooseWrap.size() ){
+			if ( $timeChooseWrap.find('.field-box').size() > 6 ){
+				alert('so much');
+				return false;
+			}
+		}
+
 		var $newBox = $('<div/>', { class:'field-box' }).html($box.data('code'));
 		$newBox.find('.field-box__add').toggleClass('field-box__remove field-box__add');
 		$newBox.appendTo($wrap);
@@ -545,6 +571,29 @@ $(function(){
 		var $t = $(this);
 		var $box = $t.closest('.field-box');
 		$box.remove();
+	}).on('input', '.js-local-search', function(){
+		var $t = $(this);
+		var wrap = $t.closest('.field-box');
+		var list = wrap.find('.list');
+		var item = list.find('.js-val');
+		var val = $t.val();
+
+		if ( val.length < 1 ){
+			item.closest('.js-targ').removeClass('out-found');
+		} else {
+			var reg = new RegExp(val,'i');
+			item.closest('.js-targ').addClass('out-found');
+			item.filter(function(){return reg.test($(this).text()); }).closest('.js-targ').removeClass('out-found');
+		}
+	}).on('change', 'select', function(){
+		if ( $(this).find('[data-change-example-link]').size() ){
+			var $t = $(this);
+			var val = $(this).val();
+			var data = $(this).find('option').filter(function(){return $(this).val() == val }).data('change-example-link');
+			if ( $t.closest('[data-example-link]').size() ){
+				$t.closest('[data-example-link]').attr('data-example-link', data);
+			}
+		}
 	});
 
 

@@ -29,6 +29,7 @@ $(function(){
 				$keybordWrap.removeClass('keypad-wrap_show');
 				$('.js-input-targ-active').removeClass('js-input-targ-active');
 			}).on('click', '.keypad .key', function(e){
+				var $input = $('.js-input-targ-active');
 				if ( that.status.oneShift || $(this).data('key')!== 'shift' ){
 					that.status.oneShift = false;
 					$keybordWrap.removeClass('keypad-wrap_oneshift');
@@ -38,10 +39,10 @@ $(function(){
 					that.btnPush[v]();
 				} else {
 					var nWord = $(this).text();
-					var $input = $('.js-input-targ-active');
 					var text = $input.val();
 					$input.val(text + nWord);
 				}
+				$input.trigger('click');
 			}).on('mousedown', function(e){
 				if ( $('.keypad-wrap_show').size() ){
 					if ( $(e.target).closest('.keypad-wrap').length || $(e.target).closest('.js-input-wrap').length ){
@@ -93,6 +94,15 @@ $(function(){
 				var $keybordWrap = $('.keypad-wrap');
 				$keybordWrap.removeClass('keypad-wrap_shift keypad-wrap_oneshift');
 				$keybordWrap.toggleClass('keypad-wrap_symbol');
+			},
+			enter: function(){
+				var $input = $('.js-input-targ-active');
+				var val = $input.val();
+				if ( $input.attr('type') == 'text' && $input.closest('form').size() ){
+					$input.closest('form').submit();
+				} else {
+					$input.val(val + '\n');
+				}
 			}
 		}
 	};
