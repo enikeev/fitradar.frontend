@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>Настройки оповещений</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+	<meta name=viewport content="width=device-width, initial-scale=1">
+
+	<link href="css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
+	<script type="text/javascript" src="js/mCustomScrollbar.min.js"></script>
+	<script type="text/javascript" src="js/keyboard.js"></script>
+	<script type="text/javascript" src="js/cropper.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+<div class="lk-wrapper">
+
+	<div class="lk-menu">
+		<div class="lk-menu__inner">
+			<div class="lk-menu__header">
+				<a href="#" class="lk-menu__logo">
+					<img src="img/logo-big.svg" alt="">
+				</a>
+			</div>
+			<div class="lk-menu__body">
+				<div class="lk-menu__user">
+					<div class="case">
+						<div class="case-img"><img src="img/temp/user-logo.jpg" alt=""></div>
+						<div class="case-name">Alex Fitness</div>
+					</div>
+				</div>
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_user"></i></div>
+							<div class="case-name">ДАННЫЕ КОМПАНИИ</div>
+							<div class="case-amount"><span class="new">1</span></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item active"><a href="#" class="group-link">Общие данные</a> <div class="amount"><span>1</span></div></li>
+							<li class="group-item"><a href="#" class="group-link">Публичные данные</a></li>
+							<li class="group-item"><a href="#" class="group-link">Деятельность</a></li>
+							<li class="group-item"><a href="#" class="group-link">Смена пароля</a></li>
+						</ul>
+						<div>
+							<a href="#" class="btn btn_add">Изменить статус</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_credit"></i></div>
+							<div class="case-name">КОММЕРЧЕСКАЯ ИНФОРМАЦИЯ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Реквизиты</a></li>
+							<li class="group-item"><a href="#" class="group-link">Счета</a></li>
+							<li class="group-item"><a href="#" class="group-link">Баланс</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_chain"></i></div>
+							<div class="case-name">СЕТИ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">все сети</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить сеть</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_mail"></i></div>
+							<div class="case-name">СОБЩЕНИЯ</div>
+							<div class="case-amount"><span class="new">50</span></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Сотрудники</a></li>
+							<li class="group-item"><a href="#" class="group-link">Посетители</a></li>
+							<li class="group-item"><a href="#" class="group-link">Служба поддержки</a></li>
+							<li class="group-item"><a href="#" class="group-link">Все сообщения</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_bell"></i></div>
+							<div class="case-name">ОПОВЕЩЕНИЯ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Персональные тренеры</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные клубы</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные секции</a></li>
+							<li class="group-item"><a href="#" class="group-link">Аренда площадок</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные магазины</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные магазины</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивная медицина</a></li>
+							<li class="group-item"><a href="#" class="group-link">Активный отдых</a></li>
+							<li class="group-item"><a href="#" class="group-link">Туристические базы</a></li>
+							<li class="group-item"><a href="#" class="group-link">Новости</a></li>
+							<li class="group-item"><a href="#" class="group-link">Мероприятия</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_dialog"></i></div>
+							<div class="case-name">ОТЗЫВЫ</div>
+							<div class="case-amount"><span class="">99+</span></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item">
+								<a href="#" class="">
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+								</a>
+							</li>
+							<li class="group-item">
+								<a href="#" class="">
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+								</a>
+							</li>
+							<li class="group-item">
+								<a href="#" class="">
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+								</a>
+							</li>
+							<li class="group-item">
+								<a href="#" class="">
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-w"></i>
+								</a>
+							</li>
+							<li class="group-item">
+								<a href="#" class="">
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+								</a>
+							</li>
+							<li class="group-item"><a href="#" class="group-link">Все отзывы</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_bag"></i></div>
+							<div class="case-name">СОТРУДНИКИ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Все сотрудники</a></li>
+							<li class="group-item"><a href="#" class="group-link">Уволенные</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_house"></i></div>
+							<div class="case-name">ОБЪЕКТЫ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Персональные тренеры</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные секции</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные секции</a></li>
+							<li class="group-item"><a href="#" class="group-link">Аренда площадок</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные магазины</a></li>
+							<li class="group-item"><a href="#" class="group-link">Детский спорт</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивная медицина</a></li>
+							<li class="group-item"><a href="#" class="group-link">Активный отдых</a></li>
+							<li class="group-item"><a href="#" class="group-link">Туристические базы</a></li>
+							<li class="group-item"><a href="#" class="group-link">Все объекты</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_book"></i></div>
+							<div class="case-name">НОВОСТИ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Все новости</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить новость</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_cal"></i></div>
+							<div class="case-name">МЕРОПРИЯТИЯ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Все мероприятия</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить мероприятие</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_setting"></i></div>
+							<div class="case-name">НАСТРОЙКИ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Настройки сайта</a></li>
+							<li class="group-item"><a href="#" class="group-link">Настройки оповещения</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="lk-menu__group">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_stat"></i></div>
+							<div class="case-name">СТАТИСТИКА</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="lk-menu__footer">
+				<a href="#" class="btn btn_add btn_orange">ТАРИФЫ</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="lk-content">
+		<div class="lk-content__head">
+			<div class="title">Мои данные</div>
+		</div>
+		<div class="lk-content__body lk-blocks">
+			<div class="blocks__left">
+				<div class="block block_profile">
+					<div class="block-wrap">
+						<div class="block-column block-column_img">
+							<div class="profile-img">
+								<img class="js-avatar-img" src="img/profile-img_custom.svg" alt="">
+							</div>
+							<div class="profile-settings profile-settings_no">
+								<span class="link link_add">
+									<span>Добавить аватарку</span>
+									<input class="js-add-avatar" type="file" value="Добавить аватарку" multiple="false" accept="image/jpeg,image/png,image/gif">
+								</span>
+								<span class="link link_change">
+									<span>Изменить</span>
+									<input class="js-add-avatar" type="file" value="Изменить" multiple="false" accept="image/jpeg,image/png,image/gif">
+								</span>
+								<span class="link link_remove">
+									<span class="js-remove-avatar">Удалить</span>
+								</span>
+							</div>
+						</div>
+						<div class="block-column">
+							<div class="profile-title">
+								<div class="name">Alex Fitness</div>
+								<div class="descr">Спортивный клуб</div>
+							</div>
+							<ul class="profile-menu">
+								<li><a href="#"><i class="ico ico_mail"></i> Письмо администрации</a></li>
+								<li><a href="#"><i class="ico ico_bell"></i> Настройки оповещений</a></li>
+								<li><a href="#"><i class="ico ico_set"></i> Настройки сайта</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="block block_profile">
+					<div class="block-wrap">
+						<div class="block-column">
+							<div class="block-title">Регион</div>
+							<div class="block-text"><a href="#">укажите регион</a></div>
+							<div class="block-title">Тип аккаунта</div>
+							<div class="block-text">Юридическое лицо</div>
+							<div class="block-title">E-mail</div>
+							<div class="block-text">alexfitness@sport.ru</div>
+						</div>
+						<div class="block-column">
+							<div class="block-title">Кол-во объектов</div>
+							<div class="block-text">0</div>
+							<div class="block-title">Кол-во сотрудников</div>
+							<div class="block-text">0</div>
+							<div class="block-title">Дата последнего захода</div>
+							<div class="block-text">06.12.2015</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="block block_aboutcompany block_aboutcompany-cup">
+					<div class="block-head">
+						<div class="block-title">О компании</div>
+						<div class="block-right"><a href="#" class="js-edit-aboutcompany">Редактирвать</a></div>
+					</div>
+
+					<div class="block-body"></div>
+
+					<div class="block-edit">
+						<div class="block-input">
+							<div class="js-input-wrap">
+								<textarea class="js-input-targ"></textarea>
+								<div class="input__notepad js-input-notepad"></div>
+								<div class="input__clear js-input-clear"></div>
+							</div>
+							<div class="field-footnote"></div>
+						</div>
+						<div class="block-submit"><span class="btn js-save-aboutcompany">Сохранить</span></div>
+					</div>
+
+					<div class="block-cup">
+						<div class="cup-btn"> <a class="btn btn_green btn_add js-add-aboutcompany"><i class="plus"></i>Добавить текст о компании</a> </div>
+					</div>
+				</div>
+
+				<div class="block">
+					<div class="block-head">
+						<div class="block-title">Мои сети</div>
+					</div>
+					<div class="block-cup">
+						<div class="cup-text">У вас не добавлено ни одной сети</div>
+						<div class="cup-btn"> <a class="btn btn_green btn_add"><i class="plus"></i>Добавить сеть</a> </div>
+					</div>
+				</div>
+
+				<div class="block">
+					<div class="block-head">
+						<div class="block-title">Мои сотрудники</div>
+					</div>
+					<div class="block-cup">
+						<div class="cup-text">У вас не добавлено ни одного сотрудника</div>
+						<div class="cup-btn"> <a class="btn btn_green btn_add"><i class="plus"></i>Добавить сотрудника</a> </div>
+					</div>
+				</div>
+
+				<div class="block">
+					<div class="block-head">
+						<div class="block-title">У вас не добавлено ни одного мероприятия</div>
+					</div>
+					<div class="block-cup">
+						<div class="cup-text">У вас не добавлено ни одного мероприятия</div>
+						<div class="cup-btn"> <a class="btn btn_green btn_add"><i class="plus"></i>Добавить мероприятие</a> </div>
+					</div>
+				</div>
+
+				<div class="block">
+					<div class="block-head">
+						<div class="block-title">Последние новости </div>
+					</div>
+					<div class="block-cup">
+						<div class="cup-text">У вас не добавлено ни одной новости</div>
+						<div class="cup-btn"> <a class="btn btn_green btn_add"><i class="plus"></i>Добавить новость</a> </div>
+					</div>
+				</div>
+
+			</div>
+			<div class="blocks__right">
+				<div class="block block_graphics">
+					<div class="graphic-item graphic-item_big">
+						<div class="graphic-inner">
+
+						</div>
+					</div>
+					<div class="graphic-item graphic-item_mid">
+						<div class="graphic-inner">
+
+						</div>
+					</div>
+					<div class="graphic-item graphic-item_mid">
+						<div class="graphic-inner">
+
+						</div>
+					</div>
+					<div class="graphic-item graphic-item_sml">
+						<div class="graphic-inner">
+							<div class="img">
+								<div class="icon">
+									<img src="img/ico-graphic-view.svg" alt="">
+								</div>
+							</div>
+							<div class="text">
+								<div class="name">Просмотры</div>
+								<div class="num">121 <span>+ 72</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="graphic-item graphic-item_sml">
+						<div class="graphic-inner">
+							<div class="img">
+								<div class="icon">
+									<img src="img/ico-graphic-news.svg" alt="">
+								</div>
+							</div>
+							<div class="text">
+								<div class="name">Показы</div>
+								<div class="num">50 <span>+ 5</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="graphic-item graphic-item_sml">
+						<div class="graphic-inner">
+							<div class="img">
+								<div class="icon">
+									<img src="img/ico-graphic-obj.svg" alt="">
+								</div>
+							</div>
+							<div class="text">
+								<div class="name">Объекты</div>
+								<div class="num">121 <span>+ 72</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="graphic-item graphic-item_sml">
+						<div class="graphic-inner">
+							<div class="img">
+								<div class="icon">
+									<img src="img/ico-graphic-mail.svg" alt="">
+								</div>
+							</div>
+							<div class="text">
+								<div class="name">Сообщения</div>
+								<div class="num">20 <span>+ 1</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="graphic-item graphic-item_sml">
+						<div class="graphic-inner">
+							<div class="img">
+								<div class="icon">
+									<img src="img/ico-graphic-cal.svg" alt="">
+								</div>
+							</div>
+							<div class="text">
+								<div class="name">Мероприятия</div>
+								<div class="num">121 <span>+ 72</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="graphic-item graphic-item_sml">
+						<div class="graphic-inner">
+							<div class="img">
+								<div class="icon">
+									<img src="img/ico-graphic-news.svg" alt="">
+								</div>
+							</div>
+							<div class="text">
+								<div class="name">Новости</div>
+								<div class="num">50 <span>+ 5</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="graphic-item graphic-item_sml">
+						<div class="graphic-inner">
+							<div class="img">
+								<div class="icon">
+									<img src="img/ico-graphic-bell.svg" alt="">
+								</div>
+							</div>
+							<div class="text">
+								<div class="name">Оповещения</div>
+								<div class="num">121 <span>+ 72</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="graphic-item graphic-item_sml">
+						<div class="graphic-inner">
+							<div class="img">
+								<div class="icon">
+									<img src="img/ico-graphic-dialog.svg" alt="">
+								</div>
+							</div>
+							<div class="text">
+								<div class="name">Отзывы</div>
+								<div class="num">50 <span>+ 5</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-wrap">
+					<div class="block-column block-column_payments">
+						<div class="block-border">
+							<div class="block">
+								<div class="block-head">
+									<div class="block-title">Последние четыре платежа</div>
+								</div>
+								<div class="block-cup">
+									<div class="cup-text">У вас пока нет оповещений</div>
+									<div class="cup-btn"> <a class="btn btn_green btn_add"><i class="plus"></i>Добавить новость</a> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="block-column block-column_balance">
+						<div class="block-border">
+							<div class="block">
+								<div class="block-head">
+									<div class="block-title">Текущий баланс</div>
+								</div>
+								<div class="block-body">
+									<div class="block-val">0 Р</div>
+									<div class="block-btn"><a href="#" class="btn btn_orange btn_add"><i class="plus"></i> Пополнить баланс</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-border">
+					<div class="block">
+						<div class="block-head">
+							<div class="block-title">Оповещения</div>
+						</div>
+						<div class="block-cup">
+							<div class="cup-text">У вас пока нет оповещений</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-border">
+					<div class="block">
+						<div class="block-head">
+							<div class="block-title">Отзывы</div>
+						</div>
+						<div class="block-cup">
+							<div class="cup-text">У вас пока нет отзывов</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-border">
+					<div class="block">
+						<div class="block-head">
+							<div class="block-title">Объекты</div>
+						</div>
+						<div class="block-cup">
+							<div class="cup-text">У вас пока нет объектов</div>
+							<div class="cup-btn"> <a class="btn btn_green btn_add"><i class="plus"></i>Добавить объект</a> </div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+</div><!-- .wrapper -->
+
+</body>
+</html>

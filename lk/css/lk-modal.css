@@ -509,6 +509,52 @@
 
 
 
+.modal-cropavatar .modal-inner{
+	width: 420px;
+	margin-left: -210px;
+	padding:20px;
+}
+.modal-cropavatar .modal__body{text-align: left;}
+.modal-cropavatar .modal__footer{text-align: center;}
+.modal-cropavatar .modal__footer a{margin: 0 5px;color:#3eb4c5; }
+.modal-cropavatar .modal__body .title{
+	text-align: left;
+	font-size: 14px;
+	color: #3eb4c5;
+}
+.modal-cropavatar .modal__body .img{
+	margin: 15px 20px;
+	position: relative;
+	/*height: 410px;*/
+}
+.modal-cropavatar .modal__body .img img{
+	display: block;
+	width: 100%;
+}
+.modal-cropavatar .modal__body .img .rotate{
+	position: absolute;
+	z-index: 10;
+	top: 7px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+.modal-cropavatar .modal__body .img .rotate__cw,
+.modal-cropavatar .modal__body .img .rotate__ccw{
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	margin: 0 5px;
+	background: no-repeat 50% 50%;
+	cursor: pointer;
+}
+.modal-cropavatar .modal__body .img .rotate__cw{
+	background-image: url("../img/cropper-rotate-cw.svg");
+}
+.modal-cropavatar .modal__body .img .rotate__ccw{
+	background-image: url("../img/cropper-rotate-ccw.svg");
+}
+
 
 
 

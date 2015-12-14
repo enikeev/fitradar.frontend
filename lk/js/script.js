@@ -71,7 +71,7 @@ $(function () {
 
 // modals >>
 
-	$('body').on('click', '.modal-close, .js-modal-close', function(e){
+	$('body').on('click', '.modal-close, .js-modal-close, .modal-overlay', function(e){
 		e.preventDefault();
 		$(this).closest('.modal').fadeOut();
 	});
@@ -742,25 +742,17 @@ function dropzInit(){
 					maxFiles: maxFiles ? maxFiles : null,
 					dictDefaultMessage: 'Перетащите фото сюда',
 					url: url
-					/*uploadprogress: function(progress){
-						console.info(progress)
-					},
-					maxfilesexceeded: function(file){
-						alert('You have uploaded more than 1 Image. Only the first file will be uploaded!');
-					//	console.info(file);
-						return false;
-					},
-					removedfile: function(file){
+				});
 
-					},
-					success: function(response){
-						console.info(response);
-					},
-					thumbnail: function(file, dataUrl) {
-						*//* do something else with the dataUrl *//*
-						console.info(file);
-						console.info(dataUrl);
-					}*/
+			//	console.info(photoDropzone);
+
+				photoDropzone.on('uploadprogress', function(file, progress, bytesSent){
+					//console.info(progress);
+					//console.info(bytesSent);
+				});
+
+				photoDropzone.on('success', function(file){
+					console.info(file.xhr);
 				});
 
 			}
@@ -769,5 +761,218 @@ function dropzInit(){
 
 }
 
+/*
+addedfile: function(file),
+addedfiles: function(),
+canceled: function(file),
+canceledmultiple:function(),
+complete:function(file),
+completemultiple:function(),
+dragend:function(e),
+dragenter:function(e),
+dragleave:function(e),
+dragover:function(e),
+dragstart:function(),
+drop:function(e),
+error:function(file, message),
+errormultiple:function(),
+maxfilesexceeded:function(),
+maxfilesreached:function(),
+processing:function(file),
+processingmultiple:function(),
+queuecomplete:function(),
+removedfile:function(file),
+reset:function(),
+sending:function(),
+sendingmultiple:function(),
+success:function(file),
+successmultiple:function(),
+thumbnail:function(file, dataUrl),
+totaluploadprogress:function(),
+uploadprogress:function(file, progress, bytesSent)
+*/
 
 
+
+
+
+
+//  main page
+
+$(function(){
+
+	$('body').on('click', '.block_aboutcompany .js-edit-aboutcompany', function(e){
+		e.preventDefault();
+		var $t = $(this);
+		var $wrap = $t.closest('.block_aboutcompany');
+		$wrap.removeClass('block_aboutcompany-cup').addClass('block_aboutcompany-edit');
+	}).on('click', '.block_aboutcompany .js-save-aboutcompany', function(e){
+		e.preventDefault();
+		var $t = $(this);
+		var $wrap = $t.closest('.block_aboutcompany');
+		var text = $.trim($wrap.find('textarea').val());
+		var nevText = $wrap.find('.block-body');
+
+		$wrap.removeClass('block_aboutcompany-edit');
+
+		if ( text ){
+			nevText.html(text.replace(/\n/g,'<br>'));
+		} else {
+			$wrap.addClass('block_aboutcompany-cup')
+		}
+	}).on('click', '.block_aboutcompany .js-add-aboutcompany', function(e){
+		e.preventDefault();
+		var $t = $(this);
+		var $wrap = $t.closest('.block_aboutcompany');
+		$wrap.removeClass('block_aboutcompany-cup').addClass('block_aboutcompany-edit');
+
+	}).on('change', '.js-add-avatar', function(e){
+		e.preventDefault();
+		var $t = $(this);
+		var $wrap = $t.closest('.block-column_img');
+		var $img = $wrap.find('.profile-img img');
+		$.app.avatarCropper.upload(this, e)
+	}).on('click', '.js-cropavatar-reload', function(e){
+		e.preventDefault();
+		$('.js-add-avatar').first().click();
+	}).on('click', '.js-remove-avatar', function(e){
+		e.preventDefault();
+		$('.js-avatar-img').attr('src', 'img/profile-img_custom.svg');
+		$('.profile-settings').addClass('profile-settings_no');
+	});
+
+
+
+
+
+});
+
+
+(function(){
+	var app = {
+
+		avatarCropper: {
+
+			uncroppedImg: '',
+
+			template: '<div class="modal modal-cropavatar">'
+					+		'<div class="modal-overlay"></div>'
+					+		'<div class="modal-inner">'
+					+			'<div class="modal__body">'
+					+				'<div class="title">Фотография на Вашей странице</div>'
+					+				'<div class="text">Выбранная область будет показываться на Вашей странице.<br>Если изображение ориентировано неправильно, фотографию можно повернуть.</div>'
+					+				'<div class="img">'
+					+					'<div class="rotate">'
+					+						'<span class="rotate__cw"></span>'
+					+						'<span class="rotate__ccw"></span>'
+					+					'</div>'
+					+					'<img id="avatarCropper" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">'
+					+				'</div>'
+					+			'</div>'
+					+			'<div class="modal__footer">'
+					+				'<a href="#" class="btn js-cropavatar-confirm">Сохранить</a>'
+					+				'<a href="#" class="js-cropavatar-reload">Изменить изображение</a>'
+					+			'</div>'
+					+		'</div>'
+					+	'</div>',
+
+			upload: function(el, e){
+
+				if (el.value && !/\.(jpg|jpeg|gif|png)$/i.test(el.value)) {
+					alert('Вы выбрали не верный тип файла \nДопустимые типы файлов: jpg, gif, png.');
+				} else if (el.value) {
+
+					var file = e.target.files[0];
+					var reader = new FileReader();
+
+					reader.fileName = el.files[0].name;
+
+					reader.onload = function(e){
+						app.avatarCropper.crop(e.target.result);
+					};
+
+					reader.onerror = function(e) {alert('fileReader error ' + e);};
+
+					reader.readAsDataURL(file);
+				}
+
+			},
+
+			crop: function(src){
+
+				app.avatarCropper.unCroppedImg = src;
+
+				var $modal = $('.modal-cropavatar');
+
+				if ( !$modal.size() ){
+					var $modal = $(app.avatarCropper.template).appendTo('body');
+				}
+
+				var $img = $modal.find('#avatarCropper');
+				$img.attr('src', src);
+
+				if ( $img.cropper ){
+					$img.cropper('destroy');
+				}
+
+				$img.cropper({
+					guides: false,
+					aspectRatio: 1,
+					dragMode: 'move',
+					viewMode: 1,
+					movable: true,
+					cropBoxMovable: false,
+					cropBoxResizable: false,
+					minContainerHeight: 400,
+					//minCropBoxHeight: 300,
+					//minCropBoxWidth: 300,
+					//minCanvasWidth: 300,
+					//minCanvasHeight: 300,
+					built: function(){
+						$(this).cropper('setCropBoxData', {
+							'top': 70,
+							'left': 34,
+							'width': 270,
+							'height': 270,
+						}).cropper('setCropBoxData', {
+							//'top': 40
+						});
+					}
+				});
+
+				$modal.showModalLk();
+
+			}
+		},
+
+		init: function(){
+
+			$('body').on('click', '.rotate__cw', function(){
+				$(this).closest('.modal-cropavatar').find('#avatarCropper').cropper('rotate', 90);
+			}).on('click', '.rotate__ccw', function(){
+				$(this).closest('.modal-cropavatar').find('#avatarCropper').cropper('rotate', -90);
+			}).on('click', '.js-cropavatar-confirm', function(e){
+				e.preventDefault();
+				var img = $('#avatarCropper').cropper('getCroppedCanvas', {width: 160, height: 160}).toDataURL('image/png');
+				$('.modal-cropavatar').fadeOut();
+				$('.js-avatar-img').attr('src', img);
+				$('.profile-settings_no').removeClass('profile-settings_no');
+			});
+
+		}
+	};
+
+	var appLoad = function(){
+		jQuery.app = app;
+		app.init();
+	};
+	var appInt = setInterval(function(){
+		if (typeof jQuery !== 'function') return;
+		clearInterval(appInt);
+		$(function(){
+			setTimeout(appLoad, 0);
+		});
+
+	}, 50);
+
+})();
