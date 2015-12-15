@@ -149,21 +149,47 @@ $(function () {
 			});
 			$t.addClass('active');
 		}
+		worktimeFieldCheck(wrap);
 	}).on('click', '.object-add__item_worktime .footnote-link', function(){
 		var $t = $(this);
 		var wrap = $t.closest('.field-box');
+		var itemWrap = $t.closest('.field-item');
 		var allWrap = $t.closest('.object-add__item_worktime');
 		var day = $t.data('day-link');
+		var time = $t.data('time-link');
 		var btn = allWrap.find('[data-day]');
 
 		if ( day == 'everyday'){
 			allWrap.find('.btn').removeClass('active');
 			wrap.find('.btn').addClass('active');
-		} else {
+		} else if ( day == 'weekend' || day == 'weekdays') {
 			allWrap.find('.btn').filter(function(){return $(this).data('day') == day;}).removeClass('active');
+			wrap.find('.btn').filter('.active').removeClass('active');
 			wrap.find('.btn').filter(function(){return $(this).data('day') == day;}).addClass('active');
+		} else if ( time == 'alltime' ) {
+			itemWrap.find('.time_hour_ot').next('.sbHolder').find('[rel="00"]').click();
+			itemWrap.find('.time_min_ot').next('.sbHolder').find('[rel="00"]').click();
+			itemWrap.find('.time_hour_do').next('.sbHolder').find('[rel="00"]').click();
+			itemWrap.find('.time_min_do').next('.sbHolder').find('[rel="00"]').click();
 		}
+
+		worktimeFieldCheck(allWrap);
 	});
+
+	function worktimeFieldCheck(box){
+		isAct = box.find('[data-day]').filter('.active').length;
+
+		console.info(isAct);
+
+		if ( isAct ){
+			box.find('.field-box__add').show();
+		} else {
+			box.find('.field-box__add').hide();
+			if ( box.find('.field-box').length > 1 ){
+				box.find('.field-box').not(':first').remove()
+			}
+		}
+	}
 
 //	objectAddExemple();
 //	$(window).scroll(objectAddExemple);
@@ -554,11 +580,25 @@ $(function(){
 		var $t = $(this);
 		var $box = $t.closest('.field-box');
 		var $wrap = $box.closest('.object-add__item');
+		var stop = false;
 
 		var $timeChooseWrap = $t.closest('.object-add__item_worktime');
+		var required = $wrap.find('.required-field');
+
+		$wrap.find('.must-required').removeClass('must-required')
+
+		if ( required.length ){
+			required.each(function(){
+				if ( $(this).val() == 'false' || !$.trim($(this).val()) ){
+					$(this).closest('.field-item').addClass('must-required');
+					stop = true;
+				}
+			});
+			if ( stop ) return false;
+		}
+
 		if ( $timeChooseWrap.size() ){
 			if ( $timeChooseWrap.find('.field-box').size() > 6 ){
-				alert('so much');
 				return false;
 			}
 		}

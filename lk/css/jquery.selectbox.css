@@ -89,7 +89,7 @@
 .sbHolderDisabled{
 	background-color: #3C3C3C;
 	border: solid 1px #515151;
-	padding: 10px;
+	/*padding: 10px;*/
 }
 .sbHolderDisabled .sbHolder{
 	

@@ -1961,7 +1961,11 @@ input.error,
 .error input{border-color: #f00!important;}
 
 
-
+.must-required input,
+.must-required .sbHolder
+{
+	border-color: #f00!important;
+}
 
 
 
