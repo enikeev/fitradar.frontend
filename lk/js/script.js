@@ -502,7 +502,8 @@ function progressPie(){
 				thickness: '0.15',
 				bgColor: '#c4c4c4',
 				fgColor: progressPieColor(val),
-				readOnly: 'true'
+				readOnly: 'true',
+				'draw' : function () { $(this.i).val(this.cv + '%'); }
 			});
 
 			$(this).change(function(){
@@ -538,6 +539,7 @@ function progressPieMove(){
 }
 
 function progressPieColor(val){
+	val = +val.replace('%', '');
 	if ( val == 0 ){
 		return '#c4c4c4'
 	} else if ( val > 0 && val <= 20 ){
@@ -663,6 +665,8 @@ function updateEvents(){
 	$('.modal-emploeeysobject__body .objects-wrap').mCustomScrollbar();
 	$('.modal-region .nest').mCustomScrollbar();
 
+	if ( $('.js-catalog-item-pie').size() ) $('.js-catalog-item-pie').knob({'draw' : function () { $(this.i).val(this.cv + '%'); }});
+
 	datepicker();
 	selectBoxInit();
 	progressPie();
@@ -771,7 +775,7 @@ function dropzInit(){
 					+					'</div>'
 					+					'<div class="file-name"><span class="file-name__item" data-dz-name></span> <span class="file-name__size" data-dz-size></span></div>'
 					+						'<div class="file-footnote">'
-					+						'<span class="footnote-link">Скачать</span>'
+					//+						'<span class="footnote-link">Скачать</span>'
 					+						'<span class="footnote-link" data-dz-remove>Удалить</span>'
 					+					'</div></div>',
 					thumbnailWidth: 240,
@@ -883,6 +887,16 @@ $(function(){
 
 
 
+	$('body').on('click', '.catalog-item-info .list-responsible', function(e){
+		e.preventDefault();
+		$(this).next('.menu-responsible').fadeIn(200);
+	}).on('click', '.catalog-item-info .menu-responsible__item .remove', function(e){
+		e.preventDefault();
+		$(this).closest('.menu-responsible__item').remove();
+	}).on('click', '.catalog-item-info .menu-responsible__close', function(e){
+		e.preventDefault();
+		$(this).closest('.menu-responsible').fadeOut(200);
+	});
 
 
 });
