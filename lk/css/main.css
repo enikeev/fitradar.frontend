@@ -533,6 +533,7 @@ body{
 .employees-status.waiting *{color: #f47b20;}
 .table-status.fired *,
 .employees-status.fired *{color: #959595;}
+.status-marker,
 .table-status .status-marker,
 .employees-status .status-marker{
 	display: inline-block;
@@ -544,6 +545,8 @@ body{
 	top: 2px;
 	margin-right: 7px;
 }
+.status-marker:before,
+.status-marker:after,
 .table-status .status-marker:before,
 .table-status .status-marker:after,
 .employees-status .status-marker:before,
@@ -556,6 +559,7 @@ body{
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 }
+.status-marker:before,
 .table-status .status-marker:before,
 .employees-status .status-marker:before{
 	width: 9px;
@@ -563,6 +567,7 @@ body{
 	top: 3px;
 	left: 3px;
 }
+.status-marker:after,
 .table-status .status-marker:after,
 .employees-status .status-marker:after{
 	display: inline-block;
@@ -1371,6 +1376,9 @@ textarea ~ .input__notepad{
 .object-add__item_location-country .field-item_select {width: 50%;padding-left: 10px;}
 .object-add__item_location-country .field-item_select:first-child {padding-left: 0;}
 
+.object-add__item .field-item_long {width: 50%; padding-right:10px; }
+.object-add__item .field-item_short {width: 16.6666%; padding-right:10px; }
+
 .object-add__item_location-address .field-item_input {padding-left: 10px;}
 .object-add__item_location-address .field-item_input-long {width: 50%;padding-left: 0;}
 .object-add__item_location-address .field-item_input-short {width: 16.6666%;}
@@ -1449,7 +1457,14 @@ textarea ~ .input__notepad{
 .object-add__item_passchange .field-item_input{width: 250px}
 .object-add__item_passchange .field-item_btn{width: auto}
 
-
+.object-add__item_price-choose .field-item_line{
+	display: inline-block;
+	white-space: nowrap;
+	width: 130px;
+	padding-right: 10px;
+}
+.object-add__item_price-choose .checkbox-case{height: 28px;}
+.object-add__item_price-choose .field-item.hidden{display: none;}
 
 
 
@@ -1465,6 +1480,11 @@ textarea ~ .input__notepad{
 }
 .object-add__publication .publication-info{
 	margin: 15px 0 0;
+}
+.object-add__publication .publication-info .checkbox-case{
+	vertical-align: middle;
+	position: relative;
+	top: 4px;
 }
 .object-add__publication .publication-item{
 	background: #f5f5f5;
@@ -1507,7 +1527,7 @@ textarea ~ .input__notepad{
 	font-size: 14px;
 }
 .object-add__publication .publication-info .publication-message{
-	width: 444px;
+	width: 440px;
 	border: 1px solid #cfcfcf;
 	border-radius: 2px;
 	display: inline-block;
@@ -1683,6 +1703,14 @@ textarea ~ .input__notepad{
 	right: 0;
 	top: 0;
 }
+.lk-blocks .block-head .block-right .add{
+	color: #70c63f;
+}
+.lk-blocks .block-head .block-right .add:before{
+	content: '+';
+	position: absolute;
+	margin-left: -15px;
+}
 .lk-blocks .blocks__left .block-head{
 	padding-left: 20px;
 	padding-right: 20px;
@@ -1696,7 +1724,6 @@ textarea ~ .input__notepad{
 	color: #959595;
 }
 
-.lk-blocks .block-body{}
 .lk-blocks .blocks__left .block-body{
 	padding-left: 20px;
 }
@@ -1834,6 +1861,14 @@ textarea ~ .input__notepad{
 	box-sizing: border-box;
 	padding-right: 10px;
 }
+.lk-blocks .block-column_payments table td{
+	font-size: 12px;
+	padding: 2px 0;
+}
+.lk-blocks .block-column_payments table td.price{
+	font-size: 16px;
+}
+
 .lk-blocks .block-column_balance{
 	font-size: 14px;
 	vertical-align: middle;
@@ -1869,6 +1904,16 @@ textarea ~ .input__notepad{
 
 .block_aboutcompany.block_aboutcompany-edit .block-head .block-right{display: none;}
 .block_aboutcompany.block_aboutcompany-cup .block-head .block-right{display: none;}
+
+.lk-blocks .block-body .feedback{}
+.lk-blocks .block-body .feedback .feedback-item{
+	border: none;
+	padding: 0;
+}
+.lk-blocks .block-body .feedback .feedback-item .feedback-item__answer{
+	display: block;
+}
+
 
 
 
@@ -1936,6 +1981,49 @@ textarea ~ .input__notepad{
 
 
 
+.lk-table_list{width: 100%;}
+.lk-table_list td{
+	vertical-align: middle;
+	padding: 5px 0;
+	color: #4b4b4b;
+	font-size: 15px;
+}
+.lk-table_list td .text{
+	color: #383838;
+}
+.lk-table_list td .title{
+	font-size: 18px;
+}
+.lk-table_list td .footnote{
+	color: #959595;
+	font-size: 14px;
+}
+.lk-table_list td.img{width: 65px}
+.lk-table_list td.img img{
+	width: 47px;
+	height: 47px;
+	border: 1px solid #d5d5d5;
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+
+	display: block;
+}
+.lk-table_list.notify td{
+	font-size: 14px;
+	color: #959595;
+	padding: 3px 0;
+}
+.lk-table_list.notify td.delete{
+	font-size: 16px;
+}
+.lk-table_list.notify td .footnote{
+	font-size: 12px;
+}
+.lk-table_list.notify .new td{
+	color: #323232;
+}
 
 
 

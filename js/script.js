@@ -665,7 +665,7 @@ $(function(){
 
 	$('.tab__menu-item').click(function(e){
 
-		if ( !$(this).hasClass('tab__menu-item_active') ){
+		if ( !$(this).hasClass('tab__menu-item_active') || !$(this).hasClass('disabled')) {
 			var ind = $(this).index(),
 				$link = $('.tab__menu-item'),
 				$tab = $('.tab__screen-item');
@@ -722,7 +722,7 @@ $(function(){
 	});
 
 	$('.section_search__tabs-menu__item').click(function(){
-		if ( !$(this).hasClass('active')){
+		if ( !$(this).hasClass('active') || !$(this).hasClass('disabled') ){
 			var i = $(this).data('tabs-menu');
 			$('.section_search__tabs-menu__item').filter('.active').removeClass('active');
 			$(this).addClass('active');

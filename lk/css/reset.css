@@ -86,16 +86,19 @@ input{
 	clear:both;
 	}
 
-
+.hidden{
+	display: none;
+}
 
 .checkbox-case{}
+
 .checkbox-case input{
 	opacity: 0;
 	position: absolute;
 	width: 20px!important;
 	height: 20px!important;
 }
-.checkbox-case input + .marker{
+.checkbox-case input[type=checkbox] + .marker{
 	display: inline-block;
 	width: 15px;
 	height: 15px;
@@ -107,10 +110,36 @@ input{
 	top: 3px;
 	background-color: #fff;
 }
-.checkbox-case input:checked + .marker{
+.checkbox-case input[type=checkbox]:checked + .marker{
 	border-color: #3eb4c6;
 	background: #3eb4c6 url("../img/checkbox.svg") no-repeat 60% 50%;
 }
+.checkbox-case input[type=radio] + .marker{
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin: -1px;
+	border: 1px solid #d0d0cf;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	position: relative;
+	top: 3px;
+	background-color: #fff;
+}
+.checkbox-case input[type=radio]:checked + .marker:before{
+	content: '';
+	display: block;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	width: 11px;
+	height: 11px;
+	margin: 3px;
+	border-color: #3eb4c6;
+	background: #3eb4c6;
+}
+
 .checkbox-case span{
 	margin: 0 10px;
 }

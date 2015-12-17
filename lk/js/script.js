@@ -473,7 +473,7 @@ $(function(){
 
 	$('body').on('click', '.object-add__publication .js-show-premium', function(e){
 		e.preventDefault();
-		$(this).closest('.publication-info').next('.hide').slideDown(200);
+		$(this).closest('.publication-info').next('.hide').slideToggle(200);
 	});
 
 });
@@ -684,14 +684,21 @@ function dataUpdate(){
 
 function selectBoxInit(){
 	if ( $('select').size() ){
-		$('select').selectbox({
-			effect: "fade",
-			onOpen:function(inst){
-				$(this).next('.sbHolder').find('.sbOptions').mCustomScrollbar();
 
-			},
-			onClose:function(inst){
+		$('select').each(function(){
+
+			if( !$(this).hasClass('one_select') ){
+				$(this).selectbox({
+					effect: "fade",
+					onOpen:function(inst){
+						$(this).next('.sbHolder').find('.sbOptions').mCustomScrollbar();
+
+					},
+					onClose:function(inst){
+					}
+				});
 			}
+
 		});
 	}
 }
@@ -731,7 +738,6 @@ function datepicker(){
 			}
 		})
 
-
 	}
 
 }
@@ -755,13 +761,14 @@ function dropzInit(){
 		}
 		$dz.each(function(){
 			var D = $(this);
-			if ( D.is(':visible') ){
+			if ( D.is(':visible') && !D.hasClass('dropzone_inited') ){
 				var id = 'dropZone_' + Math.floor(Math.random() * (9999 - 1000));
 				var url = D.data('url');
 				var maxFiles = D.data('max-files');
+				var sponsor = D.data('sponsor') ? '<div class="footnote-input"><input type="text" placeholder="Название спонсора" class="js-input-uploaded-img"></div>' : '';
 
-		//		console.log(id);
-				D.attr('id', id);
+				//		console.log(id);
+				D.attr('id', id).addClass('dropzone_inited');
 
 				if ( window.Dropzone ){
 					Dropzone.options['#' + id] = false;
@@ -775,8 +782,9 @@ function dropzInit(){
 					+					'</div>'
 					+					'<div class="file-name"><span class="file-name__item" data-dz-name></span> <span class="file-name__size" data-dz-size></span></div>'
 					+						'<div class="file-footnote">'
-					//+						'<span class="footnote-link">Скачать</span>'
-					+						'<span class="footnote-link" data-dz-remove>Удалить</span>'
+						//+						'<span class="footnote-link">Скачать</span>'
+					+						sponsor
+					+						'<span class="footnote-link js-remove-uploaded-img" data-id-remove >Удалить</span>'
 					+					'</div></div>',
 					thumbnailWidth: 240,
 					thumbnailHeight: 170,
@@ -788,7 +796,7 @@ function dropzInit(){
 					url: url
 				});
 
-			//	console.info(photoDropzone);
+				//	console.info(photoDropzone);
 
 				photoDropzone.on('uploadprogress', function(file, progress, bytesSent){
 					//console.info(progress);
@@ -796,7 +804,25 @@ function dropzInit(){
 				});
 
 				photoDropzone.on('success', function(file){
-					console.info(file.xhr);
+					//console.info(file);
+					//console.info(file.xhr.response);
+					var id = +file.xhr.response.replace('New ID: ', '');
+
+					$(file.previewElement).find('[data-id-remove]').attr('data-id-remove', id);
+
+					if ( sponsor ){
+						$(file.previewElement).find('.footnote-input input').attr('data-id-val', id);
+					}
+
+				});
+
+				photoDropzone.on('addedfile', function(file){
+
+					if ( file.name && !/\.(jpg|jpeg|gif|png)$/i.test( file.name ) ) {
+						alert( 'Вы выбрали неверный тип файла \nДопустимые типы файлов: jpg, gif, png.' );
+						$(file.previewElement).remove();
+					}
+
 				});
 
 			}
