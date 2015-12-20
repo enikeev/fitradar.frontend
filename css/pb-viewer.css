@@ -191,7 +191,7 @@
 	top:0;
 	right:0;
 	bottom:0;
-	border:1px solid #3fb4c6;
+	border:1px solid #3399FF;
 	opacity: 0;
 
 	transition: opacity 0.15s ease;
@@ -200,6 +200,6 @@
 }
 .pb-thumbs__link:hover b,
 .pb-thumbs__link.active b{
-	border:1px solid #3fb4c6;
+	border:1px solid #3399FF;
 	opacity: 1;
 }

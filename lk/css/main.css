@@ -72,8 +72,8 @@ body{
 }
 .btn_sort:hover,
 .btn_sort.active{
-	border-color: #3fb4c6;
-	color: #3fb4c6!important;
+	border-color: #3399FF;
+	color: #3399FF!important;
 }
 .btn_sort.active:after{
 	background: url("../img/arrow-up-c.svg") no-repeat 50% 50%;
@@ -643,7 +643,7 @@ body{
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.message-group a{color: #3fb4c6;}
+.message-group a{color: #3399FF;}
 .message-group__col{
 	display: table-cell;
 	padding: 10px 15px;
@@ -677,7 +677,7 @@ body{
 }
 .message-group .message-item__name{
 	font-size: 18px;
-	color: #3fb4c6;
+	color: #3399FF;
 	margin-bottom: 3px;
 }
 .message-group .message-item__name .date{
@@ -705,7 +705,7 @@ body{
 .message-dialog .message-group_answer-info .message-group__col{padding: 0 10px 0 0; }
 .message-dialog .message-group_reply{padding-left: 95px; color: #959595;}
 .message-dialog .message-group_reply .message-group__col{padding: 0 10px 0 0; }
-.message-dialog .message-group_answer .message-group__col{border-left: 2px solid #3fb4c6;}
+.message-dialog .message-group_answer .message-group__col{border-left: 2px solid #3399FF;}
 .message-dialog .message__answer{border-top:1px solid #d5d5d5 ;}
 
 
@@ -777,7 +777,7 @@ body{
 .objects-type .type-item_section{color: #c56246;}
 .objects-type .type-item_ground{color: #e78826;}
 .objects-type .type-item_active{color: #65c941;}
-.objects-type .type-item_tourism{color: #3fb4c6;}
+.objects-type .type-item_tourism{color: #3399FF;}
 .objects-type .type-item_med{color: #2e34be;}
 
 .objects-type .type-title{
@@ -1010,7 +1010,7 @@ hr{
 }
 .input__result .list-item:hover{
 	text-decoration: underline;
-	color: #3fb4c6;
+	color: #3399FF;
 }
 
 

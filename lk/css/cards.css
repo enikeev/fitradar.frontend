@@ -20,7 +20,7 @@
 .cards .btn_brdr.cat_7{border-color: #941a81;color: #ffffff;background:#941a81;}
 .cards .btn_brdr.cat_8{border-color: #11958c;color: #ffffff;background:#11958c;}
 .cards .btn_brdr.cat_9{border-color: #214ca2;color: #ffffff;background:#214ca2;}
-.cards .btn_brdr.cat_0{border-color: #3fb4c6;color: #ffffff;background:#3fb4c6;}
+.cards .btn_brdr.cat_0{border-color: #3399FF;color: #ffffff;background:#3399FF;}
 
 
 .cards{
@@ -32,7 +32,7 @@
 	display:inline-block;
 	font-size:16px;
 	margin:10px;
-	border:1px dashed #3fb4c6;
+	border:1px dashed #3399FF;
 	background: #fff;
 
 	vertical-align: top;
@@ -92,9 +92,9 @@
 	left: 10px;
 }
 .cards-item:hover .cards-btn .btn{
-	border-color: #3fb4c6;
+	border-color: #3399FF;
 	color: #ffffff!important;
-	background:#3fb4c6;
+	background:#3399FF;
 }
 
 
@@ -155,8 +155,8 @@
 	color: #939393;
 }
 .cards-item_more:hover .cards-item__inner .cards-load .icon{
-	border-color: #3fb4c6;
-	background: #3fb4c6;
+	border-color: #3399FF;
+	background: #3399FF;
 }
 .cards-item_more:hover .cards-item__inner .cards-load .icon:before,
 .cards-item_more:hover .cards-item__inner .cards-load .icon:after{
@@ -264,7 +264,7 @@
 	padding-bottom: 5px;
 }
 .cards_competition .cards-item:hover .cards-descr .title{
-	color: #3fb4c6;
+	color: #3399FF;
 	font-size: 18px;
 }
 .cards_competition .cards-item_big .cards-descr .text{
@@ -376,7 +376,7 @@
 }
 .cards_news .cards-item_big .cards-descr{margin:-6px 130px 0 68px;}
 .cards_news .cards-item_big .cards-descr .text{font-size:16px;}
-.cards_news .cards-item:hover .cards-descr .title{color:#3fb4c6;}
+.cards_news .cards-item:hover .cards-descr .title{color:#3399FF;}
 
 .cards_news .cards-descr .text_b{
 	font-size:16px;

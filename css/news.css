@@ -41,8 +41,8 @@
 	-webkit-box-sizing: border-box;
 }
 .news-item__share .subscribe-confirm .btn_brdr{
-	border-color: #3fb4c6;
-	background-color: #3fb4c6;
+	border-color: #3399FF;
+	background-color: #3399FF;
 	color: #fff;
 	font-size: 14px;
 }
@@ -71,8 +71,8 @@
 	-webkit-border-radius: 50%;
 	margin-right: 15px;
 }
-.news-item__share .follow .follow-item:hover span{color: #3fb4c6;}
-.news-item__share .follow .follow-item:hover img{border-color: #3fb4c6;}
+.news-item__share .follow .follow-item:hover span{color: #3399FF;}
+.news-item__share .follow .follow-item:hover img{border-color: #3399FF;}
 
 .news-carousel,
 .news-carousel .slides{
@@ -125,7 +125,7 @@
 	-wevkit-border-radius: 50%;
 }
 .news-carousel .flex-control-paging li a.flex-active{
-	background: #3fb4c6;
+	background: #3399FF;
 }
 .news-carousel .flex-direction-nav a{
 	position: absolute;
@@ -162,8 +162,8 @@
 }
 
 .news-carousel .flex-direction-nav a:hover{
-	background-color: #3fb4c6;
-	border-color: #3fb4c6;
+	background-color: #3399FF;
+	border-color: #3399FF;
 }
 
 .news-item__tags{
@@ -176,7 +176,7 @@
 	margin-right: 5px;
 }
 .news-item__tags .btn_brdr:hover{
-	color: #3fb4c6;
+	color: #3399FF;
 }
 
 

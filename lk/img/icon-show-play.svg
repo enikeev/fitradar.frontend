@@ -5,7 +5,7 @@
 	 width="60px" height="60px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
 <g opacity="0.8">
 	<g>
-		<circle fill="#3FB4C6" cx="30" cy="30" r="30"/>
+		<circle fill="#3399FF" cx="30" cy="30" r="30"/>
 	</g>
 </g>
 <path fill="#FFFFFF" d="M19,15l26,15L19,45V15z"/>

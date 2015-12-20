@@ -328,7 +328,7 @@
 				} else {
 					$head.removeClass('fixed');
 				}
-
+				/*
 				var frontSearch = $('.wrapper_front .header-search');
 				var frontSearchBig = $('.section_search__finder');
 
@@ -340,7 +340,7 @@
 					} else {
 						frontSearch.css({display: 'none'});
 					}
-				}
+				}*/
 			}
 
 		},
@@ -802,6 +802,7 @@ $(function(){
 		$('.header-user .btn_message .btn__number').fadeOut(400, function(){$(this).remove();});
 		$(this).parents('.header-popup').addClass('clean').find('.header-popup__content').html('<div class="no-mes">Непрочитанных сообщений нет</div>');
 		$(this).remove();
+		$('.tooltip-hint').hide();
 	});
 
 	$('.js-remove-all-notifications').click(function(e){
@@ -809,6 +810,7 @@ $(function(){
 		$('.header-user .btn_notification .btn__number').fadeOut(400, function(){$(this).remove();});
 		$(this).closest('.header-popup').addClass('clean').find('.header-popup__content').html('<div class="no-mes">Оповещений нет</div>');
 		$(this).remove();
+		$('.tooltip-hint').hide();
 	});
 
 	$('.header-popup__close').click(function(){
@@ -1216,6 +1218,29 @@ $(function(){
 
 
 $(function(){
+
+	$('body').on('mouseenter', '[data-hint]', function(e){
+		var text = $(this).data('hint');
+		var $hint = $('.tooltip-hint');
+
+		if ( !$hint.size() ){
+			$hint = $('<div class="tooltip-hint"></div>').appendTo('body');
+		}
+
+		$hint.html(text).show().css({
+			top: $(e.target).offset().top + $(e.target).outerHeight() + 10,
+			left: $(e.target).offset().left + $(e.target).outerWidth()/2,
+			marginLeft: - $hint.outerWidth()/2
+		});
+
+	}).on('mouseleave mouseout', '[data-hint]', function(){
+		var $hint = $('.tooltip-hint');
+		$hint.hide();
+	}).on('click', '.filter-field__search-submit', function(e){
+		e.stopPropagation();
+		$(this).closest('.header-search_compact').removeClass('header-search_compact');
+		return false;
+	});
 
 
 	$('.js-height-label-obj').each(function(){

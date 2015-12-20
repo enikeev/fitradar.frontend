@@ -51,7 +51,7 @@
 }
 
 .modal-close:hover{
-	border-color: #3fb4c6;
+	border-color: #3399FF;
 	background-image: url("../img/icons/icon-input_clear-c.svg");
 	opacity: 1;
 }
@@ -102,7 +102,7 @@
 	font-size: 10px;
 }
 .modal_login .rules a{
-	color: #3fb4c6;
+	color: #3399FF;
 }
 .modal_login-box{
 	padding: 20px;
@@ -124,8 +124,8 @@
 	margin-top: 40px;
 }
 .modal_login-box .reg-form__submit .btn_brdr{
-	border-color: #3fb4c6;
-	background: #3fb4c6;
+	border-color: #3399FF;
+	background: #3399FF;
 	color: #fff;
 }
 
@@ -133,8 +133,8 @@
 	margin: 10px 40px 25px;
 }
 .modal_login-box .auth-form .btn_brdr{
-	border-color: #3fb4c6;
-	background: #3fb4c6;
+	border-color: #3399FF;
+	background: #3399FF;
 	color: #fff;
 	height: 59px;
 	line-height: 59px;
@@ -158,7 +158,7 @@
 	margin-left: 240px;
 }
 .modal_login-box .auth-form__checkbox a{
-	color: #3fb4c6;
+	color: #3399FF;
 }
 
 
@@ -210,7 +210,7 @@
 	background: #fff;
 }
 .modal_info .modal-header{
-	background: #3fb4c6;
+	background: #3399FF;
 	height: 70px;
 	width: 100%;
 	position: relative;

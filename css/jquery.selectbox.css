@@ -135,8 +135,8 @@
 .sbOptions a:hover,
 .sbOptions a:focus,
 .sbOptions a.sbFocus{
-	color: #3fb4c6;
-	border-bottom: 1px dashed #3fb4c6;
+	color: #3399FF;
+	border-bottom: 1px dashed #3399FF;
 }
 .sbOptions li.last a{
 	border-bottom: none;

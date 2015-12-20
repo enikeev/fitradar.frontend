@@ -121,8 +121,8 @@
 	line-height: 1.2;
 }
 .auth-box .box-content .field .btn_brdr{
-	border-color: #3fb4c6;
-	background: #3fb4c6;
+	border-color: #3399FF;
+	background: #3399FF;
 	color: #fff;
 	padding: 7px 10px 7px;
 	width: 100%;
@@ -267,7 +267,7 @@
 	padding: 5px ;
 }
 .auth-box .pass-security .body a{
-	color: #3fb4c6;
+	color: #3399FF;
 }
 .auth-box .pass-security .close{
 	position: absolute;

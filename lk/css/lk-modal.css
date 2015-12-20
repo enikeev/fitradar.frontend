@@ -276,7 +276,7 @@
 }
 .tabs-body .objects-item .info .title{
 	font-size: 18px;
-	color: #3eb4c6;
+	color: #3399FF;
 	text-align: left;
 	margin: 0;
 	font-weight: 400;
@@ -327,8 +327,8 @@
 	-webkit-transition:background-color 0.15s ease;
 }
 .section_search__finder-submit:hover{
-	background-color:#3fb4c6;
-	border-color:#3fb4c6;
+	background-color:#3399FF;
+	border-color:#3399FF;
 	background-image: url("../img/icon-search-w.svg");
 }
 
@@ -373,7 +373,7 @@
 .modal-region .field-wrap .field_fast .fast-title{color: #383838;margin-bottom: 15px}
 .modal-region .field-wrap .field_fast .fast-link{
 	display: inline-block;
-	color: #3fb4c6;
+	color: #3399FF;
 	border-bottom: 1px dashed;
 	cursor: pointer;
 }
@@ -491,7 +491,7 @@
 	margin-left: 160px;
 }
 .tooltip-popup__text a{
-	color: #3fb4c6;
+	color: #3399FF;
 	border-bottom: 1px dashed;
 	text-decoration: none!important;
 }

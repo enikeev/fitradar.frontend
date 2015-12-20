@@ -30,11 +30,11 @@
 			<div class="header-location js-location-current">Санкт-Петербург</div>
 
 			<script>
-				$(function(){
+				/*$(function(){
 					setTimeout(function(){
 						$('.header-popup_city').fadeIn();
 					}, 500)
-				});
+				});*/
 			</script>
 
 			<div class="header-location__popups">
@@ -54,7 +54,7 @@
 
 			<div class="header-aside">
 
-				<div class="header-search">
+				<div class="header-search header-search_compact">
 					<div class="filter-field__search">
 						<div class="filter-field__search-input js-input-wrap">
 							<input type="text" class="js-input-targ" placeholder="Велоспорт">
@@ -64,24 +64,35 @@
 					</div>
 				</div>
 
-				<div class="header-user">
+				<div class="header-user" style="display:none">
 					<a href="#" class="btn btn_brdr btn_auth" data-modal-open="auth">Войти</a>
 					<a href="#" class="btn btn_brdr btn_reg" data-modal-open="auth">Регистрация</a>
 				</div>
 
-				<div class="header-user" style="display:none">
+				<div class="header-user">
 					<div class="header-user__int">
-						<span class="header-user__logo"><img src="img/upload/cart-logo-1.jpg" alt=""></span>
-						<a href="#" class="btn btn_brdr btn_profile" data-profile-menu="0">alexfitness.ru</a>
-						<a href="#" class="btn btn_brdr btn_notification" data-profile-menu="1"><i class="btn__number">99+</i></a>
 						<a href="#" class="btn btn_brdr btn_message" data-profile-menu="2"><i class="btn__number">10</i></a>
+						<a href="#" class="btn btn_brdr btn_notification" data-profile-menu="1"><i class="btn__number">99+</i></a>
+						<span class="header-user__logo" data-profile-menu="0"><img src="img/upload/cart-logo-1.jpg" alt=""></span>
+						<a href="#" class="btn btn_brdr btn_profile" data-profile-menu="0">alexfitness.ru</a>
 					</div>
 					<div class="header-user__popups">
 						<div class="header-popup header-popup_profile" data-profile-popup="0">
 							<div class="header-popup__close"></div>
+							<div class="header-popup__title">Личный кабинет</div>
 							<div class="header-popup__content">
-								<div class="item"><a href="#" class="link">Личный кабинет</a></div>
-								<div class="item"><a href="#" class="link">Выйти</a></div>
+								<div class="item"><a href="#" class="link">Данные компании</a></div>
+								<div class="item"><a href="#" class="link">Сообщения</a></div>
+								<div class="item"><a href="#" class="link">Оповещения</a></div>
+								<div class="item"><a href="#" class="link">Отзывы</a></div>
+								<div class="item"><a href="#" class="link">Сотрудники</a></div>
+								<div class="item"><a href="#" class="link">Тренера</a></div>
+								<div class="item"><a href="#" class="link">Объекты</a></div>
+								<div class="item"><a href="#" class="link">Сети</a></div>
+								<div class="item"><a href="#" class="link">Новости</a></div>
+								<div class="item"><a href="#" class="link">Мероприятия</a></div>
+								<div class="item"><a href="#" class="link">Настройки</a></div>
+								<div class="item"><a href="#" class="link">Статистика</a></div>
 							</div>
 						</div>
 						<div class="header-popup header-popup_notification" data-profile-popup="1">
@@ -98,99 +109,172 @@
 								<div class="item"><a href="#" class="link">Афиша мероприятий <i class="num">3</i></a></div>
 								<div class="item"><a href="#" class="link">Статьи <i class="num">2</i></a></div>
 							</div>
-							<div class="header-popup__footer">
-								<a href="#" class="btn btn_brdr btn_settings">Настроить оповещения</a>
-								<a href="#" class="btn btn_brdr btn_clear js-remove-all-notifications">Очистить</a>
+							<div class="header-popup__settings">
+								<a href="#" class="btn btn_brdr btn_settings" data-hint="Настройки оповещений"></a>
+								<a href="#" class="btn btn_brdr btn_clear js-remove-all-notifications" data-hint="Очистить"></a>
 							</div>
 						</div>
 						<div class="header-popup header-popup_message" data-profile-popup="2">
 							<div class="header-popup__close"></div>
 							<div class="header-popup__title">Ваши собщения</div>
 							<div class="header-popup__content js-scrollbar">
+
 								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_on">online</sup></span>
-										<span class="date">10 мая</span>
+									<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+									<div class="text">
+										<div class="text-name">Патрик Саливан</div>
+										<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
 									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
 								</a>
 
 								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_off">offline</sup></span>
-										<span class="date">10 мая</span>
+									<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+									<div class="text">
+										<div class="text-name">Патрик Саливан</div>
+										<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
 									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
 								</a>
 
 								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_on">online</sup></span>
-										<span class="date">10 мая</span>
+									<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+									<div class="text">
+										<div class="text-name">Патрик Саливан</div>
+										<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
 									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
 								</a>
 
 								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_off">offline</sup></span>
-										<span class="date">10 мая</span>
+									<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+									<div class="text">
+										<div class="text-name">Патрик Саливан</div>
+										<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
 									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
 								</a>
 
 								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_on">online</sup></span>
-										<span class="date">10 мая</span>
+									<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+									<div class="text">
+										<div class="text-name">Патрик Саливан</div>
+										<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
 									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
 								</a>
 
 								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_off">offline</sup></span>
-										<span class="date">10 мая</span>
+									<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+									<div class="text">
+										<div class="text-name">Патрик Саливан</div>
+										<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
 									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
 								</a>
 
 								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_on">online</sup></span>
-										<span class="date">10 мая</span>
+									<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+									<div class="text">
+										<div class="text-name">Патрик Саливан</div>
+										<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
 									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
 								</a>
 
 								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_off">offline</sup></span>
-										<span class="date">10 мая</span>
+									<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+									<div class="text">
+										<div class="text-name">Патрик Саливан</div>
+										<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
 									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
 								</a>
 
 								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_on">online</sup></span>
-										<span class="date">10 мая</span>
+									<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+									<div class="text">
+										<div class="text-name">Патрик Саливан</div>
+										<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
 									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
 								</a>
 
 								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_off">offline</sup></span>
-										<span class="date">10 мая</span>
+									<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+									<div class="text">
+										<div class="text-name">Патрик Саливан</div>
+										<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
 									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+								</a>
+
+								<a href="#" class="item">
+									<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+									<div class="text">
+										<div class="text-name">Патрик Саливан</div>
+										<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+									</div>
+								</a>
+
+								<a href="#" class="item">
+									<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+									<div class="text">
+										<div class="text-name">Патрик Саливан</div>
+										<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+									</div>
+								</a>
+
+								<a href="#" class="item">
+									<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+									<div class="text">
+										<div class="text-name">Патрик Саливан</div>
+										<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+									</div>
+								</a>
+
+								<a href="#" class="item">
+									<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+									<div class="text">
+										<div class="text-name">Патрик Саливан</div>
+										<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+									</div>
+								</a>
+
+								<a href="#" class="item">
+									<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+									<div class="text">
+										<div class="text-name">Патрик Саливан</div>
+										<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+									</div>
+								</a>
+
+								<a href="#" class="item">
+									<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+									<div class="text">
+										<div class="text-name">Патрик Саливан</div>
+										<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+									</div>
+								</a>
+
+								<a href="#" class="item">
+									<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+									<div class="text">
+										<div class="text-name">Патрик Саливан</div>
+										<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+									</div>
+								</a>
+
+								<a href="#" class="item">
+									<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+									<div class="text">
+										<div class="text-name">Патрик Саливан</div>
+										<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+									</div>
+								</a>
+
+								<a href="#" class="item">
+									<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+									<div class="text">
+										<div class="text-name">Патрик Саливан</div>
+										<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+									</div>
 								</a>
 
 							</div>
-							<div class="header-popup__footer">
-								<a href="#" class="btn btn_brdr btn_settings">Настроить оповещения</a>
-								<a href="#" class="btn btn_brdr btn_clear js-remove-all-messages">Очистить</a>
+							<div class="header-popup__settings">
+								<a href="#" class="btn btn_brdr btn_settings" data-hint="Настройки оповещений"></a>
+								<a href="#" class="btn btn_brdr btn_clear js-remove-all-messages" data-hint="Очистить"></a>
 							</div>
 						</div>
 					</div>
@@ -4835,19 +4919,21 @@
 			<li data-bg="8" class="section-bg_item" style="background-image: url('img/bg/front-bg-tourism.jpg')"></li>
 		</ul>
 		<div class="inner clearfix">
-			<div class="section_search__title">ВЫБЕРИТЕ ИНТЕРЕСУЮЩИЙ ВАС РАЗДЕЛ</div>
 			<div class="section_search__tabs">
+				<div class="section_search__title">Выберите интересующий вас раздел</div>
 				<div class="section_search__tabs-menu">
-					<div class="section_search__tabs-menu__item active" data-tabs-menu="0">Персональные<br>тренеры</div>
-					<div class="section_search__tabs-menu__item" data-tabs-menu="1">Спортивные<br>клубы</div>
-					<div class="section_search__tabs-menu__item" data-tabs-menu="2">Спортивные<br>секции</div>
-					<div class="section_search__tabs-menu__item" data-tabs-menu="3">Аренда<br>площадок</div>
-					<div class="section_search__tabs-menu__item" data-tabs-menu="4">Спортивные<br>магазины</div>
-					<div class="section_search__tabs-menu__item" data-tabs-menu="5">Детский<br>спорт</div>
-					<div class="section_search__tabs-menu__item" data-tabs-menu="6">Спортивная<br>медицина</div>
-					<div class="section_search__tabs-menu__item" data-tabs-menu="7">Активный<br>отдых</div>
-					<div class="section_search__tabs-menu__item" data-tabs-menu="8">Туристические<br>базы</div>
+					<div class="section_search__tabs-menu__item active" data-tabs-menu="0">Персональные тренеры</div>
+					<div class="section_search__tabs-menu__item" data-tabs-menu="1">Спортивные клубы</div>
+					<div class="section_search__tabs-menu__item" data-tabs-menu="2">Спортивные секции</div>
+					<div class="section_search__tabs-menu__item" data-tabs-menu="3">Аренда площадок</div>
+					<div class="section_search__tabs-menu__item" data-tabs-menu="4">Спортивные магазины</div>
+					<div class="section_search__tabs-menu__item" data-tabs-menu="5">Детский спорт</div>
+					<div class="section_search__tabs-menu__item" data-tabs-menu="6">Спортивная медицина</div>
+					<div class="section_search__tabs-menu__item" data-tabs-menu="7">Активный отдых</div>
+					<div class="section_search__tabs-menu__item" data-tabs-menu="8">Туристические базы</div>
 				</div>
+
+				<hr>
 
 				<div class="section_search__tabs-menu__target section_search__tabs-menu__target_3 active" data-tabs-target="0">
 					<div class="section_search__tabs-field">
@@ -8039,8 +8125,8 @@
 				</div>
 
 			</div>
-			<div class="section_search__subtitle">или воспользуйтесь поиском</div>
 			<div class="section_search__finder js-search">
+				<div class="section_search__subtitle">или воспользуйтесь поиском</div>
 				<div class="section_search__finder-field">
 					<div class="section_search__finder-input js-input-wrap">
 						<input class="js-input-targ" type="text" placeholder="">

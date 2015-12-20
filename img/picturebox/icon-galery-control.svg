@@ -3,8 +3,8 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="72px" height="134px" viewBox="-36 0 72 134" enable-background="new -36 0 72 134" xml:space="preserve">
-<path fill="#3FB4C6" d="M0,0h15l21,34L15,67H0l21-33L0,0z"/>
+<path fill="#3399FF" d="M0,0h15l21,34L15,67H0l21-33L0,0z"/>
 <path fill="#FFFFFF" d="M0,67h15l21,34l-21,33H0l21-33L0,67z"/>
-<path fill="#3FB4C6" d="M-21,34L0,67h-15l-21-33l21-34L0,0L-21,34z"/>
+<path fill="#3399FF" d="M-21,34L0,67h-15l-21-33l21-34L0,0L-21,34z"/>
 <path fill="#FFFFFF" d="M-21,101l21,33h-15l-21-33l21-34H0L-21,101z"/>
 </svg>

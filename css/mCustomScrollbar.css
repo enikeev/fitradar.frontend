@@ -51,7 +51,7 @@ y-axis
 ------------------------------------------------------------------------------------------------------------------------
 */
 
-	.mCSB_inside > .mCSB_container{ margin-right: 15px; }
+	.mCSB_inside > .mCSB_container{ margin-right: 5px; }
 
 	.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden{ margin-right: 0; } /* non-visible scrollbar */
 	
@@ -64,7 +64,7 @@ y-axis
 
 	.mCSB_scrollTools{ /* contains scrollbar markup (draggable element, dragger rail, buttons etc.) */
 		position: absolute;
-		width: 16px;
+		width: 5px;
 		height: auto;
 		left: auto;
 		top: 0;
@@ -358,12 +358,12 @@ yx-axis
 	}
 
 	.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
-		background-color: #3fb4c6;
+		background-color: #3399ff;
 	}
 	.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
 	.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
 		/*background-color: #fff;*/
-		background-color: #3fb4c6;
+		background-color: #3399ff;
 	}
 
 	.mCSB_scrollTools .mCSB_buttonUp,
