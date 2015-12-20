@@ -1664,6 +1664,7 @@ textarea ~ .input__notepad{
 	position: relative;
 	padding: 0 6px;
 	width: 12.5%;
+	cursor: pointer;
 }
 .object-add__progress .progress-item_first{padding-left: 0;}
 .object-add__progress .progress-item_last{padding-right: 0;}
@@ -1707,10 +1708,10 @@ textarea ~ .input__notepad{
 	right: -35px;
 }
 
-.object-add__progress .progress-item.active .progress-inner{background: #eaeaea;}
-.object-add__progress .progress-item.active .progress-view:before{border-top: 25px solid #eaeaea;}
-.object-add__progress .progress-item.active .progress-view:after{border-bottom: 25px solid #eaeaea;}
-.object-add__progress .progress-item.active .progress-step:after{border-left: 10px solid #eaeaea;}
+.object-add__progress .progress-item:hover .progress-inner{background: #eaeaea;}
+.object-add__progress .progress-item:hover .progress-view:before{border-top: 25px solid #eaeaea;}
+.object-add__progress .progress-item:hover .progress-view:after{border-bottom: 25px solid #eaeaea;}
+.object-add__progress .progress-item:hover .progress-step:after{border-left: 10px solid #eaeaea;}
 
 .object-add__progress .progress-pie{
 	font-size: 12px!important;
