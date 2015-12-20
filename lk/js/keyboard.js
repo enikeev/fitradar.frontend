@@ -1,4 +1,4 @@
-$(function(){
+(function(){
 
 	var keypad = {
 		build: function(){
@@ -9,8 +9,8 @@ $(function(){
 			oneShift: false
 		},
 		init: function(){
-			var that = this;
-			that.build();
+		//	var that = this;
+			keypad.build();
 			var $keybordWrap = $('.keypad-wrap');
 			$('body').on('click', '.js-input-notepad', function(){
 				var $this = $(this);
@@ -30,13 +30,13 @@ $(function(){
 				$('.js-input-targ-active').removeClass('js-input-targ-active');
 			}).on('click', '.keypad .key', function(e){
 				var $input = $('.js-input-targ-active');
-				if ( that.status.oneShift || $(this).data('key')!== 'shift' ){
-					that.status.oneShift = false;
+				if ( keypad.status.oneShift || $(this).data('key')!== 'shift' ){
+					keypad.status.oneShift = false;
 					$keybordWrap.removeClass('keypad-wrap_oneshift');
 				}
 				if ( $(this).data('key') ){
 					var v = $(this).data('key');
-					that.btnPush[v]();
+					keypad.btnPush[v]();
 				} else {
 					var nWord = $(this).text();
 					var text = $input.val();
@@ -107,8 +107,18 @@ $(function(){
 		}
 	};
 
-	keypad.init();
-});
+//	keypad.init();
+
+	var keypadInt = setInterval(function(){
+		if (typeof jQuery !== 'function') return;
+		clearInterval(keypadInt);
+		$(function(){
+			setTimeout(keypad.init, 0);
+		});
+
+	}, 50);
+
+})();
 
 
 function keyboard(){

@@ -991,6 +991,29 @@ hr{
 }
 .input__search:hover{background-image: url("../img/icon-search-c.svg");}
 .js-input-wrap.filled .input__search{right: 53px;}
+
+
+.input__result{
+	position: absolute;
+	background: #fff;
+	left: 0;
+	right: 0;
+	top: 31px;
+	border: 1px solid #cfcfcf;
+	z-index: 10;
+	display: none;
+	max-height: 250px;
+}
+.input__result .list-item{
+	margin: 2px 10px;
+	cursor: pointer;
+}
+.input__result .list-item:hover{
+	text-decoration: underline;
+	color: #3fb4c6;
+}
+
+
 textarea ~ .input__clear{
 	top: 15px;
 }
@@ -1211,10 +1234,11 @@ textarea ~ .input__notepad{
 	margin-bottom: 10px;
 }
 .object-add__item .field-item_list .list-wrap .list-menu{
-	margin: 10px 0;
+	margin: 10px 0 0;
 }
 .object-add__item .field-item_list .list-wrap .list-menu .btn{
 	width: auto;
+	margin-bottom: 10px;
 }
 .object-add__item .field-item_list .list-wrap .list{
 	max-height: 190px;
@@ -1268,7 +1292,66 @@ textarea ~ .input__notepad{
 	background: #505050;
 }
 
+.object-add__item_moreobjtypes_s{}
+.object-add__item_moreobjtypes_s .field-footnote{color: #70b2c2;}
 
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .list-search{
+	width: 70%;
+	float: left;
+}
+
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .list{
+	width: 70%;
+	float: left;
+}
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .list-menu{
+	width: 70%;
+	float: left;
+	margin: 0;
+}
+
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result{
+	width: 30%;
+	float: right;
+	padding-left: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result.clear{
+	display: block;
+}
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result .list-title{
+	margin: 0;
+	border: 0;
+	background: #f5f5f6;
+}
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result .list-title:after{
+	display: none;
+}
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result .list-scroll{
+	background: #f5f5f6;
+	height: 200px;
+}
+.object-add__item_moreobjtypes_s.tabs .field-item_list .list-wrap .field-item_list-result .list-scroll{
+	height: 245px;
+}
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result .list-wrap{
+	display: block;
+	position: relative;
+	margin: 0;
+	background: none;
+	border: 0;
+}
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result .list-wrap .list-item{
+	margin: 2px 0;
+	float: none;
+	width: 100%;
+}
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .list .list-item{
+	float: left;
+	width: 50%;
+}
 
 
 .obj-case{
@@ -1409,6 +1492,28 @@ textarea ~ .input__notepad{
 	left: 0;
 	bottom: 0;
 	height: 5px;
+}
+.object-add__item_addfile .field-item_file .footnote-input{
+	margin-top: 5px;
+}
+.object-add__item_addfile .field-item_file .file-remove{
+	position: absolute;
+	top: 5px;
+	right: 15px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	background: #fff url("../img/icon-input_clear.svg") no-repeat 50% 50%;
+
+	-webkit-background-size: 10px 10px;
+	background-size: 10px 10px;
+	display: none;
+	cursor: pointer;
+}
+.object-add__item_addfile .field-item_file:hover .file-remove{
+	display: block;
 }
 .object-add__item_addfile .field-item_file .file-progress span{
 	position: absolute;
@@ -1978,7 +2083,9 @@ textarea ~ .input__notepad{
 .lk-blocks .block_graphics .graphic-item_sml .text .num span{color: #70c63f;}
 
 
-
+.lk-table tr:hover td{
+	background-color: #f5f5f5;
+}
 
 
 .lk-table_list{width: 100%;}

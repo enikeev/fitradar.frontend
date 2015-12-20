@@ -14,8 +14,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
 	<script type="text/javascript" src="js/mCustomScrollbar.min.js"></script>
-	<script type="text/javascript" src="js/keyboard.js"></script>
-	<script type="text/javascript" src="js/dropzone.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
 
@@ -326,173 +324,155 @@
 
 	<div class="lk-content">
 		<div class="lk-content__head">
-			<div class="title">Сети</div>
-			<div class="right"><a href="#" onclick="$('.modal-addchain').showModalLk();" class="btn btn_add btn_green"><i class="plus"></i>Добавить сеть</span></a></div>
+			<div class="title">Мои счета (3)</div>
+			<div class="right"><a href="#" class="btn btn_brdr">Запросить акт сверки</a></div>
 		</div>
-
 		<div class="lk-content__body">
-			<table class="lk-table">
+			<table class="lk-table lk-table_balance">
 				<tbody>
 				<tr>
-					<td colspan="7">
-						<label class="checkbox-case">
-							<input type="checkbox">
-							<i class="marker"></i>
-							<span>Выделить все</span>
-						</label>
+					<td>
+						<div class="text-main">5&nbsp;дек</div>
+					</td>
+					<td>
+						<div class="text-main">R0005356007</div>
+					</td>
+					<td>
+						<div class="text-main">Счет № 1251 от 05.12.2015</div>
+					</td>
+					<td>
+						<div>
+							<div class="text-main text-status">Статус счета: <span class="color-access"> оплачен</span></div>
+						</div>
+					</td>
+					<td>
+						<div>
+							<div class="text-balance">– 1260 Р</div>
+						</div>
+					</td>
+					<td align="right">
+						<a href="#" class="btn" data-tooltip-link="tt1">Подробней</a>
+					</td>
+				</tr>
+				<tr class="color-gray">
+					<td>
+						<div class="text-main">5&nbsp;дек</div>
+					</td>
+					<td>
+						<div class="text-main">R0005356007</div>
+					</td>
+					<td>
+						<div class="text-main">Счет № 1251 от 05.12.2015</div>
+					</td>
+					<td>
+						<div>
+							<div class="text-main text-status">Статус счета: <span class="color-waiting"> ждет подтверждения</span></div>
+						</div>
+					</td>
+					<td>
+						<div>
+							<div class="text-balance">– 1260 Р</div>
+						</div>
+					</td>
+					<td align="right">
+						<a href="#" class="btn" data-tooltip-link="tt1">Подробней</a>
 					</td>
 				</tr>
 				<tr>
-					<td class="td-checkbox">
-						<label class="checkbox-case">
-							<input type="checkbox">
-							<i class="marker"></i>
-						</label>
-					</td>
-					<td class="employees-td_img">
-						<div class="employees-photo"><img src="img/temp/user-logo.jpg" alt=""></div>
+					<td>
+						<div class="text-main">5&nbsp;дек</div>
 					</td>
 					<td>
-						<div class="text-main">Alex Fitness</div>
-						<div class="text-footnote">сеть спортивных клубов</div>
+						<div class="text-main">R0005356007</div>
 					</td>
 					<td>
-						E-Объекты : <span class="color-c">55</span><br>
-						Сотрудники : <span class="color-c">10</span>
+						<div class="text-main">Счет № 1251 от 05.12.2015</div>
 					</td>
 					<td>
-						Новости :<span class="color-c">20</span><br>
-						Мероприятия : <span class="color-c">20</span>
+						<div>
+							<div class="text-main text-status">Статус счета: <span class="color-access"> оплачен</span></div>
+						</div>
 					</td>
 					<td>
-						Средний рейтинг : <span class="color-c">4,9</span>
+						<div>
+							<div class="text-balance">– 1260 Р</div>
+						</div>
 					</td>
 					<td align="right">
-						<a href="#" class="btn">Редактировать</a>
-					</td>
-				</tr>
-
-				<tr>
-					<td class="td-checkbox">
-						<label class="checkbox-case">
-							<input type="checkbox">
-							<i class="marker"></i>
-						</label>
-					</td>
-					<td class="employees-td_img">
-						<div class="employees-photo"><img src="img/temp/user-logo.jpg" alt=""></div>
-					</td>
-					<td>
-						<div class="text-main">Alex Fitness</div>
-						<div class="text-footnote">сеть спортивных клубов</div>
-					</td>
-					<td>
-						E-Объекты : <span class="color-c">55</span><br>
-						Сотрудники : <span class="color-c">10</span>
-					</td>
-					<td>
-						Новости :<span class="color-c">20</span><br>
-						Мероприятия : <span class="color-c">20</span>
-					</td>
-					<td>
-						Средний рейтинг : <span class="color-c">4,9</span>
-					</td>
-					<td align="right">
-						<a href="#" class="btn">Редактировать</a>
+						<a href="#" class="btn" data-tooltip-link="tt1">Подробней</a>
 					</td>
 				</tr>
 
 				</tbody>
-				<tfoot>
-				<tr>
-					<td colspan="7">
-						<label class="checkbox-case">
-							<input type="checkbox">
-							<i class="marker"></i>
-							<span>Выделить все</span>
-						</label>
-						<span class="select-wrap">
-							<select>
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-							</select>
-						</span>
-						<a href="#" class="btn">Применить</a>
-					</td>
-				</tr>
-				</tfoot>
 			</table>
-			<a href="#" onclick="$('.modal-addchain').showModalLk();" class="btn btn_add btn_green"><i class="plus"></i>Добавить сеть</span></a>
+
+
+
 		</div>
 	</div>
 
 </div><!-- .wrapper -->
 
-<div class="modal modal-addchain">
-	<div class="modal-overlay"></div>
-	<div class="modal-inner tabs">
-		<span class="modal-close"></span>
-			<div class="title">Добавить новую сеть</div>
-
-			<div class="object-add__item">
-				<div class="field-label">Название</div>
-				<div class="field-box">
-					<div class="field-item field-item_input">
-						<div class="js-input-wrap">
-							<input type="text" class="js-input-targ" placeholder="">
-							<div class="input__notepad js-input-notepad"></div>
-							<div class="input__clear js-input-clear"></div>
-						</div>
-						<div class="field-footnote"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="object-add__item">
-				<div class="field-label">Краткое описание</div>
-				<div class="field-box">
-					<div class="field-item field-item_input">
-						<div class="js-input-wrap">
-							<input type="text" class="js-input-targ" placeholder="">
-							<div class="input__notepad js-input-notepad"></div>
-							<div class="input__clear js-input-clear"></div>
-						</div>
-						<div class="field-footnote"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="object-add__item object-add__item_addfile">
-				<div class="field-label">Добавьте  изображения</div>
-				<div class="field-box">
-					<div class="field-dropzone">
-						<div class="dropzone" data-url="/lk/upload.php">
-							<div class="dropzone-case js-upload-files-container"></div>
-							<div class="field-item field-item_file field-item_file-upload">
-								<div class="file-img"><img src="img/240x170.gif"></div>
-								<div class="file-name"></div>
-								<div class="field-footnote">
-								</div>
-							</div>
-							<div class="field-item field-item_file field-item_file-upload ">
-								Вы можете загрузить изображение в формате JPG, GIF, или PNG.
-								<br>
-								<br>
-								<span class="btn js-upload-new-file">Выбрать файл</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="object-add__item">
-				<a href="#" class="btn ">Сохранить</a>
-				<a href="#" class="btn  js-modal-close">Отмена</a>
-			</div>
-
+<div class="tooltip-popup tooltip-popup__bill" data-tooltip-popup="tt1">
+	<div class="tooltip-popup__close"></div>
+	<div class="tooltip-popup__col-1">
+		<div class="tooltip-popup__text">05.12.2015 в 13:55</div>
+		<div class="tooltip-popup__title">Данные по счету № 1251 от 05.12.2015</div>
+		<div class="tooltip-popup__big">1260 Р</div>
+	</div>
+	<div class="tooltip-popup__col-2">
+		<div class="tooltip-popup__subtitle color-gray">Плательщик</div>
+		<div class="tooltip-popup__text color-dark">Индивидуальный предприниматель<br>Елисеев Артем Олегович</div>
+		<div class="tooltip-popup__subtitle color-gray">Юридический адрес</div>
+		<div class="tooltip-popup__text color-dark">г.Санкт-Петербург, Ул Крыленко, д.58 к.1 кв.4</div>
+		<div class="tooltip-popup__subtitle color-gray">Фактический адрес</div>
+		<div class="tooltip-popup__text color-dark">г.Санкт-Петербург, Ул Крыленко, д.58 к.1 кв.4</div>
+		<div class="tooltip-popup__subtitle color-gray">Фактический адрес</div>
+		<div class="tooltip-popup__text color-dark">г.Санкт-Петербург, Ул Крыленко, д.58 к.1 кв.4</div>
+		<div class="tooltip-popup__subtitle color-gray">Контакты</div>
+		<div class="tooltip-popup__text color-dark">89118181818</div>
+		<div class="tooltip-popup__subtitle color-gray">КПП</div>
+		<div class="tooltip-popup__text color-dark">650422</div>
+		<div class="tooltip-popup__subtitle color-gray">Расчетный счет</div>
+		<div class="tooltip-popup__text color-dark">40802810800670906340</div>
+		<div class="tooltip-popup__subtitle color-gray">Корреспондентский счет</div>
+		<div class="tooltip-popup__text color-dark">40802810800670906340</div>
+		<div class="tooltip-popup__subtitle color-gray">БИК</div>
+		<div class="tooltip-popup__text color-dark">044030806</div>
+		<div class="tooltip-popup__subtitle color-gray">Банк</div>
+		<div class="tooltip-popup__text color-dark">Филиал НБ «Траст» (ОАО) в Г. Санкт-Петербург</div>
+	</div>
+	<div class="tooltip-popup__col-2">
+		<div class="tooltip-popup__subtitle color-gray">Плательщик</div>
+		<div class="tooltip-popup__text color-dark">Индивидуальный предприниматель<br>Елисеев Артем Олегович</div>
+		<div class="tooltip-popup__subtitle color-gray">Юридический адрес</div>
+		<div class="tooltip-popup__text color-dark">г.Санкт-Петербург, Ул Крыленко, д.58 к.1 кв.4</div>
+		<div class="tooltip-popup__subtitle color-gray">Фактический адрес</div>
+		<div class="tooltip-popup__text color-dark">г.Санкт-Петербург, Ул Крыленко, д.58 к.1 кв.4</div>
+		<div class="tooltip-popup__subtitle color-gray">Фактический адрес</div>
+		<div class="tooltip-popup__text color-dark">г.Санкт-Петербург, Ул Крыленко, д.58 к.1 кв.4</div>
+		<div class="tooltip-popup__subtitle color-gray">Контакты</div>
+		<div class="tooltip-popup__text color-dark">89118181818</div>
+		<div class="tooltip-popup__subtitle color-gray">КПП</div>
+		<div class="tooltip-popup__text color-dark">650422</div>
+		<div class="tooltip-popup__subtitle color-gray">Расчетный счет</div>
+		<div class="tooltip-popup__text color-dark">40802810800670906340</div>
+		<div class="tooltip-popup__subtitle color-gray">Корреспондентский счет</div>
+		<div class="tooltip-popup__text color-dark">40802810800670906340</div>
+		<div class="tooltip-popup__subtitle color-gray">БИК</div>
+		<div class="tooltip-popup__text color-dark">044030806</div>
+		<div class="tooltip-popup__subtitle color-gray">Банк</div>
+		<div class="tooltip-popup__text color-dark">Филиал НБ «Траст» (ОАО) в Г. Санкт-Петербург</div>
+	</div>
+	<div class="tooltip-popup__col-1">
+		<div class="tooltip-popup__dl">
+			<span class="title color-gray">Скачать счет</span>
+			<a href="#" download="true"><img src="img/dl-doc.png" alt=""></a>
+			<a href="#" download="true"><img src="img/dl-xls.png" alt=""></a>
+			<a href="#" download="true"><img src="img/dl-pdf.png" alt=""></a>
 		</div>
 	</div>
 </div>
+
 </body>
 </html>

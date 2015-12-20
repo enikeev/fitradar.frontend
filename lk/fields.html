@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>Настройки оповещений</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+	<meta name=viewport content="width=device-width, initial-scale=1">
+
+	<link href="css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
+	<script type="text/javascript" src="js/mCustomScrollbar.min.js"></script>
+	<script type="text/javascript" src="js/keyboard.js"></script>
+	<script type="text/javascript" src="js/jquery.knob.js"></script>
+	<script type="text/javascript" src="js/dropzone.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+<div class="lk-wrapper">
+
+	<div class="lk-menu">
+		<div class="lk-menu__inner">
+			<div class="lk-menu__header">
+				<a href="#" class="lk-menu__logo">
+					<img src="img/logo-big.svg" alt="">
+				</a>
+			</div>
+			<div class="lk-menu__body">
+				<div class="lk-menu__user">
+					<div class="case">
+						<div class="case-img"><img src="img/temp/user-logo.jpg" alt=""></div>
+						<div class="case-name">Alex Fitness</div>
+					</div>
+				</div>
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_user"></i></div>
+							<div class="case-name">ДАННЫЕ КОМПАНИИ</div>
+							<div class="case-amount"><span class="new">1</span></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item active"><a href="#" class="group-link">Общие данные</a> <div class="amount"><span>1</span></div></li>
+							<li class="group-item"><a href="#" class="group-link">Публичные данные</a></li>
+							<li class="group-item"><a href="#" class="group-link">Деятельность</a></li>
+							<li class="group-item"><a href="#" class="group-link">Смена пароля</a></li>
+						</ul>
+						<div>
+							<a href="#" class="btn btn_add">Изменить статус</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_credit"></i></div>
+							<div class="case-name">КОММЕРЧЕСКАЯ ИНФОРМАЦИЯ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Реквизиты</a></li>
+							<li class="group-item"><a href="#" class="group-link">Счета</a></li>
+							<li class="group-item"><a href="#" class="group-link">Баланс</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_chain"></i></div>
+							<div class="case-name">СЕТИ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">все сети</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить сеть</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_mail"></i></div>
+							<div class="case-name">СОБЩЕНИЯ</div>
+							<div class="case-amount"><span class="new">50</span></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Сотрудники</a></li>
+							<li class="group-item"><a href="#" class="group-link">Посетители</a></li>
+							<li class="group-item"><a href="#" class="group-link">Служба поддержки</a></li>
+							<li class="group-item"><a href="#" class="group-link">Все сообщения</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_bell"></i></div>
+							<div class="case-name">ОПОВЕЩЕНИЯ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Персональные тренеры</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные клубы</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные секции</a></li>
+							<li class="group-item"><a href="#" class="group-link">Аренда площадок</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные магазины</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные магазины</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивная медицина</a></li>
+							<li class="group-item"><a href="#" class="group-link">Активный отдых</a></li>
+							<li class="group-item"><a href="#" class="group-link">Туристические базы</a></li>
+							<li class="group-item"><a href="#" class="group-link">Новости</a></li>
+							<li class="group-item"><a href="#" class="group-link">Мероприятия</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_dialog"></i></div>
+							<div class="case-name">ОТЗЫВЫ</div>
+							<div class="case-amount"><span class="">99+</span></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item">
+								<a href="#" class="">
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+								</a>
+							</li>
+							<li class="group-item">
+								<a href="#" class="">
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+								</a>
+							</li>
+							<li class="group-item">
+								<a href="#" class="">
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-w"></i>
+									<i class="ico ico_star-w"></i>
+								</a>
+							</li>
+							<li class="group-item">
+								<a href="#" class="">
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-w"></i>
+								</a>
+							</li>
+							<li class="group-item">
+								<a href="#" class="">
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+									<i class="ico ico_star-c"></i>
+								</a>
+							</li>
+							<li class="group-item"><a href="#" class="group-link">Все отзывы</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_bag"></i></div>
+							<div class="case-name">СОТРУДНИКИ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Все сотрудники</a></li>
+							<li class="group-item"><a href="#" class="group-link">Уволенные</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_house"></i></div>
+							<div class="case-name">ОБЪЕКТЫ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Персональные тренеры</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные секции</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные секции</a></li>
+							<li class="group-item"><a href="#" class="group-link">Аренда площадок</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивные магазины</a></li>
+							<li class="group-item"><a href="#" class="group-link">Детский спорт</a></li>
+							<li class="group-item"><a href="#" class="group-link">Спортивная медицина</a></li>
+							<li class="group-item"><a href="#" class="group-link">Активный отдых</a></li>
+							<li class="group-item"><a href="#" class="group-link">Туристические базы</a></li>
+							<li class="group-item"><a href="#" class="group-link">Все объекты</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить объект</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_book"></i></div>
+							<div class="case-name">НОВОСТИ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Все новости</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить новость</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_cal"></i></div>
+							<div class="case-name">МЕРОПРИЯТИЯ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Все мероприятия</a></li>
+						</ul>
+						<div class="add">
+							<a href="#" class="btn btn_add btn_green"><span class="plus">Добавить мероприятие</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-menu__group lk-menu__group_inside">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_setting"></i></div>
+							<div class="case-name">НАСТРОЙКИ</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+					<div class="group-body">
+						<ul class="group-list">
+							<li class="group-item"><a href="#" class="group-link">Настройки сайта</a></li>
+							<li class="group-item"><a href="#" class="group-link">Настройки оповещения</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="lk-menu__group">
+					<div class="group-head">
+						<div class="case">
+							<div class="case-img"><i class="ico ico_stat"></i></div>
+							<div class="case-name">СТАТИСТИКА</div>
+							<div class="case-amount"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="lk-menu__footer">
+				<a href="#" class="btn btn_add btn_orange">ТАРИФЫ</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="lk-content">
+
+		<div class="lk-content__body">
+			<div class="object-add">
+				<div class="object-add__container">
+					<div class="object-add__container-inner">
+<!--
+http://www.jqueryajaxphp.com/upload-resize-image-dropzone-php/
+http://www.dropzonejs.com/#config-maxFiles
+https://github.com/enyo/dropzone/wiki/FAQ
+-->
+
+						<div class="object-add__item object-add__item_moreobjtypes_s js-object-list-select">
+							<div class="field-label">Выпадашка новая</div>
+							<div class="field-box">
+								<div class="field-item field-item_list">
+									<div class="list-title">Выберите из списка</div>
+									<div class="list-wrap">
+
+										<div class="field-item_list-result clear">
+											<div class="list-title">Выбранные (<span class="js-result-num">0</span>)</div>
+											<div class="list-scroll">
+												<div class="list-wrap"></div>
+											</div>
+										</div>
+
+										<div class="list-search">
+											<div class="js-input-wrap">
+												<input type="text" class="js-input-targ js-local-search" placeholder="">
+												<div class="input__notepad js-input-notepad"></div>
+												<div class="input__search js-input-search"></div>
+												<div class="input__clear js-input-clear"></div>
+											</div>
+										</div>
+										<div class="list">
+											<div class="list-item js-val js-targ" data-val="01">Авто/мотоспорт</div>
+											<div class="list-item js-val js-targ" data-val="02">Авиамодельный спорт</div>
+											<div class="list-item js-val js-targ" data-val="03">Aкадемическая гребля</div>
+											<div class="list-item js-val js-targ" data-val="04">Акробатика</div>
+											<div class="list-item js-val js-targ" data-val="05">Бадминтон</div>
+											<div class="list-item js-val js-targ" data-val="06">Баскетбол</div>
+											<div class="list-item js-val js-targ" data-val="07">Биатлон</div>
+											<div class="list-item js-val js-targ" data-val="08">Бильярд</div>
+											<div class="list-item js-val js-targ" data-val="09">Бейсбол</div>
+											<div class="list-item js-val js-targ" data-val="10">Бокс</div>
+											<div class="list-item js-val js-targ" data-val="11">Бобслей</div>
+											<div class="list-item js-val js-targ" data-val="12">Бодибилдинг</div>
+											<div class="list-item js-val js-targ" data-val="13">Боулинг</div>
+											<div class="list-item js-val js-targ" data-val="14">Велоспорт</div>
+											<div class="list-item js-val js-targ" data-val="15">Вертолетный спорт</div>
+											<div class="list-item js-val js-targ" data-val="16">Виртуальный спорт</div>
+											<div class="list-item js-val js-targ" data-val="17">Водное поло</div>
+											<div class="list-item js-val js-targ" data-val="18">Волейбол</div>
+											<div class="list-item js-val js-targ" data-val="19">Воднолыжный спорт</div>
+											<div class="list-item js-val js-targ" data-val="20">Вольная борьба</div>
+											<div class="list-item js-val js-targ" data-val="21">Гандбол</div>
+											<div class="list-item js-val js-targ" data-val="22">Гольф</div>
+											<div class="list-item js-val js-targ" data-val="23">Горные лыжи</div>
+											<div class="list-item js-val js-targ" data-val="24">Гребля на байдарках</div>
+											<div class="list-item js-val js-targ" data-val="25">Греко-римская борьба</div>
+											<div class="list-item js-val js-targ" data-val="26">Дзюдо</div>
+											<div class="list-item js-val js-targ" data-val="27">Допинг</div>
+											<div class="list-item js-val js-targ" data-val="28">Единоборства</div>
+											<div class="list-item js-val js-targ" data-val="29">Женский футбол</div>
+											<div class="list-item js-val js-targ" data-val="30">Киберспорт</div>
+											<div class="list-item js-val js-targ" data-val="31">Керлинг</div>
+											<div class="list-item js-val js-targ" data-val="32">Конный спорт</div>
+											<div class="list-item js-val js-targ" data-val="33">Коньки</div>
+											<div class="list-item js-val js-targ" data-val="34">Кудо</div>
+											<div class="list-item js-val js-targ" data-val="35">Легкая атлетика</div>
+											<div class="list-item js-val js-targ" data-val="36">Лыжные гонки</div>
+											<div class="list-item js-val js-targ" data-val="37">Лыжнoе двоеборье</div>
+											<div class="list-item js-val js-targ" data-val="38">Любительский футбол</div>
+											<div class="list-item js-val js-targ" data-val="39">Мини-футбол</div>
+											<div class="list-item js-val js-targ" data-val="40">Настольный теннис</div>
+											<div class="list-item js-val js-targ" data-val="41">Плавание</div>
+											<div class="list-item js-val js-targ" data-val="42">Прыжки в воду</div>
+											<div class="list-item js-val js-targ" data-val="43">Парусный спорт</div>
+											<div class="list-item js-val js-targ" data-val="44">Паралимпизм</div>
+											<div class="list-item js-val js-targ" data-val="45">Пляжный футбол</div>
+											<div class="list-item js-val js-targ" data-val="46">Покер</div>
+											<div class="list-item js-val js-targ" data-val="47">Прыжки на батуте</div>
+											<div class="list-item js-val js-targ" data-val="48">Пятиборье</div>
+											<div class="list-item js-val js-targ" data-val="49">Регби</div>
+											<div class="list-item js-val js-targ" data-val="50">Рыболовный спорт</div>
+											<div class="list-item js-val js-targ" data-val="51">Сани</div>
+											<div class="list-item js-val js-targ" data-val="52">Скелетон</div>
+											<div class="list-item js-val js-targ" data-val="53">Сноуборд</div>
+											<div class="list-item js-val js-targ" data-val="54">Cофтбол</div>
+											<div class="list-item js-val js-targ" data-val="55">Cпортивная гимнастика</div>
+											<div class="list-item js-val js-targ" data-val="56">Стрельба из лука</div>
+											<div class="list-item js-val js-targ" data-val="57">Стрельба пулевая</div>
+											<div class="list-item js-val js-targ" data-val="58">Стрельба стендовая</div>
+											<div class="list-item js-val js-targ" data-val="59">Сумо</div>
+											<div class="list-item js-val js-targ" data-val="60">Трамплин</div>
+											<div class="list-item js-val js-targ" data-val="61">Теннис</div>
+											<div class="list-item js-val js-targ" data-val="62">Триатлон</div>
+											<div class="list-item js-val js-targ" data-val="63">Тяжелая атлетика</div>
+											<div class="list-item js-val js-targ" data-val="64">Фехтование</div>
+											<div class="list-item js-val js-targ" data-val="65">Фигурное катание</div>
+											<div class="list-item js-val js-targ" data-val="66">Формула-1</div>
+											<div class="list-item js-val js-targ" data-val="67">Фристайл</div>
+											<div class="list-item js-val js-targ" data-val="68">Футбол</div>
+											<div class="list-item js-val js-targ" data-val="69">Футзал</div>
+											<div class="list-item js-val js-targ" data-val="70">Хоккей</div>
+											<div class="list-item js-val js-targ" data-val="71">Хоккей на траве</div>
+											<div class="list-item js-val js-targ" data-val="72">Хоккей с мячом</div>
+											<div class="list-item js-val js-targ" data-val="73">Художественная гимнастика</div>
+											<div class="list-item js-val js-targ" data-val="74">Шахматы</div>
+											<div class="list-item js-val js-targ" data-val="75">Шорт-трек</div>
+											<div class="list-item js-val js-targ" data-val="76">Экстрим</div>
+										</div>
+
+									</div>
+									<div class="field-footnote">Выбрано (<span class="js-result-num">0</span>)</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="object-add__item object-add__item_moreobjtypes_s tabs js-object-list-select">
+							<div class="field-label">Выпадашка новая с вкладками</div>
+							<div class="field-box">
+								<div class="field-item field-item_list">
+									<div class="list-title">Выберите из списка</div>
+									<div class="list-wrap js-tab-wrap">
+
+										<div class="field-item_list-result clear">
+											<div class="list-title">Выбранные (<span class="js-result-num">0</span>)</div>
+											<div class="list-scroll">
+												<div class="list-wrap"></div>
+											</div>
+										</div>
+
+										<div class="list-search">
+											<div class="js-input-wrap">
+												<input type="text" class="js-input-targ js-local-search" placeholder="">
+												<div class="input__notepad js-input-notepad"></div>
+												<div class="input__search js-input-search"></div>
+												<div class="input__clear js-input-clear"></div>
+											</div>
+										</div>
+
+										<div class="list-menu">
+											<span data-tab-link="st1" class="btn btn_brdr active">Адрес объекта</span>
+											<span data-tab-link="st2" class="btn btn_brdr">Длинный таб</span>
+											<span data-tab-link="st3" class="btn btn_brdr">Таб</span>
+											<span data-tab-link="st4" class="btn btn_brdr">Еще таб</span>
+										</div>
+
+										<div class="">
+											<div class="tab-item active" data-tab-item="st1">
+												<div class="objects-wrap tabs-body list">
+													<div class="list-item js-val js-targ" data-val="01">Авто/мотоспорт</div>
+													<div class="list-item js-val js-targ" data-val="02">Авиамодельный спорт</div>
+													<div class="list-item js-val js-targ" data-val="03">Aкадемическая гребля</div>
+													<div class="list-item js-val js-targ" data-val="04">Акробатика</div>
+													<div class="list-item js-val js-targ" data-val="05">Бадминтон</div>
+													<div class="list-item js-val js-targ" data-val="06">Баскетбол</div>
+													<div class="list-item js-val js-targ" data-val="07">Биатлон</div>
+													<div class="list-item js-val js-targ" data-val="08">Бильярд</div>
+													<div class="list-item js-val js-targ" data-val="09">Бейсбол</div>
+													<div class="list-item js-val js-targ" data-val="10">Бокс</div>
+													<div class="list-item js-val js-targ" data-val="11">Бобслей</div>
+													<div class="list-item js-val js-targ" data-val="12">Бодибилдинг</div>
+													<div class="list-item js-val js-targ" data-val="13">Боулинг</div>
+													<div class="list-item js-val js-targ" data-val="14">Велоспорт</div>
+												</div>
+											</div>
+											<div class="tab-item" data-tab-item="st2">
+												<div class="objects-wrap tabs-body list">
+													<div class="list-item js-val js-targ" data-val="15">Вертолетный спорт</div>
+													<div class="list-item js-val js-targ" data-val="16">Виртуальный спорт</div>
+													<div class="list-item js-val js-targ" data-val="17">Водное поло</div>
+													<div class="list-item js-val js-targ" data-val="18">Волейбол</div>
+													<div class="list-item js-val js-targ" data-val="19">Воднолыжный спорт</div>
+													<div class="list-item js-val js-targ" data-val="20">Вольная борьба</div>
+													<div class="list-item js-val js-targ" data-val="21">Гандбол</div>
+													<div class="list-item js-val js-targ" data-val="22">Гольф</div>
+													<div class="list-item js-val js-targ" data-val="23">Горные лыжи</div>
+													<div class="list-item js-val js-targ" data-val="24">Гребля на байдарках</div>
+													<div class="list-item js-val js-targ" data-val="25">Греко-римская борьба</div>
+													<div class="list-item js-val js-targ" data-val="26">Дзюдо</div>
+													<div class="list-item js-val js-targ" data-val="27">Допинг</div>
+												</div>
+											</div>
+											<div class="tab-item" data-tab-item="st3">
+												<div class="objects-wrap tabs-body list">
+													<div class="list-item js-val js-targ" data-val="28">Единоборства</div>
+													<div class="list-item js-val js-targ" data-val="29">Женский футбол</div>
+													<div class="list-item js-val js-targ" data-val="30">Киберспорт</div>
+													<div class="list-item js-val js-targ" data-val="31">Керлинг</div>
+													<div class="list-item js-val js-targ" data-val="32">Конный спорт</div>
+													<div class="list-item js-val js-targ" data-val="33">Коньки</div>
+													<div class="list-item js-val js-targ" data-val="34">Кудо</div>
+													<div class="list-item js-val js-targ" data-val="35">Легкая атлетика</div>
+													<div class="list-item js-val js-targ" data-val="36">Лыжные гонки</div>
+													<div class="list-item js-val js-targ" data-val="37">Лыжнoе двоеборье</div>
+													<div class="list-item js-val js-targ" data-val="38">Любительский футбол</div>
+													<div class="list-item js-val js-targ" data-val="39">Мини-футбол</div>
+													<div class="list-item js-val js-targ" data-val="40">Настольный теннис</div>
+													<div class="list-item js-val js-targ" data-val="41">Плавание</div>
+													<div class="list-item js-val js-targ" data-val="42">Прыжки в воду</div>
+													<div class="list-item js-val js-targ" data-val="43">Парусный спорт</div>
+													<div class="list-item js-val js-targ" data-val="44">Паралимпизм</div>
+												</div>
+											</div>
+											<div class="tab-item" data-tab-item="st4">
+												<div class="objects-wrap tabs-body list">
+													<div class="list-item js-val js-targ" data-val="45">Пляжный футбол</div>
+													<div class="list-item js-val js-targ" data-val="46">Покер</div>
+													<div class="list-item js-val js-targ" data-val="47">Прыжки на батуте</div>
+													<div class="list-item js-val js-targ" data-val="48">Пятиборье</div>
+													<div class="list-item js-val js-targ" data-val="49">Регби</div>
+													<div class="list-item js-val js-targ" data-val="50">Рыболовный спорт</div>
+													<div class="list-item js-val js-targ" data-val="51">Сани</div>
+													<div class="list-item js-val js-targ" data-val="52">Скелетон</div>
+													<div class="list-item js-val js-targ" data-val="53">Сноуборд</div>
+													<div class="list-item js-val js-targ" data-val="54">Cофтбол</div>
+													<div class="list-item js-val js-targ" data-val="55">Cпортивная гимнастика</div>
+													<div class="list-item js-val js-targ" data-val="56">Стрельба из лука</div>
+													<div class="list-item js-val js-targ" data-val="57">Стрельба пулевая</div>
+													<div class="list-item js-val js-targ" data-val="58">Стрельба стендовая</div>
+													<div class="list-item js-val js-targ" data-val="59">Сумо</div>
+													<div class="list-item js-val js-targ" data-val="60">Трамплин</div>
+													<div class="list-item js-val js-targ" data-val="61">Теннис</div>
+													<div class="list-item js-val js-targ" data-val="62">Триатлон</div>
+													<div class="list-item js-val js-targ" data-val="63">Тяжелая атлетика</div>
+													<div class="list-item js-val js-targ" data-val="64">Фехтование</div>
+													<div class="list-item js-val js-targ" data-val="65">Фигурное катание</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="field-footnote">Выбрано (<span class="js-result-num">0</span>)</div>
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="object-add__item object-add__item_objectname">
+							<div class="field-label">Инпут с выпадашкой</div>
+							<div class="field-box">
+								<div class="field-item field-item_input">
+									<div class="js-input-wrap">
+										<input type="text" class="js-input-targ js-select-search" placeholder="">
+										<div class="input__notepad js-input-notepad"></div>
+										<div class="input__clear js-input-clear"></div>
+										<div class="input__result js-input-result">
+											<div class="input__result-list">
+												<div class="list-item js-val js-targ hidden" data-val="01">Авто/мотоспорт</div>
+												<div class="list-item js-val js-targ hidden" data-val="02">Авиамодельный спорт</div>
+												<div class="list-item js-val js-targ hidden" data-val="03">Aкадемическая гребля</div>
+												<div class="list-item js-val js-targ hidden" data-val="04">Акробатика</div>
+												<div class="list-item js-val js-targ hidden" data-val="05">Бадминтон</div>
+												<div class="list-item js-val js-targ hidden" data-val="06">Баскетбол</div>
+												<div class="list-item js-val js-targ hidden" data-val="07">Биатлон</div>
+												<div class="list-item js-val js-targ hidden" data-val="08">Бильярд</div>
+												<div class="list-item js-val js-targ hidden" data-val="09">Бейсбол</div>
+												<div class="list-item js-val js-targ hidden" data-val="10">Бокс</div>
+												<div class="list-item js-val js-targ hidden" data-val="11">Бобслей</div>
+												<div class="list-item js-val js-targ hidden" data-val="12">Бодибилдинг</div>
+												<div class="list-item js-val js-targ hidden" data-val="13">Боулинг</div>
+												<div class="list-item js-val js-targ hidden" data-val="14">Велоспорт</div>
+												<div class="list-item js-val js-targ hidden" data-val="15">Вертолетный спорт</div>
+												<div class="list-item js-val js-targ hidden" data-val="16">Виртуальный спорт</div>
+												<div class="list-item js-val js-targ hidden" data-val="17">Водное поло</div>
+												<div class="list-item js-val js-targ hidden" data-val="18">Волейбол</div>
+												<div class="list-item js-val js-targ hidden" data-val="19">Воднолыжный спорт</div>
+												<div class="list-item js-val js-targ hidden" data-val="20">Вольная борьба</div>
+												<div class="list-item js-val js-targ hidden" data-val="21">Гандбол</div>
+												<div class="list-item js-val js-targ hidden" data-val="22">Гольф</div>
+												<div class="list-item js-val js-targ hidden" data-val="23">Горные лыжи</div>
+												<div class="list-item js-val js-targ hidden" data-val="24">Гребля на байдарках</div>
+												<div class="list-item js-val js-targ hidden" data-val="25">Греко-римская борьба</div>
+												<div class="list-item js-val js-targ hidden" data-val="26">Дзюдо</div>
+												<div class="list-item js-val js-targ hidden" data-val="27">Допинг</div>
+												<div class="list-item js-val js-targ hidden" data-val="28">Единоборства</div>
+												<div class="list-item js-val js-targ hidden" data-val="29">Женский футбол</div>
+												<div class="list-item js-val js-targ hidden" data-val="30">Киберспорт</div>
+												<div class="list-item js-val js-targ hidden" data-val="31">Керлинг</div>
+												<div class="list-item js-val js-targ hidden" data-val="32">Конный спорт</div>
+												<div class="list-item js-val js-targ hidden" data-val="33">Коньки</div>
+												<div class="list-item js-val js-targ hidden" data-val="34">Кудо</div>
+												<div class="list-item js-val js-targ hidden" data-val="35">Легкая атлетика</div>
+												<div class="list-item js-val js-targ hidden" data-val="36">Лыжные гонки</div>
+												<div class="list-item js-val js-targ hidden" data-val="37">Лыжнoе двоеборье</div>
+												<div class="list-item js-val js-targ hidden" data-val="38">Любительский футбол</div>
+												<div class="list-item js-val js-targ hidden" data-val="39">Мини-футбол</div>
+												<div class="list-item js-val js-targ hidden" data-val="40">Настольный теннис</div>
+												<div class="list-item js-val js-targ hidden" data-val="41">Плавание</div>
+												<div class="list-item js-val js-targ hidden" data-val="42">Прыжки в воду</div>
+												<div class="list-item js-val js-targ hidden" data-val="43">Парусный спорт</div>
+												<div class="list-item js-val js-targ hidden" data-val="44">Паралимпизм</div>
+												<div class="list-item js-val js-targ hidden" data-val="45">Пляжный футбол</div>
+												<div class="list-item js-val js-targ hidden" data-val="46">Покер</div>
+												<div class="list-item js-val js-targ hidden" data-val="47">Прыжки на батуте</div>
+												<div class="list-item js-val js-targ hidden" data-val="48">Пятиборье</div>
+												<div class="list-item js-val js-targ hidden" data-val="49">Регби</div>
+												<div class="list-item js-val js-targ hidden" data-val="50">Рыболовный спорт</div>
+												<div class="list-item js-val js-targ hidden" data-val="51">Сани</div>
+												<div class="list-item js-val js-targ hidden" data-val="52">Скелетон</div>
+												<div class="list-item js-val js-targ hidden" data-val="53">Сноуборд</div>
+												<div class="list-item js-val js-targ hidden" data-val="54">Cофтбол</div>
+												<div class="list-item js-val js-targ hidden" data-val="55">Cпортивная гимнастика</div>
+												<div class="list-item js-val js-targ hidden" data-val="56">Стрельба из лука</div>
+												<div class="list-item js-val js-targ hidden" data-val="57">Стрельба пулевая</div>
+												<div class="list-item js-val js-targ hidden" data-val="58">Стрельба стендовая</div>
+												<div class="list-item js-val js-targ hidden" data-val="59">Сумо</div>
+												<div class="list-item js-val js-targ hidden" data-val="60">Трамплин</div>
+												<div class="list-item js-val js-targ hidden" data-val="61">Теннис</div>
+												<div class="list-item js-val js-targ hidden" data-val="62">Триатлон</div>
+												<div class="list-item js-val js-targ hidden" data-val="63">Тяжелая атлетика</div>
+												<div class="list-item js-val js-targ hidden" data-val="64">Фехтование</div>
+												<div class="list-item js-val js-targ hidden" data-val="65">Фигурное катание</div>
+												<div class="list-item js-val js-targ hidden" data-val="66">Формула-1</div>
+												<div class="list-item js-val js-targ hidden" data-val="67">Фристайл</div>
+												<div class="list-item js-val js-targ hidden" data-val="68">Футбол</div>
+												<div class="list-item js-val js-targ hidden" data-val="69">Футзал</div>
+												<div class="list-item js-val js-targ hidden" data-val="70">Хоккей</div>
+												<div class="list-item js-val js-targ hidden" data-val="71">Хоккей на траве</div>
+												<div class="list-item js-val js-targ hidden" data-val="72">Хоккей с мячом</div>
+												<div class="list-item js-val js-targ hidden" data-val="73">Художественная гимнастика</div>
+												<div class="list-item js-val js-targ hidden" data-val="74">Шахматы</div>
+												<div class="list-item js-val js-targ hidden" data-val="75">Шорт-трек</div>
+												<div class="list-item js-val js-targ hidden" data-val="76">Экстрим</div>
+											</div>
+										</div>
+									</div>
+									<div class="field-footnote"></div>
+								</div>
+							</div>
+						</div>
+
+
+
+
+						<div class="title">Добавить фото</div>
+
+						<div class="object-add__group">
+
+							<div class="object-add__item object-add__item_addfile">
+								<div class="field-label">Добавьте  изображения</div>
+								<div class="field-box">
+									<div class="field-dropzone">
+										<div class="dropzone" data-url="http://fitradar.maestros.ru/lk/upload.php" data-max-files='1' >
+											<div class="dropzone-case js-upload-files-container"></div>
+											<div class="field-item field-item_file field-item_file-upload">
+												<div class="file-img"><img src="img/240x170.gif"></div>
+												<div class="file-name"></div>
+												<div class="field-footnote">
+												</div>
+											</div>
+											<div class="field-item field-item_file field-item_file-upload ">
+												Вы можете загрузить изображение в формате JPG, GIF, или PNG.
+												<br>
+												<br>
+												<span class="btn js-upload-new-file">Выбрать файл</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="object-add__group">
+
+							<div class="object-add__item object-add__item_addfile">
+								<div class="field-label">Добавьте  изображения</div>
+								<div class="field-box">
+									<div class="field-dropzone">
+										<div class="dropzone" data-url="http://fitradar.maestros.ru/lk/upload.php">
+											<div class="dropzone-case js-upload-files-container"></div>
+											<div class="field-item field-item_file field-item_file-upload">
+												<div class="file-img"><img src="img/240x170.gif"></div>
+												<div class="file-name"></div>
+												<div class="field-footnote">
+												</div>
+											</div>
+											<div class="field-item field-item_file field-item_file-upload ">
+												Вы можете загрузить изображение в формате JPG, GIF, или PNG.
+												<br>
+												<br>
+												<span class="btn js-upload-new-file">Выбрать файл</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+
+					</div>
+				</div>
+
+
+				<div class="next">
+					<a href="#" class="btn btn_disable btn_big">Продолжить</a>
+				</div>
+
+				<!--
+
+				Что бы обновить информацию необходимо запустить функцию с классом шага :
+
+				 $('.progress-pie_step-1').val(87).trigger('change');
+
+				 Если до этого поменять класс "active" у активного шага, то полоска переместиться на него.
+
+				-->
+
+				<div class="object-add__progress">
+					<div class="progress-mark"></div>
+					<div class="progress-wrap">
+						<div class="progress-item progress-item_first">
+							<div class="progress-inner">
+								<div class="progress-view"><input type="text" value="80" class="progress-pie progress-pie_step-1"></div>
+								<div class="progress-step">Основная информация</div>
+							</div>
+						</div>
+						<div class="progress-item active">
+							<div class="progress-inner">
+								<div class="progress-view"><input type="text" value="100" class="progress-pie progress-pie_step-2"></div>
+								<div class="progress-step">Адрес</div>
+							</div>
+						</div>
+						<div class="progress-item">
+							<div class="progress-inner">
+								<div class="progress-view"><input type="text" value="20" class="progress-pie progress-pie_step-3"></div>
+								<div class="progress-step">Контакты</div>
+							</div>
+						</div>
+						<div class="progress-item">
+							<div class="progress-inner">
+								<div class="progress-view"><input type="text" value="0" class="progress-pie progress-pie_step-4"></div>
+								<div class="progress-step">Фотографии</div>
+							</div>
+						</div>
+						<div class="progress-item">
+							<div class="progress-inner">
+								<div class="progress-view"><input type="text" value="0" class="progress-pie progress-pie_step-5"></div>
+								<div class="progress-step">Дополнительная информация</div>
+							</div>
+						</div>
+						<div class="progress-item">
+							<div class="progress-inner">
+								<div class="progress-view"><input type="text" value="0" class="progress-pie progress-pie_step-6"></div>
+								<div class="progress-step">Услуги</div>
+							</div>
+						</div>
+						<div class="progress-item progress-item_last">
+							<div class="progress-inner">
+								<div class="progress-view"><input type="text" value="0" class="progress-pie progress-pie_step-7"></div>
+								<div class="progress-step">Связи</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div><!-- .wrapper -->
+
+</body>
+</html>

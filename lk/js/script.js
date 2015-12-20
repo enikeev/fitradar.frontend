@@ -559,24 +559,33 @@ function progressPieColor(val){
 
 $(function(){
 
-	$(document).on('click', '.js-object-list-select .field-item_list .list-item', function(){
+	$(document).on('click', '.js-object-list-select .field-item_list .list .list-item', function(){
 		var $t = $(this);
 		var $wrap = $t.closest('.js-object-list-select');
+		var $num = $wrap.find('.js-result-num');
+		var $scroll = $wrap.find('.field-item_list-result .list-scroll');
 		var $resCase = $wrap.find('.field-item_list-result .list-wrap');
 		var val = $t.data('val');
 		var html = $t.html();
 		$t.addClass('selected');
-		$resCase.append('<div class="list-item" data-val="' + val + '">' + html + ' <i class="list-item__remove"></i></div>');
-		moreObjectCheck($wrap.find('.field-item_list-result'), $resCase)
+		$resCase.append('<div class="list-item" data-val="' + val + '"> <i class="list-item__remove"></i> ' + html + '</div>');
+		moreObjectCheck($wrap.find('.field-item_list-result'), $resCase);
+
+		$scroll.mCustomScrollbar();
+		if ( $num.size() ) $num.text($resCase.find('.list-item').length);
+
 	}).on('click', '.js-object-list-select .field-item_list-result .list-item__remove', function(){
 		var $t = $(this).closest('.list-item');
 		var $wrap = $t.closest('.js-object-list-select');
+		var $num = $wrap.find('.js-result-num');
 		var $resCase = $wrap.find('.field-item_list-result .list-wrap');
 		var val = $t.data('val');
-		$wrap.find('.field-item_list').find('.list-item').filter(function(){ return $(this).data('val') == val; }).removeClass('selected');
+		$wrap.find('.field-item_list').find('.list').find('.list-item').filter(function(){ return $(this).data('val') == val; }).removeClass('selected');
 
 		$t.remove();
-		moreObjectCheck($wrap.find('.field-item_list-result'), $resCase)
+		moreObjectCheck($wrap.find('.field-item_list-result'), $resCase);
+		if ( $num.size() )  $num.text($resCase.find('.list-item').length);
+
 	}).on('click', '.field-box__add', function(e){
 		e.stopPropagation();
 		var $t = $(this);
@@ -587,7 +596,7 @@ $(function(){
 		var $timeChooseWrap = $t.closest('.object-add__item_worktime');
 		var required = $wrap.find('.required-field');
 
-		$wrap.find('.must-required').removeClass('must-required')
+		$wrap.find('.must-required').removeClass('must-required');
 
 		if ( required.length ){
 			required.each(function(){
@@ -636,6 +645,35 @@ $(function(){
 				$t.closest('[data-example-link]').attr('data-example-link', data);
 			}
 		}
+	}).on('change keyup input', '.js-select-search', function(){
+		var $t = $(this);
+		var wrap = $t.closest('.field-item');
+		var list = wrap.find('.input__result');
+		var item = list.find('.list-item');
+		var val = $t.val();
+		item.addClass('hidden');
+
+		list.mCustomScrollbar();
+		if ( val.length > 0 ){
+			var reg = new RegExp(val,'i');
+			var vis = item.filter(function(){return reg.test($(this).text()); }).removeClass('hidden');
+
+			if ( vis.size() ){
+				list.show();
+			} else {
+				list.hide();
+			}
+		} else {
+			list.hide();
+		}
+	}).on('click', '.js-input-result .list-item', function(){
+		var $t = $(this);
+		var wrap = $t.closest('.field-item');
+		var input = wrap.find('.js-select-search');
+		var list = wrap.find('.input__result');
+
+		input.val($t.text()).attr('data-val', $t.data('val'));
+		list.hide();
 	});
 
 
@@ -780,11 +818,12 @@ function dropzInit(){
 					+						'<img data-dz-thumbnail src="img/240x170.gif">'
 					+						'<div class="file-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>'
 					+					'</div>'
-					+					'<div class="file-name"><span class="file-name__item" data-dz-name></span> <span class="file-name__size" data-dz-size></span></div>'
+					//+					'<div class="file-name"><span class="file-name__item" data-dz-name></span> <span class="file-name__size" data-dz-size></span></div>'
 					+						'<div class="file-footnote">'
 						//+						'<span class="footnote-link">Скачать</span>'
 					+						sponsor
-					+						'<span class="footnote-link js-remove-uploaded-img" data-id-remove >Удалить</span>'
+					//+						'<span class="footnote-link js-remove-uploaded-img" data-id-remove >Удалить</span>'
+					+						'<span class="file-remove js-remove-uploaded-img" data-id-remove ></span>'
 					+					'</div></div>',
 					thumbnailWidth: 240,
 					thumbnailHeight: 170,
