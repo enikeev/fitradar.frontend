@@ -1346,7 +1346,14 @@ textarea ~ .input__notepad{
 .object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result .list-wrap .list-item{
 	margin: 2px 0;
 	float: none;
-	width: 100%;
+	/*width: 100%;*/
+	padding-left: 15px;
+	position: relative;
+}
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result .list-wrap .list-item .list-item__remove{
+	position: absolute;
+	top: 6px;
+	left: -5px;
 }
 .object-add__item_moreobjtypes_s .field-item_list .list-wrap .list .list-item{
 	float: left;
