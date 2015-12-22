@@ -98,8 +98,8 @@
 			enter: function(){
 				var $input = $('.js-input-targ-active');
 				var val = $input.val();
-				if ( $input.attr('type') == 'text' && $input.closest('form').size() ){
-					$input.closest('form').submit();
+				if ( $input.is('input') ){
+					$('.js-input-targ-active').trigger('change')
 				} else {
 					$input.val(val + '\n');
 				}

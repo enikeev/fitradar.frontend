@@ -75,8 +75,10 @@ input[type="text"]{
 	margin: 0;
 }
 input[type="password"]:focus,
-input[type="text"]:focus{
-	border-color: #3399FF;
+input[type="text"]:focus,
+.js-input-targ-active
+{
+	border-color: #3399FF!important;
 }
 
 a {
