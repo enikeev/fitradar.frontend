@@ -9,14 +9,29 @@
 	-moz-transition:all 0.15s ease;
 	-webkit-transition:all 0.15s ease;
 }
+.btn .icon{
+	vertical-align: middle;
+	position: relative;
+	top: -1px;
+}
 .btn_brdr{
-	font-size:16px;
+	font-size:14px;
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 2px;
-	padding:4px 15px 7px;
+	padding:5px 15px 6px;
 	text-align: center;
 	text-decoration: none!important;
+	border-color: #ccc;
+}
+.btn_brdr:hover{
+	border-color: #3399ff;
+	color: #fff;
+	background-color: #3399ff;
+}
+.btn_brdr.active{
+	border-color: #cae4fe;
+	background-color: #cae4fe;
 }
 .btn_min{
 	font-size:12px;
@@ -41,6 +56,16 @@
 	border-color: #3399ff;
 	color: #fff;
 	background:#3399ff;
+}
+.btn_color-b{
+	border-color: #3399ff;
+	color: #fff;
+	background:#3399ff;
+}
+.btn_color-b:hover{
+	border-color: #007af5;
+	color: #fff;
+	background:#007af5;
 }
 .btn_color-c{
 	border-color: #3399ff;
@@ -113,6 +138,18 @@
 	border-left:none;
 }
 
+.icon_eye{
+	display: inline-block;
+	background: url("../img/icons/icon-look-d.svg") no-repeat 50% 50%;
+	width: 18px;
+	height: 11px;
+}
+.btn_brdr:hover .icon_eye{
+	background-image: url("../img/icons/icon-look-b.svg");
+}
+.btn_brdr.active .icon_eye{
+	background-image: url("../img/icons/icon-look-w.svg");
+}
 
 /*checkbox & radio buttons*/
 
@@ -147,15 +184,17 @@
 	border: 1px solid #cfcfcf;
 }
 .input-field input[type="checkbox"] + .marker{
-	border-radius: 1px;
-	-moz-border-radius: 1px;
-	-webkit-border-radius: 1px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
 }
 .input-field input[type="checkbox"]:checked + .marker{
 	background: #3399ff url("../img/icons/icon-check-w.svg") 50% 50% no-repeat;
+	border-color: #3399ff;
 }
 .input-field input[type="checkbox"]:checked:hover + .marker{
 	background: #e52923 url("../img/icons/icon-check_disable-w.svg") 50% 50% no-repeat;
+	border-color: #e52923;
 }
 .input-field input[type="radio"] + .marker{
 	border-radius: 50%;
@@ -244,6 +283,10 @@
 	top: -3px;
 	background: #3399ff;
 	margin: 0 10px;
+}
+.section__title .btn_brdr:hover {
+	border-color: #0c79e7;
+	background: #0c79e7;
 }
 
 .section__more{
@@ -485,8 +528,8 @@
 }
 .cards-item .cards-item__inner{
 	overflow:hidden;
-	width:282px;
-	height:100px;
+	width:274px;
+	/*height:375px;*/
 	border:1px solid #d5d5d5;
 	margin:-1px;
 	position:relative;
@@ -499,12 +542,24 @@
 	-webkit-transition: all .15s ease;
 }
 .cards-item_big .cards-item__inner{
-	width:586px;
+	width:570px;
 }
 .cards-img{
 	position: relative;
 	display: block;
+	width: 100%;
+	height: 136px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
+
+.cards-item_big .cards-img{
+	height: 176px;
+}
+
 .cards-img img{
 	width: 100%;
 	display: block;
@@ -634,7 +689,173 @@
 	background: #fff;
 }
 
+.cards-description{
+	height: 280px;
+	overflow: hidden;
+}
 
+.cards-info{min-height: 50px;}
+.cards-info .title{
+	display: block;
+	font-size: 16px;
+	color: #000;
+	font-weight: 600;
+	line-height: 1.19;
+	margin: 5px 15px 10px;
+	background: #fff;
+}
+.cards-item:hover .cards-info .title{
+	color: #3399ff;
+	text-decoration: underline;
+}
+.cards-info .text{
+	font-size: 14px;
+	color: #000;
+	margin: 5px 15px;
+	line-height: 1.15;
+}
+.card-author{
+	overflow: hidden;
+	margin: 5px 15px;
+	border-top:1px solid #e6e6e6;
+	padding-top: 10px;
+	background: #fff;
+}
+.card-author .logo{
+	width:55px;
+	float: left;
+}
+.card-author .logo img{
+	display: inline-block;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	width: 41px;
+	height: 41px;
+}
+.card-author .name{
+	margin-left: 55px;
+	font-size: 14px;
+}
+.card-author .name-ttl{
+	color: #000;
+	margin: 5px 0 3px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.cards-item:hover .card-author .name-ttl a{
+	color: #3399ff;
+	text-decoration: underline;
+}
+.card-author .name-txt{
+	color: #999;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.cards-legend {
+	border-top:1px solid #e6e6e6;
+	padding: 8px 0;
+	background: #fff;
+}
+.cards-legend .cards-legend__look{}
+.cards-legend .cards-legend__look i{
+	width: 18px;
+	height: 13px;
+	display: inline-block;
+	background: url("../img/icons/icon-eye-d.svg") no-repeat 50% 50%;
+	padding-right: 25px;
+	opacity: 0.7;
+}
+.cards-legend .cards-legend__look i:hover{opacity: 1;}
+.cards-legend .cards-legend__comment{}
+.cards-legend .cards-legend__comment i{
+	width: 17px;
+	height: 14px;
+	display: inline-block;
+	background: url("../img/icons/icon-dialog-d.svg") no-repeat 50% 50%;
+	padding-right: 25px;
+	opacity: 0.7;
+	-webkit-background-size: auto 100%;
+	background-size: auto 100%;
+	position: relative;
+	top: 2px;
+}
+.cards-legend .cards-legend__comment i:hover{opacity: 1;}
+.card-table{
+	display: table;
+	margin: 5px 15px;
+	font-size: 14px;
+}
+.card-table .card-row{
+	display: table-row;
+}
+.card-table .card-cell{
+	display: table-cell;
+	padding: 3px 0;
+}
+.card-table .card-cell_name{
+	padding-right: 5px;
+	color: #999;
+	white-space: nowrap;
+}
+
+
+
+
+.place-more{}
+.place-more_name{
+	color: #3399ff;
+	cursor: pointer;
+	padding-bottom: 10px;
+}
+.place-more_name:after{
+	content: '';
+	width: 10px;
+	height: 5px;
+	display: inline-block;
+	background: url("../img/global/arrow-down-c.svg") no-repeat 50% 50%;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+.place-more:hover .place-more__list{
+	display: block;
+}
+.place-more__list{
+	position: absolute;
+	background: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 0 3px 5px -3px rgba(0,0,0,0.5);
+	width: 256px;
+	left: 50%;
+	margin-left: -128px;
+	z-index: 10;
+	margin-top: 10px;
+	display: none;
+}
+.place-more__list:before,
+.place-more__list:after{
+	content: '';
+	border: 7px solid transparent;
+	left: 50%;
+	position: absolute;
+	margin-left: -7px;
+	border-bottom-color: #fff;
+	top: -14px;
+}
+.place-more__list:before{
+	border-bottom-color: #ccc;
+	top: -15px;
+}
+.place-more__item a{
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none!important;
+}
+.place-more__item a:hover{
+	background: #cae4fe;
+}
 
 .list-marker{
 	display: inline-block;
