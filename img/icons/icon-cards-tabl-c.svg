@@ -5,10 +5,8 @@
 	 width="31px" height="25px" viewBox="0 0 31 25" enable-background="new 0 0 31 25" xml:space="preserve">
 <g>
 	<g>
-		<g>
-			<path fill-rule="evenodd" clip-rule="evenodd" fill="#3399FF" d="M21,23h5v-5h-5V23z M21,15h5v-5h-5V15z M21,2v5h5V2H21z M13,23
-				h5v-5h-5V23z M13,15h5v-5h-5V15z M13,7h5V2h-5V7z M5,23h5v-5H5V23z M5,15h5v-5H5V15z M5,7h5V2H5V7z"/>
-		</g>
+		<path fill="#3399FF" d="M6.5,7.5h4v-4h-4V7.5z M13.5,7.5h4v-4h-4V7.5z M20.5,3.5v4h4v-4H20.5z M6.5,14.5h4v-4h-4V14.5z M13.5,14.5
+			h4v-4h-4V14.5z M20.5,14.5h4v-4h-4V14.5z M6.5,21.5h4v-4h-4V21.5z M13.5,21.5h4v-4h-4V21.5z M20.5,21.5h4v-4h-4V21.5z"/>
 	</g>
 </g>
 </svg>

@@ -1234,12 +1234,13 @@ $(function(){
 		});
 
 	}).on('mouseleave mouseout', '[data-hint]', function(){
-		var $hint = $('.tooltip-hint');
-		$hint.hide();
+		$('.tooltip-hint').hide();
 	}).on('click', '.filter-field__search-submit', function(e){
 		e.stopPropagation();
 		$(this).closest('.header-search_compact').removeClass('header-search_compact');
 		return false;
+	}).on('click', function(e){
+		$('.tooltip-hint').hide();
 	});
 
 

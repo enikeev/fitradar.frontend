@@ -361,7 +361,7 @@
 	</section>
 
 	<section class="section section_catalog list-view">
-		<div class="catalog__header section_bg-gray section_btdr-b">
+		<div class="catalog__header section_btdr-b">
 			<div class="inner">
 				<div class="section__nav clearfix">
 					<div class="section__nav-field section__nav-field_select">
@@ -427,7 +427,7 @@
 
 											<div class="filter-item">
 												<div class="filter-body">
-													<div class="filter-label">Интервал времени</div>
+													<!--<div class="filter-label">Интервал времени</div>-->
 													<div class="filter-field filter-field_slider">
 														<div class="slider-input">
 															<span class="slider-text__from">от</span>
@@ -453,7 +453,7 @@
 
 											<div class="filter-item">
 												<div class="filter-body">
-													<div class="filter-label">Интервал времени</div>
+													<!--<div class="filter-label">Интервал времени</div>-->
 													<div class="filter-field filter-field_slider">
 														<div class="slider-input">
 															<span class="slider-text__from">от</span>
@@ -479,7 +479,7 @@
 
 											<div class="filter-item">
 												<div class="filter-body">
-													<div class="filter-label">Интервал стоимости</div>
+													<!--<div class="filter-label">Интервал стоимости</div>-->
 													<div class="filter-field filter-field_slider">
 														<div class="slider-input">
 															<span class="slider-text__from">от</span>
@@ -505,7 +505,7 @@
 
 											<div class="filter-item">
 												<div class="filter-body">
-													<div class="filter-label">Интервал стоимости</div>
+													<!--<div class="filter-label">Интервал стоимости</div>-->
 													<div class="filter-field filter-field_slider">
 														<div class="slider-input">
 															<span class="slider-text__from">от</span>
@@ -689,7 +689,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="catalog__body clearfix section_bg-lightgray">
+		<div class="catalog__body clearfix">
 			<script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=8BtB5t--QAi_qlAu2wbZ0eikn1soA582&id=bg-map"></script>
 			<div class="catalog__bg-map" id="bg-map"></div>
 			<div class="inner">
@@ -701,7 +701,9 @@
 							<div class="catalog-item__inner">
 								<div class="catalog-item__aside-left">
 									<div class="catalog-item__aside-left__wrapper">
-										<div class="catalog-image"><img src="img/upload/cards-club-1.jpg" alt=""></div>
+										<div class="catalog-image" style="background-image: url(img/upload/cards-club-1.jpg);">
+											<div class="rate" data-hint="Рейтинг">4.3</div>
+										</div>
 										<div class="catalog-body">
 											<div class="catalog-profile">
 												<div class="catalog-profile__left">
@@ -735,13 +737,12 @@
 														</li>
 													</ul>
 												</div>
-											</div>
-											<div class="catalog-schedule">
-												<div class="title">Часы работы:</div>
-												<ul class="list">
-													<li>пн-пт 6:30-24:00</li>
-													<li>
-														<div class="tooltip" data-tooltip-text="
+												<div class="catalog-ins__inner catalog-ins__schedule">
+													<div class="title">Часы работы:</div>
+													<ul class="list">
+														<li>пн-пт 6:30-24:00</li>
+														<li>
+															<div class="tooltip" data-tooltip-text="
 															<p>пн.  6:30 - 19:00</p>
 															<p>вт.   8:00 - 19:00</p>
 															<p>ср. выходной</p>
@@ -752,35 +753,11 @@
 															">
 																<span class="link">полный график</span>
 															</div>
-													</li>
-												</ul>
-											</div>
-											<div class="catalog-reviews">
-												<div class="catalog-reviews__inner catalog-reviews__rate">
-													<div class="title no-t">Рейтинг клуба:</div>
-													<div class="rate-stars rate-stars_4"></div>
-													<div class="text">
-														<div class="tooltip" data-tooltip-title="<span style='color:#959595;'>Рейтинг клуба</span>" data-tooltip-text="
-															<div style='float:left;clear:left;'>Цена/качество</div> <div style='float:right;' class='rate-stars rate-stars_4'></div>
-															<div style='float:left;clear:left;'>Обслуживание</div> <div style='float:right;' class='rate-stars rate-stars_4'></div>
-															<div style='float:left;clear:left;'>Пунктуальность</div> <div style='float:right;' class='rate-stars rate-stars_4'></div>
-															" data-tooltip-link="#">
-															<span class="link">8.125</span>
-														</div>
-													</div>
-													<div class="title no-l">Рейтинг</div>
-												</div>
-												<div class="catalog-reviews__inner catalog-reviews__discussion">
-													<div class="title no-t">Обсуждения:</div>
-													<div class="text no-t"><a href="#">150</a></div>
-													<div class="title no-l"><a href="#">Обсуждения</a></div>
-												</div>
-												<div class="catalog-reviews__inner catalog-reviews__rev">
-													<div class="title no-t">Отзывы:</div>
-													<div class="text no-t"><a href="#">50</a></div>
-													<div class="title no-l"><a href="#">Отзывы</a></div>
+														</li>
+													</ul>
 												</div>
 											</div>
+
 										</div>
 										<div class="catalog-menu">
 											<div class="menu-item"><span>Фотографии</span></div>
@@ -797,18 +774,22 @@
 									<div class="catalog-price">
 										<div class="price-item price-item_1">
 											<div class="price-item__inner">
-												<div class="price-name">Стоимость годового абонемента</div>
+												<div class="price-name">Абонимент на год</div>
 												<div class="price-val">от 16 000 руб.</div>
 											</div>
 										</div>
 										<div class="price-item price-item_2">
 											<div class="price-item__inner">
-												<div class="price-name">Стоимость разового посещения</div>
+												<div class="price-name">Разовое посещение</div>
 												<div class="price-val">от 1 200 руб.</div>
 											</div>
 										</div>
 									</div>
-									<a href="" class="catalog-more"><span>Подробнее</span></a>
+									<div class="catalog-legend">
+										<span class="catalog-legend__review"><i data-hint="Отзывы"></i>350</span>
+										<span class="catalog-legend__comment"><i data-hint="Комментарии"></i>2</span>
+										<span class="catalog-legend__look"><i data-hint="Просмотры"></i>40</span>
+									</div>
 								</div>
 								<div class="catalog-details">
 									<div class="details-item">
@@ -1396,7 +1377,9 @@
 							<div class="catalog-item__inner">
 								<div class="catalog-item__aside-left">
 									<div class="catalog-item__aside-left__wrapper">
-										<div class="catalog-image"><img src="img/upload/cards-club-2.jpg" alt=""></div>
+										<div class="catalog-image" style="background-image: url(img/upload/cards-club-2.jpg);">
+											<div class="rate" data-hint="Рейтинг">4.3</div>
+										</div>
 										<div class="catalog-body">
 											<div class="catalog-profile">
 												<div class="catalog-profile__left">
@@ -1428,38 +1411,12 @@
 														</li>
 													</ul>
 												</div>
-											</div>
-											<div class="catalog-schedule">
-												<div class="title">Часы работы:</div>
-												<ul class="list">
-													<li>пн-пт 6:30-24:00</li>
-													<li>сб-вс 9:00-22:00</li>
-												</ul>
-											</div>
-											<div class="catalog-reviews">
-												<div class="catalog-reviews__inner catalog-reviews__rate">
-													<div class="title no-t">Рейтинг клуба:</div>
-													<div class="rate-stars rate-stars_4"></div>
-													<div class="text">
-														<div class="tooltip" data-tooltip-title="<span style='color:#959595;'>Рейтинг клуба</span>" data-tooltip-text="
-															<div style='float:left;clear:left;'>Цена/качество</div> <div style='float:right;' class='rate-stars rate-stars_4'></div>
-															<div style='float:left;clear:left;'>Обслуживание</div> <div style='float:right;' class='rate-stars rate-stars_4'></div>
-															<div style='float:left;clear:left;'>Пунктуальность</div> <div style='float:right;' class='rate-stars rate-stars_4'></div>
-															" data-tooltip-link="#">
-															<span class="link">8.125</span>
-														</div>
-													</div>
-													<div class="title no-l">Рейтинг</div>
-												</div>
-												<div class="catalog-reviews__inner catalog-reviews__discussion">
-													<div class="title no-t">Обсуждения:</div>
-													<div class="text no-t"><a href="#">150</a></div>
-													<div class="title no-l"><a href="#">Обсуждения</a></div>
-												</div>
-												<div class="catalog-reviews__inner catalog-reviews__rev">
-													<div class="title no-t">Отзывы:</div>
-													<div class="text no-t"><a href="#">50</a></div>
-													<div class="title no-l"><a href="#">Отзывы</a></div>
+												<div class="catalog-ins__inner catalog-ins__schedule">
+													<div class="title">Часы работы:</div>
+													<ul class="list">
+														<li>пн-пт 6:30-24:00</li>
+														<li>сб-вс 9:00-22:00</li>
+													</ul>
 												</div>
 											</div>
 										</div>
@@ -1475,15 +1432,19 @@
 									</div>
 								</div>
 								<div class="catalog-item__aside-right">
-								<div class="catalog-price">
-									<div class="price-item price-item_1">
-										<div class="price-item__inner">
-											<div class="price-name">Стоимость годового абонемента</div>
-											<div class="price-val">от 16 000 руб.</div>
+									<div class="catalog-price">
+										<div class="price-item price-item_1">
+											<div class="price-item__inner">
+												<div class="price-name">Абонимент на год</div>
+												<div class="price-val">от 16 000 руб.</div>
+											</div>
 										</div>
 									</div>
-								</div>
-								<a href="" class="catalog-more"><span>Подробнее</span></a>
+									<div class="catalog-legend">
+										<span class="catalog-legend__review"><i data-hint="Отзывы"></i>350</span>
+										<span class="catalog-legend__comment"><i data-hint="Комментарии"></i>2</span>
+										<span class="catalog-legend__look"><i data-hint="Просмотры"></i>40</span>
+									</div>
 								</div>
 								<div class="catalog-details">
 									<div class="details-item">
@@ -2065,7 +2026,9 @@
 							<div class="catalog-item__inner">
 								<div class="catalog-item__aside-left">
 									<div class="catalog-item__aside-left__wrapper">
-										<div class="catalog-image"><img src="img/upload/cards-coach-1.jpg" alt=""></div>
+										<div class="catalog-image" style="background-image: url(img/upload/cards-coach-1.jpg);">
+											<div class="rate" data-hint="Рейтинг">4.3</div>
+										</div>
 										<div class="catalog-body">
 											<div class="catalog-profile">
 												<div class="catalog-profile__left">
@@ -2094,32 +2057,6 @@
 													</div>
 												</div>
 											</div>
-											<div class="catalog-reviews">
-												<div class="catalog-reviews__inner catalog-reviews__rate">
-													<div class="title no-t">Рейтинг тренера:</div>
-													<div class="rate-stars rate-stars_4"></div>
-													<div class="text">
-														<div class="tooltip" data-tooltip-title="<span style='color:#959595;'>Рейтинг тренера</span>" data-tooltip-text="
-															<div style='float:left;clear:left;'>Цена/качество</div> <div style='float:right;' class='rate-stars rate-stars_4'></div>
-															<div style='float:left;clear:left;'>Обслуживание</div> <div style='float:right;' class='rate-stars rate-stars_4'></div>
-															<div style='float:left;clear:left;'>Пунктуальность</div> <div style='float:right;' class='rate-stars rate-stars_4'></div>
-															" data-tooltip-link="#">
-															<span class="link">8.125</span>
-														</div>
-													</div>
-													<div class="title no-l">Рейтинг</div>
-												</div>
-												<div class="catalog-reviews__inner catalog-reviews__discussion">
-													<div class="title no-t">Обсуждения:</div>
-													<div class="text no-t"><a href="#">150</a></div>
-													<div class="title no-l"><a href="#">Обсуждения</a></div>
-												</div>
-												<div class="catalog-reviews__inner catalog-reviews__rev">
-													<div class="title no-t">Отзывы:</div>
-													<div class="text no-t"><a href="#">50</a></div>
-													<div class="title no-l"><a href="#">Отзывы</a></div>
-												</div>
-											</div>
 										</div>
 										<div class="catalog-menu">
 											<div class="menu-item"><span>Фотографии</span></div>
@@ -2134,18 +2071,22 @@
 									<div class="catalog-price">
 										<div class="price-item price-item_1">
 											<div class="price-item__inner">
-												<div class="price-name">Стоимость годового абонемента</div>
+												<div class="price-name">Абонимент на год</div>
 												<div class="price-val">от 16 000 руб.</div>
 											</div>
 										</div>
 										<div class="price-item price-item_2">
 											<div class="price-item__inner">
-												<div class="price-name">Стоимость разового посещения</div>
+												<div class="price-name">Разовое посещение</div>
 												<div class="price-val">от 1 200 руб.</div>
 											</div>
 										</div>
 									</div>
-									<a href="" class="catalog-more"><span>Подробнее</span></a>
+									<div class="catalog-legend">
+										<span class="catalog-legend__review"><i data-hint="Отзывы"></i>350</span>
+										<span class="catalog-legend__comment"><i data-hint="Комментарии"></i>2</span>
+										<span class="catalog-legend__look"><i data-hint="Просмотры"></i>40</span>
+									</div>
 								</div>
 								<div class="catalog-details">
 									<div class="details-item">
@@ -2532,7 +2473,9 @@
 								<div class="catalog-item__inner">
 									<div class="catalog-item__aside-left">
 										<div class="catalog-item__aside-left__wrapper">
-											<div class="catalog-image"><img src="img/upload/cards-coach-2.jpg" alt=""></div>
+											<div class="catalog-image" style="background-image: url(img/upload/cards-coach-2.jpg);">
+												<div class="rate" data-hint="Рейтинг">4.3</div>
+											</div>
 											<div class="catalog-body">
 												<div class="catalog-profile">
 													<div class="catalog-profile__left">
@@ -2561,32 +2504,6 @@
 														</div>
 													</div>
 												</div>
-												<div class="catalog-reviews">
-													<div class="catalog-reviews__inner catalog-reviews__rate">
-														<div class="title no-t">Рейтинг тренера:</div>
-														<div class="rate-stars rate-stars_4"></div>
-														<div class="text">
-															<div class="tooltip" data-tooltip-title="<span style='color:#959595;'>Рейтинг тренера</span>" data-tooltip-text="
-															<div style='float:left;clear:left;'>Цена/качество</div> <div style='float:right;' class='rate-stars rate-stars_4'></div>
-															<div style='float:left;clear:left;'>Обслуживание</div> <div style='float:right;' class='rate-stars rate-stars_4'></div>
-															<div style='float:left;clear:left;'>Пунктуальность</div> <div style='float:right;' class='rate-stars rate-stars_4'></div>
-															" data-tooltip-link="#">
-																<span class="link">8.125</span>
-															</div>
-														</div>
-														<div class="title no-l">Рейтинг</div>
-													</div>
-													<div class="catalog-reviews__inner catalog-reviews__discussion">
-														<div class="title no-t">Обсуждения:</div>
-														<div class="text no-t"><a href="#">150</a></div>
-														<div class="title no-l"><a href="#">Обсуждения</a></div>
-													</div>
-													<div class="catalog-reviews__inner catalog-reviews__rev">
-														<div class="title no-t">Отзывы:</div>
-														<div class="text no-t"><a href="#">50</a></div>
-														<div class="title no-l"><a href="#">Отзывы</a></div>
-													</div>
-												</div>
 											</div>
 											<div class="catalog-menu">
 												<div class="menu-item"><span>Фотографии</span></div>
@@ -2601,12 +2518,16 @@
 										<div class="catalog-price">
 											<div class="price-item price-item_1">
 												<div class="price-item__inner">
-													<div class="price-name">Стоимость годового абонемента</div>
+													<div class="price-name">Абонимент на год</div>
 													<div class="price-val">от 16 000 руб.</div>
 												</div>
 											</div>
 										</div>
-										<a href="" class="catalog-more"><span>Подробнее</span></a>
+										<div class="catalog-legend">
+											<span class="catalog-legend__review"><i data-hint="Отзывы"></i>350</span>
+											<span class="catalog-legend__comment"><i data-hint="Комментарии"></i>2</span>
+											<span class="catalog-legend__look"><i data-hint="Просмотры"></i>40</span>
+										</div>
 									</div>
 									<div class="catalog-details">
 									<div class="details-item">
@@ -2993,7 +2914,9 @@
 							<div class="catalog-item__inner">
 							<div class="catalog-item__aside-left">
 								<div class="catalog-item__aside-left__wrapper">
-									<div class="catalog-image"><img src="img/upload/cards-camp-1.jpg" alt=""></div>
+									<div class="catalog-image" style="background-image: url(img/upload/cards-camp-1.jpg);">
+										<div class="rate" data-hint="Рейтинг">4.3</div>
+									</div>
 									<div class="catalog-body">
 										<div class="catalog-profile">
 											<div class="catalog-profile__left">
@@ -3009,27 +2932,9 @@
 												<div class="title">Адрес:</div>
 												<div class="text">Республика Карелия, Кондопожский район, пос. Кивач.</div>
 											</div>
-										</div>
-										<div class="catalog-schedule">
-											<div class="title">Часы работы:</div>
-											<div class="text">круглосуточно</div>
-										</div>
-										<div class="catalog-reviews">
-											<div class="catalog-reviews__inner catalog-reviews__rate">
-												<div class="title no-t">Рейтинг клуба:</div>
-												<div class="rate-stars rate-stars_4"></div>
-												<div class="text"><a href="#">8.125</a></div>
-												<div class="title no-l">Рейтинг</div>
-											</div>
-											<div class="catalog-reviews__inner catalog-reviews__discussion">
-												<div class="title no-t">Обсуждения:</div>
-												<div class="text no-t"><a href="#">150</a></div>
-												<div class="title no-l"><a href="#">Обсуждения</a></div>
-											</div>
-											<div class="catalog-reviews__inner catalog-reviews__rev">
-												<div class="title no-t">Отзывы:</div>
-												<div class="text no-t"><a href="#">50</a></div>
-												<div class="title no-l"><a href="#">Отзывы</a></div>
+											<div class="catalog-ins__inner catalog-ins__schedule">
+												<div class="title">Часы работы:</div>
+												<div class="text">круглосуточно</div>
 											</div>
 										</div>
 									</div>
@@ -3060,7 +2965,11 @@
 										</div>
 									</div>
 								</div>
-								<a href="" class="catalog-more"><span>Подробнее</span></a>
+								<div class="catalog-legend">
+									<span class="catalog-legend__review"><i data-hint="Отзывы"></i>350</span>
+									<span class="catalog-legend__comment"><i data-hint="Комментарии"></i>2</span>
+									<span class="catalog-legend__look"><i data-hint="Просмотры"></i>40</span>
+								</div>
 							</div>
 							<div class="catalog-details">
 								<div class="details-item">
@@ -3885,7 +3794,9 @@
 						<div class="catalog-item__inner">
 						<div class="catalog-item__aside-left">
 							<div class="catalog-item__aside-left__wrapper">
-								<div class="catalog-image"><img src="img/upload/cards-sect-1.jpg" alt=""></div>
+								<div class="catalog-image" style="background-image: url(img/upload/cards-sect-1.jpg);">
+									<div class="rate" data-hint="Рейтинг">4.3</div>
+								</div>
 								<div class="catalog-body">
 									<div class="catalog-profile">
 										<div class="catalog-profile__left">
@@ -3919,30 +3830,12 @@
 												</li>
 											</ul>
 										</div>
-									</div>
-									<div class="catalog-schedule">
-										<div class="title">Часы работы:</div>
-										<ul class="list">
-											<li>пн-пт 6:30-24:00</li>
-											<li>сб-вс 9:00-22:00</li>
-										</ul>
-									</div>
-									<div class="catalog-reviews">
-										<div class="catalog-reviews__inner catalog-reviews__rate">
-											<div class="title no-t">Рейтинг клуба:</div>
-											<div class="rate-stars rate-stars_4"></div>
-											<div class="text"><a href="#">8.125</a></div>
-											<div class="title no-l">Рейтинг</div>
-										</div>
-										<div class="catalog-reviews__inner catalog-reviews__discussion">
-											<div class="title no-t">Обсуждения:</div>
-											<div class="text no-t"><a href="#">150</a></div>
-											<div class="title no-l"><a href="#">Обсуждения</a></div>
-										</div>
-										<div class="catalog-reviews__inner catalog-reviews__rev">
-											<div class="title no-t">Отзывы:</div>
-											<div class="text no-t"><a href="#">50</a></div>
-											<div class="title no-l"><a href="#">Отзывы</a></div>
+										<div class="catalog-ins__inner catalog-ins__schedule">
+											<div class="title">Часы работы:</div>
+											<ul class="list">
+												<li>пн-пт 6:30-24:00</li>
+												<li>сб-вс 9:00-22:00</li>
+											</ul>
 										</div>
 									</div>
 								</div>
@@ -3959,12 +3852,16 @@
 							<div class="catalog-price">
 								<div class="price-item price-item_1">
 									<div class="price-item__inner">
-										<div class="price-name">Стоимость годового абонемента</div>
+										<div class="price-name">Абонимент на год</div>
 										<div class="price-val">от 16 000 руб.</div>
 									</div>
 								</div>
 							</div>
-							<a href="" class="catalog-more"><span>Подробнее</span></a>
+							<div class="catalog-legend">
+								<span class="catalog-legend__review"><i data-hint="Отзывы"></i>350</span>
+								<span class="catalog-legend__comment"><i data-hint="Комментарии"></i>2</span>
+								<span class="catalog-legend__look"><i data-hint="Просмотры"></i>40</span>
+							</div>
 						</div>
 						<div class="catalog-details">
 						<div class="details-item">
@@ -4451,7 +4348,9 @@
 							<div class="catalog-item__inner">
 								<div class="catalog-item__aside-left">
 									<div class="catalog-item__aside-left__wrapper">
-										<div class="catalog-image"><img src="img/upload/cards-camp-1.jpg" alt=""></div>
+										<div class="catalog-image" style="background-image: url(img/upload/cards-camp-1.jpg);">
+											<div class="rate" data-hint="Рейтинг">4.3</div>
+										</div>
 										<div class="catalog-body">
 											<div class="catalog-profile">
 												<div class="catalog-profile__left">
@@ -4474,29 +4373,11 @@
 														<li><i class="list-marker" style="background-color: #f7941d;"></i> Бульвар Рокоссовского</li>
 													</ul>
 												</div>
-											</div>
-											<div class="catalog-schedule">
-												<div class="title">Часы работы:</div>
-												<ul class="list">
-													<div class="text">ежедневно с&nbsp;8:00&nbsp;-&nbsp;23:30</div>
-												</ul>
-											</div>
-											<div class="catalog-reviews">
-												<div class="catalog-reviews__inner catalog-reviews__rate">
-													<div class="title no-t">Рейтинг клуба:</div>
-													<div class="rate-stars rate-stars_4"></div>
-													<div class="text"><a href="#">8.125</a></div>
-													<div class="title no-l">Рейтинг</div>
-												</div>
-												<div class="catalog-reviews__inner catalog-reviews__discussion">
-													<div class="title no-t">Обсуждения:</div>
-													<div class="text no-t"><a href="#">150</a></div>
-													<div class="title no-l"><a href="#">Обсуждения</a></div>
-												</div>
-												<div class="catalog-reviews__inner catalog-reviews__rev">
-													<div class="title no-t">Отзывы:</div>
-													<div class="text no-t"><a href="#">50</a></div>
-													<div class="title no-l"><a href="#">Отзывы</a></div>
+												<div class="catalog-ins__inner catalog-ins__schedule">
+													<div class="title">Часы работы:</div>
+													<ul class="list">
+														<div class="text">ежедневно с&nbsp;8:00&nbsp;-&nbsp;23:30</div>
+													</ul>
 												</div>
 											</div>
 										</div>
@@ -4517,7 +4398,11 @@
 											</div>
 										</div>
 									</div>
-									<a href="" class="catalog-more"><span>Подробнее</span></a>
+									<div class="catalog-legend">
+										<span class="catalog-legend__review"><i data-hint="Отзывы"></i>350</span>
+										<span class="catalog-legend__comment"><i data-hint="Комментарии"></i>2</span>
+										<span class="catalog-legend__look"><i data-hint="Просмотры"></i>40</span>
+									</div>
 								</div>
 								<div class="catalog-details">
 									<div class="details-item">
@@ -4883,7 +4768,9 @@
 								<div class="catalog-item__inner">
 								<div class="catalog-item__aside-left">
 									<div class="catalog-item__aside-left__wrapper">
-										<div class="catalog-image"><img src="img/upload/cards-med-1.jpg" alt=""></div>
+										<div class="catalog-image" style="background-image: url(img/upload/cards-med-1.jpg);">
+											<div class="rate" data-hint="Рейтинг">4.3</div>
+										</div>
 										<div class="catalog-body">
 											<div class="catalog-profile">
 												<div class="catalog-profile__left">
@@ -4902,24 +4789,6 @@
 												<div class="catalog-ins__inner catalog-ins__region">
 													<div class="title">Место работы:</div>
 													<div class="text">Выезд на дом.</div>
-												</div>
-											</div>
-											<div class="catalog-reviews">
-												<div class="catalog-reviews__inner catalog-reviews__rate">
-													<div class="title no-t">Рейтинг клуба:</div>
-													<div class="rate-stars rate-stars_4"></div>
-													<div class="text"><a href="#">8.125</a></div>
-													<div class="title no-l">Рейтинг</div>
-												</div>
-												<div class="catalog-reviews__inner catalog-reviews__discussion">
-													<div class="title no-t">Обсуждения:</div>
-													<div class="text no-t"><a href="#">150</a></div>
-													<div class="title no-l"><a href="#">Обсуждения</a></div>
-												</div>
-												<div class="catalog-reviews__inner catalog-reviews__rev">
-													<div class="title no-t">Отзывы:</div>
-													<div class="text no-t"><a href="#">50</a></div>
-													<div class="title no-l"><a href="#">Отзывы</a></div>
 												</div>
 											</div>
 										</div>
@@ -4941,7 +4810,11 @@
 											</div>
 										</div>
 									</div>
-									<a href="" class="catalog-more"><span>Подробнее</span></a>
+									<div class="catalog-legend">
+										<span class="catalog-legend__review"><i data-hint="Отзывы"></i>350</span>
+										<span class="catalog-legend__comment"><i data-hint="Комментарии"></i>2</span>
+										<span class="catalog-legend__look"><i data-hint="Просмотры"></i>40</span>
+									</div>
 								</div>
 								<div class="catalog-details">
 									<div class="details-item">
@@ -5163,7 +5036,9 @@
 						<div class="catalog-item__inner">
 						<div class="catalog-item__aside-left">
 							<div class="catalog-item__aside-left__wrapper">
-								<div class="catalog-image"><img src="img/upload/cards-camp-1.jpg" alt=""></div>
+								<div class="catalog-image" style="background-image: url(img/upload/cards-camp-1.jpg);">
+									<div class="rate" data-hint="Рейтинг">4.3</div>
+								</div>
 								<div class="catalog-body">
 									<div class="catalog-profile">
 										<div class="catalog-profile__left">
@@ -5179,27 +5054,9 @@
 											<div class="title">Адрес:</div>
 											<div class="text">Республика Карелия, Кондопожский район, пос. Кивач.</div>
 										</div>
-									</div>
-									<div class="catalog-schedule">
-										<div class="title">Часы работы:</div>
-										<div class="text">круглосуточно</div>
-									</div>
-									<div class="catalog-reviews">
-										<div class="catalog-reviews__inner catalog-reviews__rate">
-											<div class="title no-t">Рейтинг клуба:</div>
-											<div class="rate-stars rate-stars_4"></div>
-											<div class="text"><a href="#">8.125</a></div>
-											<div class="title no-l">Рейтинг</div>
-										</div>
-										<div class="catalog-reviews__inner catalog-reviews__discussion">
-											<div class="title no-t">Обсуждения:</div>
-											<div class="text no-t"><a href="#">150</a></div>
-											<div class="title no-l"><a href="#">Обсуждения</a></div>
-										</div>
-										<div class="catalog-reviews__inner catalog-reviews__rev">
-											<div class="title no-t">Отзывы:</div>
-											<div class="text no-t"><a href="#">50</a></div>
-											<div class="title no-l"><a href="#">Отзывы</a></div>
+										<div class="catalog-ins__inner catalog-ins__schedule">
+											<div class="title">Часы работы:</div>
+											<div class="text">круглосуточно</div>
 										</div>
 									</div>
 								</div>
@@ -5230,7 +5087,11 @@
 									</div>
 								</div>
 							</div>
-							<a href="" class="catalog-more"><span>Подробнее</span></a>
+							<div class="catalog-legend">
+								<span class="catalog-legend__review"><i data-hint="Отзывы"></i>350</span>
+								<span class="catalog-legend__comment"><i data-hint="Комментарии"></i>2</span>
+								<span class="catalog-legend__look"><i data-hint="Просмотры"></i>40</span>
+							</div>
 						</div>
 						<div class="catalog-details">
 						<div class="details-item">
@@ -5539,7 +5400,7 @@
 						<div class="filter-item">
 							<div class="filter-head"><span>Время работы</span></div>
 							<div class="filter-body">
-								<div class="filter-label">Интервал времени</div>
+								<!--<div class="filter-label">Интервал времени</div>-->
 								<div class="filter-field filter-field_slider">
 									<div class="slider-input">
 										<span class="slider-text__from">от</span>
@@ -5563,7 +5424,7 @@
 						<div class="filter-item">
 							<div class="filter-head"><span>Стоимость за годовой абонемент</span></div>
 							<div class="filter-body">
-								<div class="filter-label">Интервал стоимости</div>
+								<!--<div class="filter-label">Интервал стоимости</div>-->
 								<div class="filter-field filter-field_slider">
 									<div class="slider-input">
 										<span class="slider-text__from">от</span>
@@ -5587,7 +5448,7 @@
 						<div class="filter-item">
 							<div class="filter-head"><span>Площадь клуба</span></div>
 							<div class="filter-body">
-								<div class="filter-label">Диапазон площади</div>
+								<!--<div class="filter-label">Диапазон площади</div>-->
 								<div class="filter-field filter-field_slider">
 									<div class="slider-input">
 										<span class="slider-text__from">от</span>
