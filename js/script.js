@@ -947,18 +947,18 @@ $(function(){
 			if ($t.hasClass('js-show-table-view') ){
 				$wrap.removeClass('list-view map-view')
 					.addClass('table-view')
-					.find('.catalog__body').css('height', 'auto').find('.aside_left').css('height', 'auto').mCustomScrollbar("destroy");
+					.find('.catalog__body').css('height', 'auto').find('.aside_right').css('height', 'auto').mCustomScrollbar("destroy");
 			} else if ($t.hasClass('js-show-list-view') ){
 				$wrap.removeClass('table-view map-view')
 					.addClass('list-view')
-					.find('.catalog__body').css('height', 'auto').find('.aside_left').css('height', 'auto').mCustomScrollbar("destroy");
+					.find('.catalog__body').css('height', 'auto').find('.aside_right').css('height', 'auto').mCustomScrollbar("destroy");
 			} else if ($t.hasClass('js-show-map-view') ){
 				var h = $(window).height() - $wrap.find('.catalog__header').outerHeight();
 				$wrap.removeClass('list-view table-view')
 					.addClass('map-view')
 					.find('.catalog__body')
 					.height(h - 50)
-					.find('.aside_left').height(h-120).mCustomScrollbar();
+					.find('.aside_right').height(h-120).mCustomScrollbar();
 
 				$('html,body').animate({scrollTop:$wrap.find('.catalog__body').offset().top - 120}, 400)
 			}
@@ -1026,6 +1026,9 @@ $(function(){
 	}).on('click', '.details-item__text_cover-open', function(){
 		var $this = $(this);
 		$this.parent('.details-item__text_cover').removeClass('details-item__text_cover');
+	}).on('click', '.aside_right__label', function(){
+		var $this = $(this);
+		$this.closest('.aside_right').toggleClass('aside_right_show');
 	});
 
 	function convertVal(val) {

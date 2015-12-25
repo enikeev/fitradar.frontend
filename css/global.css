@@ -1779,7 +1779,7 @@
 .footer {
 	width: 100%;
 	margin: 0 auto;
-	background: #272a33;
+	background: #1d2027;
 	position: relative;
 	color: #959595;
 }
@@ -1811,7 +1811,13 @@
 	float: right;
 	margin-top: 50px;
 }
-.footer__app{margin-bottom: 20px}
+.footer__app{
+	display: block;
+	margin-bottom: 20px;
+	width: 353px;
+	height: 157px;
+	background: url("../img/app-cap.png") no-repeat 0 0;
+}
 .footer__soc{margin-bottom: 15px}
 .footer__soc-item{
 	display: inline-block;
