@@ -60,6 +60,9 @@
 		background-image: url("../img/app-cap_long.png");
 	}
 
+	.details-item__slide-box .slide-box__head .item{width: 200px;}
+	.details-item__slide-box .table_option{width:801px;}
+
 }
 
 /*1024*/
