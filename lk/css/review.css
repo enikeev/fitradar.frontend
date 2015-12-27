@@ -28,8 +28,9 @@
 
 
 .feedback-profile{
-	display: table;
+	/*display: table;*/
 	padding-top: 10px;
+	padding-bottom: 10px;
 }
 .feedback-profile_img{
 	display: table-cell;

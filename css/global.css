@@ -1796,7 +1796,7 @@ i.rub{
 .footer .inner_bottom {padding-bottom: 60px;}
 .footer__nav{
 	float: left;
-	font-size: 18px;
+	font-size: 14px;
 	margin-top: 45px;
 }
 .footer__nav-list{
@@ -1812,7 +1812,7 @@ i.rub{
 }
 .footer__nav-item_ttl{
 	margin-bottom: 18px;
-	font-size: 22px;
+	font-size: 16px;
 	color: #fff;
 }
 
@@ -1828,6 +1828,7 @@ i.rub{
 	height: 157px;
 	background: url("../img/app-cap.png") no-repeat 0 0;
 }
+.footer__app img{display: none;}/*hack img is must deleted*/
 .footer__soc{margin-bottom: 15px}
 .footer__soc-item{
 	display: inline-block;
@@ -1867,7 +1868,7 @@ i.rub{
 	border-top: 1px solid #5e6064;
 	border-bottom: 1px solid #5e6064;
 	line-height: 1.2;
-	padding: 3px 0 4px;
+	padding: 3px 0 7px;
 }
 .footer__pay-list{
 	margin: 18px 0;

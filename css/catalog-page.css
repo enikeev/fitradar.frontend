@@ -1139,7 +1139,7 @@ a:hover .icon-like{background-image: url("../img/icons/icon-min-like-c.svg");}
 
 .details-item__slide-box .table_option{
 	margin:0 -20px;
-	width:1381px;
+	width:1383px;
 }
 .details-item__slide-box .table_option td:first-child, .details-item__slide-box .table_option th:first-child{padding-left: 20px}
 .details-item__slide-box .table_option td:last-child, .details-item__slide-box .table_option th:last-child{padding-right: 20px}
@@ -1612,6 +1612,7 @@ a:hover .icon-like{background-image: url("../img/icons/icon-min-like-c.svg");}
 .list-view .catalog-item{
 	/*overflow:hidden;*/
 	display: inline-block;
+	width: 1465px;
 }
 
 .map-view .catalog-item.active,
