@@ -25,160 +25,267 @@
 
 <div class="wrapper">
 
-	<header class="header">
-		<div class="header-wrap">
-		<div class="inner">
-			<a href="/" class="header-logo"></a>
-			<div class="header-location js-location-current">Санкт-Петербург</div>
+<header class="header">
+<div class="header-wrap">
+<div class="inner">
+<a href="/" class="header-logo"></a>
+<div class="header-location js-location-current">Санкт-Петербург</div>
 
-			<div class="header-aside">
+<script>
+	/*$(function(){
+	 setTimeout(function(){
+	 $('.header-popup_city').fadeIn();
+	 }, 500)
+	 });*/
+</script>
 
-				<div class="header-search">
-					<div class="filter-field__search">
-						<div class="filter-field__search-input js-input-wrap">
-							<input type="text" class="js-input-targ" placeholder="Велоспорт">
-							<div class="filter-field__search-input__notepad js-input-notepad"></div>
-						</div>
-						<div class="filter-field__search-submit"></div>
-					</div>
-				</div>
+<div class="header-location__popups">
+	<div class="header-popup header-popup_city">
+		<div class="header-popup__close"></div>
+		<div class="header-popup__title">Ваш город - <span>Санкт-Петербург?</span></div>
+		<div class="header-popup__content">
+			<span class="btn btn_brdr js-popup-city-confirm">Да</span>
+			<span class="btn btn_brdr js-popup-city-choose">Выбрать другой город</span>
+		</div>
+		<div class="header-popup__footer">
+			От выбранного города зависит предоставляемая
+			Вам информация из нашего каталога
+		</div>
+	</div>
+</div>
 
-				<div class="header-user" style="display:none">
-					<a href="#" class="btn btn_brdr btn_auth" data-modal-open="auth">Войти</a>
-					<a href="#" class="btn btn_brdr btn_reg" data-modal-open="auth">Регистрация</a>
-				</div>
+<div class="header-aside">
 
-				<div class="header-user">
-					<div class="header-user__int">
-						<span class="header-user__logo"><img src="img/upload/cart-logo-1.jpg" alt=""></span>
-						<a href="#" class="btn btn_brdr btn_profile" data-profile-menu="0">alexfitness.ru</a>
-						<a href="#" class="btn btn_brdr btn_notification" data-profile-menu="1"><i class="btn__number">99+</i></a>
-						<a href="#" class="btn btn_brdr btn_message" data-profile-menu="2"><i class="btn__number">10</i></a>
-					</div>
-					<div class="header-user__popups">
-						<div class="header-popup header-popup_profile" data-profile-popup="0">
-							<div class="header-popup__close"></div>
-							<div class="header-popup__content">
-								<div class="item"><a href="#" class="link">Личный кабинет</a></div>
-								<div class="item"><a href="#" class="link">Выйти</a></div>
-							</div>
-						</div>
-						<div class="header-popup header-popup_notification" data-profile-popup="1">
-							<div class="header-popup__close"></div>
-							<div class="header-popup__title">Оповещения fitradar</div>
-							<div class="header-popup__content">
-								<div class="item"><a href="#" class="link">Спортивные клубы <i class="num">1</i></a></div>
-								<div class="item"><a href="#" class="link">Секции <i class="num">99 +</i></a></div>
-								<div class="item"><a href="#" class="link">Площадки <i class="num">50</i></a></div>
-								<div class="item"><a href="#" class="link">Тренера <i class="num">50</i></a></div>
-								<div class="item"><a href="#" class="link">Магазины <i class="num">50</i></a></div>
-								<hr>
-								<div class="item"><a href="#" class="link">Новости <i class="num">2</i></a></div>
-								<div class="item"><a href="#" class="link">Афиша мероприятий <i class="num">3</i></a></div>
-								<div class="item"><a href="#" class="link">Статьи <i class="num">2</i></a></div>
-							</div>
-							<div class="header-popup__footer">
-								<a href="#" class="btn btn_brdr btn_settings">Настроить оповещения</a>
-								<a href="#" class="btn btn_brdr btn_clear js-remove-all-notifications">Очистить</a>
-							</div>
-						</div>
-						<div class="header-popup header-popup_message" data-profile-popup="2">
-							<div class="header-popup__close"></div>
-							<div class="header-popup__title">Ваши собщения</div>
-							<div class="header-popup__content js-scrollbar">
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_on">online</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
+<div class="header-search header-search_compact">
+	<div class="filter-field__search">
+		<div class="filter-field__search-input js-input-wrap">
+			<input type="text" class="js-input-targ" placeholder="Велоспорт">
+			<div class="filter-field__search-input__notepad js-input-notepad"></div>
+		</div>
+		<div class="filter-field__search-submit"></div>
+	</div>
+</div>
 
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_off">offline</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
+<div class="header-user" style="display:none">
+	<a href="#" class="btn btn_brdr btn_auth" data-modal-open="auth">Войти</a>
+	<a href="#" class="btn btn_brdr btn_reg" data-modal-open="auth">Регистрация</a>
+</div>
 
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_on">online</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
+<div class="header-user">
+<div class="header-user__int">
+	<a href="#" class="btn btn_brdr btn_message" data-profile-menu="2"><i class="btn__number">10</i></a>
+	<a href="#" class="btn btn_brdr btn_notification" data-profile-menu="1"><i class="btn__number">99+</i></a>
+	<span class="header-user__logo" data-profile-menu="0"><img src="img/upload/cart-logo-1.jpg" alt=""></span>
+	<a href="#" class="btn btn_brdr btn_profile" data-profile-menu="0">alexfitness.ru</a>
+</div>
+<div class="header-user__popups">
+<div class="header-popup header-popup_profile" data-profile-popup="0">
+	<div class="header-popup__close"></div>
+	<div class="header-popup__title">Личный кабинет</div>
+	<div class="header-popup__content">
+		<div class="item"><a href="#" class="link">Данные компании</a></div>
+		<div class="item"><a href="#" class="link">Сообщения</a></div>
+		<div class="item"><a href="#" class="link">Оповещения</a></div>
+		<div class="item"><a href="#" class="link">Отзывы</a></div>
+		<div class="item"><a href="#" class="link">Сотрудники</a></div>
+		<div class="item"><a href="#" class="link">Тренера</a></div>
+		<div class="item"><a href="#" class="link">Объекты</a></div>
+		<div class="item"><a href="#" class="link">Сети</a></div>
+		<div class="item"><a href="#" class="link">Новости</a></div>
+		<div class="item"><a href="#" class="link">Мероприятия</a></div>
+		<div class="item"><a href="#" class="link">Настройки</a></div>
+		<div class="item"><a href="#" class="link">Статистика</a></div>
+	</div>
+</div>
+<div class="header-popup header-popup_notification" data-profile-popup="1">
+	<div class="header-popup__close"></div>
+	<div class="header-popup__title">Оповещения fitradar</div>
+	<div class="header-popup__content">
+		<div class="item"><a href="#" class="link">Спортивные клубы <i class="num">1</i></a></div>
+		<div class="item"><a href="#" class="link">Секции <i class="num">99 +</i></a></div>
+		<div class="item"><a href="#" class="link">Площадки <i class="num">50</i></a></div>
+		<div class="item"><a href="#" class="link">Тренера <i class="num">50</i></a></div>
+		<div class="item"><a href="#" class="link">Магазины <i class="num">50</i></a></div>
+		<hr>
+		<div class="item"><a href="#" class="link">Новости <i class="num">2</i></a></div>
+		<div class="item"><a href="#" class="link">Афиша мероприятий <i class="num">3</i></a></div>
+		<div class="item"><a href="#" class="link">Статьи <i class="num">2</i></a></div>
+	</div>
+	<div class="header-popup__settings">
+		<a href="#" class="btn btn_brdr btn_settings" data-hint="Настройки оповещений"></a>
+		<a href="#" class="btn btn_brdr btn_clear js-remove-all-notifications" data-hint="Очистить"></a>
+	</div>
+</div>
+<div class="header-popup header-popup_message" data-profile-popup="2">
+	<div class="header-popup__close"></div>
+	<div class="header-popup__title">Ваши собщения</div>
+	<div class="header-popup__content js-scrollbar">
 
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_off">offline</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_on">online</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_off">offline</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_on">online</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_off">offline</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_on">online</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_off">offline</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-							</div>
-							<div class="header-popup__footer">
-								<a href="#" class="btn btn_brdr btn_settings">Настроить оповещения</a>
-								<a href="#" class="btn btn_brdr btn_clear js-remove-all-messages">Очистить</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
 			</div>
-		</div>
-		</div>
-	</header>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+	</div>
+	<div class="header-popup__settings">
+		<a href="#" class="btn btn_brdr btn_settings" data-hint="Настройки оповещений"></a>
+		<a href="#" class="btn btn_brdr btn_clear js-remove-all-messages" data-hint="Очистить"></a>
+	</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</header>
 
 	<section class="section section-location">
 		<div class="inner clearfix">
@@ -347,7 +454,7 @@
 		</div>
 	</nav>
 
-	<section class="section section_breadcrumbs section_bg-gray section_btdr-b">
+	<section class="section section_breadcrumbs section_btdr-b">
 		<div class="inner clearfix">
 			<ul class="breadcrumbs-list">
 				<li class="breadcrumbs-item"><a href="#">Fitradar</a></li>
@@ -417,541 +524,274 @@
 	</section>
 
 
-	<section class="section section_competition section_bg-lightgray">
+	<section class="section section_competition">
 	<div class="inner clearfix">
 
-	<div class="cards cards_competition">
 
-		<div class="cards-item cards-item_big">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-1.jpg" alt="">
-				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/icons/competition/basketball.svg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>Чемпионат России по баскетболу</span>
-					</div>
-				</div>
+	<div class="cards cards_competition-last">
+
+	<div class="cards-item">
+		<div class="cards-item__inner">
+			<div class="cards-description">
+				<a href="#" class="cards-img" style="background-image: url(img/upload/cart-img-2.jpg);"></a>
 				<div class="cards-info">
-					<div class="cards-details">
-						<table>
-							<tbody>
-							<tr>
-								<td>Дата:</td>
-								<td>с 08.08.15<br>по 12.08.15</td>
-							</tr>
-							<tr>
-								<td>Время:</td>
-								<td>21:15</td>
-							</tr>
-							<tr>
-								<td>Место:</td>
-								<td>СКК ул. Дальневосточный пр ...</td>
-							</tr>
-							</tbody>
-						</table>
+					<a href="#" class="title">1/2 кубка «Поршень»</a>
+				</div>
+				<div class="card-table">
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Дата:</div>
+						<div class="card-cell">17 декабря, 19:00
+						</div>
 					</div>
-					<div class="cards-descr">
-						<div class="title">Матч пройдет в несколько этапов</div>
-						<div class="text">Дорогие друзья! Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы</div>
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Место:</div>
+						<div class="card-cell">СКК, Дальневосточный пр. проезд 7, офис 45
+						</div>
+					</div>
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Условия:</div>
+						<div class="card-cell">вход бесплатный</div>
+					</div>
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Вид спорта:</div>
+						<div class="card-cell">волейбол, бейсбол</div>
 					</div>
 				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
+			</div>
+			<div class="card-author">
+				<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+				<div class="name">
+					<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+					<div class="name-txt">Сеть спортивных клубов</div>
+				</div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+				<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
 			</div>
 		</div>
+	</div>
 
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-2.jpg" alt="">
-				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/icons/competition/tennis.svg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>День здоровья и спорта</span>
-					</div>
-				</div>
+	<div class="cards-item">
+		<div class="cards-item__inner">
+			<div class="cards-description">
+				<a href="#" class="cards-img" style="background-image: url(img/upload/cart-img-2.jpg);"></a>
 				<div class="cards-info">
-					<div class="cards-details">
-						<table>
-							<tbody>
-							<tr>
-								<td>Дата:</td>
-								<td>с 08.08.15<br>по 12.08.15</td>
-							</tr>
-							<tr>
-								<td>Время:</td>
-								<td>с 21:15 до 23:00</td>
-							</tr>
-							<tr>
-								<td>Место:</td>
-								<td>СКК ул. Дальневосточный пр ...</td>
-							</tr>
-							</tbody>
-						</table>
+					<a href="#" class="title">Открытый чемпионат Санкт-Петербурга по грекоримской борьбе</a>
+				</div>
+				<div class="card-table">
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Дата:</div>
+						<div class="card-cell">17 декабря, 19:00
+						</div>
 					</div>
-					<div class="cards-descr">
-						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Место:</div>
+						<div class="card-cell">СКК, Дальневосточный пр. проезд 7, офис 45
+						</div>
+					</div>
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Условия:</div>
+						<div class="card-cell">вход бесплатный</div>
+					</div>
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Вид спорта:</div>
+						<div class="card-cell">
+							<div class="place-more">
+								<span class="place-more_name">несколько</span>
+								<ul class="place-more__list">
+									<li class="place-more__item"><a href="#">Волейбол</a></li>
+									<li class="place-more__item"><a href="#">Американский футбол</a></li>
+									<li class="place-more__item"><a href="#">Гандбол</a></li>
+									<li class="place-more__item"><a href="#">Футбол</a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
+			</div>
+			<div class="card-author">
+				<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+				<div class="name">
+					<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+					<div class="name-txt">Сеть спортивных клубов</div>
+				</div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+				<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
 			</div>
 		</div>
+	</div>
 
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-3.jpg" alt="">
-				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/icons/competition/valleytball.svg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>1/2 кубка «Поршень» по волейболу</span>
-					</div>
-				</div>
+	<div class="cards-item">
+		<div class="cards-item__inner">
+			<div class="cards-description">
+				<a href="#" class="cards-img" style="background-image: url(img/upload/cart-img-2.jpg);"></a>
 				<div class="cards-info">
-					<div class="cards-details">
-						<table>
-							<tbody>
-							<tr>
-								<td>Дата:</td>
-								<td>с 08.08.15<br>по 12.08.15</td>
-							</tr>
-							<tr>
-								<td>Время:</td>
-								<td>21:15</td>
-							</tr>
-							<tr>
-								<td>Место:</td>
-								<td>СКК ул. Дальневосточный пр ...</td>
-							</tr>
-							</tbody>
-						</table>
+					<a href="#" class="title">Открытый чемпионат Санкт-Петербурга по грекоримской борьбе</a>
+				</div>
+				<div class="card-table">
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Дата:</div>
+						<div class="card-cell">17 декабря, 19:00
+						</div>
 					</div>
-					<div class="cards-descr">
-						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Место:</div>
+						<div class="card-cell">СКК, Дальневосточный пр. проезд 7, офис 45
+						</div>
+					</div>
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Условия:</div>
+						<div class="card-cell">вход бесплатный</div>
+					</div>
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Вид спорта:</div>
+						<div class="card-cell">волейбол, бейсбол</div>
 					</div>
 				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
+			</div>
+			<div class="card-author">
+				<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+				<div class="name">
+					<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+					<div class="name-txt">Сеть спортивных клубов</div>
+				</div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+				<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
 			</div>
 		</div>
+	</div>
 
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-2.jpg" alt="">
-				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/icons/competition/tennis.svg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>День здоровья и спорта</span>
-					</div>
-				</div>
+	<div class="cards-item">
+		<div class="cards-item__inner">
+			<div class="cards-description">
+				<a href="#" class="cards-img" style="background-image: url(img/upload/cart-img-2.jpg);"></a>
 				<div class="cards-info">
-					<div class="cards-details">
-						<table>
-							<tbody>
-							<tr>
-								<td>Дата:</td>
-								<td>с 08.08.15<br>по 12.08.15</td>
-							</tr>
-							<tr>
-								<td>Время:</td>
-								<td>с 21:15 до 23:00</td>
-							</tr>
-							<tr>
-								<td>Место:</td>
-								<td>СКК ул. Дальневосточный пр ...</td>
-							</tr>
-							</tbody>
-						</table>
+					<a href="#" class="title">Открытый чемпионат Санкт-Петербурга по грекоримской борьбе</a>
+				</div>
+				<div class="card-table">
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Дата:</div>
+						<div class="card-cell">17 декабря, 19:00
+						</div>
 					</div>
-					<div class="cards-descr">
-						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Место:</div>
+						<div class="card-cell">СКК, Дальневосточный пр. проезд 7, офис 45
+						</div>
+					</div>
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Условия:</div>
+						<div class="card-cell">вход бесплатный</div>
+					</div>
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Вид спорта:</div>
+						<div class="card-cell">волейбол, бейсбол</div>
 					</div>
 				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
+			</div>
+			<div class="card-author">
+				<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+				<div class="name">
+					<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+					<div class="name-txt">Сеть спортивных клубов</div>
+				</div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+				<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
 			</div>
 		</div>
+	</div>
 
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-2.jpg" alt="">
-				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/icons/competition/basketball.svg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>ЧР по баскетболу</span>
-					</div>
-				</div>
+	<div class="cards-item">
+		<div class="cards-item__inner">
+			<div class="cards-description">
+				<a href="#" class="cards-img" style="background-image: url(img/upload/cart-img-2.jpg);"></a>
 				<div class="cards-info">
-					<div class="cards-details">
-						<table>
-							<tbody>
-							<tr>
-								<td>Дата:</td>
-								<td>с 08.08.15<br>по 12.08.15</td>
-							</tr>
-							<tr>
-								<td>Время:</td>
-								<td>с 21:15 до 23:00</td>
-							</tr>
-							<tr>
-								<td>Место:</td>
-								<td>СКК ул. Дальневосточный пр ...</td>
-							</tr>
-							</tbody>
-						</table>
+					<a href="#" class="title">Открытый чемпионат Санкт-Петербурга по грекоримской борьбе</a>
+				</div>
+				<div class="card-table">
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Дата:</div>
+						<div class="card-cell">17 декабря, 19:00
+						</div>
 					</div>
-					<div class="cards-descr">
-						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Место:</div>
+						<div class="card-cell">СКК, Дальневосточный пр. проезд 7, офис 45
+						</div>
+					</div>
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Условия:</div>
+						<div class="card-cell">вход бесплатный</div>
+					</div>
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Вид спорта:</div>
+						<div class="card-cell">волейбол, бейсбол</div>
 					</div>
 				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
+			</div>
+			<div class="card-author">
+				<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+				<div class="name">
+					<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+					<div class="name-txt">Сеть спортивных клубов</div>
+				</div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+				<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
 			</div>
 		</div>
+	</div>
 
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-3.jpg" alt="">
-				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/icons/competition/valleytball.svg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>1/2 кубка «Поршень» по волейболу</span>
-					</div>
-				</div>
+	<div class="cards-item">
+		<div class="cards-item__inner">
+			<div class="cards-description">
+				<a href="#" class="cards-img" style="background-image: url(img/upload/cart-img-2.jpg);"></a>
 				<div class="cards-info">
-					<div class="cards-details">
-						<table>
-							<tbody>
-							<tr>
-								<td>Дата:</td>
-								<td>с 08.08.15<br>по 12.08.15</td>
-							</tr>
-							<tr>
-								<td>Время:</td>
-								<td>с 21:15 до 23:00</td>
-							</tr>
-							<tr>
-								<td>Место:</td>
-								<td>СКК ул. Дальневосточный пр ...</td>
-							</tr>
-							</tbody>
-						</table>
+					<a href="#" class="title">Открытый чемпионат Санкт-Петербурга по грекоримской борьбе</a>
+				</div>
+				<div class="card-table">
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Дата:</div>
+						<div class="card-cell">17 декабря, 19:00
+						</div>
 					</div>
-					<div class="cards-descr">
-						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Место:</div>
+						<div class="card-cell">СКК, Дальневосточный пр. проезд 7, офис 45
+						</div>
+					</div>
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Условия:</div>
+						<div class="card-cell">вход бесплатный</div>
+					</div>
+					<div class="card-row">
+						<div class="card-cell card-cell_name">Вид спорта:</div>
+						<div class="card-cell">волейбол, бейсбол</div>
 					</div>
 				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
+			</div>
+			<div class="card-author">
+				<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+				<div class="name">
+					<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+					<div class="name-txt">Сеть спортивных клубов</div>
+				</div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+				<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
 			</div>
 		</div>
+	</div>
 
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-2.jpg" alt="">
-				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/icons/competition/tennis.svg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>День здоровья и спорта</span>
-					</div>
-				</div>
-				<div class="cards-info">
-					<div class="cards-details">
-						<table>
-							<tbody>
-							<tr>
-								<td>Дата:</td>
-								<td>с 08.08.15<br>по 12.08.15</td>
-							</tr>
-							<tr>
-								<td>Время:</td>
-								<td>с 21:15 до 23:00</td>
-							</tr>
-							<tr>
-								<td>Место:</td>
-								<td>СКК ул. Дальневосточный пр ...</td>
-							</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="cards-descr">
-						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
-					</div>
-				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
-			</div>
-		</div>
-
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-3.jpg" alt="">
-				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/icons/competition/valleytball.svg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>День здоровья и спорта</span>
-					</div>
-				</div>
-				<div class="cards-info">
-					<div class="cards-details">
-						<table>
-							<tbody>
-							<tr>
-								<td>Дата:</td>
-								<td>с 08.08.15<br>по 12.08.15</td>
-							</tr>
-							<tr>
-								<td>Время:</td>
-								<td>с 21:15 до 23:00</td>
-							</tr>
-							<tr>
-								<td>Место:</td>
-								<td>СКК ул. Дальневосточный пр ...</td>
-							</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="cards-descr">
-						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
-					</div>
-				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
-			</div>
-		</div>
-
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-3.jpg" alt="">
-				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/icons/competition/tennis.svg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>1/2 кубка «Поршень» по волейболу</span>
-					</div>
-				</div>
-				<div class="cards-info">
-					<div class="cards-details">
-						<table>
-							<tbody>
-							<tr>
-								<td>Дата:</td>
-								<td>с 08.08.15<br>по 12.08.15</td>
-							</tr>
-							<tr>
-								<td>Время:</td>
-								<td>с 21:15 до 23:00</td>
-							</tr>
-							<tr>
-								<td>Место:</td>
-								<td>СКК ул. Дальневосточный пр ...</td>
-							</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="cards-descr">
-						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
-					</div>
-				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
-			</div>
-		</div>
-
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-2.jpg" alt="">
-				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/icons/competition/basketball.svg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>ЧР по баскетболу</span>
-					</div>
-				</div>
-				<div class="cards-info">
-					<div class="cards-details">
-						<table>
-							<tbody>
-							<tr>
-								<td>Дата:</td>
-								<td>с 08.08.15<br>по 12.08.15</td>
-							</tr>
-							<tr>
-								<td>Время:</td>
-								<td>с 21:15 до 23:00</td>
-							</tr>
-							<tr>
-								<td>Место:</td>
-								<td>СКК ул. Дальневосточный пр ...</td>
-							</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="cards-descr">
-						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
-					</div>
-				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
-			</div>
-		</div>
-
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-2.jpg" alt="">
-				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/icons/competition/valleytball.svg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>1/2 кубка «Поршень» по волейболу</span>
-					</div>
-				</div>
-				<div class="cards-info">
-					<div class="cards-details">
-						<table>
-							<tbody>
-							<tr>
-								<td>Дата:</td>
-								<td>с 08.08.15<br>по 12.08.15</td>
-							</tr>
-							<tr>
-								<td>Время:</td>
-								<td>с 21:15 до 23:00</td>
-							</tr>
-							<tr>
-								<td>Место:</td>
-								<td>СКК ул. Дальневосточный пр ...</td>
-							</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="cards-descr">
-						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
-					</div>
-				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
-			</div>
-		</div>
-
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-3.jpg" alt="">
-				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/icons/competition/tennis.svg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>День здоровья и спорта</span>
-					</div>
-				</div>
-				<div class="cards-info">
-					<div class="cards-details">
-						<table>
-							<tbody>
-							<tr>
-								<td>Дата:</td>
-								<td>с 08.08.15<br>по 12.08.15</td>
-							</tr>
-							<tr>
-								<td>Время:</td>
-								<td>с 21:15 до 23:00</td>
-							</tr>
-							<tr>
-								<td>Место:</td>
-								<td>СКК ул. Дальневосточный пр ...</td>
-							</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="cards-descr">
-						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
-					</div>
-				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
-			</div>
-		</div>
-
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-2.jpg" alt="">
-				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/icons/competition/valleytball.svg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>1/2 кубка «Поршень» по волейболу</span>
-					</div>
-				</div>
-				<div class="cards-info">
-					<div class="cards-details">
-						<table>
-							<tbody>
-							<tr>
-								<td>Дата:</td>
-								<td>с 08.08.15<br>по 12.08.15</td>
-							</tr>
-							<tr>
-								<td>Время:</td>
-								<td>с 21:15 до 23:00</td>
-							</tr>
-							<tr>
-								<td>Место:</td>
-								<td>СКК ул. Дальневосточный пр ...</td>
-							</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="cards-descr">
-						<div class="text">Клуб Петрозаводска выступает против Санкт-Петербурга...</div>
-					</div>
-				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">подробнее</a></div>
-			</div>
-		</div>
-
-		<div class="cards-item cards-item_more">
-			<div class="cards-item__inner">
-				<div class="cards-load">
-					<div class="icon"></div>
-					<div class="title">Показать еще 30</div>
-					<div class="text">Показано 30 новостей из 1100</div>
-				</div>
-			</div>
-		</div>
 	</div>
 
 	</div>

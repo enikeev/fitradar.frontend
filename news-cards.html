@@ -25,160 +25,267 @@
 
 <div class="wrapper">
 
-	<header class="header">
-		<div class="header-wrap">
-		<div class="inner">
-			<a href="/" class="header-logo"></a>
-			<div class="header-location js-location-current">Санкт-Петербург</div>
+<header class="header">
+<div class="header-wrap">
+<div class="inner">
+<a href="/" class="header-logo"></a>
+<div class="header-location js-location-current">Санкт-Петербург</div>
 
-			<div class="header-aside">
+<script>
+	/*$(function(){
+	 setTimeout(function(){
+	 $('.header-popup_city').fadeIn();
+	 }, 500)
+	 });*/
+</script>
 
-				<div class="header-search">
-					<div class="filter-field__search">
-						<div class="filter-field__search-input js-input-wrap">
-							<input type="text" class="js-input-targ" placeholder="Велоспорт">
-							<div class="filter-field__search-input__notepad js-input-notepad"></div>
-						</div>
-						<div class="filter-field__search-submit"></div>
-					</div>
-				</div>
+<div class="header-location__popups">
+	<div class="header-popup header-popup_city">
+		<div class="header-popup__close"></div>
+		<div class="header-popup__title">Ваш город - <span>Санкт-Петербург?</span></div>
+		<div class="header-popup__content">
+			<span class="btn btn_brdr js-popup-city-confirm">Да</span>
+			<span class="btn btn_brdr js-popup-city-choose">Выбрать другой город</span>
+		</div>
+		<div class="header-popup__footer">
+			От выбранного города зависит предоставляемая
+			Вам информация из нашего каталога
+		</div>
+	</div>
+</div>
 
-				<div class="header-user" style="display:none">
-					<a href="#" class="btn btn_brdr btn_auth" data-modal-open="auth">Войти</a>
-					<a href="#" class="btn btn_brdr btn_reg" data-modal-open="auth">Регистрация</a>
-				</div>
+<div class="header-aside">
 
-				<div class="header-user">
-					<div class="header-user__int">
-						<span class="header-user__logo"><img src="img/upload/cart-logo-1.jpg" alt=""></span>
-						<a href="#" class="btn btn_brdr btn_profile" data-profile-menu="0">alexfitness.ru</a>
-						<a href="#" class="btn btn_brdr btn_notification" data-profile-menu="1"><i class="btn__number">99+</i></a>
-						<a href="#" class="btn btn_brdr btn_message" data-profile-menu="2"><i class="btn__number">10</i></a>
-					</div>
-					<div class="header-user__popups">
-						<div class="header-popup header-popup_profile" data-profile-popup="0">
-							<div class="header-popup__close"></div>
-							<div class="header-popup__content">
-								<div class="item"><a href="#" class="link">Личный кабинет</a></div>
-								<div class="item"><a href="#" class="link">Выйти</a></div>
-							</div>
-						</div>
-						<div class="header-popup header-popup_notification" data-profile-popup="1">
-							<div class="header-popup__close"></div>
-							<div class="header-popup__title">Оповещения fitradar</div>
-							<div class="header-popup__content">
-								<div class="item"><a href="#" class="link">Спортивные клубы <i class="num">1</i></a></div>
-								<div class="item"><a href="#" class="link">Секции <i class="num">99 +</i></a></div>
-								<div class="item"><a href="#" class="link">Площадки <i class="num">50</i></a></div>
-								<div class="item"><a href="#" class="link">Тренера <i class="num">50</i></a></div>
-								<div class="item"><a href="#" class="link">Магазины <i class="num">50</i></a></div>
-								<hr>
-								<div class="item"><a href="#" class="link">Новости <i class="num">2</i></a></div>
-								<div class="item"><a href="#" class="link">Афиша мероприятий <i class="num">3</i></a></div>
-								<div class="item"><a href="#" class="link">Статьи <i class="num">2</i></a></div>
-							</div>
-							<div class="header-popup__footer">
-								<a href="#" class="btn btn_brdr btn_settings">Настроить оповещения</a>
-								<a href="#" class="btn btn_brdr btn_clear js-remove-all-notifications">Очистить</a>
-							</div>
-						</div>
-						<div class="header-popup header-popup_message" data-profile-popup="2">
-							<div class="header-popup__close"></div>
-							<div class="header-popup__title">Ваши собщения</div>
-							<div class="header-popup__content js-scrollbar">
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_on">online</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
+<div class="header-search header-search_compact">
+	<div class="filter-field__search">
+		<div class="filter-field__search-input js-input-wrap">
+			<input type="text" class="js-input-targ" placeholder="Велоспорт">
+			<div class="filter-field__search-input__notepad js-input-notepad"></div>
+		</div>
+		<div class="filter-field__search-submit"></div>
+	</div>
+</div>
 
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_off">offline</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
+<div class="header-user" style="display:none">
+	<a href="#" class="btn btn_brdr btn_auth" data-modal-open="auth">Войти</a>
+	<a href="#" class="btn btn_brdr btn_reg" data-modal-open="auth">Регистрация</a>
+</div>
 
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_on">online</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
+<div class="header-user">
+<div class="header-user__int">
+	<a href="#" class="btn btn_brdr btn_message" data-profile-menu="2"><i class="btn__number">10</i></a>
+	<a href="#" class="btn btn_brdr btn_notification" data-profile-menu="1"><i class="btn__number">99+</i></a>
+	<span class="header-user__logo" data-profile-menu="0"><img src="img/upload/cart-logo-1.jpg" alt=""></span>
+	<a href="#" class="btn btn_brdr btn_profile" data-profile-menu="0">alexfitness.ru</a>
+</div>
+<div class="header-user__popups">
+<div class="header-popup header-popup_profile" data-profile-popup="0">
+	<div class="header-popup__close"></div>
+	<div class="header-popup__title">Личный кабинет</div>
+	<div class="header-popup__content">
+		<div class="item"><a href="#" class="link">Данные компании</a></div>
+		<div class="item"><a href="#" class="link">Сообщения</a></div>
+		<div class="item"><a href="#" class="link">Оповещения</a></div>
+		<div class="item"><a href="#" class="link">Отзывы</a></div>
+		<div class="item"><a href="#" class="link">Сотрудники</a></div>
+		<div class="item"><a href="#" class="link">Тренера</a></div>
+		<div class="item"><a href="#" class="link">Объекты</a></div>
+		<div class="item"><a href="#" class="link">Сети</a></div>
+		<div class="item"><a href="#" class="link">Новости</a></div>
+		<div class="item"><a href="#" class="link">Мероприятия</a></div>
+		<div class="item"><a href="#" class="link">Настройки</a></div>
+		<div class="item"><a href="#" class="link">Статистика</a></div>
+	</div>
+</div>
+<div class="header-popup header-popup_notification" data-profile-popup="1">
+	<div class="header-popup__close"></div>
+	<div class="header-popup__title">Оповещения fitradar</div>
+	<div class="header-popup__content">
+		<div class="item"><a href="#" class="link">Спортивные клубы <i class="num">1</i></a></div>
+		<div class="item"><a href="#" class="link">Секции <i class="num">99 +</i></a></div>
+		<div class="item"><a href="#" class="link">Площадки <i class="num">50</i></a></div>
+		<div class="item"><a href="#" class="link">Тренера <i class="num">50</i></a></div>
+		<div class="item"><a href="#" class="link">Магазины <i class="num">50</i></a></div>
+		<hr>
+		<div class="item"><a href="#" class="link">Новости <i class="num">2</i></a></div>
+		<div class="item"><a href="#" class="link">Афиша мероприятий <i class="num">3</i></a></div>
+		<div class="item"><a href="#" class="link">Статьи <i class="num">2</i></a></div>
+	</div>
+	<div class="header-popup__settings">
+		<a href="#" class="btn btn_brdr btn_settings" data-hint="Настройки оповещений"></a>
+		<a href="#" class="btn btn_brdr btn_clear js-remove-all-notifications" data-hint="Очистить"></a>
+	</div>
+</div>
+<div class="header-popup header-popup_message" data-profile-popup="2">
+	<div class="header-popup__close"></div>
+	<div class="header-popup__title">Ваши собщения</div>
+	<div class="header-popup__content js-scrollbar">
 
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_off">offline</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_on">online</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_off">offline</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_on">online</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_off">offline</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_on">online</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_off">offline</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-							</div>
-							<div class="header-popup__footer">
-								<a href="#" class="btn btn_brdr btn_settings">Настроить оповещения</a>
-								<a href="#" class="btn btn_brdr btn_clear js-remove-all-messages">Очистить</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
 			</div>
-		</div>
-		</div>
-	</header>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+	</div>
+	<div class="header-popup__settings">
+		<a href="#" class="btn btn_brdr btn_settings" data-hint="Настройки оповещений"></a>
+		<a href="#" class="btn btn_brdr btn_clear js-remove-all-messages" data-hint="Очистить"></a>
+	</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</header>
 
 	<section class="section section-location">
 		<div class="inner clearfix">
@@ -347,7 +454,7 @@
 		</div>
 	</nav>
 
-	<section class="section section_breadcrumbs section_bg-gray section_btdr-b">
+	<section class="section section_breadcrumbs section_btdr-b">
 		<div class="inner clearfix">
 			<ul class="breadcrumbs-list">
 				<li class="breadcrumbs-item"><a href="#">Fitradar</a></li>
@@ -408,389 +515,262 @@
 
 	<section class="section section_news section_bg-lightgray">
 	<div class="inner clearfix">
-	<div class="cards cards_news">
-		<div class="cards-item cards-item_big">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-1.jpg" alt="">
-				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/upload/cart-logo-1.jpg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>alexfitness.ru</span>
-						<span class="date">/ 02.04.2015</span>
-						<a href="#" class="btn btn_min btn_brdr cat_4">клубы</a>
-					</div>
-				</div>
-				<div class="cards-descr">
-					<div class="title">Режим работы клубов в праздничные дни</div>
-					<div class="text">Дорогие друзья! Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы клубов в...</div>
-				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
-			</div>
-		</div>
 
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-2.jpg" alt="">
-				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/upload/cart-logo-2.jpg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>Гога Тупурия</span>
-						<span class="date">/ 02.04.2015</span>
-						<a href="#" class="btn btn_min btn_brdr cat_3">тренера</a>
-					</div>
-				</div>
-				<div class="cards-descr">
-					<div class="title">До конца июля успей записаться на бесплатное групповое занятие по crossfit!</div>
-				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
-			</div>
-		</div>
 
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-3.jpg" alt="">
+	<div class="cards">
+	<div class="cards-item cards-item_big">
+		<div class="cards-item__inner">
+			<div class="cards-description">
+				<a href="#" class="cards-img" style="background-image: url(img/upload/cart-img-1.jpg);"></a>
+				<div class="cards-info">
+					<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+					<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
 				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/upload/cart-logo-3.jpg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>Школа волейбола №&nbsp;23</span>
-						<span class="date">/ 02.04.2015</span>
-						<a href="#" class="btn btn_min btn_brdr cat_1">секции</a>
-					</div>
+			</div>
+			<div class="card-author">
+				<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+				<div class="name">
+					<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+					<div class="name-txt">Сеть спортивных клубов</div>
 				</div>
-				<div class="cards-descr">
-					<div class="title">Летнее расписание занятий на июнь-июль 2015!</div>
-					<div class="text">Дорогие друзья! Мы искренне поздравляем вас с наступающими...</div>
-				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+				<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
 			</div>
 		</div>
+	</div>
 
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-2.jpg" alt="">
+	<div class="cards-item">
+		<div class="cards-item__inner">
+			<div class="cards-description">
+				<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+				<div class="cards-info">
+					<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+					<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
 				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/upload/cart-logo-2.jpg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>Гога Тупурия</span>
-						<span class="date">/ 02.04.2015</span>
-						<a href="#" class="btn btn_min btn_brdr cat_8">активный отдых</a>
-					</div>
+			</div>
+			<div class="card-author">
+				<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+				<div class="name">
+					<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+					<div class="name-txt">Сеть спортивных клубов</div>
 				</div>
-				<div class="cards-descr">
-					<div class="title">До конца июля успей записаться на бесплатное групповое занятие по crossfit!</div>
-				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+				<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
 			</div>
 		</div>
+	</div>
 
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/upload/cart-logo-4.jpg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>fitradar</span>
-						<span class="date">/ 02.04.2015</span>
-						<a href="#" class="btn btn_min btn_brdr cat_0">новости сайта</a>
-					</div>
+	<div class="cards-item">
+		<div class="cards-item__inner">
+			<div class="cards-description">
+				<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+				<div class="cards-info">
+					<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+					<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
 				</div>
-				<div class="cards-descr">
-					<div class="title">Рады представить Вам новый раздел!</div>
-					<div class="text text_b">Дорогие друзья! Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы клубов в праздничные выходные. Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы клубов в...</div>
+			</div>
+			<div class="card-author">
+				<div class="logo"><img src="img/upload/cart-logo-2.jpg" alt=""></div>
+				<div class="name">
+					<div class="name-ttl"><a href="#">Спортивный клуб на Металисты</a></div>
+					<div class="name-txt">Сеть спортивных клубов</div>
 				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+				<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
 			</div>
 		</div>
+	</div>
 
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-3.jpg" alt="">
+	<div class="cards-item">
+		<div class="cards-item__inner">
+			<div class="cards-description">
+				<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+				<div class="cards-info">
+					<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+					<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
 				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/upload/cart-logo-3.jpg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>Школа волейбола №&nbsp;23</span>
-						<span class="date">/ 02.04.2015</span>
-						<a href="#" class="btn btn_min btn_brdr cat_6">медицина</a>
-					</div>
+			</div>
+			<div class="card-author">
+				<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+				<div class="name">
+					<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+					<div class="name-txt">Сеть спортивных клубов</div>
 				</div>
-				<div class="cards-descr">
-					<div class="title">Летнее расписание занятий на июнь-июль 2015!</div>
-					<div class="text">Дорогие друзья! Мы искренне поздравляем вас с наступающими...</div>
-				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+				<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
 			</div>
 		</div>
+	</div>
 
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-2.jpg" alt="">
+	<div class="cards-item">
+		<div class="cards-item__inner">
+			<div class="cards-description">
+				<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+				<div class="cards-info">
+					<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+					<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
 				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/upload/cart-logo-2.jpg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>Гога Тупурия</span>
-						<span class="date">/ 02.04.2015</span>
-						<a href="#" class="btn btn_min btn_brdr cat_7">детский спорт</a>
-					</div>
+			</div>
+			<div class="card-author">
+				<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+				<div class="name">
+					<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+					<div class="name-txt">Сеть спортивных клубов</div>
 				</div>
-				<div class="cards-descr">
-					<div class="title">До конца июля успей записаться на бесплатное групповое занятие по crossfit!</div>
-				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+				<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
 			</div>
 		</div>
+	</div>
 
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/upload/cart-logo-4.jpg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>fitradar</span>
-						<span class="date">/ 02.04.2015</span>
-						<a href="#" class="btn btn_min btn_brdr cat_5">площадки</a>
-					</div>
+	<div class="cards-item">
+		<div class="cards-item__inner">
+			<div class="cards-description">
+				<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+				<div class="cards-info">
+					<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+					<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
 				</div>
-				<div class="cards-descr">
-					<div class="title">Рады представить Вам новый раздел!</div>
-					<div class="text text_b">Дорогие друзья! Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы клубов в праздничные выходные. Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы клубов в...</div>
+			</div>
+			<div class="card-author">
+				<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+				<div class="name">
+					<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+					<div class="name-txt">Сеть спортивных клубов</div>
 				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+				<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
 			</div>
 		</div>
+	</div>
 
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-3.jpg" alt="">
+	<div class="cards-item">
+		<div class="cards-item__inner">
+			<div class="cards-description">
+				<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+				<div class="cards-info">
+					<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+					<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
 				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/upload/cart-logo-3.jpg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>Школа волейбола №&nbsp;23</span>
-						<span class="date">/ 02.04.2015</span>
-						<a href="#" class="btn btn_min btn_brdr cat_2">магазины</a>
-					</div>
+			</div>
+			<div class="card-author">
+				<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+				<div class="name">
+					<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+					<div class="name-txt">Сеть спортивных клубов</div>
 				</div>
-				<div class="cards-descr">
-					<div class="title">Летнее расписание занятий на июнь-июль 2015!</div>
-					<div class="text">Дорогие друзья! Мы искренне поздравляем вас с наступающими...</div>
-				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+				<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
 			</div>
 		</div>
+	</div>
 
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-3.jpg" alt="">
+	<div class="cards-item">
+		<div class="cards-item__inner">
+			<div class="cards-description">
+				<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+				<div class="cards-info">
+					<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+					<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
 				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/upload/cart-logo-3.jpg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>Школа волейбола №&nbsp;23</span>
-						<span class="date">/ 02.04.2015</span>
-						<a href="#" class="btn btn_min btn_brdr cat_2">магазины</a>
-					</div>
+			</div>
+			<div class="card-author">
+				<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+				<div class="name">
+					<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+					<div class="name-txt">Сеть спортивных клубов</div>
 				</div>
-				<div class="cards-descr">
-					<div class="title">Летнее расписание занятий на июнь-июль 2015!</div>
-					<div class="text">Дорогие друзья! Мы искренне поздравляем вас с наступающими...</div>
-				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+				<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
 			</div>
 		</div>
+	</div>
 
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-2.jpg" alt="">
+	<div class="cards-item">
+		<div class="cards-item__inner">
+			<div class="cards-description">
+				<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+				<div class="cards-info">
+					<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+					<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
 				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/upload/cart-logo-2.jpg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>Гога Тупурия</span>
-						<span class="date">/ 02.04.2015</span>
-						<a href="#" class="btn btn_min btn_brdr cat_3">тренера</a>
-					</div>
+			</div>
+			<div class="card-author">
+				<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+				<div class="name">
+					<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+					<div class="name-txt">Сеть спортивных клубов</div>
 				</div>
-				<div class="cards-descr">
-					<div class="title">До конца июля успей записаться на бесплатное групповое занятие по crossfit!</div>
-				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+				<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
 			</div>
 		</div>
+	</div>
 
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-2.jpg" alt="">
+	<div class="cards-item">
+		<div class="cards-item__inner">
+			<div class="cards-description">
+				<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+				<div class="cards-info">
+					<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+					<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
 				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/upload/cart-logo-2.jpg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>Гога Тупурия</span>
-						<span class="date">/ 02.04.2015</span>
-						<a href="#" class="btn btn_min btn_brdr cat_8">активный отдых</a>
-					</div>
+			</div>
+			<div class="card-author">
+				<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+				<div class="name">
+					<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+					<div class="name-txt">Сеть спортивных клубов</div>
 				</div>
-				<div class="cards-descr">
-					<div class="title">До конца июля успей записаться на бесплатное групповое занятие по crossfit!</div>
-				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+				<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
 			</div>
 		</div>
+	</div>
 
-		<div class="cards-item cards-item_big">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-1.jpg" alt="">
+	<div class="cards-item">
+		<div class="cards-item__inner">
+			<div class="cards-description">
+				<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+				<div class="cards-info">
+					<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+					<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
 				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/upload/cart-logo-1.jpg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>alexfitness.ru</span>
-						<span class="date">/ 02.04.2015</span>
-						<a href="#" class="btn btn_min btn_brdr cat_4">клубы</a>
-					</div>
+			</div>
+			<div class="card-author">
+				<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+				<div class="name">
+					<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+					<div class="name-txt">Сеть спортивных клубов</div>
 				</div>
-				<div class="cards-descr">
-					<div class="title">Режим работы клубов в праздничные дни</div>
-					<div class="text">Дорогие друзья! Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы клубов в...</div>
-				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+			</div>
+			<div class="cards-legend">
+				<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+				<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
 			</div>
 		</div>
+	</div>
 
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/upload/cart-logo-4.jpg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>fitradar</span>
-						<span class="date">/ 02.04.2015</span>
-						<a href="#" class="btn btn_min btn_brdr cat_0">новости сайта</a>
-					</div>
-				</div>
-				<div class="cards-descr">
-					<div class="title">Рады представить Вам новый раздел!</div>
-					<div class="text text_b">Дорогие друзья! Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы клубов в праздничные выходные. Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы клубов в...</div>
-				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
-			</div>
-		</div>
-
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-3.jpg" alt="">
-				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/upload/cart-logo-3.jpg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>Школа волейбола №&nbsp;23</span>
-						<span class="date">/ 02.04.2015</span>
-						<a href="#" class="btn btn_min btn_brdr cat_6">медицина</a>
-					</div>
-				</div>
-				<div class="cards-descr">
-					<div class="title">Летнее расписание занятий на июнь-июль 2015!</div>
-					<div class="text">Дорогие друзья! Мы искренне поздравляем вас с наступающими...</div>
-				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
-			</div>
-		</div>
-
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-img">
-					<img src="img/upload/cart-img-2.jpg" alt="">
-				</div>
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/upload/cart-logo-2.jpg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>Гога Тупурия</span>
-						<span class="date">/ 02.04.2015</span>
-						<a href="#" class="btn btn_min btn_brdr cat_7">детский спорт</a>
-					</div>
-				</div>
-				<div class="cards-descr">
-					<div class="title">До конца июля успей записаться на бесплатное групповое занятие по crossfit!</div>
-				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
-			</div>
-		</div>
-
-		<div class="cards-item">
-			<div class="cards-item__inner">
-				<div class="cards-title">
-					<div class="cards-title__img">
-						<img src="img/upload/cart-logo-4.jpg" alt="">
-					</div>
-					<div class="cards-title__text">
-						<span>fitradar</span>
-						<span class="date">/ 02.04.2015</span>
-						<a href="#" class="btn btn_min btn_brdr cat_5">площадки</a>
-					</div>
-				</div>
-				<div class="cards-descr">
-					<div class="title">Рады представить Вам новый раздел!</div>
-					<div class="text text_b">Дорогие друзья! Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы клубов в праздничные выходные. Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы клубов в...</div>
-				</div>
-				<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
-			</div>
-		</div>
-
-		<div class="cards-item cards-item_more">
-			<div class="cards-item__inner">
-				<div class="cards-load">
-					<div class="icon"></div>
-					<div class="title">Показать еще 30</div>
-					<div class="text">Показано 30 новостей из 1100</div>
-				</div>
-			</div>
-		</div>
 	</div>
 
 	</div>

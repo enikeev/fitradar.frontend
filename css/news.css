@@ -1,5 +1,6 @@
 .news-item__head{
-	overflow: hidden;
+	/*overflow: hidden;*/
+	display: inline-block;
 }
 
 .news-item__gallery{
@@ -11,12 +12,17 @@
 
 .news-item__share{
 	/*margin-left: 700px;*/
-	float: right;
+	float: left;
 	border: 1px solid #cfcfcf;
-	background: #f2f2f2;
+	background: #fff;
 	padding: 18px;
 
-	margin: 0 0 20px 20px;
+	margin: 0 0 20px 40px;
+	
+	width: 460px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .news-item__share .title{
 	font-size: 16px;
@@ -129,37 +135,35 @@
 }
 .news-carousel .flex-direction-nav a{
 	position: absolute;
-	width: 50px;
-	height: 50px;
+	width: 43px;
+	height: 43px;
 	display: block;
 	top: 50%;
-	margin-top: -25px;
-	border: 1px solid #fff;
-	border-radius: 2px;
-	-moz-border-radius: 2px;
-	-wevkit-border-radius: 2px;
+	margin-top: -22px;
+	border: 1px solid #3399FF;
 	text-indent: -9999px;
 	z-index: 10;
 	cursor: pointer;
-	background: no-repeat 50% 50%;
-	background-size: 10px 20px;
-	-moz-background-size: 10px 20px;
-	-webkit-background-size: 10px 20px;
+	background: #fff no-repeat 50% 50%;
 
 	transition: all .2s ease;
 	-moz-transition: all .2s ease;
 	-webkit-transition: all .2s ease;
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
 }
 .news-carousel .flex-direction-nav .flex-nav-prev a{
-	left: 0px;
-	background-image: url("../img/global/arrow-left-w.svg");
-	border-left: none;
+	left: -23px;
+	background-image: url("../img/global/arrow-left-c.svg");
 }
+.news-carousel .flex-direction-nav .flex-nav-prev a:hover{background-image: url("../img/global/arrow-left-w.svg");}
 .news-carousel .flex-direction-nav .flex-nav-next a{
-	right: 0px;
-	background-image: url("../img/global/arrow-right-w.svg");
-	border-right: none;
+	right: -23px;
+	background-image: url("../img/global/arrow-right-c.svg");
 }
+.news-carousel .flex-direction-nav .flex-nav-next a:hover{background-image: url("../img/global/arrow-right-w.svg");}
 
 .news-carousel .flex-direction-nav a:hover{
 	background-color: #3399FF;
@@ -181,7 +185,7 @@
 
 
 .news-item__text{
-	font-size: 18px;
+	font-size: 16px;
 	color: #4b4b4b;
 	line-height: 1.25;
 }
@@ -189,7 +193,7 @@
 	font-weight: 600;
 }
 .news-item__text p{
-	margin-bottom: 18px;
+	margin-bottom: 16px;
 }
 
 

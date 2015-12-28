@@ -25,160 +25,267 @@
 
 <div class="wrapper">
 
-	<header class="header">
-		<div class="header-wrap">
-		<div class="inner">
-				<a href="/" class="header-logo"></a>
-				<div class="header-location js-location-current">Санкт-Петербург</div>
+<header class="header">
+<div class="header-wrap">
+<div class="inner">
+<a href="/" class="header-logo"></a>
+<div class="header-location js-location-current">Санкт-Петербург</div>
 
-			<div class="header-aside">
+<script>
+	/*$(function(){
+	 setTimeout(function(){
+	 $('.header-popup_city').fadeIn();
+	 }, 500)
+	 });*/
+</script>
 
-				<div class="header-search">
-					<div class="filter-field__search">
-						<div class="filter-field__search-input js-input-wrap">
-							<input type="text" class="js-input-targ" placeholder="Велоспорт">
-							<div class="filter-field__search-input__notepad js-input-notepad"></div>
-						</div>
-						<div class="filter-field__search-submit"></div>
-					</div>
-				</div>
-
-				<div class="header-user" style="display:none">
-					<a href="#" class="btn btn_brdr btn_auth" data-modal-open="auth">Войти</a>
-					<a href="#" class="btn btn_brdr btn_reg" data-modal-open="auth">Регистрация</a>
-				</div>
-
-				<div class="header-user">
-					<div class="header-user__int">
-						<span class="header-user__logo"><img src="img/upload/cart-logo-1.jpg" alt=""></span>
-						<a href="#" class="btn btn_brdr btn_profile" data-profile-menu="0">alexfitness.ru</a>
-						<a href="#" class="btn btn_brdr btn_notification" data-profile-menu="1"><i class="btn__number">99+</i></a>
-						<a href="#" class="btn btn_brdr btn_message" data-profile-menu="2"><i class="btn__number">10</i></a>
-					</div>
-					<div class="header-user__popups">
-						<div class="header-popup header-popup_profile" data-profile-popup="0">
-							<div class="header-popup__close"></div>
-							<div class="header-popup__content">
-								<div class="item"><a href="#" class="link">Личный кабинет</a></div>
-								<div class="item"><a href="#" class="link">Выйти</a></div>
-							</div>
-						</div>
-						<div class="header-popup header-popup_notification" data-profile-popup="1">
-							<div class="header-popup__close"></div>
-							<div class="header-popup__title">Оповещения fitradar</div>
-							<div class="header-popup__content">
-								<div class="item"><a href="#" class="link">Спортивные клубы <i class="num">1</i></a></div>
-								<div class="item"><a href="#" class="link">Секции <i class="num">99 +</i></a></div>
-								<div class="item"><a href="#" class="link">Площадки <i class="num">50</i></a></div>
-								<div class="item"><a href="#" class="link">Тренера <i class="num">50</i></a></div>
-								<div class="item"><a href="#" class="link">Магазины <i class="num">50</i></a></div>
-								<hr>
-								<div class="item"><a href="#" class="link">Новости <i class="num">2</i></a></div>
-								<div class="item"><a href="#" class="link">Афиша мероприятий <i class="num">3</i></a></div>
-								<div class="item"><a href="#" class="link">Статьи <i class="num">2</i></a></div>
-							</div>
-							<div class="header-popup__footer">
-								<a href="#" class="btn btn_brdr btn_settings">Настроить оповещения</a>
-								<a href="#" class="btn btn_brdr btn_clear js-remove-all-notifications">Очистить</a>
-							</div>
-						</div>
-						<div class="header-popup header-popup_message" data-profile-popup="2">
-							<div class="header-popup__close"></div>
-							<div class="header-popup__title">Ваши собщения</div>
-							<div class="header-popup__content js-scrollbar">
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_on">online</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_off">offline</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_on">online</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_off">offline</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_on">online</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_off">offline</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_on">online</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_off">offline</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_on">online</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-								<a href="#" class="item">
-									<div>
-										<span class="login">login <sup class="status status_off">offline</sup></span>
-										<span class="date">10 мая</span>
-									</div>
-									<div class="text">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
-								</a>
-
-							</div>
-							<div class="header-popup__footer">
-								<a href="#" class="btn btn_brdr btn_settings">Настроить оповещения</a>
-								<a href="#" class="btn btn_brdr btn_clear js-remove-all-messages">Очистить</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-			</div>
+<div class="header-location__popups">
+	<div class="header-popup header-popup_city">
+		<div class="header-popup__close"></div>
+		<div class="header-popup__title">Ваш город - <span>Санкт-Петербург?</span></div>
+		<div class="header-popup__content">
+			<span class="btn btn_brdr js-popup-city-confirm">Да</span>
+			<span class="btn btn_brdr js-popup-city-choose">Выбрать другой город</span>
 		</div>
-	</header>
+		<div class="header-popup__footer">
+			От выбранного города зависит предоставляемая
+			Вам информация из нашего каталога
+		</div>
+	</div>
+</div>
+
+<div class="header-aside">
+
+<div class="header-search header-search_compact">
+	<div class="filter-field__search">
+		<div class="filter-field__search-input js-input-wrap">
+			<input type="text" class="js-input-targ" placeholder="Велоспорт">
+			<div class="filter-field__search-input__notepad js-input-notepad"></div>
+		</div>
+		<div class="filter-field__search-submit"></div>
+	</div>
+</div>
+
+<div class="header-user" style="display:none">
+	<a href="#" class="btn btn_brdr btn_auth" data-modal-open="auth">Войти</a>
+	<a href="#" class="btn btn_brdr btn_reg" data-modal-open="auth">Регистрация</a>
+</div>
+
+<div class="header-user">
+<div class="header-user__int">
+	<a href="#" class="btn btn_brdr btn_message" data-profile-menu="2"><i class="btn__number">10</i></a>
+	<a href="#" class="btn btn_brdr btn_notification" data-profile-menu="1"><i class="btn__number">99+</i></a>
+	<span class="header-user__logo" data-profile-menu="0"><img src="img/upload/cart-logo-1.jpg" alt=""></span>
+	<a href="#" class="btn btn_brdr btn_profile" data-profile-menu="0">alexfitness.ru</a>
+</div>
+<div class="header-user__popups">
+<div class="header-popup header-popup_profile" data-profile-popup="0">
+	<div class="header-popup__close"></div>
+	<div class="header-popup__title">Личный кабинет</div>
+	<div class="header-popup__content">
+		<div class="item"><a href="#" class="link">Данные компании</a></div>
+		<div class="item"><a href="#" class="link">Сообщения</a></div>
+		<div class="item"><a href="#" class="link">Оповещения</a></div>
+		<div class="item"><a href="#" class="link">Отзывы</a></div>
+		<div class="item"><a href="#" class="link">Сотрудники</a></div>
+		<div class="item"><a href="#" class="link">Тренера</a></div>
+		<div class="item"><a href="#" class="link">Объекты</a></div>
+		<div class="item"><a href="#" class="link">Сети</a></div>
+		<div class="item"><a href="#" class="link">Новости</a></div>
+		<div class="item"><a href="#" class="link">Мероприятия</a></div>
+		<div class="item"><a href="#" class="link">Настройки</a></div>
+		<div class="item"><a href="#" class="link">Статистика</a></div>
+	</div>
+</div>
+<div class="header-popup header-popup_notification" data-profile-popup="1">
+	<div class="header-popup__close"></div>
+	<div class="header-popup__title">Оповещения fitradar</div>
+	<div class="header-popup__content">
+		<div class="item"><a href="#" class="link">Спортивные клубы <i class="num">1</i></a></div>
+		<div class="item"><a href="#" class="link">Секции <i class="num">99 +</i></a></div>
+		<div class="item"><a href="#" class="link">Площадки <i class="num">50</i></a></div>
+		<div class="item"><a href="#" class="link">Тренера <i class="num">50</i></a></div>
+		<div class="item"><a href="#" class="link">Магазины <i class="num">50</i></a></div>
+		<hr>
+		<div class="item"><a href="#" class="link">Новости <i class="num">2</i></a></div>
+		<div class="item"><a href="#" class="link">Афиша мероприятий <i class="num">3</i></a></div>
+		<div class="item"><a href="#" class="link">Статьи <i class="num">2</i></a></div>
+	</div>
+	<div class="header-popup__settings">
+		<a href="#" class="btn btn_brdr btn_settings" data-hint="Настройки оповещений"></a>
+		<a href="#" class="btn btn_brdr btn_clear js-remove-all-notifications" data-hint="Очистить"></a>
+	</div>
+</div>
+<div class="header-popup header-popup_message" data-profile-popup="2">
+	<div class="header-popup__close"></div>
+	<div class="header-popup__title">Ваши собщения</div>
+	<div class="header-popup__content js-scrollbar">
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+		<a href="#" class="item">
+			<div class="img"><img src="img/upload/med-logo-1.jpg" alt=""></div>
+			<div class="text">
+				<div class="text-name">Патрик Саливан</div>
+				<div class="text-message">Добрый день, заинтересовало Ваше предложение заинтересовало Ваше предложение</div>
+			</div>
+		</a>
+
+	</div>
+	<div class="header-popup__settings">
+		<a href="#" class="btn btn_brdr btn_settings" data-hint="Настройки оповещений"></a>
+		<a href="#" class="btn btn_brdr btn_clear js-remove-all-messages" data-hint="Очистить"></a>
+	</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</header>
 
 	<section class="section section-location">
 		<div class="inner clearfix">
@@ -359,7 +466,7 @@
 		</div>
 	</section>
 
-	<section class="section section_breadcrumbs section_bg-gray">
+	<section class="section section_breadcrumbs section_bg-lightgray">
 		<div class="inner clearfix">
 			<ul class="breadcrumbs-list">
 				<li class="breadcrumbs-item"><a href="#">Fitradar</a></li>
@@ -369,7 +476,7 @@
 		</div>
 	</section>
 
-	<section class="section section_info section_bg-gray">
+	<section class="section section_info section_bg-lightgray">
 		<div class="inner clearfix">
 			<div class="aside aside_left aside_sml">
 				<div class="catalog-item">
@@ -388,7 +495,7 @@
 								<a href="#" class="btn btn_brdr btn_buy">Купить абонемент</a>
 								<a href="#" class="btn btn_brdr">Задать вопрос</a>
 							</div>
-							<hr>
+
 							<div class="title">Сеть клубов:</div>
 							<div class="js-scrollbar catalog-clubs">
 								<div class="catalog-profile">
@@ -456,7 +563,7 @@
 									</div>
 								</div>
 							</div>
-							<hr>
+
 							<div class="catalog-cont">
 								<div class="catalog-cont__inner">
 									<div class="title">Адрес:</div>
@@ -481,7 +588,7 @@
 									</ul>
 								</div>
 							</div>
-							<hr>
+
 							<div class="catalog-rate">
 								<div class="catalog-rate__main">
 									<div class="title">4.250 <span class="review">(50)</span></div>
@@ -500,7 +607,7 @@
 									</div>
 								</div>
 							</div>
-							<hr>
+
 							<div class="catalog-soc">
 								<div class="title">Alex Fitness Кудрово в интернете</div>
 								<ul class="soc-list">
@@ -519,186 +626,197 @@
 
 				<div class="cards_news-wrapper">
 					<div class="title">Новости Alex Fitness Кудрово</div>
-					<div class="subscribe"><a href="#" class="btn btn_brdr">Подписаться на новости клуба</a></div>
 
 					<div class="cards cards_news js-scrollbar">
+
 						<div class="cards-item">
 							<div class="cards-item__inner">
-								<div class="cards-img">
-									<img src="img/upload/cart-img-2.jpg" alt="">
-								</div>
-								<div class="cards-title">
-									<div class="cards-title__img">
-										<img src="img/upload/cart-logo-2.jpg" alt="">
-									</div>
-									<div class="cards-title__text">
-										<span>Гога Тупурия</span>
-										<span class="date">/ 02.04.2015</span>
-										<a href="#" class="btn btn_min btn_brdr cat_3">тренера</a>
+								<div class="cards-description">
+									<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+									<div class="cards-info">
+										<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+										<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
 									</div>
 								</div>
-								<div class="cards-descr">
-									<div class="title">До конца июля успей записаться на бесплатное групповое занятие по crossfit!</div>
+								<div class="card-author">
+									<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+									<div class="name">
+										<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+										<div class="name-txt">Сеть спортивных клубов</div>
+									</div>
 								</div>
-								<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+								<div class="cards-legend">
+									<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+									<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
+								</div>
 							</div>
 						</div>
 
 						<div class="cards-item">
 							<div class="cards-item__inner">
-								<div class="cards-img">
-									<img src="img/upload/cart-img-3.jpg" alt="">
-								</div>
-								<div class="cards-title">
-									<div class="cards-title__img">
-										<img src="img/upload/cart-logo-3.jpg" alt="">
-									</div>
-									<div class="cards-title__text">
-										<span>Школа волейбола №&nbsp;23</span>
-										<span class="date">/ 02.04.2015</span>
-										<a href="#" class="btn btn_min btn_brdr cat_1">секции</a>
+								<div class="cards-description">
+									<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+									<div class="cards-info">
+										<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+										<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
 									</div>
 								</div>
-								<div class="cards-descr">
-									<div class="title">Летнее расписание занятий на июнь-июль 2015!</div>
-									<div class="text">Дорогие друзья! Мы искренне поздравляем вас с наступающими...</div>
+								<div class="card-author">
+									<div class="logo"><img src="img/upload/cart-logo-2.jpg" alt=""></div>
+									<div class="name">
+										<div class="name-ttl"><a href="#">Спортивный клуб на Металисты</a></div>
+										<div class="name-txt">Сеть спортивных клубов</div>
+									</div>
 								</div>
-								<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+								<div class="cards-legend">
+									<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+									<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
+								</div>
 							</div>
 						</div>
 
 						<div class="cards-item">
 							<div class="cards-item__inner">
-								<div class="cards-img">
-									<img src="img/upload/cart-img-2.jpg" alt="">
-								</div>
-								<div class="cards-title">
-									<div class="cards-title__img">
-										<img src="img/upload/cart-logo-2.jpg" alt="">
-									</div>
-									<div class="cards-title__text">
-										<span>Гога Тупурия</span>
-										<span class="date">/ 02.04.2015</span>
-										<a href="#" class="btn btn_min btn_brdr cat_8">активный отдых</a>
+								<div class="cards-description">
+									<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+									<div class="cards-info">
+										<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+										<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
 									</div>
 								</div>
-								<div class="cards-descr">
-									<div class="title">До конца июля успей записаться на бесплатное групповое занятие по crossfit!</div>
+								<div class="card-author">
+									<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+									<div class="name">
+										<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+										<div class="name-txt">Сеть спортивных клубов</div>
+									</div>
 								</div>
-								<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+								<div class="cards-legend">
+									<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+									<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
+								</div>
 							</div>
 						</div>
 
 						<div class="cards-item">
 							<div class="cards-item__inner">
-								<div class="cards-title">
-									<div class="cards-title__img">
-										<img src="img/upload/cart-logo-4.jpg" alt="">
-									</div>
-									<div class="cards-title__text">
-										<span>fitradar</span>
-										<span class="date">/ 02.04.2015</span>
-										<a href="#" class="btn btn_min btn_brdr cat_0">новости сайта</a>
+								<div class="cards-description">
+									<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+									<div class="cards-info">
+										<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+										<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
 									</div>
 								</div>
-								<div class="cards-descr">
-									<div class="title">Рады представить Вам новый раздел!</div>
-									<div class="text text_b">Дорогие друзья! Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы клубов в праздничные выходные. Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы клубов в...</div>
+								<div class="card-author">
+									<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+									<div class="name">
+										<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+										<div class="name-txt">Сеть спортивных клубов</div>
+									</div>
 								</div>
-								<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+								<div class="cards-legend">
+									<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+									<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
+								</div>
 							</div>
 						</div>
 
 						<div class="cards-item">
 							<div class="cards-item__inner">
-								<div class="cards-img">
-									<img src="img/upload/cart-img-3.jpg" alt="">
-								</div>
-								<div class="cards-title">
-									<div class="cards-title__img">
-										<img src="img/upload/cart-logo-3.jpg" alt="">
-									</div>
-									<div class="cards-title__text">
-										<span>Школа волейбола №&nbsp;23</span>
-										<span class="date">/ 02.04.2015</span>
-										<a href="#" class="btn btn_min btn_brdr cat_6">медицина</a>
+								<div class="cards-description">
+									<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+									<div class="cards-info">
+										<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+										<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
 									</div>
 								</div>
-								<div class="cards-descr">
-									<div class="title">Летнее расписание занятий на июнь-июль 2015!</div>
-									<div class="text">Дорогие друзья! Мы искренне поздравляем вас с наступающими...</div>
+								<div class="card-author">
+									<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+									<div class="name">
+										<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+										<div class="name-txt">Сеть спортивных клубов</div>
+									</div>
 								</div>
-								<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+								<div class="cards-legend">
+									<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+									<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
+								</div>
 							</div>
 						</div>
 
 						<div class="cards-item">
 							<div class="cards-item__inner">
-								<div class="cards-img">
-									<img src="img/upload/cart-img-2.jpg" alt="">
-								</div>
-								<div class="cards-title">
-									<div class="cards-title__img">
-										<img src="img/upload/cart-logo-2.jpg" alt="">
-									</div>
-									<div class="cards-title__text">
-										<span>Гога Тупурия</span>
-										<span class="date">/ 02.04.2015</span>
-										<a href="#" class="btn btn_min btn_brdr cat_7">детский спорт</a>
+								<div class="cards-description">
+									<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+									<div class="cards-info">
+										<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+										<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
 									</div>
 								</div>
-								<div class="cards-descr">
-									<div class="title">До конца июля успей записаться на бесплатное групповое занятие по crossfit!</div>
+								<div class="card-author">
+									<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+									<div class="name">
+										<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+										<div class="name-txt">Сеть спортивных клубов</div>
+									</div>
 								</div>
-								<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+								<div class="cards-legend">
+									<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+									<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
+								</div>
 							</div>
 						</div>
 
 						<div class="cards-item">
 							<div class="cards-item__inner">
-								<div class="cards-title">
-									<div class="cards-title__img">
-										<img src="img/upload/cart-logo-4.jpg" alt="">
-									</div>
-									<div class="cards-title__text">
-										<span>fitradar</span>
-										<span class="date">/ 02.04.2015</span>
-										<a href="#" class="btn btn_min btn_brdr cat_5">площадки</a>
+								<div class="cards-description">
+									<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+									<div class="cards-info">
+										<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+										<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
 									</div>
 								</div>
-								<div class="cards-descr">
-									<div class="title">Рады представить Вам новый раздел!</div>
-									<div class="text text_b">Дорогие друзья! Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы клубов в праздничные выходные. Мы искренне поздравляем вас с наступающими майскими праздниками и информируем о режиме работы клубов в...</div>
+								<div class="card-author">
+									<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+									<div class="name">
+										<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+										<div class="name-txt">Сеть спортивных клубов</div>
+									</div>
 								</div>
-								<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+								<div class="cards-legend">
+									<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+									<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
+								</div>
 							</div>
 						</div>
 
 						<div class="cards-item">
 							<div class="cards-item__inner">
-								<div class="cards-img">
-									<img src="img/upload/cart-img-3.jpg" alt="">
-								</div>
-								<div class="cards-title">
-									<div class="cards-title__img">
-										<img src="img/upload/cart-logo-3.jpg" alt="">
-									</div>
-									<div class="cards-title__text">
-										<span>Школа волейбола №&nbsp;23</span>
-										<span class="date">/ 02.04.2015</span>
-										<a href="#" class="btn btn_min btn_brdr cat_2">магазины</a>
+								<div class="cards-description">
+									<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+									<div class="cards-info">
+										<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+										<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
 									</div>
 								</div>
-								<div class="cards-descr">
-									<div class="title">Летнее расписание занятий на июнь-июль 2015!</div>
-									<div class="text">Дорогие друзья! Мы искренне поздравляем вас с наступающими...</div>
+								<div class="card-author">
+									<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+									<div class="name">
+										<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+										<div class="name-txt">Сеть спортивных клубов</div>
+									</div>
 								</div>
-								<div class="cards-btn"><a href="#" class="btn btn_brdr">читать</a></div>
+								<div class="cards-legend">
+									<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+									<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
+								</div>
 							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>
+
 			<div class="aside aside_right aside_big">
 				<div class="catalog-info">
 
@@ -713,616 +831,604 @@
 						<div class="menu-item"><span>Новости</span></div>
 						<div class="menu-item"><span>Контакты</span></div>
 					</div>
+
 					<div class="catalog-details">
-						<div class="details-item active">
-							<div class="details-item__images">
-								<div class="images-item"><img src="img/upload/cards-image-000.jpg" alt=""><i class="images-icon images-icon_zoom"></i></div>
-								<div class="images-item"><img src="img/upload/cards-image-001.jpg" alt=""><i class="images-icon images-icon_play"></i></div>
-								<div class="images-item"><img src="img/upload/cards-image-002.jpg" alt=""><i class="images-icon images-icon_360"></i></div>
-								<div class="images-item"><img src="img/upload/cards-image-000.jpg" alt=""><i class="images-icon images-icon_zoom"></i></div>
-								<div class="images-item"><img src="img/upload/cards-image-001.jpg" alt=""><i class="images-icon images-icon_zoom"></i></div>
-								<div class="images-item"><img src="img/upload/cards-image-002.jpg" alt=""><i class="images-icon images-icon_zoom"></i></div>
-								<div class="images-item"><img src="img/upload/cards-image-000.jpg" alt=""><i class="images-icon images-icon_zoom"></i></div>
-								<div class="images-item"><img src="img/upload/cards-image-001.jpg" alt=""><i class="images-icon images-icon_zoom"></i></div>
-								<div class="images-item"><img src="img/upload/cards-image-002.jpg" alt=""><i class="images-icon images-icon_zoom"></i></div>
-								<div class="images-item"><img src="img/upload/cards-image-000.jpg" alt=""><i class="images-icon images-icon_zoom"></i></div>
-								<div class="images-item images-item_more">
-									<img src="img/global/cards-image-bg.png" alt="">
-									<div class="catalog-item_more">
-										<div class="catalog-item__inner">
-											<div class="catalog-load">
-												<div class="icon"></div>
-												<div class="title">Показать еще</div>
-											</div>
+					<div class="details-item active">
+
+						<div class="title_main">Фотогалерея</div>
+
+						<div class="details-item__images">
+							<span class="images-item"><img src="img/upload/cards-image-000.jpg" alt=""><i class="images-icon images-icon_zoom"></i></span>
+							<span class="images-item"><img src="img/upload/cards-image-001.jpg" alt=""><i class="images-icon images-icon_play"></i></span>
+							<span class="images-item"><img src="img/upload/cards-image-002.jpg" alt=""><i class="images-icon images-icon_360"></i></span>
+							<span class="images-item"><img src="img/upload/cards-image-000.jpg" alt=""><i class="images-icon images-icon_zoom"></i></span>
+							<span class="images-item"><img src="img/upload/cards-image-001.jpg" alt=""><i class="images-icon images-icon_zoom"></i></span>
+							<span class="images-item"><img src="img/upload/cards-image-002.jpg" alt=""><i class="images-icon images-icon_zoom"></i></span>
+							<span class="images-item"><img src="img/upload/cards-image-000.jpg" alt=""><i class="images-icon images-icon_zoom"></i></span>
+							<span class="images-item"><img src="img/upload/cards-image-001.jpg" alt=""><i class="images-icon images-icon_zoom"></i></span>
+							<span class="images-item"><img src="img/upload/cards-image-002.jpg" alt=""><i class="images-icon images-icon_zoom"></i></span>
+							<span class="images-item"><img src="img/upload/cards-image-000.jpg" alt=""><i class="images-icon images-icon_zoom"></i></span>
+											<span class="images-item images-item_more">
+												<img src="img/global/cards-image-bg.png" alt="">
+												<div class="catalog-item_more">
+													<div class="catalog-item__inner">
+														<div class="catalog-load">
+															<div class="icon"></div>
+															<div class="title">Показать еще</div>
+														</div>
+													</div>
+												</div>
+											</span>
+						</div>
+
+						<div class="title_main">Instagram <a href="#" class="instagram">@alexfitnesskudrovo</a></div>
+
+
+						<div class="details-item__slider">
+							<ul class="slides">
+								<li class="details-slider__item">
+									<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+									<div class="details-slider__footer">
+										<span class="link link_date">31 мая</span>
+										<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+										<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+									</div>
+								</li>
+								<li class="details-slider__item">
+									<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+									<div class="details-slider__footer">
+										<span class="link link_date">31 мая</span>
+										<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+										<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+									</div>
+								</li>
+								<li class="details-slider__item">
+									<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+									<div class="details-slider__footer">
+										<span class="link link_date">31 мая</span>
+										<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+										<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+									</div>
+								</li>
+								<li class="details-slider__item">
+									<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+									<div class="details-slider__footer">
+										<span class="link link_date">31 мая</span>
+										<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+										<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+									</div>
+								</li>
+								<li class="details-slider__item">
+									<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+									<div class="details-slider__footer">
+										<span class="link link_date">31 мая</span>
+										<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+										<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+									</div>
+								</li>
+								<li class="details-slider__item">
+									<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+									<div class="details-slider__footer">
+										<span class="link link_date">31 мая</span>
+										<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+										<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+									</div>
+								</li>
+								<li class="details-slider__item">
+									<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+									<div class="details-slider__footer">
+										<span class="link link_date">31 мая</span>
+										<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+										<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+									</div>
+								</li>
+								<li class="details-slider__item">
+									<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+									<div class="details-slider__footer">
+										<span class="link link_date">31 мая</span>
+										<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+										<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+									</div>
+								</li>
+								<li class="details-slider__item">
+									<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+									<div class="details-slider__footer">
+										<span class="link link_date">31 мая</span>
+										<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+										<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+									</div>
+								</li>
+								<li class="details-slider__item">
+									<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+									<div class="details-slider__footer">
+										<span class="link link_date">31 мая</span>
+										<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+										<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+									</div>
+								</li>
+								<li class="details-slider__item">
+									<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+									<div class="details-slider__footer">
+										<span class="link link_date">31 мая</span>
+										<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+										<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+									</div>
+								</li>
+								<li class="details-slider__item">
+									<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+									<div class="details-slider__footer">
+										<span class="link link_date">31 мая</span>
+										<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+										<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+									</div>
+								</li>
+								<li class="details-slider__item">
+									<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
+									<div class="details-slider__footer">
+										<span class="link link_date">31 мая</span>
+										<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
+										<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+
+					</div>
+
+					<div class="details-item">
+						<table class="table table_list">
+							<tbody>
+							<tr>
+								<td colspan="2" class="title_main">Адрес</td>
+							</tr>
+							<tr>
+								<td class="title">Район :</td>
+								<td>Невский</td>
+							</tr>
+							<tr>
+								<td class="title">Адрес :</td>
+								<td>Кудрово, ул. Ленинградская, 1, ЖК "Новый Оккервиль"</td>
+							</tr>
+							<tr>
+								<td class="title">Метро :</td>
+								<td>
+									<ul class="region">
+										<li><span class="region__name">Улица Дыбенко</span> <span class="region__dim">1,3 км</span></li>
+										<li><span class="region__name">Проспект Большевиков</span> <span class="region__dim">2,2 км</span></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="title_main">Как добраться</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="title_map"></div>
+								</td>
+							</tr>
+
+							<tr>
+								<td colspan="2" class="title_main">Часы работы</td>
+							</tr>
+							<tr>
+								<td class="title">пн-пт</td>
+								<td>6:30-24:00</td>
+							</tr>
+							<tr>
+								<td class="title">сб-вс</td>
+								<td>9:00-22:00</td>
+							</tr>
+							<tr class="title">
+								<td colspan="2" class="title_main">Контакты</td>
+							</tr>
+							<tr>
+								<td class="title">Телефон :</td>
+								<td>+7 (812) 777-09-09<br>+7 (981) 718-73-31</td>
+							</tr>
+							<tr>
+								<td class="title">Факс :</td>
+								<td>+7 (981) 718-73-31</td>
+							</tr>
+							<tr>
+								<td class="title">E-mail :</td>
+								<td>alexfitnes@club.ru</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="details-item">
+
+						<div class="title_main">Стоимость услуг</div>
+
+						<table class="table table_option">
+							<thead>
+							<tr>
+								<th>Абонемент</th>
+								<th>Старая цена</th>
+								<th>Стоимость</th>
+								<th>Услуги</th>
+								<th>Условия</th>
+								<th>&nbsp;</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>1 месяц</td>
+								<td class="oldprice">10 000 руб.</td>
+								<td class="price">5 000 руб.</td>
+								<td>Тренажерный зал+Аква+Фитнес</td>
+								<td>Время посещения пн-пт 7:00-23:59<br>и сб-вс 9:00-21:59</td>
+								<td align="right"><a href="#" class="btn btn_brdr">Купить</a></td>
+							</tr>
+							<tr>
+								<td>6 месяцев</td>
+								<td class="oldprice">16 850 руб.</td>
+								<td class="price">11 850 руб.</td>
+								<td>Тренажерный зал+Аква+Фитнес</td>
+								<td>Время посещения пн-пт 7:00-23:59<br>и сб-вс 9:00-21:59</td>
+								<td align="right"><a href="#" class="btn btn_brdr">Купить</a></td>
+							</tr>
+							<tr>
+								<td>12 месяцев</td>
+								<td class="oldprice">15 900 руб.</td>
+								<td class="price">13 900 руб.</td>
+								<td>Тренажерный зал+Аква+Фитнес<br>+ 90 дней заморозки</td>
+								<td>Время посещения пн-пт 7:00-23:59<br>и сб-вс 9:00-21:59. Успей купить выгодно!<br>Только до 31.05.2015 ! Всего 5 карт!</td>
+								<td align="right"><a href="#" class="btn btn_brdr">Купить</a></td>
+							</tr>
+							<tr>
+								<td>12 месяцев</td>
+								<td class="oldprice">22 080 руб.</td>
+								<td class="price">19 080 руб.</td>
+								<td>Тренажерный зал+Аква+Фитнес</td>
+								<td>Время посещения пн-пт 6:30:-23:59<br>и сб-вс 9:00-21:59. Всего 2 карты</td>
+								<td align="right"><a href="#" class="btn btn_brdr">Купить</a></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="details-item">
+						<table class="table table_str">
+							<tbody>
+							<tr>
+								<td colspan="4" class="title_main">Спортивная инфраструктура</td>
+							</tr>
+							<tr>
+								<td><i class="bullet"></i><span>Бассейн</span></td>
+								<td><i class="bullet"></i><span>Бассейн</span></td>
+								<td><i class="bullet"></i><span>Бассейн</span></td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td><i class="bullet"></i><span>Посещение зоны бокса</span></td>
+								<td><i class="bullet"></i><span>Посещение зоны бокса</span></td>
+								<td><i class="bullet"></i><span>Посещение зоны бокса</span></td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td><i class="bullet"></i><span>Зона аэробных тренировок</span></td>
+								<td><i class="bullet"></i><span>Зона аэробных тренировок</span></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td colspan="4" class="title_main">Комфортабельная инфраструктура</td>
+							</tr>
+							<tr>
+								<td><i class="bullet"></i><span>Раздевалки с душевыми</span></td>
+								<td><i class="bullet"></i><span>Раздевалки с душевыми</span></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td><i class="bullet"></i><span>Питьевая вода</span></td>
+								<td><i class="bullet"></i><span>Питьевая вода</span></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td><i class="bullet"></i><span>Сауна</span></td>
+								<td><i class="bullet"></i><span>Сауна</span></td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td colspan="4" class="title_main">Тренажеры</td>
+							</tr>
+							<tr>
+								<td><i class="bullet"></i><span>Беговые дорожки</span></td>
+								<td><i class="bullet"></i><span>Беговые дорожки</span></td>
+								<td><i class="bullet"></i><span>Беговые дорожки</span></td>
+								<td><i class="bullet"></i><span>Беговые дорожки</span></td>
+							</tr>
+							<tr>
+								<td><i class="bullet"></i><span>Уголок для пресса</span></td>
+								<td><i class="bullet"></i><span>Уголок для пресса</span></td>
+								<td><i class="bullet"></i><span>Уголок для пресса</span></td>
+								<td><i class="bullet"></i><span>Уголок для пресса</span></td>
+							</tr>
+							<tr>
+								<td><i class="bullet"></i><span>Cycle</span></td>
+								<td><i class="bullet"></i><span>Cycle</span></td>
+								<td><i class="bullet"></i><span>Cycle</span></td>
+								<td>&nbsp;</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="details-item">
+
+						<div class="title_main">Секции</div>
+
+						<table class="table table_option">
+							<thead>
+							<tr>
+								<th>Название</th>
+								<th>Абонемент</th>
+								<th>Стоимость</th>
+								<th>Условия</th>
+								<th>&nbsp;</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>Группа по каратэ</td>
+								<td>1 месяц</td>
+								<td class="price">5 000 руб.</td>
+								<td>Время посещения пн 9:00-10:30<br>и сб 9:00-10:30</td>
+								<td align="right"><a href="#" class="btn btn_brdr">Подробнее</a></td>
+							</tr>
+							<tr>
+								<td>Хоккей</td>
+								<td>1 занятие</td>
+								<td class="price">600 руб.</td>
+								<td>Занятия проходят по понедельникам<br>и четвергам с 11:00 до 12:30</td>
+								<td align="right"><a href="#" class="btn btn_brdr">Подробнее</a></td>
+							</tr>
+							<tr>
+								<td>Аэробика в бассейне</td>
+								<td>6 месяцев</td>
+								<td class="price">13 900 руб.</td>
+								<td>Время посещения пн-пт 7:00-23:59<br>и сб-вс 9:00-21:59. Успей купить выгодно!<br>Только до 31.05.2015 ! Всего 5 карт!</td>
+								<td align="right"><a href="#" class="btn btn_brdr">Подробнее</a></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="details-item">
+
+						<div class="title_main">Площадки</div>
+
+						<table class="table table_option">
+							<thead>
+							<tr>
+								<th>Название</th>
+								<th>Время</th>
+								<th>Стоимость</th>
+								<th>Условия</th>
+								<th>&nbsp;</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>Футбольное поле</td>
+								<td>от 1 час</td>
+								<td class="price">от 600 руб.</td>
+								<td>Время посещения пн 9:00-10:30<br>и сб 9:00-10:30</td>
+								<td align="right"><a href="#" class="btn btn_brdr">Подробнее</a></td>
+							</tr>
+							<tr>
+								<td>Хоккейная площадка</td>
+								<td>от 40 мин.</td>
+								<td class="price">от 1 500 руб.</td>
+								<td>Занятия проходят по понедельникам<br>и четвергам с 11:00 до 12:30</td>
+								<td align="right"><a href="#" class="btn btn_brdr">Подробнее</a></td>
+							</tr>
+							<tr>
+								<td>Скалодром</td>
+								<td>от 1 час</td>
+								<td class="price">от 1 925 руб.</td>
+								<td>Время посещения пн-пт 7:00-23:59<br>и сб-вс 9:00-21:59. Успей купить выгодно!<br>Только до 31.05.2015 ! Всего 5 карт!</td>
+								<td align="right"><a href="#" class="btn btn_brdr">Подробнее</a></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="details-item">
+						<div class="title_main">Тренеры</div>
+						<div class="cards cards_coatch">
+
+							<div class="cards-item">
+								<div class="cards-item__inner">
+									<div class="cards-img" style="background-image: url(img/upload/cards-coach-list-1.jpg);"></div>
+									<div class="cards-text">
+										<div class="centered">
+											<div class="cards-name"><a href="#">Виталий Кожевников</a></div>
+											<div class="cards-descr">Персональный тренер</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<hr>
-							<div class="details-item__text">
-								<p>Alex Fitness Кудрово в Instagram : <a href="#">alexfitnesskudrovo</a></p>
+
+							<div class="cards-item">
+								<div class="cards-item__inner">
+									<div class="cards-img" style="background-image: url(img/upload/cards-coach-list-2.jpg);"></div>
+									<div class="cards-text">
+										<div class="centered">
+											<div class="cards-name"><a href="#">Валерия Добровольская</a></div>
+											<div class="cards-descr">Инструктор групповых программ</div>
+										</div>
+									</div>
+								</div>
 							</div>
 
-							<div class="details-item__slider">
-								<ul class="slides">
-									<li class="details-slider__item">
-										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
-										<div class="details-slider__footer">
-											<span class="link link_date">31 мая</span>
-											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
-											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
-										</div>
-									</li>
-									<li class="details-slider__item">
-										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
-										<div class="details-slider__footer">
-											<span class="link link_date">31 мая</span>
-											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
-											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
-										</div>
-									</li>
-									<li class="details-slider__item">
-										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
-										<div class="details-slider__footer">
-											<span class="link link_date">31 мая</span>
-											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
-											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
-										</div>
-									</li>
-									<li class="details-slider__item">
-										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
-										<div class="details-slider__footer">
-											<span class="link link_date">31 мая</span>
-											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
-											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
-										</div>
-									</li>
-									<li class="details-slider__item">
-										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
-										<div class="details-slider__footer">
-											<span class="link link_date">31 мая</span>
-											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
-											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
-										</div>
-									</li>
-									<li class="details-slider__item">
-										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
-										<div class="details-slider__footer">
-											<span class="link link_date">31 мая</span>
-											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
-											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
-										</div>
-									</li>
-									<li class="details-slider__item">
-										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
-										<div class="details-slider__footer">
-											<span class="link link_date">31 мая</span>
-											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
-											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
-										</div>
-									</li>
-									<li class="details-slider__item">
-										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
-										<div class="details-slider__footer">
-											<span class="link link_date">31 мая</span>
-											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
-											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
-										</div>
-									</li>
-									<li class="details-slider__item">
-										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
-										<div class="details-slider__footer">
-											<span class="link link_date">31 мая</span>
-											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
-											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
-										</div>
-									</li>
-									<li class="details-slider__item">
-										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
-										<div class="details-slider__footer">
-											<span class="link link_date">31 мая</span>
-											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
-											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
-										</div>
-									</li>
-									<li class="details-slider__item">
-										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
-										<div class="details-slider__footer">
-											<span class="link link_date">31 мая</span>
-											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
-											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
-										</div>
-									</li>
-									<li class="details-slider__item">
-										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
-										<div class="details-slider__footer">
-											<span class="link link_date">31 мая</span>
-											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
-											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
-										</div>
-									</li>
-									<li class="details-slider__item">
-										<a href="" class="details-slider__img"><img src="img/upload/slider-image.jpg" alt=""></a>
-										<div class="details-slider__footer">
-											<span class="link link_date">31 мая</span>
-											<a href="#" class="link link_like"><i class="icon-like"></i> 510</a>
-											<a href="#" class="link link_review"><i class="icon-review"></i> 130</a>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="details-item">
-							<div class="details-item__text">
-								<p class="title_main">Описание</p>
-								<p>База отдыха «Надеждино» находится в экологически чистом месте Владимирской области, в окружении нетронутой природы Муромских лесов и водоемов. Все строения базы в 2010 г были капитально отремонтированы, благодаря чему теперь одновременно на базе отдыха может разместиться до 65 гостей. Территория, занимаемая турбазой «Надеждино» равно 6000 кв.м., с выделенными зонами для оздоровительного комплекса и хозяйственных помещений.</p>
-								<hr>
-								<p class="title_main">Размещение</p>
-								<p>Гостям турбазы «Надеждино» предлагается проживание в любом из 19 номеров:</p>
-								<p>На первом этаже расположено 5 номеров с удобствами в номере.</p>
-								<p>На 2м этаже расположено 14 номеров с удобствами на этаже: две комнаты с душевыми кабинами, раковинами и туалетом и отдельный су для мужчин, есть дополнительные туалеты.</p>
-								<p>Желающим поселиться в отдельном домике предлагаем рассмотреть вариант размещения в апартаментах, которые располагаются на 2-ом этаже в отдельно стоящем здании в непосредственной близости от основного строения базы. На первом и -1 этажах расположены бильярд и сауна. Вход в апартаменты отдельный.Общая площадь апартаментов составляет 47 кв.м. и состоит из двух спален, большой гостиной и ванной комнаты. Максимальная вместимость 6 человек.</p>
-								<p>А также предлагаем размещение в 3-х коттеджах для пяти групп гостей в деревне Мокеевка. Коттеджи  находятся в 15 мин. езды на машине от основного здания базы отдыха. При желании Вы сможете приехать к нам на базу и воспользоваться всеми развлекательными услугами.</p>
-								<hr>
-								<p class="title_main">Сервис и развлечения</p>
-								<p>Основное здание базы отдыха является двухэтажным деревянным строением на охраняемой закрытой территории. На территории базы отдыха Надеждино есть
-									бесплатная автомобильная парковка, волейбольная/бадминтонная площадки, площадка для отдыха, зона барбекю, 2 детские площадки. В летний период в аренду
-									предоставляются велосипеды напрокат. В зимнее время предлагаем в аренду: беговые лыжи, тюбинги, ледянки, снегоходы. На базе отдыха имеется специальное
-									оборудование для подготовки трасс для беговых лыж.</p>
-								<p>База отдыха имеет свое домашнее хозяйство, которое позволяет обеспечить отдыхающих натуральным питанием: козье и коровье молоко, производные молочные
-									продукты, яйца, парное мясо, свежие овощи и зелень, лесные ягоды (земляника, черника, малина, брусника) и грибы (лисички, подосиновики, подберезовики,
-									маслята, белые), садовые фрукты.
-								</p>
-								<p>Гости могут посидеть под тенью деревьев, наслаждаясь пеньем птиц, и забыть о городской суете.</p>
-								<p>В праздничные заезды устраивается развлекательная программа и дискотеки.  Есть сауна, бильярд (русский и американский), караоке, настольный теннис.</p>
-								<p>Красивая природа, прозрачные водоемы и тишина леса доставят настоящее удовольствие всем ценителям природы среднерусской полосы. В лесах вокруг базы
-									можно найти множество грибов и ягод, также можно встретить зайцев, ежиков и белок. Всего в пяти минутах пешей прогулки течет р.Тетрух, в которой можно
-									искупаться жарким летом и удить рыбу в любое время.</p>
-								<hr></hr>
-								<p class="title_main">Питание</p>
-								<p>Полный пансион.</p>
-								<p><span class="title">Период работы : </span> круглогодично</p>
-							</div>
-						</div>
-						<div class="details-item">
-
-							<div class="title_main">Стоимость услуг</div>
-
-							<table class="table table_option">
-								<thead>
-								<tr>
-									<th>Абонемент</th>
-									<th>Стоимость</th>
-									<th>Услуги</th>
-									<th>Условия</th>
-									<th>&nbsp;</th>
-								</tr>
-								</thead>
-								<tbody>
-								<tr class="divider">
-									<td colspan="5"><hr></td>
-								</tr>
-								<tr>
-									<td>1 месяц</td>
-									<td class="price">5 000 руб.</td>
-									<td>Тренажерный зал+Аква+Фитнес</td>
-									<td>Время посещения пн-пт 7:00-23:59<br>и сб-вс 9:00-21:59</td>
-									<td><a href="#" class="btn btn_brdr">Купить</a></td>
-								</tr>
-								<tr class="divider">
-									<td colspan="5"><hr></td>
-								</tr>
-								<tr>
-									<td>6 месяцев</td>
-									<td class="price">11 850 руб.</td>
-									<td>Тренажерный зал+Аква+Фитнес</td>
-									<td>Время посещения пн-пт 7:00-23:59<br>и сб-вс 9:00-21:59</td>
-									<td><a href="#" class="btn btn_brdr">Купить</a></td>
-								</tr>
-								<tr class="divider">
-									<td colspan="5"><hr></td>
-								</tr>
-								<tr>
-									<td>12 месяцев</td>
-									<td class="price">13 900 руб.</td>
-									<td>Тренажерный зал+Аква+Фитнес<br>+ 90 дней заморозки</td>
-									<td>Время посещения пн-пт 7:00-23:59<br>и сб-вс 9:00-21:59. Успей купить выгодно!<br>Только до 31.05.2015 ! Всего 5 карт!</td>
-									<td><a href="#" class="btn btn_brdr">Купить</a></td>
-								</tr>
-								<tr class="divider">
-									<td colspan="5"><hr></td>
-								</tr>
-								<tr>
-									<td>12 месяцев</td>
-									<td class="price">19 080 руб.</td>
-									<td>Тренажерный зал+Аква+Фитнес</td>
-									<td>Время посещения пн-пт 6:30:-23:59<br>и сб-вс 9:00-21:59. Всего 2 карты</td>
-									<td><a href="#" class="btn btn_brdr">Купить</a></td>
-								</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="details-item">
-							<table class="table table_str">
-								<tbody>
-								<tr>
-									<td colspan="2" class="title_main">Спортивная инфраструктура</td>
-								</tr>
-								<tr>
-									<td><i class="icon icon_str icon_sp"></i>Бассейн</td>
-									<td><i class="icon icon_str icon_sp"></i>Бассейн</td>
-									<td><i class="icon icon_str icon_sp"></i>Бассейн</td>
-									<td>&nbsp;</td>
-								</tr>
-								<tr>
-									<td><i class="icon icon_str icon_bx"></i>Посещение зоны бокса</td>
-									<td><i class="icon icon_str icon_bx"></i>Посещение зоны бокса</td>
-									<td><i class="icon icon_str icon_bx"></i>Посещение зоны бокса</td>
-									<td>&nbsp;</td>
-								</tr>
-								<tr>
-									<td><i class="icon icon_str icon_at"></i>Зона аэробных тренировок</td>
-									<td><i class="icon icon_str icon_at"></i>Зона аэробных тренировок</td>
-									<td>&nbsp;</td>
-									<td>&nbsp;</td>
-								</tr>
-								<tr class="divider">
-									<td colspan="4"><hr></td>
-								</tr>
-								<tr>
-									<td colspan="2" class="title_main">Комфортабельная инфраструктура</td>
-								</tr>
-								<tr>
-									<td><i class="icon icon_str icon_dr"></i>Раздевалки с душевыми</td>
-									<td><i class="icon icon_str icon_dr"></i>Раздевалки с душевыми</td>
-									<td>&nbsp;</td>
-									<td>&nbsp;</td>
-								</tr>
-								<tr>
-									<td><i class="icon icon_str icon_dw"></i>Питьевая вода</td>
-									<td><i class="icon icon_str icon_dw"></i>Питьевая вода</td>
-									<td>&nbsp;</td>
-									<td>&nbsp;</td>
-								</tr>
-								<tr>
-									<td><i class="icon icon_str icon_sa"></i>Сауна</td>
-									<td><i class="icon icon_str icon_sa"></i>Сауна</td>
-									<td>&nbsp;</td>
-									<td>&nbsp;</td>
-								</tr>
-								<tr class="divider">
-									<td colspan="4"><hr></td>
-								</tr>
-								<tr>
-									<td colspan="2" class="title_main">Тренажеры</td>
-								</tr>
-								<tr>
-									<td><i class="icon icon_str icon_tm"></i>Беговые дорожки</td>
-									<td><i class="icon icon_str icon_tm"></i>Беговые дорожки</td>
-									<td><i class="icon icon_str icon_tm"></i>Беговые дорожки</td>
-									<td><i class="icon icon_str icon_tm"></i>Беговые дорожки</td>
-								</tr>
-								<tr>
-									<td><i class="icon icon_str icon_sp"></i>Уголок для пресса</td>
-									<td><i class="icon icon_str icon_sp"></i>Уголок для пресса</td>
-									<td><i class="icon icon_str icon_sp"></i>Уголок для пресса</td>
-									<td><i class="icon icon_str icon_sp"></i>Уголок для пресса</td>
-								</tr>
-								<tr>
-									<td><i class="icon icon_str icon_cl"></i>Cycle</td>
-									<td><i class="icon icon_str icon_cl"></i>Cycle</td>
-									<td><i class="icon icon_str icon_cl"></i>Cycle</td>
-									<td>&nbsp;</td>
-								</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="details-item">
-
-							<div class="title_main">Секции</div>
-
-							<table class="table table_option">
-								<thead>
-								<tr>
-									<th>Название</th>
-									<th>Абонемент</th>
-									<th>Стоимость</th>
-									<th>Условия</th>
-									<th>&nbsp;</th>
-								</tr>
-								</thead>
-								<tbody>
-								<tr class="divider">
-									<td colspan="5"><hr></td>
-								</tr>
-								<tr>
-									<td>Группа по каратэ</td>
-									<td>1 месяц</td>
-									<td class="price">5 000 руб.</td>
-									<td>Время посещения пн 9:00-10:30<br>и сб 9:00-10:30</td>
-									<td><a href="#" class="btn btn_brdr">Подробнее</a></td>
-								</tr>
-								<tr class="divider">
-									<td colspan="5"><hr></td>
-								</tr>
-								<tr>
-									<td>Хоккей</td>
-									<td>1 занятие</td>
-									<td class="price">600 руб.</td>
-									<td>Занятия проходят по понедельникам<br>и четвергам с 11:00 до 12:30</td>
-									<td><a href="#" class="btn btn_brdr">Подробнее</a></td>
-								</tr>
-								<tr class="divider">
-									<td colspan="5"><hr></td>
-								</tr>
-								<tr>
-									<td>Аэробика в бассейне</td>
-									<td>6 месяцев</td>
-									<td class="price">13 900 руб.</td>
-									<td>Время посещения пн-пт 7:00-23:59<br>и сб-вс 9:00-21:59. Успей купить выгодно!<br>Только до 31.05.2015 ! Всего 5 карт!</td>
-									<td><a href="#" class="btn btn_brdr">Подробнее</a></td>
-								</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="details-item">
-
-							<div class="title_main">Площадки</div>
-
-							<table class="table table_option">
-								<thead>
-								<tr>
-									<th>Название</th>
-									<th>Время</th>
-									<th>Стоимость</th>
-									<th>Условия</th>
-									<th>&nbsp;</th>
-								</tr>
-								</thead>
-								<tbody>
-								<tr class="divider">
-									<td colspan="5"><hr></td>
-								</tr>
-								<tr>
-									<td>Футбольное поле</td>
-									<td>от 1 час</td>
-									<td class="price">от 600 руб.</td>
-									<td>Время посещения пн 9:00-10:30<br>и сб 9:00-10:30</td>
-									<td><a href="#" class="btn btn_brdr">Подробнее</a></td>
-								</tr>
-								<tr class="divider">
-									<td colspan="5"><hr></td>
-								</tr>
-								<tr>
-									<td>Хоккейная площадка</td>
-									<td>от 40 мин.</td>
-									<td class="price">от 1 500 руб.</td>
-									<td>Занятия проходят по понедельникам<br>и четвергам с 11:00 до 12:30</td>
-									<td><a href="#" class="btn btn_brdr">Подробнее</a></td>
-								</tr>
-								<tr class="divider">
-									<td colspan="5"><hr></td>
-								</tr>
-								<tr>
-									<td>Скалодром</td>
-									<td>от 1 час</td>
-									<td class="price">от 1 925 руб.</td>
-									<td>Время посещения пн-пт 7:00-23:59<br>и сб-вс 9:00-21:59. Успей купить выгодно!<br>Только до 31.05.2015 ! Всего 5 карт!</td>
-									<td><a href="#" class="btn btn_brdr">Подробнее</a></td>
-								</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="details-item">
-							<div class="title_main">Тренеры</div>
-							<div class="cards">
-
-								<div class="cards-item">
-									<div class="cards-item__inner">
-										<div class="cards-img"><img src="img/upload/cards-coach-list-1.jpg" alt=""></div>
-										<div class="cards-text">
-											<div class="centered">
-												<div class="cards-name"><a href="#">Виталий Кожевников</a></div>
-												<div class="cards-descr">Персональный тренер</div>
-											</div>
+							<div class="cards-item">
+								<div class="cards-item__inner">
+									<div class="cards-img" style="background-image: url(img/upload/cards-coach-list-3.jpg);"></div>
+									<div class="cards-text">
+										<div class="centered">
+											<div class="cards-name"><a href="#">Аркимедес Аргуэльс Родригес</a></div>
+											<div class="cards-descr">Инструктор групповых программ</div>
 										</div>
 									</div>
-								</div>
-
-								<div class="cards-item">
-									<div class="cards-item__inner">
-										<div class="cards-img"><img src="img/upload/cards-coach-list-2.jpg" alt=""></div>
-										<div class="cards-text">
-											<div class="centered">
-												<div class="cards-name"><a href="#">Валерия Добровольская</a></div>
-												<div class="cards-descr">Инструктор групповых программ</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="cards-item">
-									<div class="cards-item__inner">
-										<div class="cards-img"><img src="img/upload/cards-coach-list-3.jpg" alt=""></div>
-										<div class="cards-text">
-											<div class="centered">
-												<div class="cards-name"><a href="#">Аркимедес Аргуэльс Родригес</a></div>
-												<div class="cards-descr">Инструктор групповых программ</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="cards-item">
-									<div class="cards-item__inner">
-										<div class="cards-img"><img src="img/upload/cards-coach-list-4.jpg" alt=""></div>
-										<div class="cards-text">
-											<div class="centered">
-												<div class="cards-name"><a href="#">Валерия Добровольская</a></div>
-												<div class="cards-descr">Инструктор групповых программ</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="cards-item">
-									<div class="cards-item__inner">
-										<div class="cards-img"><img src="img/upload/cards-coach-list-2.jpg" alt=""></div>
-										<div class="cards-text">
-											<div class="centered">
-												<div class="cards-name"><a href="#">Валерия Добровольская</a></div>
-												<div class="cards-descr">Инструктор групповых программ</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="cards-item">
-									<div class="cards-item__inner">
-										<div class="cards-img"><img src="img/upload/cards-coach-list-3.jpg" alt=""></div>
-										<div class="cards-text">
-											<div class="centered">
-												<div class="cards-name"><a href="#">Аркимедес Аргуэльс Родригес</a></div>
-												<div class="cards-descr">Инструктор групповых программ</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="cards-item">
-									<div class="cards-item__inner">
-										<div class="cards-img"><img src="img/upload/cards-coach-list-4.jpg" alt=""></div>
-										<div class="cards-text">
-											<div class="centered">
-												<div class="cards-name"><a href="#">Валерия Добровольская</a></div>
-												<div class="cards-descr">Инструктор групповых программ</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="cards-item">
-									<div class="cards-item__inner">
-										<div class="cards-img"><img src="img/upload/cards-coach-list-1.jpg" alt=""></div>
-										<div class="cards-text">
-											<div class="centered">
-												<div class="cards-name"><a href="#">Виталий Кожевников</a></div>
-												<div class="cards-descr">Персональный тренер</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="cards-item">
-									<div class="cards-item__inner">
-										<div class="cards-img"><img src="img/upload/cards-coach-list-2.jpg" alt=""></div>
-										<div class="cards-text">
-											<div class="centered">
-												<div class="cards-name"><a href="#">Валерия Добровольская</a></div>
-												<div class="cards-descr">Инструктор групповых программ</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="cards-item">
-									<div class="cards-item__inner">
-										<div class="cards-img"><img src="img/upload/cards-coach-list-3.jpg" alt=""></div>
-										<div class="cards-text">
-											<div class="centered">
-												<div class="cards-name"><a href="#">Аркимедес Аргуэльс Родригес</a></div>
-												<div class="cards-descr">Инструктор групповых программ</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</div>
-						<div class="details-item">
-							Новости
-						</div>
-						<div class="details-item">
-							<div class="">
-								<table class="table table_list">
-									<tbody>
-									<tr>
-										<td colspan="2" class="title_main">Адрес</td>
-									</tr>
-									<tr>
-										<td class="title">Район :</td>
-										<td>Невский</td>
-									</tr>
-									<tr>
-										<td class="title">Адрес :</td>
-										<td>Ул. Ивантеевская д. 13 корп.1</td>
-									</tr>
-									<tr>
-										<td class="title">Метро :</td>
-										<td>
-											<ul class="region">
-												<li><span class="region__name"><i class="list-marker" style="background-color: #ff0000;"></i> Бульвар Рокоссовского</span> <span class="region__dim">1,3 км</span></li>
-											</ul>
-										</td>
-									</tr>
-									<tr class="divider">
-										<td colspan="2"><hr></td>
-									</tr>
-									<tr>
-										<td colspan="2" class="title_main">Как добраться</td>
-									</tr>
-									<tr>
-										<td class="title">Автобус :</td>
-										<td>12 , 360 , 190 , 223</td>
-									</tr>
-									<tr>
-										<td class="title">Маршрутка :</td>
-										<td>12 , 360 , 190 , 223</td>
-									</tr>
-									<tr>
-										<td class="title">Трамвай :</td>
-										<td>12 , 360 , 190 , 223</td>
-									</tr>
-									<tr>
-										<td class="title">Троллейбус : </td>
-										<td>12 , 360 , 190 , 223</td>
-									</tr>
-									<tr class="divider">
-										<td colspan="2"><hr></td>
-									</tr>
-									<tr>
-										<td colspan="2" class="title_main">Часы работы</td>
-									</tr>
-									<tr>
-										<td class="title">ежедневно:</td>
-										<td> 8:00 - 23:30</td>
-									</tr>
-									<tr class="divider">
-										<td colspan="2"><hr></td>
-									</tr>
-									<tr class="title">
-										<td colspan="2" class="title_main">Контакты</td>
-									</tr>
-									<tr>
-										<td class="title">Телефон :</td>
-										<td>+7 (812) 777-09-09<br>+7 (981) 718-73-31</td>
-									</tr>
-									<tr>
-										<td class="title">Факс :</td>
-										<td>+7 (981) 718-73-31</td>
-									</tr>
-									<tr>
-										<td class="title">E-mail :</td>
-										<td>alexfitnes@club.ru</td>
-									</tr>
-									</tbody>
-								</table>
-								<div class="details-item__map" id="map-546456">
-									<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=DHLKgbxA6OJKLTcndp0MsmaQ8bbGqepC&id=map-546456"></script>
 								</div>
 							</div>
+
+							<div class="cards-item">
+								<div class="cards-item__inner">
+									<div class="cards-img" style="background-image: url(img/upload/cards-coach-list-4.jpg);"></div>
+									<div class="cards-text">
+										<div class="centered">
+											<div class="cards-name"><a href="#">Валерия Добровольская</a></div>
+											<div class="cards-descr">Инструктор групповых программ</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="cards-item">
+								<div class="cards-item__inner">
+									<div class="cards-img" style="background-image: url(img/upload/cards-coach-list-2.jpg);"></div>
+									<div class="cards-text">
+										<div class="centered">
+											<div class="cards-name"><a href="#">Валерия Добровольская</a></div>
+											<div class="cards-descr">Инструктор групповых программ</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="cards-item">
+								<div class="cards-item__inner">
+									<div class="cards-img" style="background-image: url(img/upload/cards-coach-list-3.jpg);"></div>
+									<div class="cards-text">
+										<div class="centered">
+											<div class="cards-name"><a href="#">Аркимедес Аргуэльс Родригес</a></div>
+											<div class="cards-descr">Инструктор групповых программ</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="cards-item">
+								<div class="cards-item__inner">
+									<div class="cards-img" style="background-image: url(img/upload/cards-coach-list-4.jpg);"></div>
+									<div class="cards-text">
+										<div class="centered">
+											<div class="cards-name"><a href="#">Валерия Добровольская</a></div>
+											<div class="cards-descr">Инструктор групповых программ</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="cards-item">
+								<div class="cards-item__inner">
+									<div class="cards-img" style="background-image: url(img/upload/cards-coach-list-1.jpg);"></div>
+									<div class="cards-text">
+										<div class="centered">
+											<div class="cards-name"><a href="#">Виталий Кожевников</a></div>
+											<div class="cards-descr">Персональный тренер</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="cards-item">
+								<div class="cards-item__inner">
+									<div class="cards-img" style="background-image: url(img/upload/cards-coach-list-2.jpg);"></div>
+									<div class="cards-text">
+										<div class="centered">
+											<div class="cards-name"><a href="#">Валерия Добровольская</a></div>
+											<div class="cards-descr">Инструктор групповых программ</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="cards-item">
+								<div class="cards-item__inner">
+									<div class="cards-img" style="background-image: url(img/upload/cards-coach-list-3.jpg);"></div>
+									<div class="cards-text">
+										<div class="centered">
+											<div class="cards-name"><a href="#">Аркимедес Аргуэльс Родригес</a></div>
+											<div class="cards-descr">Инструктор групповых программ</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
 						</div>
+					</div>
+
+					<div class="details-item">
+					Новости
+					</div>
+
+					<div class="details-item">
+						<table class="table table_list">
+							<tbody>
+							<tr>
+								<td colspan="2" class="title_main">Адрес</td>
+							</tr>
+							<tr>
+								<td class="title">Район :</td>
+								<td>Невский</td>
+							</tr>
+							<tr>
+								<td class="title">Адрес :</td>
+								<td>Кудрово, ул. Ленинградская, 1, ЖК "Новый Оккервиль"</td>
+							</tr>
+							<tr>
+								<td class="title">Метро :</td>
+								<td>
+									<ul class="region">
+										<li><span class="region__name">Улица Дыбенко</span> <span class="region__dim">1,3 км</span></li>
+										<li><span class="region__name">Проспект Большевиков</span> <span class="region__dim">2,2 км</span></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="title_main">Как добраться</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="title_map"></div>
+								</td>
+							</tr>
+
+							<tr>
+								<td colspan="2" class="title_main">Часы работы</td>
+							</tr>
+							<tr>
+								<td class="title">пн-пт</td>
+								<td>6:30-24:00</td>
+							</tr>
+							<tr>
+								<td class="title">сб-вс</td>
+								<td>9:00-22:00</td>
+							</tr>
+							<tr class="title">
+								<td colspan="2" class="title_main">Контакты</td>
+							</tr>
+							<tr>
+								<td class="title">Телефон :</td>
+								<td>+7 (812) 777-09-09<br>+7 (981) 718-73-31</td>
+							</tr>
+							<tr>
+								<td class="title">Факс :</td>
+								<td>+7 (981) 718-73-31</td>
+							</tr>
+							<tr>
+								<td class="title">E-mail :</td>
+								<td>alexfitnes@club.ru</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="catalog-details__close"><i class="btn"></i></div>
 					</div>
 				</div>
 
@@ -1336,17 +1442,25 @@
 							<div class="feedback">
 								<div class="feedback-sort">
 									<div class="feedback-sort__cat">
-										<span class="title">Сортировать по:</span>
-										<span class="btn btn_brdr btn_sort active">дате</span>
-										<span class="btn btn_brdr btn_sort">оценке отзыва</span>
+										<div class="feedback-sort__cat__left">
+											<span class="title">Сортировать по:</span>
+										</div>
+										<div class="feedback-sort__cat__right">
+											<span class="btn btn_brdr btn_sort active">дате</span>
+											<span class="btn btn_brdr btn_sort">оценке отзыва</span>
+										</div>
 									</div>
 									<div class="feedback-sort__cat">
-										<span class="title">Отзыв с оценкой:</span>
-										<div class="btn btn_brdr btn_rate"><span class="rate-stars rate-stars_1"></span> <i class="rate-val">1 оценка</i></div>
-										<div class="btn btn_brdr btn_rate"><span class="rate-stars rate-stars_2"></span> <i class="rate-val">0 оценок</i></div>
-										<div class="btn btn_brdr btn_rate"><span class="rate-stars rate-stars_3"></span> <i class="rate-val">1 оценка</i></div>
-										<div class="btn btn_brdr btn_rate"><span class="rate-stars rate-stars_4"></span> <i class="rate-val">0 оценок</i></div>
-										<div class="btn btn_brdr btn_rate"><span class="rate-stars rate-stars_5"></span> <i class="rate-val">0 оценок</i></div>
+										<div class="feedback-sort__cat__left">
+											<span class="title">Отзыв с оценкой:</span>
+										</div>
+										<div class="feedback-sort__cat__right">
+											<div class="btn btn_brdr btn_rate"><span class="rate-stars rate-stars_1"></span> <i class="rate-val">1 оценка</i></div>
+											<div class="btn btn_brdr btn_rate"><span class="rate-stars rate-stars_2"></span> <i class="rate-val">0 оценок</i></div>
+											<div class="btn btn_brdr btn_rate"><span class="rate-stars rate-stars_3"></span> <i class="rate-val">1 оценка</i></div>
+											<div class="btn btn_brdr btn_rate"><span class="rate-stars rate-stars_4"></span> <i class="rate-val">0 оценок</i></div>
+											<div class="btn btn_brdr btn_rate"><span class="rate-stars rate-stars_5"></span> <i class="rate-val">0 оценок</i></div>
+										</div>
 									</div>
 								</div>
 
@@ -1746,6 +1860,203 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="inner clearfix only_1024">
+
+			<div class="cards_news-wrapper">
+				<div class="title">Новости Alex Fitness Кудрово</div>
+
+				<div class="cards cards_news">
+
+					<div class="cards-item">
+						<div class="cards-item__inner">
+							<div class="cards-description">
+								<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+								<div class="cards-info">
+									<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+									<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
+								</div>
+							</div>
+							<div class="card-author">
+								<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+								<div class="name">
+									<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+									<div class="name-txt">Сеть спортивных клубов</div>
+								</div>
+							</div>
+							<div class="cards-legend">
+								<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+								<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="cards-item">
+						<div class="cards-item__inner">
+							<div class="cards-description">
+								<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+								<div class="cards-info">
+									<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+									<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
+								</div>
+							</div>
+							<div class="card-author">
+								<div class="logo"><img src="img/upload/cart-logo-2.jpg" alt=""></div>
+								<div class="name">
+									<div class="name-ttl"><a href="#">Спортивный клуб на Металисты</a></div>
+									<div class="name-txt">Сеть спортивных клубов</div>
+								</div>
+							</div>
+							<div class="cards-legend">
+								<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+								<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="cards-item">
+						<div class="cards-item__inner">
+							<div class="cards-description">
+								<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+								<div class="cards-info">
+									<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+									<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
+								</div>
+							</div>
+							<div class="card-author">
+								<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+								<div class="name">
+									<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+									<div class="name-txt">Сеть спортивных клубов</div>
+								</div>
+							</div>
+							<div class="cards-legend">
+								<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+								<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="cards-item">
+						<div class="cards-item__inner">
+							<div class="cards-description">
+								<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+								<div class="cards-info">
+									<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+									<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
+								</div>
+							</div>
+							<div class="card-author">
+								<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+								<div class="name">
+									<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+									<div class="name-txt">Сеть спортивных клубов</div>
+								</div>
+							</div>
+							<div class="cards-legend">
+								<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+								<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="cards-item">
+						<div class="cards-item__inner">
+							<div class="cards-description">
+								<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+								<div class="cards-info">
+									<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+									<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
+								</div>
+							</div>
+							<div class="card-author">
+								<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+								<div class="name">
+									<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+									<div class="name-txt">Сеть спортивных клубов</div>
+								</div>
+							</div>
+							<div class="cards-legend">
+								<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+								<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="cards-item">
+						<div class="cards-item__inner">
+							<div class="cards-description">
+								<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+								<div class="cards-info">
+									<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+									<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
+								</div>
+							</div>
+							<div class="card-author">
+								<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+								<div class="name">
+									<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+									<div class="name-txt">Сеть спортивных клубов</div>
+								</div>
+							</div>
+							<div class="cards-legend">
+								<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+								<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="cards-item">
+						<div class="cards-item__inner">
+							<div class="cards-description">
+								<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+								<div class="cards-info">
+									<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+									<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
+								</div>
+							</div>
+							<div class="card-author">
+								<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+								<div class="name">
+									<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+									<div class="name-txt">Сеть спортивных клубов</div>
+								</div>
+							</div>
+							<div class="cards-legend">
+								<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+								<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="cards-item">
+						<div class="cards-item__inner">
+							<div class="cards-description">
+								<a href="#" class="cards-img" style="background-image: url(img/upload/articles-0001.jpg);"></a>
+								<div class="cards-info">
+									<a href="#" class="title">Как вписать спортивный объект в тесную инфраструктуры мегаполиса</a>
+									<div class="text">Замечательная беговая дорожка проходящая в Санкт-Петербурге, вдоль Дальневосточного проспекта</div>
+								</div>
+							</div>
+							<div class="card-author">
+								<div class="logo"><img src="img/upload/cart-logo-1.jpg" alt=""></div>
+								<div class="name">
+									<div class="name-ttl"><a href="#">Alex Fitness</a></div>
+									<div class="name-txt">Сеть спортивных клубов</div>
+								</div>
+							</div>
+							<div class="cards-legend">
+								<span class="cards-legend__look"><i data-hint="Просмотры"></i>40</span>
+								<span class="cards-legend__comment"><i data-hint="Комментарии"></i>2</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
 	</section>
 
 

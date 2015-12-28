@@ -335,7 +335,7 @@
 	font-size:inherit;
 	line-height:20px;
 	font-weight:300;
-	color:#757b87;
+	color:#010101;
 	padding:0 10px;
 	background:#fff;
 	border:1px solid #cfcfcf;
@@ -1508,7 +1508,7 @@
 .section_news{
 	padding-bottom:30px;
 }
-.cards_news .cards-item__inner{height:350px;}
+/*.cards_news .cards-item__inner{height:350px;}*/
 .cards_news .cards-btn{right:22px;}
 
 .cards_news .cards-btn {position: static}

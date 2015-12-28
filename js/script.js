@@ -1286,3 +1286,22 @@ function modalOpen(data){
 	$targ.css({top: ( (wh > $targ.outerHeight()) ? (wh - $targ.outerHeight())/2 + ws : 0)});
 }
 
+$(function(){
+	clearInputBtn();
+	$('body').on('keyup change input', '.js-input-targ', function(){
+		clearInputBtn();
+	}).on('click', '.js-input-clear', function(e){
+		e.preventDefault();
+		$(this).closest('.js-input-wrap').find('.js-input-targ').val('');
+		clearInputBtn();
+	}).on('click', '.keypad .key', function(){
+		clearInputBtn();
+	});
+});
+
+function clearInputBtn(){
+	$('.js-input-targ').each(function(){
+		if ( $(this).val() ){ $(this).closest('.js-input-wrap').addClass('filled'); }
+		else { $(this).closest('.js-input-wrap').removeClass('filled'); }
+	});
+}
