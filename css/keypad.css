@@ -32,8 +32,9 @@
 	cursor: pointer;
 	height: 29px;
 	width: 29px;
+	opacity: 0.72;
 }
-.keypad-close:hover{background-image: url("../img/icons/icon-input_clear-c.svg");}
+.keypad-close:hover{opacity: 1;}
 .key{
 	width: 29px;
 	height: 29px;
