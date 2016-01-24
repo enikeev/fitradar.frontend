@@ -2181,7 +2181,9 @@ input.error,
 
 
 
-
+.block-column_img.dragable{
+	outline: 3px dashed #666666;
+}
 
 
 

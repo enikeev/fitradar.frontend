@@ -44,6 +44,7 @@
 	.section_catalog .catalog__body .aside_right{width: 280px;}
 	.map-view .catalog-body, .list-view .catalog-body {width: 417px;}
 	.details-item__images{margin-right: 0;}
+	.details-item__images_grid{margin-right: 0;}
 	.details-item__slider{margin-right: 0;}
 	.details-item .title_map{width: auto;}
 	.details-item .table_option{width: 883px;}

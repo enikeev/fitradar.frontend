@@ -546,8 +546,8 @@
 
 
 .modal-cropavatar .modal-inner{
-	width: 420px;
-	margin-left: -210px;
+	width: 600px;
+	margin-left: -300px;
 	padding:20px;
 }
 .modal-cropavatar .modal__body{text-align: left;}
@@ -559,9 +559,19 @@
 	color: #3eb4c5;
 }
 .modal-cropavatar .modal__body .img{
-	margin: 15px 20px;
+	margin: 45px 20px 35px;
 	position: relative;
 	/*height: 410px;*/
+}
+.modal-cropavatar .modal__body .img:after{
+	content: '';
+	position: absolute;
+	bottom: -20px;
+	height: 20px;
+	background-color: #24272e;
+	opacity: 0.9;
+	left: 0;
+	width: 100%;
 }
 .modal-cropavatar .modal__body .img img{
 	display: block;
@@ -570,10 +580,12 @@
 .modal-cropavatar .modal__body .img .rotate{
 	position: absolute;
 	z-index: 10;
-	top: 7px;
+	top: -28px;
 	left: 0;
 	width: 100%;
 	text-align: center;
+	background-color: #24272e;
+	opacity: 0.9;
 }
 .modal-cropavatar .modal__body .img .rotate__cw,
 .modal-cropavatar .modal__body .img .rotate__ccw{

@@ -903,6 +903,21 @@ $(function(){
 			}, 0);
 		}
 
+		if ( $item.find('.details-item.active').find('.details-item__images_grid').length ){
+			setTimeout(function(){
+
+				$('.details-item__images_grid').rowGrid({
+					itemSelector: ".images-item",
+					minMargin: 10,
+					maxMargin: 10,
+					resize: true,
+					lastRowClass: "last-row",
+					firstItemClass: "first-item"
+				});
+
+			}, 0);
+		}
+
 	}).on('click', '.catalog-info .menu-item', function(e){
 		e.preventDefault();
 
@@ -1094,21 +1109,21 @@ $(function(){
 				$this.find('.ui-slider-handle').eq(1).addClass('handle-end').find('.ui-slider-handle__val').text(convertValToTime(valMax, time));
 				$this.find('.slider-line__min').text(convertValToTime(rangeMin, time));
 				$this.find('.slider-line__max').text(convertValToTime(rangeMax, time));
-				console.info('1')
+
 			},
 			slide: function(event, ui){
 				$inputFrom.val(convertValToTime($this.slider('values', 0), time));
 				$inputTo.val(convertValToTime($this.slider('values', 1), time));
 				$this.find('.handle-start').find('.ui-slider-handle__val').text(convertValToTime($this.slider('values', 0), time));
 				$this.find('.handle-end').find('.ui-slider-handle__val').text(convertValToTime($this.slider('values', 1), time));
-				console.info('2')
+
 			},
 			stop: function(event, ui) {
 				$inputFrom.val(convertValToTime($this.slider('values', 0), time));
 				$inputTo.val(convertValToTime($this.slider('values', 1), time));
 				$this.find('.handle-start').find('.ui-slider-handle__val').text(convertValToTime($this.slider('values', 0), time));
 				$this.find('.handle-end').find('.ui-slider-handle__val').text(convertValToTime($this.slider('values', 1), time));
-				console.info('3')
+
 			}
 		});
 

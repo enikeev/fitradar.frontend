@@ -1055,20 +1055,24 @@ $(function(){
 					aspectRatio: 1,
 					dragMode: 'move',
 					viewMode: 1,
-					movable: true,
-					cropBoxMovable: false,
-					cropBoxResizable: false,
-					minContainerHeight: 400,
+					movable: false,
+					cropBoxMovable: true,
+					zoomable: false,
+					cropBoxResizable: true,
+					minContainerHeight: 320,
 					//minCropBoxHeight: 300,
 					//minCropBoxWidth: 300,
 					//minCanvasWidth: 300,
 					//minCanvasHeight: 300,
 					built: function(){
+						var l = ( $(this).siblings('.cropper-container').width() / 2 ) - 140 ;
+						console.log($(this).siblings('.cropper-container').width() + ' ' + l );
+
 						$(this).cropper('setCropBoxData', {
-							'top': 70,
-							'left': 34,
-							'width': 270,
-							'height': 270
+							'width': 280,
+							'height': 280,
+							'top': 10,
+							'left': l
 						}).cropper('setCropBoxData', {
 							//'top': 40
 						});
@@ -1093,6 +1097,60 @@ $(function(){
 				$('.js-avatar-img').attr('src', img);
 				$('.profile-settings_no').removeClass('profile-settings_no');
 			});
+
+			if ( Modernizr.draganddrop ){
+
+				function onDragEnter(e){
+					e.preventDefault();
+					e.stopPropagation();
+					$(this).addClass('dragable');
+				}
+				function onDragOver(e){
+					e.preventDefault();
+					e.stopPropagation();
+					$(this).addClass('dragable');
+				}
+				function onDragLeave(e){
+					e.preventDefault();
+					e.stopPropagation();
+					$(this).removeClass('dragable');
+				}
+				function onDrop(e){
+
+					e.preventDefault();
+					e.stopPropagation();
+					$(this).removeClass('dragable');
+
+					var transfer = e.dataTransfer || e.originalEvent.dataTransfer;
+					var file = transfer.files[0];
+
+					//console.info(file);
+
+					if (!/\.(jpg|jpeg|gif|png)$/i.test(file.name)) {
+						alert('Вы выбрали не верный тип файла \nДопустимые типы файлов: jpg, gif, png.');
+					} else {
+
+						var reader = new FileReader();
+
+						reader.fileName = file.name;
+
+						reader.onload = function(e){
+							$.app.avatarCropper.crop(e.target.result);
+						};
+
+						reader.onerror = function(e) {alert('fileReader error ' + e);};
+
+						reader.readAsDataURL(file);
+					}
+
+				}
+
+				$('body').on('dragenter', '.block-column_img', onDragEnter)
+				.on('dragover', '.block-column_img', onDragOver)
+				.on('dragleave', '.block-column_img', onDragLeave)
+				.on('drop', '.block-column_img', onDrop);
+
+			}
 
 		}
 	};
