@@ -781,6 +781,7 @@
 	position: relative;
 	cursor: pointer;
 	vertical-align: top;
+	overflow:hidden;
 }
 
 .details-item__images .images-item:nth-of-type(1),
@@ -1458,7 +1459,7 @@ a:hover .icon-like{background-image: url("../img/icons/icon-min-like-c.svg");}
 .filter-item .filter-field__search-input input{
 	height: 26px;
 	line-height: 26px;
-	width: 180px;
+	width: 175px;
 }
 .filter-item .filter-field__search-submit{
 	height: 26px;
@@ -1841,7 +1842,7 @@ a:hover .icon-like{background-image: url("../img/icons/icon-min-like-c.svg");}
 	padding-top:6px;
 	padding-bottom:6px;
 	border-bottom-color:#f8f8f8;
-	background: #fff;
+	/*background: #fff;*/
 }
 .map-view .catalog-menu .menu-item.active span:after,
 .list-view .catalog-menu .menu-item.active span:after{

@@ -1094,18 +1094,21 @@ $(function(){
 				$this.find('.ui-slider-handle').eq(1).addClass('handle-end').find('.ui-slider-handle__val').text(convertValToTime(valMax, time));
 				$this.find('.slider-line__min').text(convertValToTime(rangeMin, time));
 				$this.find('.slider-line__max').text(convertValToTime(rangeMax, time));
+				console.info('1')
 			},
 			slide: function(event, ui){
 				$inputFrom.val(convertValToTime($this.slider('values', 0), time));
 				$inputTo.val(convertValToTime($this.slider('values', 1), time));
 				$this.find('.handle-start').find('.ui-slider-handle__val').text(convertValToTime($this.slider('values', 0), time));
 				$this.find('.handle-end').find('.ui-slider-handle__val').text(convertValToTime($this.slider('values', 1), time));
+				console.info('2')
 			},
 			stop: function(event, ui) {
 				$inputFrom.val(convertValToTime($this.slider('values', 0), time));
 				$inputTo.val(convertValToTime($this.slider('values', 1), time));
 				$this.find('.handle-start').find('.ui-slider-handle__val').text(convertValToTime($this.slider('values', 0), time));
 				$this.find('.handle-end').find('.ui-slider-handle__val').text(convertValToTime($this.slider('values', 1), time));
+				console.info('3')
 			}
 		});
 
@@ -1180,6 +1183,8 @@ $(function(){
 				iMin.val(val1);
 			}
 			$slider.slider('values', 0, val1);
+			$slider.find('.handle-start i').text(val1);
+
 		} else if ( $this.hasClass('i-to') ){
 			if (val2 > max) {
 				val2 = max;
@@ -1192,6 +1197,43 @@ $(function(){
 			}
 
 			$slider.slider('values', 1, val2);
+			$slider.find('.handle-end i').text(val2);
+		}
+	}).on('click', function(){
+		$(this).select();
+		$(this).data('num', $(this).val());
+	}).on('keyup input', function(e) {
+		if ( $(this).val().match(/[^0-9]/g) ) {
+			var _newVal = $(this).val().replace(/[^0-9]/g, '');
+			$(this).val(_newVal);
+		}
+
+		if (e.keyCode == 13){ $(this).blur(); }
+		if (e.keyCode == 27){
+			$(this).val($(this).data('num'));
+			$(this).blur();
+		}
+
+	}).on('keyup', function(e) {
+
+	}).on('keydown', function(e) {
+		var v = +$(this).val() || 0, num;
+		if (e.keyCode ==  107 || e.keyCode ==  61 || e.keyCode ==  38 || e.keyCode ==  39){
+			num = (v+1) > 0 ? v+1 : 0;
+			$(this).val(num);
+		}
+		if (e.keyCode ==  109 || e.keyCode ==  173 || e.keyCode ==  37 || e.keyCode ==  40){
+			num = (v-1) > 0 ? v-1 : 0;
+			$(this).val(num);
+		}
+		$(this).trigger('change');
+	}).on('focusout', function(e) {
+		if ( !$(this).val() ) {
+			$(this).val('0');
+		}
+	}).on('change', function() {
+		if ( !$(this).val() ) {
+			$(this).val('0');
 		}
 	});
 

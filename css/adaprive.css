@@ -130,7 +130,7 @@
 	.tabs-field .aside_middle + .aside_right{margin-left:500px}
 
 	.footer__nav-list{
-		margin-left: 50px;
+		margin-left: 35px;
 		max-width: 150px;
 	}
 	.footer__developer-name{margin-bottom: 10px;}
@@ -157,6 +157,9 @@
 		column-count: 1;
 	}
 
+	.section_catalog .catalog__body{
+		overflow: hidden;
+	}
 	.section_catalog.table-view .catalog__body .inner,
 	.section_catalog.list-view .catalog__body .inner{
 		position: static;

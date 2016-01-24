@@ -1657,10 +1657,10 @@
 }
 
 
-.section_competition .menu{
+.section .menu{
 	margin: 10px 0;
 }
-.section_competition .menu .btn{
+.section .menu .btn{
 	margin: 0 10px 10px 0 ;
 }
 .section_competition .menu .btn:hover{
@@ -1706,7 +1706,7 @@
 	right: -5px;
 }
 
-.cards_competition .cards-item__inner{height:425px;}
+/*.cards_competition .cards-item__inner{height:425px;}
 .cards_competition .cards-btn{right:22px;}
 .cards_competition .cards-img{
 	width:100%;
@@ -1816,7 +1816,7 @@
 .cards_competition-last .cards-item__inner{overflow: visible;}
 .cards_competition-last .cards-info .title{height: 50px;}
 
-
+*/
 
 /**/
 .section_articles{
@@ -1967,6 +1967,7 @@
 	border: 1px solid transparent;
 	padding: 10px 15px;
 	text-decoration: none;
+	vertical-align: top;
 }
 .sponsors-item .sponsor-img{
 	height: 150px;

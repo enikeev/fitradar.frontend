@@ -948,6 +948,22 @@ $(function(){
 		e.preventDefault();
 		$('.js-avatar-img').attr('src', 'img/profile-img_custom.svg');
 		$('.profile-settings').addClass('profile-settings_no');
+	}).on('click', '.js-lk-edit-profile-name', function(e){
+		e.preventDefault();
+		var targ = $(this).siblings('.js-lk-edit-profile-name_targ');
+		var wrap = $(this).closest('.js-lk-edit-profile-name_wrap');
+		var val = targ.text();
+		wrap.addClass('edit');
+		var input = $('<input type="text" value="' + val + '">');
+		targ.html(input);
+		input.focus();
+	}).on('blur', '.js-lk-edit-profile-name_targ input', function(e){
+		e.preventDefault();
+		var name = $(this).closest('.js-lk-edit-profile-name_targ');
+		var wrap = $(this).closest('.js-lk-edit-profile-name_wrap');
+		var val = $(this).val();
+		wrap.removeClass('edit');
+		name.html(val);
 	});
 
 
@@ -1052,7 +1068,7 @@ $(function(){
 							'top': 70,
 							'left': 34,
 							'width': 270,
-							'height': 270,
+							'height': 270
 						}).cropper('setCropBoxData', {
 							//'top': 40
 						});
