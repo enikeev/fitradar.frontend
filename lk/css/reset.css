@@ -111,8 +111,8 @@ input{
 	background-color: #fff;
 }
 .checkbox-case input[type=checkbox]:checked + .marker{
-	border-color: #3399FF;
-	background: #3399FF url("../img/checkbox.svg") no-repeat 60% 50%;
+	border-color: #3eb4c6;
+	background: #3eb4c6 url("../img/checkbox.svg") no-repeat 60% 50%;
 }
 .checkbox-case input[type=radio] + .marker{
 	display: inline-block;
@@ -136,8 +136,8 @@ input{
 	width: 11px;
 	height: 11px;
 	margin: 3px;
-	border-color: #3399FF;
-	background: #3399FF;
+	border-color: #3eb4c6;
+	background: #3eb4c6;
 }
 
 .checkbox-case span{

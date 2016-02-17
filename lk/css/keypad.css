@@ -64,12 +64,12 @@
 	background-position: top left;
 }
 .key:hover{
-	color: #3399FF;
-	border-color: #3399FF;
+	color: #3fb4c6;
+	border-color: #3fb4c6;
 }
 .key.active{
-	background-color: #3399FF;
-	border-color: #3399FF;
+	background-color: #3fb4c6;
+	border-color: #3fb4c6;
 	color: #fff;
 }
 
@@ -120,16 +120,16 @@
 .keypad-wrap_symbol .key_symbols,
 .keypad-wrap_shift .key_multishift,
 .keypad-wrap_oneshift .key_shift{
-	background-color: #3399FF;
-	border-color: #3399FF;
+	background-color: #3fb4c6;
+	border-color: #3fb4c6;
 	color: #fff;
 	background-position: top right;
 }
 
 
 .key:active{
-	background-color: #3399FF;
-	border-color: #3399FF;
+	background-color: #3fb4c6;
+	border-color: #3fb4c6;
 	color: #fff;
 	background-position: top right;
 }
