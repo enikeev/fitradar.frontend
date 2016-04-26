@@ -1510,7 +1510,8 @@ a:hover .icon-like{background-image: url("../img/icons/icon-min-like-c.svg");}
 .filter-item .filter-field__search-input input{
 	height: 26px;
 	line-height: 26px;
-	width: 175px;
+	/*width: 175px;*/
+	width: 210px;
 }
 .filter-item .filter-field__search-submit{
 	height: 26px;
@@ -1536,6 +1537,7 @@ a:hover .icon-like{background-image: url("../img/icons/icon-min-like-c.svg");}
 	font-family: SegoeUI, sans-serif;
 	font-weight:300;
 	color:#7e7e7e;
+	/*width:182px;*/
 	width:182px;
 
 	border-radius:2px 0 0 1px;
@@ -3212,3 +3214,5 @@ catalog item
 
 
 
+
+.catalog__body .aside_right .filter-field__search-submit{display: none;}

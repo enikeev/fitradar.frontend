@@ -168,7 +168,7 @@
 	font-weight: 300;
 }
 .modal-emploeeysrights__head .name{
-	color: #3eb4c5;
+	color: #3399ff;
 	font-size: 16px;
 	font-weight: 300;
 }
@@ -225,8 +225,8 @@
 	margin: 10px 0;
 }
 .modal-emploeeysobject__body .tabs-head .tab-bookmark.active{
-	border-color: #3eb4c5;
-	background: #3eb4c5;
+	border-color: #3399ff;
+	background: #3399ff;
 	color: #fff!important;
 	position: relative;
 }
@@ -235,7 +235,7 @@
 	display: block;
 	position: absolute;
 	border: 8px solid transparent;
-	border-top: 5px solid #3eb4c5;
+	border-top: 5px solid #3399ff;
 	left: 50%;
 	margin-left: -8px;
 	bottom: -13px;
@@ -552,11 +552,11 @@
 }
 .modal-cropavatar .modal__body{text-align: left;}
 .modal-cropavatar .modal__footer{text-align: center;}
-.modal-cropavatar .modal__footer a{margin: 0 5px;color:#3eb4c5; }
+.modal-cropavatar .modal__footer a{margin: 0 5px;color:#3399ff; }
 .modal-cropavatar .modal__body .title{
 	text-align: left;
 	font-size: 14px;
-	color: #3eb4c5;
+	color: #3399ff;
 }
 .modal-cropavatar .modal__body .img{
 	margin: 45px 20px 35px;

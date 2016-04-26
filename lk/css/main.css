@@ -17,7 +17,7 @@ body{
 	border-radius: 2px;
 	padding: 5px 20px 8px;
 	text-decoration: none!important;
-	background: #3eb4c5;
+	background: #3399ff;
 	text-align: center;
 	position: relative;
 	vertical-align: middle;
@@ -147,7 +147,7 @@ body{
 }
 
 
-.color-c{color: #3eb4c5!important;}
+.color-c{color: #3399ff!important;}
 .color-access{color: #70c63f!important;}
 .color-waiting{color: #f47b20!important;;}
 .color-error{color: #f0082f!important;}
@@ -336,7 +336,7 @@ body{
 	padding: 0 6px;
 }
 .lk-menu__group .amount span.new,
-.lk-menu__group .case-amount span.new{background: #3eb4c5;}
+.lk-menu__group .case-amount span.new{background: #3399ff;}
 
 .lk-menu__group a{
 	font: inherit;
@@ -347,7 +347,7 @@ body{
 
 .lk-menu__group .group-link{text-decoration: none;}
 .lk-menu__group .group-link:hover{text-decoration: underline;}
-.lk-menu__group .group-item.active a{color: #3eb4c5;}
+.lk-menu__group .group-item.active a{color: #3399ff;}
 
 .lk-menu__group .group-item_review {opacity: 0.5;}
 .lk-menu__group .group-item_review:hover,
@@ -381,7 +381,7 @@ body{
 
 
 .lk-menu__group.active{
-	border-left-color: #3eb4c5;
+	border-left-color: #3399ff;
 	background: #1d2027;
 }
 .lk-menu__group_inside.active .group-head:after{
@@ -456,7 +456,7 @@ body{
 	color: #959595;
 }
 .lk-table a{
-	color: #3eb4c5;
+	color: #3399ff;
 }
 
 .lk-table_balance .text-main{
@@ -476,7 +476,7 @@ body{
 .lk-table .employees-photo{
 	width: 64px;
 	height: 64px;
-	background: #3eb4c5 url("../img/employees-photo.svg") no-repeat 50% 50%;
+	background: #3399ff url("../img/employees-photo.svg") no-repeat 50% 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
@@ -1083,12 +1083,12 @@ textarea ~ .input__notepad{
 	height: 135px;
 }
 .object-add__item .field-box .btn:hover{
-	border-color: #3eb4c5;
+	border-color: #3399ff;
 }
 .object-add__item .field-box .btn.active{
-	border-color: #3eb4c5;
+	border-color: #3399ff;
 	color: #fff!important;
-	background-color: #3eb4c5;
+	background-color: #3399ff;
 }
 .object-add__item .field-box .sbHolder{
 	font-size: 14px;
@@ -1428,7 +1428,7 @@ textarea ~ .input__notepad{
 	content: '';
 	display: block;
 	border: 8px solid transparent;
-	border-top: 5px solid #3eb4c5;
+	border-top: 5px solid #3399ff;
 	position: absolute;
 	left: 50%;
 	margin-left: -8px;
@@ -1469,11 +1469,11 @@ textarea ~ .input__notepad{
 .object-add__item_location-subway .field-item_select {width: 34%; padding-right: 10px;}
 .object-add__item_location-path .field-item_select {width: 34%; padding-right: 10px;}
 .object-add__item_location-path .field-item_input {width: 66%; }
-.object-add__item_location-map .field-item_map .map{height: 320px; background: #3eb4c5;}
+.object-add__item_location-map .field-item_map .map{height: 320px; background: #3399ff;}
 .object-add__item_location-map .map-switch {
 	display: inline-block;
 	float: right;
-	color:#3eb4c5;
+	color:#3399ff;
 	border-bottom: 1px dashed;
 	cursor: pointer;
 }
@@ -1520,10 +1520,10 @@ textarea ~ .input__notepad{
 	left: 0;
 	top: 0;
 	height: 100%;
-	background: #3eb4c5;
+	background: #3399ff;
 }
 .object-add__item_addfile .field-item_file .file-name .file-name__item{
-	color: #3eb4c5;
+	color: #3399ff;
 	display: inline-block;
 	max-width: 130px;
 	overflow: hidden;
@@ -1723,7 +1723,7 @@ textarea ~ .input__notepad{
 }
 .progress-mark{
 	position: absolute;
-	background: #3eb4c5;
+	background: #3399ff;
 	height: 2px;
 	top: -2px;
 	-webkit-transition: all 0.3s ease;
@@ -1763,7 +1763,7 @@ textarea ~ .input__notepad{
 	color: #383838;
 }
 .lk-blocks a{
-	color: #3eb4c5;
+	color: #3399ff;
 }
 .lk-blocks .blocks__left{
 	display: table-cell;

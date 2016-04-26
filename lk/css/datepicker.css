@@ -6,7 +6,7 @@
   color:#757b87;
   width:207px;
   margin-top:-1px;
-  border:1px solid #3fb4c6;
+  border:1px solid #3399FF;
   font-weight:300;
   height:200px;
 	z-index: 100;
@@ -22,7 +22,7 @@
 
 
 .datepicker .datepicker-header{
-  background:#3fb4c6;
+  background:#3399FF;
   height:34px;
 }
 .datepicker .datepicker-header th{
@@ -106,8 +106,8 @@
   color:#dbdddf;
 }
 .datepicker .day.today i{
-  /*background:#3fb4c6;*/
-  border-color:#3fb4c6;
+  /*background:#3399FF;*/
+  border-color:#3399FF;
 }
 .datepicker .day.selected i,
 .datepicker .day.range i{
@@ -115,8 +115,8 @@
 }
 
 .datepicker .day.active i{
-  background:#3fb4c6;
-  border-color:#3fb4c6;
+  background:#3399FF;
+  border-color:#3399FF;
   color:#fff;
 }
 .datepicker .day.selected.old i,
@@ -126,7 +126,7 @@
   background:#f2f3f4;
 }
 
-.datepicker .day:hover i {border-color:#3fb4c6;}
+.datepicker .day:hover i {border-color:#3399FF;}
 .datepicker .disabled:hover i {border-color:transparent;}
 
 
@@ -163,7 +163,7 @@
 
 .datepicker .month i:hover,
 .datepicker .year i:hover{
-  border-color:#3fb4c6;
+  border-color:#3399FF;
 }
 
 .datepicker .month.disabled i,
@@ -176,8 +176,8 @@
 .datepicker .month.active i,
 .datepicker .year.active i{
   color:#fff;
-  border-color:#3fb4c6;
-  background:#3fb4c6;
+  border-color:#3399FF;
+  background:#3399FF;
 }
 
 .datepicker .disabled:hover{

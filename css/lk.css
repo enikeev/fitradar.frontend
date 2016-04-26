@@ -1,0 +1,19 @@
+.section_lk{}
+.section_lk .aside_left{
+	width: 220px;
+	float: left;
+}
+.section_lk .aside_right{
+	margin-left: 240px;
+}
+.section_lk .menu .menu-link{
+	display: block;
+	padding: 15px 20px;
+	background: #272a33;
+	color: #fff;
+	text-decoration: none;
+	border-top: 1px solid #346f7d;
+}
+.section_lk .menu :first-child .menu-link{
+	border-top: none;
+}

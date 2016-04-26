@@ -1,0 +1,14 @@
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="58px" height="58px" viewBox="0 0 58 58" enable-background="new 0 0 58 58" xml:space="preserve">
+    <g>
+    <path fill="#3399FF" d="M29,0C13,0,0,13,0,29s13,29,29,29s29-13,29-29S45,0,29,0z M44.9,40.7l-4.2,4.2L29,33.2L17.3,44.9l-4.2-4.2L24.8,29L13.1,17.3l4.2-4.2L29,24.8l11.7-11.7l4.2,4.2L33.2,29L44.9,40.7z"/>
+    <animateTransform
+                attributeName="transform"
+                begin="0s"
+                dur="20s"
+                type="rotate"
+                from="0 29 29"
+                to="360 29 29"
+                repeatCount="indefinite"
+            />
+    </g>
+</svg>
