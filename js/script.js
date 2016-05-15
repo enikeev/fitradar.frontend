@@ -372,7 +372,7 @@
 				$('body').on('click', '.keypad-close', function(){
 					$keybordWrap.removeClass('keypad-wrap_show');
 					$('.js-input-targ-active').removeClass('js-input-targ-active');
-				}).on('click', '.keypad .key', function(e){
+				}).on('mousedown', '.keypad .key', function(e){
 
 					if ( app.keypad.status.oneShift || $(this).data('key')!== 'shift' ){
 						app.keypad.status.oneShift = false;
@@ -1354,6 +1354,8 @@ $(function(){
 		$(this).closest('.js-input-wrap').find('.js-input-targ').val('');
 		clearInputBtn();
 	}).on('click', '.keypad .key', function(){
+		clearInputBtn();
+	}).on('touchend', '.keypad', function(){
 		clearInputBtn();
 	});
 });

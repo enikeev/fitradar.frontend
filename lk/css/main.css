@@ -516,8 +516,57 @@ body{
 	font-size: 16px;
 	text-align: right;
 }
-
-
+.lk-table .more-dropdown{
+	display: inline-block;
+	position: relative;
+	cursor: default;
+}
+.lk-table .more-dropdown__link{
+	display: inline-block;
+	position: relative;
+}
+.lk-table .more-dropdown__link:after{
+	content: '';
+	display: block;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -15px;
+	height: 15px;
+}
+.lk-table .more-dropdown .more-dropdown__list{
+	position: absolute;
+	background: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 0 3px 5px -3px rgba(0,0,0,0.5);
+	width: 200px;
+	left: 50%;
+	margin-left: -100px;
+	z-index: 10;
+	margin-top: 7px;
+	display: none;
+}
+.lk-table .more-dropdown .more-dropdown__list:before,
+.lk-table .more-dropdown .more-dropdown__list:after{
+	content: '';
+	border: 7px solid transparent;
+	left: 50%;
+	position: absolute;
+	margin-left: -7px;
+	border-bottom-color: #fff;
+	top: -14px;
+}
+.lk-table .more-dropdown .more-dropdown__list:before{
+	border-bottom-color: #ccc;
+	top: -15px;
+}
+.lk-table .more-dropdown .more-dropdown__list li{
+	display: block;
+	padding: 5px 15px;
+}
+.lk-table .more-dropdown:hover .more-dropdown__list{
+	display: block;
+}
 
 
 .table-status,
@@ -2003,7 +2052,8 @@ textarea ~ .input__notepad{
 .block_aboutcompany .block-edit textarea{height: 70px;padding-right: 70px;}
 .block_aboutcompany .block-edit .input__notepad,
 .block_aboutcompany .block-edit .input__clear{
-	margin-right: 15px;
+	/*margin-right: 15px;*/
+	white-space: normal;
 }
 .block_aboutcompany .block-edit .block-submit{text-align: right;}
 
@@ -2132,8 +2182,16 @@ textarea ~ .input__notepad{
 .lk-table_list.notify td.delete{
 	font-size: 16px;
 }
-.lk-table_list.notify td .footnote{
+.lk-table_list.notify td.date{
+	width: 20px;
+	white-space: nowrap;
+	padding-right: 15px;
+}
+.lk-table_list.notify td.footnote{
 	font-size: 12px;
+	width: 20px;
+	white-space: nowrap;
+	padding-right: 15px;
 }
 .lk-table_list.notify .new td{
 	color: #323232;
@@ -2143,10 +2201,55 @@ textarea ~ .input__notepad{
 
 
 
-
-
-
-
+.paginator{
+	font-size: 16px;
+	color: #4b4b4b;
+	margin: 30px 0;
+}
+.paginator-item{
+	color: inherit;
+	display: inline-block;
+	-webkit-border-radius:50px;
+	-moz-border-radius:50px;
+	border-radius:50px;
+	min-width: 10px;
+	height: 30px;
+	line-height: 29px;
+	padding: 0 10px;
+	text-align: center;
+	border: 1px solid transparent;
+	margin: 0 2px;
+}
+.paginator-arrow{
+	display: inline-block;
+	width: 5px;
+	height: 10px;
+	vertical-align: middle;
+	background: no-repeat 50% 50%;
+	-webkit-background-size:5px 10px;
+	background-size:5px 10px;
+	position: relative;
+	top:-1px;
+	text-decoration: none!important;
+	padding: 10px;
+}
+.paginator-arrow_prev{
+	background-image: url("../img/arrow-left-d.svg");
+	margin-right: 15px;
+}
+.paginator-arrow_next{
+	background-image: url("../img/arrow-right-d.svg");
+	margin-left: 15px;
+}
+a.paginator-item:hover{
+	text-decoration: none;
+	border-color: #3399ff;
+}
+a.paginator-item.active{
+	color: #fff;
+	background: #3399ff;
+	border-color: #3399ff;
+}
 
 
 
