@@ -187,8 +187,8 @@ body{
 }
 .password-eye:active + input[type=password],
 .password-eye:hover + input[type=password]{
-	border-color: #70b2c3;
-	color: #70b2c3;
+	border-color: #3399ff;
+	color: #3399ff;
 }
 
 
@@ -1302,7 +1302,7 @@ textarea ~ .input__notepad{
 
 
 .object-add__item .field-item_list .list-wrap .list-item_object:hover,
-.object-add__item .field-item_list .list-wrap .list-item:hover{color: #70b2c3;}
+.object-add__item .field-item_list .list-wrap .list-item:hover{color: #3399ff;}
 
 
 .object-add__item .field-item_list-result{
@@ -1319,6 +1319,7 @@ textarea ~ .input__notepad{
 .object-add__item .field-item_list-result .list-item{
 	margin: 5px 0;
 }
+.object-add__item .field-item_list-result .list-group__remove,
 .object-add__item .field-item_list-result .list-item__remove{
 	display: inline-block;
 	background: url("../img/icon-input_clear.svg") no-repeat 50% 50%;
@@ -1327,7 +1328,10 @@ textarea ~ .input__notepad{
 	width: 8px;
 	vertical-align: middle;
 	margin: 0 5px;
+	position: relative;
+	top: -2px;
 }
+.object-add__item .field-item_list-result .list-group__remove:hover,
 .object-add__item .field-item_list-result .list-item__remove:hover{background-image: url("../img/icon-input_clear-c.svg");}
 
 .object-add .field-item .list-item__bullet{
@@ -1342,7 +1346,7 @@ textarea ~ .input__notepad{
 }
 
 .object-add__item_moreobjtypes_s{}
-.object-add__item_moreobjtypes_s .field-footnote{color: #70b2c2;}
+.object-add__item_moreobjtypes_s .field-footnote{color: #3399ff;}
 
 .object-add__item_moreobjtypes_s .field-item_list .list-wrap .list-search{
 	width: 70%;
@@ -1398,10 +1402,73 @@ textarea ~ .input__notepad{
 	width: 100%;
 }
 .object-add__item_moreobjtypes_s .field-item_list .list-wrap .list .list-item{
-	float: left;
-	width: 50%;
+	/*float: left;*/
+	/*width: 50%;*/
+}
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result .list-wrap .list-group,
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .list .list-group{
+	/*float: left;*/
+	/*width: 50%;*/
+}
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result .list-wrap .list-group .list-item,
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .list .list-group .list-item{
+	padding-left: 20px;
+	float: none;
+	width: auto;
+}
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result .list-wrap .list-group.closed .list-item,
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .list .list-group.closed .list-item{
+	display: none;
+}
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result .list-wrap .list-group__title{
+	margin: 5px 0;
+	cursor: pointer;
+	position: relative;
+}
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result .list-wrap .list-group__title i{
+	margin-right: 20px;
+}
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .list .list-group__title{
+	padding-left: 15px;
+	margin: 5px 0;
+	cursor: pointer;
+	position: relative;
+}
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result .list-wrap .js-group:before,
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .list .js-group:before{
+	background: url("../img/arrow-right-d.svg") no-repeat 50% 50%;
+	content: "";
+	display: block;
+	height: 8px;
+	left: 6px;
+	margin-left: -2px;
+	margin-top: -5px;
+	opacity: 0.7;
+	position: absolute;
+	top: 10px;
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
+	width: 4px;
+}
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result .list-wrap .js-group:before{
+	left: 26px;
+}
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result .list-wrap .list-group.opened .js-group:before,
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .list .list-group.opened .js-group:before{
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
 }
 
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result .list-wrap .list-group.closed .list-item,
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .list .list-group.closed .list-item{
+	display: none;
+}
 
 .obj-case{
 	display: inline-table;

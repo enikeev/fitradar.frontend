@@ -607,3 +607,16 @@
 
 
 
+.modal_group-remove .modal-inner{
+	text-align: center;
+	padding: 40px 20px;
+	width: 580px;
+}
+.modal_group-remove .modal__body{
+	margin-bottom: 40px;
+	font-size: 14px;
+	color: #7f7f7f;
+}
+.modal_group-remove .modal__footer .btn{
+	margin: 0 5px;
+}

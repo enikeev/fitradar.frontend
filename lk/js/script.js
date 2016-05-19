@@ -404,6 +404,7 @@ $(function () {
 	}).on('click', '.js-input-clear', function(e){
 		e.preventDefault();
 		$(this).closest('.js-input-wrap').find('.js-input-targ').val('');
+		$(this).closest('.js-input-wrap').find('.js-input-targ').trigger('input');
 		clearInputBtn();
 	}).on('click', '.keypad .key', function(){
 		clearInputBtn();
@@ -574,6 +575,11 @@ $(function(){
 		$scroll.mCustomScrollbar();
 		if ( $num.size() ) $num.text($resCase.find('.list-item').length);
 
+	}).on('click', '.js-object-list-select .field-item_list .js-group', function(){
+		var $t = $(this);
+		var $group = $t.closest('.list-group');
+		$group.toggleClass('opened closed');
+
 	}).on('click', '.js-object-list-select .field-item_list-result .list-item__remove', function(){
 		var $t = $(this).closest('.list-item');
 		var $wrap = $t.closest('.js-object-list-select');
@@ -585,6 +591,28 @@ $(function(){
 		$t.remove();
 		moreObjectCheck($wrap.find('.field-item_list-result'), $resCase);
 		if ( $num.size() )  $num.text($resCase.find('.list-item').length);
+
+	}).on('click', '.js-object-list-select .list-group__remove', function(){
+
+		var $t = $(this);
+		var $modal = $('.modal_group-remove');
+
+		if ( !$modal.size() ){
+			$modal = $('<div class="modal modal_group-remove">'
+					+		'<div class="modal-overlay"></div>'
+					+		'<div class="modal-inner">'
+					+			'<span class="modal-close"></span>'
+					+			'<div class="modal__body"></div>'
+					+			'<div class="modal__footer">'
+					+			'<a href="#" class="btn" data-id="' + $t.data('group-id') + '">Удалить</a>'
+					+			'<a href="#" class="btn btn_gray js-modal-close">Отменить</a>'
+					+			'</div>'
+					+		'</div>'
+					+	'</div>').appendTo('body');
+		}
+
+		$modal.find('.modal__body').html('Вы уверены, что хотите удалить сеть ' + $t.data('group-name'));
+		$modal.showModalLk();
 
 	}).on('click', '.field-box__add', function(e){
 		e.stopPropagation();
