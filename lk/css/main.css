@@ -1434,8 +1434,8 @@ textarea ~ .input__notepad{
 	cursor: pointer;
 	position: relative;
 }
-.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result .list-wrap .js-group:before,
-.object-add__item_moreobjtypes_s .field-item_list .list-wrap .list .js-group:before{
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result .list-wrap .list-group__title span:before,
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .list .list-group__title span:before{
 	background: url("../img/arrow-right-d.svg") no-repeat 50% 50%;
 	content: "";
 	display: block;
@@ -1453,11 +1453,11 @@ textarea ~ .input__notepad{
 	transition: all 0.2s ease-in-out 0s;
 	width: 4px;
 }
-.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result .list-wrap .js-group:before{
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result .list-wrap .list-group__title span:before{
 	left: 26px;
 }
-.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result .list-wrap .list-group.opened .js-group:before,
-.object-add__item_moreobjtypes_s .field-item_list .list-wrap .list .list-group.opened .js-group:before{
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .field-item_list-result .list-wrap .list-group.opened .list-group__title span:before,
+.object-add__item_moreobjtypes_s .field-item_list .list-wrap .list .list-group.opened .list-group__title span:before{
 	-webkit-transform: rotate(90deg);
 	-moz-transform: rotate(90deg);
 	-ms-transform: rotate(90deg);
