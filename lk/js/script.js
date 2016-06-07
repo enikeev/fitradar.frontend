@@ -1060,7 +1060,8 @@ $(function(){
 
 		var $item = $('input[name=' + id + ']');
 
-		$item.closest('.nest-item')
+		$item.prop('checked', true)
+			.closest('.nest-item')
 			.addClass('lightning')
 			.parents('.nest-list')
 			.show()
@@ -1075,7 +1076,7 @@ $(function(){
 		}, 50);
 
 		setTimeout(function(){
-			$('.nest-item.lightning').removeClass('lightning');
+			$item.closest('.nest-item').removeClass('lightning');
 		}, 3000);
 	}
 
