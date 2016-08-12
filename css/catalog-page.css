@@ -475,6 +475,17 @@
 	display: inline-block;
 }
 
+.map-view .catalog-moredetails,
+.list-view .catalog-moredetails{
+	position: absolute;
+	bottom: 5px;
+}
+.map-view .catalog-item__aside-left .catalog-legend,
+.list-view .catalog-item__aside-left .catalog-legend{
+	position: absolute;
+	bottom: 1px;
+	left: 9px;
+}
 
 
 .catalog-item .catalog-ins{display: table;margin: 5px 15px;}
