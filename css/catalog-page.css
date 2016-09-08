@@ -2284,8 +2284,8 @@ catalog item
 	background: #fff;
 }
 
-.aside_big .catalog-details .details-item {display: none;}
-.aside_big .catalog-details .details-item.active {display: block;}
+/*.aside_big .catalog-details .details-item {display: none;}*/
+/*.aside_big .catalog-details .details-item.active {display: block;}*/
 .aside_big .catalog-menu {
 	text-align: center;
 	background: #fff;
@@ -2299,6 +2299,7 @@ catalog item
 	display: inline-block;
 	padding: 0 5px 3px 9px;
 	border-left: 1px solid #cfcfcf;
+	text-decoration: none;
 }
 .aside_big .catalog-menu .menu-item:first-child{
 	border-left: 0;
@@ -2311,10 +2312,10 @@ catalog item
 	border-bottom: 1px dashed #000;
 	/*padding-bottom: 2px;*/
 }
-.aside_big .catalog-menu .menu-item.active span{
+/*.aside_big .catalog-menu .menu-item.active span{
 	border-bottom: 3px solid #3399FF;
 	padding-bottom: 3px;
-}
+}*/
 
 
 

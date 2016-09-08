@@ -46,7 +46,7 @@
 	.details-item__images{margin-right: 0;}
 	.details-item__slider{margin-right: 0;}
 	.details-item .title_map{width: auto;}
-	.details-item .table_option{width: 883px;}
+	.details-item .table_option{width: 876px;}
 
 
 	.footer__app{
@@ -129,6 +129,7 @@
 	.section_search__tabs-field__item_date input{width:87px;}
 	.header-user .btn_brdr{margin-right: 5px;}
 	.header-search{margin-right: 5px;}
+	.details-item .table_option{width: 872px;}
 
 	.stat-item{width: 50%;}
 	.fit-3.tabs-field_head__search-input input{width: 102px;}
